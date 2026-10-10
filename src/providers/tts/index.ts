@@ -65,16 +65,20 @@ const elevenlabs: TtsProvider = {
   paid: true,
   license: 'Servico pago; termos comerciais dependem do plano contratado.',
   async synthesize(items, cfg) {
+    // Sem a variavel, a chave pode vir de um "network secret" do ambiente em nuvem: o proxy anexa o cabecalho
+    // xi-api-key fora da VM, e a chave nunca fica visivel aqui.
     const key = process.env.ELEVENLABS_API_KEY;
-    if (!key) throw new Error('ELEVENLABS_API_KEY ausente. Provedor nao configurado.');
     const out: TtsResult[] = [];
     for (const it of items) {
       // it.voice = voice_id da ElevenLabs. Saida PCM 24 kHz convertida para WAV via ffmpeg.
       const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${encodeURIComponent(it.voice)}?output_format=pcm_24000`, {
         method: 'POST',
-        headers: {'xi-api-key': key, 'content-type': 'application/json'},
+        headers: {...(key ? {'xi-api-key': key} : {}), 'content-type': 'application/json'},
         body: JSON.stringify({text: it.text, model_id: cfg.providers.tts.elevenlabs.modelId, voice_settings: {speed: it.speed}}),
       });
+      if (res.status === 401 || res.status === 403) {
+        throw new Error(`ElevenLabs HTTP ${res.status}: chave ausente ou recusada. Configure ELEVENLABS_API_KEY ou um network secret para api.elevenlabs.io (cabecalho xi-api-key).`);
+      }
       if (!res.ok) throw new Error(`ElevenLabs HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`);
       const pcm = Buffer.from(await res.arrayBuffer());
       const raw = `${it.out}.pcm`;

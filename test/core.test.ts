@@ -11,6 +11,11 @@ test('WER ignora pontuacao e acentos', () => {
   assert.equal(wordErrorRate('ajusta as guias', 'ajusta as dias'), 1 / 3);
 });
 
+test('WER: numerais por extenso equivalem a digitos', () => {
+  assert.equal(wordErrorRate('Quarenta e nove reais e noventa centavos.', '49 reais e 90 centavos.'), 0);
+  assert.equal(wordErrorRate('mil e duzentos', '1200'), 0);
+});
+
 test('legendas: blocos curtos e quebra apos pontuacao', () => {
   const c = chunkCaption('Você insere o papel, ajusta as guias e aguarda a inicialização. É liberdade.');
   assert.ok(c.every((x) => x.length <= 30), JSON.stringify(c));

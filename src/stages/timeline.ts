@@ -99,7 +99,7 @@ export const timelineStage: Stage = {
         sfx,
         roomTone: b.roomTone,
       });
-      if (line) {
+      if (line && b.showCaptions) {
         for (const c of timeCaptions(b.caption ?? b.text!, line.seconds, line.words)) {
           captions.push({text: c.text, startFrame: cursor + before + f(c.start), endFrame: cursor + before + f(c.end), speaker: line.speaker});
         }

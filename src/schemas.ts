@@ -182,6 +182,8 @@ export const Beat = z.object({
   duration: z.number().positive().optional(),
   visual: Visual,
   sfx: z.array(Sfx).default([]),
+  /** Legenda da fala. Desligar quando a cartela ja mostra o mesmo texto (ex.: lema no encerramento). */
+  showCaptions: z.boolean().default(true),
   /** Ambiente sonoro do escritorio. */
   roomTone: z.boolean().default(true),
   note: z.string().optional(),

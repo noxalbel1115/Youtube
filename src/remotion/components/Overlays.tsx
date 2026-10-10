@@ -22,8 +22,8 @@ export const HeaderBand: React.FC<{brandName: string; caseLabel: string}> = ({br
     }}
   >
     <div style={{border: `3px solid ${C.ink}`, fontFamily: SANS, fontWeight: 700, fontSize: 22, padding: '2px 8px', letterSpacing: 1}}>DND</div>
-    <div style={{fontFamily: SANS, fontWeight: 600, fontSize: 21, letterSpacing: 2.5, textTransform: 'uppercase', flex: 1, whiteSpace: 'nowrap', overflow: 'hidden'}}>{brandName}</div>
-    <div style={{fontFamily: MONO, fontSize: 20, color: C.inkSoft, marginRight: 120}}>{caseLabel}</div>
+    <div style={{fontFamily: SANS, fontWeight: 600, fontSize: 19, letterSpacing: 1.6, textTransform: 'uppercase', flex: 1, whiteSpace: 'nowrap'}}>{brandName}</div>
+    <div style={{fontFamily: MONO, fontSize: 19, color: C.inkSoft}}>{caseLabel}</div>
   </div>
 );
 

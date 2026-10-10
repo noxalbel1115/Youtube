@@ -1,0 +1,67 @@
+{
+ "researchedAt": "2026-10-10",
+ "method": "fixture de teste",
+ "candidates": [
+  {
+   "slug": "produto-teste",
+   "name": "Produto Teste",
+   "brand": "Marca Teste",
+   "description": "Fixture.",
+   "legitimateUse": "n/a",
+   "punchingDownRisk": "n/a",
+   "sources": [
+    {
+     "id": "s1",
+     "url": "https://example.com/",
+     "title": "Exemplo",
+     "publisher": "Example",
+     "kind": "manufacturer",
+     "accessedAt": "2026-10-10",
+     "confirms": "existencia"
+    },
+    {
+     "id": "s2",
+     "url": "https://example.org/",
+     "title": "Exemplo 2",
+     "publisher": "Example",
+     "kind": "retailer",
+     "accessedAt": "2026-10-10",
+     "confirms": "preco"
+    }
+   ],
+   "facts": [
+    {
+     "id": "f1",
+     "text": "Fixture.",
+     "sourceIds": [
+      "s1"
+     ]
+    }
+   ],
+   "price": null,
+   "media": [
+    {
+     "id": "m1",
+     "kind": "image",
+     "title": "Imagem gerada",
+     "creator": "projeto",
+     "provider": "generated",
+     "landingUrl": "https://example.com/m1",
+     "fileUrl": "file:///__SMOKE_IMG__",
+     "license": "cc0",
+     "showsExactProduct": true,
+     "description": "gerada"
+    }
+   ],
+   "scores": {
+    "contrast": 3,
+    "story": 3,
+    "visual": 3,
+    "media": 3,
+    "reliability": 3
+   },
+   "risks": [],
+   "comedyAngle": "teste"
+  }
+ ]
+}

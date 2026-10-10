@@ -1,0 +1,122 @@
+{
+ "version": 1,
+ "episodeId": "ep000-smoke",
+ "productSlug": "produto-teste",
+ "workingTitle": "Teste",
+ "logline": "teste",
+ "arc": [
+  "a",
+  "b",
+  "c"
+ ],
+ "pronunciations": {},
+ "beats": [
+  {
+   "id": "s01",
+   "duration": 2.5,
+   "visual": {
+    "type": "title",
+    "heading": "Produto Teste",
+    "body": "Avaliação de necessidade",
+    "footnote": "PROTOCOLO Nº 000",
+    "stamp": "EM ANÁLISE",
+    "stampAt": 1.2
+   },
+   "sfx": [
+    {
+     "id": "tap",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "speaker": "vendedor",
+   "text": "Bom dia. Hoje eu vou apresentar uma solução que você não sabia que precisava.",
+   "holdAfter": 0.4,
+   "visual": {
+    "type": "media",
+    "mediaId": "m1",
+    "motion": "push-in",
+    "lowerThird": true
+   }
+  },
+  {
+   "id": "s03",
+   "speaker": "colega",
+   "text": "Dá pra fazer com a mão.",
+   "holdBefore": 0.3,
+   "holdAfter": 1.5,
+   "visual": {
+    "type": "media",
+    "mediaId": "m1",
+    "motion": "snap-in",
+    "zoom": 1.6,
+    "focus": {
+     "x": 0.3,
+     "y": 0.4
+    }
+   },
+   "sfx": [
+    {
+     "id": "tap-tap",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "speaker": "vendedor",
+   "text": "Ela não passou pelo treinamento.",
+   "claim": "fact",
+   "factIds": [
+    "f1"
+   ],
+   "holdAfter": 0.6,
+   "visual": {
+    "type": "factsheet",
+    "heading": "Produto Teste",
+    "body": "Função: testar\nPreço: não verificado\nFonte: fixture",
+    "footnote": "Fonte: example.com, consultado em 10/10/2026"
+   }
+  },
+  {
+   "id": "s05",
+   "duration": 0.8,
+   "visual": {
+    "type": "black"
+   },
+   "roomTone": true
+  },
+  {
+   "id": "s06",
+   "speaker": "locutor",
+   "text": "Você não precisava. Até agora.",
+   "holdAfter": 1.0,
+   "visual": {
+    "type": "endcard",
+    "footnote": "Fontes e créditos na descrição."
+   },
+   "sfx": [
+    {
+     "id": "chime",
+     "at": 0
+    }
+   ]
+  }
+ ],
+ "packaging": {
+  "title": "Teste de fumaça",
+  "synopsis": "Teste.",
+  "tags": [
+   "teste"
+  ],
+  "thumbnailBeatId": "s02"
+ },
+ "changelog": [
+  {
+   "version": 1,
+   "note": "fixture"
+  }
+ ]
+}

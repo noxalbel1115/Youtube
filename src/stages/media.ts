@@ -11,6 +11,11 @@ import type {Stage} from './types.js';
 const UA = 'DNN-pipeline/0.1 (+https://github.com/noxalbel1115/Youtube)';
 
 async function download(url: string, dest: string): Promise<void> {
+  // Material proprio (fotos feitas pelo canal, graficos gerados) pode vir de arquivo local.
+  if (url.startsWith('file://')) {
+    fs.copyFileSync(new URL(url), dest);
+    return;
+  }
   let wait = 2000;
   for (let i = 1; i <= 5; i++) {
     const res = await fetch(url, {headers: {'user-agent': UA}, signal: AbortSignal.timeout(120000)});

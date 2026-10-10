@@ -7,6 +7,7 @@ import {readJson, sha256, sha256File, recordArtifact} from '../core/state.js';
 import {ROOT, rel} from '../core/paths.js';
 import {run} from '../core/exec.js';
 import {log} from '../core/log.js';
+import {webpackOverride} from '../remotion/webpack-override.js';
 import type {Stage, Ctx} from './types.js';
 
 /** Usa o Chromium headless ja instalado, se houver; senao o Remotion baixa o chrome-headless-shell. */
@@ -20,7 +21,7 @@ let bundled: {publicDir: string; url: string} | null = null;
 
 export async function bundleFor(publicDir: string): Promise<string> {
   if (bundled && bundled.publicDir === publicDir) return bundled.url;
-  const url = await bundle({entryPoint: path.join(ROOT, 'src', 'remotion', 'index.ts'), publicDir, onProgress: () => undefined});
+  const url = await bundle({entryPoint: path.join(ROOT, 'src', 'remotion', 'index.ts'), publicDir, webpackOverride, onProgress: () => undefined});
   bundled = {publicDir, url};
   return url;
 }

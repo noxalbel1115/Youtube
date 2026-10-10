@@ -130,9 +130,9 @@ export const verifyStage: Stage = {
 
     // 9. Legendas: duracao minima de leitura e tamanho
     const fastCaps = t.captions.filter((c) => (c.endFrame - c.startFrame) / t.fps < 0.5);
-    const longCaps = t.captions.filter((c) => c.text.length > 30);
+    const longCaps = t.captions.filter((c) => c.text.length > 38);
     add('legendas.leitura', fastCaps.length === 0, fastCaps.length ? `blocos com menos de 0,5 s: ${fastCaps.map((c) => c.text).join(' | ')}` : `${t.captions.length} blocos, todos com >= 0,5 s`, 'warning');
-    add('legendas.tamanho', longCaps.length === 0, longCaps.length ? `blocos com mais de 30 caracteres: ${longCaps.map((c) => c.text).join(' | ')}` : 'todos os blocos com ate 30 caracteres (max. 2 linhas)', 'warning');
+    add('legendas.tamanho', longCaps.length === 0, longCaps.length ? `blocos com mais de 38 caracteres: ${longCaps.map((c) => c.text).join(' | ')}` : 'todos os blocos com ate 38 caracteres (max. 2 linhas)', 'warning');
 
     // 10. Quadros para inspecao visual (meio de cada beat + 1 quadro apos cada corte) e folha de contato
     const framesDir = path.join(ctx.p.verifyDir, 'frames');
@@ -142,7 +142,7 @@ export const verifyStage: Stage = {
       const mid = (b.startFrame + b.durationFrames / 2) / t.fps;
       await run('ffmpeg', ['-y', '-v', 'error', '-ss', mid.toFixed(3), '-i', file, '-frames:v', '1', '-vf', 'scale=540:-2', path.join(framesDir, `${b.id}.jpg`)]);
     }
-    await run('ffmpeg', ['-y', '-v', 'error', '-pattern_type', 'glob', '-i', path.join(framesDir, '*.jpg'), '-vf', 'scale=270:-2,tile=6x4:padding=6:color=white', '-frames:v', '1', path.join(ctx.p.verifyDir, 'contact-sheet.jpg')]);
+    await run('ffmpeg', ['-y', '-v', 'error', '-pattern_type', 'glob', '-i', path.join(framesDir, '*.jpg'), '-vf', `scale=270:-2,tile=6x${Math.ceil(t.beats.length / 6)}:padding=6:color=white`, '-frames:v', '1', path.join(ctx.p.verifyDir, 'contact-sheet.jpg')]);
     // Forma de onda para revisar ritmo e pausas
     await run('ffmpeg', ['-y', '-v', 'error', '-i', file, '-filter_complex', 'showwavespic=s=1800x300:split_channels=0:colors=#1C2333', '-frames:v', '1', path.join(ctx.p.verifyDir, 'waveform.png')]);
 

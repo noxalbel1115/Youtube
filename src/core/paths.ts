@@ -3,8 +3,8 @@ import os from 'node:os';
 import {fileURLToPath} from 'node:url';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
-export const EPISODES_DIR = path.join(ROOT, 'episodes');
-export const DATA_DIR = path.join(ROOT, 'data');
+export const EPISODES_DIR = process.env.DNN_EPISODES_DIR ?? path.join(ROOT, 'episodes');
+export const DATA_DIR = process.env.DNN_DATA_DIR ?? path.join(ROOT, 'data');
 export const MODELS_DIR = path.join(ROOT, 'models');
 export const PYTHON_BIN = process.env.DNN_PYTHON ?? path.join(ROOT, '.venv', 'bin', 'python');
 

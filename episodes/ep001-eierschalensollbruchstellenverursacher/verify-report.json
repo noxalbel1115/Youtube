@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-10T22:25:58.781Z",
+  "verifiedAt": "2026-10-10T22:55:43.361Z",
   "file": "episodes/ep001-eierschalensollbruchstellenverursacher/build/episode.mp4",
-  "sha256": "2b52e169d5fdff095a6d28f20aa20441cc1a0f0c4ded737cef2b3f25b8a7c269",
-  "durationSeconds": 88.7,
+  "sha256": "ce5319aa78cc9b81f6a1f6db00d6d1e0469bda1733f831d6e1fb540d7ef635a8",
+  "durationSeconds": 85.5,
   "automatic": [
     {
       "id": "formato.resolucao",
@@ -26,7 +26,7 @@
       "id": "formato.duracao",
       "ok": true,
       "severity": "error",
-      "detail": "88.70s (alvo 60-90s)"
+      "detail": "85.50s (alvo 60-90s)"
     },
     {
       "id": "formato.shorts",
@@ -86,19 +86,19 @@
       "id": "audio.transcricao-final",
       "ok": true,
       "severity": "error",
-      "detail": "WER 6.1% entre roteiro e transcricao automatica da mixagem final (limite 18.4%; 1 fala(s) com palavra estrangeira fora da conta)"
+      "detail": "WER 5.4% entre roteiro e transcricao automatica da mixagem final (limite 18.4%; 1 fala(s) com palavra estrangeira fora da conta)"
     },
     {
       "id": "audio.transcricao-por-fala",
-      "ok": true,
+      "ok": false,
       "severity": "warning",
-      "detail": "todas as falas transcritas com WER <= 25%"
+      "detail": "s21: \"Assoeli usa colher.\" | s28: \"28,95 € da 76 centavos por letra.\""
     },
     {
       "id": "legendas.leitura",
-      "ok": true,
+      "ok": false,
       "severity": "warning",
-      "detail": "41 blocos, todos com >= 0,5 s"
+      "detail": "blocos com menos de 0,5 s: Bom dia."
     },
     {
       "id": "legendas.tamanho",
@@ -107,10 +107,23 @@
       "detail": "todos os blocos com ate 38 caracteres (max. 2 linhas)"
     }
   ],
-  "finalTranscript": "Bom dia, trago uma solução alemã para um problema que o brasileiro ignora gerações. O topo do ovo. O nome técnico é Eyer Schallen Zollbruchstellen ferurzacher. Trinta e oito letras, todas dedicadas ao topo de um ovo. Funciona assim, você coloca a cápsula de metal sobre o ovo cozido, puxa a esfera e solta. A casca se rompe em volta do topo sem faca, projetado por três designers. Três. Para quem exige mais, esfera de pedra preciosa. A metrista para o ovo. A concorrência usa tesoura, patente de 1907. Tesoura no café da manhã. Pronto. A Suelle usa colher. A colher não tem edição de natal. O fabricante diz que a tampa sai inclinando o aparelho, ou com auxílio de talheres adicionais. Uma colher, por exemplo. Mas a colher não tem trinta e oito letras. Vinte e oito euros e noventa e cinco dá setenta e seis centavos por letra. É praticamente de graça. Você não precisava. Até agora.",
+  "finalTranscript": "Bom dia, trago uma solução alemã para um problema que o brasileiro ignora gerações. O topo do ovo. O nome técnico é Airchallensau Bruchstellen ferurzacher. Trinta e oito letras, todas dedicadas ao topo de um ovo. Funciona assim, você coloca a cápsula de metal sobre o ovo cozido. Puxa a esfera. E solta. A casca se rompe em volta do topo, sem faca. Projetado por três designers. Trezo. Para quem exige mais, esfera de pedra preciosa. A metgista. Para o ovo. A concorrência usa tesoura, patente de 1907. Tesoura. No café da manhã. Pronto. A swellie usa colher. A colher não tem edição de natal. O fabricante diz que a tampa sai inclinando o aparelho. Ou com o auxílio de talheres adicionais. Uma colher, por exemplo. Mas a colher não tem trinta e oito letras. Vinte e oito euros e noventa e cinco dá setenta e seis centavos por letra. É praticamente de graça. Você não precisava. Até agora.",
   "manualReview": {
     "status": "pendente",
-    "sha256": "2b52e169d5fdff095a6d28f20aa20441cc1a0f0c4ded737cef2b3f25b8a7c269",
-    "notes": []
+    "sha256": "ce5319aa78cc9b81f6a1f6db00d6d1e0469bda1733f831d6e1fb540d7ef635a8",
+    "at": "2026-10-10T22:56:37.764Z",
+    "by": null,
+    "notes": [
+      {
+        "by": "Claude (inspecao assistida, nao substitui revisao humana)",
+        "at": "2026-10-10T22:56:34.959Z",
+        "text": "v8 (sha ce5319aa78cc). Visual: folha de contato dos 32 beats. Produto em ilustracao 3D propria com rotulo 'ilustracao' nos planos; esfera erguida visivel abaixo da faixa institucional em s07-s08; ovo aberto com clara, gema e linha de ruptura; esfera de ametista em s13-s15; fotos reais so emolduradas (m3 tesoura, m1 foto real), terminando acima da zona de legendas; sem quadros pretos fora do s26; legendas na zona segura."
+      },
+      {
+        "by": "Claude (inspecao assistida, nao substitui revisao humana)",
+        "at": "2026-10-10T22:56:37.764Z",
+        "text": "Audio NAO ouvido. Por instrumentos: -13,9 LUFS, pico -1,5 dBTP, WER 5,4% na mixagem final. Voz Kokoro a 1,04 (vendedor) e 1,05 (colega) por decisao do usuario; 'Puxa a esfera' a 0,88. Avisos aceitos: 'A Sueli' transcrito 'Assoeli' (juncao natural do artigo); s28 so formatacao numerica do ASR; legenda 'Bom dia.' com 0,47 s."
+      }
+    ]
   }
 }

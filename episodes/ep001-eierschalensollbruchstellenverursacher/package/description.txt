@@ -20,4 +20,4 @@ Preço consultado: EUR 28,95 em 10/10/2026 (Take2-Design (loja oficial do fabric
 — Produção —
 Voz sintética (kokoro: modelo Kokoro-82M, licença Apache-2.0). Efeitos sonoros e grafismos produzidos pelo canal.
 
-ref: dnn-ep001-eierschalensollbruchstellenverursacher-2b52e169d5
+ref: dnn-ep001-eierschalensollbruchstellenverursacher-ce5319aa78

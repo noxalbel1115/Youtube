@@ -14,9 +14,9 @@ testado, as opções e a recomendação.
 | Voz local Kokoro + transcrição Whisper | funciona na CPU (a síntese leva alguns segundos por fala) |
 | Rede: Openverse, upload.wikimedia.org, huggingface.co, npm, PyPI | acessíveis |
 | Rede: commons.wikimedia.org (API de ação) | **HTTP 429** (limite por IP); o pipeline usa `api.wikimedia.org` e Openverse, com backoff |
-| Tempo do piloto (máquina) | execução completa do zero ≈ 4,5 min: voz 82 s, render 132 s, verificação 50 s (detalhe em `docs/relatorio-piloto.md`) |
+| Tempo do piloto (máquina) | execução completa do zero ≈ 19 min com cenas 3D (render ~16 min, WebGL por software) ou ≈ 4,5 min só com fotos (detalhe em `docs/relatorio-piloto.md`) |
 
-Conclusão: a renderização **cabe** numa execução em nuvem com o perfil testado (≈ 2,2 min de render para 88 s de vídeo, bem abaixo do teto de 2 h para comandos em segundo plano). Ressalva honesta: testei numa
+Conclusão: a renderização **cabe** numa execução em nuvem com o perfil testado (≈ 16 min de render com 3D para 85 s de vídeo, abaixo do teto de 2 h para comandos em segundo plano; o render roda em segundo plano dentro da sessão). Ressalva honesta: testei numa
 sessão interativa, não numa Routine disparada; as Routines rodam no mesmo tipo de ambiente, mas o limite de duração
 de uma execução não está documentado.
 

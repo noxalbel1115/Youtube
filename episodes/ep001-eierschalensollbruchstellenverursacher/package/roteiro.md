@@ -1,6 +1,6 @@
 # Roteiro — Protocolo 001 — 38 letras para abrir um ovo
 
-Episódio `ep001-eierschalensollbruchstellenverursacher` · versão 7 · duração final 88.7 s
+Episódio `ep001-eierschalensollbruchstellenverursacher` · versão 8 · duração final 85.4 s
 
 **Logline.** Valdemar apresenta, com engenharia e orgulho, um abridor de ovo alemão de 38 letras; fora de quadro, a Sueli abre o dela com a colher.
 
@@ -18,36 +18,36 @@ Legenda: **[FATO fN]** = afirmação sobre o produto real, ancorada em fonte; *[
 |---|---|---|---|---|---|
 | 00:00.0 | s01 | — | _(sem fala, 2.7s)_ [som: tap] | title: Eierschalensollbruchstellenverursacher · carimbo "EM ANÁLISE" | — |
 | 00:02.7 | s02 | vendedor | Bom dia. Trago uma solução alemã para um problema que o brasileiro ignora há gerações. _(pausa 0.3s antes, pausa 0.7s)_ | scene3d:  | **[FATO f1]** |
-| 00:08.9 | s03 | vendedor | O topo do ovo. _(pausa 0.9s)_ | scene3d:  | *[ficção]* |
-| 00:11.0 | s04 | vendedor | O nome técnico é Eierschalensollbruchstellenverursacher. _(pausa 0.6s)_ | card: Eierschalensollbruchstellenverursacher | **[FATO f1, f2]** |
-| 00:15.3 | s05 | vendedor | 38 letras. Todas dedicadas ao topo de um ovo. _(pausa 0.7s)_ | card: Eierschalensollbruchstellenverursacher | **[FATO f4]** |
-| 00:19.7 | s06 | vendedor | Funciona assim. Você coloca a cápsula de metal sobre o ovo cozido. _(pausa 0.3s)_ | scene3d:  | **[FATO f5]** |
-| 00:24.1 | s07 | vendedor | Puxa a esfera. _(pausa 0.6s)_ | scene3d:  | **[FATO f5]** |
-| 00:25.8 | s08 | vendedor | E solta. [som: click, crack] _(pausa 0.35s)_ | scene3d:  | **[FATO f5]** |
-| 00:27.1 | s09 | — | _(sem fala, 1.2s)_ | scene3d:  | — |
-| 00:28.3 | s10 | vendedor | A casca se rompe em volta do topo. Sem faca. _(pausa 0.7s)_ | scene3d:  | **[FATO f6, f8]** |
-| 00:31.9 | s11 | vendedor | Projetado por três designers. _(pausa 0.8s)_ | factsheet: Eierschalensollbruchstellenverursacher | **[FATO f9]** |
-| 00:34.9 | s12 | vendedor | Três. _(pausa 0.8s)_ | factsheet: Eierschalensollbruchstellenverursacher | **[FATO f9]** |
-| 00:36.3 | s13 | vendedor | Para quem exige mais: esfera de pedra preciosa. _(pausa 0.5s)_ | scene3d:  | **[FATO f11]** |
-| 00:39.9 | s14 | vendedor | Ametista. _(pausa 0.7s)_ | scene3d:  | **[FATO f11]** |
-| 00:41.7 | s15 | vendedor | Para o ovo. _(pausa 0.8s)_ | scene3d:  | *[ficção]* |
-| 00:43.4 | s16 | vendedor | A concorrência usa tesoura. Patente de 1907. _(pausa 0.5s)_ | foto m3 (exhibit, push-in, zoom 1.06) | **[FATO f13]** |
-| 00:47.9 | s17 | vendedor | Tesoura. _(pausa 0.4s)_ | foto m3 (exhibit, push-in, zoom 1.06) | *[ficção]* |
-| 00:49.1 | s18 | vendedor | No café da manhã. _(pausa 0.9s)_ | foto m3 (exhibit, push-in, zoom 1.06) | *[ficção]* |
-| 00:51.5 | s19 | colega | Pronto. [som: tap-tap, crack] _(pausa 1.25s antes, pausa 0.2s)_ | scene3d:  | *[ficção]* |
-| 00:53.6 | s20 | — | _(sem fala, 1.6s)_ | scene3d:  | — |
-| 00:55.2 | s21 | vendedor | A Sueli usa colher. _(pausa 1s)_ | scene3d:  | *[ficção]* |
-| 00:57.8 | s22 | vendedor | A colher não tem edição de Natal. _(pausa 0.8s)_ | card: XMAS Edition | **[FATO f12]** |
-| 01:00.8 | s23 | vendedor | O fabricante diz que a tampa sai inclinando o aparelho. _(pausa 0.5s)_ | card: Loja do fabricante: | **[FATO f7]** |
-| 01:04.6 | s24 | vendedor | Ou com o auxílio de talheres adicionais. _(pausa 1.5s)_ | card: Loja do fabricante: | **[FATO f7]** |
-| 01:08.7 | s25 | vendedor | Uma colher, por exemplo. _(pausa 1s)_ | card: Loja do fabricante: | *[ficção]* |
-| 01:11.3 | s26 | — | _(sem fala, 0.7s)_ | tela preta | — |
-| 01:12.0 | s27 | vendedor | Mas a colher não tem 38 letras. _(pausa 0.4s)_ | foto m1 (exhibit, push-in, zoom 1.08) | **[FATO f4]** |
-| 01:15.1 | s28 | vendedor | 28 euros e 95. Dá 76 centavos por letra. _(pausa 0.6s)_ | card: Eierschalensollbruchstellenverursacher | **[FATO f10, f4]** |
-| 01:20.5 | s29 | vendedor | É praticamente de graça. _(pausa 0.3s)_ | card: Eierschalensollbruchstellenverursacher | *[ficção]* |
-| 01:22.7 | s30 | — | _(sem fala, 1.4s)_ [som: tap] | card: Eierschalensollbruchstellenverursacher · carimbo "AGUARDANDO NECESSIDADE" | — |
-| 01:24.1 | s31 | vendedor | Você não precisava. [som: chime] _(pausa 0.3s antes, pausa 0.5s)_ | endcard: Você não precisava. Até agora. | *[ficção]* |
-| 01:26.4 | s32 | vendedor | Até agora. _(pausa 1.3s)_ | endcard: Você não precisava. Até agora. | *[ficção]* |
+| 00:08.7 | s03 | vendedor | O topo do ovo. _(pausa 0.9s)_ | scene3d:  | *[ficção]* |
+| 00:10.8 | s04 | vendedor | O nome técnico é Eierschalensollbruchstellenverursacher. _(pausa 0.6s)_ | card: Eierschalensollbruchstellenverursacher | **[FATO f1, f2]** |
+| 00:14.9 | s05 | vendedor | 38 letras. Todas dedicadas ao topo de um ovo. _(pausa 0.7s)_ | card: Eierschalensollbruchstellenverursacher | **[FATO f4]** |
+| 00:19.2 | s06 | vendedor | Funciona assim. Você coloca a cápsula de metal sobre o ovo cozido. _(pausa 0.3s)_ | scene3d:  | **[FATO f5]** |
+| 00:23.3 | s07 | vendedor | Puxa a esfera. _(pausa 0.6s)_ | scene3d:  | **[FATO f5]** |
+| 00:25.0 | s08 | vendedor | E solta. [som: click, crack] _(pausa 0.35s)_ | scene3d:  | **[FATO f5]** |
+| 00:26.2 | s09 | — | _(sem fala, 1.2s)_ | scene3d:  | — |
+| 00:27.4 | s10 | vendedor | A casca se rompe em volta do topo. Sem faca. _(pausa 0.7s)_ | scene3d:  | **[FATO f6, f8]** |
+| 00:30.8 | s11 | vendedor | Projetado por três designers. _(pausa 0.8s)_ | factsheet: Eierschalensollbruchstellenverursacher | **[FATO f9]** |
+| 00:33.6 | s12 | vendedor | Três. _(pausa 0.8s)_ | factsheet: Eierschalensollbruchstellenverursacher | **[FATO f9]** |
+| 00:35.0 | s13 | vendedor | Para quem exige mais: esfera de pedra preciosa. _(pausa 0.5s)_ | scene3d:  | **[FATO f11]** |
+| 00:38.4 | s14 | vendedor | Ametista. _(pausa 0.7s)_ | scene3d:  | **[FATO f11]** |
+| 00:40.1 | s15 | vendedor | Para o ovo. _(pausa 0.8s)_ | scene3d:  | *[ficção]* |
+| 00:41.7 | s16 | vendedor | A concorrência usa tesoura. Patente de 1907. _(pausa 0.5s)_ | foto m3 (exhibit, push-in, zoom 1.06) | **[FATO f13]** |
+| 00:46.0 | s17 | vendedor | Tesoura. _(pausa 0.4s)_ | foto m3 (exhibit, push-in, zoom 1.06) | *[ficção]* |
+| 00:47.2 | s18 | vendedor | No café da manhã. _(pausa 0.9s)_ | foto m3 (exhibit, push-in, zoom 1.06) | *[ficção]* |
+| 00:49.4 | s19 | colega | Pronto. [som: tap-tap, crack] _(pausa 1.25s antes, pausa 0.2s)_ | scene3d:  | *[ficção]* |
+| 00:51.5 | s20 | — | _(sem fala, 1.6s)_ | scene3d:  | — |
+| 00:53.1 | s21 | vendedor | A Sueli usa colher. _(pausa 1s)_ | scene3d:  | *[ficção]* |
+| 00:55.6 | s22 | vendedor | A colher não tem edição de Natal. _(pausa 0.8s)_ | card: XMAS Edition | **[FATO f12]** |
+| 00:58.5 | s23 | vendedor | O fabricante diz que a tampa sai inclinando o aparelho. _(pausa 0.5s)_ | card: Loja do fabricante: | **[FATO f7]** |
+| 01:02.1 | s24 | vendedor | Ou com o auxílio de talheres adicionais. _(pausa 1.5s)_ | card: Loja do fabricante: | **[FATO f7]** |
+| 01:06.1 | s25 | vendedor | Uma colher, por exemplo. _(pausa 1s)_ | card: Loja do fabricante: | *[ficção]* |
+| 01:08.6 | s26 | — | _(sem fala, 0.7s)_ | tela preta | — |
+| 01:09.3 | s27 | vendedor | Mas a colher não tem 38 letras. _(pausa 0.4s)_ | foto m1 (exhibit, push-in, zoom 1.08) | **[FATO f4]** |
+| 01:12.3 | s28 | vendedor | 28 euros e 95. Dá 76 centavos por letra. _(pausa 0.6s)_ | card: Eierschalensollbruchstellenverursacher | **[FATO f10, f4]** |
+| 01:17.4 | s29 | vendedor | É praticamente de graça. _(pausa 0.3s)_ | card: Eierschalensollbruchstellenverursacher | *[ficção]* |
+| 01:19.6 | s30 | — | _(sem fala, 1.4s)_ [som: tap] | card: Eierschalensollbruchstellenverursacher · carimbo "AGUARDANDO NECESSIDADE" | — |
+| 01:21.0 | s31 | vendedor | Você não precisava. [som: chime] _(pausa 0.3s antes, pausa 0.5s)_ | endcard: Você não precisava. Até agora. | *[ficção]* |
+| 01:23.2 | s32 | vendedor | Até agora. _(pausa 1.3s)_ | endcard: Você não precisava. Até agora. | *[ficção]* |
 
 ## Fatos usados
 
@@ -97,3 +97,4 @@ Legenda: **[FATO fN]** = afirmação sobre o produto real, ancorada em fonte; *[
 - v5: Notas de classificação fato/ficção nas falas mistas (s02, s22, s27, s28). Sem mudança de áudio ou imagem.
 - v6: Legenda de som '(toc, toc)' na interrupção da colega, para quem assiste sem áudio.
 - v7: Sem cortes entre fotos: o aparelho, o ovo e a demonstração viram uma ilustração 3D própria (three.js) em planos de câmera contínuos — abertura, demonstração, edição com ametista e interrupção. Fotos reais só como evidência emoldurada (tesoura e foto do mesmo tipo de aparelho). A foto CC BY-SA deixou de ser usada.
+- v8: Voz mais rápida (vendedor 1,04; colega 1,05, em config/channel.json); 'Puxa a esfera.' com velocidade reduzida só nessa fala (speedFactor 0,88) para a voz não engolir a palavra.

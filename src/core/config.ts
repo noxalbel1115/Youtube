@@ -32,7 +32,7 @@ export const Config = z.object({
       voices: z.record(z.string(), VoiceCfg),
       kokoro: z.object({model: z.string(), voicesDir: z.string(), lang: z.string()}),
       piper: z.object({voicesDir: z.string()}),
-      elevenlabs: z.object({modelId: z.string()}),
+      elevenlabs: z.object({modelId: z.string(), commercialLicenseConfirmed: z.boolean().default(false)}),
     }),
     asr: z.object({provider: z.literal('faster-whisper'), model: z.string()}),
     media: z.object({allowedLicenses: z.array(z.string())}),

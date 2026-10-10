@@ -2,9 +2,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {readJson, sha256File, nowIso, addCost} from '../core/state.js';
 import {log} from '../core/log.js';
-import type {YoutubeState} from '../schemas.js';
 import * as yt from '../youtube/client.js';
 import {accessToken} from '../youtube/auth.js';
+import {VoiceManifest, type YoutubeState} from '../schemas.js';
+import {voiceLicenseIssue} from '../providers/tts/index.js';
 import {BlockedError, type Stage, type Ctx} from './types.js';
 
 /** Operacoes remotas usadas pelo upload. Injetaveis para testes (ver test/upload.test.ts). */
@@ -38,6 +39,10 @@ export function uploadGate(ctx: Ctx): {privacyStatus: 'private' | 'unlisted' | '
     const when = new Date(ctx.flags.publishAt);
     if (Number.isNaN(when.getTime()) || when.getTime() < Date.now() + 15 * 60 * 1000) throw new BlockedError('publishAt invalido ou a menos de 15 min no futuro (data passada publica imediatamente).');
     publishAt = when.toISOString();
+  }
+  if (fs.existsSync(ctx.p.voice)) {
+    const issue = voiceLicenseIssue([...new Set(VoiceManifest.parse(readJson(ctx.p.voice)).lines.map((l) => l.provider))], ctx.cfg);
+    if (issue) throw new BlockedError(`Base de uso da voz: ${issue}`);
   }
   const review = fs.existsSync(ctx.p.verifyReport) ? readJson<any>(ctx.p.verifyReport) : null;
   if (!review || review.manualReview?.status !== 'aprovado' || review.sha256 !== sha256File(ctx.p.render)) {

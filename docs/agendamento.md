@@ -63,8 +63,13 @@ como artefato). Em repositório público o artefato é público, então isso pre
 ## Decisões pendentes (suas)
 
 1. Frequência inicial (sugestão: pesquisa semanal + 1 episódio por semana).
-2. Orçamento: só o plano atual (provedor `agent`, voz local, custo marginal zero) ou API paga (texto/voz) com teto
-   por episódio em `budget.maxUsdPerEpisode`.
+2. Orçamento: só o plano atual (provedor `agent`, custo marginal zero) ou API paga (texto/voz) com teto por
+   episódio em `budget.maxUsdPerEpisode`. A voz atual é a ElevenLabs (paga): uma Routine só a usa com autorização
+   permanente sua (teto em `budget.maxUsdPerEpisode` ou instrução explícita na tarefa para `--authorize-paid-tts`);
+   sem isso a etapa de voz fica bloqueada e o PR registra o bloqueio.
 3. Repositório público ou privado (afeta onde o MP4 e os rascunhos ficam).
 4. Autorizar a integração com o canal (projeto Google Cloud, cliente OAuth, app "Em produção").
-5. Voz: manter Kokoro (gratuita, Apache-2.0, sotaque sintético perceptível) ou contratar provedor comercial.
+5. Voz: ElevenLabs `eleven_v4` adotada no piloto (síntese completa de um episódio de ~880 caracteres: 98 créditos
+   informados pela API em 10/10/2026; o plano Starter traz 30.000 créditos/mês). Para publicar, as falas precisam
+   ter sido geradas durante assinatura paga (`providers.tts.elevenlabs.commercialLicenseConfirmed`). Kokoro segue
+   como alternativa gratuita.

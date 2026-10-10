@@ -2,14 +2,18 @@
   "schemaVersion": 1,
   "episodeId": "ep001-eierschalensollbruchstellenverursacher",
   "createdAt": "2026-10-10T21:02:48.077Z",
-  "updatedAt": "2026-10-10T22:55:49.632Z",
-  "currentStage": "package",
+  "updatedAt": "2026-10-10T23:54:48.720Z",
+  "currentStage": "render",
   "productSlug": "drop-weight-egg-topper",
   "pick": {
     "slug": "drop-weight-egg-topper",
     "reason": "A interrupcao da realidade funciona so com som (colher batendo no ovo), essencial sem filmagem propria; o nome alemao de 38 letras e o tom burocratico casam com o Departamento; fatos fortes e verificados na loja do fabricante (talheres adicionais, tres designers, edicao com pedra preciosa, edicao de Natal) e no DWDS; o fatiador de banana tem mais fotos, mas e meme de 2012 e sua interrupcao seria muda."
   },
-  "scriptVersion": 8,
+  "paidTtsAuthorization": {
+    "at": "2026-10-10T23:45:41.105Z",
+    "note": "Usuario autorizou no chat em 10/10/2026: 'faca a substituicao da voz no video, use o modelo bom' (ElevenLabs eleven_v4)"
+  },
+  "scriptVersion": 10,
   "stages": {
     "research": {
       "status": "done",
@@ -50,55 +54,55 @@
     },
     "script": {
       "status": "done",
-      "attempts": 9,
-      "startedAt": "2026-10-10T22:38:42.768Z",
-      "finishedAt": "2026-10-10T22:38:42.773Z",
+      "attempts": 11,
+      "startedAt": "2026-10-10T23:48:45.204Z",
+      "finishedAt": "2026-10-10T23:48:45.210Z",
       "seconds": 0,
-      "inputHash": "1727ea24647e54c2f936901fff009c0a2b0495fb73f7fcaa30db63eaf44d511a",
+      "inputHash": "bd88337b8d1723389568dda74d531a8d79af723d25bfa569986c19717f555f88",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/script.json",
-        "episodes/ep001-eierschalensollbruchstellenverursacher/script-history/v8.json"
+        "episodes/ep001-eierschalensollbruchstellenverursacher/script-history/v10.json"
       ],
-      "note": "roteiro v8, 32 beats, ~90s estimados"
+      "note": "roteiro v10, 32 beats, ~90s estimados"
     },
     "voice": {
       "status": "done",
-      "attempts": 10,
-      "startedAt": "2026-10-10T22:38:42.774Z",
-      "finishedAt": "2026-10-10T22:38:50.749Z",
-      "seconds": 8,
-      "inputHash": "2b70b4847083beb3126c2a0862547f1f815987e4287c9cdfef0ea488fafc03d8",
+      "attempts": 15,
+      "startedAt": "2026-10-10T23:53:44.471Z",
+      "finishedAt": "2026-10-10T23:54:39.887Z",
+      "seconds": 55.4,
+      "inputHash": "6bf0499b819daebb906cdb8c7f03d14dcd6c358f7c15e6d51dcb2325cec9f563",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/voice.json"
       ],
-      "note": "27 falas, 57.5s de fala; 2 com divergencia de transcricao"
+      "note": "27 falas, 58.2s de fala; 0 com divergencia de transcricao"
     },
     "timeline": {
       "status": "done",
-      "attempts": 10,
-      "startedAt": "2026-10-10T22:38:50.751Z",
-      "finishedAt": "2026-10-10T22:38:50.762Z",
+      "attempts": 13,
+      "startedAt": "2026-10-10T23:54:39.890Z",
+      "finishedAt": "2026-10-10T23:54:39.905Z",
       "seconds": 0,
-      "inputHash": "dd46f3a835bbf652cd95a4e1576ab2dfc515acd5174174333f1ebf51f87808df",
+      "inputHash": "4bfd5a485b1a13631bf6f9313c95e79ffaaea59f90cbeaece67afd1543399902",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/timeline.json"
       ],
-      "note": "85.40s, 32 beats, 41 blocos de legenda, 2 midias"
+      "note": "86.00s, 32 beats, 41 blocos de legenda, 2 midias"
     },
     "render": {
-      "status": "done",
-      "attempts": 8,
-      "startedAt": "2026-10-10T22:39:08.766Z",
+      "status": "running",
+      "attempts": 10,
+      "startedAt": "2026-10-10T23:54:48.719Z",
       "finishedAt": "2026-10-10T22:54:51.000Z",
       "seconds": 942.2,
       "inputHash": "4066a72b022c59644b23a47ba2a70e595179b642c8f4511faa1299eea46ee272",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/episode.mp4"
       ],
-      "note": "render 929s; loudness antes da normalizacao -19.98 LUFS; sha256 ce5319aa78cc"
+      "note": "invalidado: script mudou"
     },
     "verify": {
-      "status": "done",
+      "status": "pending",
       "attempts": 7,
       "startedAt": "2026-10-10T22:54:51.037Z",
       "finishedAt": "2026-10-10T22:55:43.435Z",
@@ -108,10 +112,10 @@
         "episodes/ep001-eierschalensollbruchstellenverursacher/verify-report.json",
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/verify/contact-sheet.jpg"
       ],
-      "note": "15/17 ok, 2 aviso(s)"
+      "note": "invalidado: script mudou"
     },
     "package": {
-      "status": "done",
+      "status": "pending",
       "attempts": 10,
       "startedAt": "2026-10-10T22:55:43.470Z",
       "finishedAt": "2026-10-10T22:55:49.632Z",
@@ -122,7 +126,7 @@
         "episodes/ep001-eierschalensollbruchstellenverursacher/package/captions.pt-BR.srt",
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/thumbnail.png"
       ],
-      "note": "titulo: \"38 letras para abrir um ovo | Protocolo 001\"; descricao 2051 bytes"
+      "note": "invalidado: script mudou"
     },
     "upload": {
       "status": "pending",
@@ -173,69 +177,6 @@
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
       "at": "2026-10-10T21:32:41.138Z"
-    },
-    {
-      "stage": "script",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 0,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-10T22:38:42.773Z"
-    },
-    {
-      "stage": "script",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 0,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-10T22:38:42.773Z"
-    },
-    {
-      "stage": "voice",
-      "item": "tts-cpu",
-      "kind": "observed",
-      "amount": 2.4,
-      "unit": "seconds",
-      "basis": "1 fala(s) sintetizadas localmente na ultima sintese (sem cobranca por uso)",
-      "at": "2026-10-10T22:38:45.179Z"
-    },
-    {
-      "stage": "voice",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 8,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-10T22:38:50.749Z"
-    },
-    {
-      "stage": "voice",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 91.6,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-10T22:38:50.750Z"
-    },
-    {
-      "stage": "timeline",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 0,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-10T22:38:50.762Z"
-    },
-    {
-      "stage": "timeline",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 0,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-10T22:38:50.762Z"
     },
     {
       "stage": "render",
@@ -290,6 +231,78 @@
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
       "at": "2026-10-10T22:55:49.632Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-10T23:48:45.210Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-10T23:48:45.210Z"
+    },
+    {
+      "stage": "voice",
+      "item": "elevenlabs-credits",
+      "kind": "observed",
+      "amount": 203,
+      "unit": "elevenlabs-credits",
+      "basis": "creditos informados pela API (cabecalho character-cost) para 872 caracteres na ultima sintese (26 fala(s)); valor acumulado do episodio, inclusive ressinteses. Custo em dinheiro depende do plano contratado.",
+      "at": "2026-10-10T23:51:05.106Z"
+    },
+    {
+      "stage": "voice",
+      "item": "tts-tempo",
+      "kind": "observed",
+      "amount": 27.4,
+      "unit": "seconds",
+      "basis": "26 fala(s) sintetizadas na ultima sintese (elevenlabs)",
+      "at": "2026-10-10T23:51:08.142Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 55.4,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-10T23:54:39.887Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 317.4,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-10T23:54:39.887Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-10T23:54:39.905Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-10T23:54:39.905Z"
     }
   ],
   "errors": [],

@@ -12,3 +12,4 @@ episodes/*/build/
 # Credenciais nunca entram no repositorio
 *token*.json
 client_secret*.json
+/build/

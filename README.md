@@ -18,7 +18,7 @@ research → select → media → script → voice → timeline → render → v
 | select | pontua candidatos; elimina quem não tem mídia licenciada, fontes de fabricante/loja ou já foi usado | `selection.json`, `product.json` |
 | media | confere a licença **na origem** (Commons/Openverse), baixa, registra hash, condições e atribuição | `media.json` |
 | script | valida o roteiro: falas factuais → fatos → fontes; mídia só se liberada; versiona | `script.json`, `script-history/` |
-| voice | TTS por personagem (Kokoro local), corta silêncio, nivela, transcreve de volta (Whisper) | `build/voice.json` |
+| voice | TTS por personagem (ElevenLabs ou Kokoro local), ajusta andamento, corta silêncio, nivela, transcreve de volta (Whisper) | `build/voice.json` |
 | timeline | quadros, pausas, legendas sincronizadas por palavra, efeitos e ambiente de sala | `build/timeline.json` |
 | render | Remotion → MP4 1080×1920 H.264/AAC; cenas 3D próprias (three.js, WebGL por software); loudness −14 LUFS em duas passagens | `build/episode.mp4` |
 | verify | formato, duração, quadros pretos, silêncios, loudness, licenças, fatos, transcrição, legendas, folha de contato | `verify-report.json` |
@@ -67,9 +67,20 @@ expirou, o canal é consultado pelo marcador `ref:` da descrição antes de qual
 `config/channel.json → providers`:
 - **Texto** (`llm.research`, `llm.script`): `agent` (Claude Code escreve os JSON; padrão) ou `anthropic` (API, exige
   `ANTHROPIC_API_KEY` e orçamento).
-- **Voz** (`tts.voices.<personagem>`): `kokoro` (local, Apache-2.0; padrão), `piper` (local; vozes pt-BR derivadas de
-  dataset só-pesquisa — não publicar), `elevenlabs` (pago).
-- Provedores pagos são recusados enquanto `budget.maxUsdPerEpisode = 0`.
+- **Voz** (`tts.voices.<personagem>`): `elevenlabs` (pago; atual, modelo `eleven_v4`, vozes brasileiras da
+  biblioteca), `kokoro` (local, Apache-2.0; alternativa gratuita), `piper` (local; vozes pt-BR derivadas de dataset
+  só-pesquisa — não publicar).
+- Provedores pagos são recusados enquanto `budget.maxUsdPerEpisode = 0`, salvo autorização explícita do episódio:
+  `npm run dnn -- run <id> --authorize-paid-tts "quem autorizou e como"` (fica gravada no `state.json`). Os créditos
+  informados pela API ficam em `state.costs`.
+- Chave da ElevenLabs: variável `ELEVENLABS_API_KEY` ou, na nuvem, *network secret* para `api.elevenlabs.io`
+  (cabeçalho `xi-api-key`, sem prefixo). `npm run dnn` já define `NODE_USE_ENV_PROXY=1` para o `fetch` do Node usar o proxy.
+- O `eleven_v4` ignora o parâmetro de velocidade da API (medido); a velocidade configurada é aplicada localmente
+  com `atempo` do FFmpeg, sem alterar o tom.
+- Amostras A/B fora do pipeline: `npx tsx scripts/voice-ab.ts --voice <id> --label <nome> --model eleven_v4 --confirm-paid`.
+- **Licença da voz:** áudio da ElevenLabs só pode ser publicado com fins comerciais se foi gerado durante uma
+  assinatura paga. Até `providers.tts.elevenlabs.commercialLicenseConfirmed = true`, o `verify` avisa e o upload
+  fica bloqueado.
 
 ## Visual: fotos licenciadas + ilustração 3D própria
 
@@ -83,5 +94,6 @@ como evidência emoldurada. Toda cena 3D leva o rótulo "ilustração" na tela: 
 - Mídia: só CC0, domínio público, CC BY e CC BY-SA, verificadas na origem. BY-SA gera aviso (compartilha-igual).
 - Remotion: gratuito para pessoa física e empresas com até 3 funcionários (ver licença do Remotion).
 - Kokoro-82M: Apache-2.0. faster-whisper/Whisper: MIT. IBM Plex: OFL.
+- ElevenLabs: licença comercial só para áudio gerado em assinatura paga; plano gratuito exige "elevenlabs.io" no título e proíbe uso comercial.
 
 Ver também: `docs/relatorio-piloto.md` e `docs/agendamento.md`.

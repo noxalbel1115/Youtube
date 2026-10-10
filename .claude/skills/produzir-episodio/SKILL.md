@@ -32,5 +32,8 @@ Você opera o pipeline deste repositório. O código faz as etapas determinísti
 
 - Nunca rode `upload` sem instrução explícita do usuário na tarefa; mesmo então, só privado ou agendado conforme
   `config/channel.json`. Nunca altere `youtube.allowPublic`, `uploadEnabled` ou orçamento por conta própria.
-- Não contrate serviços nem ative provedores pagos.
+- Não contrate serviços nem ative provedores pagos. Nunca use `--authorize-paid-tts` sem instrução explícita do
+  usuário na tarefa: a voz atual (ElevenLabs) é paga, então sem essa instrução a etapa `voice` fica bloqueada —
+  registre o bloqueio no PR em vez de trocar a voz para o Kokoro por conta própria.
+- Nunca marque `providers.tts.elevenlabs.commercialLicenseConfirmed` por conta própria.
 - Produtos de acessibilidade ou profissionais: a piada é o exagero do vendedor, nunca o público.

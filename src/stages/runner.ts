@@ -35,6 +35,10 @@ export async function runPipeline(id: string, opts: {from?: StageName; to?: Stag
   const state = loadState(id);
   const p = epPaths(id);
   const ctx: Ctx = {id, state, cfg, p, flags: opts.flags, save: () => saveState(state)};
+  if (opts.flags.authorizePaidTts) {
+    state.paidTtsAuthorization = {at: nowIso(), note: opts.flags.authorizePaidTts};
+    saveState(state);
+  }
 
   const fromIdx = opts.from ? STAGES.indexOf(opts.from) : 0;
   // Por padrao o pipeline para antes do upload: upload so roda quando pedido explicitamente.

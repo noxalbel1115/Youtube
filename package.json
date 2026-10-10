@@ -8,7 +8,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "dnn": "tsx src/cli.ts",
+    "dnn": "NODE_USE_ENV_PROXY=1 tsx src/cli.ts",
     "studio": "remotion studio src/remotion/index.ts",
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test test/*.test.ts",

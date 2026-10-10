@@ -53,6 +53,7 @@ function flagsFrom(opts: Record<string, string | true>): Flags {
     pick: typeof opts.pick === 'string' ? opts.pick : undefined,
     pickReason: typeof opts.reason === 'string' ? opts.reason : undefined,
     offline: !!opts.offline,
+    authorizePaidTts: typeof opts['authorize-paid-tts'] === 'string' ? (opts['authorize-paid-tts'] as string) : undefined,
     confirmUpload: !!opts['confirm-upload'],
     privacy: typeof opts.privacy === 'string' ? (opts.privacy as Flags['privacy']) : undefined,
     publishAt: typeof opts['publish-at'] === 'string' ? (opts['publish-at'] as string) : undefined,

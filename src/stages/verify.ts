@@ -5,6 +5,7 @@ import {readJson, sha256File, writeJsonAtomic} from '../core/state.js';
 import {PYTHON_BIN, ROOT, rel} from '../core/paths.js';
 import {run, ffprobeJson} from '../core/exec.js';
 import {wordErrorRate} from '../core/text.js';
+import {voiceLicenseIssue} from '../providers/tts/index.js';
 import type {Stage} from './types.js';
 
 interface Check {
@@ -108,6 +109,8 @@ export const verifyStage: Stage = {
     });
     add('midia.licencas', bad.length === 0, bad.length ? `sem base de uso: ${bad.join(', ')}` : `${new Set(usedIds).size} midia(s), todas com licenca verificada na origem`);
     const bySa = registry.items.filter((i) => usedIds.includes(i.id) && i.license === 'by-sa');
+    const voiceIssue = voiceLicenseIssue([...new Set(voice.lines.map((l) => l.provider))], ctx.cfg);
+    add('voz.licenca', !voiceIssue, voiceIssue ?? `vozes: ${[...new Set(voice.lines.map((l) => l.provider))].join(', ')}`, 'warning');
     add('midia.compartilha-igual', bySa.length === 0, bySa.length ? `${bySa.length} midia(s) CC BY-SA: revisar implicacao de licenciamento do video antes de publicar` : 'nenhuma midia BY-SA', 'warning');
 
     // 7. Falas factuais ancoradas em fatos com fonte

@@ -74,3 +74,14 @@ test('trilha 3D: junta deixas iguais consecutivas e marca o impacto no "clack"',
     {cue: 'drop', start: 20, end: 30, impact: 27},
   ]);
 });
+
+test('voz ElevenLabs sem assinatura paga confirmada nao tem base de uso para publicar', async () => {
+  const {voiceLicenseIssue} = await import('../src/providers/tts/index.js');
+  const {loadConfig} = await import('../src/core/config.js');
+  const cfg = loadConfig();
+  cfg.providers.tts.elevenlabs.commercialLicenseConfirmed = false;
+  assert.match(voiceLicenseIssue(['elevenlabs'], cfg) ?? '', /assinatura paga/);
+  assert.equal(voiceLicenseIssue(['kokoro'], cfg), null);
+  cfg.providers.tts.elevenlabs.commercialLicenseConfirmed = true;
+  assert.equal(voiceLicenseIssue(['elevenlabs', 'kokoro'], cfg), null);
+});

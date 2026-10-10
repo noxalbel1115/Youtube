@@ -11,6 +11,8 @@ export interface Flags {
   privacy?: 'private' | 'unlisted' | 'public';
   publishAt?: string;
   offline?: boolean;
+  /** Autorizacao registrada no estado para voz paga neste episodio (texto: quem autorizou e como). */
+  authorizePaidTts?: string;
 }
 
 export interface Ctx {

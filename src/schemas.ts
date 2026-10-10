@@ -212,6 +212,8 @@ export const Script = z.object({
   logline: z.string(),
   arc: z.array(z.string()).min(3).describe('Progressao dramatica em etapas.'),
   pronunciations: z.record(z.string(), z.string()).default({}),
+  /** Grafias foneticas que so valem para um provedor de voz (ex.: kokoro), somadas a pronunciations. */
+  providerPronunciations: z.record(z.string(), z.record(z.string(), z.string())).default({}),
   beats: z.array(Beat).min(4),
   packaging: z.object({
     title: z.string().max(100),
@@ -338,6 +340,8 @@ export const EpisodeState = z.object({
   productSlug: z.string().optional(),
   /** Escolha editorial persistida (--pick/--reason) para que reexecucoes nao revertam a selecao. */
   pick: z.object({slug: z.string(), reason: z.string()}).optional(),
+  /** Autorizacao explicita (--authorize-paid-tts) para usar voz paga neste episodio, mesmo com budget zerado. */
+  paidTtsAuthorization: z.object({at: z.string(), note: z.string()}).optional(),
   scriptVersion: z.number().optional(),
   stages: z.record(z.string(), StageState),
   artifacts: z.record(z.string(), z.object({path: z.string(), sha256: z.string().optional(), bytes: z.number().optional()})),

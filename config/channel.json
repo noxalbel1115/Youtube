@@ -30,22 +30,22 @@
       }
     },
     "tts": {
-      "$comment": "Provedor e voz por personagem. kokoro = local, pesos Apache-2.0. piper = local, vozes pt_BR derivadas de dataset de licenca so-pesquisa (nao publicar). elevenlabs = API paga (exige ELEVENLABS_API_KEY).",
+      "$comment": "Provedor e voz por personagem. elevenlabs = API paga (chave em ELEVENLABS_API_KEY ou network secret do ambiente); exige budget.maxUsdPerEpisode > 0 ou --authorize-paid-tts no episodio. Vozes atuais: biblioteca da ElevenLabs, sotaque brasileiro (vendedor 'Paulo - Expressive and Confident', colega 'Scheila - Serious and Direct', locutor 'Diego - Confident Announcer', ainda nao usado em episodio). Alternativa gratuita local: kokoro (pesos Apache-2.0) com vendedor pm_alex 1.04, colega pf_dora 1.05, locutor pm_santa 0.95. piper = local, vozes pt_BR de dataset de licenca so-pesquisa (nao publicar).",
       "voices": {
         "vendedor": {
-          "provider": "kokoro",
-          "voice": "pm_alex",
-          "speed": 1.04
+          "provider": "elevenlabs",
+          "voice": "Qrdut83w0Cr152Yb4Xn3",
+          "speed": 1.1
         },
         "colega": {
-          "provider": "kokoro",
-          "voice": "pf_dora",
+          "provider": "elevenlabs",
+          "voice": "cyD08lEy76q03ER1jZ7y",
           "speed": 1.05
         },
         "locutor": {
-          "provider": "kokoro",
-          "voice": "pm_santa",
-          "speed": 0.95
+          "provider": "elevenlabs",
+          "voice": "rpNe0HOx7heUulPiOEaG",
+          "speed": 1.0
         }
       },
       "kokoro": {
@@ -57,7 +57,9 @@
         "voicesDir": "models/piper"
       },
       "elevenlabs": {
-        "modelId": "eleven_multilingual_v2"
+        "modelId": "eleven_v4",
+        "commercialLicenseConfirmed": false,
+        "$comment": "commercialLicenseConfirmed: marque true somente se as falas foram geradas durante assinatura paga (Starter ou superior). Sem isso, verify avisa e o upload fica bloqueado."
       }
     },
     "asr": {
@@ -98,7 +100,7 @@
     "tokenFile": "~/.config/dnn/youtube-token.json"
   },
   "budget": {
-    "$comment": "Teto por episodio para provedores pagos. Sem autorizacao, todos zerados: o pipeline recusa provedores pagos.",
+    "$comment": "Teto em dinheiro por episodio para provedores pagos. Zerado: provedores pagos so rodam num episodio autorizado explicitamente com --authorize-paid-tts (registrado no state.json). Creditos consumidos ficam em state.costs.",
     "maxUsdPerEpisode": 0
   }
 }

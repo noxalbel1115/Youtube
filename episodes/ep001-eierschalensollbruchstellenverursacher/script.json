@@ -1,5 +1,5 @@
 {
- "version": 8,
+ "version": 10,
  "episodeId": "ep001-eierschalensollbruchstellenverursacher",
  "productSlug": "drop-weight-egg-topper",
  "workingTitle": "Protocolo 001 — 38 letras para abrir um ovo",
@@ -12,10 +12,16 @@
   "Recuperação frágil (edição de Natal) e colapso: o próprio fabricante cita talheres adicionais",
   "Última tentativa de fechar a venda: preço por letra. Carimbo: aguardando necessidade."
  ],
- "pronunciations": {
-  "Eierschalensollbruchstellenverursacher": "áier xálen zól brúrr chtélen fér úr zárrer",
-  "Sueli": "Suéli",
-  "colher": "colhér"
+ "pronunciations": {},
+ "providerPronunciations": {
+  "kokoro": {
+   "Eierschalensollbruchstellenverursacher": "áier xálen zól brúrr chtélen fér úr zárrer",
+   "Sueli": "Suéli",
+   "colher": "colhér"
+  },
+  "elevenlabs": {
+   "talheres": "talhéres"
+  }
  },
  "beats": [
   {
@@ -627,6 +633,14 @@
   {
    "version": 8,
    "note": "Voz mais rápida (vendedor 1,04; colega 1,05, em config/channel.json); 'Puxa a esfera.' com velocidade reduzida só nessa fala (speedFactor 0,88) para a voz não engolir a palavra."
+  },
+  {
+   "version": 9,
+   "note": "Voz trocada para ElevenLabs (eleven_v4; vendedor 'Paulo', colega 'Scheila', vozes brasileiras da biblioteca). Grafias foneticas passam a valer só para o Kokoro: a ElevenLabs lê o nome alemão melhor na grafia original e não precisa das correções de 'Sueli' e 'colher'."
+  },
+  {
+   "version": 10,
+   "note": "ElevenLabs: 'talheres' grafado 'talhéres' só para a síntese (a transcrição ouviu 'talhares' duas vezes)."
   }
  ]
 }

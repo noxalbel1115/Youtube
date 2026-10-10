@@ -94,10 +94,10 @@ interface Pose {
 /** Camera de cada deixa: move de 'from' para 'to' ao longo do trecho. */
 const CAMERA: Record<string, {from: Pose; to: Pose; snap?: boolean}> = {
   hero: {from: {pos: [-0.05, 0.75, 4.4], target: [-0.05, 0.38, 0]}, to: {pos: [EGG_X, 0.95, 1.55], target: [EGG_X, 0.6, 0]}},
-  place: {from: {pos: [0.45, 1.2, 3.9], target: [0.12, 0.85, 0]}, to: {pos: [0.4, 1.35, 3.4], target: [0.28, 0.9, 0]}},
-  lift: {from: {pos: [0.4, 1.35, 3.3], target: [0.28, 0.9, 0]}, to: {pos: [0.42, 1.45, 3.1], target: [EGG_X, 1.0, 0]}},
-  drop: {from: {pos: [0.42, 1.45, 3.1], target: [EGG_X, 1.0, 0]}, to: {pos: [0.42, 1.42, 3.05], target: [EGG_X, 0.98, 0]}},
-  hold: {from: {pos: [0.42, 1.42, 3.05], target: [EGG_X, 0.98, 0]}, to: {pos: [0.38, 1.1, 2.4], target: [EGG_X, 0.72, 0]}},
+  place: {from: {pos: [0.45, 1.2, 3.9], target: [0.12, 0.85, 0]}, to: {pos: [0.42, 1.5, 3.55], target: [0.3, 1.18, 0]}},
+  lift: {from: {pos: [0.42, 1.5, 3.55], target: [0.3, 1.18, 0]}, to: {pos: [0.42, 1.62, 3.55], target: [EGG_X, 1.3, 0]}},
+  drop: {from: {pos: [0.42, 1.62, 3.55], target: [EGG_X, 1.3, 0]}, to: {pos: [0.42, 1.6, 3.5], target: [EGG_X, 1.28, 0]}},
+  hold: {from: {pos: [0.42, 1.6, 3.5], target: [EGG_X, 1.28, 0]}, to: {pos: [0.38, 1.15, 2.5], target: [EGG_X, 0.76, 0]}},
   open: {from: {pos: [0.38, 1.1, 2.4], target: [EGG_X, 0.72, 0]}, to: {pos: [EGG_X + 0.08, 1.25, 1.45], target: [EGG_X, 0.58, 0]}},
   gem: {from: {pos: [STAND_X + 1.3, 0.85, 2.3], target: [STAND_X, 0.42, 0]}, to: {pos: [STAND_X + 0.55, 0.8, 2.5], target: [STAND_X, 0.4, 0]}},
   gemClose: {from: {pos: [STAND_X + 0.4, 0.55, 1.0], target: [STAND_X, 0.32, 0]}, to: {pos: [STAND_X + 0.28, 0.5, 0.82], target: [STAND_X, 0.32, 0]}},

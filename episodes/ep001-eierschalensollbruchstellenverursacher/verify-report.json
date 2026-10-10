@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-10T21:44:35.443Z",
+  "verifiedAt": "2026-10-10T22:25:58.781Z",
   "file": "episodes/ep001-eierschalensollbruchstellenverursacher/build/episode.mp4",
-  "sha256": "c78f70c3de90ab4ef5cd995cbc70f7a55c66051745424f2ed44c90b13ff871b2",
-  "durationSeconds": 88.5,
+  "sha256": "2b52e169d5fdff095a6d28f20aa20441cc1a0f0c4ded737cef2b3f25b8a7c269",
+  "durationSeconds": 88.7,
   "automatic": [
     {
       "id": "formato.resolucao",
@@ -26,7 +26,7 @@
       "id": "formato.duracao",
       "ok": true,
       "severity": "error",
-      "detail": "88.50s (alvo 60-90s)"
+      "detail": "88.70s (alvo 60-90s)"
     },
     {
       "id": "formato.shorts",
@@ -62,19 +62,19 @@
       "id": "arquivos.presentes",
       "ok": true,
       "severity": "error",
-      "detail": "36 arquivos referenciados presentes"
+      "detail": "35 arquivos referenciados presentes"
     },
     {
       "id": "midia.licencas",
       "ok": true,
       "severity": "error",
-      "detail": "3 midia(s), todas com licenca verificada na origem"
+      "detail": "2 midia(s), todas com licenca verificada na origem"
     },
     {
       "id": "midia.compartilha-igual",
-      "ok": false,
+      "ok": true,
       "severity": "warning",
-      "detail": "1 midia(s) CC BY-SA: revisar implicacao de licenciamento do video antes de publicar"
+      "detail": "nenhuma midia BY-SA"
     },
     {
       "id": "fatos.ancorados",
@@ -107,33 +107,10 @@
       "detail": "todos os blocos com ate 38 caracteres (max. 2 linhas)"
     }
   ],
-  "finalTranscript": "Bom dia, trago uma solução alemã para um problema que o brasileiro ignora gerações. O topo do ovo. O nome técnico é Eyer Schallen Zollbruchstellen ferurzacher. Trinta e oito letras, todas dedicadas ao topo de um ovo. Funciona assim, você coloca a cápsula de metal sobre o ovo cozido, puxa a esfera e solta. A casca se rompe em volta do topo sem faca, projetado por três designers. Três. Para quem exige mais, esfera de pedra preciosa. A metgista para o ovo. A concorrência usa tesoura, patente de 1907. Tesoura no café da manhã. Pronto. A Suelle usa colher. A colher não tem edição de natal. O fabricante diz que a tampa sai inclinando o aparelho, ou com auxílio de talheres adicionais. Uma colher, por exemplo. Mas a colher não tem trinta e oito letras. Vinte e oito euros e noventa e cinco dá setenta e seis centavos por letra. É praticamente de graça. Você não precisava. Até agora.",
+  "finalTranscript": "Bom dia, trago uma solução alemã para um problema que o brasileiro ignora gerações. O topo do ovo. O nome técnico é Eyer Schallen Zollbruchstellen ferurzacher. Trinta e oito letras, todas dedicadas ao topo de um ovo. Funciona assim, você coloca a cápsula de metal sobre o ovo cozido, puxa a esfera e solta. A casca se rompe em volta do topo sem faca, projetado por três designers. Três. Para quem exige mais, esfera de pedra preciosa. A metrista para o ovo. A concorrência usa tesoura, patente de 1907. Tesoura no café da manhã. Pronto. A Suelle usa colher. A colher não tem edição de natal. O fabricante diz que a tampa sai inclinando o aparelho, ou com auxílio de talheres adicionais. Uma colher, por exemplo. Mas a colher não tem trinta e oito letras. Vinte e oito euros e noventa e cinco dá setenta e seis centavos por letra. É praticamente de graça. Você não precisava. Até agora.",
   "manualReview": {
     "status": "pendente",
-    "sha256": "c78f70c3de90ab4ef5cd995cbc70f7a55c66051745424f2ed44c90b13ff871b2",
-    "at": "2026-10-10T21:45:31.753Z",
-    "by": null,
-    "notes": [
-      {
-        "by": "Claude (inspecao assistida, nao substitui revisao humana)",
-        "at": "2026-10-10T21:45:24.112Z",
-        "text": "v6 (sha c78f70c3de90). Visual: folha de contato (32 beats) e quadros 1080x1920 de s02, s04, s07, s10, s19 (incl. legenda de som '(toc, toc)'), s27 e miniatura. Sem quadros pretos fora do s26; esfera abaixo da faixa institucional em todos os planos; legendas na zona segura (y 1290-1480, x 90-910), max. 2 linhas, tinta sobre papel e branco com contorno sobre foto; colega em italico amarelo; hifenizacao da palavra de 38 letras ok; creditos das fotos visiveis no primeiro uso."
-      },
-      {
-        "by": "Claude (inspecao assistida, nao substitui revisao humana)",
-        "at": "2026-10-10T21:45:26.774Z",
-        "text": "Nitidez: m1 (1024 px) ampliada em tela cheia (s09-s10) levemente mole, aceitavel em celular; m2 e m3 nitidas. Trecho mais longo de cartelas: s22-s25 (~11 s), com aproximacao lenta na citacao."
-      },
-      {
-        "by": "Claude (inspecao assistida, nao substitui revisao humana)",
-        "at": "2026-10-10T21:45:29.219Z",
-        "text": "Audio NAO ouvido (sem capacidade de escuta). Por instrumentos: -13,9 LUFS integrados, pico -1,5 dBTP; ambiente de sala ~30 dB abaixo das falas; pausas nos pontos previstos na forma de onda; transcricao automatica da mixagem final com WER baixo; palavra alema transcrita como aproximacao germanica. Entonacao, naturalidade e timing comico exigem escuta humana."
-      },
-      {
-        "by": "Claude (inspecao assistida, nao substitui revisao humana)",
-        "at": "2026-10-10T21:45:31.753Z",
-        "text": "Licenca: m2 (Soljaguar) e CC BY-SA 3.0. Alternativa sem compartilha-igual: trocar m2 por m1 em s02, s03, s07, s08, s19-s21 e s27 (mediaId no script.json)."
-      }
-    ]
+    "sha256": "2b52e169d5fdff095a6d28f20aa20441cc1a0f0c4ded737cef2b3f25b8a7c269",
+    "notes": []
   }
 }

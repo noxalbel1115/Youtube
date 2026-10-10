@@ -76,17 +76,19 @@ export const MediaExhibit: React.FC<{beat: TimelineBeat}> = ({beat}) => {
   const {width} = useVideoConfig();
   const panelW = width - 2 * SAFE.left;
   const {w, h} = beat.mediaSize!;
-  const panelH = Math.min(1000, Math.round(panelW * (h / w)));
+  // O painel termina acima da zona de legendas (y >= 1290), com espaco para a legenda da figura.
+  const top = 300;
+  const panelH = Math.min(860, Math.round(panelW * (h / w)));
   return (
     <AbsoluteFill style={{background: C.paper}}>
       <PaperTexture />
-      <div style={{position: 'absolute', left: SAFE.left, top: 330, width: panelW, height: panelH, border: `10px solid ${C.white}`, boxShadow: '0 6px 18px rgba(28,35,51,0.18)', overflow: 'hidden'}}>
+      <div style={{position: 'absolute', left: SAFE.left, top, width: panelW, height: panelH, border: `10px solid ${C.white}`, boxShadow: '0 6px 18px rgba(28,35,51,0.18)', overflow: 'hidden'}}>
         <div style={{position: 'relative', width: panelW - 20, height: panelH - 20}}>
           <Photo beat={beat} boxW={panelW - 20} boxH={panelH - 20} />
         </div>
       </div>
       {beat.visual.label ? (
-        <div style={{position: 'absolute', left: SAFE.left, top: 330 + panelH + 22, width: panelW, fontFamily: MONO, fontSize: 30, color: C.inkSoft, letterSpacing: 0.5}}>
+        <div style={{position: 'absolute', left: SAFE.left, top: top + panelH + 18, width: panelW, fontFamily: MONO, fontSize: 28, color: C.inkSoft, letterSpacing: 0.5}}>
           {beat.visual.label}
         </div>
       ) : null}

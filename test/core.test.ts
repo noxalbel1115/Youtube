@@ -63,3 +63,14 @@ test('licenca Commons: GFDL com migration=relicense vale como CC BY-SA 3.0', () 
   assert.equal(r.version, '3.0');
   assert.equal(parseCommonsLicense('{{GFDL}}').license, 'unknown');
 });
+
+test('trilha 3D: junta deixas iguais consecutivas e marca o impacto no "clack"', async () => {
+  const {buildTrack} = await import('../src/remotion/track.js');
+  const beat = (id: string, cue: string | undefined, start: number, dur: number, sfx: number[] = []) =>
+    ({id, startFrame: start, durationFrames: dur, visual: {type: cue ? 'scene3d' : 'card', cue}, sfx: sfx.map((frame) => ({file: 'x', frame, volume: 1})), roomTone: true}) as any;
+  const track = buildTrack([beat('a', 'hero', 0, 10), beat('b', 'hero', 10, 5), beat('c', undefined, 15, 5), beat('d', 'drop', 20, 10, [27])]);
+  assert.deepEqual(track, [
+    {cue: 'hero', start: 0, end: 15},
+    {cue: 'drop', start: 20, end: 30, impact: 27},
+  ]);
+});

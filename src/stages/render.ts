@@ -40,8 +40,9 @@ export async function renderThumbnail(ctx: Ctx, frame: number, text?: string): P
   const serveUrl = await bundleFor(ctx.p.assets);
   // As props precisam ir ja na selecao: o renderStill usa as props resolvidas da composicao.
   const inputProps = {...timeline, thumbnailFrame: frame, thumbnailText: text} as any;
-  const comp = await selectComposition({serveUrl, id: 'Thumbnail', inputProps, browserExecutable: browserExecutable()});
-  await renderStill({composition: comp, serveUrl, output: ctx.p.thumbnail, inputProps, browserExecutable: browserExecutable()});
+  const chromiumOptions = timeline.beats.some((b) => b.visual.type === 'scene3d') ? {gl: 'swangle' as const} : {};
+  const comp = await selectComposition({serveUrl, id: 'Thumbnail', inputProps, browserExecutable: browserExecutable(), chromiumOptions});
+  await renderStill({composition: comp, serveUrl, output: ctx.p.thumbnail, inputProps, browserExecutable: browserExecutable(), chromiumOptions});
   return ctx.p.thumbnail;
 }
 
@@ -61,10 +62,13 @@ export const renderStage: Stage = {
   async run(ctx) {
     const timeline = Timeline.parse(readJson(ctx.p.timeline));
     const exe = browserExecutable();
-    log.info(`navegador: ${exe ?? 'chrome-headless-shell baixado pelo Remotion'}`);
+    // Cenas 3D (three.js) exigem WebGL; sem GPU, a documentacao do Remotion recomenda "swangle" (renderizacao por software).
+    const has3d = timeline.beats.some((b) => b.visual.type === 'scene3d');
+    const chromiumOptions = has3d ? {gl: 'swangle' as const} : {};
+    log.info(`navegador: ${exe ?? 'chrome-headless-shell baixado pelo Remotion'}${has3d ? ' · WebGL por software (swangle)' : ''}`);
     const t0 = Date.now();
     const serveUrl = await bundleFor(ctx.p.assets);
-    const comp = await selectComposition({serveUrl, id: 'Episode', inputProps: timeline as any, browserExecutable: exe});
+    const comp = await selectComposition({serveUrl, id: 'Episode', inputProps: timeline as any, browserExecutable: exe, chromiumOptions});
     let lastPct = -10;
     await renderMedia({
       composition: comp,
@@ -76,6 +80,7 @@ export const renderStage: Stage = {
       outputLocation: ctx.p.renderRaw,
       inputProps: timeline as any,
       browserExecutable: exe,
+      chromiumOptions,
       concurrency: Math.max(1, Math.min(4, (await import('node:os')).cpus().length)),
       onProgress: ({progress}) => {
         const pct = Math.floor(progress * 100);

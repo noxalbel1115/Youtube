@@ -136,7 +136,10 @@ export const Speaker = z.enum(['vendedor', 'colega', 'locutor']);
 export type Speaker = z.infer<typeof Speaker>;
 
 export const Visual = z.object({
-  type: z.enum(['media', 'card', 'factsheet', 'title', 'black', 'endcard']),
+  type: z.enum(['media', 'card', 'factsheet', 'title', 'black', 'endcard', 'scene3d']),
+  /** type=scene3d: cena 3D propria (ex.: "egg-topper") e a deixa deste beat (hero, place, lift, drop, hold, open, gem...). */
+  scene: z.string().optional(),
+  cue: z.string().optional(),
   mediaId: z.string().optional(),
   motion: z.enum(['push-in', 'pull-out', 'pan-left', 'pan-right', 'static', 'snap-in', 'drift']).default('static'),
   /** full = foto ocupa o quadro (recorte vertical); exhibit = foto inteira em painel sobre o papel timbrado. */

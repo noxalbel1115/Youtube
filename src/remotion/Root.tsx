@@ -2,6 +2,7 @@ import React from 'react';
 import {Composition} from 'remotion';
 import type {Timeline} from '../schemas.js';
 import {Episode, Thumbnail} from './Episode.js';
+import {Scene3DPreview} from './Scene3DPreview.js';
 
 // As props reais (timeline.json do episodio) sao passadas pelo renderizador.
 const placeholder: Timeline = {
@@ -40,6 +41,7 @@ export const Root: React.FC = () => (
         return {durationInFrames: t.durationInFrames, fps: t.fps, width: t.width, height: t.height};
       }}
     />
+    <Composition id="Scene3DPreview" component={Scene3DPreview} fps={30} width={1080} height={1920} durationInFrames={520} />
     <Composition id="Thumbnail" component={Thumbnail as React.FC<any>} defaultProps={placeholder} fps={30} width={1080} height={1920} durationInFrames={1} />
   </>
 );

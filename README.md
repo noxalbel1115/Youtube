@@ -20,7 +20,7 @@ research → select → media → script → voice → timeline → render → v
 | script | valida o roteiro: falas factuais → fatos → fontes; mídia só se liberada; versiona | `script.json`, `script-history/` |
 | voice | TTS por personagem (Kokoro local), corta silêncio, nivela, transcreve de volta (Whisper) | `build/voice.json` |
 | timeline | quadros, pausas, legendas sincronizadas por palavra, efeitos e ambiente de sala | `build/timeline.json` |
-| render | Remotion → MP4 1080×1920 H.264/AAC; loudness −14 LUFS em duas passagens | `build/episode.mp4` |
+| render | Remotion → MP4 1080×1920 H.264/AAC; cenas 3D próprias (three.js, WebGL por software); loudness −14 LUFS em duas passagens | `build/episode.mp4` |
 | verify | formato, duração, quadros pretos, silêncios, loudness, licenças, fatos, transcrição, legendas, folha de contato | `verify-report.json` |
 | package | título, descrição com fontes e créditos, tags, SRT, miniatura | `package/` |
 | upload | YouTube: sessão resumível, reconciliação, privacidade explícita — **desligado por padrão** | estado em `state.json` |
@@ -41,7 +41,9 @@ npm run dnn -- new ep002-algum-produto
 npm run dnn -- run ep002-algum-produto   # para em "script" pedindo o roteiro (guia: prompts/roteiro.md)
 npm run dnn -- run ep002-algum-produto   # retoma de onde parou e vai até "package"
 npm run dnn -- status ep002-algum-produto
-npm run studio                           # Remotion Studio para ajustes visuais
+npm run studio                           # Remotion Studio para ajustes visuais (inclui a composição Scene3DPreview)
+npx tsx scripts/preview-stills.ts Episode /tmp/quadros 100 600 --props episodes/<id>/build/timeline.json --public episodes/<id>/build/public
+                                         # quadros isolados para inspeção, sem renderizar tudo
 ```
 
 Retomar após falha: rode o mesmo `run`; etapas concluídas com as mesmas entradas são puladas.
@@ -68,6 +70,13 @@ expirou, o canal é consultado pelo marcador `ref:` da descrição antes de qual
 - **Voz** (`tts.voices.<personagem>`): `kokoro` (local, Apache-2.0; padrão), `piper` (local; vozes pt-BR derivadas de
   dataset só-pesquisa — não publicar), `elevenlabs` (pago).
 - Provedores pagos são recusados enquanto `budget.maxUsdPerEpisode = 0`.
+
+## Visual: fotos licenciadas + ilustração 3D própria
+
+O Opus 5.5 não gera vídeo fotográfico; ele escreve código que é renderizado quadro a quadro. Por isso o produto é
+mostrado como **ilustração 3D própria do tipo de aparelho** (`type: "scene3d"` no roteiro, cenas em
+`src/remotion/components/`), com câmera contínua guiada por deixas (`cue`) de cada beat, e as fotos reais entram
+como evidência emoldurada. Toda cena 3D leva o rótulo "ilustração" na tela: não é filmagem nem demonstração real.
 
 ## Licenças de terceiros
 

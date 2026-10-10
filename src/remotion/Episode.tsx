@@ -4,6 +4,7 @@ import type {Timeline, TimelineBeat} from '../schemas.js';
 import {loadFonts} from './theme.js';
 import {MediaFull, MediaExhibit, TitleCard, TextCard, FactSheet, EndCard} from './components/Visuals.js';
 import {HeaderBand, LowerThird, Captions, FigureLabel} from './components/Overlays.js';
+import {Scene3DShot, buildTrack} from './components/Scene3DShot.js';
 
 loadFonts();
 
@@ -13,6 +14,8 @@ const ROOM_TONE_VOLUME = 0.55;
 const BeatVisual: React.FC<{beat: TimelineBeat; t: Timeline}> = ({beat, t}) => {
   const v = beat.visual;
   switch (v.type) {
+    case 'scene3d':
+      return <Scene3DShot shotStart={beat.startFrame} track={buildTrack(t.beats)} />;
     case 'media':
       return v.layout === 'exhibit' ? <MediaExhibit beat={beat} /> : <MediaFull beat={beat} />;
     case 'title':
@@ -29,20 +32,30 @@ const BeatVisual: React.FC<{beat: TimelineBeat; t: Timeline}> = ({beat, t}) => {
   }
 };
 
+/** Campos que so afetam sobreposicoes (etiqueta, credito) ou deixas da cena 3D nao quebram o plano. */
+function shotKey(b: TimelineBeat): string {
+  const {cue: _c, lowerThird: _l, label: _lb, ...rest} = b.visual;
+  return JSON.stringify(rest) + (b.mediaFile ?? '');
+}
+
 /**
  * Beats consecutivos com o mesmo visual viram um unico plano: a imagem fica parada (ou o movimento
  * continua) enquanto as falas se sucedem, como num plano sustentado de documentario.
  */
 export function groupVisuals(beats: TimelineBeat[]): TimelineBeat[] {
   const out: TimelineBeat[] = [];
+  let prevKey = '';
   for (const b of beats) {
+    const key = shotKey(b);
     const prev = out[out.length - 1];
-    const same = prev && JSON.stringify(prev.visual) === JSON.stringify(b.visual) && prev.mediaFile === b.mediaFile;
-    if (same) out[out.length - 1] = {...prev, durationFrames: prev.durationFrames + b.durationFrames};
+    if (prev && key === prevKey) out[out.length - 1] = {...prev, durationFrames: prev.durationFrames + b.durationFrames};
     else out.push({...b});
+    prevKey = key;
   }
   return out;
 }
+
+const hasHeader = (b: TimelineBeat) => b.visual.type === 'media' || b.visual.type === 'scene3d';
 
 export const Episode: React.FC<Timeline> = (t) => {
   const {fps} = useVideoConfig();
@@ -53,15 +66,25 @@ export const Episode: React.FC<Timeline> = (t) => {
       {shots.map((b) => (
         <Sequence key={b.id} from={b.startFrame} durationInFrames={b.durationFrames} name={`plano ${b.id}`}>
           <BeatVisual beat={b} t={t} />
-          {b.visual.type === 'media' ? <HeaderBand brandName={t.brand.name} caseLabel={caseLabel} /> : null}
-          {b.visual.type === 'media' && b.visual.layout === 'full' && b.visual.label ? <FigureLabel text={b.visual.label} /> : null}
-          {b.visual.lowerThird ? <LowerThird name={t.brand.salesmanName} title={t.brand.salesmanTitle} durationFrames={b.durationFrames} /> : null}
+          {hasHeader(b) ? <HeaderBand brandName={t.brand.name} caseLabel={caseLabel} /> : null}
         </Sequence>
       ))}
+      {/* Sobreposicoes por beat (nao por plano): credito/rotulo e etiqueta do vendedor. */}
+      {t.beats.map((b) => {
+        const label = b.visual.label && (b.visual.type === 'scene3d' || (b.visual.type === 'media' && b.visual.layout === 'full'));
+        return label || b.visual.lowerThird ? (
+          <Sequence key={`o-${b.id}`} from={b.startFrame} durationInFrames={b.durationFrames} name={`sobreposicao ${b.id}`}>
+            {label ? <FigureLabel text={b.visual.label!} /> : null}
+            {b.visual.lowerThird ? <LowerThird name={t.brand.salesmanName} title={t.brand.salesmanTitle} durationFrames={b.durationFrames} /> : null}
+          </Sequence>
+        ) : null;
+      })}
 
       <Captions
         captions={t.captions}
-        paperRanges={shots.filter((b) => ['card', 'factsheet', 'title'].includes(b.visual.type) || (b.visual.type === 'media' && b.visual.layout === 'exhibit')).map((b) => [b.startFrame, b.startFrame + b.durationFrames])}
+        paperRanges={shots
+          .filter((b) => ['card', 'factsheet', 'title'].includes(b.visual.type) || (b.visual.type === 'media' && b.visual.layout === 'exhibit'))
+          .map((b) => [b.startFrame, b.startFrame + b.durationFrames])}
       />
 
       {/* Audio: falas, efeitos e ambiente de sala (o "silencio" do escritorio nunca e silencio digital). */}
@@ -100,7 +123,7 @@ export const Thumbnail: React.FC<Timeline & {thumbnailFrame?: number; thumbnailT
     <AbsoluteFill>
       <Sequence from={-(frame - beat.startFrame)} durationInFrames={beat.durationFrames}>
         <BeatVisual beat={beat} t={t} />
-        {beat.visual.type === 'media' ? <HeaderBand brandName={t.brand.name} caseLabel="PROTOCOLO 001" /> : null}
+        {hasHeader(beat) ? <HeaderBand brandName={t.brand.name} caseLabel="PROTOCOLO 001" /> : null}
       </Sequence>
       {t.thumbnailText ? (
         <div style={{position: 'absolute', left: 64, right: 150, top: 1180, display: 'flex'}}>

@@ -42,13 +42,14 @@ export const voiceStage: Stage = {
         throw new BlockedError(`Voz "${b.speaker}" usa provedor pago (${v.provider}) sem orcamento autorizado (budget.maxUsdPerEpisode = 0).`);
       }
       const spoken = applyPronunciations(b.text, script.pronunciations);
-      const key = sha256(`${v.provider}|${v.voice}|${v.speed}|${spoken}`).slice(0, 12);
+      const speed = Math.round(v.speed * b.speedFactor * 1000) / 1000;
+      const key = sha256(`${v.provider}|${v.voice}|${speed}|${spoken}`).slice(0, 12);
       const raw = path.join(rawDir, `${b.id}-${key}.wav`);
       const final = path.join(ctx.p.lines, `${b.id}-${key}.wav`);
       plan.push({beatId: b.id, speaker: b.speaker, provider: v.provider, voice: v.voice, spoken, raw, final});
       if (!fs.existsSync(final)) {
         const list = byProvider.get(v.provider) ?? [];
-        list.push({id: b.id, text: spoken, voice: v.voice, speed: v.speed, out: raw});
+        list.push({id: b.id, text: spoken, voice: v.voice, speed, out: raw});
         byProvider.set(v.provider, list);
       }
     }

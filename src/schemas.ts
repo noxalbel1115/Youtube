@@ -185,6 +185,8 @@ export const Beat = z.object({
   /** Classificacao editorial da fala. fact = afirma algo sobre o produto real. */
   claim: z.enum(['fact', 'fiction', 'none']).default('none'),
   factIds: z.array(z.string()).default([]),
+  /** Multiplicador da velocidade da voz so nesta fala (ex.: 0.9 para uma palavra que a voz engole). */
+  speedFactor: z.number().min(0.7).max(1.3).default(1),
   /** Silencio antes/depois da fala, em segundos. Pausas sao parte da piada. */
   holdBefore: z.number().min(0).default(0),
   holdAfter: z.number().min(0).default(0.25),

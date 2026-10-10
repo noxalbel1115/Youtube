@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "episodeId": "ep001-eierschalensollbruchstellenverursacher",
   "createdAt": "2026-10-10T21:02:48.077Z",
-  "updatedAt": "2026-10-10T22:26:04.050Z",
-  "currentStage": "package",
+  "updatedAt": "2026-10-10T22:39:08.766Z",
+  "currentStage": "render",
   "productSlug": "drop-weight-egg-topper",
   "pick": {
     "slug": "drop-weight-egg-topper",
     "reason": "A interrupcao da realidade funciona so com som (colher batendo no ovo), essencial sem filmagem propria; o nome alemao de 38 letras e o tom burocratico casam com o Departamento; fatos fortes e verificados na loja do fabricante (talheres adicionais, tres designers, edicao com pedra preciosa, edicao de Natal) e no DWDS; o fatiador de banana tem mais fotos, mas e meme de 2012 e sua interrupcao seria muda."
   },
-  "scriptVersion": 7,
+  "scriptVersion": 8,
   "stages": {
     "research": {
       "status": "done",
@@ -50,55 +50,55 @@
     },
     "script": {
       "status": "done",
-      "attempts": 8,
-      "startedAt": "2026-10-10T22:07:05.462Z",
-      "finishedAt": "2026-10-10T22:07:05.467Z",
+      "attempts": 9,
+      "startedAt": "2026-10-10T22:38:42.768Z",
+      "finishedAt": "2026-10-10T22:38:42.773Z",
       "seconds": 0,
-      "inputHash": "4a1e53b8e538653c519bf788ca68cab3025400f23b7eb956ecec41a8e5110e7a",
+      "inputHash": "1727ea24647e54c2f936901fff009c0a2b0495fb73f7fcaa30db63eaf44d511a",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/script.json",
-        "episodes/ep001-eierschalensollbruchstellenverursacher/script-history/v7.json"
+        "episodes/ep001-eierschalensollbruchstellenverursacher/script-history/v8.json"
       ],
-      "note": "roteiro v7, 32 beats, ~90s estimados"
+      "note": "roteiro v8, 32 beats, ~90s estimados"
     },
     "voice": {
       "status": "done",
-      "attempts": 8,
-      "startedAt": "2026-10-10T22:07:05.468Z",
-      "finishedAt": "2026-10-10T22:07:07.230Z",
-      "seconds": 1.8,
-      "inputHash": "bec8329d03c39ab9d6900195e6823ad04069406096f7fdaa28c87c0bede87f6b",
+      "attempts": 10,
+      "startedAt": "2026-10-10T22:38:42.774Z",
+      "finishedAt": "2026-10-10T22:38:50.749Z",
+      "seconds": 8,
+      "inputHash": "2b70b4847083beb3126c2a0862547f1f815987e4287c9cdfef0ea488fafc03d8",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/voice.json"
       ],
-      "note": "27 falas, 60.9s de fala; 0 com divergencia de transcricao"
+      "note": "27 falas, 57.5s de fala; 2 com divergencia de transcricao"
     },
     "timeline": {
       "status": "done",
-      "attempts": 8,
-      "startedAt": "2026-10-10T22:07:07.232Z",
-      "finishedAt": "2026-10-10T22:07:07.245Z",
+      "attempts": 10,
+      "startedAt": "2026-10-10T22:38:50.751Z",
+      "finishedAt": "2026-10-10T22:38:50.762Z",
       "seconds": 0,
-      "inputHash": "65c3ffa7d59658ea87db80eb3d9be772d44829d6f0a4f52a161b77ac37a19cf0",
+      "inputHash": "dd46f3a835bbf652cd95a4e1576ab2dfc515acd5174174333f1ebf51f87808df",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/timeline.json"
       ],
-      "note": "88.67s, 32 beats, 41 blocos de legenda, 2 midias"
+      "note": "85.40s, 32 beats, 41 blocos de legenda, 2 midias"
     },
     "render": {
-      "status": "done",
-      "attempts": 7,
-      "startedAt": "2026-10-10T22:08:51.721Z",
+      "status": "running",
+      "attempts": 8,
+      "startedAt": "2026-10-10T22:39:08.766Z",
       "finishedAt": "2026-10-10T22:25:08.512Z",
       "seconds": 976.8,
       "inputHash": "419687bf529f34ca3c0c6e485e4126fd4d24da5a735a94a3be3cb9d092bc36c8",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/episode.mp4"
       ],
-      "note": "render 964s; loudness antes da normalizacao -19.71 LUFS; sha256 2b52e169d5fd"
+      "note": "invalidado: voice mudou"
     },
     "verify": {
-      "status": "done",
+      "status": "pending",
       "attempts": 6,
       "startedAt": "2026-10-10T22:25:08.557Z",
       "finishedAt": "2026-10-10T22:25:58.858Z",
@@ -108,10 +108,10 @@
         "episodes/ep001-eierschalensollbruchstellenverursacher/verify-report.json",
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/verify/contact-sheet.jpg"
       ],
-      "note": "17/17 ok, 0 aviso(s)"
+      "note": "invalidado: voice mudou"
     },
     "package": {
-      "status": "done",
+      "status": "pending",
       "attempts": 9,
       "startedAt": "2026-10-10T22:25:58.879Z",
       "finishedAt": "2026-10-10T22:26:04.050Z",
@@ -122,7 +122,7 @@
         "episodes/ep001-eierschalensollbruchstellenverursacher/package/captions.pt-BR.srt",
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/thumbnail.png"
       ],
-      "note": "titulo: \"38 letras para abrir um ovo | Protocolo 001\"; descricao 2051 bytes"
+      "note": "invalidado: voice mudou"
     },
     "upload": {
       "status": "pending",
@@ -173,60 +173,6 @@
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
       "at": "2026-10-10T21:32:41.138Z"
-    },
-    {
-      "stage": "script",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 0,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-10T22:07:05.467Z"
-    },
-    {
-      "stage": "script",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 0,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-10T22:07:05.467Z"
-    },
-    {
-      "stage": "voice",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 1.8,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-10T22:07:07.230Z"
-    },
-    {
-      "stage": "voice",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 6.8,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-10T22:07:07.230Z"
-    },
-    {
-      "stage": "timeline",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 0,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-10T22:07:07.245Z"
-    },
-    {
-      "stage": "timeline",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 0,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-10T22:07:07.245Z"
     },
     {
       "stage": "render",
@@ -281,6 +227,69 @@
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
       "at": "2026-10-10T22:26:04.050Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-10T22:38:42.773Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-10T22:38:42.773Z"
+    },
+    {
+      "stage": "voice",
+      "item": "tts-cpu",
+      "kind": "observed",
+      "amount": 2.4,
+      "unit": "seconds",
+      "basis": "1 fala(s) sintetizadas localmente na ultima sintese (sem cobranca por uso)",
+      "at": "2026-10-10T22:38:45.179Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 8,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-10T22:38:50.749Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 91.6,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-10T22:38:50.750Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-10T22:38:50.762Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-10T22:38:50.762Z"
     }
   ],
   "errors": [],

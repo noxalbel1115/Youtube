@@ -1,5 +1,5 @@
 {
- "version": 7,
+ "version": 8,
  "episodeId": "ep001-eierschalensollbruchstellenverursacher",
  "productSlug": "drop-weight-egg-topper",
  "workingTitle": "Protocolo 001 — 38 letras para abrir um ovo",
@@ -140,7 +140,8 @@
     "cue": "lift",
     "lowerThird": false
    },
-   "note": "A esfera sobe pela haste."
+   "note": "A esfera sobe pela haste.",
+   "speedFactor": 0.88
   },
   {
    "id": "s08",
@@ -622,6 +623,10 @@
   {
    "version": 7,
    "note": "Sem cortes entre fotos: o aparelho, o ovo e a demonstração viram uma ilustração 3D própria (three.js) em planos de câmera contínuos — abertura, demonstração, edição com ametista e interrupção. Fotos reais só como evidência emoldurada (tesoura e foto do mesmo tipo de aparelho). A foto CC BY-SA deixou de ser usada."
+  },
+  {
+   "version": 8,
+   "note": "Voz mais rápida (vendedor 1,04; colega 1,05, em config/channel.json); 'Puxa a esfera.' com velocidade reduzida só nessa fala (speedFactor 0,88) para a voz não engolir a palavra."
   }
  ]
 }

@@ -1,0 +1,9 @@
+# Dependencias Python do pipeline (TTS local + verificacao por reconhecimento de fala).
+kokoro-onnx==0.6.1
+onnxruntime==1.31.0
+soundfile==0.14.0
+numpy==2.5.4
+faster-whisper==1.2.1
+ctranslate2==4.8.2
+# Opcional, so para comparacao: vozes pt_BR do Piper derivam de dataset de licenca so-pesquisa.
+piper-tts==1.8.0

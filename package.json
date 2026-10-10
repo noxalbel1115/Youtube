@@ -1,0 +1,36 @@
+{
+  "name": "departamento-necessidades-desnecessarias",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pipeline de producao de Shorts de comedia: pesquisa, roteiro, voz, montagem (Remotion), verificacao e upload ao YouTube.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dnn": "tsx src/cli.ts",
+    "studio": "remotion studio src/remotion/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.133.0",
+    "@fontsource/ibm-plex-mono": "5.2.6",
+    "@fontsource/ibm-plex-sans": "5.2.6",
+    "@remotion/bundler": "4.0.534",
+    "@remotion/cli": "4.0.534",
+    "@remotion/fonts": "4.0.534",
+    "@remotion/renderer": "4.0.534",
+    "googleapis": "185.0.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.534",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "22.18.6",
+    "@types/react": "19.1.12",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  }
+}

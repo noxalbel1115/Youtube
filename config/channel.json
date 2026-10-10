@@ -1,0 +1,77 @@
+{
+  "$comment": "Configuracao do canal. Segredos NUNCA ficam aqui: use variaveis de ambiente (ver .env.example).",
+  "channel": {
+    "name": "Departamento de Necessidades Desnecessárias",
+    "shortName": "DND",
+    "motto": "Você não precisava. Até agora.",
+    "language": "pt-BR",
+    "salesman": {
+      "name": "Valdemar Anunciação",
+      "title": "Consultor Sênior de Soluções"
+    }
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "minSeconds": 60,
+    "maxSeconds": 90,
+    "loudnessTargetLufs": -14,
+    "truePeakDb": -1.5
+  },
+  "providers": {
+    "llm": {
+      "$comment": "agent = o roteiro/pesquisa e escrito pelo Claude Code (sessao ou Routine) em arquivos JSON validados; anthropic = chamada direta a API (exige ANTHROPIC_API_KEY, gera custo).",
+      "research": "agent",
+      "script": "agent",
+      "anthropic": { "model": "claude-opus-5-5", "maxTokens": 8000 }
+    },
+    "tts": {
+      "$comment": "Provedor e voz por personagem. kokoro = local, pesos Apache-2.0. piper = local, vozes pt_BR derivadas de dataset de licenca so-pesquisa (nao publicar). elevenlabs = API paga (exige ELEVENLABS_API_KEY).",
+      "voices": {
+        "vendedor": { "provider": "kokoro", "voice": "pm_alex", "speed": 0.94 },
+        "colega": { "provider": "kokoro", "voice": "pf_dora", "speed": 1.0 },
+        "locutor": { "provider": "kokoro", "voice": "pm_santa", "speed": 0.95 }
+      },
+      "kokoro": {
+        "model": "models/kokoro/model.onnx",
+        "voicesDir": "models/kokoro/voices",
+        "lang": "pt-br"
+      },
+      "piper": { "voicesDir": "models/piper" },
+      "elevenlabs": { "modelId": "eleven_multilingual_v2" }
+    },
+    "asr": { "provider": "faster-whisper", "model": "small" },
+    "media": {
+      "allowedLicenses": ["cc0", "pdm", "by", "by-sa"],
+      "$comment2": "Licencas fora desta lista (NC, ND, 'uso editorial', sem licenca) sao excluidas do render publicavel."
+    }
+  },
+  "selection": {
+    "weights": {
+      "contrast": 0.25,
+      "story": 0.25,
+      "visual": 0.15,
+      "media": 0.15,
+      "reliability": 0.15,
+      "novelty": 0.05
+    }
+  },
+  "youtube": {
+    "$comment": "Tudo desabilitado por padrao. Upload exige uploadEnabled=true E a flag --confirm-upload na linha de comando.",
+    "uploadEnabled": false,
+    "defaultPrivacyStatus": "private",
+    "allowPublic": false,
+    "allowScheduledPublish": false,
+    "categoryId": "23",
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true,
+    "uploadCaptions": true,
+    "uploadThumbnail": false,
+    "tokenFile": "~/.config/dnn/youtube-token.json"
+  },
+  "budget": {
+    "$comment": "Teto por episodio para provedores pagos. Sem autorizacao, todos zerados: o pipeline recusa provedores pagos.",
+    "maxUsdPerEpisode": 0
+  }
+}

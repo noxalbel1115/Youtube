@@ -1,0 +1,14 @@
+node_modules/
+.venv/
+models/
+# Tudo que e gerado por episodio (midia baixada, audio, render, quadros) fica fora do git.
+episodes/*/build/
+*.mp4
+*.wav
+*.part
+.env
+.env.*
+!.env.example
+# Credenciais nunca entram no repositorio
+*token*.json
+client_secret*.json

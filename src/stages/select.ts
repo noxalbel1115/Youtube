@@ -68,17 +68,23 @@ export function scoreCandidate(c: Candidate, cfg: Config, history: HistoryEntry[
 export const selectStage: Stage = {
   name: 'select',
   inputHash(ctx) {
-    return sha256(fs.readFileSync(ctx.p.candidates) + (ctx.flags.pick ?? '') + JSON.stringify(ctx.cfg.selection));
+    const pick = ctx.flags.pick ? {slug: ctx.flags.pick, reason: ctx.flags.pickReason ?? ''} : ctx.state.pick;
+    return sha256(fs.readFileSync(ctx.p.candidates) + JSON.stringify(pick ?? null) + JSON.stringify(ctx.cfg.selection));
   },
   async run(ctx) {
+    if (ctx.flags.pick) {
+      if (!ctx.flags.pickReason) throw new Error('--pick exige --reason "..." (a justificativa fica registrada em selection.json)');
+      ctx.state.pick = {slug: ctx.flags.pick, reason: ctx.flags.pickReason};
+    }
+    const pick = ctx.state.pick;
     const file = CandidatesFile.parse(readJson(ctx.p.candidates));
     const history = loadHistory();
     const ranking = file.candidates.map((c) => scoreCandidate(c, ctx.cfg, history, ctx.id)).sort((a, b) => Number(b.eligible) - Number(a.eligible) || b.score - a.score);
     let chosen = ranking.find((r) => r.eligible);
-    if (ctx.flags.pick) {
-      chosen = ranking.find((r) => r.slug === ctx.flags.pick);
-      if (!chosen) throw new Error(`--pick ${ctx.flags.pick}: candidato inexistente`);
-      if (!chosen.eligible) throw new Error(`--pick ${ctx.flags.pick}: candidato inelegivel (${chosen.reasons.join('; ')})`);
+    if (pick) {
+      chosen = ranking.find((r) => r.slug === pick.slug);
+      if (!chosen) throw new Error(`--pick ${pick.slug}: candidato inexistente`);
+      if (!chosen.eligible) throw new Error(`--pick ${pick.slug}: candidato inelegivel (${chosen.reasons.join('; ')})`);
     }
     if (!chosen) throw new Error('Nenhum candidato elegivel. Amplie a pesquisa (midia licenciada e fontes sao obrigatorias).');
     const cand = file.candidates.find((c) => c.slug === chosen!.slug)!;
@@ -86,7 +92,9 @@ export const selectStage: Stage = {
       selectedAt: new Date().toISOString(),
       slug: cand.slug,
       ranking,
-      rationale: ctx.flags.pick ? `Escolha manual (--pick) entre elegiveis. ${cand.comedyAngle}` : `Maior pontuacao entre elegiveis. ${cand.comedyAngle}`,
+      rationale: pick
+        ? `Escolha editorial (--pick), substituindo o 1o colocado automatico (${ranking.find((r) => r.eligible)?.slug}): ${pick.reason} | Angulo: ${cand.comedyAngle}`
+        : `Maior pontuacao entre elegiveis. ${cand.comedyAngle}`,
     };
     writeJsonAtomic(ctx.p.selection, Selection.parse(selection));
     const {media: _m, scores: _s, ...rest} = cand;

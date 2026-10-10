@@ -1,7 +1,9 @@
 import {STAGES, type StageName} from '../schemas.js';
 import {loadState, saveState, nowIso, invalidateAfter, recordError, addCost} from '../core/state.js';
 import {loadConfig} from '../core/config.js';
-import {epPaths} from '../core/paths.js';
+import fs from 'node:fs';
+import path from 'node:path';
+import {epPaths, ROOT} from '../core/paths.js';
 import {log} from '../core/log.js';
 import {BlockedError, type Ctx, type Flags, type Stage} from './types.js';
 import {researchStage} from './research.js';
@@ -48,7 +50,16 @@ export async function runPipeline(id: string, opts: {from?: StageName; to?: Stag
       hash = `unavailable:${Date.now()}`;
     }
     const forced = opts.flags.force.has(name) || opts.flags.force.has('all');
-    if (st.status === 'done' && st.inputHash === hash && !forced) {
+    // Pula se as entradas sao as mesmas da ultima execucao bem-sucedida e as saidas ainda existem
+    // (inclusive quando uma etapa anterior foi refeita mas produziu o mesmo resultado).
+    const outputsExist = st.outputs.length > 0 && st.outputs.every((o) => fs.existsSync(path.join(ROOT, o)));
+    const sameInputs = st.inputHash === hash && (st.status === 'done' || (st.status === 'pending' && outputsExist));
+    if (sameInputs && !forced && name !== 'upload') {
+      if (st.status !== 'done') {
+        st.status = 'done';
+        st.note = `${st.note ?? ''} (reaproveitada: entradas identicas)`.trim();
+        ctx.save();
+      }
       log.info(`[${name}] ja concluida com as mesmas entradas — pulando`);
       continue;
     }
@@ -69,7 +80,9 @@ export async function runPipeline(id: string, opts: {from?: StageName; to?: Stag
       st.inputHash = hash;
       st.outputs = res.outputs;
       st.note = res.note;
-      addCost(state, {stage: name, item: 'wall-clock', kind: 'observed', amount: st.seconds, unit: 'seconds', basis: 'tempo medido pelo runner'});
+      addCost(state, {stage: name, item: 'wall-clock', kind: 'observed', amount: st.seconds, unit: 'seconds', basis: 'tempo medido pelo runner (ultima execucao)'});
+      const prevTotal = state.costs.find((c) => c.stage === name && c.item === 'wall-clock-acumulado')?.amount ?? 0;
+      addCost(state, {stage: name, item: 'wall-clock-acumulado', kind: 'observed', amount: Math.round((prevTotal + st.seconds) * 10) / 10, unit: 'seconds', basis: 'soma de todas as execucoes concluidas desta etapa'});
       if (changed) invalidateAfter(state, name);
       ctx.save();
       log.info(`[${name}] concluida em ${st.seconds}s${res.note ? ' — ' + res.note : ''}`);

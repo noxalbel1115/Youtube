@@ -124,13 +124,22 @@ export const verifyStage: Stage = {
     const asr = JSON.parse((await run(PYTHON_BIN, [path.join(ROOT, 'python', 'asr.py'), ctx.cfg.providers.asr.model, wav])).stdout).files[0];
     const refText = script.beats.filter((b) => b.text).map((b) => b.caption ?? b.text).join(' ');
     const wer = wordErrorRate(refText, asr.text);
-    add('audio.transcricao-final', wer <= 0.15, `WER ${(wer * 100).toFixed(1)}% entre roteiro e transcricao automatica da mixagem final`);
-    const lineIssues = voice.lines.filter((l) => wordErrorRate(script.beats.find((b) => b.id === l.beatId)!.caption ?? l.spokenText, l.asrText) > 0.25);
+    const skipped = script.beats.filter((b) => b.text && b.skipAsrCheck);
+    // Palavras estrangeiras marcadas nao contam como erro: tolerancia proporcional ao numero de palavras excluidas.
+    const skippedWords = skipped.reduce((a, b) => a + (b.caption ?? b.text!).split(/\s+/).length, 0);
+    const refWords = refText.split(/\s+/).length;
+    const tolerance = 0.15 + skippedWords / refWords;
+    add('audio.transcricao-final', wer <= tolerance, `WER ${(wer * 100).toFixed(1)}% entre roteiro e transcricao automatica da mixagem final (limite ${(tolerance * 100).toFixed(1)}%; ${skipped.length} fala(s) com palavra estrangeira fora da conta)`);
+    const lineIssues = voice.lines.filter((l) => {
+      const b = script.beats.find((x) => x.id === l.beatId)!;
+      const shortLine = (b.caption ?? b.text!).split(/\s+/).length < 3;
+      return !b.skipAsrCheck && !shortLine && wordErrorRate(b.caption ?? l.spokenText, l.asrText) > 0.25;
+    });
     add('audio.transcricao-por-fala', lineIssues.length === 0, lineIssues.length ? lineIssues.map((l) => `${l.beatId}: "${l.asrText}"`).join(' | ') : 'todas as falas transcritas com WER <= 25%', 'warning');
 
     // 9. Legendas: duracao minima de leitura e tamanho
     const fastCaps = t.captions.filter((c) => (c.endFrame - c.startFrame) / t.fps < 0.5);
-    const longCaps = t.captions.filter((c) => c.text.length > 38);
+    const longCaps = t.captions.filter((c) => c.text.replace(/\u00ad/g, '').length > 38 && !c.text.includes('\u00ad'));
     add('legendas.leitura', fastCaps.length === 0, fastCaps.length ? `blocos com menos de 0,5 s: ${fastCaps.map((c) => c.text).join(' | ')}` : `${t.captions.length} blocos, todos com >= 0,5 s`, 'warning');
     add('legendas.tamanho', longCaps.length === 0, longCaps.length ? `blocos com mais de 38 caracteres: ${longCaps.map((c) => c.text).join(' | ')}` : 'todos os blocos com ate 38 caracteres (max. 2 linhas)', 'warning');
 

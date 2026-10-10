@@ -47,11 +47,13 @@ export const LowerThird: React.FC<{name: string; title: string; durationFrames: 
  * Legendas: no maximo 2 linhas, dentro da zona segura (acima da faixa de titulo do Short e
  * a esquerda da coluna de botoes). Falas da colega (fora de quadro) em italico e cor distinta.
  */
-export const Captions: React.FC<{captions: CaptionChunk[]}> = ({captions}) => {
+export const Captions: React.FC<{captions: CaptionChunk[]; paperRanges: Array<[number, number]>}> = ({captions, paperRanges}) => {
   const frame = useCurrentFrame();
   const cur = captions.find((c) => frame >= c.startFrame && frame < c.endFrame);
   if (!cur) return null;
   const offscreen = cur.speaker === 'colega';
+  // Sobre papel timbrado: tinta escura, sem contorno. Sobre foto: branco com contorno para leitura.
+  const onPaper = paperRanges.some(([a, b]) => frame >= a && frame < b);
   return (
     <div style={{position: 'absolute', left: 90, width: 820, top: 1290, height: 190, display: 'flex', alignItems: 'flex-start', justifyContent: 'center'}}>
       <div
@@ -62,10 +64,14 @@ export const Captions: React.FC<{captions: CaptionChunk[]}> = ({captions}) => {
           fontSize: 62,
           lineHeight: 1.18,
           textAlign: 'center',
-          color: offscreen ? '#FFE7A3' : C.white,
-          WebkitTextStroke: '10px rgba(10,12,18,0.92)',
+          color: onPaper ? (offscreen ? C.stamp : C.ink) : offscreen ? '#FFE7A3' : C.white,
+          WebkitTextStroke: onPaper ? '0px transparent' : '10px rgba(10,12,18,0.92)',
           paintOrder: 'stroke fill',
-          textShadow: '0 3px 10px rgba(0,0,0,0.35)',
+          textShadow: onPaper ? 'none' : '0 3px 10px rgba(0,0,0,0.35)',
+          borderTop: onPaper ? `3px solid ${C.ink}` : 'none',
+          paddingTop: onPaper ? 18 : 0,
+          hyphens: 'manual',
+          overflowWrap: 'anywhere',
         }}
       >
         {cur.text}
@@ -73,3 +79,10 @@ export const Captions: React.FC<{captions: CaptionChunk[]}> = ({captions}) => {
     </div>
   );
 };
+
+/** Legenda de figura (credito da foto) em planos de tela cheia, logo abaixo da faixa institucional. */
+export const FigureLabel: React.FC<{text: string}> = ({text}) => (
+  <div style={{position: 'absolute', top: SAFE.top + 62, left: SAFE.left, maxWidth: 820, background: 'rgba(236,232,223,0.9)', color: C.inkSoft, fontFamily: MONO, fontSize: 22, padding: '6px 12px', lineHeight: 1.3}}>
+    {text}
+  </div>
+);

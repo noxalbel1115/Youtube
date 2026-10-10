@@ -4,6 +4,7 @@ import {Script, Timeline, Product, MediaRegistry} from '../schemas.js';
 import {readJson, sha256, sha256File, writeJsonAtomic} from '../core/state.js';
 import {rel} from '../core/paths.js';
 import {renderThumbnail} from './render.js';
+import {roteiroMd, fontesMd} from './docs.js';
 import type {Stage, Ctx} from './types.js';
 
 function srtTime(frame: number, fps: number): string {
@@ -17,7 +18,7 @@ function srtTime(frame: number, fps: number): string {
 }
 
 export function buildSrt(t: ReturnType<typeof Timeline.parse>): string {
-  return t.captions.map((c, i) => `${i + 1}\n${srtTime(c.startFrame, t.fps)} --> ${srtTime(c.endFrame, t.fps)}\n${c.speaker === 'colega' ? '— ' : ''}${c.text}\n`).join('\n');
+  return t.captions.map((c, i) => `${i + 1}\n${srtTime(c.startFrame, t.fps)} --> ${srtTime(c.endFrame, t.fps)}\n${c.speaker === 'colega' ? '— ' : ''}${c.text.replace(/\u00ad/g, '')}\n`).join('\n');
 }
 
 /** Chave de idempotencia gravada na descricao: permite reconciliar uploads apos timeout. */
@@ -40,7 +41,8 @@ export function buildDescription(ctx: Ctx): string {
   lines.push(script.packaging.synopsis, '');
   lines.push(`${ctx.cfg.channel.motto}`, '');
   lines.push('— Sobre este vídeo —');
-  lines.push(`O vendedor e a colega são personagens fictícios. O produto é real: ${product.name} (${product.brand}). Não é publicidade; não há patrocínio nem relação com o fabricante.`);
+  lines.push(`O vendedor e a colega são personagens fictícios. O produto é real: ${product.name}. ${product.brand}.`);
+  lines.push('Não é publicidade: não há patrocínio nem relação com fabricantes ou lojas citados. As fotos têm licença livre e são creditadas abaixo.');
   lines.push(`As informações factuais sobre o produto foram conferidas nas fontes abaixo em ${formatDate(product.verifiedAt)}.`);
   if (product.price) {
     const src = product.sources.find((s) => s.id === product.price!.sourceId);
@@ -85,9 +87,11 @@ export const packageStage: Stage = {
     writeJsonAtomic(path.join(ctx.p.packageDir, 'metadata.json'), metadata);
     fs.writeFileSync(path.join(ctx.p.packageDir, 'description.txt'), description + '\n');
     fs.writeFileSync(path.join(ctx.p.packageDir, 'captions.pt-BR.srt'), buildSrt(t));
+    fs.writeFileSync(path.join(ctx.p.packageDir, 'roteiro.md'), roteiroMd(ctx));
+    fs.writeFileSync(path.join(ctx.p.packageDir, 'fontes-e-midias.md'), fontesMd(ctx));
     const beat = t.beats.find((b) => b.id === script.packaging.thumbnailBeatId);
     if (!beat) throw new Error(`thumbnailBeatId ${script.packaging.thumbnailBeatId} inexistente`);
-    await renderThumbnail(ctx, beat.startFrame + Math.floor(beat.durationFrames / 2));
+    await renderThumbnail(ctx, beat.startFrame + Math.floor(beat.durationFrames / 2), script.packaging.title.split('|')[0].trim());
     return {
       outputs: [rel(path.join(ctx.p.packageDir, 'metadata.json')), rel(path.join(ctx.p.packageDir, 'captions.pt-BR.srt')), rel(ctx.p.thumbnail)],
       note: `titulo: "${metadata.title}"; descricao ${Buffer.byteLength(description)} bytes`,

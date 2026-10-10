@@ -3,7 +3,7 @@ import {AbsoluteFill, Html5Audio, Sequence, staticFile, useVideoConfig} from 're
 import type {Timeline, TimelineBeat} from '../schemas.js';
 import {loadFonts} from './theme.js';
 import {MediaFull, MediaExhibit, TitleCard, TextCard, FactSheet, EndCard} from './components/Visuals.js';
-import {HeaderBand, LowerThird, Captions} from './components/Overlays.js';
+import {HeaderBand, LowerThird, Captions, FigureLabel} from './components/Overlays.js';
 
 loadFonts();
 
@@ -29,20 +29,40 @@ const BeatVisual: React.FC<{beat: TimelineBeat; t: Timeline}> = ({beat, t}) => {
   }
 };
 
+/**
+ * Beats consecutivos com o mesmo visual viram um unico plano: a imagem fica parada (ou o movimento
+ * continua) enquanto as falas se sucedem, como num plano sustentado de documentario.
+ */
+export function groupVisuals(beats: TimelineBeat[]): TimelineBeat[] {
+  const out: TimelineBeat[] = [];
+  for (const b of beats) {
+    const prev = out[out.length - 1];
+    const same = prev && JSON.stringify(prev.visual) === JSON.stringify(b.visual) && prev.mediaFile === b.mediaFile;
+    if (same) out[out.length - 1] = {...prev, durationFrames: prev.durationFrames + b.durationFrames};
+    else out.push({...b});
+  }
+  return out;
+}
+
 export const Episode: React.FC<Timeline> = (t) => {
   const {fps} = useVideoConfig();
   const caseLabel = 'PROTOCOLO 001';
+  const shots = groupVisuals(t.beats);
   return (
     <AbsoluteFill style={{background: '#000'}}>
-      {t.beats.map((b) => (
-        <Sequence key={b.id} from={b.startFrame} durationInFrames={b.durationFrames} name={b.id}>
+      {shots.map((b) => (
+        <Sequence key={b.id} from={b.startFrame} durationInFrames={b.durationFrames} name={`plano ${b.id}`}>
           <BeatVisual beat={b} t={t} />
           {b.visual.type === 'media' ? <HeaderBand brandName={t.brand.name} caseLabel={caseLabel} /> : null}
+          {b.visual.type === 'media' && b.visual.layout === 'full' && b.visual.label ? <FigureLabel text={b.visual.label} /> : null}
           {b.visual.lowerThird ? <LowerThird name={t.brand.salesmanName} title={t.brand.salesmanTitle} durationFrames={b.durationFrames} /> : null}
         </Sequence>
       ))}
 
-      <Captions captions={t.captions} />
+      <Captions
+        captions={t.captions}
+        paperRanges={shots.filter((b) => ['card', 'factsheet', 'title'].includes(b.visual.type) || (b.visual.type === 'media' && b.visual.layout === 'exhibit')).map((b) => [b.startFrame, b.startFrame + b.durationFrames])}
+      />
 
       {/* Audio: falas, efeitos e ambiente de sala (o "silencio" do escritorio nunca e silencio digital). */}
       {t.beats.map((b) =>
@@ -82,6 +102,13 @@ export const Thumbnail: React.FC<Timeline & {thumbnailFrame?: number; thumbnailT
         <BeatVisual beat={beat} t={t} />
         {beat.visual.type === 'media' ? <HeaderBand brandName={t.brand.name} caseLabel="PROTOCOLO 001" /> : null}
       </Sequence>
+      {t.thumbnailText ? (
+        <div style={{position: 'absolute', left: 64, right: 150, top: 1180, display: 'flex'}}>
+          <div style={{background: 'rgba(236,232,223,0.95)', color: '#1C2333', fontFamily: 'IBM Plex Sans', fontWeight: 700, fontSize: 74, lineHeight: 1.08, padding: '22px 30px', borderLeft: '12px solid #A63A2B'}}>
+            {t.thumbnailText}
+          </div>
+        </div>
+      ) : null}
     </AbsoluteFill>
   );
 };

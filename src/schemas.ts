@@ -146,6 +146,10 @@ export const Visual = z.object({
   /** Ponto focal (0..1) para enquadramento e zoom. */
   focus: z.object({x: z.number().min(0).max(1), y: z.number().min(0).max(1)}).default({x: 0.5, y: 0.5}),
   zoom: z.number().min(1).max(3).default(1.15),
+  /** Desloca a foto para baixo (px) quando o assunto encosta no topo; o espaco e preenchido com 'bg'. */
+  offsetY: z.number().min(0).max(400).default(0),
+  /** Cor de preenchimento (amostrada da propria foto) para offsetY. */
+  bg: z.string().optional(),
   /** Texto principal de cartela (type=card/title). */
   heading: z.string().optional(),
   body: z.string().optional(),
@@ -164,6 +168,9 @@ export const Sfx = z.object({
   /** segundos a partir do inicio do beat; negativo = a partir do fim */
   at: z.number(),
   gainDb: z.number().default(0),
+  /** Legenda de som (acessibilidade e quem assiste sem audio), ex.: "(toc, toc)". */
+  caption: z.string().optional(),
+  captionSpeaker: z.enum(['vendedor', 'colega', 'locutor']).default('colega'),
 });
 
 export const Beat = z.object({
@@ -182,6 +189,8 @@ export const Beat = z.object({
   duration: z.number().positive().optional(),
   visual: Visual,
   sfx: z.array(Sfx).default([]),
+  /** Pular a conferencia por transcricao (fala com palavra estrangeira que o ASR em pt nao reconhece). */
+  skipAsrCheck: z.boolean().default(false),
   /** Legenda da fala. Desligar quando a cartela ja mostra o mesmo texto (ex.: lema no encerramento). */
   showCaptions: z.boolean().default(true),
   /** Ambiente sonoro do escritorio. */
@@ -322,6 +331,8 @@ export const EpisodeState = z.object({
   updatedAt: z.string(),
   currentStage: z.string(),
   productSlug: z.string().optional(),
+  /** Escolha editorial persistida (--pick/--reason) para que reexecucoes nao revertam a selecao. */
+  pick: z.object({slug: z.string(), reason: z.string()}).optional(),
   scriptVersion: z.number().optional(),
   stages: z.record(z.string(), StageState),
   artifacts: z.record(z.string(), z.object({path: z.string(), sha256: z.string().optional(), bytes: z.number().optional()})),

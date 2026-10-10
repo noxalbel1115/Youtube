@@ -60,11 +60,23 @@ export const voiceStage: Stage = {
       synthesized += items.length;
     }
     for (const p of plan) if (!fs.existsSync(p.final)) await postProcess(p.raw, p.final);
-    addCost(ctx.state, {stage: 'voice', item: 'tts-cpu', kind: 'observed', amount: Math.round((Date.now() - t0) / 100) / 10, unit: 'seconds', basis: `${synthesized} fala(s) sintetizadas localmente (sem cobranca por uso)`});
+    if (synthesized > 0) {
+      addCost(ctx.state, {stage: 'voice', item: 'tts-cpu', kind: 'observed', amount: Math.round((Date.now() - t0) / 100) / 10, unit: 'seconds', basis: `${synthesized} fala(s) sintetizadas localmente na ultima sintese (sem cobranca por uso)`});
+    }
 
     // Transcricao de volta (ASR) para conferir pronuncia e obter tempos de palavra para as legendas.
-    const asr = await run(PYTHON_BIN, [path.join(ROOT, 'python', 'asr.py'), ctx.cfg.providers.asr.model, ...plan.map((p) => p.final)]);
-    const files: Array<{file: string; text: string; words: Array<{word: string; start: number; end: number}>}> = JSON.parse(asr.stdout).files;
+    // Cache por arquivo: o nome ja carrega o hash de texto+voz+velocidade, entao so falas novas sao transcritas.
+    type Asr = {file: string; text: string; words: Array<{word: string; start: number; end: number}>};
+    const cacheFile = path.join(ctx.p.build, 'asr-cache.json');
+    const cacheKey = (f: string) => `${ctx.cfg.providers.asr.model}:${path.basename(f)}`;
+    const cache: Record<string, Asr> = fs.existsSync(cacheFile) ? JSON.parse(fs.readFileSync(cacheFile, 'utf8')) : {};
+    const missing = plan.map((p) => p.final).filter((f) => !cache[cacheKey(f)]);
+    if (missing.length) {
+      const asr = await run(PYTHON_BIN, [path.join(ROOT, 'python', 'asr.py'), ctx.cfg.providers.asr.model, ...missing]);
+      for (const r of JSON.parse(asr.stdout).files as Asr[]) cache[cacheKey(r.file)] = r;
+      fs.writeFileSync(cacheFile, JSON.stringify(cache));
+    }
+    const files: Asr[] = plan.map((p) => cache[cacheKey(p.final)]);
 
     const lines: VoiceLine[] = [];
     const flagged: string[] = [];
@@ -72,7 +84,9 @@ export const voiceStage: Stage = {
       const tr = files[i];
       const beat = script.beats.find((b) => b.id === p.beatId)!;
       const wer = wordErrorRate(beat.caption ?? beat.text!, tr.text);
-      if (wer > LINE_WER_LIMIT) flagged.push(`${p.beatId} (WER ${(wer * 100).toFixed(0)}%: "${tr.text}")`);
+      // Falas de 1-2 palavras: o Whisper alucina em audio curtissimo; ficam cobertas pela transcricao da mixagem final.
+      const shortLine = (beat.caption ?? beat.text!).split(/\s+/).length < 3;
+      if (wer > LINE_WER_LIMIT && !beat.skipAsrCheck && !shortLine) flagged.push(`${p.beatId} (WER ${(wer * 100).toFixed(0)}%: "${tr.text}")`);
       lines.push({
         beatId: p.beatId,
         speaker: p.speaker,

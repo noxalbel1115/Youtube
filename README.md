@@ -50,6 +50,7 @@ Forçar uma etapa: `--force voice` (ou `--force all`). Escolher manualmente o pr
 ## Publicação (só com autorização)
 
 1. Revisão humana do MP4: `npm run dnn -- review <id> --approve --note "..."` (vale só para aquele sha256).
+   Observações sem aprovar: `--note-only`.
 2. `config/channel.json → youtube.uploadEnabled: true` e credenciais no ambiente (`.env.example`).
 3. `npm run dnn -- youtube:auth` uma vez, numa máquina com navegador (grava o token fora do repositório).
 4. `npm run dnn -- upload <id> --confirm-upload` → envia como **privado**.

@@ -1,0 +1,1239 @@
+[
+  {
+    "rank": 1,
+    "id": "drop-weight-egg-topper",
+    "name": "Drop-weight egg topper ('Eierschalensollbruchstellenverursacher'); current example: Take2-Design \"Clack\" Eieröffner",
+    "manufacturer_brand": "Generic device type; current example sold by Take2-Design (Germany). Photographed units: brand not identifiable.",
+    "what_it_does": "A metal cap is placed on top of a boiled egg and a weighted ball on a rod is lifted and dropped, cracking a clean circular line so the top of the shell can be lifted off.",
+    "legitimate_use_audience": "Soft-boiled-egg eaters (common at German breakfast); avoids shell splinters and, per one photographer, 'burned fingers'. Not an accessibility aid in any source seen.",
+    "punching_down_risk": "low",
+    "safety_rationale_flag": "none significant",
+    "sources": [
+      {
+        "url": "https://www.take2-design-online-shop.de/de/bestseller/clack-eieroeffner/",
+        "confirms": "Manufacturer shop: 'Den Eierschalensollbruchstellenverursacher bringen Sie wie folgt zum Einsatz: Metallkappe auf´s gekochte Ei setzen, die Schlagkugel hochziehen und einfach fallen lassen.' Price 'ab 30,95 EUR'.",
+        "consulted": "2026-10-10",
+        "access": "scraped via Firecrawl"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Eierschalensollbruchstellenverursacher.jpg",
+        "confirms": "Commons description: instrument used to mark the top of cooked eggs so they can be cut and opened (photo of drop-ball type).",
+        "consulted": "2026-10-10",
+        "access": "wikitext via api.wikimedia.org core REST"
+      },
+      {
+        "url": "https://www.otto.de/haushalt/koch-backzubehoer/eierkoepfer/",
+        "confirms": "Major German retailer category page uses the name 'Eierschalensollbruchstellenverursacher' and distinguishes ball-weight (Kugelgewicht, ~24 cm) vs spring models.",
+        "consulted": "2026-10-10",
+        "access": "search-result excerpt only (page not opened)"
+      }
+    ],
+    "price": [
+      {
+        "value": 30.95,
+        "currency": "EUR",
+        "url": "https://www.take2-design-online-shop.de/de/bestseller/clack-eieroeffner/",
+        "note": "'ab 30,95 EUR' (lowest variant) on manufacturer's shop.",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "Egg-opener listings exist on Amazon.com.br (R$ 19,90-31,90, e.g. ASIN B0GTC7ZYHV), but whether they are the drop-ball type was NOT verified (the one product page opened did not describe the mechanism).",
+    "media": [
+      {
+        "file_url": "https://live.staticflickr.com/3818/33548702845_4711aba485_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/55497864@N00/33548702845",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Brett Jordan",
+        "shows": "Stainless drop-ball egg topper (ball on rod over bell-shaped cap) on a wooden floor next to a cleanly opened egg shell and its cap. Description: 'No more burned fingers! Hurrah!'",
+        "match": "exact device type (brand not identifiable)",
+        "resolution": "1024x891",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Eierschalensollbruchstellenverursacher.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:Eierschalensollbruchstellenverursacher.jpg",
+        "license": "GFDL (license-migration eligible) / CC BY-SA",
+        "license_version": "GFDL 1.2+ with {{GFDL|migration=relicense}}; Openverse reports CC BY-SA 3.0",
+        "creator": "Soljaguar",
+        "shows": "Drop-ball egg topper standing on a board next to an egg in an orange egg cup.",
+        "match": "exact device type (brand not identifiable)",
+        "resolution": "1944x2592",
+        "license_verified_via": "Commons wikitext via api.wikimedia.org core REST; Openverse metadata",
+        "visually_checked": true,
+        "notes": "Treat as CC BY-SA 3.0 (ShareAlike); confirm the relicensing notice on the Commons page before use."
+      }
+    ],
+    "related_media_not_matching": "Scissor-type egg toppers (useful as a 'primitive competitor' gag): Commons 'Eierkoepfer01.jpg' (PD-release, Grey Geezer, 992x722), 'Eierkoepfer.jpg' (GFDL relicense, flachmaus, 505x400), 'Coupe_oeuf_à_la_coque.jpg' (CC BY-SA 4.0, Jpbrigand2, 1230x904); Flickr 'Boiled egg cutter/topper' by Allan Henderson (CC BY 2.0 per Openverse, 576x1024, viewed). Commons also hosts pronunciation audio 'De-Eierschalensollbruchstellenverursacher.ogg' (license NOT checked).",
+    "media_search_log": "Openverse: 'Eierschalensollbruchstellenverursacher' (1), 'egg topper' (2 relevant of 10), 'egg cutter' (4 matched), 'Eierköpfer' (0), 'Eierköpfer Kugel' (0), 'Eieröffner' (0), 'egg shell cutter' (1, quail-egg scissors), 'boiled egg breaker' (0). Commons: 'Eierschalensollbruchstellenverursacher' (1 image + 2 audio), 'incategory:Egg_top_cutters' (5), 'intitle:Eierköpfer' (audio only), 'filetype:video egg topper' (0).",
+    "reality_interrupts_idea": "Salesman explains 'controlled kinetic fracture physics' with the ball drop; grandma at the next table taps her egg with a teaspoon and is already eating.",
+    "scores": {
+      "contrast_problem_solution": 5,
+      "story_potential": 5,
+      "visual_clarity": 5,
+      "media_availability": 4,
+      "info_reliability": 4,
+      "total_25": 23
+    },
+    "risks": [
+      "Low trademark risk (generic device type); if naming Take2-Design 'Clack', keep facts to what their page says.",
+      "Commons image is ShareAlike.",
+      "Do not claim who invented the device (not verified)."
+    ]
+  },
+  {
+    "rank": 2,
+    "id": "hutzler-571-banana-slicer",
+    "name": "Hutzler 571 Banana Slicer",
+    "manufacturer_brand": "Hutzler Manufacturing Co. (brand 'Hutzler')",
+    "what_it_does": "A banana-shaped plastic frame with parallel blades that is pressed onto a peeled banana to cut it into uniform slices in one motion.",
+    "legitimate_use_audience": "Uniform slices for cereal/desserts; the listing markets it as safer than a knife and 'fun for kids' preparing their own snacks. Not marketed as an accessibility aid.",
+    "punching_down_risk": "low",
+    "safety_rationale_flag": "Minor: listing claims it avoids 'the risk of using a knife' (child-oriented). Joke should target the salesman's grandiosity, not kids.",
+    "sources": [
+      {
+        "url": "https://www.amazon.com/dp/B0047E0EII",
+        "confirms": "Product exists and is sold; brand Hutzler; 'About this item': 'SAFE AND FAST... Avoid the risk of using a knife', 'EASY ONE-MOTION SLICING', 'FUN FOR KIDS'; buy-box price.",
+        "consulted": "2026-10-10",
+        "access": "scraped via Firecrawl (US proxy); direct curl blocked by Amazon bot wall"
+      },
+      {
+        "url": "https://www.amazon.com.br/s?k=cortador+de+banana",
+        "confirms": "Brazil availability: search result 'Hutzler Cortador de banana 571, 193925, amarelo, 28,6 cm (11,2\")' at R$ 42,89 (ASIN B0047E0EII).",
+        "consulted": "2026-10-10",
+        "access": "scraped via Firecrawl (BR location); price seen on search-results page, not product page"
+      }
+    ],
+    "price": [
+      {
+        "value": 7.7,
+        "currency": "USD",
+        "url": "https://www.amazon.com/dp/B0047E0EII",
+        "note": "Amazon.com buy-box displayPrice (NEW).",
+        "consulted": "2026-10-10"
+      },
+      {
+        "value": 42.89,
+        "currency": "BRL",
+        "url": "https://www.amazon.com.br/s?k=cortador+de+banana",
+        "note": "Amazon.com.br search results listing for ASIN B0047E0EII (product page not opened).",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "Yes (Amazon.com.br, R$ 42,89 on search page). Generic Brazilian 'fatiador de banana' listings also R$ 14,99-21,69.",
+    "media": [
+      {
+        "file_url": "https://live.staticflickr.com/8498/8372054684_554ff360b4_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/75001512@N00/8372054684",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Joel Kramer (Flickr: Joelk75)",
+        "shows": "Yellow Hutzler banana slicer pressed onto a peeled banana on a paper towel ('slicing banana (1)').",
+        "match": "exact product",
+        "resolution": "1024x768 (Flickr 'b' size)",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://live.staticflickr.com/8093/8370984401_397f117546_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/75001512@N00/8370984401",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Joel Kramer (Joelk75)",
+        "shows": "'slicing banana (2)' - same in-use series.",
+        "match": "exact product (same series; not individually viewed)",
+        "resolution": "1024x768",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": false,
+        "notes": ""
+      },
+      {
+        "file_url": "https://live.staticflickr.com/8187/8370995903_40a77f9f2c_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/75001512@N00/8370995903",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Joel Kramer (Joelk75)",
+        "shows": "'the hutzler 571 banana slicer' - product on its retail card ('HUTZLER Banana Slicer', 'Safe for children').",
+        "match": "exact product (in packaging; packaging artwork visible)",
+        "resolution": "1024x768",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": "Packaging graphics are the manufacturer's copyright; keep incidental or crop to product."
+      },
+      {
+        "file_url": "https://live.staticflickr.com/8232/8372054468_6cda0788a7_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/75001512@N00/8372054468",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Joel Kramer (Joelk75)",
+        "shows": "'demonstration' - close-up of the packaging illustration ('SAFE FOR CHILDREN', 'DISHWASHER SAFE').",
+        "match": "exact product packaging",
+        "resolution": "1024x768",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": "Mostly packaging art - risky as a main visual."
+      },
+      {
+        "file_url": "https://live.staticflickr.com/2583/3851033171_ed3fa0a5c6_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/96256161@N00/3851033171",
+        "license": "CC BY-SA",
+        "license_version": "2.0",
+        "creator": "Su Yin Khoo (ksuyin)",
+        "shows": "'Banana slicer' (description: 'You'll need a big banana').",
+        "match": "same device type; brand not confirmed; not viewed",
+        "resolution": "768x1024",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": false,
+        "notes": "ShareAlike."
+      },
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Banana_slicer_%282951724506%29.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:Banana_slicer_(2951724506).jpg",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "jonsson from Göteborg, Sweden",
+        "shows": "Banana slicers in retail packaging on a store hook - brand on packs is Fackelmann, NOT Hutzler.",
+        "match": "generic same-type device (different brand)",
+        "resolution": "640x480",
+        "license_verified_via": "Commons wikitext {{cc-by-2.0}} + flickrreview, via api.wikimedia.org core REST",
+        "visually_checked": true,
+        "notes": ""
+      }
+    ],
+    "media_search_log": "Openverse: 'banana slicer' (18 hits, 17 relevant), 'Hutzler' (1 relevant of 40 seen), 'Bananenschneider' (0), 'cortador de banana' (0), 'banana slicer plastic' (0). Wikimedia Commons: 'banana slicer', 'intitle:banana intitle:slicer' (only sliced-banana photos), 'incategory:Banana_slicers' (0), 'filetype:video banana slicer' (0 relevant). Excluded: mdfriendofhillary 'HUTZLER571K-47'/'HUTZLER for Her' (CC BY-SA but meme edits of others' content). More same-series Joelk75 shots exist ('banana and slicer (1)-(3)', 'banana slices', 'no instructions!').",
+    "reality_interrupts_idea": "While the salesman explains the 'calibrated 18-blade geometry', someone slices a banana with a table knife (or the edge of a spoon) in two seconds; optional: banana curves the 'wrong' way and won't fit.",
+    "scores": {
+      "contrast_problem_solution": 5,
+      "story_potential": 5,
+      "visual_clarity": 5,
+      "media_availability": 5,
+      "info_reliability": 5,
+      "total_25": 25
+    },
+    "risks": [
+      "Heavily used internet meme (2012-13 Amazon-review joke) - needs a fresh angle for the Brazilian audience.",
+      "Real brand/trademark: show the product factually, do not invent claims or imply endorsement; the salesman must be clearly fictional.",
+      "Some photos are mostly packaging art.",
+      "ksuyin photo is ShareAlike."
+    ]
+  },
+  {
+    "rank": 3,
+    "id": "rsvp-onion-goggles",
+    "name": "Onion Goggles",
+    "manufacturer_brand": "RSVP International (also generic equivalents)",
+    "what_it_does": "Sealed, foam-lined kitchen goggles worn while cutting onions to keep the irritating vapours away from the eyes.",
+    "legitimate_use_audience": "People whose eyes are very sensitive to onion vapour; RSVP itself also lists yard work, bike riding, skiing and 'dry eye'. Mild legitimate use.",
+    "punching_down_risk": "low-moderate (avoid mocking people with eye conditions; mock the salesman wearing them for everything)",
+    "safety_rationale_flag": "none significant",
+    "sources": [
+      {
+        "url": "https://rsvp-intl.com/products/wholesale-onion-goggles-red-frame-1",
+        "confirms": "Product 'Onion Goggles - Red Frame' (SKU TEAR-RP): 'No more tears, the comfortable foam seal blocks out irritating vapors... can be used for yard work, bike riding, skiing and for dry eye as well'; price field 15.00, store currency USD.",
+        "consulted": "2026-10-10",
+        "access": "curl of page + Shopify product .json"
+      },
+      {
+        "url": "https://rsvp-intl.com/collections/onion-googles",
+        "confirms": "Collection page listing 5 Onion Goggles colour variants.",
+        "consulted": "2026-10-10",
+        "access": "search-result excerpt only"
+      }
+    ],
+    "price": [
+      {
+        "value": 15.0,
+        "currency": "USD",
+        "url": "https://rsvp-intl.com/products/wholesale-onion-goggles-red-frame-1",
+        "note": "Price on RSVP's own store (URL slug contains 'wholesale'; treat as list price seen on site).",
+        "consulted": "2026-10-10"
+      },
+      {
+        "value": 44.05,
+        "currency": "BRL",
+        "url": "https://www.amazon.com.br/s?k=%C3%B3culos+para+cortar+cebola",
+        "note": "Generic (not RSVP) 'Óculos para cortar cebola sem lágrimas' on Amazon.com.br search page (ASIN B0FQTRXNPV).",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "Generic versions on Amazon.com.br (R$ 44,05-156,81 on search page).",
+    "media": [
+      {
+        "file_url": "https://live.staticflickr.com/5258/5401100765_d637e27cc5_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/48003527@N00/5401100765",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Jeff Sandquist",
+        "shows": "Red-framed onion goggles lying on a notebook (product only, no people).",
+        "match": "same product type; looks like RSVP-style but brand not readable",
+        "resolution": "1024x768",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://live.staticflickr.com/3627/3337469679_96aa605c64_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/71753172@N00/3337469679",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Joe Hall (joebeone)",
+        "shows": "Man wearing onion goggles in a kitchen.",
+        "match": "same type; identifiable person",
+        "resolution": "768x1024",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": "Identifiable person - image/personality rights not covered by CC."
+      },
+      {
+        "file_url": "https://live.staticflickr.com/3632/3372503564_195a5f55c6_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/11554355@N00/3372503564",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Darren Foreman",
+        "shows": "'Onion goggles' (description: 'ridiculous. And £15.50!').",
+        "match": "same type (not viewed)",
+        "resolution": "768x1024",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": false,
+        "notes": ""
+      }
+    ],
+    "media_search_log": "Openverse: 'onion goggles' (22 total, 17 matched: several CC BY 2.0 and CC BY-SA 2.0, many with people), 'Zwiebelbrille' (2 - anthotype artworks, not the product). Commons: 'intitle:onion intitle:goggles' (0), 'filetype:video onion goggles' (0).",
+    "reality_interrupts_idea": "Salesman, goggles on, describes 'hermetic ocular protection'; a cook next to him chills the onion / uses a sharp knife and doesn't cry - or simply cries and keeps cooking.",
+    "scores": {
+      "contrast_problem_solution": 4,
+      "story_potential": 4,
+      "visual_clarity": 5,
+      "media_availability": 5,
+      "info_reliability": 5,
+      "total_25": 23
+    },
+    "risks": [
+      "Real brand (RSVP) if named.",
+      "Most photos show identifiable people - prefer the product-only Jeff Sandquist photo.",
+      "Mild legitimate-use audience (sensitive/dry eyes)."
+    ]
+  },
+  {
+    "rank": 4,
+    "id": "banana-guard-case",
+    "name": "Banana Guard (banana carrying case) / Brazilian equivalent: Plasútil 'Porta Metade Banana'",
+    "manufacturer_brand": "Original 'Banana Guard' brand (maker not confirmed; bananaguard.com did not resolve on 2026-10-10); currently sold equivalents: Snips 'Banana Guard' (Amazon US), Plasútil (Brazil).",
+    "what_it_does": "A hinged, ventilated banana-shaped plastic case that holds a banana so it doesn't get bruised in a bag.",
+    "legitimate_use_audience": "Lunchboxes, parents, hikers/commuters carrying fruit. Not an accessibility aid.",
+    "punching_down_risk": "low",
+    "safety_rationale_flag": "none",
+    "sources": [
+      {
+        "url": "https://kk.org/cooltools/?p=4653",
+        "confirms": "Cool Tools review (Darin Wilson, 08/27/10): 'Banana Guard', sturdy BPA-free ventilated case for carrying bananas; price then $15, later $7 (historic, not current).",
+        "consulted": "2026-10-10",
+        "access": "WebFetch"
+      },
+      {
+        "url": "https://www.amazon.com/dp/B005D6OKS4",
+        "confirms": "Currently sold: 'Snips Banana Guard, Yellow' - In Stock, buy-box price.",
+        "consulted": "2026-10-10",
+        "access": "scraped via Firecrawl (US)"
+      },
+      {
+        "url": "https://plasutil.com.br/produtos/produto/004757-porta-metade-banana",
+        "confirms": "Brazilian manufacturer Plasútil, 'Porta Metade Banana' Cod. 004757, PP, 22,0x11,5x5,1 cm; 'evitando amassados'. Site sells only to CNPJ (B2B).",
+        "consulted": "2026-10-10",
+        "access": "curl"
+      }
+    ],
+    "price": [
+      {
+        "value": 20.44,
+        "currency": "USD",
+        "url": "https://www.amazon.com/dp/B005D6OKS4",
+        "note": "Snips Banana Guard (not the brand shown in the photos).",
+        "consulted": "2026-10-10"
+      },
+      {
+        "value": 12.99,
+        "currency": "BRL",
+        "url": "https://www.amazon.com.br/s?k=porta+banana+protetor",
+        "note": "'Pote Banana Plasútil Amarelo' (ASIN B0086O2FEG) on Amazon.com.br search page.",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "Yes - Plasútil (Brazilian manufacturer) banana keeper ~R$ 12,99; other generic 'porta banana' R$ 18-26.",
+    "media": [
+      {
+        "file_url": "https://live.staticflickr.com/2575/4006952143_677be0b608_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/71035721@N00/4006952143",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Rick McCharles",
+        "shows": "Closed yellow case embossed 'Banana Guard' on pavement (product only).",
+        "match": "exact (original Banana Guard brand)",
+        "resolution": "1024x576",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://live.staticflickr.com/2055/1946417676_779a0204e9_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/76335816@N00/1946417676",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Philip Choi (superturtle)",
+        "shows": "Two yellow Banana Guards, one open with a banana inside.",
+        "match": "exact (original brand)",
+        "resolution": "1024x681",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://live.staticflickr.com/5213/5385985224_699739f740_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/97225209@N00/5385985224",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "cdorobek (per Openverse)",
+        "shows": "Red banana case on a desk ('Yes - a banana guard -- jokes welcome').",
+        "match": "same type",
+        "resolution": "765x1024",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Banana_Guard_Yellow.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:Banana_Guard_Yellow.jpg",
+        "license": "CC BY-SA",
+        "license_version": "2.0",
+        "creator": "mararie (via Flickr; flickrreview passed)",
+        "shows": "'Banana Guard Yellow'.",
+        "match": "likely exact (not viewed)",
+        "resolution": "573x364 (low)",
+        "license_verified_via": "Commons wikitext via api.wikimedia.org",
+        "visually_checked": false,
+        "notes": ""
+      }
+    ],
+    "media_search_log": "Openverse: 'banana guard' (240 total; >=9 relevant in first 20), 'banana bunker' (4, small/low-res), 'banana case' (several relevant incl. Commons 'Maddelisk's Banana Case' CC BY-SA 2.0 4608x3072, not viewed), 'porta banana' (4 - banana rack, not a case), 'Bananenbox' (0). Commons video: not found.",
+    "reality_interrupts_idea": "Salesman presents the 'personal armoured banana transport capsule'; a commuter simply eats the banana at the bus stop. Brazilian twist: Plasútil sells a case for HALF a banana.",
+    "scores": {
+      "contrast_problem_solution": 4,
+      "story_potential": 4,
+      "visual_clarity": 5,
+      "media_availability": 5,
+      "info_reliability": 4,
+      "total_25": 22
+    },
+    "risks": [
+      "Phallic-innuendo association (photo titles like '#uncomfortable', 'jokes welcome') - decide deliberately for a general audience.",
+      "'Banana Guard' is a brand name; the photographed brand is not what is currently sold in Brazil - present as 'same type'.",
+      "Original maker's status unverified."
+    ]
+  },
+  {
+    "rank": 5,
+    "id": "ostrich-pillow-original",
+    "name": "Ostrichpillow Original Napping Pillow",
+    "manufacturer_brand": "Ostrichpillow (originally launched on Kickstarter in 2012)",
+    "what_it_does": "A padded hood-like pillow that covers the head (with openings for nose/mouth and hands) so the wearer can nap anywhere, e.g. at a desk.",
+    "legitimate_use_audience": "Travellers, office nappers; design/novelty object. No accessibility angle.",
+    "punching_down_risk": "low",
+    "safety_rationale_flag": "none",
+    "sources": [
+      {
+        "url": "https://ostrichpillow.com/products/original-napping-pillow",
+        "confirms": "Official store: 'Original Napping Pillow' - 'Unique, iconic design; Cocoon-like experience; Blocks out light and noise'; price 99.00 USD (og:price:currency USD).",
+        "consulted": "2026-10-10",
+        "access": "curl + Shopify product .json"
+      },
+      {
+        "url": "https://ostrichpillow.com/blogs/self-care-magazine/celebrating-7-years-of-sleep",
+        "confirms": "'In 2012 we launched a Kickstarter campaign for OSTRICHPILLOW ORIGINAL'.",
+        "consulted": "2026-10-10",
+        "access": "search-result excerpt only"
+      }
+    ],
+    "price": [
+      {
+        "value": 99.0,
+        "currency": "USD",
+        "url": "https://ostrichpillow.com/products/original-napping-pillow",
+        "note": "Official store, all colour variants 99.00.",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "not verified",
+    "media": [
+      {
+        "file_url": "https://live.staticflickr.com/8074/8294037941_e2eb215cea_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/40615055@N00/8294037941",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "John 'Pathfinder' Lester",
+        "shows": "Person reclining on a sofa wearing the Ostrich Pillow (face covered by the pillow); description links ostrichpillow.com.",
+        "match": "exact product",
+        "resolution": "768x1024",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://live.staticflickr.com/8693/17745488062_1f26f84fb6.jpg",
+        "landing_url": "https://www.flickr.com/photos/7953937@N04/17745488062",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Adam Dachis",
+        "shows": "4-photo collage of a named person ('Anayat') trying the pillow.",
+        "match": "exact product; identifiable person",
+        "resolution": "500x500",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": "Identifiable/named person."
+      },
+      {
+        "file_url": "https://live.staticflickr.com/3680/10445138404_79601e2e70.jpg",
+        "landing_url": "https://www.flickr.com/photos/31855341@N00/10445138404",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Dylan Tweney",
+        "shows": "Person napping with the pillow ('...immediately started taking naps everywhere').",
+        "match": "exact product (not viewed)",
+        "resolution": "500x500",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": false,
+        "notes": ""
+      }
+    ],
+    "media_search_log": "Openverse: 'ostrich pillow' (8; 4 relevant), 'Ostrichpillow' (2, CC BY-SA 2.0, 500x500). Commons: 'intitle:ostrich intitle:pillow' (0).",
+    "reality_interrupts_idea": "Salesman demonstrates 'portable sensory isolation'; a colleague naps perfectly well with his head on folded arms.",
+    "scores": {
+      "contrast_problem_solution": 4,
+      "story_potential": 4,
+      "visual_clarity": 5,
+      "media_availability": 4,
+      "info_reliability": 5,
+      "total_25": 22
+    },
+    "risks": [
+      "Registered brand (Ostrichpillow®).",
+      "All licensed photos include people - CC does not grant image/personality rights (Brazil: Código Civil art. 20); prefer the face-covered Lester photo.",
+      "Low resolution for 2 of 3 images."
+    ]
+  },
+  {
+    "rank": 6,
+    "id": "nostalgia-hot-dog-toaster",
+    "name": "Retro Pop-Up Hot Dog Toaster",
+    "manufacturer_brand": "Nostalgia Products",
+    "what_it_does": "A pop-up toaster with slots that toasts up to 2 hot dogs and 2 buns at the same time.",
+    "legitimate_use_audience": "Novelty kitchen appliance for hot-dog fans; no accessibility angle.",
+    "punching_down_risk": "low",
+    "safety_rationale_flag": "none",
+    "sources": [
+      {
+        "url": "https://nostalgiaproducts.com/products/retro-pop-up-hot-dog-toaster",
+        "confirms": "Official store: 'Retro Pop-Up Hot Dog Toaster', 'Toasts up to 2 delicious, regular-size or extra-plump hot dogs and two buns at the same time'; price 39.99 USD.",
+        "consulted": "2026-10-10",
+        "access": "curl + Shopify product .json"
+      },
+      {
+        "url": "https://nostalgiaproducts.com/products/hdt600retrored",
+        "confirms": "Second listing of the same product (SKU 082677151001) at 44.99 USD.",
+        "consulted": "2026-10-10",
+        "access": "Shopify product .json"
+      }
+    ],
+    "price": [
+      {
+        "value": 39.99,
+        "currency": "USD",
+        "url": "https://nostalgiaproducts.com/products/retro-pop-up-hot-dog-toaster",
+        "note": "Official store.",
+        "consulted": "2026-10-10"
+      },
+      {
+        "value": 44.99,
+        "currency": "USD",
+        "url": "https://nostalgiaproducts.com/products/hdt600retrored",
+        "note": "Same title, different SKU listing on official store.",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "not verified",
+    "media": [
+      {
+        "file_url": "https://live.staticflickr.com/8522/8466537950_bf78dc947b.jpg",
+        "landing_url": "https://www.flickr.com/photos/11598937@N08/8466537950",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Jo Naylor",
+        "shows": "Red toaster with 'The Retro Series' badge next to mustard and two dressed hot dogs.",
+        "match": "same product family (Nostalgia Retro Series badge visible; exact model not confirmed)",
+        "resolution": "500x500 (low)",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Hot_Dog_Toaster.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:Hot_Dog_Toaster.jpg",
+        "license": "GFDL / CC BY-SA (multi-license)",
+        "license_version": "GFDL + CC BY-SA 3.0 (migrated) + CC BY-SA 2.5, 2.0, 1.0",
+        "creator": "Diderot~commonswiki (author/own-work 'assumed' on Commons)",
+        "shows": "White hot-dog-and-bun toaster on display in a shop at West Edmonton Mall, 2005.",
+        "match": "same device type (brand not identified)",
+        "resolution": "801x580",
+        "license_verified_via": "Commons wikitext via api.wikimedia.org",
+        "visually_checked": true,
+        "notes": "Authorship only 'assumed' on Commons - weaker provenance."
+      }
+    ],
+    "media_search_log": "Openverse: 'hot dog toaster' (7 hits; 2 relevant), 'Hot-Dog-Toaster' (5; same 2). Commons: 'filetype:video hot dog toaster' (0).",
+    "reality_interrupts_idea": "Salesman praises 'vertical thermal sausage technology'; a Brazilian street vendor (or someone at home) does a cachorro-quente with a pot of water and a pan in the background.",
+    "scores": {
+      "contrast_problem_solution": 4,
+      "story_potential": 4,
+      "visual_clarity": 5,
+      "media_availability": 3,
+      "info_reliability": 5,
+      "total_25": 21
+    },
+    "risks": [
+      "Nostalgia trademark/brand portrayal.",
+      "Low-resolution licensed photos (500 px).",
+      "Avoid mocking real street vendors."
+    ]
+  },
+  {
+    "rank": 7,
+    "id": "egg-piercer-eierpiekser",
+    "name": "Egg piercer (Eierpiekser/Eidorn), e.g. Westmark 'Eidorn Kunststoff'",
+    "manufacturer_brand": "Westmark (current example); photographed unit brand not identifiable",
+    "what_it_does": "A small push-down device with a spring-guarded steel pin that pricks a tiny hole in the blunt end of a raw egg before boiling.",
+    "legitimate_use_audience": "Egg boilers; manufacturer says it keeps the shell from cracking while cooking. Common in German kitchens. Not an accessibility aid.",
+    "punching_down_risk": "low",
+    "safety_rationale_flag": "none (has a 'Sicherheitsverriegelung' safety lock for the pin)",
+    "sources": [
+      {
+        "url": "https://www.westmark.de/de-de/eidorn-kunststoff-10802280",
+        "confirms": "Manufacturer page: 'Eidorn Kunststoff • Eierpiekser mit Sicherheitsverriegelung'; place the raw egg in the hollow and press so the stainless pin pierces the shell 'sodass diese beim Kochen nicht reißt'; Made in Germany; 'UVP (empfohlener VK) 3,99 €'.",
+        "consulted": "2026-10-10",
+        "access": "curl (JSON-LD + page text)"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Egg_piercer.jpg",
+        "confirms": "Commons description: kitchen tool to pierce an egg ... 'Depicted is the \"push down\" variant'.",
+        "consulted": "2026-10-10",
+        "access": "wikitext via api.wikimedia.org"
+      }
+    ],
+    "price": [
+      {
+        "value": 3.99,
+        "currency": "EUR",
+        "url": "https://www.westmark.de/de-de/eidorn-kunststoff-10802280",
+        "note": "Manufacturer's recommended retail price (UVP).",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "not verified ('furador de ovo' not searched on retailers)",
+    "media": [
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Egg_piercer.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:Egg_piercer.jpg",
+        "license": "CC BY-SA",
+        "license_version": "3.0",
+        "creator": "Takimata",
+        "shows": "White push-down egg piercer, pressed down to reveal the pin, on white background.",
+        "match": "exact device type (brand not identifiable)",
+        "resolution": "2400x1600",
+        "license_verified_via": "Commons wikitext {{self|cc-by-sa-3.0}} via api.wikimedia.org",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Eierpikser.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:Eierpikser.jpg",
+        "license": "GFDL (migration=relicense) / CC BY-SA",
+        "license_version": "GFDL; relicensing-eligible to CC BY-SA 3.0",
+        "creator": "Elke Wetzig (elya)",
+        "shows": "'egg pricker'.",
+        "match": "same type (not viewed)",
+        "resolution": "1000x517",
+        "license_verified_via": "Commons wikitext via api.wikimedia.org",
+        "visually_checked": false,
+        "notes": ""
+      },
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Eierstecher.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:Eierstecher.jpg",
+        "license": "GFDL (migration=relicense) / CC BY-SA",
+        "license_version": "GFDL-user; Openverse reports CC BY-SA 3.0",
+        "creator": "Rainer Zenz (de.wikipedia)",
+        "shows": "'Eierstecher' - upload log text is truncated ('Eigene Zeichn...'), may be a drawing.",
+        "match": "same type (not viewed)",
+        "resolution": "3576x2600",
+        "license_verified_via": "Commons wikitext via api.wikimedia.org",
+        "visually_checked": false,
+        "notes": ""
+      }
+    ],
+    "media_search_log": "Openverse: 'egg piercer' (1), 'Eierpiker' (0), 'Eierstecher' (1), 'furador de ovo' (0). Commons: 'incategory:Egg_prickers' (5 images incl. 'Eierprikker.JPG' and 'Vajíčko_na_tvrdo_-_pomůcka.jpg', not checked, + 1 audio).",
+    "reality_interrupts_idea": "Salesman explains 'pre-cooking pressure-relief engineering'; someone just puts the egg in the water (or uses a thumbtack) and nothing dramatic happens.",
+    "scores": {
+      "contrast_problem_solution": 5,
+      "story_potential": 4,
+      "visual_clarity": 3,
+      "media_availability": 4,
+      "info_reliability": 5,
+      "total_25": 21
+    },
+    "risks": [
+      "Do not claim it works or doesn't work - efficacy not verified here.",
+      "Small object: needs macro shots.",
+      "ShareAlike on all found images."
+    ]
+  },
+  {
+    "rank": 8,
+    "id": "umbrella-hat",
+    "name": "Umbrella hat (hands-free head umbrella)",
+    "manufacturer_brand": "Generic (e.g. 'NEW-Vi' on Amazon.com.br); no manufacturer page consulted",
+    "what_it_does": "A small umbrella canopy mounted on an adjustable headband, giving hands-free shade/rain cover.",
+    "legitimate_use_audience": "Fishing, gardening, golf, farm and outdoor work in sun/rain (listing names pesca, golfe, jardinagem).",
+    "punching_down_risk": "moderate - widely used by outdoor workers in some countries; avoid footage/photos of laborers or religious/ethnic contexts; target leisure use and the salesman.",
+    "safety_rationale_flag": "sun protection for outdoor workers",
+    "sources": [
+      {
+        "url": "https://www.amazon.com.br/s?k=chap%C3%A9u+guarda-chuva",
+        "confirms": "Amazon.com.br search: 'NEW-Vi Chapéu de guarda-chuva, ... de 63,5 cm, mãos livres, para adultos e crianças, pesca, golfe, jard...' R$ 33,98 (ASIN B07HH3LGGB) and several other listings.",
+        "consulted": "2026-10-10",
+        "access": "scraped via Firecrawl (BR); search-results page"
+      }
+    ],
+    "price": [
+      {
+        "value": 33.98,
+        "currency": "BRL",
+        "url": "https://www.amazon.com.br/s?k=chap%C3%A9u+guarda-chuva",
+        "note": "Generic listing on Amazon.com.br search page (product page not opened).",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "Yes (Amazon.com.br, R$ 19,98-88,65 on search page).",
+    "media": [
+      {
+        "file_url": "https://live.staticflickr.com/5121/5239369738_9247873aec_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/80563558@N00/5239369738",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Heather McQuaid (McFlickr)",
+        "shows": "Close-up of a white umbrella hat (product only).",
+        "match": "same product type",
+        "resolution": "1024x768",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Umbrella_hat.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:Umbrella_hat.jpg",
+        "license": "CC BY-SA",
+        "license_version": "2.0",
+        "creator": "maotx (via Flickr)",
+        "shows": "'An umbrella hat'.",
+        "match": "same type (not viewed)",
+        "resolution": "964x832",
+        "license_verified_via": "Commons wikitext via api.wikimedia.org",
+        "visually_checked": false,
+        "notes": ""
+      },
+      {
+        "file_url": "https://live.staticflickr.com/4007/4403502738_c5a6771752_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/26786061@N00/4403502738",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "kcxd",
+        "shows": "Street scene from above; a person in red wears a small umbrella hat.",
+        "match": "same type (small in frame)",
+        "resolution": "1024x768",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      }
+    ],
+    "media_search_log": "Openverse: 'umbrella hat' (240 total; 20/20 matched incl. many CC BY 2.0 - several show identifiable individuals, workers, or a monk -> avoid those), 'Schirmhut' (0), 'chapéu guarda-chuva' (1 unrelated). Commons: 'filetype:video umbrella hat' (0 relevant).",
+    "reality_interrupts_idea": "Salesman praises 'cranial-mounted precipitation deflection'; a gust of wind / a normal umbrella / a cap solves it.",
+    "scores": {
+      "contrast_problem_solution": 4,
+      "story_potential": 4,
+      "visual_clarity": 5,
+      "media_availability": 5,
+      "info_reliability": 3,
+      "total_25": 21
+    },
+    "risks": [
+      "Punching down if it ridicules outdoor workers or specific cultures.",
+      "Generic product - weaker 'real product' sourcing.",
+      "Avoid photos of identifiable strangers (e.g. 'The Umbrella Hat Man in Andersonville')."
+    ]
+  },
+  {
+    "rank": 9,
+    "id": "egg-slicer",
+    "name": "Egg slicer (Eierschneider / cortador de ovos), e.g. WMF Gourmet Eierschneider",
+    "manufacturer_brand": "WMF (example); also Westmark and many generics",
+    "what_it_does": "A hinged frame of taut steel wires that is pressed down over a peeled boiled egg to cut it into even slices.",
+    "legitimate_use_audience": "Very common, genuinely practical tool for salads/sandwiches; weak 'uselessness'.",
+    "punching_down_risk": "low",
+    "safety_rationale_flag": "none",
+    "sources": [
+      {
+        "url": "https://www.wmf.com/de/de/gourmet-eierschneider-3201000767.html",
+        "confirms": "Manufacturer page: 'WMF Gourmet Eierschneider Ø 6cm', price 29,99 € (UVP 32,99 €).",
+        "consulted": "2026-10-10",
+        "access": "curl"
+      },
+      {
+        "url": "https://www.amazon.com.br/s?k=cortador+de+ovos+cozidos+fatiador",
+        "confirms": "Brazil: generic 'Cortador de Ovos Cozidos Fios de Aço Inox Fatiador' R$ 17,19 (ASIN B0G5RB61NF) and others R$ 14,48-20,70.",
+        "consulted": "2026-10-10",
+        "access": "scraped via Firecrawl (BR); search-results page"
+      }
+    ],
+    "price": [
+      {
+        "value": 29.99,
+        "currency": "EUR",
+        "url": "https://www.wmf.com/de/de/gourmet-eierschneider-3201000767.html",
+        "note": "WMF DE shop price; UVP 32,99 € also shown.",
+        "consulted": "2026-10-10"
+      },
+      {
+        "value": 17.19,
+        "currency": "BRL",
+        "url": "https://www.amazon.com.br/s?k=cortador+de+ovos+cozidos+fatiador",
+        "note": "Generic slicer, search-results page.",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "Yes (common).",
+    "media": [
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Eierschneider_in_Aktion.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:Eierschneider_in_Aktion.jpg",
+        "license": "CC BY-SA",
+        "license_version": "4.0",
+        "creator": "VSchagow",
+        "shows": "Simple red plastic egg slicer with a peeled egg under the wires.",
+        "match": "same type (generic)",
+        "resolution": "6016x4000",
+        "license_verified_via": "Commons wikitext via api.wikimedia.org",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/2019120302_Schraegseitliche_Ansicht_WMF-Eierschneider_Edelstahl_2019.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:2019120302_Schraegseitliche_Ansicht_WMF-Eierschneider_Edelstahl_2019.jpg",
+        "license": "CC BY-SA",
+        "license_version": "4.0",
+        "creator": "VSchagow",
+        "shows": "Oblique view of a stainless WMF egg slicer (per title).",
+        "match": "WMF brand (model not confirmed; not viewed)",
+        "resolution": "6016x4000",
+        "license_verified_via": "Commons wikitext via api.wikimedia.org",
+        "visually_checked": false,
+        "notes": ""
+      },
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/2019120301_Lamellen_WMF-Eierschneider_Edelstahl_2019.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:2019120301_Lamellen_WMF-Eierschneider_Edelstahl_2019.jpg",
+        "license": "CC BY-SA",
+        "license_version": "4.0",
+        "creator": "VSchagow",
+        "shows": "Extreme close-up of the slicer wires/lamellae (abstract 'harp' b-roll).",
+        "match": "WMF brand detail",
+        "resolution": "6016x4000",
+        "license_verified_via": "Openverse metadata (same series as verified file)",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Eierschneider300AklHeller.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:Eierschneider300AklHeller.jpg",
+        "license": "CC0",
+        "license_version": "1.0",
+        "creator": "Manfred Heyde",
+        "shows": "Vintage Westmark 2-way egg slicer.",
+        "match": "same type (not viewed)",
+        "resolution": "709x735",
+        "license_verified_via": "Commons wikitext {{self|cc-zero}} via api.wikimedia.org",
+        "visually_checked": false,
+        "notes": ""
+      }
+    ],
+    "media_search_log": "Openverse: 'egg slicer' (33; 11 relevant), 'Eierschneider' (23; ~15 relevant, some are the Dessau bridge nicknamed 'Eierschneider'), 'cortador de ovo' (0). Commons: 'filetype:video Eierschneider' (0).",
+    "reality_interrupts_idea": "Salesman plays the wires like a harp ('instrumento de precisão'); someone slices the egg with a knife - or with dental floss.",
+    "scores": {
+      "contrast_problem_solution": 3,
+      "story_potential": 3,
+      "visual_clarity": 4,
+      "media_availability": 5,
+      "info_reliability": 5,
+      "total_25": 20
+    },
+    "risks": [
+      "Product is genuinely useful - joke must be about the salesman's over-claiming.",
+      "All good images are ShareAlike except one small CC0 image."
+    ]
+  },
+  {
+    "rank": 10,
+    "id": "oxo-strawberry-huller",
+    "name": "OXO Good Grips Strawberry Huller",
+    "manufacturer_brand": "OXO",
+    "what_it_does": "A small handheld tool with stainless tapered blades (current hinged design) that removes the strawberry's green top and core.",
+    "legitimate_use_audience": "Bakers/large-batch fruit prep; OXO says it also works for tomatoes. Mild.",
+    "punching_down_risk": "low",
+    "safety_rationale_flag": "none",
+    "sources": [
+      {
+        "url": "https://www.oxo.com/strawberry-huller.html",
+        "confirms": "Official: 'Strawberry Huller', 'Current Price $11.99', SKU 11308600, 'stainless steel, tapered blades... unique hinged design... also great for tomatoes'.",
+        "consulted": "2026-10-10",
+        "access": "scraped via Firecrawl (oxo.com blocks curl with Cloudflare)"
+      }
+    ],
+    "price": [
+      {
+        "value": 11.99,
+        "currency": "USD",
+        "url": "https://www.oxo.com/strawberry-huller.html",
+        "note": "Official OXO store.",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "not verified",
+    "media": [
+      {
+        "file_url": "https://live.staticflickr.com/3471/4552541455_9c08d37507_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/11172002@N05/4552541455",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Julie Magro (aMichiganMom)",
+        "shows": "Black OXO plunger/claw-style huller in a bowl of strawberries (2010).",
+        "match": "same brand, OLDER model - not the current hinged SKU 11308600",
+        "resolution": "768x1024",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      },
+      {
+        "file_url": "https://live.staticflickr.com/4004/4258110841_12c51429ca_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/27983255@N00/4258110841",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Tatsuo Yamashita (yto)",
+        "shows": "Hands removing a strawberry hull with a small tweezer-type huller (tool partly visible); 6 more shots in the series.",
+        "match": "generic same-type tool (Japanese)",
+        "resolution": "1024x683",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      }
+    ],
+    "media_search_log": "Openverse: 'strawberry huller' (9; all relevant), 'OXO strawberry' (1), 'Erdbeerentstieler' (0). Commons: 'filetype:video strawberry huller' (0).",
+    "reality_interrupts_idea": "Salesman: 'extração cirúrgica do pedúnculo'; someone pushes a drinking straw through the strawberry or uses a paring knife.",
+    "scores": {
+      "contrast_problem_solution": 4,
+      "story_potential": 4,
+      "visual_clarity": 3,
+      "media_availability": 3,
+      "info_reliability": 5,
+      "total_25": 19
+    },
+    "risks": [
+      "Media shows a discontinued/older OXO design - say 'modelo anterior' or treat as generic.",
+      "Small object; OXO brand portrayal."
+    ]
+  },
+  {
+    "rank": 11,
+    "id": "talisman-kale-herb-stripper",
+    "name": "Talisman Designs Kale & Herb Stripper",
+    "manufacturer_brand": "Talisman Designs",
+    "what_it_does": "A plastic tool with six notch sizes that you pull along a stem to strip off kale or herb leaves.",
+    "legitimate_use_audience": "Home cooks; mild single-purpose gadget (fingers do the same job).",
+    "punching_down_risk": "low",
+    "safety_rationale_flag": "none",
+    "sources": [
+      {
+        "url": "https://www.talismandesigns.com/products/kale-herb-stripper",
+        "confirms": "Official store: 'Kale & Herb Stripper', price 10.00 USD; 'Six different notch sizes will accommodate any size leafy green or herb stems'.",
+        "consulted": "2026-10-10",
+        "access": "curl + Shopify product .json"
+      },
+      {
+        "url": "https://www.amazon.com/Talisman-Designs-Stripper-BPA-free-Plastic/dp/B012ARF7VC",
+        "confirms": "Also listed on Amazon US.",
+        "consulted": "2026-10-10",
+        "access": "search-result excerpt only"
+      }
+    ],
+    "price": [
+      {
+        "value": 10.0,
+        "currency": "USD",
+        "url": "https://www.talismandesigns.com/products/kale-herb-stripper",
+        "note": "Official store.",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "not verified",
+    "media": [
+      {
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Herb_stripper_1_2018-07-11.jpg",
+        "landing_url": "https://commons.wikimedia.org/wiki/File:Herb_stripper_1_2018-07-11.jpg",
+        "license": "CC BY-SA",
+        "license_version": "4.0",
+        "creator": "FASTILY",
+        "shows": "Talisman Designs 'KALE & Herb STRIPPER' on its retail card hanging in a grocery store (another brand's 'Carrot Stripper' package above).",
+        "match": "exact product, but in packaging (packaging art dominant)",
+        "resolution": "3024x4032",
+        "license_verified_via": "Commons wikitext {{Self|Cc-by-sa-4.0}} via api.wikimedia.org",
+        "visually_checked": true,
+        "notes": "Packaging artwork (incl. a product photo) is third-party copyright."
+      },
+      {
+        "file_url": "https://live.staticflickr.com/6210/6027048625_227aa9a201.jpg",
+        "landing_url": "https://www.flickr.com/photos/22967797@N06/6027048625",
+        "license": "CC BY-SA",
+        "license_version": "2.0",
+        "creator": "Stephanie Richard (therichardlife)",
+        "shows": "Herb 'stripper & snipper' scissors-style tool in use over chopped herbs.",
+        "match": "different product (generic same-purpose)",
+        "resolution": "500x500",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      }
+    ],
+    "media_search_log": "Openverse: 'herb stripper' (2), 'kale stripper' (0), 'Kräuterabstreifer' (0). Commons search: only the FASTILY file found.",
+    "reality_interrupts_idea": "Salesman: 'desfolhador de precisão com seis calibres'; someone runs two fingers down the stem.",
+    "scores": {
+      "contrast_problem_solution": 4,
+      "story_potential": 4,
+      "visual_clarity": 3,
+      "media_availability": 3,
+      "info_reliability": 5,
+      "total_25": 19
+    },
+    "risks": [
+      "Only exact-product image is a packaging shot.",
+      "Both images ShareAlike."
+    ]
+  },
+  {
+    "rank": 12,
+    "id": "hoan-bagel-guillotine",
+    "name": "Hoan Bagel Guillotine",
+    "manufacturer_brand": "Hoan / Lifetime Brands",
+    "what_it_does": "A bagel is dropped into a clear acrylic holder and a handle pushes a serrated blade through it, cutting it into two halves.",
+    "legitimate_use_audience": "Bagel eaters; explicitly sold as a SAFETY device ('Acrylic shell protects your fingers').",
+    "punching_down_risk": "low (but see safety flag)",
+    "safety_rationale_flag": "YES - bagel slicing is a reported cause of hand injuries/ER visits (search excerpts: LA Times 1995, Houston Methodist 2024; not opened). Joke must target the salesman's over-claiming, not the safety idea.",
+    "sources": [
+      {
+        "url": "https://kitchenandcompany.com/products/hoan-bagel-guillotine",
+        "confirms": "Retailer: 'Hoan Bagel Guillotine', vendor Lifetime Brands, 19.99 USD, available; 'the original Bagel Guillotine Slicer... Acrylic shell protects your fingers'.",
+        "consulted": "2026-10-10",
+        "access": "curl + Shopify product .json"
+      },
+      {
+        "url": "https://www.latimes.com/archives/la-xpm-1995-04-11-ls-53435-story.html",
+        "confirms": "'Slicing bagels can be dangerous... quick trip to the emergency room' (safety rationale).",
+        "consulted": "2026-10-10",
+        "access": "search-result excerpt only"
+      },
+      {
+        "url": "https://www.houstonmethodist.org/blog/articles/2024/may/dangers-in-the-kitchen-the-most-common-hand-injuries-tips-for-avoiding-them/",
+        "confirms": "Bagels listed among common causes of kitchen hand injuries.",
+        "consulted": "2026-10-10",
+        "access": "search-result excerpt only"
+      }
+    ],
+    "price": [
+      {
+        "value": 19.99,
+        "currency": "USD",
+        "url": "https://kitchenandcompany.com/products/hoan-bagel-guillotine",
+        "note": "Retailer (Kitchen & Company); currency USD.",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "not verified (bagels are niche in Brazil)",
+    "media": [
+      {
+        "file_url": "https://live.staticflickr.com/2076/2379566552_478c19500c_b.jpg",
+        "landing_url": "https://www.flickr.com/photos/69131582@N00/2379566552",
+        "license": "CC BY",
+        "license_version": "2.0",
+        "creator": "Jamie (jbcurio)",
+        "shows": "'BAGEL GUILLOTINE' boxed on a supermarket shelf (Wegmans, 2008) with $19.99 tag. Description: 'Saving fingers from those hopeless with knives.'",
+        "match": "exact product, in packaging (box art dominant)",
+        "resolution": "768x1024",
+        "license_verified_via": "Flickr photo page license field, 2026-10-10",
+        "visually_checked": true,
+        "notes": ""
+      }
+    ],
+    "media_search_log": "Openverse: 'bagel guillotine' (2), 'bagel slicer' (3; one is a Panera commercial slicer, CC BY 4.0), 'Bagelschneider' (0). Commons: 'intitle:bagel intitle:guillotine' (0).",
+    "reality_interrupts_idea": "Salesman frames the bagel as a 'perigo nacional'; a Brazilian just tears a pão francês open with his hands.",
+    "scores": {
+      "contrast_problem_solution": 3,
+      "story_potential": 3,
+      "visual_clarity": 4,
+      "media_availability": 3,
+      "info_reliability": 5,
+      "total_25": 18
+    },
+    "risks": [
+      "Real safety rationale - don't mock the safety benefit.",
+      "Only a packaging shot available.",
+      "Low cultural relevance in Brazil."
+    ]
+  },
+  {
+    "rank": 13,
+    "id": "electric-twirling-spaghetti-fork",
+    "name": "Electric twirling spaghetti fork (e.g. wingosoph 'Electric Twirling Fork' NY068)",
+    "manufacturer_brand": "wingosoph (Amazon seller brand); many generic equivalents",
+    "what_it_does": "A battery-powered fork whose tines rotate at the press of a button to wind spaghetti automatically.",
+    "legitimate_use_audience": "Marketed for kids ('helps kids to twirl spaghetti properly'); could plausibly help people with limited dexterity (not claimed in listing).",
+    "punching_down_risk": "low-moderate (kids/dexterity) - joke should target the salesman",
+    "safety_rationale_flag": "none",
+    "sources": [
+      {
+        "url": "https://www.amazon.com/Electric-Automatic-Spaghetti-NY068-Blue/dp/B0D66JHFFZ",
+        "confirms": "'Electric Twirling Fork, Automatic Spinning Fork for Spaghetti Noodles...' brand wingosoph, $13.99, In Stock; 'press the button to twirl the noodles automatically'.",
+        "consulted": "2026-10-10",
+        "access": "scraped via Firecrawl (US)"
+      }
+    ],
+    "price": [
+      {
+        "value": 13.99,
+        "currency": "USD",
+        "url": "https://www.amazon.com/Electric-Automatic-Spaghetti-NY068-Blue/dp/B0D66JHFFZ",
+        "note": "Amazon.com buy box.",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "not verified",
+    "media": [],
+    "media_search_log": "NO licensed media of the product found. Openverse: 'spaghetti fork' (only generic pasta dishes/plastic forks), 'twirling fork' (0 relevant), 'twirling spaghetti fork' (0), 'spaghetti twirler' (0), 'rotating fork' (0 relevant), 'motorized fork' (0 relevant), 'pasta fork electric' (0), 'garfo giratório' (0). Commons: 'spaghetti fork twirling' (0 relevant).",
+    "reality_interrupts_idea": "Fork whirs; nonna winds spaghetti with fork and spoon in one move.",
+    "scores": {
+      "contrast_problem_solution": 5,
+      "story_potential": 5,
+      "visual_clarity": 5,
+      "media_availability": 1,
+      "info_reliability": 4,
+      "total_25": 20
+    },
+    "risks": [
+      "No licensed media - would require buying the product and filming own footage.",
+      "Kids-oriented marketing."
+    ]
+  },
+  {
+    "rank": 14,
+    "id": "self-stirring-mug",
+    "name": "Self-stirring mug (e.g. VAlinks Self Stirring Coffee Mug)",
+    "manufacturer_brand": "VAlinks (Amazon brand); many generic equivalents",
+    "what_it_does": "A mug with a battery-driven rotor in the base/lid that stirs the drink at the press of a button.",
+    "legitimate_use_audience": "Novelty/office gadget, protein shakes; no accessibility claim in the listing seen.",
+    "punching_down_risk": "low",
+    "safety_rationale_flag": "none",
+    "sources": [
+      {
+        "url": "https://www.amazon.com/VAlinks-Stirring-Coffee-Electric-Battery/dp/B0C2YKTBHL",
+        "confirms": "'VAlinks Self Stirring Coffee Mug, Glass Electric Self Mixing Cup...' $17.99, 'Only 5 left in stock'; powered by 2x AAA; 'Gently press, automatically stir, free hands from now on.'",
+        "consulted": "2026-10-10",
+        "access": "scraped via Firecrawl (US)"
+      }
+    ],
+    "price": [
+      {
+        "value": 17.99,
+        "currency": "USD",
+        "url": "https://www.amazon.com/VAlinks-Stirring-Coffee-Electric-Battery/dp/B0C2YKTBHL",
+        "note": "Amazon.com buy box.",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "not verified",
+    "media": [],
+    "media_search_log": "NO licensed media of the product found. Openverse: 'self stirring mug' (0), 'self-stirring mug' (0), 'self-stirring' (1 - a Harry Potter-themed shop sign, viewed, not the product), 'stirring mug' (only people stirring with spoons), 'auto stirring mug' (0), 'magnetic stirring mug' (0), 'caneca mexedora' (0), 'selbstrührende Tasse' (0). Commons: 'self stirring mug', 'intitle:stirring mug' (0 relevant).",
+    "reality_interrupts_idea": "Mug whirs for 20 s; colleague stirs with a teaspoon in 3 s.",
+    "scores": {
+      "contrast_problem_solution": 5,
+      "story_potential": 5,
+      "visual_clarity": 4,
+      "media_availability": 1,
+      "info_reliability": 4,
+      "total_25": 19
+    },
+    "risks": [
+      "No licensed media - own footage required.",
+      "Generic marketplace brand."
+    ]
+  },
+  {
+    "rank": 15,
+    "id": "starfrit-rotato-express",
+    "name": "Starfrit Rotato Express Electric Peeler",
+    "manufacturer_brand": "Starfrit",
+    "what_it_does": "A potato is clamped on a motorised spindle and a spring-loaded blade arm peels it automatically, stopping when done.",
+    "legitimate_use_audience": "Manufacturer explicitly lists 'Seniors and limited hand strength' under 'Great For' - an accessibility use.",
+    "punching_down_risk": "HIGH - officially marketed to seniors/people with limited hand strength. Not recommended for mockery.",
+    "safety_rationale_flag": "accessibility aid (per manufacturer)",
+    "sources": [
+      {
+        "url": "https://www.starfrit.com/en/starfrit-rotato-express-electric-peeler",
+        "confirms": "Official page: 'Starfrit Rotato Express Electric Peeler', SKU 093209002BLCK; 'Place the potato on the base, press the button...'; 'Great For: Seniors and limited hand strength'; page metadata product:price:amount 29.99, currency CAD (no visible price rendered).",
+        "consulted": "2026-10-10",
+        "access": "scraped via Firecrawl"
+      }
+    ],
+    "price": [
+      {
+        "value": 29.99,
+        "currency": "CAD",
+        "url": "https://www.starfrit.com/en/starfrit-rotato-express-electric-peeler",
+        "note": "From page metadata (product:price:amount), no visible price displayed in the scrape - treat as indicative.",
+        "consulted": "2026-10-10"
+      }
+    ],
+    "brazil_availability": "not verified",
+    "media": [],
+    "media_search_log": "NO licensed media of the peeler found. Openverse 'Rotato' (14) returns the spiral 'tornado potato' snack (e.g. eekim 'Rotato', CC BY 2.0, also on Commons as File:Rotato.jpg - viewed: a vendor holding a spiral potato on a stick) and night-market stalls; 'Rotato peeler' (1 unrelated), 'potato peeler electric' (0), 'potato peeler machine' (0). Commons 'intitle:Rotato' (1, the snack).",
+    "reality_interrupts_idea": "(Not recommended) someone peels a potato with a basic peeler faster.",
+    "scores": {
+      "contrast_problem_solution": 4,
+      "story_potential": 4,
+      "visual_clarity": 5,
+      "media_availability": 1,
+      "info_reliability": 4,
+      "total_25": 18
+    },
+    "risks": [
+      "Punching down (accessibility aid).",
+      "No licensed media.",
+      "Name collision with the 'Rotato' spiral-potato snack in licensed photos."
+    ]
+  }
+]

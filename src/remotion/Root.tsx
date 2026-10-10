@@ -16,7 +16,7 @@ const placeholder: Timeline = {
       id: 'b1',
       startFrame: 0,
       durationFrames: 60,
-      visual: {type: 'endcard', motion: 'static', layout: 'full', focus: {x: 0.5, y: 0.5}, zoom: 1, lowerThird: false, stampAt: 0.6},
+      visual: {type: 'endcard', motion: 'static', layout: 'full', focus: {x: 0.5, y: 0.5}, zoom: 1, offsetY: 0, lowerThird: false, stampAt: 0.6},
       sfx: [],
       roomTone: false,
     },

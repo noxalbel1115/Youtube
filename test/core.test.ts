@@ -18,8 +18,9 @@ test('WER: numerais por extenso equivalem a digitos', () => {
 
 test('legendas: blocos curtos e quebra apos pontuacao', () => {
   const c = chunkCaption('Você insere o papel, ajusta as guias e aguarda a inicialização. É liberdade.');
-  assert.ok(c.every((x) => x.length <= 30), JSON.stringify(c));
-  assert.ok(c.at(-1)!.endsWith('liberdade.'));
+  assert.ok(c.every((x) => x.length <= 32), JSON.stringify(c));
+  assert.equal(c.at(-1), 'É liberdade.');
+  assert.deepEqual(chunkCaption('A casca se rompe em volta do topo. Sem faca.'), ['A casca se rompe', 'em volta do topo.', 'Sem faca.']);
 });
 
 test('pronuncia: substitui palavra inteira, sem tocar em partes de palavras', () => {
@@ -54,4 +55,11 @@ test('mudar uma etapa invalida as seguintes, mas nunca o upload', () => {
   assert.equal(s.stages.render.status, 'pending');
   assert.equal(s.stages.media.status, 'done');
   assert.equal(s.stages.upload.status, 'done');
+});
+
+test('licenca Commons: GFDL com migration=relicense vale como CC BY-SA 3.0', () => {
+  const r = parseCommonsLicense('{{Information|author=Soljaguar}}\n{{GFDL|migration=relicense}}');
+  assert.equal(r.license, 'by-sa');
+  assert.equal(r.version, '3.0');
+  assert.equal(parseCommonsLicense('{{GFDL}}').license, 'unknown');
 });

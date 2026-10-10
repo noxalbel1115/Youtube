@@ -1,0 +1,670 @@
+{
+ "version": 4,
+ "episodeId": "ep001-eierschalensollbruchstellenverursacher",
+ "productSlug": "drop-weight-egg-topper",
+ "workingTitle": "Protocolo 001 — 38 letras para abrir um ovo",
+ "logline": "Valdemar apresenta, com engenharia e orgulho, um abridor de ovo alemão de 38 letras; fora de quadro, a Sueli abre o dela com a colher.",
+ "arc": [
+  "Confiança máxima: solução alemã para um problema ignorado",
+  "Nome técnico e demonstração do mecanismo (fatos do fabricante)",
+  "Escalada: três designers, esfera de ametista, desdém pela tesoura",
+  "Realidade interrompe: colher, duas batidas, 'Pronto.' Silêncio.",
+  "Recuperação frágil (edição de Natal) e colapso: o próprio fabricante cita talheres adicionais",
+  "Última tentativa de fechar a venda: preço por letra. Carimbo: aguardando necessidade."
+ ],
+ "pronunciations": {
+  "Eierschalensollbruchstellenverursacher": "áier xálen zól brúrr chtélen fér úr zárrer",
+  "Sueli": "Suéli",
+  "colher": "colhér"
+ },
+ "beats": [
+  {
+   "id": "s01",
+   "duration": 2.7,
+   "visual": {
+    "type": "title",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "Abridor de ovo por impacto",
+    "footnote": "PROTOCOLO Nº 001 · AVALIAÇÃO DE NECESSIDADE",
+    "stamp": "EM ANÁLISE",
+    "stampAt": 1.5
+   },
+   "sfx": [
+    {
+     "id": "tap",
+     "at": 1.5,
+     "gainDb": 3
+    }
+   ],
+   "note": "Abertura institucional. Carimbo seco."
+  },
+  {
+   "id": "s02",
+   "speaker": "vendedor",
+   "text": "Bom dia. Trago uma solução alemã para um problema que o brasileiro ignora há gerações.",
+   "claim": "fact",
+   "factIds": [
+    "f1"
+   ],
+   "holdBefore": 0.3,
+   "holdAfter": 0.7,
+   "visual": {
+    "type": "media",
+    "mediaId": "m2",
+    "motion": "push-in",
+    "zoom": 1.12,
+    "focus": {
+     "x": 0.45,
+     "y": 0.3
+    },
+    "layout": "full",
+    "lowerThird": true,
+    "label": "Foto: Soljaguar (Wikimedia Commons), CC BY-SA 3.0",
+    "offsetY": 170,
+    "bg": "#CDCBCA"
+   },
+   "note": "Confiança máxima. Plano aberto: aparelho alto, ovo pequeno."
+  },
+  {
+   "id": "s03",
+   "speaker": "vendedor",
+   "text": "O topo do ovo.",
+   "holdAfter": 0.9,
+   "visual": {
+    "type": "media",
+    "mediaId": "m2",
+    "motion": "static",
+    "zoom": 2.0,
+    "focus": {
+     "x": 0.68,
+     "y": 0.73
+    },
+    "layout": "full",
+    "lowerThird": false
+   },
+   "note": "Corte seco para o ovo. Pausa reverente."
+  },
+  {
+   "id": "s04",
+   "speaker": "vendedor",
+   "text": "O nome técnico é Eierschalensollbruchstellenverursacher.",
+   "caption": "O nome técnico é Eier­schalen­soll­bruch­stellen­ver­ursacher.",
+   "claim": "fact",
+   "factIds": [
+    "f1",
+    "f2"
+   ],
+   "skipAsrCheck": true,
+   "holdAfter": 0.6,
+   "visual": {
+    "type": "card",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "substantivo masculino · alemão\n12 sílabas · 38 letras\nuso geralmente brincalhão",
+    "footnote": "Fonte: DWDS — Digitales Wörterbuch der deutschen Sprache, consultado em 10/10/2026."
+   },
+   "note": "Ele chama de 'técnico'; a cartela do dicionário diz 'uso geralmente brincalhão'. Ninguém comenta."
+  },
+  {
+   "id": "s05",
+   "speaker": "vendedor",
+   "text": "Trinta e oito letras. Todas dedicadas ao topo de um ovo.",
+   "claim": "fact",
+   "factIds": [
+    "f4"
+   ],
+   "holdAfter": 0.7,
+   "visual": {
+    "type": "card",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "substantivo masculino · alemão\n12 sílabas · 38 letras\nuso geralmente brincalhão",
+    "footnote": "Fonte: DWDS — Digitales Wörterbuch der deutschen Sprache, consultado em 10/10/2026."
+   },
+   "caption": "38 letras. Todas dedicadas ao topo de um ovo."
+  },
+  {
+   "id": "s06",
+   "speaker": "vendedor",
+   "text": "Funciona assim. Você coloca a cápsula de metal sobre o ovo cozido.",
+   "claim": "fact",
+   "factIds": [
+    "f5"
+   ],
+   "holdAfter": 0.3,
+   "visual": {
+    "type": "media",
+    "mediaId": "m1",
+    "motion": "push-in",
+    "zoom": 1.1,
+    "focus": {
+     "x": 0.4,
+     "y": 0.5
+    },
+    "layout": "exhibit",
+    "lowerThird": false,
+    "label": "Fig. 1 — Aparelho do mesmo tipo. Foto: Brett Jordan, CC BY 2.0"
+   }
+  },
+  {
+   "id": "s07",
+   "speaker": "vendedor",
+   "text": "Puxa a esfera.",
+   "claim": "fact",
+   "factIds": [
+    "f5"
+   ],
+   "holdAfter": 0.6,
+   "visual": {
+    "type": "media",
+    "mediaId": "m2",
+    "motion": "static",
+    "zoom": 2.3,
+    "focus": {
+     "x": 0.35,
+     "y": 0.12
+    },
+    "layout": "full",
+    "lowerThird": false
+   }
+  },
+  {
+   "id": "s08",
+   "speaker": "vendedor",
+   "text": "E solta.",
+   "claim": "fact",
+   "factIds": [
+    "f5"
+   ],
+   "holdAfter": 0.35,
+   "visual": {
+    "type": "media",
+    "mediaId": "m2",
+    "motion": "static",
+    "zoom": 2.3,
+    "focus": {
+     "x": 0.35,
+     "y": 0.12
+    },
+    "layout": "full",
+    "lowerThird": false
+   },
+   "sfx": [
+    {
+     "id": "click",
+     "at": -0.3,
+     "gainDb": 0
+    },
+    {
+     "id": "crack",
+     "at": -0.22,
+     "gainDb": -2
+    }
+   ]
+  },
+  {
+   "id": "s09",
+   "duration": 1.0,
+   "visual": {
+    "type": "media",
+    "mediaId": "m1",
+    "motion": "drift",
+    "zoom": 1.2,
+    "focus": {
+     "x": 0.52,
+     "y": 0.62
+    },
+    "layout": "full",
+    "lowerThird": false,
+    "label": "Fig. 1 — detalhe"
+   },
+   "note": "Silêncio de satisfação diante do resultado."
+  },
+  {
+   "id": "s10",
+   "speaker": "vendedor",
+   "text": "A casca se rompe em volta do topo. Sem faca.",
+   "claim": "fact",
+   "factIds": [
+    "f6",
+    "f8"
+   ],
+   "holdAfter": 0.7,
+   "visual": {
+    "type": "media",
+    "mediaId": "m1",
+    "motion": "static",
+    "zoom": 1.35,
+    "focus": {
+     "x": 0.45,
+     "y": 0.7
+    },
+    "layout": "full",
+    "lowerThird": false,
+    "label": "Fig. 1 — detalhe"
+   }
+  },
+  {
+   "id": "s11",
+   "speaker": "vendedor",
+   "text": "Projetado por três designers.",
+   "claim": "fact",
+   "factIds": [
+    "f9"
+   ],
+   "holdAfter": 0.8,
+   "visual": {
+    "type": "factsheet",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "Tipo: abridor de ovo por impacto\nExemplo: “Clack”, Take2-Design (Alemanha)\nDesign: três designers creditados\nPreço: 28,95 € (Color Edition)",
+    "footnote": "Fontes: loja do fabricante, Wikipédia (de) e DWDS, consultadas em 10/10/2026. Preço com IVA alemão de 19%, sem frete."
+   }
+  },
+  {
+   "id": "s12",
+   "speaker": "vendedor",
+   "text": "Três.",
+   "claim": "fact",
+   "factIds": [
+    "f9"
+   ],
+   "holdAfter": 0.8,
+   "visual": {
+    "type": "factsheet",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "Tipo: abridor de ovo por impacto\nExemplo: “Clack”, Take2-Design (Alemanha)\nDesign: três designers creditados\nPreço: 28,95 € (Color Edition)",
+    "footnote": "Fontes: loja do fabricante, Wikipédia (de) e DWDS, consultadas em 10/10/2026. Preço com IVA alemão de 19%, sem frete."
+   },
+   "note": "Orgulho sem ironia."
+  },
+  {
+   "id": "s13",
+   "speaker": "vendedor",
+   "text": "Para quem exige mais: esfera de pedra preciosa.",
+   "claim": "fact",
+   "factIds": [
+    "f11"
+   ],
+   "holdAfter": 0.5,
+   "visual": {
+    "type": "card",
+    "heading": "Gem Edition",
+    "body": "Esfera de pedra preciosa:\nametista, quartzo rosa,\naventurina verde ou sodalita.",
+    "footnote": "31,95 € na loja do fabricante (Take2-Design), consultada em 10/10/2026."
+   }
+  },
+  {
+   "id": "s14",
+   "speaker": "vendedor",
+   "text": "Ametista.",
+   "claim": "fact",
+   "factIds": [
+    "f11"
+   ],
+   "holdAfter": 0.7,
+   "visual": {
+    "type": "card",
+    "heading": "Gem Edition",
+    "body": "Esfera de pedra preciosa:\nametista, quartzo rosa,\naventurina verde ou sodalita.",
+    "footnote": "31,95 € na loja do fabricante (Take2-Design), consultada em 10/10/2026."
+   }
+  },
+  {
+   "id": "s15",
+   "speaker": "vendedor",
+   "text": "Para o ovo.",
+   "holdAfter": 0.8,
+   "visual": {
+    "type": "card",
+    "heading": "Gem Edition",
+    "body": "Esfera de pedra preciosa:\nametista, quartzo rosa,\naventurina verde ou sodalita.",
+    "footnote": "31,95 € na loja do fabricante (Take2-Design), consultada em 10/10/2026."
+   }
+  },
+  {
+   "id": "s16",
+   "speaker": "vendedor",
+   "text": "A concorrência usa tesoura. Patente de mil novecentos e sete.",
+   "claim": "fact",
+   "factIds": [
+    "f13"
+   ],
+   "holdAfter": 0.5,
+   "visual": {
+    "type": "media",
+    "mediaId": "m3",
+    "motion": "push-in",
+    "zoom": 1.08,
+    "focus": {
+     "x": 0.5,
+     "y": 0.42
+    },
+    "layout": "full",
+    "lowerThird": false,
+    "label": "Fig. 2 — Abridor do tipo tesoura. Foto: Allan Henderson, CC BY 2.0"
+   },
+   "caption": "A concorrência usa tesoura. Patente de 1907."
+  },
+  {
+   "id": "s17",
+   "speaker": "vendedor",
+   "text": "Tesoura.",
+   "holdAfter": 0.4,
+   "visual": {
+    "type": "media",
+    "mediaId": "m3",
+    "motion": "push-in",
+    "zoom": 1.08,
+    "focus": {
+     "x": 0.5,
+     "y": 0.42
+    },
+    "layout": "full",
+    "lowerThird": false,
+    "label": "Fig. 2 — Abridor do tipo tesoura. Foto: Allan Henderson, CC BY 2.0"
+   }
+  },
+  {
+   "id": "s18",
+   "speaker": "vendedor",
+   "text": "No café da manhã.",
+   "holdAfter": 0.9,
+   "visual": {
+    "type": "media",
+    "mediaId": "m3",
+    "motion": "push-in",
+    "zoom": 1.08,
+    "focus": {
+     "x": 0.5,
+     "y": 0.42
+    },
+    "layout": "full",
+    "lowerThird": false,
+    "label": "Fig. 2 — Abridor do tipo tesoura. Foto: Allan Henderson, CC BY 2.0"
+   },
+   "note": "Desdém técnico. Pico da confiança."
+  },
+  {
+   "id": "s19",
+   "speaker": "colega",
+   "text": "Pronto.",
+   "holdBefore": 1.25,
+   "holdAfter": 0.2,
+   "visual": {
+    "type": "media",
+    "mediaId": "m2",
+    "motion": "static",
+    "zoom": 1.0,
+    "focus": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "layout": "full",
+    "lowerThird": false,
+    "offsetY": 170,
+    "bg": "#CDCBCA"
+   },
+   "sfx": [
+    {
+     "id": "tap-tap",
+     "at": 0.25,
+     "gainDb": 2
+    },
+    {
+     "id": "crack",
+     "at": 0.95,
+     "gainDb": -3
+    }
+   ],
+   "note": "Fora de quadro: a colega bate a colher no ovo dela. Duas batidas, casca, 'Pronto.'"
+  },
+  {
+   "id": "s20",
+   "duration": 1.6,
+   "visual": {
+    "type": "media",
+    "mediaId": "m2",
+    "motion": "snap-in",
+    "zoom": 1.55,
+    "focus": {
+     "x": 0.37,
+     "y": 0.42
+    },
+    "layout": "full",
+    "lowerThird": false
+   },
+   "note": "Silêncio. Zoom de reação no aparelho."
+  },
+  {
+   "id": "s21",
+   "speaker": "vendedor",
+   "text": "A Sueli usa colher.",
+   "holdAfter": 1.0,
+   "visual": {
+    "type": "media",
+    "mediaId": "m2",
+    "motion": "snap-in",
+    "zoom": 1.55,
+    "focus": {
+     "x": 0.37,
+     "y": 0.42
+    },
+    "layout": "full",
+    "lowerThird": false
+   }
+  },
+  {
+   "id": "s22",
+   "speaker": "vendedor",
+   "text": "A colher não tem edição de Natal.",
+   "claim": "fact",
+   "factIds": [
+    "f12"
+   ],
+   "holdAfter": 0.8,
+   "visual": {
+    "type": "card",
+    "heading": "XMAS Edition",
+    "body": "Edição de Natal do abridor,\nà venda na loja do fabricante.",
+    "footnote": "Take2-Design, consultado em 10/10/2026."
+   },
+   "note": "Recuperação apoiada no único argumento disponível."
+  },
+  {
+   "id": "s23",
+   "speaker": "vendedor",
+   "text": "O fabricante diz que a tampa sai inclinando o aparelho.",
+   "claim": "fact",
+   "factIds": [
+    "f7"
+   ],
+   "holdAfter": 0.5,
+   "visual": {
+    "type": "card",
+    "heading": "Loja do fabricante:",
+    "body": "“…a tampa pode ser retirada inclinando levemente o aparelho ou com o auxílio de talheres adicionais.”",
+    "footnote": "Tradução livre de „…durch leichtes Verkanten mit dem Clack oder mit Zuhilfenahme weiteren Bestecks…“ — Take2-Design, consultado em 10/10/2026.",
+    "motion": "push-in"
+   }
+  },
+  {
+   "id": "s24",
+   "speaker": "vendedor",
+   "text": "Ou com o auxílio de talheres adicionais.",
+   "claim": "fact",
+   "factIds": [
+    "f7"
+   ],
+   "holdAfter": 1.5,
+   "visual": {
+    "type": "card",
+    "heading": "Loja do fabricante:",
+    "body": "“…a tampa pode ser retirada inclinando levemente o aparelho ou com o auxílio de talheres adicionais.”",
+    "footnote": "Tradução livre de „…durch leichtes Verkanten mit dem Clack oder mit Zuhilfenahme weiteren Bestecks…“ — Take2-Design, consultado em 10/10/2026.",
+    "motion": "push-in"
+   },
+   "note": "Ele percebe o que acabou de ler."
+  },
+  {
+   "id": "s25",
+   "speaker": "vendedor",
+   "text": "Uma colher, por exemplo.",
+   "holdAfter": 1.0,
+   "visual": {
+    "type": "card",
+    "heading": "Loja do fabricante:",
+    "body": "“…a tampa pode ser retirada inclinando levemente o aparelho ou com o auxílio de talheres adicionais.”",
+    "footnote": "Tradução livre de „…durch leichtes Verkanten mit dem Clack oder mit Zuhilfenahme weiteren Bestecks…“ — Take2-Design, consultado em 10/10/2026.",
+    "motion": "push-in"
+   }
+  },
+  {
+   "id": "s26",
+   "duration": 0.7,
+   "visual": {
+    "type": "black"
+   },
+   "note": "Corte para preto. Respira."
+  },
+  {
+   "id": "s27",
+   "speaker": "vendedor",
+   "text": "Mas a colher não tem trinta e oito letras.",
+   "claim": "fact",
+   "factIds": [
+    "f4"
+   ],
+   "holdAfter": 0.4,
+   "visual": {
+    "type": "media",
+    "mediaId": "m2",
+    "motion": "push-in",
+    "zoom": 1.1,
+    "focus": {
+     "x": 0.45,
+     "y": 0.3
+    },
+    "layout": "full",
+    "lowerThird": false,
+    "offsetY": 170,
+    "bg": "#CDCBCA"
+   },
+   "caption": "Mas a colher não tem 38 letras."
+  },
+  {
+   "id": "s28",
+   "speaker": "vendedor",
+   "text": "Vinte e oito euros e noventa e cinco. Dá setenta e seis centavos por letra.",
+   "claim": "fact",
+   "factIds": [
+    "f10",
+    "f4"
+   ],
+   "holdAfter": 0.6,
+   "visual": {
+    "type": "card",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "38 letras · 28,95 €\n≈ 0,76 € por letra",
+    "footnote": "Color Edition, loja do fabricante, 10/10/2026. IVA incluso, frete à parte.",
+    "motion": "drift"
+   },
+   "caption": "28 euros e 95. Dá 76 centavos por letra."
+  },
+  {
+   "id": "s29",
+   "speaker": "vendedor",
+   "text": "É praticamente de graça.",
+   "holdAfter": 0.3,
+   "visual": {
+    "type": "card",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "38 letras · 28,95 €\n≈ 0,76 € por letra",
+    "footnote": "Color Edition, loja do fabricante, 10/10/2026. IVA incluso, frete à parte.",
+    "motion": "drift"
+   }
+  },
+  {
+   "id": "s30",
+   "duration": 1.4,
+   "visual": {
+    "type": "card",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "38 letras · 28,95 €\n≈ 0,76 € por letra",
+    "footnote": "Color Edition, loja do fabricante, 10/10/2026. IVA incluso, frete à parte.",
+    "stamp": "AGUARDANDO NECESSIDADE",
+    "stampAt": 0.2
+   },
+   "sfx": [
+    {
+     "id": "tap",
+     "at": 0.2,
+     "gainDb": 3
+    }
+   ]
+  },
+  {
+   "id": "s31",
+   "speaker": "vendedor",
+   "text": "Você não precisava.",
+   "holdBefore": 0.3,
+   "holdAfter": 0.5,
+   "showCaptions": false,
+   "visual": {
+    "type": "endcard",
+    "heading": "Você não precisava. Até agora.",
+    "footnote": "Fontes e créditos na descrição."
+   },
+   "sfx": [
+    {
+     "id": "chime",
+     "at": 0,
+     "gainDb": -4
+    }
+   ]
+  },
+  {
+   "id": "s32",
+   "speaker": "vendedor",
+   "text": "Até agora.",
+   "holdAfter": 1.3,
+   "showCaptions": false,
+   "visual": {
+    "type": "endcard",
+    "heading": "Você não precisava. Até agora.",
+    "footnote": "Fontes e créditos na descrição."
+   }
+  }
+ ],
+ "packaging": {
+  "title": "38 letras para abrir um ovo | Protocolo 001",
+  "synopsis": "Valdemar Anunciação, Consultor Sênior de Soluções, apresenta um abridor de ovo alemão de nome longo e convicção maior ainda.",
+  "tags": [
+   "comédia",
+   "falso documentário",
+   "humor corporativo",
+   "gadgets de cozinha",
+   "produtos inusitados",
+   "ovo quente",
+   "Eierschalensollbruchstellenverursacher",
+   "Departamento de Necessidades Desnecessárias",
+   "shorts"
+  ],
+  "thumbnailBeatId": "s02"
+ },
+ "changelog": [
+  {
+   "version": 1,
+   "note": "Primeira versão do piloto."
+  },
+  {
+   "version": 2,
+   "note": "Corte de ~4 s para caber em 90 s; pronúncia de 'Sueli' (tônica no e) e 'colher' (substantivo, e aberto)."
+  },
+  {
+   "version": 3,
+   "note": "Enquadramentos: esfera fora da faixa institucional (offsetY com cor da parede), zoom menor na foto de 1024 px, aproximação lenta na citação do fabricante, plano do produto antes do preço; legendas com dígitos."
+  },
+  {
+   "version": 4,
+   "note": "Ponto focal mais alto nos planos com aproximação (s02, s27) para a esfera não subir para trás da faixa institucional."
+  }
+ ]
+}

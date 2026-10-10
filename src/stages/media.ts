@@ -53,7 +53,7 @@ export const mediaStage: Stage = {
     const outDir = path.join(ctx.p.assets, 'media');
     fs.mkdirSync(outDir, {recursive: true});
     const items: MediaItem[] = [];
-    const modifications = 'Modificacoes: recorte/enquadramento vertical, redimensionamento, movimento de camera, sobreposicao de textos e graficos.';
+    const modifications = 'Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.';
 
     for (const m of cand.media) {
       const base: Omit<MediaItem, 'verification' | 'status'> = {
@@ -84,10 +84,22 @@ export const mediaStage: Stage = {
           if (!url) throw new Error('sem URL de arquivo');
           const ext = (path.extname(new URL(url).pathname) || '.jpg').toLowerCase();
           const orig = path.join(outDir, `${m.id}.orig${ext}`);
-          if (!fs.existsSync(orig)) await download(url, orig);
+          let via = 'arquivo original';
+          if (!fs.existsSync(orig)) {
+            try {
+              await download(url, orig);
+            } catch (e) {
+              // Origem bloqueando o IP (429/CIDR): usa o proxy de imagens do Openverse para o mesmo registro.
+              if (m.provider !== 'openverse' || !m.providerRef) throw e;
+              log.warn(`${m.id}: download direto falhou (${(e as Error).message}); usando proxy do Openverse`);
+              await download(`https://api.openverse.org/v1/images/${m.providerRef}/thumb/?full_size=true&compressed=false`, orig);
+              via = 'proxy de imagens do Openverse (mesmo registro)';
+            }
+          }
+          item.verification.detail += `; arquivo obtido via ${via}`;
           const out = path.join(outDir, `${m.id}.jpg`);
-          // Normaliza: ate 2400 px no lado maior, JPEG. O original fica para auditoria (hash registrado).
-          await run('ffmpeg', ['-y', '-v', 'error', '-i', orig, '-vf', "scale='if(gt(iw,ih),min(2400,iw),-2)':'if(gt(iw,ih),-2,min(2400,ih))'", '-q:v', '2', out]);
+          // Normaliza: ate 3200 px no lado maior (sem reduzir fotos comuns), JPEG. O original fica para auditoria (hash registrado).
+          await run('ffmpeg', ['-y', '-v', 'error', '-i', orig, '-vf', "scale='if(gt(iw,ih),min(3200,iw),-2)':'if(gt(iw,ih),-2,min(3200,ih))'", '-q:v', '2', out]);
           const probe = await ffprobeJson(out);
           const vs = probe.streams.find((s: any) => s.codec_type === 'video');
           item.localFile = path.relative(ctx.p.assets, out);

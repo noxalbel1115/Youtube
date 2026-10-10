@@ -35,11 +35,13 @@ export async function loudnorm(input: string, output: string, target: number, tp
   return {measured: json};
 }
 
-export async function renderThumbnail(ctx: Ctx, frame: number): Promise<string> {
+export async function renderThumbnail(ctx: Ctx, frame: number, text?: string): Promise<string> {
   const timeline = Timeline.parse(readJson(ctx.p.timeline));
   const serveUrl = await bundleFor(ctx.p.assets);
-  const comp = await selectComposition({serveUrl, id: 'Thumbnail', inputProps: timeline as any, browserExecutable: browserExecutable()});
-  await renderStill({composition: comp, serveUrl, output: ctx.p.thumbnail, inputProps: {...timeline, thumbnailFrame: frame} as any, browserExecutable: browserExecutable()});
+  // As props precisam ir ja na selecao: o renderStill usa as props resolvidas da composicao.
+  const inputProps = {...timeline, thumbnailFrame: frame, thumbnailText: text} as any;
+  const comp = await selectComposition({serveUrl, id: 'Thumbnail', inputProps, browserExecutable: browserExecutable()});
+  await renderStill({composition: comp, serveUrl, output: ctx.p.thumbnail, inputProps, browserExecutable: browserExecutable()});
   return ctx.p.thumbnail;
 }
 
@@ -53,7 +55,8 @@ export const renderStage: Stage = {
       .sort()
       .map((f) => fs.readFileSync(path.join(ROOT, 'src', 'remotion', f), 'utf8'))
       .join('\n');
-    return sha256(fs.readFileSync(ctx.p.timeline, 'utf8') + src + JSON.stringify(ctx.cfg.format));
+    // Inclui registro de midias (hash dos originais) e manifesto de voz: arquivos com mesmo nome e conteudo novo invalidam o render.
+    return sha256(fs.readFileSync(ctx.p.timeline, 'utf8') + fs.readFileSync(ctx.p.mediaRegistry, 'utf8') + fs.readFileSync(ctx.p.voice, 'utf8') + src + JSON.stringify(ctx.cfg.format));
   },
   async run(ctx) {
     const timeline = Timeline.parse(readJson(ctx.p.timeline));

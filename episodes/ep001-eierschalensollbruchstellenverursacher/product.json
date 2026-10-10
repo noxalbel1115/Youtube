@@ -1,0 +1,146 @@
+{
+  "slug": "drop-weight-egg-topper",
+  "name": "Abridor de ovo por impacto (\"Eierschalensollbruchstellenverursacher\")",
+  "brand": "Tipo de aparelho; exemplo comercial: \"Clack\", Take2-Design (Alemanha)",
+  "description": "Campânula de metal colocada sobre o topo de um ovo cozido; uma esfera é erguida numa haste e solta, e o impacto rompe a casca numa linha ao redor do topo, que então pode ser retirado.",
+  "legitimateUse": "Quem come ovo quente (cozido mole) no porta-ovo, hábito comum no café da manhã alemão: evita estilhaços de casca e cortar o topo com faca. Não é tecnologia assistiva em nenhuma fonte consultada.",
+  "punchingDownRisk": "Baixo. A piada é o exagero do vendedor e a desproporção entre aparelho e tarefa; não ridicularizar fabricante, designers ou quem gosta do aparelho.",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://www.take2-design-online-shop.de/de/bestseller/clack-eieroeffner/",
+      "title": "\"Clack\" Eieröffner",
+      "publisher": "Take2-Design (loja oficial do fabricante)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-10",
+      "confirms": "Loja em alemão, preços com IVA alemão de 19%. Nome usado pelo fabricante, modo de uso, retirada da tampa inclinando o aparelho ou com talheres adicionais, três designers creditados, edições (Color, Gem com esfera de pedra preciosa, XMAS, Retro, Jubiläums 25) e preços (Color 28,95 EUR; Gem 31,95 EUR; IVA 19% incluso, frete à parte)."
+    },
+    {
+      "id": "s2",
+      "url": "https://de.wikipedia.org/wiki/Eierk%C3%B6pfer",
+      "title": "Eierköpfer",
+      "publisher": "Wikipédia (alemão)",
+      "kind": "encyclopedia",
+      "accessedAt": "2026-10-10",
+      "confirms": "Função dos abridores de ovo; modelo de impacto com campânula e peso esférico; nome brincalhão Eierschalensollbruchstellenverursacher; patente de 1907 (Ferdinand Fleischmann, Mödling) de modelo com dentes e mecanismo de tesoura; legenda identifica a foto do Commons como modelo Clack."
+    },
+    {
+      "id": "s3",
+      "url": "https://www.dwds.de/wb/Eierschalensollbruchstellenverursacher",
+      "title": "Eierschalensollbruchstellenverursacher",
+      "publisher": "DWDS – Digitales Wörterbuch der deutschen Sprache",
+      "kind": "encyclopedia",
+      "accessedAt": "2026-10-10",
+      "confirms": "Verbete do dicionário: uso geralmente brincalhão; aparelho que rompe a casca do ovo cozido num ponto predeterminado para que seja comido de colher sem descascar nem cortar o topo com faca; divisão em 12 sílabas; composição Eierschale + Sollbruchstelle + Verursacher; pronúncia."
+    }
+  ],
+  "facts": [
+    {
+      "id": "f1",
+      "text": "O fabricante alemão Take2-Design chama seu abridor de ovo \"Clack\" de Eierschalensollbruchstellenverursacher.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f2",
+      "text": "A palavra está no dicionário DWDS, marcada como de uso geralmente brincalhão, para aparelhos que rompem a casca do ovo cozido num ponto predeterminado.",
+      "sourceIds": [
+        "s3",
+        "s2"
+      ]
+    },
+    {
+      "id": "f3",
+      "text": "A palavra se compõe de Eierschale (casca de ovo), Sollbruchstelle (ponto de ruptura predeterminado) e Verursacher (causador).",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "A palavra tem 38 letras e 12 sílabas.",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "id": "f5",
+      "text": "Uso segundo o fabricante: colocar a cápsula de metal sobre o ovo cozido, puxar a esfera para cima e soltá-la.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f6",
+      "text": "No modelo de impacto, uma campânula com aresta interna é colocada sobre o ovo e o golpe de um peso esférico rompe a casca ao redor do topo.",
+      "sourceIds": [
+        "s2"
+      ]
+    },
+    {
+      "id": "f7",
+      "text": "Segundo o fabricante, depois a tampa do ovo pode ser retirada inclinando levemente o aparelho ou com o auxílio de talheres adicionais.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f8",
+      "text": "Segundo o DWDS, a finalidade é permitir comer o ovo de colher sem descascar nem cortar o topo com faca.",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "id": "f9",
+      "text": "O fabricante credita o design do Clack a três designers.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f10",
+      "text": "Na loja do fabricante, a Color Edition custa 28,95 euros (IVA alemão incluso, frete à parte), em 10/10/2026.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f11",
+      "text": "A loja do fabricante vende uma Gem Edition com esfera de pedra preciosa (ametista, quartzo rosa, aventurina verde, sodalita) por 31,95 euros.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f12",
+      "text": "A loja do fabricante lista uma edição de Natal (XMAS Edition).",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f13",
+      "text": "Existe uma patente de 1907, de Ferdinand Fleischmann, para um abridor de ovo com dentes e mecanismo de tesoura.",
+      "sourceIds": [
+        "s2"
+      ]
+    }
+  ],
+  "price": {
+    "amount": 28.95,
+    "currency": "EUR",
+    "sourceId": "s1",
+    "observedAt": "2026-10-10",
+    "note": "Color Edition na loja do fabricante; IVA 19% incluso, frete à parte. Outras edições: a partir de 29,95 a 31,95 EUR."
+  },
+  "risks": [
+    "Fotos não mostram marca identificável: legendar como 'aparelho do mesmo tipo'.",
+    "Nomear o Clack/Take2-Design só com fatos da página do fabricante, sem sugerir endosso.",
+    "m2 é CC BY-SA (compartilha-igual): preferir m1/m3 no render publicável.",
+    "Não afirmar quem inventou o aparelho (não verificado)."
+  ],
+  "comedyAngle": "O vendedor apresenta 38 letras de engenharia alemã para abrir o topo de um ovo; a colega abre o dela com a colher, fora de quadro, e a própria loja do fabricante admite que talheres adicionais podem ser necessários.",
+  "verifiedAt": "2026-10-10"
+}

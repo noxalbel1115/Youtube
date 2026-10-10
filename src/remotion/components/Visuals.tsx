@@ -46,14 +46,16 @@ function useCamera(beat: TimelineBeat, boxW: number, boxH: number) {
   const sw = w * s;
   const sh = h * s;
   const x = Math.min(0, Math.max(boxW - sw, boxW / 2 - fx * sw));
-  const y = Math.min(0, Math.max(boxH - sh, boxH / 2 - fy * sh));
+  const y0 = Math.min(0, Math.max(boxH - sh, boxH / 2 - fy * sh));
+  const off = beat.visual.offsetY ?? 0;
+  const y = off > 0 ? Math.min(off, Math.max(boxH - sh, y0 + off)) : y0;
   return {sw, sh, x, y};
 }
 
 const Photo: React.FC<{beat: TimelineBeat; boxW: number; boxH: number}> = ({beat, boxW, boxH}) => {
   const {sw, sh, x, y} = useCamera(beat, boxW, boxH);
   return (
-    <div style={{position: 'absolute', inset: 0, overflow: 'hidden', background: C.ink}}>
+    <div style={{position: 'absolute', inset: 0, overflow: 'hidden', background: beat.visual.bg ?? C.ink}}>
       <Img src={staticFile(beat.mediaFile!)} style={{position: 'absolute', left: x, top: y, width: sw, height: sh}} />
     </div>
   );
@@ -91,6 +93,15 @@ export const MediaExhibit: React.FC<{beat: TimelineBeat}> = ({beat}) => {
     </AbsoluteFill>
   );
 };
+
+/** Movimento lento sobre documentos (aproximacao de camera sobre a cartela). */
+function useCardScale(beat: TimelineBeat): number {
+  const frame = useCurrentFrame();
+  const p = interpolate(frame, [0, Math.max(1, beat.durationFrames - 1)], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease});
+  if (beat.visual.motion === 'push-in') return interpolate(p, [0, 1], [1, 1.07]);
+  if (beat.visual.motion === 'drift') return interpolate(p, [0, 1], [1, 1.025]);
+  return 1;
+}
 
 /** Linhas de pauta discretas: papel de reparticao. */
 export const PaperTexture: React.FC = () => (
@@ -147,7 +158,7 @@ export const TitleCard: React.FC<{beat: TimelineBeat; brandName: string}> = ({be
         <div style={{marginTop: 44, fontSize: 34, fontWeight: 600, letterSpacing: 5, textTransform: 'uppercase', lineHeight: 1.3}}>{brandName}</div>
         <div style={{height: 4, background: C.ink, margin: '30px 0 26px', width: 260}} />
         {v.footnote ? <div style={{fontFamily: MONO, fontSize: 32, color: C.inkSoft}}>{v.footnote}</div> : null}
-        {v.heading ? <div style={{marginTop: 80, fontSize: 92, fontWeight: 700, lineHeight: 1.05}}>{v.heading}</div> : null}
+        {v.heading ? <div style={{marginTop: 80, fontSize: 84, fontWeight: 700, lineHeight: 1.05, hyphens: 'manual', overflowWrap: 'anywhere'}}>{v.heading}</div> : null}
         {v.body ? <div style={{marginTop: 30, fontSize: 42, color: C.inkSoft, lineHeight: 1.3}}>{v.body}</div> : null}
       </div>
       {v.stamp ? <Stamp text={v.stamp} atFrame={Math.round(v.stampAt * fps)} top={1260} /> : null}
@@ -157,12 +168,13 @@ export const TitleCard: React.FC<{beat: TimelineBeat; brandName: string}> = ({be
 
 export const TextCard: React.FC<{beat: TimelineBeat}> = ({beat}) => {
   const {fps} = useVideoConfig();
+  const scale = useCardScale(beat);
   const v = beat.visual;
   return (
     <AbsoluteFill style={{background: C.paper}}>
       <PaperTexture />
-      <div style={{position: 'absolute', left: SAFE.left, right: 150, top: 560, color: C.ink, fontFamily: SANS}}>
-        {v.heading ? <div style={{fontSize: 76, fontWeight: 700, lineHeight: 1.1}}>{v.heading}</div> : null}
+      <div style={{position: 'absolute', left: SAFE.left, right: 150, top: 560, color: C.ink, fontFamily: SANS, transform: `scale(${scale})`, transformOrigin: '0% 30%'}}>
+        {v.heading ? <div style={{fontSize: 76, fontWeight: 700, lineHeight: 1.1, hyphens: 'manual', overflowWrap: 'anywhere'}}>{v.heading}</div> : null}
         {v.body ? <div style={{marginTop: 34, fontSize: 44, color: C.inkSoft, lineHeight: 1.35, whiteSpace: 'pre-line'}}>{v.body}</div> : null}
         {v.footnote ? <div style={{marginTop: 50, fontFamily: MONO, fontSize: 28, color: C.muted, lineHeight: 1.4}}>{v.footnote}</div> : null}
       </div>
@@ -175,6 +187,7 @@ export const TextCard: React.FC<{beat: TimelineBeat}> = ({beat}) => {
 export const FactSheet: React.FC<{beat: TimelineBeat}> = ({beat}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
+  const scale = useCardScale(beat);
   const v = beat.visual;
   const rows = (v.body ?? '').split('\n').filter(Boolean).map((r) => {
     const i = r.indexOf(':');
@@ -183,9 +196,9 @@ export const FactSheet: React.FC<{beat: TimelineBeat}> = ({beat}) => {
   return (
     <AbsoluteFill style={{background: C.paper}}>
       <PaperTexture />
-      <div style={{position: 'absolute', left: SAFE.left, right: 150, top: 340, color: C.ink, fontFamily: SANS}}>
+      <div style={{position: 'absolute', left: SAFE.left, right: 150, top: 340, color: C.ink, fontFamily: SANS, transform: `scale(${scale})`, transformOrigin: '0% 30%'}}>
         <div style={{fontFamily: MONO, fontSize: 30, letterSpacing: 4, color: C.inkSoft}}>FICHA TÉCNICA</div>
-        <div style={{fontSize: 64, fontWeight: 700, marginTop: 12, lineHeight: 1.1}}>{v.heading}</div>
+        <div style={{fontSize: 60, fontWeight: 700, marginTop: 12, lineHeight: 1.1, hyphens: 'manual', overflowWrap: 'anywhere'}}>{v.heading}</div>
         <div style={{height: 3, background: C.ink, margin: '30px 0 10px'}} />
         {rows.map(([k, val], i) => {
           // Cada linha entra em sequencia, como quem le a ficha.

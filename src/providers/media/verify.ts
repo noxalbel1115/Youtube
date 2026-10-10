@@ -50,6 +50,8 @@ export function parseCommonsLicense(wikitext: string): {license: LicenseCode; ve
   const pref: LicenseCode[] = ['cc0', 'pdm', 'by', 'by-sa'];
   const mapped = uniq.map((t): {license: LicenseCode; version?: string} => {
     if (t === 'cc-zero' || t === 'cc0') return {license: 'cc0'};
+    // {{GFDL|migration=relicense}}: arquivo relicenciado tambem sob CC BY-SA 3.0 (migracao de licenca de 2009).
+    if (t === 'gfdl' && /\{\{\s*GFDL[^}]*migration\s*=\s*relicense/i.test(wikitext)) return {license: 'by-sa', version: '3.0'};
     if (t.startsWith('pd-')) return {license: 'pdm'};
     let m = t.match(/^cc-by-sa-(\d\.\d)/);
     if (m) return {license: 'by-sa', version: m[1]};

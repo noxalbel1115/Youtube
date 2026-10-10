@@ -5,6 +5,8 @@ import type {epPaths} from '../core/paths.js';
 export interface Flags {
   force: Set<string>;
   pick?: string;
+  /** Justificativa registrada quando a escolha automatica e substituida (--pick). */
+  pickReason?: string;
   confirmUpload?: boolean;
   privacy?: 'private' | 'unlisted' | 'public';
   publishAt?: string;

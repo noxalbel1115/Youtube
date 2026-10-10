@@ -86,7 +86,9 @@ export const timelineStage: Stage = {
       for (const s of b.sfx) {
         const file = await ensureSfx(s.id, sfxDir);
         const at = s.at >= 0 ? f(s.at) : dur + f(s.at);
-        sfx.push({file: path.relative(ctx.p.assets, file), frame: cursor + Math.max(0, Math.min(dur - 1, at)), volume: dbToGain(s.gainDb)});
+        const frame = cursor + Math.max(0, Math.min(dur - 1, at));
+        sfx.push({file: path.relative(ctx.p.assets, file), frame, volume: dbToGain(s.gainDb)});
+        if (s.caption) captions.push({text: s.caption, startFrame: frame, endFrame: frame + f(0.9), speaker: s.captionSpeaker});
       }
       beats.push({
         id: b.id,
@@ -108,6 +110,9 @@ export const timelineStage: Stage = {
     }
     const roomTone = await ensureSfx('room-tone', sfxDir);
     const credits = registry.items.filter((i) => usedMedia.has(i.id)).map((i) => i.attribution);
+    captions.sort((a, b) => a.startFrame - b.startFrame);
+    // Legenda de som nao pode sobrepor a fala seguinte.
+    for (let i = 0; i < captions.length - 1; i++) captions[i].endFrame = Math.min(captions[i].endFrame, captions[i + 1].startFrame);
     const timeline = Timeline.parse({
       fps,
       width: ctx.cfg.format.width,

@@ -37,9 +37,9 @@ function parseArgs(argv: string[]) {
 const HELP = `Departamento de Necessidades Desnecessarias — pipeline
 
   npm run dnn -- new <ep001-slug>                 cria episodio
-  npm run dnn -- run <id> [--from etapa] [--to etapa] [--force etapa,...|all] [--pick slug] [--offline]
+  npm run dnn -- run <id> [--from etapa] [--to etapa] [--force etapa,...|all] [--pick slug --reason "..."] [--offline]
   npm run dnn -- status <id>                      etapa atual, erros, custos, upload
-  npm run dnn -- review <id> --approve|--reject [--note "..."]   registra revisao humana do MP4 atual
+  npm run dnn -- review <id> --approve|--reject|--note-only [--note "..."]   registra revisao do MP4 atual
   npm run dnn -- upload <id> --confirm-upload [--privacy private|unlisted|public] [--publish-at ISO]
   npm run dnn -- reconcile <id>                   consulta o canal (sem enviar nada)
   npm run dnn -- youtube:auth                     autoriza o canal (maquina com navegador)
@@ -51,6 +51,7 @@ function flagsFrom(opts: Record<string, string | true>): Flags {
   return {
     force: new Set(typeof opts.force === 'string' ? opts.force.split(',') : opts.force ? ['all'] : []),
     pick: typeof opts.pick === 'string' ? opts.pick : undefined,
+    pickReason: typeof opts.reason === 'string' ? opts.reason : undefined,
     offline: !!opts.offline,
     confirmUpload: !!opts['confirm-upload'],
     privacy: typeof opts.privacy === 'string' ? (opts.privacy as Flags['privacy']) : undefined,
@@ -143,17 +144,20 @@ async function main(): Promise<number> {
       return 0;
     }
     case 'review': {
-      if (!id || (!opts.approve && !opts.reject)) throw new Error('uso: review <id> --approve|--reject [--note "..."]');
+      if (!id || (!opts.approve && !opts.reject && !opts['note-only'])) throw new Error('uso: review <id> --approve|--reject|--note-only [--note "..."] [--by nome]');
       const p = epPaths(id);
       const report = readJson<any>(p.verifyReport);
       const sha = sha256File(p.render);
       if (report.sha256 !== sha) throw new Error('o MP4 atual nao e o verificado; rode a etapa verify de novo');
+      const by = typeof opts.by === 'string' ? opts.by : process.env.USER ?? 'humano';
+      const prevNotes = report.manualReview?.sha256 === sha ? report.manualReview?.notes ?? [] : [];
       report.manualReview = {
-        status: opts.approve ? 'aprovado' : 'reprovado',
+        // --note-only registra observacoes (ex.: inspecao assistida por IA) sem aprovar nem reprovar.
+        status: opts.approve ? 'aprovado' : opts.reject ? 'reprovado' : report.manualReview?.sha256 === sha ? report.manualReview.status : 'pendente',
         sha256: sha,
         at: nowIso(),
-        by: process.env.USER ?? 'humano',
-        notes: [...(report.manualReview?.notes ?? []), ...(typeof opts.note === 'string' ? [opts.note] : [])],
+        by: opts['note-only'] ? report.manualReview?.by ?? null : by,
+        notes: [...prevNotes, ...(typeof opts.note === 'string' ? [{by, at: nowIso(), text: opts.note}] : [])],
       };
       writeJsonAtomic(p.verifyReport, report);
       log.info(`revisao registrada: ${report.manualReview.status}`);

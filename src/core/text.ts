@@ -78,32 +78,49 @@ export function applyPronunciations(text: string, dict: Record<string, string>):
   return out;
 }
 
-/** Quebra uma fala em blocos de legenda curtos (ate ~2 linhas), preferindo quebrar apos pontuacao e sem deixar palavra orfa. */
-export function chunkCaption(text: string, maxChars = 28, maxWords = 6): string[] {
-  const words = text.split(/\s+/).filter(Boolean);
-  const chunks: string[][] = [];
-  let cur: string[] = [];
-  for (const w of words) {
-    const candidate = [...cur, w].join(' ');
-    if (cur.length > 0 && (candidate.length > maxChars || cur.length >= maxWords)) {
-      chunks.push(cur);
-      cur = [w];
-    } else cur.push(w);
-    if (/[.!?…:]$/.test(w) && cur.join(' ').length >= 10) {
-      chunks.push(cur);
-      cur = [];
+/**
+ * Quebra uma fala em blocos de legenda: primeiro por frase; frases longas sao divididas no menor numero de
+ * blocos (ate maxChars cada, ~2 linhas) com tamanhos equilibrados, para nao sobrar fragmento curto.
+ */
+export function chunkCaption(text: string, maxChars = 32): string[] {
+  const visible = (w: string[]) => w.join(' ').replace(/\u00ad/g, '').length;
+  const sentences = text.split(/(?<=[.!?…])\s+/).filter(Boolean);
+  const out: string[] = [];
+  for (const sentence of sentences) {
+    const words = sentence.split(/\s+/).filter(Boolean);
+    if (visible(words) <= maxChars || words.length === 1) {
+      out.push(words.join(' '));
+      continue;
     }
-  }
-  if (cur.length) chunks.push(cur);
-  // Palavra orfa (bloco de 1 palavra curta) volta para o bloco anterior se couber com folga.
-  for (let i = chunks.length - 1; i > 0; i--) {
-    const c = chunks[i];
-    const prev = chunks[i - 1];
-    const prevEndsSentence = /[.!?…:]$/.test(prev[prev.length - 1]);
-    if (c.length === 1 && c[0].length <= 8 && !prevEndsSentence && [...prev, ...c].join(' ').length <= maxChars + 8) {
-      chunks[i - 1] = [...prev, ...c];
-      chunks.splice(i, 1);
+    // Particao em k blocos contiguos minimizando o maior bloco (programacao dinamica; frases sao curtas).
+    const n = words.length;
+    let best: string[][] | null = null;
+    for (let k = Math.ceil(visible(words) / maxChars); k <= n && !best; k++) {
+      const cost: number[][] = Array.from({length: k + 1}, () => Array(n + 1).fill(Infinity));
+      const cut: number[][] = Array.from({length: k + 1}, () => Array(n + 1).fill(0));
+      cost[0][0] = 0;
+      for (let j = 1; j <= k; j++) {
+        for (let i = 1; i <= n; i++) {
+          for (let p = j - 1; p < i; p++) {
+            const c = Math.max(cost[j - 1][p], visible(words.slice(p, i)));
+            if (c < cost[j][i]) {
+              cost[j][i] = c;
+              cut[j][i] = p;
+            }
+          }
+        }
+      }
+      if (cost[k][n] <= maxChars) {
+        const parts: string[][] = [];
+        let i = n;
+        for (let j = k; j >= 1; j--) {
+          parts.unshift(words.slice(cut[j][i], i));
+          i = cut[j][i];
+        }
+        best = parts;
+      }
     }
+    for (const part of best ?? [words]) out.push(part.join(' '));
   }
-  return chunks.map((c) => c.join(' '));
+  return out;
 }

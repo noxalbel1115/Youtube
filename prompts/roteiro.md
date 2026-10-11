@@ -14,15 +14,20 @@ desvantagens e do constrangimento quando a realidade interrompe a apresentação
 1. **Fatos x ficção.** Toda afirmação sobre o produto real (o que faz, como funciona, preço, material, fabricante)
    é `claim: "fact"` e cita `factIds` de `product.json`. A ficção é o vendedor, a colega, o escritório, as opiniões e
    os exageros *evidentes* do vendedor. Nunca invente defeito, resultado de teste, preço, demonstração ou estatística.
-2. **O vendedor nunca anuncia a piada.** Ele tenta fechar a venda. Nada de piscadela para a câmera, sarcasmo,
-   "kkk", memes, efeitos exagerados ou comentário irônico do narrador.
+2. **O vendedor nunca pisca para a câmera — mas a ironia é descarada.** Ele tenta fechar a venda com tom sério e
+   não ri da própria fala; o *conteúdo* do que ele diz, porém, é ironia aberta: elogia exatamente o defeito, tira
+   conclusões absurdas de fatos reais e as diz por extenso. A colega, o locutor e as cartelas do Departamento podem
+   ser sarcásticos às claras. Continua proibido: "kkk", memes, efeitos de meme, risada gravada. Ver a seção
+   **Ironia descarada** (nota do editor sobre o Protocolo 003).
 3. **Progressão dramática.** Confiança alta → demonstração → interrupção da realidade → silêncio → tentativa de
    recuperação → confiança deteriorada → última tentativa de fechar a venda. Cada beat muda algo.
 4. **Respeito ao uso legítimo.** Se o produto tem público legítimo (acessibilidade, uso profissional, segurança),
-   a piada é o exagero do vendedor, nunca o público. Não ridicularize marca nem fabricante; não sugira endosso.
-5. **Pausas são material.** Use `holdBefore`/`holdAfter` para silêncios (0,8–2,0 s nos momentos certos), cortes secos
-   para quadros estáticos (`motion: "static"`) e o "zoom de reação" (`snap-in`) em cada golpe da realidade (até 4
-   vezes por episódio). Não acelere tudo.
+   a piada é o exagero do vendedor, nunca o público. Quem compra nunca é o alvo. Marcas e fabricantes podem ser
+   alvo de ironia sobre o que eles próprios disseram ou cobraram (comunicado, preço, “primeiro”, “revolucionário”),
+   sempre com fonte; nunca sobre defeito ou resultado que não esteja documentado. Não sugira endosso.
+5. **Pausas são tempero, não prato.** Entre falas, 0,2–0,5 s. Silêncio longo (≥ 0,8 s) só no golpe maior, no
+   máximo duas vezes por episódio. Beat sem fala: até 2 s. Use cortes secos (`motion: "static"`) e o "zoom de
+   reação" (`snap-in`) em cada golpe da realidade (até 4 vezes por episódio).
 6. **Mídia.** Só use `mediaId` com `status: "usable"` em `media.json`. Não descreva na fala algo que a imagem não mostra.
 7. **Referências.** The Office é atmosfera, não fonte: não copie personagens, falas, bordões, identidade visual ou música.
 
@@ -47,11 +52,49 @@ inferir onde está a graça.
 - **Teste de clareza antes de gravar a voz:** só com imagem e legenda (sem som), a piada aparece? Só com som (sem
   imagem), também? Se a resposta for "dá para entender se prestar atenção", ainda está subentendido demais.
 
+## Ironia descarada (nota do editor sobre o Protocolo 003, 11/10/2026)
+
+Avaliação do Protocolo 003 (iPhone Duo), depois de publicado: "Precisamos melhorar nosso texto e nosso humor. Fale
+mais, seja mais explícito na argumentação nos próximos. Seja irônico descaradamente."
+
+Diagnóstico do que faltou no 003: o vendedor falava em fragmentos ("Um iPhone. Que dobra." "Mas dobra." "Sobras
+premium.") e deixava o espectador completar o raciocínio; as citações-chave estavam em inglês na tela; a colega
+falou duas vezes; quase um terço do vídeo era pausa ou beat sem fala. A piada existia, mas o texto era tímido.
+
+Regras a partir do Protocolo 004:
+
+- **Fale mais.** Fala em pelo menos 80% da duração. Frases completas, ditas com convicção, em vez de fragmentos.
+  Cada beat de fala tem uma ideia inteira (fato + conclusão), não meia ideia.
+- **Argumente por extenso, em cadeia.** O vendedor raciocina em voz alta: *fato documentado → "ou seja" → conclusão
+  absurda dita com todas as letras*. Ex.: "Custa trezentos e setenta e três dias de salário mínimo. Ou seja: você
+  trabalha um ano inteiro para segurar a tela dobrada. Isso é que é compromisso." A conclusão nunca fica implícita.
+- **Antífrase sem vergonha.** Ele elogia exatamente o defeito, com entusiasmo de vendedor: atraso vira
+  "maturidade", preço vira "exclusividade", cópia vira "curadoria". Diga o elogio e o motivo, para não haver dúvida
+  de que é ironia.
+- **Faça as contas em voz alta.** Todo número relevante vira comparação concreta e absurda (preço por ano de atraso,
+  por letra, por minuto, em salários mínimos, em cafezinhos), calculada a partir de fatos com fonte e mostrada na
+  ficha.
+- **Três argumentos por bloco, em escalada.** "Primeiro… Segundo… E o melhor…": o terceiro é o mais absurdo.
+- **Bordão e retorno.** Uma expressão do vendedor que volta duas ou três vezes, cada vez mais desmentida pelos fatos
+  (ex.: "inédito", "praticamente de graça"). O último retorno é o botão final.
+- **A colega é sarcástica às claras**, 3–5 falas curtas, sempre mirando o produto ou o discurso, nunca uma pessoa:
+  "Inédito desde 2019, né, Valdemar?" Ela pode fazer a pergunta que o espectador faria.
+- **O locutor pode entrar** como voz oficial do Departamento, seca e irônica, em abertura, virada ou encerramento
+  (ex.: "O Departamento informa: a necessidade foi atendida em 2019.").
+- **Cartelas e carimbos em português e explícitos.** Citação em outro idioma aparece pequena; a tradução vem em
+  destaque e é dita em voz alta. Carimbos podem ser opinião institucional ("COPIADO COM ORGULHO", "INOVAÇÃO
+  REQUENTADA"), desde que o fato por trás tenha fonte.
+- **Nada fica para o espectador inferir.** Teste: se alguém ler só as legendas, sem imagem, a ironia tem que estar
+  escrita. Se precisar de "pegar a referência", reescreva.
+- **Limites que continuam:** fatos com fonte; nenhum defeito, teste ou número inventado; o alvo é o produto, o preço
+  e o discurso de quem vende, nunca quem compra nem quem depende do produto.
+
 ## Personagens e vozes
 
-- `vendedor` — voz principal, tom de apresentação de resultados trimestrais.
-- `colega` — voz fora de quadro, curta, prática, sem intenção de humilhar. Aparece 1–2 vezes.
-- `locutor` — opcional, institucional (abertura/encerramento). Use pouco.
+- `vendedor` — voz principal, tom de apresentação de resultados trimestrais; argumenta por extenso e defende o
+  indefensável sem piscar.
+- `colega` — voz fora de quadro, sarcástica às claras com o produto e o discurso (nunca com pessoas). Aparece 3–5 vezes.
+- `locutor` — voz oficial do Departamento, seca e irônica, para abertura, virada ou encerramento.
 
 ## Recursos visuais disponíveis
 
@@ -63,7 +106,8 @@ Cenas 3D próprias (`type: "scene3d"`, campo `scene`): `egg-topper` (piloto), `t
 
 ## Texto falado
 
-- Frases curtas, ditas em voz alta. Evite siglas e números longos; escreva números por extenso quando ajudar a voz.
+- Frases completas e diretas, ditas em voz alta (curtas no fôlego, não no raciocínio). Evite siglas e números longos;
+  escreva números por extenso quando ajudar a voz.
 - Use `pronunciations` para nomes estrangeiros (grafia que a voz deve ler) e `caption` para a grafia correta na legenda.
 - Preço: só o valor consultado, com a data na ficha técnica.
 

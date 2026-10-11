@@ -1,5 +1,6 @@
 // Documentos legiveis do episodio (gerados a partir dos JSON validados): roteiro e registro de fontes/midias.
-import {Script, Timeline, Product, MediaRegistry, Selection, CandidatesFile} from '../schemas.js';
+import {Script, Timeline, Product, MediaRegistry, Selection, CandidatesFile, VoiceManifest} from '../schemas.js';
+import {voiceCredit} from '../providers/tts/index.js';
 import {readJson} from '../core/state.js';
 import {licenseLabel} from '../providers/media/verify.js';
 import type {Ctx} from './types.js';
@@ -70,7 +71,8 @@ export function fontesMd(ctx: Ctx): string {
     );
   }
   out.push('', 'O que cada mídia mostra:', '', ...registry.items.map((m) => `- **${m.id}** — ${m.description}`));
-  out.push('', 'Grafismos, cartelas e efeitos sonoros: produzidos pelo projeto (código em `src/remotion` e `src/sfx.ts`). Voz: Kokoro-82M (Apache-2.0), local.', '');
+  const voiceProviders = [...new Set(VoiceManifest.parse(readJson(ctx.p.voice)).lines.map((l) => l.provider))];
+  out.push('', `Grafismos, cartelas e efeitos sonoros: produzidos pelo projeto (código em \`src/remotion\` e \`src/sfx.ts\`). ${voiceCredit(voiceProviders, ctx.cfg)}`, '');
   out.push('## Seleção', '', selection.rationale, '', '| Candidato | Pontuação | Elegível | Motivos |', '|---|---|---|---|');
   for (const r of selection.ranking) out.push(`| ${r.slug} | ${r.score} | ${r.eligible ? 'sim' : 'não'} | ${r.reasons.join('; ').replace(/\|/g, '/')} |`);
   out.push('');

@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import {Script, Timeline, Product, MediaRegistry} from '../schemas.js';
+import {Script, Timeline, Product, MediaRegistry, VoiceManifest} from '../schemas.js';
+import {voiceCredit} from '../providers/tts/index.js';
 import {readJson, sha256, sha256File, writeJsonAtomic} from '../core/state.js';
 import {rel} from '../core/paths.js';
 import {renderThumbnail} from './render.js';
@@ -36,7 +37,7 @@ export function buildDescription(ctx: Ctx): string {
   const product = Product.parse(readJson(ctx.p.product));
   const registry = MediaRegistry.parse(readJson(ctx.p.mediaRegistry));
   const used = new Set(script.beats.filter((b) => b.visual.type === 'media').map((b) => b.visual.mediaId));
-  const ttsProviders = [...new Set(Object.values(ctx.cfg.providers.tts.voices).map((v) => v.provider))];
+  const ttsProviders = [...new Set(VoiceManifest.parse(readJson(ctx.p.voice)).lines.map((l) => l.provider))];
   const lines: string[] = [];
   lines.push(script.packaging.synopsis, '');
   lines.push(`${ctx.cfg.channel.motto}`, '');
@@ -53,7 +54,7 @@ export function buildDescription(ctx: Ctx): string {
   lines.push('', '— Créditos de imagem —');
   for (const it of registry.items.filter((i) => used.has(i.id))) lines.push(`• ${it.attribution}`);
   lines.push('', '— Produção —');
-  lines.push(`Voz sintética (${ttsProviders.join(', ')}${ttsProviders.includes('kokoro') ? ': modelo Kokoro-82M, licença Apache-2.0' : ''}). Efeitos sonoros e grafismos produzidos pelo canal.`);
+  lines.push(`${voiceCredit(ttsProviders, ctx.cfg)} Efeitos sonoros e grafismos produzidos pelo canal.`);
   lines.push('', `ref: ${idempotencyKey(ctx)}`);
   return lines.join('\n');
 }

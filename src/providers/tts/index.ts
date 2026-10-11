@@ -111,6 +111,16 @@ export const TTS_PROVIDERS: Record<string, TtsProvider> = {kokoro, piper, eleven
  * plano gratuito nao ha uso comercial e o titulo precisa citar "elevenlabs.io" (elevenlabs.io/docs/help-center/legal,
  * consultado em 10/10/2026). Retorna o problema ou null.
  */
+/** Credito da voz para descricao e documentos, a partir dos provedores efetivamente usados nas falas. */
+export function voiceCredit(providers: string[], cfg: Config): string {
+  const label: Record<string, string> = {
+    kokoro: 'Kokoro-82M (licença Apache-2.0, execução local)',
+    elevenlabs: `ElevenLabs (modelo ${cfg.providers.tts.elevenlabs.modelId})`,
+    piper: 'Piper (uso interno)',
+  };
+  return `Voz sintética: ${providers.map((p) => label[p] ?? p).join('; ')}.`;
+}
+
 export function voiceLicenseIssue(providers: string[], cfg: Config): string | null {
   if (providers.includes('elevenlabs') && !cfg.providers.tts.elevenlabs.commercialLicenseConfirmed) {
     return 'falas geradas pela ElevenLabs sem confirmacao de assinatura paga: no plano gratuito nao ha licenca comercial e o titulo precisa citar "elevenlabs.io". Confirme o plano em providers.tts.elevenlabs.commercialLicenseConfirmed ou regenere as falas depois de assinar.';

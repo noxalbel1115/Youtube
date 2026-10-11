@@ -49,7 +49,8 @@ fs.mkdirSync(dir, {recursive: true});
 const items = lines.map((text, i) => ({id: String(i), text, voice: a.voice!, speed: Number(a.speed), out: path.join(dir, `raw-${i}.wav`)}));
 
 const t0 = Date.now();
-await provider.synthesize(items, cfg);
+const results = await provider.synthesize(items, cfg);
+const credits = results.every((r) => typeof r.credits === 'number') ? results.reduce((s, r) => s + (r.credits ?? 0), 0) : null;
 const synthSeconds = (Date.now() - t0) / 1000;
 
 const finals: string[] = [];
@@ -72,6 +73,6 @@ const rows = [];
 for (const [i, it] of items.entries()) {
   rows.push({fala: it.text, segundos: Number((await durationOf(finals[i])).toFixed(2)), transcricao: asr[i].text, wer: Number(wordErrorRate(it.text, asr[i].text).toFixed(2))});
 }
-const report = {label: a.label, provider: a.provider, model: a.model ?? null, voice: a.voice, speed: Number(a.speed), caracteres: lines.join('').length, sinteseSegundos: synthSeconds, mp3: path.relative(ROOT, mp3), falas: rows};
+const report = {label: a.label, provider: a.provider, model: a.model ?? null, voice: a.voice, speed: Number(a.speed), caracteres: lines.join('').length, creditosInformados: credits, sinteseSegundos: synthSeconds, mp3: path.relative(ROOT, mp3), falas: rows};
 fs.writeFileSync(path.join(dir, 'report.json'), JSON.stringify(report, null, 2));
 console.log(JSON.stringify(report, null, 2));

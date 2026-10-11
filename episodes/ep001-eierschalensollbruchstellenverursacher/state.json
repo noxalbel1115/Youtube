@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "episodeId": "ep001-eierschalensollbruchstellenverursacher",
   "createdAt": "2026-10-10T21:02:48.077Z",
-  "updatedAt": "2026-10-10T23:54:48.720Z",
-  "currentStage": "render",
+  "updatedAt": "2026-10-11T00:13:44.120Z",
+  "currentStage": "package",
   "productSlug": "drop-weight-egg-topper",
   "pick": {
     "slug": "drop-weight-egg-topper",
@@ -90,43 +90,43 @@
       "note": "86.00s, 32 beats, 41 blocos de legenda, 2 midias"
     },
     "render": {
-      "status": "running",
+      "status": "done",
       "attempts": 10,
       "startedAt": "2026-10-10T23:54:48.719Z",
-      "finishedAt": "2026-10-10T22:54:51.000Z",
-      "seconds": 942.2,
-      "inputHash": "4066a72b022c59644b23a47ba2a70e595179b642c8f4511faa1299eea46ee272",
+      "finishedAt": "2026-10-11T00:09:52.368Z",
+      "seconds": 903.6,
+      "inputHash": "efc7b5e33696e9bddd7d08e37bae58d73cc35915937811d4decc6d48b346a3c3",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/episode.mp4"
       ],
-      "note": "invalidado: script mudou"
+      "note": "render 891s; loudness antes da normalizacao -18.88 LUFS; sha256 5bcb6597ea62"
     },
     "verify": {
-      "status": "pending",
-      "attempts": 7,
-      "startedAt": "2026-10-10T22:54:51.037Z",
-      "finishedAt": "2026-10-10T22:55:43.435Z",
-      "seconds": 52.4,
-      "inputHash": "ce5319aa78cc9b81f6a1f6db00d6d1e0469bda1733f831d6e1fb540d7ef635a8a739396a125e2b5817fa34601691ade1aa8c7d4e6f065cc7d755f7fc272f43ac",
+      "status": "done",
+      "attempts": 9,
+      "startedAt": "2026-10-11T00:10:58.265Z",
+      "finishedAt": "2026-10-11T00:11:43.576Z",
+      "seconds": 45.3,
+      "inputHash": "5bcb6597ea62524385cc408a1c1a530327ede77c759db5944fb7fcafe0f83e9ee81b5a545558850e14066cf74c21edc5f3fe55ab51f76f4a138477166df6a6aa",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/verify-report.json",
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/verify/contact-sheet.jpg"
       ],
-      "note": "invalidado: script mudou"
+      "note": "17/18 ok, 1 aviso(s)"
     },
     "package": {
-      "status": "pending",
-      "attempts": 10,
-      "startedAt": "2026-10-10T22:55:43.470Z",
-      "finishedAt": "2026-10-10T22:55:49.632Z",
-      "seconds": 6.2,
-      "inputHash": "f131f3189f7411380a8e234a39b3c5b1e82f0f8ac06c8b19bb1c585188aeb41c",
+      "status": "done",
+      "attempts": 12,
+      "startedAt": "2026-10-11T00:13:36.520Z",
+      "finishedAt": "2026-10-11T00:13:44.120Z",
+      "seconds": 7.6,
+      "inputHash": "1d60ad0d00bb5de22d3b08453e6de5cb709925f000016b079a8a1408432325a4",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/package/metadata.json",
         "episodes/ep001-eierschalensollbruchstellenverursacher/package/captions.pt-BR.srt",
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/thumbnail.png"
       ],
-      "note": "invalidado: script mudou"
+      "note": "titulo: \"38 letras para abrir um ovo | Protocolo 001\"; descricao 2033 bytes"
     },
     "upload": {
       "status": "pending",
@@ -137,8 +137,8 @@
   "artifacts": {
     "render": {
       "path": "build/episode.mp4",
-      "sha256": "ce5319aa78cc9b81f6a1f6db00d6d1e0469bda1733f831d6e1fb540d7ef635a8",
-      "bytes": 15897811
+      "sha256": "5bcb6597ea62524385cc408a1c1a530327ede77c759db5944fb7fcafe0f83e9e",
+      "bytes": 15888545
     }
   },
   "costs": [
@@ -177,60 +177,6 @@
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
       "at": "2026-10-10T21:32:41.138Z"
-    },
-    {
-      "stage": "render",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 942.2,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-10T22:54:51.000Z"
-    },
-    {
-      "stage": "render",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 2322.4,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-10T22:54:51.000Z"
-    },
-    {
-      "stage": "verify",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 52.4,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-10T22:55:43.435Z"
-    },
-    {
-      "stage": "verify",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 203.1,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-10T22:55:43.435Z"
-    },
-    {
-      "stage": "package",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 6.2,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-10T22:55:49.632Z"
-    },
-    {
-      "stage": "package",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 17.6,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-10T22:55:49.632Z"
     },
     {
       "stage": "script",
@@ -303,6 +249,60 @@
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
       "at": "2026-10-10T23:54:39.905Z"
+    },
+    {
+      "stage": "render",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 903.6,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T00:09:52.370Z"
+    },
+    {
+      "stage": "render",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 3226,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T00:09:52.370Z"
+    },
+    {
+      "stage": "verify",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 45.3,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T00:11:43.576Z"
+    },
+    {
+      "stage": "verify",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 293.6,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T00:11:43.576Z"
+    },
+    {
+      "stage": "package",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 7.6,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T00:13:44.120Z"
+    },
+    {
+      "stage": "package",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 30,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T00:13:44.120Z"
     }
   ],
   "errors": [],

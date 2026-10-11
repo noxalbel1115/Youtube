@@ -18,6 +18,6 @@ Preço consultado: EUR 28,95 em 10/10/2026 (Take2-Design (loja oficial do fabric
 • "Boiled egg cutter/topper" por Allan Henderson (https://www.flickr.com/photos/88019192@N00/53938995418), CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/). Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.
 
 — Produção —
-Voz sintética (kokoro: modelo Kokoro-82M, licença Apache-2.0). Efeitos sonoros e grafismos produzidos pelo canal.
+Voz sintética: ElevenLabs (modelo eleven_v4). Efeitos sonoros e grafismos produzidos pelo canal.
 
-ref: dnn-ep001-eierschalensollbruchstellenverursacher-ce5319aa78
+ref: dnn-ep001-eierschalensollbruchstellenverursacher-5bcb6597ea

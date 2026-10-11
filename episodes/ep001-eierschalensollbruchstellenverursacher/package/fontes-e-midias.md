@@ -47,7 +47,7 @@ O que cada mídia mostra:
 - **m2** — Abridor de ovo por impacto ao lado de um ovo em porta-ovo laranja (a Wikipédia alemã identifica como modelo Clack). Licença GFDL com migração para CC BY-SA 3.0 (compartilha-igual).
 - **m3** — Abridor de ovo do tipo tesoura (anel com dentes), segurado por uma mão; pessoa não identificável. Outro tipo de aparelho: usar só como 'concorrência'.
 
-Grafismos, cartelas e efeitos sonoros: produzidos pelo projeto (código em `src/remotion` e `src/sfx.ts`). Voz: Kokoro-82M (Apache-2.0), local.
+Grafismos, cartelas e efeitos sonoros: produzidos pelo projeto (código em `src/remotion` e `src/sfx.ts`). Voz sintética: ElevenLabs (modelo eleven_v4).
 
 ## Seleção
 

@@ -2,12 +2,16 @@
   "schemaVersion": 1,
   "episodeId": "ep002-prensa-de-calcas",
   "createdAt": "2026-10-11T01:40:19.796Z",
-  "updatedAt": "2026-10-11T01:56:03.420Z",
-  "currentStage": "select",
+  "updatedAt": "2026-10-11T02:13:47.522Z",
+  "currentStage": "render",
   "productSlug": "corby-trouser-press",
   "pick": {
     "slug": "corby-trouser-press",
     "reason": "Escolha editorial: o 1o automatico (fatiador de banana Hutzler 571) e meme de 2012, com a piada ja conhecida. A Corby tem contraste maior (movel de 9,56 kg e 45 minutos para uma calca), fatos de fonte primaria que sao a propria piada (o manual proibe o banheiro, onde a solucao obvia vence, e admite que a umidade ajuda; o modelo 6600 vinha com ferro a vapor; almofada inspirada no Concorde) e um contraste que cabe no mesmo quadro (calca lisa no cabide x mostrador em 44 minutos)."
+  },
+  "paidTtsAuthorization": {
+    "at": "2026-10-11T02:09:32.591Z",
+    "note": "Usuario autorizou no chat em 11/10/2026 ('Sim e mantem'), em resposta ao pedido de autorizar a voz paga da ElevenLabs para o ep002 (~100 creditos estimados)"
   },
   "scriptVersion": 2,
   "stages": {
@@ -62,23 +66,34 @@
       "note": "invalidado: research mudou (reaproveitada: entradas identicas)"
     },
     "voice": {
-      "status": "blocked",
-      "attempts": 2,
-      "startedAt": "2026-10-11T01:44:58.682Z",
-      "finishedAt": "2026-10-11T01:44:58.684Z",
-      "seconds": 0,
-      "outputs": [],
-      "note": "Voz \"vendedor\" usa provedor pago (elevenlabs) sem orcamento (budget.maxUsdPerEpisode = 0) nem autorizacao do episodio (--authorize-paid-tts)."
+      "status": "done",
+      "attempts": 4,
+      "startedAt": "2026-10-11T02:13:45.625Z",
+      "finishedAt": "2026-10-11T02:13:47.041Z",
+      "seconds": 1.4,
+      "inputHash": "c097ec672ab45b6112c441af0854d7f0f2b756feca5757a9259ef1a7bddce331",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/build/voice.json"
+      ],
+      "note": "27 falas, 57.2s de fala; 0 com divergencia de transcricao"
     },
     "timeline": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 1,
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/build/timeline.json"
+      ],
+      "startedAt": "2026-10-11T02:13:47.043Z",
+      "finishedAt": "2026-10-11T02:13:47.520Z",
+      "seconds": 0.5,
+      "inputHash": "3b564994cd1a486616862ce9e2e5c0224573dc45588a195ea898a9cd1c0e29b0",
+      "note": "83.17s, 32 beats, 45 blocos de legenda, 1 midias"
     },
     "render": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "running",
+      "attempts": 1,
+      "outputs": [],
+      "startedAt": "2026-10-11T02:13:47.522Z"
     },
     "verify": {
       "status": "pending",
@@ -169,6 +184,60 @@
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
       "at": "2026-10-11T01:56:03.414Z"
+    },
+    {
+      "stage": "voice",
+      "item": "elevenlabs-credits",
+      "kind": "observed",
+      "amount": 98,
+      "unit": "elevenlabs-credits",
+      "basis": "creditos informados pela API (cabecalho character-cost) para 895 caracteres na ultima sintese (27 fala(s)); valor acumulado do episodio, inclusive ressinteses. Custo em dinheiro depende do plano contratado.",
+      "at": "2026-10-11T02:09:57.470Z"
+    },
+    {
+      "stage": "voice",
+      "item": "tts-tempo",
+      "kind": "observed",
+      "amount": 27.4,
+      "unit": "seconds",
+      "basis": "27 fala(s) sintetizadas na ultima sintese (elevenlabs)",
+      "at": "2026-10-11T02:10:00.329Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 1.4,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T02:13:47.041Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 113.1,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T02:13:47.041Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0.5,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T02:13:47.520Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0.5,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T02:13:47.520Z"
     }
   ],
   "errors": [],

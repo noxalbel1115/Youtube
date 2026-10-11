@@ -4,6 +4,7 @@ import type React from 'react';
 import type {CueSeg} from '../track.js';
 import {EggTopperScene} from './EggTopper3D.js';
 import {TrouserPressScene, BG as TROUSER_PRESS_BG} from './TrouserPress3D.js';
+import {FoldableScene, BG as FOLDABLE_BG} from './Foldable3D.js';
 
 export interface SceneDef {
   component: React.FC<{absFrame: number; track: CueSeg[]}>;
@@ -48,6 +49,19 @@ export const SCENES: Record<string, SceneDef> = {
       {cue: 'still', start: 580, end: 640},
       {cue: 'snap', start: 640, end: 690},
       {cue: 'iron', start: 690, end: 750},
+    ],
+  },
+  foldable: {
+    component: FoldableScene,
+    background: FOLDABLE_BG,
+    previewTrack: [
+      {cue: 'hero', start: 0, end: 90},
+      {cue: 'unfold', start: 90, end: 150},
+      {cue: 'open', start: 150, end: 210},
+      {cue: 'reveal', start: 210, end: 300},
+      {cue: 'still', start: 300, end: 340},
+      {cue: 'snap', start: 340, end: 380},
+      {cue: 'close', start: 380, end: 420},
     ],
   },
 };

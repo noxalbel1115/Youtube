@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "ep003-iphone-duo",
+  "createdAt": "2026-10-11T07:50:13.431Z",
+  "updatedAt": "2026-10-11T07:50:13.431Z",
+  "currentStage": "research",
+  "stages": {
+    "research": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "select": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "media": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "script": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "voice": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "timeline": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "render": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "verify": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "package": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "upload": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    }
+  },
+  "artifacts": {},
+  "costs": [],
+  "errors": [],
+  "youtube": {
+    "status": "not_started"
+  }
+}

@@ -1,6 +1,6 @@
 # Publicação manual — 38 letters to open an egg | Protocol 001
 
-Arquivo: `episodes/ep001-eierschalensollbruchstellenverursacher-en/build/episode.mp4` (sha256 `157a0ce3efccff1fb5e329feeb8230be5ef4f7262e795685fada14d3b1d561ad`).
+Arquivo: `episodes/ep001-eierschalensollbruchstellenverursacher-en/build/episode.mp4` (sha256 `337baf8d85b895d817b73013d850ef539184ba4fb0e8b18dffd84eac55649953`).
 
 ## Campos do YouTube Studio
 
@@ -33,7 +33,7 @@ Price checked: EUR 28.95 on October 10, 2026 (Take2-Design (manufacturer's offic
 — Production —
 Synthetic voice: ElevenLabs (eleven_v4). Sound effects and graphics made by the channel.
 
-ref: dnn-ep001-eierschalensollbruchstellenverursacher-en-157a0ce3ef
+ref: dnn-ep001-eierschalensollbruchstellenverursacher-en-337baf8d85
 ```
 
 **Tags** (Mais opções → Tags)

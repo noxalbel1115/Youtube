@@ -1,7 +1,7 @@
 {
-  "verifiedAt": "2026-10-11T09:05:11.546Z",
+  "verifiedAt": "2026-10-11T09:29:40.608Z",
   "file": "episodes/ep001-eierschalensollbruchstellenverursacher-en/build/episode.mp4",
-  "sha256": "157a0ce3efccff1fb5e329feeb8230be5ef4f7262e795685fada14d3b1d561ad",
+  "sha256": "337baf8d85b895d817b73013d850ef539184ba4fb0e8b18dffd84eac55649953",
   "durationSeconds": 85.5,
   "automatic": [
     {
@@ -102,9 +102,9 @@
     },
     {
       "id": "legendas.leitura",
-      "ok": false,
+      "ok": true,
       "severity": "warning",
-      "detail": "blocos com menos de 0,5 s: 3."
+      "detail": "42 blocos, todos com >= 0,5 s"
     },
     {
       "id": "legendas.tamanho",
@@ -116,7 +116,7 @@
   "finalTranscript": "Good morning. I bring a German solution to a problem the rest of the world has ignored for generations. The top of the egg. The technical term is Eierschalen Zollbruchstellen für Ursache. 38 letters. All dedicated to the top of an egg. Here's how it works. You place the metal cap on the boiled egg, lift the ball, and let go. The shell cracks all the way around the top. No knife. Designed by three designers. Three. For the discerning customer. A gemstone ball. Amethyst. For the egg. The competition uses scissors. Patented in 1907. Scissors. At breakfast. Done. Swele uses a spoon. The spoon doesn't come in a Christmas edition. The manufacturer says the top comes off by tilting the device. Or with the help of additional cutlery. A spoon, for example. But the spoon doesn't have 38 letters. 28 euros 95. That's 76 cents a letter. That's practically free. You didn't need it. Until now.",
   "manualReview": {
     "status": "pendente",
-    "sha256": "157a0ce3efccff1fb5e329feeb8230be5ef4f7262e795685fada14d3b1d561ad",
+    "sha256": "337baf8d85b895d817b73013d850ef539184ba4fb0e8b18dffd84eac55649953",
     "notes": []
   }
 }

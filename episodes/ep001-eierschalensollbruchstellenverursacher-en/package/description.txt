@@ -20,4 +20,4 @@ Price checked: EUR 28.95 on October 10, 2026 (Take2-Design (manufacturer's offic
 — Production —
 Synthetic voice: ElevenLabs (eleven_v4). Sound effects and graphics made by the channel.
 
-ref: dnn-ep001-eierschalensollbruchstellenverursacher-en-157a0ce3ef
+ref: dnn-ep001-eierschalensollbruchstellenverursacher-en-337baf8d85

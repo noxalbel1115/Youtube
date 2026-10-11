@@ -1,6 +1,6 @@
 # Roteiro — 45 minutos para uma calça
 
-Episódio `ep002-prensa-de-calcas` · versão 2 · duração final 83.2 s
+Episódio `ep002-prensa-de-calcas` · versão 3 · duração final 83.2 s
 
 **Logline.** Valdemar apresenta, com orgulho de engenharia aeronáutica, uma prensa de calças inglesa de 9,56 kg; fora de quadro, a Sueli desamassa a dela no vapor do banho, exatamente onde o manual proíbe a prensa de entrar.
 
@@ -38,7 +38,7 @@ Legenda: **[FATO fN]** = afirmação sobre o produto real, ancorada em fonte; *[
 | 00:45.8 | s19 | vendedor | Faltam quarenta e quatro minutos. _(pausa 0.2s antes, pausa 1s)_ | scene3d:  | *[ficção]* |
 | 00:48.9 | s20 | vendedor | O manual é claro. Nunca use a prensa no banheiro. _(pausa 0.6s)_ | card: “Never use the appliance in a bathroom or near any source of water.” | **[FATO f5]** |
 | 00:52.9 | s21 | vendedor | No banheiro, a Corby não perde. _(pausa 0.5s)_ | card: “Never use the appliance in a bathroom or near any source of water.” | *[ficção]* |
-| 00:55.6 | s22 | vendedor | Ela não tem permissão para entrar. [som: tap] _(pausa 1s)_ | card: “Never use the appliance in a bathroom or near any source of water.” · carimbo "PROIBIDA NO BANHEIRO" | **[FATO f5]** |
+| 00:55.6 | s22 | vendedor | Ela não tem permissão para entrar. [som: tap] _(pausa 1s)_ | card: “Never use the appliance in a bathroom or near any source of water.” · carimbo "PROIBIDA" | **[FATO f5]** |
 | 00:58.5 | s23 | vendedor | E o manual também proíbe molhar a calça. _(pausa 0.4s)_ | card: “On no account should any trousers be dampened before pressing.” | **[FATO f6]** |
 | 01:01.4 | s24 | vendedor | Mas admite que a umidade ajuda a prensar. _(pausa 1.2s)_ | card: “The inherent humidity content of natural and mixed fibres assists the pressing process.” | **[FATO f14]** |
 | 01:05.1 | s25 | — | _(sem fala, 0.5s)_ | tela preta | — |
@@ -101,3 +101,4 @@ Legenda: **[FATO fN]** = afirmação sobre o produto real, ancorada em fonte; *[
 
 - v1: Primeira versão: prensa de calças Corby, com a nota editorial de clareza (absurdo na cartela de abertura, contraste no mesmo quadro, mostrador que não zera, carimbos do Departamento).
 - v2: Enxugado para caber em 90 s com a voz da ElevenLabs (calibração pelo piloto: ~93 s na v1): sem "No nariz do avião" (a ficha já diz), falas mais curtas na demonstração, na citação dos 45 minutos, na umidade e no preço; pausas um pouco menores.
+- v3: Inspeção do render: o carimbo "PROIBIDA NO BANHEIRO" quebrava em duas linhas, saía cortado à esquerda, cobria a fonte do manual e encostava na legenda. Agora "PROIBIDA", no alto da cartela (stampTop). Sem mudança de fala.

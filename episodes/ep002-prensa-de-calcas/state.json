@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "episodeId": "ep002-prensa-de-calcas",
   "createdAt": "2026-10-11T01:40:19.796Z",
-  "updatedAt": "2026-10-11T03:10:33.064Z",
-  "currentStage": "timeline",
+  "updatedAt": "2026-10-11T03:10:58.594Z",
+  "currentStage": "render",
   "productSlug": "corby-trouser-press",
   "pick": {
     "slug": "corby-trouser-press",
@@ -90,9 +90,9 @@
       "note": "83.17s, 32 beats, 45 blocos de legenda, 1 midias"
     },
     "render": {
-      "status": "pending",
-      "attempts": 2,
-      "startedAt": "2026-10-11T02:42:47.650Z",
+      "status": "running",
+      "attempts": 3,
+      "startedAt": "2026-10-11T03:10:58.594Z",
       "finishedAt": "2026-10-11T03:08:37.936Z",
       "seconds": 1550.3,
       "inputHash": "be10b5ba7d352ec81eed67509b70e26dc703a759e20e5e7db4409a1a76f56211",

@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "episodeId": "ep002-prensa-de-calcas",
   "productSlug": "corby-trouser-press",
   "workingTitle": "45 minutos para uma calça",
@@ -411,8 +411,9 @@
         "heading": "“Never use the appliance in a bathroom or near any source of water.”",
         "body": "[Nunca use o aparelho no banheiro nem perto de qualquer fonte de água.]",
         "footnote": "Manual de uso Corby (3300/4400/7700/Executive), seção 01.",
-        "stamp": "PROIBIDA NO BANHEIRO",
-        "stampAt": 1.2
+        "stamp": "PROIBIDA",
+        "stampAt": 1.2,
+        "stampTop": 340
       },
       "sfx": [
         {
@@ -606,6 +607,10 @@
     {
       "version": 2,
       "note": "Enxugado para caber em 90 s com a voz da ElevenLabs (calibração pelo piloto: ~93 s na v1): sem \"No nariz do avião\" (a ficha já diz), falas mais curtas na demonstração, na citação dos 45 minutos, na umidade e no preço; pausas um pouco menores."
+    },
+    {
+      "version": 3,
+      "note": "Inspeção do render: o carimbo \"PROIBIDA NO BANHEIRO\" quebrava em duas linhas, saía cortado à esquerda, cobria a fonte do manual e encostava na legenda. Agora \"PROIBIDA\", no alto da cartela (stampTop). Sem mudança de fala."
     }
   ]
 }

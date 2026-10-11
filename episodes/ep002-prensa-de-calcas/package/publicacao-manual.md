@@ -1,6 +1,6 @@
 # Publicação manual — 45 minutos para uma calça | Protocolo 002
 
-Arquivo: `episodes/ep002-prensa-de-calcas/build/episode.mp4` (sha256 `47b942c84de75261f6a0f90bc032be78b3006aeaa5f9750cf00767d35aa99d56`).
+Arquivo: `episodes/ep002-prensa-de-calcas/build/episode.mp4` (sha256 `c3caab12110889b9fcab5c1e7c1fbe0939ac60a12f3c2a33ab5bc17cc6c76740`).
 
 ## Campos do YouTube Studio
 
@@ -40,7 +40,7 @@ Preço consultado: GBP 189,60 em 11/10/2026 (Corby of Windsor). Preços mudam.
 — Produção —
 Voz sintética: ElevenLabs (modelo eleven_v4). Efeitos sonoros e grafismos produzidos pelo canal.
 
-ref: dnn-ep002-prensa-de-calcas-47b942c84d
+ref: dnn-ep002-prensa-de-calcas-c3caab1211
 ```
 
 **Tags** (Mais opções → Tags)

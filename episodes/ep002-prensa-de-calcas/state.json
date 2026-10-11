@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "episodeId": "ep002-prensa-de-calcas",
   "createdAt": "2026-10-11T01:40:19.796Z",
-  "updatedAt": "2026-10-11T02:42:47.650Z",
-  "currentStage": "render",
+  "updatedAt": "2026-10-11T03:10:33.064Z",
+  "currentStage": "timeline",
   "productSlug": "corby-trouser-press",
   "pick": {
     "slug": "corby-trouser-press",
@@ -13,7 +13,7 @@
     "at": "2026-10-11T02:09:32.591Z",
     "note": "Usuario autorizou no chat em 11/10/2026 ('Sim e mantem'), em resposta ao pedido de autorizar a voz paga da ElevenLabs para o ep002 (~100 creditos estimados)"
   },
-  "scriptVersion": 2,
+  "scriptVersion": 3,
   "stages": {
     "research": {
       "status": "done",
@@ -54,24 +54,24 @@
     },
     "script": {
       "status": "done",
-      "attempts": 3,
-      "startedAt": "2026-10-11T01:44:58.675Z",
-      "finishedAt": "2026-10-11T01:44:58.681Z",
+      "attempts": 4,
+      "startedAt": "2026-10-11T03:10:31.666Z",
+      "finishedAt": "2026-10-11T03:10:31.671Z",
       "seconds": 0,
-      "inputHash": "df37dae166250ff3124019513b0deabac5129c551b142a3a8e0358db1797a569",
+      "inputHash": "b8db540ada8ac3b9bf91c8fd4701ed9408b66b818a2645770c88fc20eb7f6ca1",
       "outputs": [
         "episodes/ep002-prensa-de-calcas/script.json",
-        "episodes/ep002-prensa-de-calcas/script-history/v2.json"
+        "episodes/ep002-prensa-de-calcas/script-history/v3.json"
       ],
-      "note": "invalidado: research mudou (reaproveitada: entradas identicas)"
+      "note": "roteiro v3, 32 beats, ~89s estimados"
     },
     "voice": {
       "status": "done",
-      "attempts": 4,
-      "startedAt": "2026-10-11T02:13:45.625Z",
-      "finishedAt": "2026-10-11T02:13:47.041Z",
+      "attempts": 5,
+      "startedAt": "2026-10-11T03:10:31.672Z",
+      "finishedAt": "2026-10-11T03:10:33.055Z",
       "seconds": 1.4,
-      "inputHash": "c097ec672ab45b6112c441af0854d7f0f2b756feca5757a9259ef1a7bddce331",
+      "inputHash": "92be5b28af93fa52746fb5893f1ba72500425fcb3ab91b396328e2d022a8e371",
       "outputs": [
         "episodes/ep002-prensa-de-calcas/build/voice.json"
       ],
@@ -79,54 +79,54 @@
     },
     "timeline": {
       "status": "done",
-      "attempts": 1,
-      "startedAt": "2026-10-11T02:13:47.043Z",
-      "finishedAt": "2026-10-11T02:13:47.520Z",
-      "seconds": 0.5,
-      "inputHash": "3b564994cd1a486616862ce9e2e5c0224573dc45588a195ea898a9cd1c0e29b0",
+      "attempts": 2,
+      "startedAt": "2026-10-11T03:10:33.057Z",
+      "finishedAt": "2026-10-11T03:10:33.064Z",
+      "seconds": 0,
+      "inputHash": "675920f5ddbde4daf2296159b9b19cfa0ba508196a3c4314485ccd5b317f1fff",
       "outputs": [
         "episodes/ep002-prensa-de-calcas/build/timeline.json"
       ],
       "note": "83.17s, 32 beats, 45 blocos de legenda, 1 midias"
     },
     "render": {
-      "status": "running",
+      "status": "pending",
       "attempts": 2,
       "startedAt": "2026-10-11T02:42:47.650Z",
-      "finishedAt": "2026-10-11T02:39:47.617Z",
-      "seconds": 1560.1,
-      "inputHash": "b9cdc270595415e0fe4052ca09ff68cd965745f1aedd0a953d2a4c6416b0bf90",
+      "finishedAt": "2026-10-11T03:08:37.936Z",
+      "seconds": 1550.3,
+      "inputHash": "be10b5ba7d352ec81eed67509b70e26dc703a759e20e5e7db4409a1a76f56211",
       "outputs": [
         "episodes/ep002-prensa-de-calcas/build/episode.mp4"
       ],
-      "note": "render 1549s; loudness antes da normalizacao -19.05 LUFS; sha256 47b942c84de7"
+      "note": "invalidado: script mudou"
     },
     "verify": {
-      "status": "done",
-      "attempts": 1,
-      "startedAt": "2026-10-11T02:39:47.647Z",
-      "finishedAt": "2026-10-11T02:40:23.267Z",
-      "seconds": 35.6,
-      "inputHash": "47b942c84de75261f6a0f90bc032be78b3006aeaa5f9750cf00767d35aa99d561dcaa58942476bd8b92974d308ec4aa1891b3359abefaa0ed1b6dcaf5353ae0d",
+      "status": "pending",
+      "attempts": 2,
+      "startedAt": "2026-10-11T03:08:37.965Z",
+      "finishedAt": "2026-10-11T03:09:14.073Z",
+      "seconds": 36.1,
+      "inputHash": "c3caab12110889b9fcab5c1e7c1fbe0939ac60a12f3c2a33ab5bc17cc6c767401dcaa58942476bd8b92974d308ec4aa1891b3359abefaa0ed1b6dcaf5353ae0d",
       "outputs": [
         "episodes/ep002-prensa-de-calcas/verify-report.json",
         "episodes/ep002-prensa-de-calcas/build/verify/contact-sheet.jpg"
       ],
-      "note": "17/18 ok, 1 aviso(s)"
+      "note": "invalidado: script mudou"
     },
     "package": {
-      "status": "done",
-      "attempts": 1,
-      "startedAt": "2026-10-11T02:40:23.287Z",
-      "finishedAt": "2026-10-11T02:40:29.414Z",
-      "seconds": 6.1,
-      "inputHash": "d9a5d7e0ab4f7e9c84976cd8085d3f45fb3eccf0ad9908661b8c4ba9665aeebf",
+      "status": "pending",
+      "attempts": 2,
+      "startedAt": "2026-10-11T03:09:14.090Z",
+      "finishedAt": "2026-10-11T03:09:19.823Z",
+      "seconds": 5.7,
+      "inputHash": "2337357cf462ad65f29bae290f2267f900b5cf2469721619f05aa8321ead9ea4",
       "outputs": [
         "episodes/ep002-prensa-de-calcas/package/metadata.json",
         "episodes/ep002-prensa-de-calcas/package/captions.pt-BR.srt",
         "episodes/ep002-prensa-de-calcas/build/thumbnail.png"
       ],
-      "note": "titulo: \"45 minutos para uma calça | Protocolo 002\"; descricao 3283 bytes"
+      "note": "invalidado: script mudou"
     },
     "upload": {
       "status": "pending",
@@ -137,8 +137,8 @@
   "artifacts": {
     "render": {
       "path": "build/episode.mp4",
-      "sha256": "47b942c84de75261f6a0f90bc032be78b3006aeaa5f9750cf00767d35aa99d56",
-      "bytes": 18947905
+      "sha256": "c3caab12110889b9fcab5c1e7c1fbe0939ac60a12f3c2a33ab5bc17cc6c76740",
+      "bytes": 18759100
     }
   },
   "costs": [
@@ -159,24 +159,6 @@
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
       "at": "2026-10-11T01:44:04.968Z"
-    },
-    {
-      "stage": "script",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 0,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-11T01:44:58.681Z"
-    },
-    {
-      "stage": "script",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 0,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-11T01:44:58.681Z"
     },
     {
       "stage": "research",
@@ -233,31 +215,103 @@
       "at": "2026-10-11T02:10:00.329Z"
     },
     {
+      "stage": "render",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 1550.3,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T03:08:37.936Z"
+    },
+    {
+      "stage": "render",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 3110.4,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T03:08:37.936Z"
+    },
+    {
+      "stage": "verify",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 36.1,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T03:09:14.073Z"
+    },
+    {
+      "stage": "verify",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 71.7,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T03:09:14.073Z"
+    },
+    {
+      "stage": "package",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 5.7,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T03:09:19.823Z"
+    },
+    {
+      "stage": "package",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 11.8,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T03:09:19.823Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T03:10:31.671Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T03:10:31.671Z"
+    },
+    {
       "stage": "voice",
       "item": "wall-clock",
       "kind": "observed",
       "amount": 1.4,
       "unit": "seconds",
       "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-11T02:13:47.041Z"
+      "at": "2026-10-11T03:10:33.055Z"
     },
     {
       "stage": "voice",
       "item": "wall-clock-acumulado",
       "kind": "observed",
-      "amount": 113.1,
+      "amount": 114.5,
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-11T02:13:47.041Z"
+      "at": "2026-10-11T03:10:33.055Z"
     },
     {
       "stage": "timeline",
       "item": "wall-clock",
       "kind": "observed",
-      "amount": 0.5,
+      "amount": 0,
       "unit": "seconds",
       "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-11T02:13:47.520Z"
+      "at": "2026-10-11T03:10:33.064Z"
     },
     {
       "stage": "timeline",
@@ -266,61 +320,7 @@
       "amount": 0.5,
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-11T02:13:47.520Z"
-    },
-    {
-      "stage": "render",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 1560.1,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-11T02:39:47.617Z"
-    },
-    {
-      "stage": "render",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 1560.1,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-11T02:39:47.617Z"
-    },
-    {
-      "stage": "verify",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 35.6,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-11T02:40:23.267Z"
-    },
-    {
-      "stage": "verify",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 35.6,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-11T02:40:23.267Z"
-    },
-    {
-      "stage": "package",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 6.1,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-11T02:40:29.414Z"
-    },
-    {
-      "stage": "package",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 6.1,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-11T02:40:29.414Z"
+      "at": "2026-10-11T03:10:33.064Z"
     }
   ],
   "errors": [],

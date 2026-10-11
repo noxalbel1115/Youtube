@@ -27,4 +27,4 @@ Preço consultado: GBP 189,60 em 11/10/2026 (Corby of Windsor). Preços mudam.
 — Produção —
 Voz sintética: ElevenLabs (modelo eleven_v4). Efeitos sonoros e grafismos produzidos pelo canal.
 
-ref: dnn-ep002-prensa-de-calcas-47b942c84d
+ref: dnn-ep002-prensa-de-calcas-c3caab1211

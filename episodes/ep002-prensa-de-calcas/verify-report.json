@@ -1,7 +1,7 @@
 {
-  "verifiedAt": "2026-10-11T02:40:23.193Z",
+  "verifiedAt": "2026-10-11T03:09:14.014Z",
   "file": "episodes/ep002-prensa-de-calcas/build/episode.mp4",
-  "sha256": "47b942c84de75261f6a0f90bc032be78b3006aeaa5f9750cf00767d35aa99d56",
+  "sha256": "c3caab12110889b9fcab5c1e7c1fbe0939ac60a12f3c2a33ab5bc17cc6c76740",
   "durationSeconds": 83.2,
   "automatic": [
     {
@@ -116,7 +116,7 @@
   "finalTranscript": "Bom dia! A quase 100 anos, uma empresa inglesa combate um único inimigo, o amassado. Está em milhões de quartos de hotel. Funciona assim, abre a prensa, coloca a calça na almofada aquecida e fecha. 15 minutos, 30 ou 45. O de 45 é para os vincos ainda mais difíceis. 45 minutos, uma calça por vez. A almofada aquecida foi inspirada no concorde, para a calça. Em nogueira, mógino, freixo preto, faia ou carvalho. Pronto, desamaçou no banho. Faltam 44 minutos. O manual é claro. Nunca use a prensa no banheiro. No banheiro, a Corby não perde. Ela não tem permissão para entrar. E o manual também proíbe molhar a calça, mas admite que a umidade ajuda a prensar. Por isso, o modelo anterior vinha com ferro de passar. A vapor. 189 libras e 60. 4 e 20 por minuto. Bem mais barato que um concorde. Você não precisava. Até agora!",
   "manualReview": {
     "status": "pendente",
-    "sha256": "47b942c84de75261f6a0f90bc032be78b3006aeaa5f9750cf00767d35aa99d56",
+    "sha256": "c3caab12110889b9fcab5c1e7c1fbe0939ac60a12f3c2a33ab5bc17cc6c76740",
     "notes": []
   }
 }

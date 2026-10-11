@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "episodeId": "ep002-prensa-de-calcas",
   "createdAt": "2026-10-11T01:40:19.796Z",
-  "updatedAt": "2026-10-11T01:44:58.684Z",
-  "currentStage": "voice",
+  "updatedAt": "2026-10-11T01:56:03.420Z",
+  "currentStage": "select",
   "productSlug": "corby-trouser-press",
   "pick": {
     "slug": "corby-trouser-press",
@@ -13,23 +13,23 @@
   "stages": {
     "research": {
       "status": "done",
-      "attempts": 1,
-      "startedAt": "2026-10-11T01:40:27.175Z",
-      "finishedAt": "2026-10-11T01:41:41.372Z",
-      "seconds": 74.2,
-      "inputHash": "a7aee654c3c0a55a303ab31bd1c614a025097965bfc53917bcc6644dd27dc146",
+      "attempts": 2,
+      "startedAt": "2026-10-11T01:53:50.839Z",
+      "finishedAt": "2026-10-11T01:56:03.400Z",
+      "seconds": 132.6,
+      "inputHash": "e78f94763d884ab4e436633ded99e24c43a984a4433b0f7f8d64dc60074359d7",
       "outputs": [
         "episodes/ep002-prensa-de-calcas/research/candidates.json"
       ],
-      "note": "8 candidatos validados; links: 40/46 responderam < 400"
+      "note": "12 candidatos validados; links: 61/69 responderam < 400"
     },
     "select": {
       "status": "done",
-      "attempts": 1,
-      "startedAt": "2026-10-11T01:41:41.374Z",
-      "finishedAt": "2026-10-11T01:41:41.381Z",
+      "attempts": 2,
+      "startedAt": "2026-10-11T01:56:03.403Z",
+      "finishedAt": "2026-10-11T01:56:03.414Z",
       "seconds": 0,
-      "inputHash": "34f6d5143562477460895afc495b6d1a9e45f751f69ad06cdf28aaf3975c57c9",
+      "inputHash": "bac2965b96a2c90b480aaba29445e9d7aea91da8c1de755e7f7ff8e3a01079bd",
       "outputs": [
         "episodes/ep002-prensa-de-calcas/selection.json",
         "episodes/ep002-prensa-de-calcas/product.json"
@@ -46,7 +46,7 @@
       "outputs": [
         "episodes/ep002-prensa-de-calcas/media.json"
       ],
-      "note": "4/5 midias utilizaveis"
+      "note": "invalidado: research mudou (reaproveitada: entradas identicas)"
     },
     "script": {
       "status": "done",
@@ -59,7 +59,7 @@
         "episodes/ep002-prensa-de-calcas/script.json",
         "episodes/ep002-prensa-de-calcas/script-history/v2.json"
       ],
-      "note": "roteiro v2, 32 beats, ~89s estimados"
+      "note": "invalidado: research mudou (reaproveitada: entradas identicas)"
     },
     "voice": {
       "status": "blocked",
@@ -99,42 +99,6 @@
   "artifacts": {},
   "costs": [
     {
-      "stage": "research",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 74.2,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-11T01:41:41.372Z"
-    },
-    {
-      "stage": "research",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 74.2,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-11T01:41:41.372Z"
-    },
-    {
-      "stage": "select",
-      "item": "wall-clock",
-      "kind": "observed",
-      "amount": 0,
-      "unit": "seconds",
-      "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-11T01:41:41.381Z"
-    },
-    {
-      "stage": "select",
-      "item": "wall-clock-acumulado",
-      "kind": "observed",
-      "amount": 0,
-      "unit": "seconds",
-      "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-11T01:41:41.381Z"
-    },
-    {
       "stage": "media",
       "item": "wall-clock",
       "kind": "observed",
@@ -169,6 +133,42 @@
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
       "at": "2026-10-11T01:44:58.681Z"
+    },
+    {
+      "stage": "research",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 132.6,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T01:56:03.400Z"
+    },
+    {
+      "stage": "research",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 206.8,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T01:56:03.400Z"
+    },
+    {
+      "stage": "select",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T01:56:03.414Z"
+    },
+    {
+      "stage": "select",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T01:56:03.414Z"
     }
   ],
   "errors": [],

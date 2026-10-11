@@ -1,6 +1,6 @@
 {
   "researchedAt": "2026-10-11",
-  "method": "Três agentes de pesquisa em paralelo (WebSearch/WebFetch, Firecrawl, APIs do Openverse e da Wikimedia), 4 candidatos cada, com o briefing de prompts/pesquisa.md; licenças conferidas nas páginas de origem. O agente principal reconferiu em fonte primária os fatos do candidato escolhido usados no roteiro: manual em PDF e páginas do 7700 e do 6600 da Corby (Firecrawl com localização no Reino Unido, porque o site bloqueia acessos de fora), Wikipedia (\"Trouser press\", \"Peter Corby\") e o obituário do Isle of Wight County Press.",
+  "method": "Três agentes de pesquisa em paralelo (o terceiro grupo entrou depois do roteiro, só para completar a comparação) (WebSearch/WebFetch, Firecrawl, APIs do Openverse e da Wikimedia), 4 candidatos cada, com o briefing de prompts/pesquisa.md; licenças conferidas nas páginas de origem. O agente principal reconferiu em fonte primária os fatos do candidato escolhido usados no roteiro: manual em PDF e páginas do 7700 e do 6600 da Corby (Firecrawl com localização no Reino Unido, porque o site bloqueia acessos de fora), Wikipedia (\"Trouser press\", \"Peter Corby\") e o obituário do Isle of Wight County Press.",
   "candidates": [
     {
       "slug": "corby-trouser-press",
@@ -1809,6 +1809,868 @@
         "A foto do Brooklyn Museum ('Corn Holders', CC BY 3.0 no Openverse) não foi registrada porque o site do museu bloqueou a conferência da licença na origem (429/Vercel)."
       ],
       "comedyAngle": "Pinos de aço inox, 'barreira contra manteiga' e garantia vitalícia para segurar uma espiga de milho, um alimento que vem com cabo de fábrica (o sabugo). Na versão 'Jumbo', dez mini-espigas de plástico para segurar a espiga de verdade. A solução óbvia que vence na tela é esperar o milho esfriar um minuto e segurar com a mão, ou com um guardanapo, como recomenda o próprio Washington Post. O fecho pode ser a gaveta com um número ímpar de espetinhos."
+    },
+    {
+      "slug": "spaghetti-measure",
+      "name": "Medidor de espaguete (porcionador de macarrão)",
+      "brand": "Joseph Joseph (Spaghetti Measure, disco com abertura tipo íris; Reino Unido). Exemplo à venda no Brasil: Lyor (régua de inox com furos)",
+      "description": "Utensílio para medir quantos fios de espaguete seco cozinhar por pessoa. Há dois formatos. O da Joseph Joseph é um disco com abertura ajustável, como o diafragma de uma câmera, com marcas de 1 a 4 porções e meias porções. O outro é uma régua de plástico ou inox com 4 furos de tamanhos diferentes, como o modelo da Lyor vendido no Brasil. A solução óbvia que vence na tela: o furo da concha de macarrão (alguns fabricantes anunciam esse furo como medida de uma porção), o punhado na mão ou dividir o pacote, já que a embalagem de 500 g da Barilla traz “1/6 del paquete (80 g)” como porção.",
+      "legitimateUse": "Ajuda a controlar a porção e a evitar desperdício de massa cozida a mais. É útil para quem cozinha para quantidades variáveis ou controla a dieta. Não é tecnologia assistiva nem equipamento de segurança.",
+      "punchingDownRisk": "Baixo. É um gadget de cozinha de consumo geral. O único cuidado é não fazer piada com quem controla porções por motivo de saúde (dieta, diabetes): a piada deve ficar no exagero do objeto (geometria, raiz quadrada, íris de câmera), não em quem conta calorias.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.johnlewis.com/joseph-joseph-spaghetti-measure-grey-red/p185386",
+          "title": "Joseph Joseph Spaghetti Measure, Grey/Red",
+          "publisher": "John Lewis & Partners",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Descrição do produto: medidor compacto com guia ajustável de 1 a 4 porções e alavanca que abre uma abertura “camera-like”. A página diz que o item não está mais disponível online."
+        },
+        {
+          "id": "s2",
+          "url": "https://kaden.watch.impress.co.jp/docs/column_review/yajreview/20091026_323184.html",
+          "title": "Joseph Joseph「スパゲッティーメジャー」(やじうまミニレビュー)",
+          "publisher": "家電 Watch (Impress), autora Natsuko Abe, 26/10/2009",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Resenha japonesa de 2009: preço sugerido de 1.365 ienes, 90×75×10 mm, marcas de 1 a 4 com meias porções e “1 porção = 100 g”."
+        },
+        {
+          "id": "s3",
+          "url": "https://revistasuma.fespm.es/sites/revistasuma.fespm.es/IMG/pdf/66/047-048.pdf",
+          "title": "El clip: Espaguetis y raíces cuadradas (SUMA nº 66, fev. 2011, pp. 47-48)",
+          "publisher": "Revista SUMA (FESPM, Federação Espanhola de Sociedades de Professores de Matemática), autor Claudi Alsina (UPC)",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Artigo de revista de matemática dedicado ao medidor da Joseph Joseph: abertura de 4,7 cm para 4 porções, ≈3,32 cm para 2 e ≈2,35 cm para 1, uma escala que segue a raiz quadrada."
+        },
+        {
+          "id": "s4",
+          "url": "https://www.directoalpaladar.com/utensilios/medidor-de-spaguetti-de-joseph-josephs",
+          "title": "Medidor de spaguetti de Joseph Joseph’s",
+          "publisher": "Directo al Paladar, 12/07/2009",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Em 2009 o medidor custava “unos 6 euros”, existia em várias cores e media de 1 a 4 pessoas."
+        },
+        {
+          "id": "s5",
+          "url": "https://www.amazon.com.br/LYOR-Medidor-Por%C3%A7%C3%A3o-Massa-Espaguete/dp/B0DQ69GQ52",
+          "title": "LYOR - Medidor para Porção de Massa Espaguete de Aço Inox 18,5cm x 6cm x 0,1cm",
+          "publisher": "Amazon.com.br",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Medidor Lyor de inox, modelo 220613, 18,5 × 6 × 0,1 cm, por R$ 12,99, em estoque, vendido e enviado pela Amazon.com.br."
+        },
+        {
+          "id": "s6",
+          "url": "https://www.havan.com.br/medidor-para-porcao-de-macarrao-espaguete-lyor-ao-inox/p",
+          "title": "Medidor Para Porção De Macarrão Espaguete Lyor - Aço Inox",
+          "publisher": "Havan",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "O mesmo medidor Lyor de inox aparece por R$ 12,99 (ou 2x de R$ 6,49) em outra grande varejista brasileira."
+        },
+        {
+          "id": "s7",
+          "url": "https://www.snopes.com/fact-check/holes-pasta-spoons/",
+          "title": "Center Holes in Spaghetti Spoons Meant for Measuring Serving Sizes?",
+          "publisher": "Snopes (Madison Dapcevich, 20/01/2024)",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Checagem classificada como “Mixture”: algumas conchas são de fato projetadas com o furo como medida de porção, mas isso não é universal, e o boato viralizou a partir de um post do Imgur em junho de 2016."
+        },
+        {
+          "id": "s8",
+          "url": "https://www.target.com/p/oxo-steel-spaghetti-server/-/A-1011257832",
+          "title": "OXO Steel Spaghetti Server",
+          "publisher": "Target",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "O texto do produto OXO Steel Spaghetti Server diz: “Drainage hole also measures out a perfect serving of dry spaghetti” (preço US$ 16,99)."
+        },
+        {
+          "id": "s9",
+          "url": "https://suomikauppa.fi/en-us/products/fiskars-functional-form-pasta-ladle",
+          "title": "Fiskars Functional Form Pasta spoon",
+          "publisher": "Suomikauppa.fi",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "A colher de massa Fiskars Functional Form é anunciada com “an integrated spaghetti portion measure”."
+        },
+        {
+          "id": "s10",
+          "url": "https://www.jumbo.cl/spaghetti-n-5-barilla-caja-500-g-origen-italiano/p",
+          "title": "Spaghetti N°5 Barilla Italiano Caja 500 g",
+          "publisher": "Jumbo (Chile)",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "A tabela nutricional da caixa de 500 g diz “Porción: 1/6 del Paquete (80 g)” e “Porciones por envase: 6”."
+        },
+        {
+          "id": "s11",
+          "url": "https://commons.wikimedia.org/wiki/File:SpaghettiPortionierer.jpg",
+          "title": "File:SpaghettiPortionierer.jpg",
+          "publisher": "Wikimedia Commons (usuário Netpilots, 2016)",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "A descrição do arquivo informa um porcionador de espaguete com furos de 23, 30, 37 e 43 mm."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "A John Lewis descreve o Spaghetti Measure da Joseph Joseph como um guia ajustável de porção para uma a quatro pessoas: uma alavanca desliza pela borda do disco e abre uma abertura “camera-like” [tipo câmera fotográfica].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Na John Lewis o produto aparece como “No longer available online” [não está mais disponível online], com o aviso “We're unlikely to receive more stock of this item” [é improvável que recebamos mais estoque deste item].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Uma resenha japonesa de 2009 registra 90 × 75 × 10 mm, preço sugerido de 1.365 ienes e marcas de 1 a 4 porções, com meias porções (1,5 e 2,5).",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "A mesma resenha informa o padrão do aparelho: “ちなみに1人前の麺の量は100gとなっている。” [aliás, uma porção de macarrão corresponde a 100 g].",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "Ainda na resenha, a autora conta que o marido acha que uma porção não basta, então em casa o medidor fica “sempre” ajustado em 2,5 (“我が家は常に2.5に目盛りを設定している”).",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "A SUMA, revista espanhola de professores de matemática, publicou em fevereiro de 2011 um artigo inteiro sobre o medidor, intitulado “Espaguetis y raíces cuadradas” [Espaguete e raízes quadradas].",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "Segundo a SUMA, a abertura para 4 porções tem 4,7 cm de diâmetro. Para 2 porções o diâmetro é dividido por √2 (≈3,32 cm) e para 1 porção mede ≈2,35 cm.",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "Frases do artigo da SUMA: “Es como un objetivo fotográfico pero para pasta” [é como uma objetiva fotográfica, mas para massa] e “diseño inglés pero Made in China” [design inglês, mas fabricado na China].",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "Em 2009 o Directo al Paladar dizia que o medidor “cuesta unos 6 euros” [custa uns 6 euros] e que “Los hay de varios colores” [existe em várias cores].",
+          "sourceIds": [
+            "s4"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "No Brasil, o medidor Lyor é uma chapa de aço inox de 18,5 × 6 × 0,1 cm, modelo 220613, vendido por R$ 12,99. O anúncio promete “medidas específicas para porções de espaguete” e manda “lavar com detergente neutro, esponja macia e secar imediatamente”.",
+          "sourceIds": [
+            "s5",
+            "s6"
+          ]
+        },
+        {
+          "id": "f11",
+          "text": "Sobre o furo da concha de macarrão, o Snopes classificou como “Mixture” [parcialmente verdadeiro] a ideia de que ele mede uma porção. Algumas conchas são projetadas para isso, outras não, e o furo existe principalmente para escorrer a água. Uma nutricionista ouvida pelo site disse: “The hole in the pasta spoon does equal about one serving if you loosely gather the noodles through the hole” [o furo equivale a mais ou menos uma porção se os fios passarem soltos].",
+          "sourceIds": [
+            "s7"
+          ]
+        },
+        {
+          "id": "f12",
+          "text": "Alguns fabricantes anunciam o furo da concha como medidor de porção. O texto da OXO Steel Spaghetti Server diz “Drainage hole also measures out a perfect serving of dry spaghetti” [o furo de drenagem também mede uma porção perfeita de espaguete seco], e a colher Fiskars Functional Form vem com “an integrated spaghetti portion measure” [medidor de porção integrado].",
+          "sourceIds": [
+            "s8",
+            "s9"
+          ]
+        },
+        {
+          "id": "f13",
+          "text": "A própria caixa de 500 g do Spaghetti N°5 da Barilla traz no rótulo a porção: “1/6 del Paquete (80 g)”, com 6 porções por embalagem.",
+          "sourceIds": [
+            "s10"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 12.99,
+        "currency": "BRL",
+        "sourceId": "s5",
+        "observedAt": "2026-10-11",
+        "note": "Medidor Lyor de inox (modelo 220613) vendido e enviado pela Amazon.com.br. A Havan mostra o mesmo preço. O Spaghetti Measure da Joseph Joseph não tem preço atual verificado: está descontinuado na John Lewis e não foi encontrado no site oficial."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "Joseph Joseph Spaghetti Measure",
+          "creator": "bfishadow",
+          "provider": "openverse",
+          "providerRef": "49d04420-7dd6-46a5-8c1c-c24e97e7618b",
+          "landingUrl": "https://www.flickr.com/photos/61368956@N00/6258090672",
+          "fileUrl": "https://live.staticflickr.com/6096/6258090672_3445f52061_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "É exatamente o Spaghetti Measure da Joseph Joseph: disco branco com íris verde parcialmente fechada, alavanca verde e escala 1–2–3–4 em relevo, fotografado sobre um notebook com teclado Apple (teclas command e option visíveis). O nome em relevo no anel está quase ilegível e não aparecem pessoas. Resolução de 1024×765, nítida, com luz amarelada. Licença CC BY 2.0 conferida na página do Flickr (foto de 19/10/2011)."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "Spaghetti measure",
+          "creator": "Bodhi Peace",
+          "provider": "wikimedia",
+          "providerRef": "File:Spaghetti measure.jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Spaghetti_measure.jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Spaghetti_measure.jpg",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": true,
+          "description": "Régua genérica de plástico branco com 4 furos e os dizeres “SPAGHETTI MEASURE”, encostada na parede, com um feixe de espaguete seco atravessando o furo de 1 porção. Segundo a descrição do arquivo: “1 portion dry spaghetti measured out”. É um item claramente do tipo, mas não é Joseph Joseph nem Lyor. Resolução de 5152×3864, sem pessoas e sem marca visível. Licença {{self|cc-by-sa-4.0}} conferida no wikitext do Commons."
+        },
+        {
+          "id": "m3",
+          "kind": "image",
+          "title": "Spaghetti measure vertical",
+          "creator": "Bodhi Peace",
+          "provider": "wikimedia",
+          "providerRef": "File:Spaghetti measure vertical.jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Spaghetti_measure_vertical.jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Spaghetti_measure_vertical.jpg",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": true,
+          "description": "Mesma régua branca vista de cima sobre bancada de granito, com os 4 furos e os números 1 a 4 visíveis (“Top down view showing all 4 measurements”). É genérica, do tipo do produto. Resolução de 3864×5152 (vertical), nítida, sem pessoas e sem marca. Licença CC BY-SA 4.0 conferida no Commons."
+        },
+        {
+          "id": "m4",
+          "kind": "image",
+          "title": "SpaghettiPortionierer",
+          "creator": "Netpilots",
+          "provider": "wikimedia",
+          "providerRef": "File:SpaghettiPortionierer.jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:SpaghettiPortionierer.jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/SpaghettiPortionierer.jpg",
+          "license": "by",
+          "licenseVersion": "3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/ch/deed.en",
+          "showsExactProduct": true,
+          "description": "Porcionador de inox com 4 furos (de 23, 30, 37 e 43 mm, segundo a descrição), números 1 a 4 e a palavra “SPAGHETTI” gravada, sobre uma tábua de corte branca e um pano xadrez. É do mesmo tipo da régua Lyor vendida no Brasil, mas não é a Lyor. Resolução de 4608×3456, muito nítida, sem pessoas. Licença {{self|cc-by-3.0-ch}} (CC BY 3.0, versão adaptada à Suíça) conferida no Commons."
+        },
+        {
+          "id": "m5",
+          "kind": "image",
+          "title": "Goodcook Grey Spaghetti Spoon (53504577283)",
+          "creator": "Chris Williams",
+          "provider": "wikimedia",
+          "providerRef": "File:Goodcook Grey Spaghetti Spoon (53504577283).jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Goodcook_Grey_Spaghetti_Spoon_(53504577283).jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Goodcook_Grey_Spaghetti_Spoon_%2853504577283%29.jpg",
+          "license": "cc0",
+          "licenseVersion": "1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "showsExactProduct": false,
+          "description": "Não é o produto: é a “solução óbvia”. Concha de macarrão cinza inteira, com o furo oval no centro e dentes, sobre um sofá de veludo bege. A placa metálica no cabo tem o logo Goodcook. Resolução de 4000×3000, nítida, sem pessoas. Licença CC0, que o FlickreviewR conferiu no Commons."
+        }
+      ],
+      "scores": {
+        "contrast": 4,
+        "story": 5,
+        "visual": 4,
+        "media": 5,
+        "reliability": 4
+      },
+      "risks": [
+        "A página oficial da Joseph Joseph não foi encontrada: as URLs testadas em josephjoseph.com deram 404 e a busca do site não traz o produto. As especificações vêm da varejista John Lewis, onde o item está descontinuado, e de imprensa de 2009 a 2011. O roteiro deve tratar o produto como clássico ou descontinuado, não como lançamento.",
+        "Não há artigo na Wikipédia em inglês sobre o medidor; a busca na API não retornou nenhum.",
+        "Não confirmei em página aberta que o modelo Lyor tem 4 furos ou mede “1 a 4 porções”. Isso apareceu só em trechos de busca (Havan, Mercado Livre), e o Mercado Livre bloqueou o acesso. Para o Lyor, fique com material, medidas, modelo e preço.",
+        "O furo da concha como medida de porção não pode ser apresentado como regra universal. O Snopes classifica a afirmação como “Mixture”. Pode-se dizer que alguns fabricantes (OXO, Fiskars) anunciam isso, mas essas alegações foram lidas em varejistas (Target, Suomikauppa): oxo.com respondeu 403/404 e as páginas antigas da Fiskars, 404.",
+        "As fotos m2 a m4 mostram modelos genéricos do tipo, não a Joseph Joseph. Só a m1 (1024 px, iluminação doméstica) mostra o modelo de íris.",
+        "A m4 usa a licença CC BY 3.0 adaptada à Suíça (cc-by-3.0-ch): a atribuição deve citar Netpilots e essa versão da licença."
+      ],
+      "comedyAngle": "O vendedor apresenta com solenidade um instrumento que tem até artigo em revista de matemática: uma “objetiva fotográfica para massa” calibrada pela raiz quadrada de 2, com abertura de 4,7 cm para quatro pessoas e “1 porção = 100 g”. A melhor história do material é a do marido que deixa o aparelho sempre em 2,5. A solução óbvia vence na tela de três jeitos documentados: o furo da concha (que a própria OXO diz medir “a perfect serving”), o punhado na mão e o rótulo da caixa da Barilla dizendo “1/6 del paquete”."
+    },
+    {
+      "slug": "toothpaste-squeezer",
+      "name": "Espremedor de pasta de dente (tube squeezer): Tube-Wringer 401 Heavy Duty",
+      "brand": "Tube-Wringer (Gill Mechanical), Eugene, Oregon, EUA",
+      "description": "Aparelho para espremer tubos até a última gota. O exemplo comercial escolhido é o Tube-Wringer, uma prensa de dois rolos acionada por manivela, fabricada no Oregon desde o fim dos anos 1970 e vendida em três versões: 202 (rolos de náilon), 205 (rolos de metal) e 401 Heavy Duty, com estrutura de aço zincado. O fabricante o recomenda para tinta a óleo, cola, tintura de cabelo, pomadas e pasta de dente. Também existem espremedores simples de plástico, em forma de chave ou de presilha, inclusive versões vendidas como auxílio para artrite.",
+      "legitimateUse": "Uso legítimo e importante: o espremedor é recomendado como tecnologia assistiva para pessoas com artrite, pouca força nas mãos ou destreza reduzida. Ele funciona com uma mão só e com pressão da palma (Assistive Technology House da St. Ambrose University; a loja Essential Aids). O Tube-Wringer também é ferramenta de trabalho para artistas (tinta a óleo), salões (tintura), consultórios e oficinas (adesivos, calafetagem).",
+      "punchingDownRisk": "Alto. O tipo de produto é vendido explicitamente como auxílio para artrite e mobilidade reduzida das mãos. A cena da “solução óbvia” (enrolar o tubo com os dedos) vira chacota com quem não consegue fazer isso. Se for ao ar, a piada precisa mirar só o exagero industrial do modelo 401 (aço zincado, caviar, Otter Pop, garras de lagosta) e nunca o espremedor simples nem quem precisa dele.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.tubewringer.com/",
+          "title": "Multi Purpose Tube Squeezer for Sale | Tube Wringer",
+          "publisher": "Tube-Wringer (Gill Mechanical)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Os três modelos e seus preços (202 a US$ 11,95, 205 a US$ 24,95 e 401 a US$ 38,95), a promessa de “one-third more out of every tube” [um terço a mais de cada tubo] e a capacidade para tubos de até 2⅞ polegadas."
+        },
+        {
+          "id": "s2",
+          "url": "https://www.tubewringer.com/product/tubewringer-401-heavy-duty/",
+          "title": "Tube-Wringer 401 Heavy Duty",
+          "publisher": "Tube-Wringer (Gill Mechanical)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Modelo 401: US$ 38,95, estrutura e manivela de aço zincado, rolos de alumínio, peso de 15 oz e peças fabricadas e montadas no Oregon."
+        },
+        {
+          "id": "s3",
+          "url": "https://www.tubewringer.com/about/",
+          "title": "About | Tube Wringer",
+          "publisher": "Tube-Wringer (Gill Mechanical)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "A história oficial: invenção de John Gill, testes com tubos “vazios” comprados de crianças da vizinhança, empresa familiar desde o fim dos anos 1970 em Eugene, Oregon."
+        },
+        {
+          "id": "s4",
+          "url": "https://www.tubewringer.com/squeezing/",
+          "title": "Tube Squeezing | Tube Wringer",
+          "publisher": "Tube-Wringer (Gill Mechanical)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Usos citados pelo fabricante: Otter Pop, garras de lagosta, caviar, pomada para assaduras e pasta de dente (“Can I use this for my toothpaste tubes?” “Yes!”)."
+        },
+        {
+          "id": "s5",
+          "url": "https://info.sau.edu/jimsplace/toothpaste-squeezers/",
+          "title": "Toothpaste Squeezers | Jim's Place",
+          "publisher": "St. Ambrose University, Assistive Technology House “Jim's Place”",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "O espremedor é recomendado como tecnologia assistiva para pessoas com artrite ou problemas de força e coordenação: usa-se com uma mão e pode ser acionado com a palma."
+        },
+        {
+          "id": "s6",
+          "url": "https://www.essentialaids.com/bathroom/personal-care-hygiene/tube-squeezer.html",
+          "title": "Tube Squeezer",
+          "publisher": "Essential Aids (Reino Unido)",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Um espremedor de tubo vendido por £ 4,40 como “ideal for people with arthritis, limited hand strength, or reduced dexterity”, com ventosas e uso com uma mão."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Segundo o fabricante, o Tube-Wringer foi inventado por John Gill no Oregon, que testava o invento em tubos “vazios” comprados de crianças da vizinhança (“‘empty’ tubes purchased from local children”).",
+          "sourceIds": [
+            "s3",
+            "s1"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "John Gill e a esposa tocaram a empresa do fim dos anos 1970 até meados dos anos 1990. Depois ela foi vendida a outra família e hoje é administrada pela filha dos compradores.",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Existem três modelos: 202 Light Duty (rolos de náilon, US$ 11,95), 205 Medium Duty (rolos de metal, US$ 24,95) e 401 Heavy Duty (US$ 38,95).",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "O modelo 401 tem estrutura e manivela de aço zincado, rolos de hastes de alumínio “heavy duty” e pesa 15 oz (cerca de 425 g). Todas as peças são fabricadas e montadas no Oregon.",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "O fabricante promete: “get one-third more out of every tube in your home, studio, lab, or medical office” [tirar um terço a mais de cada tubo da sua casa, ateliê, laboratório ou consultório].",
+          "sourceIds": [
+            "s1",
+            "s4"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "Lista oficial do que ele espreme até a última gota: “expensive caulk, adhesives, oil paint, caviar, cake icing, hair dye, medical compounds, toothpaste, ointment and so much more!”",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "Usos relatados pelo fabricante: clientes já o usaram “to squeeze all of the icy goodness from an Otter Pop, crush lobster claws” [para espremer todo o gelinho de um Otter Pop e esmagar garras de lagosta], e uma cliente o usa para tirar toda a carne das garras de lagosta.",
+          "sourceIds": [
+            "s4",
+            "s3"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "Sobre pasta de dente, o site diz: “One of the most common questions we get about the Tube-Wringer is, ‘Can I use this for my toothpaste tubes?’ The answer is a resounding, ‘Yes!’”",
+          "sourceIds": [
+            "s4"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "Todos os modelos aceitam tubos de até 2⅞ polegadas (cerca de 7,3 cm) de largura.",
+          "sourceIds": [
+            "s1",
+            "s2"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "O site informa o tempo de produção em Eugene, Oregon, de dois jeitos: “over 38 years” na página inicial e “over 39 years” na página About.",
+          "sourceIds": [
+            "s1",
+            "s3"
+          ]
+        },
+        {
+          "id": "f11",
+          "text": "A Assistive Technology House da St. Ambrose University recomenda espremedores de pasta de dente como “Good for people with arthritis or other strength and coordination problems” [bom para pessoas com artrite ou outros problemas de força e coordenação].",
+          "sourceIds": [
+            "s5"
+          ]
+        },
+        {
+          "id": "f12",
+          "text": "A Essential Aids vende um espremedor de tubo simples por £ 4,40, “ideal for people with arthritis, limited hand strength, or reduced dexterity”, com ventosas para uso com uma mão.",
+          "sourceIds": [
+            "s6"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 38.95,
+        "currency": "USD",
+        "sourceId": "s2",
+        "observedAt": "2026-10-11",
+        "note": "Tube-Wringer 401 Heavy Duty na loja do fabricante. O modelo 202 Light Duty, indicado para pasta de dente, custa US$ 11,95 (s1)."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "CreativeTools.se - PackshotCreator - Toothpaste squeezer (4368359946)",
+          "creator": "Creative Tools from Halmstad, Sweden",
+          "provider": "wikimedia",
+          "providerRef": "File:CreativeTools.se - PackshotCreator - Toothpaste squeezer (4368359946).jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:CreativeTools.se_-_PackshotCreator_-_Toothpaste_squeezer_(4368359946).jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/CreativeTools.se_-_PackshotCreator_-_Toothpaste_squeezer_%284368359946%29.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Espremedor de pasta de dente do tipo presilha com fenda (o tubo passa pela abertura), em gesso branco impresso em 3D numa ZPrinter. Foto de estúdio sobre fundo branco, com o objeto inteiro. É claramente do tipo, mas não é o Tube-Wringer. No canto inferior esquerdo há marcas d’água “CT creative tools” e “Z Corporation authorized reseller”, que precisariam de recorte. Resolução de 4108×3312, sem pessoas. Licença {{cc-by-2.0}} com FlickreviewR “passed”, conferida no Commons; a mesma foto está no Openverse (id 25415f74-c357-4056-9630-00ad6322d0b7)."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "Toothpaste Tube Squeezer",
+          "creator": "Marty McGuire (Schmarty)",
+          "provider": "openverse",
+          "providerRef": "c18d9a96-6c18-4f63-82b2-6dc5afb9cca9",
+          "landingUrl": "https://www.flickr.com/photos/48215930@N00/4637653586",
+          "fileUrl": "https://live.staticflickr.com/3369/4637653586_b0ed5fbb75_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Espremedor do mesmo tipo presilha, em plástico verde impresso numa MakerBot, sobre carpete cinza com fios de filamento verde ao lado. É claramente do tipo, mas não é o Tube-Wringer. Foto de celular, desfocada e escura, com 1024×768; serve no máximo como inserto rápido. Sem pessoas. Licença CC BY 2.0 conferida na página do Flickr (29/04/2010, “Trying out green plastic!”)."
+        }
+      ],
+      "scores": {
+        "contrast": 2,
+        "story": 2,
+        "visual": 3,
+        "media": 2,
+        "reliability": 4
+      },
+      "risks": [
+        "Risco alto de punching down: o tipo de produto é tecnologia assistiva documentada para artrite e pouca força nas mãos (s5, s6). Recomendo não priorizar este candidato ou limitar a piada ao exagero do modelo industrial 401.",
+        "Não há foto com licença livre do Tube-Wringer, o produto-exemplo. As duas mídias mostram espremedores tipo presilha impressos em 3D. Imagens do Thingiverse marcadas CC0 no Openverse ficaram de fora porque a página de origem respondeu 403 e a licença não pôde ser conferida.",
+        "A m1 tem logos de marca d’água no canto (Creative Tools / Z Corporation), e a m2 é desfocada e de baixa qualidade.",
+        "Não verifiquei nenhum espremedor vendido no Brasil (Amazon.com.br ou Mercado Livre) em página aberta. Os resultados de busca trouxeram só dispensers de parede e agregadores.",
+        "O site do fabricante se contradiz sobre o tempo de produção (“over 38 years” na home, “over 39 years” na About) e não dá o ano exato de lançamento; use “fim dos anos 1970”."
+      ],
+      "comedyAngle": "O vendedor apresenta uma prensa de aço zincado com manivela, “feita inteiramente no Oregon”, cujo inventor comprava tubos vazios de crianças para provar a tese, e que promete “um terço a mais de cada tubo” de caviar, glacê ou Otter Pop. O exagero do modelo 401 diante de um tubo de pasta de dente é engraçado, mas a solução óbvia (enrolar o tubo com os dedos) exclui justamente quem tem artrite, o público assistivo documentado do produto. Por isso a nota de contraste e história é baixa e a piada, se existir, deve ficar no exagero industrial e nunca no espremedor simples."
+    },
+    {
+      "slug": "pizza-scissors",
+      "name": "Tesoura de pizza (Dreamfarm Scizza)",
+      "brand": "Dreamfarm (Brisbane, Austrália)",
+      "description": "Tesoura de cozinha longa com uma “sapata”, uma espátula de náilon na lâmina de baixo que entra por baixo da pizza: a peça corta e depois serve a fatia. O exemplo comercial é a Scizza da Dreamfarm, com 32 cm e lâminas de 15 cm em aço inox alemão. Na tela, competem com ela a faca, o cortador de pizza de rodinha e uma tesoura de cozinha comum, que aparece em várias fotos livres cortando pizza muito bem.",
+      "legitimateUse": "Tem utilidade real e não é um objeto inútil. Corta sem arranhar formas antiaderentes nem pedras de pizza, mantém a cobertura no lugar e serve a fatia, e a lâmina pode ser desmontada para afiar. Cortar pizza com tesoura é prática comum: a foto de restaurante em Trento no Commons mostra isso. Não é tecnologia assistiva.",
+      "punchingDownRisk": "Baixo. Utensílio de cozinha de consumo geral, sem público assistivo documentado nesta pesquisa.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://dreamfarm.com/scizza/",
+          "title": "Dreamfarm Scizza | The World's Best Pizza Scissors & Server",
+          "publisher": "Dreamfarm (Austrália)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Descrição, ficha técnica (32 cm, 7,2 cm, 0,20 kg, aço inox 420J2, náilon e ABS), lâminas de 15 cm, resistência a 205 °C, FAQ e preço de AU$ 34,95."
+        },
+        {
+          "id": "s2",
+          "url": "https://us.dreamfarm.com/scizza/",
+          "title": "Dreamfarm Scizza | The World's Best Pizza Scissors & Server (US)",
+          "publisher": "Dreamfarm US",
+          "kind": "official-store",
+          "accessedAt": "2026-10-11",
+          "confirms": "Preço de US$ 24,99 e disponibilidade “InStock” na loja oficial dos EUA."
+        },
+        {
+          "id": "s3",
+          "url": "https://whatsgoodtodo.com/dreamfarm-scizza-review/",
+          "title": "Dreamfarm Scizza review",
+          "publisher": "What's Good To Do (Stevie Pickering, 2015)",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "A Scizza já era vendida e resenhada em 2015, com elogios ante o cortador de rodinha e a crítica de que é curta para pizzas grandes."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "A Dreamfarm define a Scizza como “a pair of scissors that perfectly cut any pizza, on any surface, and serve” [uma tesoura que corta perfeitamente qualquer pizza, em qualquer superfície, e serve].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Na descrição oficial: “Scizza is the best thing since sliced bread itself” [a Scizza é a melhor coisa desde o próprio pão fatiado].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "No FAQ do fabricante: “Why would you cut pizza with scissors? Just like two heads being better than one, two blades are better than one.” [Por que cortar pizza com tesoura? Assim como duas cabeças pensam melhor que uma, duas lâminas são melhores que uma.]",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "Também no site: “Slice your pizza then pinch and serve it too. Have you ever seen a pizza wheel do that? We haven't either.” [Corte a pizza, depois pegue e sirva. Você já viu um cortador de rodinha fazer isso? Nós também não.]",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "Ficha técnica: 32,0 cm de comprimento, 7,2 cm de largura e 0,20 kg. Materiais: aço inox 420J2, náilon e ABS.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "O fabricante anuncia “Extra long 15cm blades” [lâminas extralongas de 15 cm] de “Hardened German stainless steel” [aço inox alemão temperado].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "A “sapata” de náilon que vai por baixo da pizza protege panelas antiaderentes e resiste a 205 °C / 400 °F. Segundo o fabricante, as lâminas só tocam a pizza, então podem ser usadas sobre pedra de pizza.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "As lâminas podem ser desmontadas para afiar e a peça vai à lava-louças. O site avisa: “This product contains sharp blades. Handle with care and keep out of reach of children.”",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "Preço: AU$ 34,95 no site australiano e US$ 24,99 na loja oficial dos EUA.",
+          "sourceIds": [
+            "s1",
+            "s2"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "Uma resenha de 2015 elogia: “So much less hassle and mess than a traditional pizza cutting wheel”. Também critica: “The only downside is the length, if you have a particularly large pizza then you need to move the Scizza along.”",
+          "sourceIds": [
+            "s3"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 24.99,
+        "currency": "USD",
+        "sourceId": "s2",
+        "observedAt": "2026-10-11",
+        "note": "Scizza na loja oficial Dreamfarm dos EUA, marcada como InStock. No site australiano custa AU$ 34,95 (s1)."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "Pizza Scissors!",
+          "creator": "bdunnette",
+          "provider": "openverse",
+          "providerRef": "8e51590a-bee9-469f-bfe3-f7c5087bc9f4",
+          "landingUrl": "https://www.flickr.com/photos/84652765@N00/466679669",
+          "fileUrl": "https://live.staticflickr.com/205/466679669_229f03b119_b.jpg",
+          "license": "by-sa",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "showsExactProduct": true,
+          "description": "Tesouras de pizza da marca Progressive na embalagem, penduradas em gôndola de loja, com cabos e espátula vermelhos e o texto “Pizza Scissors — Easily Cut and Serve Foods with One Tool”. É claramente do tipo, mas não é a Scizza. A arte e a marca da embalagem ficam bem visíveis, e há o reflexo fraco do fotógrafo no vidro, no canto superior esquerdo. Foto de celular de 1024×819, nitidez razoável. Licença CC BY-SA 2.0 conferida no Flickr (20/04/2007, legenda “Finally, the world has caught up with my mother.”)."
+        },
+        {
+          "id": "m2",
+          "kind": "video",
+          "title": "Trento Pizza cut with scissors",
+          "creator": "Thilo Parg",
+          "provider": "wikimedia",
+          "providerRef": "File:Trento Pizza cut with scissors.webm",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Trento_Pizza_cut_with_scissors.webm",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Trento_Pizza_cut_with_scissors.webm",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": false,
+          "description": "Vídeo de 22 s em 1920×1080, gravado em 2025 num restaurante em Trento, Itália. Uma pessoa, de quem só aparecem as mãos e o tronco, corta uma pizza no prato com uma tesoura de cozinha comum, e faca e garfo estão parados ao lado do prato. É tesoura comum, não tesoura de pizza: serve para mostrar a solução óbvia ou a prática tradicional. Licença {{self|cc-by-sa-4.0}} conferida no Commons; o autor usa um modelo próprio de permissão que pede atribuição a “Thilo Parg”."
+        },
+        {
+          "id": "m3",
+          "kind": "image",
+          "title": "Project 365 #227: 150810 A Real Snip",
+          "creator": "Pete (comedy_nose)",
+          "provider": "openverse",
+          "providerRef": "a004fb15-fe28-4e18-9978-07be119d6f82",
+          "landingUrl": "https://www.flickr.com/photos/23408922@N07/4894233995",
+          "fileUrl": "https://live.staticflickr.com/4098/4894233995_4af4565560_b.jpg",
+          "license": "pdm",
+          "licenseVersion": "1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "showsExactProduct": false,
+          "description": "Uma mão corta uma pizza de delivery na caixa com uma tesoura comum; ao fundo, outra mão. Segundo a descrição no Flickr, não havia cortador de pizza e usaram uma tesoura Fiskars, que “funcionou bem”: é a solução óbvia vencendo. Resolução de 1024×683, sem rostos. Marca de Domínio Público 1.0 conferida no Flickr."
+        },
+        {
+          "id": "m4",
+          "kind": "image",
+          "title": "PIZZA SCISSORS!!!",
+          "creator": "jon collier (ImNotQuiteJack)",
+          "provider": "openverse",
+          "providerRef": "11f7303b-6121-467c-a178-63f768284823",
+          "landingUrl": "https://www.flickr.com/photos/34026843@N00/306547305",
+          "fileUrl": "https://live.staticflickr.com/115/306547305_2d7e56d039_b.jpg",
+          "license": "by-sa",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "showsExactProduct": false,
+          "description": "Duas mãos cortam uma pizza de tomate numa caixa italiana (impressão de Catania) com uma tesoura de cozinha comum de cabo verde. Sem rostos. Foto de 2006 com flash, 1024×768. Licença CC BY-SA 2.0 conferida no Flickr."
+        }
+      ],
+      "scores": {
+        "contrast": 2,
+        "story": 3,
+        "visual": 4,
+        "media": 3,
+        "reliability": 4
+      },
+      "risks": [
+        "O produto é útil: protege antiaderente e pedra e serve a fatia. O contraste problema × solução é fraco, e o público pode achar que a tesoura de pizza é uma boa ideia.",
+        "Não achei prêmio de design da Scizza; ela não aparece na coleção “Award Winners” do site da Dreamfarm em 2026-10-11. Não usar “premiada”.",
+        "Não há foto livre da Scizza. A única mídia do tipo (m1) é uma tesoura Progressive na embalagem, com arte gráfica de terceiros bem visível. As outras mostram tesouras comuns.",
+        "Uma foto “pizzaschere” no Openverse (abhijay achatz, CC BY-SA) parece imagem publicitária de fabricante republicada. Ficou de fora por suspeita de licença indevida.",
+        "O site australiano mostra ao mesmo tempo “Add to Cart” e “Out of Stock”, então a disponibilidade na Austrália é incerta. Nos EUA o produto aparece como InStock."
+      ],
+      "comedyAngle": "O vendedor apresenta “a melhor coisa desde o pão fatiado”: lâminas de aço alemão temperado de 15 cm, sapata resistente a 205 °C e uma filosofia (“duas lâminas são melhores que uma”). Na tela, o contraponto é que qualquer tesoura de gaveta já corta pizza: o vídeo de Trento mostra isso com faca e garfo parados ao lado do prato, e a foto do Flickr registra que uma Fiskars comum “funcionou bem”. O humor é mais leve porque o produto tem méritos reais."
+    },
+    {
+      "slug": "herb-stripper",
+      "name": "Debulhador de ervas (herb stripper): Talisman Designs Kale & Herb Stripper",
+      "brand": "Talisman Designs (EUA); exemplo alternativo: Chef'n ZipStrip",
+      "description": "Lâmina de plástico com 6 entalhes de tamanhos diferentes. O talo da erva ou da couve entra no entalhe certo e, ao deslizar a peça, as folhas se soltam. Existe uma patente americana concedida para o dispositivo. A Chef'n vende a ZipStrip, uma placa com furos de vários tamanhos e uma tigelinha que pega e mede as folhas. A solução óbvia é a mão: pinçar o talo com dois dedos e puxar.",
+      "legitimateUse": "Agiliza o preparo de volumes grandes de couve, acelga e ervas de talo lenhoso (alecrim, tomilho, orégano), por exemplo em cozinha profissional ou no preparo de marmitas. Não é tecnologia assistiva documentada nesta pesquisa.",
+      "punchingDownRisk": "Baixo. Gadget de cozinha de consumo geral; nenhuma fonte o apresenta como auxílio para deficiência.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.talismandesigns.com/products/kale-herb-stripper",
+          "title": "Kale & Herb Stripper",
+          "publisher": "Talisman Designs",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Descrição oficial (seis entalhes, modo de uso, plástico sem BPA, lava-louças) e preço de US$ 10,00 na loja do fabricante."
+        },
+        {
+          "id": "s2",
+          "url": "https://patents.google.com/patent/US11485031B2/en",
+          "title": "US11485031B2 - Herb-stripping devices, assemblies, and components",
+          "publisher": "Google Patents",
+          "kind": "patent",
+          "accessedAt": "2026-10-11",
+          "confirms": "A patente americana de dispositivo debulhador de ervas: inventoras Katherine Waymire e Melessa E. Paynter, prioridade em 06/03/2015, concessão em 01/11/2022, 18 reivindicações, seis entalhes e aviso “Copyright© 2015, TALISMAN DESIGNS, LLC” nos desenhos."
+        },
+        {
+          "id": "s3",
+          "url": "https://www.chefn.com/products/zipstrip-herb-stripper",
+          "title": "ZipStrip Herb Stripper",
+          "publisher": "Chef'n",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "A ZipStrip da Chef'n tem furos de vários tamanhos e uma tigela que pega e mede as ervas, por US$ 8,99 na loja oficial."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Segundo a Talisman Designs: “Six different notch sizes will accommodate any size leafy green or herb stems” [seis tamanhos de entalhe para qualquer talo de folha ou erva].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Instrução oficial de uso: “Right on your counter top, set the correct size notch over the stem, apply even pressure while gliding the stripper across the stem.” [Na bancada, encaixe o entalhe do tamanho certo sobre o talo, aplique pressão uniforme e deslize o debulhador ao longo dele.]",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "O fabricante o chama de “this must-have kitchen tool” [utensílio indispensável] que “simplifies meal prep in seconds” [simplifica o preparo em segundos]. É feito de plástico sem BPA e vai à lava-louças.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "Na loja da Talisman Designs custa US$ 10,00.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "O dispositivo tem patente americana: US11485031B2, “Herb-stripping devices, assemblies, and components”, com prioridade em 06/03/2015 e concessão só em 01/11/2022, com 18 reivindicações.",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "O resumo da patente começa assim: “Conventional herb strippers can be tedious, time consuming, and awkward to use.” [Os debulhadores de ervas convencionais podem ser tediosos, demorados e desajeitados.]",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "O texto da patente reconhece a solução óbvia: os chefs “expend considerable time and energy removing the leaves by hand” [gastam tempo e energia consideráveis tirando as folhas com a mão].",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "Na modalidade principal da patente, os seis entalhes vão do menor ao maior. Os desenhos trazem “Copyright© 2015, TALISMAN DESIGNS, LLC”.",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "A concorrente ZipStrip, da Chef'n, tem “Different sized holes” [furos de tamanhos diferentes] e uma tigela que pega as folhas e “also measures them” [também as mede], por US$ 8,99.",
+          "sourceIds": [
+            "s3"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 10.0,
+        "currency": "USD",
+        "sourceId": "s1",
+        "observedAt": "2026-10-11",
+        "note": "Kale & Herb Stripper na loja oficial da Talisman Designs (SKU 3120), disponível. A Chef'n ZipStrip custa US$ 8,99 (s3)."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "Herb stripper 1 2018-07-11",
+          "creator": "Fastily",
+          "provider": "wikimedia",
+          "providerRef": "File:Herb stripper 1 2018-07-11.jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Herb_stripper_1_2018-07-11.jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Herb_stripper_1_2018-07-11.jpg",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": true,
+          "description": "É exatamente o Talisman Designs “Kale & Herb Stripper”: lâmina verde-limão com entalhes, na cartela da embalagem, pendurada num gancho de supermercado em frente à geladeira de verduras. Acima aparece a embalagem de um “Carrot Stripper / couteau julienne”. A marca, a arte da embalagem (ilustração de mão e couve) e os textos “STRIP more / PREP easily / GLIDE over” ficam bem visíveis. Resolução de 3024×4032 (vertical), nítida, sem pessoas. Licença {{Self|Cc-by-sa-4.0}} conferida no Commons."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "The herb stripper&snipper = my new best friend. Why didn't I know about these before?",
+          "creator": "Stephanie Richard (therichardlife)",
+          "provider": "openverse",
+          "providerRef": "9e4487e6-e304-42e3-aafd-471bb45c66d1",
+          "landingUrl": "https://www.flickr.com/photos/22967797@N06/6027048625",
+          "fileUrl": "https://live.staticflickr.com/6210/6027048625_227aa9a201.jpg",
+          "license": "by-sa",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "showsExactProduct": false,
+          "description": "Uma mão segura uma tesoura de ervas branca e verde com entalhes de debulhar no cabo, sobre ervas picadas e cebola numa tábua, com uma faca de chef ao fundo. É uma variante híbrida (tesoura com debulhador), não a lâmina Talisman. Tem filtro de Instagram e só 500×500, abaixo do mínimo desejável. Só aparece parte da mão, sem rosto. Licença CC BY-SA 2.0 conferida no Flickr."
+        }
+      ],
+      "scores": {
+        "contrast": 3,
+        "story": 4,
+        "visual": 3,
+        "media": 2,
+        "reliability": 5
+      },
+      "risks": [
+        "A mídia é escassa. Só há uma foto livre do produto exato (m1), e ela mostra o item na embalagem dentro de uma loja, com a arte gráfica da Talisman em destaque, o que limita o uso como produto “limpo”. A m2 é uma variante em baixa resolução.",
+        "O Commons e o Openverse não têm foto livre do debulhador em uso nem da Chef'n ZipStrip.",
+        "A patente lista a titularidade original como “Individual” no Google Patents. A ligação com a Talisman vem do aviso de copyright nos desenhos, então não se deve afirmar que a Talisman é a titular da patente.",
+        "Não há preço em reais nem loja brasileira verificada para este produto."
+      ],
+      "comedyAngle": "O vendedor apresenta uma lâmina patenteada com “seis tamanhos de entalhe”, cuja patente levou mais de sete anos para sair e começa reclamando que os debulhadores convencionais são “tediosos, demorados e desajeitados”. A própria patente admite que os chefs tiram as folhas “com a mão”. Na tela, dois dedos pinçam o talo de alecrim e puxam, enquanto o vendedor ainda procura o entalhe certo."
     }
   ]
 }

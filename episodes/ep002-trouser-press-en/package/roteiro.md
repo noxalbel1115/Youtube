@@ -1,6 +1,6 @@
 # Roteiro — 45 minutes for one pair of trousers
 
-Episódio `ep002-trouser-press-en` · versão 1 · duração final 85.5 s
+Episódio `ep002-trouser-press-en` · versão 2 · duração final 85.5 s
 
 **Logline.** Versão em inglês do Protocolo 002: Valdemar apresenta, com orgulho de engenharia aeronáutica, uma prensa de calças inglesa de 9,56 kg; fora de quadro, a colega desamassa a dela no vapor do banho, exatamente onde o manual proíbe a prensa de entrar.
 
@@ -52,18 +52,18 @@ Legenda: **[FATO fN]** = afirmação sobre o produto real, ancorada em fonte; *[
 
 ## Fatos usados
 
-- **f1** — O Corby 7700 oferece ciclos de 15, 30 e 45 minutos. Segundo o fabricante, o de 45 minutos é “for the even more difficult wrinkles” [para os vincos ainda mais difíceis]. _(fontes: s1, s3)_
-- **f3** — No site oficial, o 7700 custa £189,60 com IVA e o Executive, topo de linha em preto brilhante, £215,04. _(fontes: s1, s2)_
-- **f4** — O mesmo modelo 7700 é vendido em nogueira, mogno, freixo preto, faia, cromo acetinado, carvalho natural “Lancaster” e branco com preto. _(fontes: s1)_
-- **f5** — O manual proíbe: “Never use the appliance in a bathroom or near any source of water.” [Nunca use o aparelho no banheiro nem perto de qualquer fonte de água.] _(fontes: s3)_
-- **f6** — O manual também avisa: “On no account should any trousers be dampened before pressing.” [Em hipótese alguma umedeça a calça antes de prensar.] E pede: “Please press one pair of trousers at a time” [prense uma calça por vez]. _(fontes: s3)_
-- **f10** — Segundo o fabricante, a marca nasceu como John Corby Limited em 1930, em Windsor, fazendo cabides-valete. As prensas passaram a ter aquecimento elétrico nos anos 1960. _(fontes: s3, s4, s5)_
-- **f11** — Segundo o obituário de Peter Corby, “a chance meeting with the Concorde plane engineer who had solved the problem of how to prevent the nosecone from freezing inspired the electrical heating pad” [um encontro casual com o engenheiro do Concorde que resolveu o congelamento do nariz do avião inspirou a almofada de aquecimento elétrico] da prensa. _(fontes: s6, s11)_
-- **f13** — O modelo 6600, hoje descontinuado, era “Supplied with 1200W steam iron” [fornecido com ferro a vapor de 1200 W], que segundo o fabricante “allows you to make full use of the folding ironing board” [permite aproveitar ao máximo a tábua de passar dobrável]. _(fontes: s9)_
-- **f14** — O mesmo manual diz: “The inherent humidity content of natural and mixed fibres assists the pressing process” [a umidade natural das fibras naturais e mistas ajuda a prensagem], na mesma seção que proíbe umedecer a calça. _(fontes: s3)_
-- **f15** — A calça fica entre a placa de prensagem e uma almofada aquecida e acolchoada, que chega a cerca de 60 °C. _(fontes: s4, s11)_
-- **f16** — Uso segundo o manual: levantar a prensa para revelar a almofada aquecida, inserir a calça, fechar e, no 7700, escolher 15, 30 ou 45 minutos. _(fontes: s3)_
-- **f17** — Segundo o obituário de Peter Corby, ele aperfeiçoou o que viria a ser “a staple fitting in millions of hotel rooms” [item básico em milhões de quartos de hotel]. _(fontes: s6)_
+- **f1** — The Corby 7700 offers 15, 30 and 45-minute cycles. According to the manufacturer, the 45-minute one is "for the even more difficult wrinkles". _(fontes: s1, s3)_
+- **f3** — On the official website, the 7700 costs £189.60 inc. VAT and the Executive, the gloss-black top model, £215.04. _(fontes: s1, s2)_
+- **f4** — The same 7700 model is sold in walnut, mahogany, black ash, beech, satin chrome, natural "Lancaster" oak and white & black. _(fontes: s1)_
+- **f5** — The manual states: "Never use the appliance in a bathroom or near any source of water." _(fontes: s3)_
+- **f6** — The manual also warns: "On no account should any trousers be dampened before pressing." And asks: "Please press one pair of trousers at a time". _(fontes: s3)_
+- **f10** — According to the manufacturer, the brand started as John Corby Limited in 1930, in Windsor, making valet stands. The presses became electrically heated in the 1960s. _(fontes: s3, s4, s5)_
+- **f11** — According to Peter Corby's obituary, "a chance meeting with the Concorde plane engineer who had solved the problem of how to prevent the nosecone from freezing inspired the electrical heating pad" of the press. _(fontes: s6, s11)_
+- **f13** — The 6600 model, now discontinued, was "Supplied with 1200W steam iron", which according to the manufacturer "allows you to make full use of the folding ironing board". _(fontes: s9)_
+- **f14** — The same manual says: "The inherent humidity content of natural and mixed fibres assists the pressing process", in the same section that forbids dampening the trousers. _(fontes: s3)_
+- **f15** — The trousers sit between the pressing plate and a cushioned heating pad that reaches about 60 °C. _(fontes: s4, s11)_
+- **f16** — Use according to the manual: raise the press to reveal the heated pad, insert the trousers, close and, on the 7700, choose 15, 30 or 45 minutes. _(fontes: s3)_
+- **f17** — According to Peter Corby's obituary, he perfected what would become "a staple fitting in millions of hotel rooms". _(fontes: s6)_
 
 ## Notas de direção
 
@@ -100,3 +100,4 @@ Legenda: **[FATO fN]** = afirmação sobre o produto real, ancorada em fonte; *[
 ## Histórico
 
 - v1: Versão em inglês adaptada da v3 em português (mesmos fatos, beats, cenas e pausas). Falas reescritas para o inglês, não traduzidas palavra por palavra; citações do fabricante e do manual no original, sem tradução entre colchetes; carimbos UNDER REVIEW, BANNED e DENIED.
+- v2: Migração para o suporte a idioma do branch base: o idioma passa a ser do episódio (state.locale = en-US) e a pesquisa do produto foi traduzida (research/LOCALIZACAO.md); saem os campos language e packaging.productName. Falas, cenas e pausas iguais à v1.

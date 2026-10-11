@@ -1,7 +1,7 @@
 {
-  "verifiedAt": "2026-10-11T09:27:46.017Z",
+  "verifiedAt": "2026-10-11T15:07:02.785Z",
   "file": "episodes/ep002-trouser-press-en/build/episode.mp4",
-  "sha256": "32bddf092cb92c4f191b189179e74d6e278d3c2e0fb988220f753c2a1ec05638",
+  "sha256": "ab3d992f77da2c5ba528fe0d28aceffb31fdc091deca699af68d27b7006b1fe3",
   "durationSeconds": 85.5,
   "automatic": [
     {
@@ -102,9 +102,9 @@
     },
     {
       "id": "legendas.leitura",
-      "ok": false,
+      "ok": true,
       "severity": "warning",
-      "detail": "blocos com menos de 0,5 s: Thirty."
+      "detail": "43 blocos, todos com >= 0,5 s"
     },
     {
       "id": "legendas.tamanho",
@@ -116,14 +116,14 @@
   "finalTranscript": "Good morning. For almost a hundred years, one English company has fought a single enemy. The Wrinkle. It's in millions of hotel rooms. Here's how it works. Open the press, lay the trousers on the heated pad, and close. 15 minutes, 30, or 45. 45 is for, and I quote, the even more difficult wrinkles. 45 minutes, one pair of trousers at a time. The heated pad was inspired by Concorde, for trousers. In walnut, mahogany, black ash, beech, or oak. Done. Steamed it in the shower. 44 minutes to go. The manual is very clear. Never use it in a bathroom. In the bathroom, the Corby never loses. It isn't allowed in. The manual also forbids dampening the trousers, but admits that humidity helps the pressing. Which is why the previous model came with an iron, a steam iron. 189 pounds 60, four pounds 20 a minute. Much cheaper than a Concorde. You didn't need it. Until now.",
   "manualReview": {
     "status": "pendente",
-    "sha256": "32bddf092cb92c4f191b189179e74d6e278d3c2e0fb988220f753c2a1ec05638",
-    "at": "2026-10-11T09:29:21.044Z",
+    "sha256": "ab3d992f77da2c5ba528fe0d28aceffb31fdc091deca699af68d27b7006b1fe3",
+    "at": "2026-10-11T15:07:43.479Z",
     "by": null,
     "notes": [
       {
         "by": "Claude (inspecao assistida por IA)",
-        "at": "2026-10-11T09:29:21.044Z",
-        "text": "Inspecao visual por IA (folha de contato, quadros por beat, forma de onda, miniatura): textos fixos em ingles (DUN, DEPARTMENT OF UNNECESSARY NECESSITIES, PROTOCOL 002, SPEC SHEET), carimbos UNDER REVIEW/BANNED/DENIED sem colisao com fonte ou legenda; mesma encenacao aprovada em portugues. Audio NAO ouvido pela IA: transcricao final WER 0%, -14,1 LUFS, true peak -1,4 dBTP (normalizacao refeita com alvo -2,7: a voz Eric tem picos maiores). Aviso: legenda 'Thirty.' fica 0,46 s (limite 0,5 s). Aviso pendente: foto m5 CC BY-SA 2.0 (mantida por decisao do usuario)."
+        "at": "2026-10-11T15:07:43.479Z",
+        "text": "Render com o pipeline mesclado ao base (idioma no estado do episodio, pesquisa localizada): mesma encenacao e falas da versao anterior em ingles; legenda 'Thirty.' agora com >= 0,5 s; selo DEPT. 002; true peak -1,4 dBTP (loudnorm refeito com alvo -2,7); WER 0%; nenhum credito novo de voz (cache). Audio NAO ouvido pela IA. Aviso pendente: foto m5 CC BY-SA 2.0 (mantida por decisao do usuario)."
       }
     ]
   }

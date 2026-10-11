@@ -11,14 +11,16 @@ import {STRINGS} from '../core/locale.js';
 
 const UA = 'DNN-pipeline/0.1 (+https://github.com/noxalbel1115/Youtube)';
 
-async function download(url: string, dest: string): Promise<void> {
+async function download(url: string, dest: string, attempts = 6): Promise<void> {
   // Material proprio (fotos feitas pelo canal, graficos gerados) pode vir de arquivo local.
   if (url.startsWith('file://')) {
     fs.copyFileSync(new URL(url), dest);
     return;
   }
+  // Respeita o Retry-After (a Wikimedia limita trafego anonimo por IP); sem ele, espera exponencial.
   let wait = 2000;
-  for (let i = 1; i <= 5; i++) {
+  let last = '';
+  for (let i = 1; i <= attempts; i++) {
     const res = await fetch(url, {headers: {'user-agent': UA}, signal: AbortSignal.timeout(120000)});
     if (res.ok) {
       fs.writeFileSync(dest, Buffer.from(await res.arrayBuffer()));
@@ -26,10 +28,13 @@ async function download(url: string, dest: string): Promise<void> {
     }
     await res.body?.cancel();
     if (res.status !== 429 && res.status < 500) throw new Error(`download HTTP ${res.status}: ${url}`);
-    await new Promise((r) => setTimeout(r, wait));
+    const ra = Number(res.headers.get('retry-after'));
+    last = `HTTP ${res.status}${ra ? `, retry-after ${ra}s` : ''}`;
+    if (i === attempts) break;
+    await new Promise((r) => setTimeout(r, Number.isFinite(ra) && ra > 0 ? Math.min(ra, 120) * 1000 : wait));
     wait *= 2;
   }
-  throw new Error(`download falhou apos 5 tentativas: ${url}`);
+  throw new Error(`download falhou apos ${attempts} tentativas (${last}): ${url}`);
 }
 
 export function attributionText(m: {title: string; creator: string; landingUrl: string; license: LicenseCode; licenseVersion?: string}, modifications: string, by = 'por'): string {
@@ -87,14 +92,24 @@ export const mediaStage: Stage = {
           const orig = path.join(outDir, `${m.id}.orig${ext}`);
           let via = 'arquivo original';
           if (!fs.existsSync(orig)) {
+            // Com rota alternativa (Openverse/CDN), nao vale insistir muito na origem limitada.
+            const hasFallback = (m.provider === 'openverse' && !!m.providerRef) || m.provider === 'wikimedia';
             try {
-              await download(url, orig);
+              await download(url, orig, hasFallback ? 2 : 6);
             } catch (e) {
               // Origem bloqueando o IP (429/CIDR): usa o proxy de imagens do Openverse para o mesmo registro.
-              if (m.provider !== 'openverse' || !m.providerRef) throw e;
-              log.warn(`${m.id}: download direto falhou (${(e as Error).message}); usando proxy do Openverse`);
-              await download(`https://api.openverse.org/v1/images/${m.providerRef}/thumb/?full_size=true&compressed=false`, orig);
-              via = 'proxy de imagens do Openverse (mesmo registro)';
+              if (m.provider === 'openverse' && m.providerRef) {
+                log.warn(`${m.id}: download direto falhou (${(e as Error).message}); usando proxy do Openverse`);
+                await download(`https://api.openverse.org/v1/images/${m.providerRef}/thumb/?full_size=true&compressed=false`, orig);
+                via = 'proxy de imagens do Openverse (mesmo registro)';
+              } else if (m.provider === 'wikimedia' && new URL(url).hostname === 'upload.wikimedia.org') {
+                // Mesmo arquivo pelo CDN de imagens (Jetpack Photon) que o Openverse usa para o Commons. A licenca ja foi
+                // verificada na pagina do arquivo; o CDN pode recomprimir, entao o sha256 e o da copia recebida.
+                const u = new URL(url);
+                log.warn(`${m.id}: download direto falhou (${(e as Error).message}); usando o CDN i0.wp.com`);
+                await download(`https://i0.wp.com/${u.hostname}${u.pathname}?ssl=1`, orig);
+                via = 'CDN de imagens i0.wp.com (copia do arquivo original do Commons, possivelmente recomprimida)';
+              } else throw e;
             }
           }
           item.verification.detail += `; arquivo obtido via ${via}`;

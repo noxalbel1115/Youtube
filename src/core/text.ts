@@ -135,8 +135,15 @@ const fuse = (...ws: string[]) => ws.join('').replace(/(.)\1+/g, '$1');
  * Taxa de erro por palavra (Levenshtein em palavras), insensivel a acentos. Diferenca so de divisao entre palavras
  * ("almofada aquecida" x "almofa daquecida", elisao natural da fala) nao conta como erro: o ASR ouviu os mesmos sons.
  */
+/** Valores em reais como a voz os le: "R$ 21.999" e "21.999 reais" → "21999 reais" (separador de milhar some). */
+export function spokenMoney(s: string): string {
+  return s
+    .replace(/R\$\s?(\d{1,3}(?:\.\d{3})+|\d+)(?:,(\d{2}))?/g, (_m, int: string, cents?: string) => `${int.replace(/\./g, '')} reais${cents ? ` e ${Number(cents)} centavos` : ''}`)
+    .replace(/(\d)\.(?=\d{3}(?!\d))/g, '$1');
+}
+
 export function wordErrorRate(reference: string, hypothesis: string, locale: Locale = 'pt-BR'): number {
-  const words = (t: string) => numbersToDigits(normalizeWords(stripAccents(locale === 'en-US' ? spellCurrencyEn(t) : t)), locale);
+  const words = (t: string) => numbersToDigits(normalizeWords(stripAccents(locale === 'en-US' ? spellCurrencyEn(t) : spokenMoney(t))), locale);
   const r = words(reference);
   const h = words(hypothesis);
   if (r.length === 0) return h.length === 0 ? 0 : 1;

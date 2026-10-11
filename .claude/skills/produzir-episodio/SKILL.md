@@ -18,8 +18,10 @@ Você opera o pipeline deste repositório. O código faz as etapas determinísti
 4. `npm run dnn -- run <id>` → valida pesquisa, seleciona, verifica licenças na origem e baixa mídia; para pedindo
    o roteiro. Confira `media.json`: só itens `usable` podem entrar no roteiro.
 5. **Roteiro**: escreva `episodes/<id>/script.json` seguindo `prompts/roteiro.md` (fatos x ficção, progressão,
-   pausas, vendedor nunca anuncia a piada) e, em especial, a seção **Clareza da comédia**: o editor avaliou o piloto
-   como "piada muito subentendida"; a encenação precisa deixar o contraste visível e explícito. Rode
+   vendedor sério no tom) e, em especial, as seções **Clareza da comédia** (piloto: "piada muito subentendida") e
+   **Ironia descarada** (Protocolo 003: "fale mais, seja mais explícito na argumentação, seja irônico
+   descaradamente"): fala em ≥ 80% do tempo, argumento por extenso com conclusão dita, antífrase, contas em voz alta,
+   colega sarcástica às claras. Antes da voz, leia só as legendas: a ironia tem que estar escrita. Rode
    `npm run dnn -- run <id>` de novo.
 6. Se a etapa `voice` acusar falas com transcrição divergente, ajuste `pronunciations`/texto, incremente `version`
    e rode de novo. Mesma coisa para avisos de `verify`.

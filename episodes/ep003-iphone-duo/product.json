@@ -1,0 +1,306 @@
+{
+  "slug": "iphone-duo",
+  "name": "iPhone Duo",
+  "brand": "Apple",
+  "description": "Primeiro iPhone dobrável (formato livro/“passaporte”), anunciado em 9/9/2026; tela interna de 7,6\" e externa de 5,4\"; R$ 21.999 a R$ 30.999 no Brasil.",
+  "legitimateUse": "Smartphone de uso geral; o formato dobrável tem vantagens reais (tela grande que cabe no bolso, multitarefa). A imprensa reconhece diferenciais do Duo frente ao Galaxy Z Fold8 (resistência IP68, Apple Pencil, acabamento antirreflexo).",
+  "punchingDownRisk": "Baixo: o alvo é o discurso de lançamento e o preço de uma das maiores empresas do mundo, não o público nem quem compra. Não afirmamos que o aparelho é ruim (não testamos); só confrontamos o “primeiro” e o preço com datas e valores documentados.",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/",
+      "title": "Apple unveils iPhone Duo",
+      "publisher": "Apple Newsroom",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Comunicado oficial de 9/9/2026: primeiro iPhone dobrável, telas 7,6\"/5,4\", US$ 1.999 inicial, pré-venda 16/10, venda 23/10, Case US$ 79 e Folio com Kickstand US$ 129, frase de John Ternus."
+    },
+    {
+      "id": "s3",
+      "url": "https://www.apple.com/br/shop/buy-iphone/iphone-duo",
+      "title": "Comprar iPhone Duo",
+      "publisher": "Apple Store (Brasil)",
+      "kind": "official-store",
+      "accessedAt": "2026-10-11",
+      "confirms": "Preços oficiais no Brasil: R$ 21.999 (256 GB), R$ 23.499 (512 GB), R$ 26.499 (1 TB), R$ 30.999 (2 TB); pré-venda 16/10 às 9h, disponível 23/10."
+    },
+    {
+      "id": "s4",
+      "url": "https://www.apple.com/br/newsroom/2026/09/apple-unveils-iphone-duo/",
+      "title": "Apple apresenta o iPhone Duo",
+      "publisher": "Apple Newsroom Brasil",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Versão brasileira do comunicado (09/09/2026): preço inicial R$ 21.999; capa R$ 829; Folio com suporte R$ 1.299; Brasil na lista da pré-venda de 16/10."
+    },
+    {
+      "id": "s10",
+      "url": "https://ktla.com/news/apple-unveils-foldable-iphone-and-samsung-has-thoughts/",
+      "title": "Apple unveils foldable iPhone and Samsung has thoughts",
+      "publisher": "KTLA (Christine Samra)",
+      "kind": "press",
+      "accessedAt": "2026-10-11",
+      "confirms": "KTLA (9/9/2026) cita Ternus ('two phones awkwardly stuck together') e os posts da Samsung Mobile US no X ('Sims sequel', 'reheating our leftovers')."
+    },
+    {
+      "id": "s11",
+      "url": "https://www.macrumors.com/2026/09/09/samsung-mocks-iphone-duo/",
+      "title": "Samsung Mocks iPhone Duo",
+      "publisher": "MacRumors (Joe Rossignol)",
+      "kind": "press",
+      "accessedAt": "2026-10-11",
+      "confirms": "MacRumors (9/9/2026): posts da Samsung sem citar a Apple pelo nome, hashtag #ItsTimeToSwitch; Galaxy Z Fold8 a US$ 1.899."
+    },
+    {
+      "id": "s25",
+      "url": "https://news.samsung.com/global/galaxy-unpacked-july-2026-a-first-look-at-galaxy-z-fold8-ultra-galaxy-z-fold8-and-galaxy-z-flip8",
+      "title": "[Galaxy Unpacked July 2026] A First Look at Galaxy Z Fold8 Ultra, Galaxy Z Fold8 and Galaxy Z Flip8",
+      "publisher": "Samsung Newsroom (Global)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Samsung apresentou em 22/7/2026 a 'oitava geração' da linha Galaxy Z; Fold8 com tela principal de 7,6\" e capa de 5,5\", 201 g; Fold8 Ultra 4,1 mm aberto."
+    },
+    {
+      "id": "s31",
+      "url": "https://sbtnews.sbt.com.br/noticia/economia/i-phone-dobravel-custa-um-ano-de-salario-minimo",
+      "title": "Novo iPhone dobrável custa um ano de salário mínimo",
+      "publisher": "SBT News",
+      "kind": "press",
+      "accessedAt": "2026-10-11",
+      "confirms": "(10/09/2026) R$ 21.999 equivale a 2.984 horas / 373 dias de trabalho no salário mínimo (cálculo da Exame citado pelo SBT)."
+    },
+    {
+      "id": "s32",
+      "url": "https://news.samsung.com/us/samsung-unfolds-galaxy-fold-unpacked-2019/",
+      "title": "Samsung Unfolds the Future with a Whole New Mobile Category: Introducing Galaxy Fold",
+      "publisher": "Samsung Newsroom (EUA)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Galaxy Fold anunciado em 20/02/2019, tela de 7,3\", preço sugerido nos EUA a partir de US$ 1.980."
+    },
+    {
+      "id": "s34",
+      "url": "https://news.samsung.com/us/galaxy-fold-sale-us-starting-september-27-new-era-mobile-technology/",
+      "title": "A New Era in Mobile Technology: Galaxy Fold On Sale in the U.S. Starting September 27",
+      "publisher": "Samsung Newsroom (EUA)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "(23/09/2019) Galaxy Fold à venda nos EUA a partir de 27/09/2019."
+    },
+    {
+      "id": "s35",
+      "url": "https://www.techradar.com/news/this-is-the-worlds-first-foldable-phone-and-as-expected-its-not-cheap",
+      "title": "This is the world's first foldable phone and, as expected, it's not cheap",
+      "publisher": "TechRadar (James Peckham)",
+      "kind": "press",
+      "accessedAt": "2026-10-11",
+      "confirms": "(01/11/2018) Royole FlexPai anunciado como o primeiro smartphone dobrável disponível comercialmente; tela 7,8\"; equivalente a ~US$ 1.300."
+    },
+    {
+      "id": "s38",
+      "url": "https://blogs.windows.com/devices/2019/10/02/surface-reveals-new-holiday-lineup-and-introduces-a-new-category-of-dual-screen-devices-built-for-mobile-productivity/",
+      "title": "Surface reveals new holiday lineup and introduces a new category of dual-screen devices built for mobile productivity",
+      "publisher": "Microsoft Devices Blog (Panos Panay)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "(02/10/2019) Microsoft anuncia o Surface Duo para o fim de 2020: duas telas de 5,6\" que abrem para 8,3\"."
+    },
+    {
+      "id": "s39",
+      "url": "https://blogs.windows.com/devices/2020/08/12/available-for-preorder-today-surface-duo-is-purpose-built-for-mobile-productivity/",
+      "title": "Available for preorder today, Surface Duo is purpose-built for mobile productivity",
+      "publisher": "Microsoft Devices Blog (Panos Panay)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "(12/08/2020) Surface Duo a partir de US$ 1.399, à venda a partir de 10/09/2020; 'not to reinvent the phone'."
+    },
+    {
+      "id": "s40",
+      "url": "https://news.samsung.com/us/galaxy-z-fold2-change-shape-of-future-unpacked2",
+      "title": "Introducing the Galaxy Z Fold2: Change the Shape of the Future",
+      "publisher": "Samsung Newsroom (EUA)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "(01/09/2020) Galaxy Z Fold2 com tela principal de 7,6\", à venda em 18/09/2020."
+    },
+    {
+      "id": "s46",
+      "url": "https://windowslatest.com/2026/09/09/the-foldable-iphone-duo-is-here-and-its-the-surface-duo-microsoft-gave-up-on-in-2023",
+      "title": "The foldable iPhone Duo is here, and it's the Surface Duo Microsoft gave up on in 2023",
+      "publisher": "Windows Latest (Abhijith M B)",
+      "kind": "press",
+      "accessedAt": "2026-10-11",
+      "confirms": "(09/09/2026) Microsoft cancelou o sucessor em 2023; Surface Duo original perdeu suporte em set/2023."
+    },
+    {
+      "id": "x2",
+      "url": "https://news.samsung.com/us/galaxy-z-fold3-5g-galaxy-z-flip3-5g-unpacked-2021-next-mobile-innovation",
+      "title": "Unfold Your World with Galaxy Z Fold3 5G and Galaxy Z Flip3 5G",
+      "publisher": "Samsung Newsroom (EUA)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Galaxy Z Fold3 apresentado em 11/08/2021, tela principal de 7,6\", suporte a S Pen."
+    },
+    {
+      "id": "x3",
+      "url": "https://news.samsung.com/us/tag/galaxy-z-fold4/",
+      "title": "Galaxy Z Fold4 - Samsung US Newsroom",
+      "publisher": "Samsung Newsroom (EUA)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Galaxy Z Fold4 anunciado em 10/08/2022."
+    },
+    {
+      "id": "x4",
+      "url": "https://news.samsung.com/global/galaxy-unpacked-2023-inspired-by-you-created-for-you-samsung-unveils-the-latest-era-of-galaxy-innovation",
+      "title": "[Galaxy Unpacked 2023] Inspired by You, Created for You",
+      "publisher": "Samsung Newsroom (Global)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Galaxy Z Fold5 apresentado no Unpacked de 26/07/2023, em Seul."
+    },
+    {
+      "id": "x5",
+      "url": "https://news.samsung.com/global/galaxy-unpacked-2024-a-look-inside-the-galaxy-z-fold6",
+      "title": "[Galaxy Unpacked 2024] A Look Inside the Galaxy Z Fold6",
+      "publisher": "Samsung Newsroom (Global)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Galaxy Z Fold6 apresentado em 10/07/2024, em Paris."
+    },
+    {
+      "id": "x6",
+      "url": "https://news.samsung.com/global/galaxy-unpacked-2025-a-first-look-at-the-galaxy-z-fold7-unfolding-a-new-standard-in-foldable-design",
+      "title": "[Galaxy Unpacked 2025] A First Look at the Galaxy Z Fold7",
+      "publisher": "Samsung Newsroom (Global)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Galaxy Z Fold7 apresentado em 09/07/2025."
+    }
+  ],
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Em 9/9/2026, a Apple apresentou o iPhone Duo como “the first foldable iPhone” (no comunicado brasileiro: “o primeiro iPhone dobrável”).",
+      "sourceIds": [
+        "s1",
+        "s4"
+      ]
+    },
+    {
+      "id": "f2",
+      "text": "O comunicado da Apple diz que o design dobrável abre “possibilities that feel entirely new yet remarkably familiar” [possibilidades que parecem totalmente novas, mas notavelmente familiares].",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f3",
+      "text": "No comunicado, o CEO da Apple, John Ternus, diz: “iPhone Duo is the most transformational change to iPhone since the original” [a mudança mais transformadora do iPhone desde o original].",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "O iPhone Duo tem tela interna de 7,6 polegadas e tela externa de 5,4 polegadas.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f5",
+      "text": "Preços oficiais no Brasil (apple.com/br, 11/10/2026): R$ 21.999 (256 GB), R$ 23.499 (512 GB), R$ 26.499 (1 TB) e R$ 30.999 (2 TB).",
+      "sourceIds": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "id": "f6",
+      "text": "No Brasil, a capa oficial custa R$ 829 e o Folio com suporte (capa com apoio para ficar em pé), R$ 1.299.",
+      "sourceIds": [
+        "s4"
+      ]
+    },
+    {
+      "id": "f8",
+      "text": "Segundo o SBT News (cálculo da Exame), o modelo de entrada equivale a 373 dias de trabalho no salário mínimo — “um ano de salário mínimo”.",
+      "sourceIds": [
+        "s31"
+      ]
+    },
+    {
+      "id": "f10",
+      "text": "Em 22/07/2026, 49 dias antes do iPhone Duo, a Samsung apresentou a “eighth-generation Galaxy Z series”; o Galaxy Z Fold8 tem tela principal de 7,6 polegadas e capa de 5,5.",
+      "sourceIds": [
+        "s25"
+      ]
+    },
+    {
+      "id": "f13",
+      "text": "O Royole FlexPai foi noticiado em 01/11/2018 como o primeiro smartphone dobrável disponível comercialmente.",
+      "sourceIds": [
+        "s35"
+      ]
+    },
+    {
+      "id": "f14",
+      "text": "O Samsung Galaxy Fold foi anunciado em 20/02/2019 por US$ 1.980 e chegou às lojas em setembro de 2019 (EUA: 27/09/2019).",
+      "sourceIds": [
+        "s32",
+        "s34"
+      ]
+    },
+    {
+      "id": "f15",
+      "text": "A Samsung lançou um Galaxy Z Fold por ano depois do primeiro: Z Fold2 (2020, já com tela principal de 7,6\"), Z Fold3 (2021), Z Fold4 (2022), Z Fold5 (2023), Z Fold6 (2024) e Z Fold7 (2025).",
+      "sourceIds": [
+        "s40",
+        "x2",
+        "x3",
+        "x4",
+        "x5",
+        "x6"
+      ]
+    },
+    {
+      "id": "f16",
+      "text": "A Microsoft vendeu o Surface Duo, celular de duas telas com dobradiça, a partir de 10/09/2020, por US$ 1.399.",
+      "sourceIds": [
+        "s38",
+        "s39"
+      ]
+    },
+    {
+      "id": "f17",
+      "text": "A Microsoft cancelou o sucessor do Surface Duo em 2023, e o original perdeu suporte em setembro de 2023.",
+      "sourceIds": [
+        "s46"
+      ]
+    },
+    {
+      "id": "f18",
+      "text": "No dia do anúncio, a conta Samsung Mobile US publicou no X: “Let us know when you’re done reheating our leftovers” [avisem quando terminarem de requentar as nossas sobras].",
+      "sourceIds": [
+        "s11",
+        "s10"
+      ]
+    }
+  ],
+  "price": {
+    "amount": 21999,
+    "currency": "BRL",
+    "sourceId": "s3",
+    "observedAt": "2026-10-11",
+    "note": "Preço oficial do modelo de 256 GB na Apple Store do Brasil; vai a R$ 30.999 (2 TB)."
+  },
+  "risks": [
+    "Sátira de marca real: o vídeo não usa logotipo nem identidade visual da Apple; o aparelho aparece como ilustração 3D genérica do tipo de aparelho.",
+    "Ressalva honesta: o Surface Duo tinha duas telas com dobradiça, não tela flexível; o vídeo diz só que o NOME já era usado.",
+    "Ressalva honesta: a Samsung também disse em 2019 que o Galaxy Fold era “categoria completamente nova”; o alvo é o “primeiro” em 2026.",
+    "Citações de posts da Samsung no X vêm da imprensa (MacRumors, KTLA); os posts originais não foram abertos."
+  ],
+  "comedyAngle": "O vendedor apresenta como revolução um formato que outras empresas vendem desde 2018–2019; o próprio comunicado da Apple chama as possibilidades de “totalmente novas, mas notavelmente familiares”. Escalada de preço (R$ 21.999 → R$ 30.999 → capa com suporte a R$ 1.299 → um ano de salário mínimo) e a revelação visual de um dobrável por ano desde 2018.",
+  "verifiedAt": "2026-10-11"
+}

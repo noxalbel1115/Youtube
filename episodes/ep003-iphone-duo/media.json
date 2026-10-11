@@ -1,0 +1,175 @@
+{
+  "updatedAt": "2026-10-11T09:19:04.166Z",
+  "items": [
+    {
+      "id": "m1",
+      "kind": "image",
+      "title": "IPhone Duo fold",
+      "creator": "茅野ふたば",
+      "provider": "wikimedia",
+      "landingUrl": "https://commons.wikimedia.org/wiki/File:IPhone_Duo_fold.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/IPhone_Duo_fold.jpg?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original",
+      "license": "by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "showsExactProduct": true,
+      "description": "Foto real (19/09/2026). iPhone Duo ABERTO de frente, tela interna dobravel DESLIGADA (preta, vinco central visivel), segurado na mao. Na tela preta aparece o reflexo escuro (silhueta, nao identificavel) do fotografo e do celular dele. Fundo de loja com mesas brancas e displays. Sem logotipo visivel.",
+      "providerRef": "File:IPhone Duo fold.jpg",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Compartilha-Igual: se o video for considerado obra adaptada, as contribuicoes adaptadas devem ser licenciadas sob BY-SA (ou compativel). O YouTube so oferece CC BY como opcao de licenca; revisar antes de publicar.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "attribution": "\"IPhone Duo fold\" por 茅野ふたば (https://commons.wikimedia.org/wiki/File:IPhone_Duo_fold.jpg), CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "localFile": "media/m1.jpg",
+      "sha256": "5b54bd9c8722791d9c7ce873ef345ca80617a31cca9438e4cd3862b76989a7d1",
+      "width": 3200,
+      "height": 2400,
+      "verification": {
+        "at": "2026-10-11T09:05:03.520Z",
+        "method": "wikimedia-wikitext",
+        "ok": true,
+        "detail": "modelos de licenca encontrados: cc-by-sa-4.0; autor na origem: [[User:茅野ふたば; arquivo obtido via CDN de imagens i0.wp.com (copia do arquivo original do Commons, possivelmente recomprimida)"
+      },
+      "status": "usable"
+    },
+    {
+      "id": "m2",
+      "kind": "image",
+      "title": "IPhone Duo rear",
+      "creator": "茅野ふたば",
+      "provider": "wikimedia",
+      "landingUrl": "https://commons.wikimedia.org/wiki/File:IPhone_Duo_rear.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/IPhone_Duo_rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original",
+      "license": "by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "showsExactProduct": true,
+      "description": "Foto real (iPhone Air, 19/09/2026, loja em Dongguan, China). iPhone Duo FECHADO, visto de tras, cor branca 'Star White': plato de camera com 2 lentes + flash no canto superior esquerdo e logotipo da Apple no centro. Aparelho em pe sobre mesa branca de exposicao com cabo de seguranca; fundo branco/cinza limpo. Sem pessoas. Melhor foto do produto.",
+      "providerRef": "File:IPhone Duo rear.jpg",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Compartilha-Igual: se o video for considerado obra adaptada, as contribuicoes adaptadas devem ser licenciadas sob BY-SA (ou compativel). O YouTube so oferece CC BY como opcao de licenca; revisar antes de publicar.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "attribution": "\"IPhone Duo rear\" por 茅野ふたば (https://commons.wikimedia.org/wiki/File:IPhone_Duo_rear.jpg), CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "localFile": "media/m2.jpg",
+      "sha256": "44b4730c8f6bdd6e6363b2f713fd6767807a34dfdda9a5b5b1e0f98fdeb66ec4",
+      "width": 3200,
+      "height": 2400,
+      "verification": {
+        "at": "2026-10-11T09:08:00.588Z",
+        "method": "wikimedia-wikitext",
+        "ok": true,
+        "detail": "modelos de licenca encontrados: cc-by-sa-4.0; autor na origem: [[User:茅野ふたば; arquivo obtido via CDN de imagens i0.wp.com (copia do arquivo original do Commons, possivelmente recomprimida)"
+      },
+      "status": "usable"
+    },
+    {
+      "id": "m3",
+      "kind": "image",
+      "title": "Galaxy Fold - 1",
+      "creator": "KKPCW",
+      "provider": "wikimedia",
+      "landingUrl": "https://commons.wikimedia.org/wiki/File:Galaxy_Fold_-_1.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Galaxy_Fold_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original",
+      "license": "by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "showsExactProduct": false,
+      "description": "(Não é o produto do episódio: comparação) Galaxy Fold (2019) ABERTO na mao, tela ligada com o papel de parede de borboleta azul/verde, notch no canto superior direito, vinco discreto. Fundo de loja escuro. Mao visivel, sem rosto, sem logotipo.",
+      "providerRef": "File:Galaxy Fold - 1.jpg",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Compartilha-Igual: se o video for considerado obra adaptada, as contribuicoes adaptadas devem ser licenciadas sob BY-SA (ou compativel). O YouTube so oferece CC BY como opcao de licenca; revisar antes de publicar.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "attribution": "\"Galaxy Fold - 1\" por KKPCW (https://commons.wikimedia.org/wiki/File:Galaxy_Fold_-_1.jpg), CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "localFile": "media/m3.jpg",
+      "sha256": "fc7348d268368e6a5f83f4e80d8fcd634c14d795d567b3a62c0eac69dd5b813b",
+      "width": 2736,
+      "height": 2999,
+      "verification": {
+        "at": "2026-10-11T09:11:01.237Z",
+        "method": "wikimedia-wikitext",
+        "ok": true,
+        "detail": "modelos de licenca encontrados: cc-by-sa-4.0; autor na origem: [[User:KKPCW; arquivo obtido via CDN de imagens i0.wp.com (copia do arquivo original do Commons, possivelmente recomprimida)"
+      },
+      "status": "usable"
+    },
+    {
+      "id": "m4",
+      "kind": "image",
+      "title": "OriginalSurfaceDuo",
+      "creator": "BulbousSum",
+      "provider": "wikimedia",
+      "landingUrl": "https://commons.wikimedia.org/wiki/File:OriginalSurfaceDuo.png",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/OriginalSurfaceDuo.png?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original",
+      "license": "by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "showsExactProduct": false,
+      "description": "(Não é o produto do episódio: comparação) Microsoft Surface Duo ORIGINAL (2020) aberto e plano, vista frontal, duas telas separadas pela dobradica (esq.: app Alarme; dir.: Configuracoes com item 'Surface Duo features'). Fundo removido/neutro (PNG). Sem pessoas; logotipo Microsoft nao aparece (so a frente). Unica foto livre encontrada do Duo original.",
+      "providerRef": "File:OriginalSurfaceDuo.png",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Compartilha-Igual: se o video for considerado obra adaptada, as contribuicoes adaptadas devem ser licenciadas sob BY-SA (ou compativel). O YouTube so oferece CC BY como opcao de licenca; revisar antes de publicar.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "attribution": "\"OriginalSurfaceDuo\" por BulbousSum (https://commons.wikimedia.org/wiki/File:OriginalSurfaceDuo.png), CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "localFile": "media/m4.jpg",
+      "sha256": "907095c834c1d709507cfe7f52eb625279e8d14a1a2852cc814cc463c29e598e",
+      "width": 2969,
+      "height": 2312,
+      "verification": {
+        "at": "2026-10-11T09:14:01.351Z",
+        "method": "wikimedia-wikitext",
+        "ok": true,
+        "detail": "modelos de licenca encontrados: cc-by-sa-4.0; autor na origem: [[User:BulbousSum; arquivo obtido via CDN de imagens i0.wp.com (copia do arquivo original do Commons, possivelmente recomprimida)"
+      },
+      "status": "usable"
+    },
+    {
+      "id": "m5",
+      "kind": "image",
+      "title": "Samsung Galaxy Fold 5G - Aufgefaltet Hauptdisplay",
+      "creator": "Sandro Scharf",
+      "provider": "wikimedia",
+      "landingUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Fold_5G_-_Aufgefaltet_Hauptdisplay.JPG",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Samsung_Galaxy_Fold_5G_-_Aufgefaltet_Hauptdisplay.JPG?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original",
+      "license": "by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "showsExactProduct": false,
+      "description": "(Não é o produto do episódio: comparação) Galaxy Fold original (variante 5G de 2019, mesmo desenho) ABERTO e deitado sobre mesa de madeira, visto de cima; tela interna com o boot screen 'SAMSUNG Galaxy Fold 5G / Powered by android' e o entalhe (notch) grande no canto superior direito. Sem pessoas, foto limpa e nitida.",
+      "providerRef": "File:Samsung Galaxy Fold 5G - Aufgefaltet Hauptdisplay.JPG",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Compartilha-Igual: se o video for considerado obra adaptada, as contribuicoes adaptadas devem ser licenciadas sob BY-SA (ou compativel). O YouTube so oferece CC BY como opcao de licenca; revisar antes de publicar.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "attribution": "\"Samsung Galaxy Fold 5G - Aufgefaltet Hauptdisplay\" por Sandro Scharf (https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Fold_5G_-_Aufgefaltet_Hauptdisplay.JPG), CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "localFile": "media/m5.jpg",
+      "sha256": "91a8211cd766cb729893183f5fb98aad8e34b13c8a4262d2cbeab87db3650c9f",
+      "width": 2558,
+      "height": 3200,
+      "verification": {
+        "at": "2026-10-11T09:17:01.397Z",
+        "method": "wikimedia-wikitext",
+        "ok": true,
+        "detail": "modelos de licenca encontrados: cc-by-sa-4.0; autor na origem: Sandro Scharf; arquivo obtido via CDN de imagens i0.wp.com (copia do arquivo original do Commons, possivelmente recomprimida)"
+      },
+      "status": "usable"
+    }
+  ]
+}

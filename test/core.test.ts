@@ -14,6 +14,10 @@ test('WER ignora pontuacao e acentos', () => {
 test('WER: numerais por extenso equivalem a digitos', () => {
   assert.equal(wordErrorRate('Quarenta e nove reais e noventa centavos.', '49 reais e 90 centavos.'), 0);
   assert.equal(wordErrorRate('mil e duzentos', '1200'), 0);
+  // Valores em reais na legenda (R$ 21.999) x leitura por extenso ou transcricao com separador de milhar
+  assert.equal(wordErrorRate('No Brasil, a partir de R$ 21.999.', 'No Brasil, a partir de vinte e um mil, novecentos e noventa e nove reais.'), 0);
+  assert.equal(wordErrorRate('Com 2 terabytes, R$ 30.999.', 'Com 2 terabytes, 30.999 reais.'), 0);
+  assert.equal(wordErrorRate('Por ano: R$ 3.142,71', 'por ano 3142 reais e 71 centavos'), 0);
 });
 
 test('legendas: blocos curtos e quebra apos pontuacao', () => {

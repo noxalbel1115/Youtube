@@ -21,7 +21,11 @@ const UNITS: Record<string, number> = {
   seiscentos: 600, setecentos: 700, oitocentos: 800, novecentos: 900,
 };
 
-/** Converte numerais por extenso (sem acento) em digitos: "quarenta e nove" → "49". O ASR escreve numeros em digitos. */
+/**
+ * Converte numerais por extenso (sem acento) em digitos: "quarenta e nove" → "49". O ASR escreve numeros em digitos.
+ * Como na lingua, as partes de um numero vem em ordem decrescente, ligadas por "e" (ou logo apos "mil"):
+ * "cento e oitenta e nove" → 189, mas "quatro e vinte" (libras e pence) → "4 e 20" e "sessenta. Quatro" → "60 4".
+ */
 export function numbersToDigits(words: string[]): string[] {
   const out: string[] = [];
   let i = 0;
@@ -33,16 +37,22 @@ export function numbersToDigits(words: string[]): string[] {
     }
     let total = 0;
     let cur = 0;
+    let last = Infinity; // valor da ultima parte somada: a proxima precisa ser menor
+    let joined = true; // a palavra atual pode continuar o numero (inicio, depois de "e" ou de "mil")
     let j = i;
     while (j < words.length) {
       const w = words[j];
-      if (w in UNITS) cur += UNITS[w];
-      else if (w === 'mil') {
-        total += (cur || 1) * 1000;
+      if (w in UNITS && joined && UNITS[w] < last) {
+        cur += UNITS[w];
+        last = UNITS[w];
+        joined = false;
+      } else if (w === 'mil' && total === 0) {
+        total = (cur || 1) * 1000;
         cur = 0;
-      } else if (w === 'e' && j + 1 < words.length && (words[j + 1] in UNITS || words[j + 1] === 'mil')) {
-        j++;
-        continue;
+        last = 1000;
+        joined = true;
+      } else if (w === 'e' && j > i && words[j - 1] !== 'e' && j + 1 < words.length && words[j + 1] in UNITS && UNITS[words[j + 1]] < last) {
+        joined = true;
       } else break;
       j++;
     }
@@ -52,7 +62,13 @@ export function numbersToDigits(words: string[]): string[] {
   return out;
 }
 
-/** Taxa de erro por palavra (Levenshtein em palavras), insensivel a acentos. */
+/** Junta palavras e funde letras repetidas: a elisao da fala ("almofada aquecida" → "almofadaquecida") some. */
+const fuse = (...ws: string[]) => ws.join('').replace(/(.)\1+/g, '$1');
+
+/**
+ * Taxa de erro por palavra (Levenshtein em palavras), insensivel a acentos. Diferenca so de divisao entre palavras
+ * ("almofada aquecida" x "almofa daquecida", elisao natural da fala) nao conta como erro: o ASR ouviu os mesmos sons.
+ */
 export function wordErrorRate(reference: string, hypothesis: string): number {
   const r = numbersToDigits(normalizeWords(stripAccents(reference)));
   const h = numbersToDigits(normalizeWords(stripAccents(hypothesis)));
@@ -62,7 +78,12 @@ export function wordErrorRate(reference: string, hypothesis: string): number {
   for (let i = 1; i <= r.length; i++) {
     for (let j = 1; j <= h.length; j++) {
       const cost = r[i - 1] === h[j - 1] ? 0 : 1;
-      d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + cost);
+      let best = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + cost);
+      // Mesmas letras com outra divisao: 1↔2, 2↔1 e 2↔2 palavras.
+      if (j >= 2 && fuse(r[i - 1]) === fuse(h[j - 2], h[j - 1])) best = Math.min(best, d[i - 1][j - 2]);
+      if (i >= 2 && fuse(r[i - 2], r[i - 1]) === fuse(h[j - 1])) best = Math.min(best, d[i - 2][j - 1]);
+      if (i >= 2 && j >= 2 && fuse(r[i - 2], r[i - 1]) === fuse(h[j - 2], h[j - 1])) best = Math.min(best, d[i - 2][j - 2]);
+      d[i][j] = best;
     }
   }
   return d[r.length][h.length] / r.length;

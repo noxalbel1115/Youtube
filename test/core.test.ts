@@ -97,3 +97,16 @@ test('cenas 3D: o piloto continua registrado e cada cena tem trilha de estudio',
   assert.ok(SCENES[DEFAULT_SCENE]);
   for (const def of Object.values(SCENES)) assert.ok(def.previewTrack.length > 0);
 });
+
+test('WER: numerais so se juntam em ordem decrescente e dentro da mesma frase', () => {
+  assert.equal(wordErrorRate('Cento e oitenta e nove libras e sessenta. Quatro e vinte por minuto.', '189 libras e 60, 4 e 20 por minuto.'), 0);
+  assert.equal(wordErrorRate('Desde mil novecentos e trinta.', 'Desde 1930.'), 0);
+  assert.equal(wordErrorRate('dois mil e quinhentos', '2500'), 0);
+  assert.equal(wordErrorRate('Faltam quarenta e quatro minutos.', 'Faltam 44 minutos.'), 0);
+});
+
+test('WER: diferenca so na divisao entre palavras nao conta como erro', () => {
+  assert.equal(wordErrorRate('A almofada aquecida foi inspirada no Concorde.', 'A almofa daquecida foi inspirada no Concorde.'), 0);
+  assert.equal(wordErrorRate('guarda chuva', 'guarda-chuva'), 0);
+  assert.equal(wordErrorRate('a almofada', 'a almofadas'), 0.5);
+});

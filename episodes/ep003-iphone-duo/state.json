@@ -2,38 +2,88 @@
   "schemaVersion": 1,
   "episodeId": "ep003-iphone-duo",
   "createdAt": "2026-10-11T07:50:13.431Z",
-  "updatedAt": "2026-10-11T07:50:13.431Z",
-  "currentStage": "research",
+  "updatedAt": "2026-10-11T09:22:52.146Z",
+  "currentStage": "timeline",
+  "productSlug": "iphone-duo",
+  "paidTtsAuthorization": {
+    "at": "2026-10-11T09:19:46.750Z",
+    "note": "Usuario autorizou a ElevenLabs para este episodio no chat em 11/10/2026 (pergunta direta: 'Sim, ElevenLabs')"
+  },
+  "scriptVersion": 3,
   "stages": {
     "research": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:50:01.268Z",
+      "finishedAt": "2026-10-11T08:53:15.631Z",
+      "seconds": 194.4,
+      "inputHash": "699174f7a860a0e6a2415314a46726b638f02337e0398e0786bc68fd814a574f",
+      "outputs": [
+        "episodes/ep003-iphone-duo/research/candidates.json"
+      ],
+      "note": "1 candidatos validados; links: 13/25 responderam < 400"
     },
     "select": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:53:15.633Z",
+      "finishedAt": "2026-10-11T08:53:15.637Z",
+      "seconds": 0,
+      "inputHash": "039f1fe0d11f7512320358090d50f0794ea4257bc55625e5f3348df034c336e2",
+      "outputs": [
+        "episodes/ep003-iphone-duo/selection.json",
+        "episodes/ep003-iphone-duo/product.json"
+      ],
+      "note": "selecionado: iPhone Duo (4.55)"
     },
     "media": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 2,
+      "startedAt": "2026-10-11T09:05:03.208Z",
+      "finishedAt": "2026-10-11T09:19:04.168Z",
+      "seconds": 841,
+      "inputHash": "67039653564c1bf524befdc9f4bd12dfa7e1ab1bbc4fd378539ff23a8317f515",
+      "outputs": [
+        "episodes/ep003-iphone-duo/media.json"
+      ],
+      "note": "5/5 midias utilizaveis"
     },
     "script": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 3,
+      "startedAt": "2026-10-11T09:22:50.929Z",
+      "finishedAt": "2026-10-11T09:22:50.936Z",
+      "seconds": 0,
+      "inputHash": "819bc76c28ee70d98f06ef54e92dafd07d07789239cca24ce0c969aa6f434591",
+      "outputs": [
+        "episodes/ep003-iphone-duo/script.json",
+        "episodes/ep003-iphone-duo/script-history/v3.json"
+      ],
+      "note": "roteiro v3, 32 beats, ~89s estimados"
     },
     "voice": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 4,
+      "startedAt": "2026-10-11T09:22:50.937Z",
+      "finishedAt": "2026-10-11T09:22:52.138Z",
+      "seconds": 1.2,
+      "inputHash": "33f0d6055a37f98b01753cc52bf4be5eb3dfb69a62bd0dcca9bcd4281c1f229f",
+      "outputs": [
+        "episodes/ep003-iphone-duo/build/voice.json"
+      ],
+      "note": "27 falas, 62.5s de fala; 0 com divergencia de transcricao"
     },
     "timeline": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 3,
+      "startedAt": "2026-10-11T09:22:52.139Z",
+      "finishedAt": "2026-10-11T09:22:52.146Z",
+      "seconds": 0,
+      "inputHash": "ac8f7d67d7b2ceff886dd78e0bed2f0d8d0b20028ba44f92970a407c0399d06a",
+      "outputs": [
+        "episodes/ep003-iphone-duo/build/timeline.json"
+      ],
+      "note": "88.03s, 32 beats, 37 blocos de legenda, 3 midias"
     },
     "render": {
       "status": "pending",
@@ -57,8 +107,141 @@
     }
   },
   "artifacts": {},
-  "costs": [],
-  "errors": [],
+  "costs": [
+    {
+      "stage": "research",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 194.4,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:53:15.631Z"
+    },
+    {
+      "stage": "research",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 194.4,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:53:15.631Z"
+    },
+    {
+      "stage": "select",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:53:15.637Z"
+    },
+    {
+      "stage": "select",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:53:15.637Z"
+    },
+    {
+      "stage": "media",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 841,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T09:19:04.168Z"
+    },
+    {
+      "stage": "media",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 841,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T09:19:04.168Z"
+    },
+    {
+      "stage": "voice",
+      "item": "elevenlabs-credits",
+      "kind": "observed",
+      "amount": 97,
+      "unit": "elevenlabs-credits",
+      "basis": "creditos informados pela API (cabecalho character-cost) para 898 caracteres na ultima sintese (27 fala(s)); valor acumulado do episodio, inclusive ressinteses. Custo em dinheiro depende do plano contratado.",
+      "at": "2026-10-11T09:20:13.386Z"
+    },
+    {
+      "stage": "voice",
+      "item": "tts-tempo",
+      "kind": "observed",
+      "amount": 30,
+      "unit": "seconds",
+      "basis": "27 fala(s) sintetizadas na ultima sintese (elevenlabs)",
+      "at": "2026-10-11T09:20:16.720Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T09:22:50.936Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T09:22:50.936Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 1.2,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T09:22:52.138Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 75.6,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T09:22:52.138Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T09:22:52.146Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0.4,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T09:22:52.146Z"
+    }
+  ],
+  "errors": [
+    {
+      "stage": "media",
+      "at": "2026-10-11T09:01:04.114Z",
+      "message": "Nenhuma midia utilizavel apos verificacao de licenca."
+    }
+  ],
   "youtube": {
     "status": "not_started"
   }

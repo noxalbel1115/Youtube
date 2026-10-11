@@ -1,0 +1,629 @@
+{
+  "version": 3,
+  "episodeId": "ep003-iphone-duo",
+  "productSlug": "iphone-duo",
+  "workingTitle": "O primeiro dobrável (de 2026)",
+  "logline": "Valdemar apresenta o primeiro iPhone dobrável como revolução; o Departamento carimba a novidade como de 2019 e a câmera revela um dobrável por ano desde 2018.",
+  "arc": [
+    "Confiança máxima: o primeiro iPhone que dobra",
+    "Demonstração: abre, 7,6 polegadas, a mudança mais transformadora desde o original",
+    "O próprio comunicado admite: totalmente novo, mas notavelmente familiar",
+    "Escalada de preço: R$ 21.999, R$ 30.999, R$ 1.299 só o suporte, um ano de salário mínimo",
+    "Realidade interrompe: a Samsung vende isso desde 2019; a câmera revela um dobrável por ano",
+    "Recuperação frágil: não eram iPhones; oitava geração; nem o nome era novo",
+    "A concorrência responde: sobras requentadas. Última venda: preço por ano de espera. Parecer: atendida em 2019"
+  ],
+  "pronunciations": {},
+  "providerPronunciations": {},
+  "beats": [
+    {
+      "id": "s01",
+      "duration": 3.0,
+      "visual": {
+        "type": "title",
+        "heading": "iPhone Duo",
+        "body": "Lançamento: o primeiro celular dobrável da Apple.",
+        "footnote": "PROTOCOLO Nº 003 · AVALIAÇÃO DE NECESSIDADE",
+        "stamp": "NOVIDADE DE 2019",
+        "stampAt": 1.6
+      },
+      "sfx": [
+        {
+          "id": "tap",
+          "at": 1.6,
+          "gainDb": 3
+        }
+      ],
+      "note": "O absurdo nos primeiros 3 s: o lançamento de 2026 recebe o carimbo “novidade de 2019” (Galaxy Fold, f14)."
+    },
+    {
+      "id": "s02",
+      "speaker": "vendedor",
+      "text": "Bom dia. A Apple acaba de apresentar o primeiro iPhone dobrável.",
+      "claim": "fact",
+      "factIds": [
+        "f1"
+      ],
+      "holdBefore": 0.3,
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "scene3d",
+        "scene": "foldable",
+        "cue": "hero",
+        "lowerThird": true,
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, sem marca; não é foto do produto"
+      },
+      "note": "Confiança máxima. Aparelho fechado girando no pedestal, tela externa acesa."
+    },
+    {
+      "id": "s03",
+      "speaker": "vendedor",
+      "text": "Um iPhone. Que dobra.",
+      "holdAfter": 0.7,
+      "visual": {
+        "type": "scene3d",
+        "scene": "foldable",
+        "cue": "hero"
+      },
+      "note": "Pausa reverente."
+    },
+    {
+      "id": "s04",
+      "speaker": "vendedor",
+      "text": "Você abre.",
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "scene3d",
+        "scene": "foldable",
+        "cue": "unfold"
+      },
+      "sfx": [
+        {
+          "id": "click",
+          "at": 0.95,
+          "gainDb": 0
+        }
+      ],
+      "note": "O aparelho abre como livro; clique quando as metades se alinham; a tela interna acende."
+    },
+    {
+      "id": "s05",
+      "speaker": "vendedor",
+      "text": "Sete vírgula seis polegadas.",
+      "claim": "fact",
+      "factIds": [
+        "f4"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "scene3d",
+        "scene": "foldable",
+        "cue": "open"
+      },
+      "note": "Aproximação lenta da tela aberta."
+    },
+    {
+      "id": "s06",
+      "speaker": "vendedor",
+      "text": "O presidente da Apple: a mudança mais transformadora desde o primeiro iPhone.",
+      "claim": "fact",
+      "factIds": [
+        "f3"
+      ],
+      "holdAfter": 0.4,
+      "visual": {
+        "type": "media",
+        "mediaId": "m1",
+        "layout": "exhibit",
+        "motion": "push-in",
+        "zoom": 1.06,
+        "label": "Fig. 1 — iPhone Duo real, à venda numa loja na China (19/09/2026)"
+      },
+      "note": "Citação literal do comunicado (f3), sobre a foto do aparelho real (tela desligada, na mão)."
+    },
+    {
+      "id": "s07",
+      "speaker": "vendedor",
+      "text": "O comunicado promete possibilidades totalmente novas.",
+      "claim": "fact",
+      "factIds": [
+        "f2"
+      ],
+      "holdAfter": 0.35,
+      "visual": {
+        "type": "card",
+        "heading": "“…possibilities that feel entirely new yet remarkably familiar.”",
+        "body": "Possibilidades totalmente novas, mas notavelmente familiares.",
+        "footnote": "Comunicado da Apple, 09/09/2026",
+        "motion": "push-in"
+      },
+      "note": "A própria Apple escreveu “familiar”. O vendedor lê com orgulho e não percebe."
+    },
+    {
+      "id": "s08",
+      "speaker": "vendedor",
+      "text": "Mas notavelmente familiares.",
+      "claim": "fact",
+      "factIds": [
+        "f2"
+      ],
+      "holdAfter": 0.9,
+      "visual": {
+        "type": "card",
+        "heading": "“…possibilities that feel entirely new yet remarkably familiar.”",
+        "body": "Possibilidades totalmente novas, mas notavelmente familiares.",
+        "footnote": "Comunicado da Apple, 09/09/2026",
+        "motion": "push-in",
+        "stamp": "CONFIRMADO",
+        "stampAt": 1.3,
+        "stampTop": 1140
+      },
+      "sfx": [
+        {
+          "id": "tap",
+          "at": 1.3,
+          "gainDb": 2
+        }
+      ],
+      "note": "Carimbo seco do Departamento no silêncio: “confirmado”."
+    },
+    {
+      "id": "s09",
+      "speaker": "vendedor",
+      "text": "No Brasil, a partir de vinte e um mil, novecentos e noventa e nove reais.",
+      "claim": "fact",
+      "factIds": [
+        "f5"
+      ],
+      "holdBefore": 0.2,
+      "holdAfter": 0.35,
+      "caption": "No Brasil, a partir de R$ 21.999.",
+      "visual": {
+        "type": "factsheet",
+        "heading": "iPhone Duo — preços no Brasil",
+        "body": "256 GB: R$ 21.999\n2 TB: R$ 30.999\nCapa com suporte: R$ 1.299",
+        "footnote": "Fonte: Apple Store Brasil (apple.com/br), consultada em 11/10/2026."
+      }
+    },
+    {
+      "id": "s11",
+      "speaker": "vendedor",
+      "text": "E a capa com suporte, para ele ficar em pé, mil duzentos e noventa e nove.",
+      "claim": "fact",
+      "factIds": [
+        "f6"
+      ],
+      "holdAfter": 0.5,
+      "caption": "E a capa com suporte, para ele ficar em pé, R$ 1.299.",
+      "visual": {
+        "type": "factsheet",
+        "heading": "iPhone Duo — preços no Brasil",
+        "body": "256 GB: R$ 21.999\n2 TB: R$ 30.999\nCapa com suporte: R$ 1.299",
+        "footnote": "Fonte: Apple Store Brasil (apple.com/br), consultada em 11/10/2026.",
+        "stamp": "SÓ A CAPA",
+        "stampAt": 2.6,
+        "stampTop": 960
+      },
+      "sfx": [
+        {
+          "id": "tap",
+          "at": 2.6,
+          "gainDb": 2
+        }
+      ],
+      "note": "O acessório de R$ 1.299 é a capa com apoio (Folio com suporte): o carimbo diz “só a capa”."
+    },
+    {
+      "id": "s12",
+      "speaker": "vendedor",
+      "text": "Um ano de salário mínimo.",
+      "claim": "fact",
+      "factIds": [
+        "f8"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "card",
+        "heading": "373 dias",
+        "body": "de trabalho no salário mínimo pelo modelo de entrada",
+        "footnote": "Cálculo da Exame citado pelo SBT News, 10/09/2026",
+        "motion": "push-in"
+      }
+    },
+    {
+      "id": "s13",
+      "speaker": "vendedor",
+      "text": "Mas dobra.",
+      "holdAfter": 0.8,
+      "visual": {
+        "type": "card",
+        "heading": "373 dias",
+        "body": "de trabalho no salário mínimo pelo modelo de entrada",
+        "footnote": "Cálculo da Exame citado pelo SBT News, 10/09/2026",
+        "motion": "push-in"
+      },
+      "note": "Argumento final do vendedor para o preço, dito sem ironia."
+    },
+    {
+      "id": "s14",
+      "speaker": "colega",
+      "text": "Valdemar. A Samsung vende isso desde 2019.",
+      "claim": "fact",
+      "factIds": [
+        "f14"
+      ],
+      "holdBefore": 0.7,
+      "holdAfter": 0.2,
+      "caption": "Valdemar. A Samsung vende isso desde 2019.",
+      "visual": {
+        "type": "media",
+        "mediaId": "m3",
+        "layout": "exhibit",
+        "motion": "snap-in",
+        "zoom": 1.08,
+        "label": "Fig. 2 — Samsung Galaxy Fold (2019)"
+      },
+      "note": "Realidade interrompe, fora de quadro, sem humilhar. Corte seco para a foto do Galaxy Fold de 2019 na mão, no mesmo enquadramento da Fig. 1."
+    },
+    {
+      "id": "s15",
+      "duration": 2.9,
+      "visual": {
+        "type": "scene3d",
+        "scene": "foldable",
+        "cue": "reveal",
+        "label": "Ilustração do Departamento · um dobrável lançado por ano, 2018–2025 (fontes na descrição)"
+      },
+      "sfx": [
+        {
+          "id": "tap",
+          "at": 0.467,
+          "gainDb": -4
+        },
+        {
+          "id": "tap",
+          "at": 0.6,
+          "gainDb": -4
+        },
+        {
+          "id": "tap",
+          "at": 0.733,
+          "gainDb": -4
+        },
+        {
+          "id": "tap",
+          "at": 0.867,
+          "gainDb": -4
+        },
+        {
+          "id": "tap",
+          "at": 1.0,
+          "gainDb": -4
+        },
+        {
+          "id": "tap",
+          "at": 1.133,
+          "gainDb": -4
+        },
+        {
+          "id": "tap",
+          "at": 1.267,
+          "gainDb": -4
+        },
+        {
+          "id": "tap",
+          "at": 1.4,
+          "gainDb": -4
+        }
+      ],
+      "note": "Consequência visível: a câmera recua e surge um dobrável por ano, 2018–2025, com o ano na tela (f13, f14, f15). O do pedestal passa a mostrar 2026."
+    },
+    {
+      "id": "s16",
+      "duration": 1.2,
+      "visual": {
+        "type": "scene3d",
+        "scene": "foldable",
+        "cue": "still",
+        "label": "Ilustração do Departamento · um dobrável lançado por ano, 2018–2025 (fontes na descrição)"
+      },
+      "note": "Silêncio do conjunto inteiro."
+    },
+    {
+      "id": "s17",
+      "speaker": "vendedor",
+      "text": "Mas aqueles não eram iPhones.",
+      "holdBefore": 0.15,
+      "holdAfter": 0.7,
+      "visual": {
+        "type": "scene3d",
+        "scene": "foldable",
+        "cue": "snap"
+      },
+      "note": "Zoom de reação de volta ao aparelho do pedestal (agora com “2026” na tela). Recuperação frágil."
+    },
+    {
+      "id": "s18",
+      "speaker": "vendedor",
+      "text": "A Samsung já está na oitava geração.",
+      "claim": "fact",
+      "factIds": [
+        "f10"
+      ],
+      "holdAfter": 0.3,
+      "visual": {
+        "type": "factsheet",
+        "heading": "Galaxy Z Fold8 (Samsung)",
+        "body": "Apresentado: 22/07/2026\nAntes do iPhone Duo: 49 dias\nTela principal: 7,6 polegadas\nGeração: oitava",
+        "footnote": "Fonte: Samsung Newsroom, 22/07/2026."
+      }
+    },
+    {
+      "id": "s19",
+      "speaker": "vendedor",
+      "text": "Errou sete vezes. A Apple foi direto na certa.",
+      "holdAfter": 0.8,
+      "visual": {
+        "type": "factsheet",
+        "heading": "Galaxy Z Fold8 (Samsung)",
+        "body": "Apresentado: 22/07/2026\nAntes do iPhone Duo: 49 dias\nTela principal: 7,6 polegadas\nGeração: oitava",
+        "footnote": "Fonte: Samsung Newsroom, 22/07/2026."
+      },
+      "note": "Opinião do vendedor (ficção). A ficha mostra a mesma tela de 7,6\"."
+    },
+    {
+      "id": "s20",
+      "speaker": "vendedor",
+      "text": "E o nome é exclusivo. Duo.",
+      "holdAfter": 0.4,
+      "visual": {
+        "type": "card",
+        "heading": "Duo",
+        "body": "Nome do produto",
+        "footnote": "Registro do Departamento",
+        "motion": "static"
+      }
+    },
+    {
+      "id": "s21",
+      "speaker": "vendedor",
+      "text": "Era da Microsoft.",
+      "claim": "fact",
+      "factIds": [
+        "f16"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "media",
+        "mediaId": "m4",
+        "layout": "exhibit",
+        "motion": "snap-in",
+        "zoom": 1.05,
+        "label": "Fig. 3 — Microsoft Surface Duo (2020)"
+      }
+    },
+    {
+      "id": "s22",
+      "speaker": "vendedor",
+      "text": "Ela não estava usando.",
+      "claim": "fact",
+      "factIds": [
+        "f17"
+      ],
+      "holdAfter": 0.8,
+      "visual": {
+        "type": "card",
+        "heading": "Surface Duo",
+        "body": "Microsoft · celular de duas telas com dobradiça\nÀ venda em 10/09/2020 · US$ 1.399",
+        "footnote": "Fonte: blog oficial da Microsoft, 12/08/2020",
+        "stamp": "NOME USADO EM 2020",
+        "stampAt": 0.3,
+        "stampTop": 1080
+      },
+      "sfx": [
+        {
+          "id": "tap",
+          "at": 0.3,
+          "gainDb": 2
+        }
+      ],
+      "note": "Fato: sucessor cancelado e suporte encerrado em 2023 (f17)."
+    },
+    {
+      "id": "s23",
+      "speaker": "vendedor",
+      "text": "A Samsung respondeu.",
+      "claim": "fact",
+      "factIds": [
+        "f18"
+      ],
+      "holdAfter": 0.2,
+      "visual": {
+        "type": "card",
+        "heading": "“Let us know when you’re done reheating our leftovers.”",
+        "body": "Avisem quando terminarem de requentar as nossas sobras.",
+        "footnote": "Samsung Mobile US, no X, 09/09/2026 (via MacRumors e KTLA)",
+        "motion": "drift"
+      }
+    },
+    {
+      "id": "s24",
+      "speaker": "vendedor",
+      "text": "Avisem quando terminarem de requentar as nossas sobras.",
+      "claim": "fact",
+      "factIds": [
+        "f18"
+      ],
+      "holdAfter": 0.7,
+      "visual": {
+        "type": "card",
+        "heading": "“Let us know when you’re done reheating our leftovers.”",
+        "body": "Avisem quando terminarem de requentar as nossas sobras.",
+        "footnote": "Samsung Mobile US, no X, 09/09/2026 (via MacRumors e KTLA)",
+        "motion": "drift"
+      },
+      "showCaptions": false,
+      "note": "Ele lê em voz alta, sério. A cartela já traz o texto (sem legenda duplicada)."
+    },
+    {
+      "id": "s25",
+      "speaker": "vendedor",
+      "text": "Sobras premium.",
+      "holdAfter": 0.8,
+      "visual": {
+        "type": "card",
+        "heading": "“Let us know when you’re done reheating our leftovers.”",
+        "body": "Avisem quando terminarem de requentar as nossas sobras.",
+        "footnote": "Samsung Mobile US, no X, 09/09/2026 (via MacRumors e KTLA)",
+        "motion": "drift"
+      }
+    },
+    {
+      "id": "s26",
+      "duration": 0.5,
+      "visual": {
+        "type": "black"
+      },
+      "roomTone": true
+    },
+    {
+      "id": "s27",
+      "speaker": "vendedor",
+      "text": "Sete anos depois do primeiro.",
+      "claim": "fact",
+      "factIds": [
+        "f14"
+      ],
+      "holdAfter": 0.3,
+      "visual": {
+        "type": "factsheet",
+        "heading": "Cálculo do Departamento",
+        "body": "iPhone Duo (256 GB): R$ 21.999\nPrimeiro Galaxy Fold à venda: 2019\nEspera: 7 anos\nPor ano de espera: R$ 3.142,71",
+        "footnote": "Fontes: Apple Store Brasil; Samsung Newsroom."
+      }
+    },
+    {
+      "id": "s28",
+      "speaker": "vendedor",
+      "text": "Dá três mil reais por ano de espera.",
+      "claim": "fact",
+      "factIds": [
+        "f5",
+        "f14"
+      ],
+      "holdAfter": 0.4,
+      "visual": {
+        "type": "factsheet",
+        "heading": "Cálculo do Departamento",
+        "body": "iPhone Duo (256 GB): R$ 21.999\nPrimeiro Galaxy Fold à venda: 2019\nEspera: 7 anos\nPor ano de espera: R$ 3.142,71",
+        "footnote": "Fontes: Apple Store Brasil; Samsung Newsroom."
+      }
+    },
+    {
+      "id": "s29",
+      "speaker": "vendedor",
+      "text": "Praticamente de graça.",
+      "holdAfter": 0.3,
+      "visual": {
+        "type": "factsheet",
+        "heading": "Cálculo do Departamento",
+        "body": "iPhone Duo (256 GB): R$ 21.999\nPrimeiro Galaxy Fold à venda: 2019\nEspera: 7 anos\nPor ano de espera: R$ 3.142,71",
+        "footnote": "Fontes: Apple Store Brasil; Samsung Newsroom."
+      }
+    },
+    {
+      "id": "s30",
+      "duration": 1.5,
+      "visual": {
+        "type": "card",
+        "heading": "Parecer do Departamento",
+        "body": "Necessidade: um celular que dobra.",
+        "stamp": "ATENDIDA EM 2019",
+        "stampAt": 0.5
+      },
+      "sfx": [
+        {
+          "id": "tap",
+          "at": 0.5,
+          "gainDb": 3
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "speaker": "vendedor",
+      "text": "Você não precisava.",
+      "holdBefore": 0.3,
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "endcard"
+      },
+      "sfx": [
+        {
+          "id": "chime",
+          "at": 0,
+          "gainDb": 0
+        }
+      ],
+      "showCaptions": false
+    },
+    {
+      "id": "s32",
+      "speaker": "vendedor",
+      "text": "Até agora.",
+      "holdAfter": 0.6,
+      "visual": {
+        "type": "endcard"
+      },
+      "showCaptions": false
+    },
+    {
+      "id": "s33",
+      "speaker": "colega",
+      "text": "Desde 2019.",
+      "claim": "fact",
+      "factIds": [
+        "f14"
+      ],
+      "holdBefore": 0.3,
+      "holdAfter": 1.0,
+      "visual": {
+        "type": "endcard"
+      },
+      "note": "Botão final: a colega corrige o lema."
+    }
+  ],
+  "packaging": {
+    "title": "O primeiro celular dobrável (da Apple) | Protocolo 003",
+    "synopsis": "Valdemar Anunciação, Consultor Sênior de Soluções, apresenta o iPhone Duo, o primeiro iPhone dobrável, com o entusiasmo de quem viu o futuro.",
+    "tags": [
+      "comédia",
+      "falso documentário",
+      "humor corporativo",
+      "iPhone Duo",
+      "Apple",
+      "celular dobrável",
+      "Galaxy Z Fold",
+      "Surface Duo",
+      "tecnologia",
+      "lançamento",
+      "Departamento de Necessidades Desnecessárias",
+      "shorts"
+    ],
+    "thumbnailBeatId": "s16"
+  },
+  "changelog": [
+    {
+      "version": 1,
+      "note": "Primeira versão."
+    },
+    {
+      "version": 2,
+      "note": "Duração: v1 deu 91,7 s com a voz real (acima de 90 s). Pausas encurtadas em 0,1–0,2 s em 17 beats, revelação 3D de 3,3 para 2,9 s; mesmas falas (áudio reaproveitado, sem nova síntese)."
+    },
+    {
+      "version": 3,
+      "note": "Inspeção de quadros: carimbo “CONFIRMADO” descia sobre a fonte da cartela (stampTop 1140); carimbo da ficha de preços cobria a legenda e dizia “só o suporte”, impreciso para uma capa com apoio — agora “SÓ A CAPA”, acima da legenda."
+    }
+  ]
+}

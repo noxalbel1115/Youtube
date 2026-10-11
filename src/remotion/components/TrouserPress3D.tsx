@@ -30,7 +30,7 @@ const BAR_Y = BODY_Y0 + BODY_H; // topo do corpo, onde fica a barra de controle
 const OPEN_ANGLE = 0.42; // rad, porta inclinada para a frente (dobradica embaixo)
 
 const BATH_X = 0.43; // cabide no "banheiro", a direita
-const RAIL_Y = 1.5;
+const RAIL_Y = 1.44;
 
 // Na ordem em que o vendedor cita: nogueira, mogno, freixo preto, faia, carvalho.
 const FINISHES = ['#5B3221', '#6E2418', '#2A2A2C', '#C99B6A', '#A27B4E'];
@@ -49,7 +49,7 @@ interface Pose {
   pos: V3;
   target: V3;
 }
-const WIDE: Pose = {pos: [0.05, 0.9, 4.6], target: [0.05, 0.6, 0]};
+const WIDE: Pose = {pos: [0.05, 0.98, 4.6], target: [0.05, 0.68, 0]};
 const PRESS_MID: Pose = {pos: [PRESS_X + 0.15, 0.95, 3.1], target: [PRESS_X, 0.66, 0]};
 const LED_X = 0.1;
 const DISPLAY: Pose = {pos: [PRESS_X + LED_X - 0.02, BAR_Y + 0.07, 0.9], target: [PRESS_X + LED_X, BAR_Y + 0.03, 0]};
@@ -63,7 +63,8 @@ const CAMERA: Record<string, {from: Pose; to: Pose; snap?: boolean}> = {
   c45: {from: DISPLAY, to: {pos: DISPLAY.pos.map((v, i) => (i === 2 ? v - 0.12 : v)) as V3, target: DISPLAY.target}},
   run: {from: DISPLAY, to: {pos: [PRESS_X + 0.2, 0.95, 2.9], target: [PRESS_X, 0.7, 0]}},
   finish: {from: {pos: [PRESS_X + 0.45, 0.98, 2.7], target: [PRESS_X, 0.7, 0]}, to: {pos: [PRESS_X + 0.2, 0.95, 2.45], target: [PRESS_X, 0.7, 0]}},
-  bathroom: {from: {pos: [BATH_X + 0.02, 1.25, 3.0], target: [BATH_X + 0.08, 1.02, 0]}, to: {pos: [BATH_X + 0.04, 1.2, 2.6], target: [BATH_X + 0.1, 1.0, 0]}},
+  // Barra do box abaixo da faixa institucional e do rotulo da ilustracao (~20% do quadro).
+  bathroom: {from: {pos: [BATH_X + 0.02, 1.2, 3.15], target: [BATH_X + 0.08, 0.97, 0]}, to: {pos: [BATH_X + 0.04, 1.17, 2.9], target: [BATH_X + 0.1, 0.98, 0]}},
   still: {from: WIDE, to: WIDE},
   snap: {from: WIDE, to: DISPLAY, snap: true},
   iron: {from: {pos: [PRESS_X + 0.22, 1.32, 2.15], target: [PRESS_X, 1.0, 0]}, to: {pos: [PRESS_X + 0.18, 1.3, 1.9], target: [PRESS_X, 1.0, 0]}},
@@ -290,28 +291,34 @@ const Hanger: React.FC = () => {
   return <mesh geometry={geo} material={metalMat} castShadow />;
 };
 
-/** Ferro de passar estilizado: base em ponta (vista de cima), corpo e alca. */
+/** Ferro de passar estilizado: base em ponta (vista de cima), corpo com perfil inclinado ate o bico, alca. */
 const Iron: React.FC = () => {
   const geo = useMemo(() => {
     const plan = new THREE.Shape();
     plan.moveTo(-0.12, -0.065);
     plan.lineTo(0.02, -0.065);
-    plan.quadraticCurveTo(0.12, -0.05, 0.16, 0);
+    plan.quadraticCurveTo(0.12, -0.05, 0.17, 0);
     plan.quadraticCurveTo(0.12, 0.05, 0.02, 0.065);
     plan.lineTo(-0.12, 0.065);
     plan.quadraticCurveTo(-0.14, 0, -0.12, -0.065);
     const sole = new THREE.ExtrudeGeometry(plan, {depth: 0.018, bevelEnabled: false});
     sole.rotateX(-Math.PI / 2);
-    const body = new THREE.ExtrudeGeometry(plan, {depth: 0.05, bevelEnabled: true, bevelThickness: 0.015, bevelSize: 0.012, bevelSegments: 4});
-    body.rotateX(-Math.PI / 2);
-    body.scale(0.92, 1, 0.88);
-    return {sole, body, handle: new THREE.TorusGeometry(0.075, 0.016, 12, 40, Math.PI)};
+    // Perfil lateral: alto atras, descendo ate o bico.
+    const side = new THREE.Shape();
+    side.moveTo(-0.115, 0);
+    side.lineTo(0.15, 0);
+    side.quadraticCurveTo(0.06, 0.07, -0.02, 0.085);
+    side.lineTo(-0.115, 0.085);
+    side.lineTo(-0.115, 0);
+    const body = new THREE.ExtrudeGeometry(side, {depth: 0.09, bevelEnabled: true, bevelThickness: 0.012, bevelSize: 0.01, bevelSegments: 4});
+    body.translate(0, 0, -0.045);
+    return {sole, body, handle: new THREE.TorusGeometry(0.06, 0.014, 12, 40, Math.PI)};
   }, []);
   return (
     <group>
       <mesh geometry={geo.sole} material={ironSoleMat} castShadow />
-      <mesh geometry={geo.body} material={ironBodyMat} position={[-0.005, 0.018, 0]} castShadow />
-      <mesh geometry={geo.handle} material={ironBodyMat} position={[-0.03, 0.085, 0]} castShadow />
+      <mesh geometry={geo.body} material={ironBodyMat} position={[0, 0.018, 0]} castShadow />
+      <mesh geometry={geo.handle} material={ironBodyMat} position={[-0.055, 0.1, 0]} castShadow />
     </group>
   );
 };

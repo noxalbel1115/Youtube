@@ -85,3 +85,15 @@ test('voz ElevenLabs sem assinatura paga confirmada nao tem base de uso para pub
   cfg.providers.tts.elevenlabs.commercialLicenseConfirmed = true;
   assert.equal(voiceLicenseIssue(['elevenlabs', 'kokoro'], cfg), null);
 });
+
+test('rotulo do caso vem do numero do episodio', async () => {
+  const {caseLabelFor} = await import('../src/stages/timeline.js');
+  assert.equal(caseLabelFor('ep002-prensa-de-calcas'), 'PROTOCOLO 002');
+  assert.equal(caseLabelFor('ep001-eierschalensollbruchstellenverursacher'), 'PROTOCOLO 001');
+});
+
+test('cenas 3D: o piloto continua registrado e cada cena tem trilha de estudio', async () => {
+  const {SCENES, DEFAULT_SCENE} = await import('../src/remotion/components/scenes.js');
+  assert.ok(SCENES[DEFAULT_SCENE]);
+  for (const def of Object.values(SCENES)) assert.ok(def.previewTrack.length > 0);
+});

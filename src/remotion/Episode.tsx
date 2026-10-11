@@ -15,7 +15,8 @@ const BeatVisual: React.FC<{beat: TimelineBeat; t: Timeline}> = ({beat, t}) => {
   const v = beat.visual;
   switch (v.type) {
     case 'scene3d':
-      return <Scene3DShot shotStart={beat.startFrame} track={buildTrack(t.beats)} />;
+      // A trilha de deixas considera so os beats da mesma cena 3D (um episodio pode ter mais de uma).
+      return <Scene3DShot scene={v.scene} shotStart={beat.startFrame} track={buildTrack(t.beats.filter((b) => b.visual.scene === v.scene))} />;
     case 'media':
       return v.layout === 'exhibit' ? <MediaExhibit beat={beat} /> : <MediaFull beat={beat} />;
     case 'title':
@@ -59,7 +60,7 @@ const hasHeader = (b: TimelineBeat) => b.visual.type === 'media' || b.visual.typ
 
 export const Episode: React.FC<Timeline> = (t) => {
   const {fps} = useVideoConfig();
-  const caseLabel = 'PROTOCOLO 001';
+  const caseLabel = t.caseLabel ?? 'PROTOCOLO 001';
   const shots = groupVisuals(t.beats);
   return (
     <AbsoluteFill style={{background: '#000'}}>
@@ -123,7 +124,7 @@ export const Thumbnail: React.FC<Timeline & {thumbnailFrame?: number; thumbnailT
     <AbsoluteFill>
       <Sequence from={-(frame - beat.startFrame)} durationInFrames={beat.durationFrames}>
         <BeatVisual beat={beat} t={t} />
-        {hasHeader(beat) ? <HeaderBand brandName={t.brand.name} caseLabel="PROTOCOLO 001" /> : null}
+        {hasHeader(beat) ? <HeaderBand brandName={t.brand.name} caseLabel={t.caseLabel ?? 'PROTOCOLO 001'} /> : null}
       </Sequence>
       {t.thumbnailText ? (
         <div style={{position: 'absolute', left: 64, right: 150, top: 1180, display: 'flex'}}>

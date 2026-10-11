@@ -48,6 +48,11 @@ export function timeCaptions(
   });
 }
 
+/** "ep002-..." → "PROTOCOLO 002" (numero do caso na faixa institucional e na miniatura). */
+export function caseLabelFor(episodeId: string): string {
+  return `PROTOCOLO ${episodeId.match(/^ep(\d{3})/)?.[1] ?? '000'}`;
+}
+
 export const timelineStage: Stage = {
   name: 'timeline',
   inputHash(ctx) {
@@ -124,6 +129,7 @@ export const timelineStage: Stage = {
       captions,
       credits,
       roomToneFile: path.relative(ctx.p.assets, roomTone),
+      caseLabel: caseLabelFor(ctx.id),
     });
     writeJsonAtomic(ctx.p.timeline, timeline);
     return {outputs: [rel(ctx.p.timeline)], note: `${(cursor / fps).toFixed(2)}s, ${beats.length} beats, ${captions.length} blocos de legenda, ${usedMedia.size} midias`};

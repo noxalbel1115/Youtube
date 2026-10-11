@@ -281,6 +281,8 @@ export const Timeline = z.object({
   captions: z.array(CaptionChunk),
   credits: z.array(z.string()),
   roomToneFile: z.string().optional(),
+  /** Rotulo do caso na faixa institucional (ex.: "PROTOCOLO 002"), derivado do numero do episodio. */
+  caseLabel: z.string().optional(),
 });
 export type Timeline = z.infer<typeof Timeline>;
 

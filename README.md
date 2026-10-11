@@ -82,6 +82,15 @@ expirou, o canal é consultado pelo marcador `ref:` da descrição antes de qual
   assinatura paga. Até `providers.tts.elevenlabs.commercialLicenseConfirmed = true`, o `verify` avisa e o upload
   fica bloqueado.
 
+## Idiomas
+
+Cada episódio tem um idioma (`pt-BR` padrão, ou `en-US`), definido na criação:
+`npm run dnn -- new ep001-slug-en --locale en-US`. O idioma decide o nome do canal e as vozes (`config.locales`), a
+língua da transcrição (Whisper), os textos fixos do layout e da descrição (`src/core/locale.ts`) e o arquivo de
+legendas (`captions.<idioma>.srt`). O texto visível do roteiro (fala, cartelas, rótulos) é escrito no idioma do
+episódio. Uma versão traduzida reaproveita a pesquisa verificada do original, sem acrescentar fatos; ver
+`episodes/ep001-eierschalensollbruchstellenverursacher-en/research/LOCALIZACAO.md`.
+
 ## Visual: fotos licenciadas + ilustração 3D própria
 
 O Opus 5.5 não gera vídeo fotográfico; ele escreve código que é renderizado quadro a quadro. Por isso o produto é

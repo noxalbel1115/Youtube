@@ -2,44 +2,99 @@
   "schemaVersion": 1,
   "episodeId": "ep001-eierschalensollbruchstellenverursacher-en",
   "createdAt": "2026-10-11T08:35:15.327Z",
-  "updatedAt": "2026-10-11T08:35:15.327Z",
-  "currentStage": "research",
+  "updatedAt": "2026-10-11T08:42:53.452Z",
+  "currentStage": "render",
+  "productSlug": "drop-weight-egg-topper",
+  "pick": {
+    "slug": "drop-weight-egg-topper",
+    "reason": "Versao em ingles do ep001 (mesmo produto, pedido do usuario em 11/10/2026)"
+  },
   "locale": "en-US",
+  "paidTtsAuthorization": {
+    "at": "2026-10-11T08:40:56.141Z",
+    "note": "Usuario pediu no chat em 11/10/2026: 'Agora gere uma versao em ingles' (mesma voz paga do canal, ElevenLabs eleven_v4; assinatura paga confirmada)"
+  },
+  "scriptVersion": 1,
   "stages": {
     "research": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:38:46.931Z",
+      "finishedAt": "2026-10-11T08:39:03.151Z",
+      "seconds": 16.2,
+      "inputHash": "0e1a1c096cb98ed386fbfddf6ad30bd0301be601e5adcc35d2e533d065ff8d59",
+      "outputs": [
+        "episodes/ep001-eierschalensollbruchstellenverursacher-en/research/candidates.json"
+      ],
+      "note": "10 candidatos validados; links: 19/20 responderam < 400"
     },
     "select": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:39:03.153Z",
+      "finishedAt": "2026-10-11T08:39:03.157Z",
+      "seconds": 0,
+      "inputHash": "44c8603ef92a67218a6251ca1f3cf69b792d2d6b85f0c56bf046f7bb4597e6ce",
+      "outputs": [
+        "episodes/ep001-eierschalensollbruchstellenverursacher-en/selection.json",
+        "episodes/ep001-eierschalensollbruchstellenverursacher-en/product.json"
+      ],
+      "note": "selecionado: Impact egg topper (\"Eierschalensollbruchstellenverursacher\") (4.55)"
     },
     "media": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:39:03.160Z",
+      "finishedAt": "2026-10-11T08:40:09.084Z",
+      "seconds": 65.9,
+      "inputHash": "f4a76052780ea8b5b57d89ccc09a046da03ea7486c0a40bb08fa4095dfecbb43",
+      "outputs": [
+        "episodes/ep001-eierschalensollbruchstellenverursacher-en/media.json"
+      ],
+      "note": "2/3 midias utilizaveis"
     },
     "script": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:40:56.143Z",
+      "finishedAt": "2026-10-11T08:40:56.148Z",
+      "seconds": 0,
+      "inputHash": "5f73466508eecb9717a758bac645b12b043a99bc360abaa13d95d5983af95d9d",
+      "outputs": [
+        "episodes/ep001-eierschalensollbruchstellenverursacher-en/script.json",
+        "episodes/ep001-eierschalensollbruchstellenverursacher-en/script-history/v1.json"
+      ],
+      "note": "roteiro v1, 32 beats, ~93s estimados"
     },
     "voice": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:40:56.149Z",
+      "finishedAt": "2026-10-11T08:42:31.133Z",
+      "seconds": 95,
+      "inputHash": "8a597e185ee467fe19e54c78f5ade37b57d2a81813729b703f8df12ec692a1d5",
+      "outputs": [
+        "episodes/ep001-eierschalensollbruchstellenverursacher-en/build/voice.json"
+      ],
+      "note": "27 falas, 57.5s de fala; 0 com divergencia de transcricao"
     },
     "timeline": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:42:31.135Z",
+      "finishedAt": "2026-10-11T08:42:31.812Z",
+      "seconds": 0.7,
+      "inputHash": "20619d3d56a0369bba7d750a7e22f1eea8541ae832d084a0f10b597d1ff4be69",
+      "outputs": [
+        "episodes/ep001-eierschalensollbruchstellenverursacher-en/build/timeline.json"
+      ],
+      "note": "85.40s, 32 beats, 42 blocos de legenda, 2 midias"
     },
     "render": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "running",
+      "attempts": 1,
+      "outputs": [],
+      "startedAt": "2026-10-11T08:42:53.452Z"
     },
     "verify": {
       "status": "pending",
@@ -58,7 +113,134 @@
     }
   },
   "artifacts": {},
-  "costs": [],
+  "costs": [
+    {
+      "stage": "research",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 16.2,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:39:03.151Z"
+    },
+    {
+      "stage": "research",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 16.2,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:39:03.151Z"
+    },
+    {
+      "stage": "select",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:39:03.157Z"
+    },
+    {
+      "stage": "select",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:39:03.157Z"
+    },
+    {
+      "stage": "media",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 65.9,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:40:09.084Z"
+    },
+    {
+      "stage": "media",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 65.9,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:40:09.084Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:40:56.148Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:40:56.148Z"
+    },
+    {
+      "stage": "voice",
+      "item": "elevenlabs-credits",
+      "kind": "observed",
+      "amount": 101,
+      "unit": "elevenlabs-credits",
+      "basis": "creditos informados pela API (cabecalho character-cost) para 924 caracteres na ultima sintese (27 fala(s)); valor acumulado do episodio, inclusive ressinteses. Custo em dinheiro depende do plano contratado.",
+      "at": "2026-10-11T08:41:21.437Z"
+    },
+    {
+      "stage": "voice",
+      "item": "tts-tempo",
+      "kind": "observed",
+      "amount": 28.8,
+      "unit": "seconds",
+      "basis": "27 fala(s) sintetizadas na ultima sintese (elevenlabs)",
+      "at": "2026-10-11T08:41:24.934Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 95,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:42:31.133Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 95,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:42:31.133Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0.7,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:42:31.812Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0.7,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:42:31.812Z"
+    }
+  ],
   "errors": [],
   "youtube": {
     "status": "not_started"

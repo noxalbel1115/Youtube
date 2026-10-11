@@ -13,6 +13,7 @@ import {authorizeInteractive, accessToken} from './youtube/auth.js';
 import * as yt from './youtube/client.js';
 import {appendHistory} from './stages/select.js';
 import {Product} from './schemas.js';
+import {isLocale, LOCALES} from './core/locale.js';
 import type {Flags} from './stages/types.js';
 
 loadDotEnv();
@@ -36,7 +37,7 @@ function parseArgs(argv: string[]) {
 
 const HELP = `Departamento de Necessidades Desnecessarias — pipeline
 
-  npm run dnn -- new <ep001-slug>                 cria episodio
+  npm run dnn -- new <ep001-slug> [--locale pt-BR|en-US]   cria episodio (padrao pt-BR)
   npm run dnn -- run <id> [--from etapa] [--to etapa] [--force etapa,...|all] [--pick slug --reason "..."] [--offline]
   npm run dnn -- status <id>                      etapa atual, erros, custos, upload
   npm run dnn -- review <id> --approve|--reject|--note-only [--note "..."]   registra revisao do MP4 atual
@@ -101,8 +102,10 @@ async function main(): Promise<number> {
       if (!id) throw new Error('uso: new <ep001-slug>');
       const p = epPaths(id);
       if (fs.existsSync(p.state)) throw new Error(`${id} ja existe`);
+      const locale = typeof opts.locale === 'string' ? opts.locale : 'pt-BR';
+      if (!isLocale(locale)) throw new Error(`idioma desconhecido: ${locale} (use ${LOCALES.join(' ou ')})`);
       fs.mkdirSync(path.join(p.dir, 'research'), {recursive: true});
-      saveState(newState(id));
+      saveState(newState(id, locale));
       log.info(`episodio criado em ${path.relative(ROOT, p.dir)}`);
       return 0;
     }

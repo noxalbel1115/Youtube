@@ -5,7 +5,7 @@ import {readJson, sha256, writeJsonAtomic} from '../core/state.js';
 import {rel} from '../core/paths.js';
 import {chunkCaption, normalizeWords} from '../core/text.js';
 import {ensureSfx} from '../sfx.js';
-import {localeFor, type Language} from '../core/locale.js';
+import {localized, episodeNumber} from '../core/locale.js';
 import type {Stage} from './types.js';
 
 function dbToGain(db: number): number {
@@ -49,20 +49,13 @@ export function timeCaptions(
   });
 }
 
-/** "ep002-..." → "PROTOCOLO 002" ("PROTOCOL 002" em ingles): numero do caso na faixa institucional e na miniatura. */
-export function caseLabelFor(episodeId: string, language: Language = 'pt-BR'): string {
-  const word = language === 'pt-BR' ? 'PROTOCOLO' : 'PROTOCOL';
-  return `${word} ${episodeId.match(/^ep(\d{3})/)?.[1] ?? '000'}`;
-}
-
 export const timelineStage: Stage = {
   name: 'timeline',
   inputHash(ctx) {
-    return sha256([ctx.p.script, ctx.p.voice, ctx.p.mediaRegistry, ctx.p.product].map((f) => fs.readFileSync(f, 'utf8')).join('\n') + JSON.stringify(ctx.cfg.format) + JSON.stringify(ctx.cfg.channel) + JSON.stringify(ctx.cfg.locales));
+    return sha256([ctx.p.script, ctx.p.voice, ctx.p.mediaRegistry, ctx.p.product].map((f) => fs.readFileSync(f, 'utf8')).join('\n') + JSON.stringify(ctx.cfg.format) + JSON.stringify(localized(ctx.cfg, ctx.state.locale).channel) + ctx.state.locale);
   },
   async run(ctx) {
     const script = Script.parse(readJson(ctx.p.script));
-    const loc = localeFor(ctx.cfg, script.language);
     const voice = VoiceManifest.parse(readJson(ctx.p.voice));
     if (voice.scriptVersion !== script.version) throw new Error('voice.json foi gerado para outra versao do roteiro; refaca a etapa voice');
     const registry = MediaRegistry.parse(readJson(ctx.p.mediaRegistry));
@@ -119,21 +112,24 @@ export const timelineStage: Stage = {
     const roomTone = await ensureSfx('room-tone', sfxDir);
     const credits = registry.items.filter((i) => usedMedia.has(i.id)).map((i) => i.attribution);
     captions.sort((a, b) => a.startFrame - b.startFrame);
+    // Bloco curto demais para ler (fala de uma palavra): estende ate 0,5 s; o laco abaixo impede invadir o seguinte.
+    for (const c of captions) c.endFrame = Math.max(c.endFrame, c.startFrame + f(0.5));
     // Legenda de som nao pode sobrepor a fala seguinte.
     for (let i = 0; i < captions.length - 1; i++) captions[i].endFrame = Math.min(captions[i].endFrame, captions[i + 1].startFrame);
+    const {channel: ch, strings} = localized(ctx.cfg, ctx.state.locale);
+    const num = episodeNumber(ctx.id);
     const timeline = Timeline.parse({
       fps,
       width: ctx.cfg.format.width,
       height: ctx.cfg.format.height,
       durationInFrames: cursor,
-      brand: {name: loc.channel.name, motto: loc.channel.motto, salesmanName: loc.channel.salesman.name, salesmanTitle: loc.channel.salesman.title, ...(script.language === 'pt-BR' ? {} : {shortName: loc.channel.shortName})},
+      brand: {name: ch.name, motto: ch.motto, salesmanName: ch.salesman.name, salesmanTitle: ch.salesman.title},
+      ui: {caseLabel: strings.caseLabel(num), sealText: ch.shortName, sealLabel: strings.sealLabel(num), factsheetLabel: strings.factsheetLabel},
       product: {name: product.name, brand: product.brand},
       beats,
       captions,
       credits,
       roomToneFile: path.relative(ctx.p.assets, roomTone),
-      caseLabel: caseLabelFor(ctx.id, script.language),
-      ...(script.language === 'pt-BR' ? {} : {ui: {factsheet: loc.ui.factsheet, dept: loc.ui.dept}}),
     });
     writeJsonAtomic(ctx.p.timeline, timeline);
     return {outputs: [rel(ctx.p.timeline)], note: `${(cursor / fps).toFixed(2)}s, ${beats.length} beats, ${captions.length} blocos de legenda, ${usedMedia.size} midias`};

@@ -1,0 +1,146 @@
+{
+  "slug": "drop-weight-egg-topper",
+  "name": "Impact egg topper (\"Eierschalensollbruchstellenverursacher\")",
+  "brand": "Type of device; commercial example: \"Clack\", Take2-Design (Germany)",
+  "description": "A metal bell placed over the top of a boiled egg; a ball is lifted on a rod and dropped, and the impact cracks the shell in a line around the top, which can then be removed.",
+  "legitimateUse": "People who eat soft-boiled eggs from an egg cup, a common German breakfast habit: it avoids shell splinters and cutting the top with a knife. No source consulted describes it as assistive technology.",
+  "punchingDownRisk": "Low. The joke is the salesman's exaggeration and the mismatch between device and task; do not mock the manufacturer, the designers or people who like the device.",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://www.take2-design-online-shop.de/de/bestseller/clack-eieroeffner/",
+      "title": "\"Clack\" Eieröffner",
+      "publisher": "Take2-Design (manufacturer's official store)",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-10",
+      "confirms": "Loja em alemão, preços com IVA alemão de 19%. Nome usado pelo fabricante, modo de uso, retirada da tampa inclinando o aparelho ou com talheres adicionais, três designers creditados, edições (Color, Gem com esfera de pedra preciosa, XMAS, Retro, Jubiläums 25) e preços (Color 28,95 EUR; Gem 31,95 EUR; IVA 19% incluso, frete à parte)."
+    },
+    {
+      "id": "s2",
+      "url": "https://de.wikipedia.org/wiki/Eierk%C3%B6pfer",
+      "title": "Eierköpfer",
+      "publisher": "Wikipedia (German)",
+      "kind": "encyclopedia",
+      "accessedAt": "2026-10-10",
+      "confirms": "Função dos abridores de ovo; modelo de impacto com campânula e peso esférico; nome brincalhão Eierschalensollbruchstellenverursacher; patente de 1907 (Ferdinand Fleischmann, Mödling) de modelo com dentes e mecanismo de tesoura; legenda identifica a foto do Commons como modelo Clack."
+    },
+    {
+      "id": "s3",
+      "url": "https://www.dwds.de/wb/Eierschalensollbruchstellenverursacher",
+      "title": "Eierschalensollbruchstellenverursacher",
+      "publisher": "DWDS – Digitales Wörterbuch der deutschen Sprache",
+      "kind": "encyclopedia",
+      "accessedAt": "2026-10-10",
+      "confirms": "Verbete do dicionário: uso geralmente brincalhão; aparelho que rompe a casca do ovo cozido num ponto predeterminado para que seja comido de colher sem descascar nem cortar o topo com faca; divisão em 12 sílabas; composição Eierschale + Sollbruchstelle + Verursacher; pronúncia."
+    }
+  ],
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The German manufacturer Take2-Design calls its \"Clack\" egg topper an Eierschalensollbruchstellenverursacher.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f2",
+      "text": "The word is in the DWDS dictionary, marked as usually jocular, for devices that crack a boiled egg's shell at a predetermined point.",
+      "sourceIds": [
+        "s3",
+        "s2"
+      ]
+    },
+    {
+      "id": "f3",
+      "text": "The word is made of Eierschale (eggshell), Sollbruchstelle (predetermined breaking point) and Verursacher (causer).",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "The word has 38 letters and 12 syllables.",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "id": "f5",
+      "text": "Use according to the manufacturer: place the metal cap on the boiled egg, pull the ball up and let it go.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f6",
+      "text": "In the impact model, a bell with an inner edge is placed over the egg and the blow of a ball-shaped weight cracks the shell around the top.",
+      "sourceIds": [
+        "s2"
+      ]
+    },
+    {
+      "id": "f7",
+      "text": "According to the manufacturer, the top of the egg can then be removed by gently tilting the device or with the help of additional cutlery.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f8",
+      "text": "According to DWDS, the purpose is to eat the egg with a spoon without peeling it or cutting the top off with a knife.",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "id": "f9",
+      "text": "The manufacturer credits the Clack design to three designers.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f10",
+      "text": "In the manufacturer's store, the Color Edition costs 28.95 euros (German VAT included, shipping extra), on 2026-10-10.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f11",
+      "text": "The manufacturer's store sells a Gem Edition with a gemstone ball (amethyst, rose quartz, green aventurine, sodalite) for 31.95 euros.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f12",
+      "text": "The manufacturer's store lists a Christmas edition (XMAS Edition).",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f13",
+      "text": "There is a 1907 patent by Ferdinand Fleischmann for an egg opener with teeth and a scissor mechanism.",
+      "sourceIds": [
+        "s2"
+      ]
+    }
+  ],
+  "price": {
+    "amount": 28.95,
+    "currency": "EUR",
+    "sourceId": "s1",
+    "observedAt": "2026-10-10",
+    "note": "Color Edition in the manufacturer's store; 19% VAT included, shipping extra. Other editions: 29.95 to 31.95 EUR."
+  },
+  "risks": [
+    "Fotos não mostram marca identificável: legendar como 'aparelho do mesmo tipo'.",
+    "Nomear o Clack/Take2-Design só com fatos da página do fabricante, sem sugerir endosso.",
+    "m2 é CC BY-SA (compartilha-igual): preferir m1/m3 no render publicável.",
+    "Não afirmar quem inventou o aparelho (não verificado)."
+  ],
+  "comedyAngle": "O vendedor apresenta 38 letras de engenharia alemã para abrir o topo de um ovo; a colega abre o dela com a colher, fora de quadro, e a própria loja do fabricante admite que talheres adicionais podem ser necessários.",
+  "verifiedAt": "2026-10-10"
+}

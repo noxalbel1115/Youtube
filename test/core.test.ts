@@ -86,12 +86,6 @@ test('voz ElevenLabs sem assinatura paga confirmada nao tem base de uso para pub
   assert.equal(voiceLicenseIssue(['elevenlabs', 'kokoro'], cfg), null);
 });
 
-test('rotulo do caso vem do numero do episodio', async () => {
-  const {caseLabelFor} = await import('../src/stages/timeline.js');
-  assert.equal(caseLabelFor('ep002-prensa-de-calcas'), 'PROTOCOLO 002');
-  assert.equal(caseLabelFor('ep001-eierschalensollbruchstellenverursacher'), 'PROTOCOLO 001');
-});
-
 test('cenas 3D: o piloto continua registrado e cada cena tem trilha de estudio', async () => {
   const {SCENES, DEFAULT_SCENE} = await import('../src/remotion/components/scenes.js');
   assert.ok(SCENES[DEFAULT_SCENE]);
@@ -112,12 +106,27 @@ test('WER: diferenca so na divisao entre palavras nao conta como erro', () => {
 });
 
 test('WER em ingles: numerais por extenso, "a hundred" e libras com simbolo', () => {
-  assert.equal(wordErrorRate('Forty-five minutes. One pair of trousers at a time.', '45 minutes, one pair of trousers at a time.', 'en'), 0);
-  assert.equal(wordErrorRate('One hundred and eighty-nine pounds sixty.', '£189.60.', 'en'), 0);
-  assert.equal(wordErrorRate('For almost a hundred years.', 'For almost 100 years.', 'en'), 0);
-  assert.equal(wordErrorRate('Four pounds twenty a minute.', '£4.20 a minute.', 'en'), 0);
-  assert.equal(wordErrorRate('Forty-four minutes to go.', '44 minutes to go.', 'en'), 0);
-  assert.equal(wordErrorRate('£189.60. £4.20 a minute.', '189 lbs. 60, 4 lbs. 20 a minute.', 'en'), 0);
+  assert.equal(wordErrorRate('Forty-five minutes. One pair of trousers at a time.', '45 minutes, one pair of trousers at a time.', 'en-US'), 0);
+  assert.equal(wordErrorRate('One hundred and eighty-nine pounds sixty.', '£189.60.', 'en-US'), 0);
+  assert.equal(wordErrorRate('For almost a hundred years.', 'For almost 100 years.', 'en-US'), 0);
+  assert.equal(wordErrorRate('Four pounds twenty a minute.', '£4.20 a minute.', 'en-US'), 0);
+  assert.equal(wordErrorRate('Forty-four minutes to go.', '44 minutes to go.', 'en-US'), 0);
+  assert.equal(wordErrorRate('£189.60. £4.20 a minute.', '189 lbs. 60, 4 lbs. 20 a minute.', 'en-US'), 0);
   // padrao continua sendo portugues
   assert.equal(wordErrorRate('Quarenta e cinco minutos.', '45 minutos.'), 0);
+});
+
+test('WER em ingles: numerais por extenso equivalem a digitos', () => {
+  assert.equal(wordErrorRate('Twenty-eight euros ninety-five.', '28 euros 95', 'en-US'), 0);
+  assert.equal(wordErrorRate('one hundred and five letters', '105 letters', 'en-US'), 0);
+  assert.equal(wordErrorRate("The spoon doesn’t have thirty-eight letters.", "The spoon doesn't have 38 letters.", 'en-US'), 0);
+});
+
+test('idioma: textos fixos e datas por locale', async () => {
+  const {STRINGS, episodeNumber} = await import('../src/core/locale.js');
+  assert.equal(episodeNumber('ep001-x-en'), '001');
+  assert.equal(STRINGS['pt-BR'].date('2026-10-10'), '10/10/2026');
+  assert.equal(STRINGS['en-US'].date('2026-10-10'), 'October 10, 2026');
+  assert.equal(STRINGS['en-US'].money(28.95, 'EUR'), 'EUR 28.95');
+  assert.equal(STRINGS['pt-BR'].money(28.95, 'EUR'), 'EUR 28,95');
 });

@@ -1,7 +1,10 @@
+import type {Locale} from './locale.js';
+
 /** Normaliza para comparacao: minusculas, sem pontuacao, espacos simples. Mantem acentos. */
 export function normalizeWords(s: string): string[] {
   return s
     .toLowerCase()
+    .replace(/’/g, "'")
     .replace(/[“”"«»()\[\]{}…,.;:!?¿¡–—\-]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
@@ -26,7 +29,8 @@ const UNITS: Record<string, number> = {
  * Como na lingua, as partes de um numero vem em ordem decrescente, ligadas por "e" (ou logo apos "mil"):
  * "cento e oitenta e nove" → 189, mas "quatro e vinte" (libras e pence) → "4 e 20" e "sessenta. Quatro" → "60 4".
  */
-export function numbersToDigits(words: string[]): string[] {
+export function numbersToDigits(words: string[], locale: Locale = 'pt-BR'): string[] {
+  if (locale === 'en-US') return numbersToDigitsEn(words);
   const out: string[] = [];
   let i = 0;
   while (i < words.length) {
@@ -131,9 +135,8 @@ const fuse = (...ws: string[]) => ws.join('').replace(/(.)\1+/g, '$1');
  * Taxa de erro por palavra (Levenshtein em palavras), insensivel a acentos. Diferenca so de divisao entre palavras
  * ("almofada aquecida" x "almofa daquecida", elisao natural da fala) nao conta como erro: o ASR ouviu os mesmos sons.
  */
-export function wordErrorRate(reference: string, hypothesis: string, language: 'pt-BR' | 'en' = 'pt-BR'): number {
-  const words = (t: string) =>
-    language === 'en' ? numbersToDigitsEn(normalizeWords(stripAccents(spellCurrencyEn(t)))) : numbersToDigits(normalizeWords(stripAccents(t)));
+export function wordErrorRate(reference: string, hypothesis: string, locale: Locale = 'pt-BR'): number {
+  const words = (t: string) => numbersToDigits(normalizeWords(stripAccents(locale === 'en-US' ? spellCurrencyEn(t) : t)), locale);
   const r = words(reference);
   const h = words(hypothesis);
   if (r.length === 0) return h.length === 0 ? 0 : 1;

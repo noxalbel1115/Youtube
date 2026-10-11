@@ -1,0 +1,122 @@
+{
+  "verifiedAt": "2026-10-11T09:29:40.608Z",
+  "file": "episodes/ep001-eierschalensollbruchstellenverursacher-en/build/episode.mp4",
+  "sha256": "337baf8d85b895d817b73013d850ef539184ba4fb0e8b18dffd84eac55649953",
+  "durationSeconds": 85.5,
+  "automatic": [
+    {
+      "id": "formato.resolucao",
+      "ok": true,
+      "severity": "error",
+      "detail": "1080x1920"
+    },
+    {
+      "id": "formato.fps",
+      "ok": true,
+      "severity": "error",
+      "detail": "fps 30/1"
+    },
+    {
+      "id": "formato.codecs",
+      "ok": true,
+      "severity": "error",
+      "detail": "video h264, audio aac"
+    },
+    {
+      "id": "formato.duracao",
+      "ok": true,
+      "severity": "error",
+      "detail": "85.50s (alvo 60-90s)"
+    },
+    {
+      "id": "formato.shorts",
+      "ok": true,
+      "severity": "error",
+      "detail": "vertical e ate 3 min (classificacao automatica como Short)"
+    },
+    {
+      "id": "video.quadros-pretos",
+      "ok": true,
+      "severity": "error",
+      "detail": "1 trecho(s) preto(s), todos intencionais"
+    },
+    {
+      "id": "audio.loudness",
+      "ok": true,
+      "severity": "error",
+      "detail": "-13.9 LUFS integrados (alvo -14)"
+    },
+    {
+      "id": "audio.pico",
+      "ok": true,
+      "severity": "error",
+      "detail": "true peak -1.3 dBFS (limite -1.5)"
+    },
+    {
+      "id": "audio.silencios",
+      "ok": true,
+      "severity": "warning",
+      "detail": "0 silencio(s) > 1,2 s abaixo de -45 dB; inesperados: []"
+    },
+    {
+      "id": "arquivos.presentes",
+      "ok": true,
+      "severity": "error",
+      "detail": "35 arquivos referenciados presentes"
+    },
+    {
+      "id": "midia.licencas",
+      "ok": true,
+      "severity": "error",
+      "detail": "2 midia(s), todas com licenca verificada na origem"
+    },
+    {
+      "id": "voz.licenca",
+      "ok": true,
+      "severity": "warning",
+      "detail": "vozes: elevenlabs"
+    },
+    {
+      "id": "midia.compartilha-igual",
+      "ok": true,
+      "severity": "warning",
+      "detail": "nenhuma midia BY-SA"
+    },
+    {
+      "id": "fatos.ancorados",
+      "ok": true,
+      "severity": "error",
+      "detail": "17 fala(s) factuais; sem ancora: nenhuma"
+    },
+    {
+      "id": "audio.transcricao-final",
+      "ok": true,
+      "severity": "error",
+      "detail": "WER 3.2% entre roteiro e transcricao automatica da mixagem final (limite 18.2%; 1 fala(s) com palavra estrangeira fora da conta)"
+    },
+    {
+      "id": "audio.transcricao-por-fala",
+      "ok": true,
+      "severity": "warning",
+      "detail": "todas as falas transcritas com WER <= 25%"
+    },
+    {
+      "id": "legendas.leitura",
+      "ok": true,
+      "severity": "warning",
+      "detail": "42 blocos, todos com >= 0,5 s"
+    },
+    {
+      "id": "legendas.tamanho",
+      "ok": true,
+      "severity": "warning",
+      "detail": "todos os blocos com ate 38 caracteres (max. 2 linhas)"
+    }
+  ],
+  "finalTranscript": "Good morning. I bring a German solution to a problem the rest of the world has ignored for generations. The top of the egg. The technical term is Eierschalen Zollbruchstellen für Ursache. 38 letters. All dedicated to the top of an egg. Here's how it works. You place the metal cap on the boiled egg, lift the ball, and let go. The shell cracks all the way around the top. No knife. Designed by three designers. Three. For the discerning customer. A gemstone ball. Amethyst. For the egg. The competition uses scissors. Patented in 1907. Scissors. At breakfast. Done. Swele uses a spoon. The spoon doesn't come in a Christmas edition. The manufacturer says the top comes off by tilting the device. Or with the help of additional cutlery. A spoon, for example. But the spoon doesn't have 38 letters. 28 euros 95. That's 76 cents a letter. That's practically free. You didn't need it. Until now.",
+  "manualReview": {
+    "status": "pendente",
+    "sha256": "337baf8d85b895d817b73013d850ef539184ba4fb0e8b18dffd84eac55649953",
+    "notes": []
+  }
+}

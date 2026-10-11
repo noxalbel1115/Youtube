@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "ep002-prensa-de-calcas",
+  "createdAt": "2026-10-11T01:40:19.796Z",
+  "updatedAt": "2026-10-11T01:44:58.684Z",
+  "currentStage": "voice",
+  "productSlug": "corby-trouser-press",
+  "pick": {
+    "slug": "corby-trouser-press",
+    "reason": "Escolha editorial: o 1o automatico (fatiador de banana Hutzler 571) e meme de 2012, com a piada ja conhecida. A Corby tem contraste maior (movel de 9,56 kg e 45 minutos para uma calca), fatos de fonte primaria que sao a propria piada (o manual proibe o banheiro, onde a solucao obvia vence, e admite que a umidade ajuda; o modelo 6600 vinha com ferro a vapor; almofada inspirada no Concorde) e um contraste que cabe no mesmo quadro (calca lisa no cabide x mostrador em 44 minutos)."
+  },
+  "scriptVersion": 2,
+  "stages": {
+    "research": {
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T01:40:27.175Z",
+      "finishedAt": "2026-10-11T01:41:41.372Z",
+      "seconds": 74.2,
+      "inputHash": "a7aee654c3c0a55a303ab31bd1c614a025097965bfc53917bcc6644dd27dc146",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/research/candidates.json"
+      ],
+      "note": "8 candidatos validados; links: 40/46 responderam < 400"
+    },
+    "select": {
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T01:41:41.374Z",
+      "finishedAt": "2026-10-11T01:41:41.381Z",
+      "seconds": 0,
+      "inputHash": "34f6d5143562477460895afc495b6d1a9e45f751f69ad06cdf28aaf3975c57c9",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/selection.json",
+        "episodes/ep002-prensa-de-calcas/product.json"
+      ],
+      "note": "selecionado: Prensa de calças elétrica Corby (Corby Trouser Press 7700 / Executive) (4.7)"
+    },
+    "media": {
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T01:41:41.385Z",
+      "finishedAt": "2026-10-11T01:44:04.968Z",
+      "seconds": 143.6,
+      "inputHash": "e7359f464ab5e651a8a94f97c2df2c37c6cbc12e3d84704eb5d3d90728a0a20f",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/media.json"
+      ],
+      "note": "4/5 midias utilizaveis"
+    },
+    "script": {
+      "status": "done",
+      "attempts": 3,
+      "startedAt": "2026-10-11T01:44:58.675Z",
+      "finishedAt": "2026-10-11T01:44:58.681Z",
+      "seconds": 0,
+      "inputHash": "df37dae166250ff3124019513b0deabac5129c551b142a3a8e0358db1797a569",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/script.json",
+        "episodes/ep002-prensa-de-calcas/script-history/v2.json"
+      ],
+      "note": "roteiro v2, 32 beats, ~89s estimados"
+    },
+    "voice": {
+      "status": "blocked",
+      "attempts": 2,
+      "startedAt": "2026-10-11T01:44:58.682Z",
+      "finishedAt": "2026-10-11T01:44:58.684Z",
+      "seconds": 0,
+      "outputs": [],
+      "note": "Voz \"vendedor\" usa provedor pago (elevenlabs) sem orcamento (budget.maxUsdPerEpisode = 0) nem autorizacao do episodio (--authorize-paid-tts)."
+    },
+    "timeline": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "render": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "verify": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "package": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "upload": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    }
+  },
+  "artifacts": {},
+  "costs": [
+    {
+      "stage": "research",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 74.2,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T01:41:41.372Z"
+    },
+    {
+      "stage": "research",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 74.2,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T01:41:41.372Z"
+    },
+    {
+      "stage": "select",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T01:41:41.381Z"
+    },
+    {
+      "stage": "select",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T01:41:41.381Z"
+    },
+    {
+      "stage": "media",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 143.6,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T01:44:04.968Z"
+    },
+    {
+      "stage": "media",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 143.6,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T01:44:04.968Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T01:44:58.681Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T01:44:58.681Z"
+    }
+  ],
+  "errors": [],
+  "youtube": {
+    "status": "not_started"
+  }
+}

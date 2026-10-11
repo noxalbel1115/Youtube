@@ -27,6 +27,11 @@ export const SFX: Record<string, Recipe> = {
     seconds: 1.6,
     filter: `sine=f=659.25:d=1.6:r=${R},volume='0.35*exp(-3*t)':eval=frame[a];sine=f=987.77:d=1.6:r=${R},volume='0.3*exp(-3*(t-0.18))*gte(t,0.18)':eval=frame[b];[a][b]amix=inputs=2:normalize=0`,
   },
+  // Chuveiro ao fundo (fora de quadro): ruido de agua abafado, com entrada e saida suaves
+  shower: {
+    seconds: 3.2,
+    filter: `anoisesrc=d=3.2:c=pink:r=${R}:a=0.6,highpass=f=350,lowpass=f=5200,tremolo=f=13:d=0.25,afade=t=in:d=0.35,afade=t=out:st=2.5:d=0.7,volume=0.9`,
+  },
   // Tosse contida fora de quadro (constrangimento) — ruido com envelope duplo
   cough: {
     seconds: 0.7,

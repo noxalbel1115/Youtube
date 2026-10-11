@@ -87,7 +87,7 @@ fabricante.
 | Fatos | 17 falas factuais, todas ligadas a fatos com fonte |
 | Pronúncia | transcrição automática (Whisper small) da mixagem final × roteiro: WER 1,4% (v8 com Kokoro: 5,4%); todas as falas com WER ≤ 25% |
 | Legendas | 41 blocos, todos com ≥ 0,5 s e ≤ 38 caracteres |
-| Aviso pendente | **licença da voz**: falas da ElevenLabs sem confirmação de assinatura paga (ver seção 5) |
+| Licença da voz | confirmada por você em 11/10/2026 (assinatura paga da ElevenLabs): 18/18 checks ok |
 | Testes de código | 18 testes unitários (inclui upload idempotente com API falsa, trilha de deixas 3D e trava de licença da voz) e teste de fumaça de ponta a ponta (`npm run smoke`) |
 | Retomada | etapas puladas quando entradas não mudam; escolha editorial persistida; cache de voz e transcrição |
 
@@ -100,7 +100,7 @@ fabricante.
 - **Áudio — NÃO ouvido por mim.** Medido por instrumentos (acima). Na v10, a transcrição automática ouviu
   "Ametista" como "Ame cista"/"Amigista" e "Trago uma" como "Traga uma"; atribuo ao "ti" palatalizado ("tchi") e à
   junção de vogais do português falado, não a erro da voz — mas é inferência, confira ouvindo.
-- A aprovação humana fica registrada com `npm run dnn -- review <id> --approve`; hoje o status é **pendente**.
+- Aprovação humana: **aprovado** por você no chat em 11/10/2026 ("para esse está bom"), registrada para o sha256 do MP4.
 
 ## 5. Voz
 
@@ -139,7 +139,7 @@ grafado "talhéres", porque a transcrição ouviu "talhares" duas vezes.
   caractere, que é o multiplicador que `/v1/models` informa para o `eleven_v4`. Registro o que a API informou; não
   sei explicar a diferença (pode ser preço promocional do modelo novo).
 
-**Licença da voz — pendência sua antes de publicar.** Pela ElevenLabs (documentação consultada em 10/10/2026):
+**Licença da voz — você confirmou assinatura paga em 11/10/2026** (`commercialLicenseConfirmed = true`). Pela ElevenLabs (documentação consultada em 10/10/2026):
 "The free plan does not include a commercial license", e o que for publicado a partir do plano gratuito precisa
 citar "elevenlabs.io" ou "11.ai" no título. Conteúdo gerado durante assinatura paga pode ser usado comercialmente
 "indefinitely"; conteúdo gerado fora dela, "before or after", não. Como não consigo ver seu plano, o `verify` avisa e

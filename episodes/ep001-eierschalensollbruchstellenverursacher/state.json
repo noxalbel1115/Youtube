@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "episodeId": "ep001-eierschalensollbruchstellenverursacher",
   "createdAt": "2026-10-10T21:02:48.077Z",
-  "updatedAt": "2026-10-11T00:27:22.016Z",
+  "updatedAt": "2026-10-11T00:45:57.661Z",
   "currentStage": "package",
   "productSlug": "drop-weight-egg-topper",
   "pick": {
@@ -103,23 +103,23 @@
     },
     "verify": {
       "status": "done",
-      "attempts": 9,
-      "startedAt": "2026-10-11T00:10:58.265Z",
-      "finishedAt": "2026-10-11T00:11:43.576Z",
-      "seconds": 45.3,
+      "attempts": 10,
+      "startedAt": "2026-10-11T00:44:56.451Z",
+      "finishedAt": "2026-10-11T00:45:45.901Z",
+      "seconds": 49.4,
       "inputHash": "5bcb6597ea62524385cc408a1c1a530327ede77c759db5944fb7fcafe0f83e9ee81b5a545558850e14066cf74c21edc5f3fe55ab51f76f4a138477166df6a6aa",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/verify-report.json",
         "episodes/ep001-eierschalensollbruchstellenverursacher/build/verify/contact-sheet.jpg"
       ],
-      "note": "17/18 ok, 1 aviso(s)"
+      "note": "18/18 ok, 0 aviso(s)"
     },
     "package": {
       "status": "done",
-      "attempts": 13,
-      "startedAt": "2026-10-11T00:27:04.295Z",
-      "finishedAt": "2026-10-11T00:27:22.015Z",
-      "seconds": 17.7,
+      "attempts": 14,
+      "startedAt": "2026-10-11T00:45:45.927Z",
+      "finishedAt": "2026-10-11T00:45:57.661Z",
+      "seconds": 11.7,
       "inputHash": "1d60ad0d00bb5de22d3b08453e6de5cb709925f000016b079a8a1408432325a4",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/package/metadata.json",
@@ -272,37 +272,37 @@
       "stage": "verify",
       "item": "wall-clock",
       "kind": "observed",
-      "amount": 45.3,
+      "amount": 49.4,
       "unit": "seconds",
       "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-11T00:11:43.576Z"
+      "at": "2026-10-11T00:45:45.901Z"
     },
     {
       "stage": "verify",
       "item": "wall-clock-acumulado",
       "kind": "observed",
-      "amount": 293.6,
+      "amount": 343,
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-11T00:11:43.576Z"
+      "at": "2026-10-11T00:45:45.901Z"
     },
     {
       "stage": "package",
       "item": "wall-clock",
       "kind": "observed",
-      "amount": 17.7,
+      "amount": 11.7,
       "unit": "seconds",
       "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-11T00:27:22.016Z"
+      "at": "2026-10-11T00:45:57.661Z"
     },
     {
       "stage": "package",
       "item": "wall-clock-acumulado",
       "kind": "observed",
-      "amount": 47.7,
+      "amount": 59.4,
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-11T00:27:22.016Z"
+      "at": "2026-10-11T00:45:57.661Z"
     }
   ],
   "errors": [],

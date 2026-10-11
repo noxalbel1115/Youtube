@@ -2,8 +2,6 @@
 
 Arquivo: `episodes/ep001-eierschalensollbruchstellenverursacher/build/episode.mp4` (sha256 `5bcb6597ea62524385cc408a1c1a530327ede77c759db5944fb7fcafe0f83e9e`).
 
-> **Antes de publicar:** falas geradas pela ElevenLabs sem confirmacao de assinatura paga: no plano gratuito nao ha licenca comercial e o titulo precisa citar "elevenlabs.io". Confirme o plano em providers.tts.elevenlabs.commercialLicenseConfirmed ou regenere as falas depois de assinar.
-
 ## Campos do YouTube Studio
 
 **Título**

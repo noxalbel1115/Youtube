@@ -58,8 +58,8 @@
       },
       "elevenlabs": {
         "modelId": "eleven_v4",
-        "commercialLicenseConfirmed": false,
-        "$comment": "commercialLicenseConfirmed: marque true somente se as falas foram geradas durante assinatura paga (Starter ou superior). Sem isso, verify avisa e o upload fica bloqueado."
+        "commercialLicenseConfirmed": true,
+        "$comment": "commercialLicenseConfirmed: true por confirmacao do usuario no chat em 11/10/2026 (assinatura paga, Starter ou superior). Marque true somente se as falas foram geradas durante assinatura paga. Sem isso, verify avisa e o upload fica bloqueado."
       }
     },
     "asr": {

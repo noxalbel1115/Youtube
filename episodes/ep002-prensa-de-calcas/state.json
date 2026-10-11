@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "episodeId": "ep002-prensa-de-calcas",
   "createdAt": "2026-10-11T01:40:19.796Z",
-  "updatedAt": "2026-10-11T02:13:47.522Z",
+  "updatedAt": "2026-10-11T02:42:47.650Z",
   "currentStage": "render",
   "productSlug": "corby-trouser-press",
   "pick": {
@@ -80,30 +80,53 @@
     "timeline": {
       "status": "done",
       "attempts": 1,
-      "outputs": [
-        "episodes/ep002-prensa-de-calcas/build/timeline.json"
-      ],
       "startedAt": "2026-10-11T02:13:47.043Z",
       "finishedAt": "2026-10-11T02:13:47.520Z",
       "seconds": 0.5,
       "inputHash": "3b564994cd1a486616862ce9e2e5c0224573dc45588a195ea898a9cd1c0e29b0",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/build/timeline.json"
+      ],
       "note": "83.17s, 32 beats, 45 blocos de legenda, 1 midias"
     },
     "render": {
       "status": "running",
-      "attempts": 1,
-      "outputs": [],
-      "startedAt": "2026-10-11T02:13:47.522Z"
+      "attempts": 2,
+      "startedAt": "2026-10-11T02:42:47.650Z",
+      "finishedAt": "2026-10-11T02:39:47.617Z",
+      "seconds": 1560.1,
+      "inputHash": "b9cdc270595415e0fe4052ca09ff68cd965745f1aedd0a953d2a4c6416b0bf90",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/build/episode.mp4"
+      ],
+      "note": "render 1549s; loudness antes da normalizacao -19.05 LUFS; sha256 47b942c84de7"
     },
     "verify": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T02:39:47.647Z",
+      "finishedAt": "2026-10-11T02:40:23.267Z",
+      "seconds": 35.6,
+      "inputHash": "47b942c84de75261f6a0f90bc032be78b3006aeaa5f9750cf00767d35aa99d561dcaa58942476bd8b92974d308ec4aa1891b3359abefaa0ed1b6dcaf5353ae0d",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/verify-report.json",
+        "episodes/ep002-prensa-de-calcas/build/verify/contact-sheet.jpg"
+      ],
+      "note": "17/18 ok, 1 aviso(s)"
     },
     "package": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T02:40:23.287Z",
+      "finishedAt": "2026-10-11T02:40:29.414Z",
+      "seconds": 6.1,
+      "inputHash": "d9a5d7e0ab4f7e9c84976cd8085d3f45fb3eccf0ad9908661b8c4ba9665aeebf",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/package/metadata.json",
+        "episodes/ep002-prensa-de-calcas/package/captions.pt-BR.srt",
+        "episodes/ep002-prensa-de-calcas/build/thumbnail.png"
+      ],
+      "note": "titulo: \"45 minutos para uma calça | Protocolo 002\"; descricao 3283 bytes"
     },
     "upload": {
       "status": "pending",
@@ -111,7 +134,13 @@
       "outputs": []
     }
   },
-  "artifacts": {},
+  "artifacts": {
+    "render": {
+      "path": "build/episode.mp4",
+      "sha256": "47b942c84de75261f6a0f90bc032be78b3006aeaa5f9750cf00767d35aa99d56",
+      "bytes": 18947905
+    }
+  },
   "costs": [
     {
       "stage": "media",
@@ -238,6 +267,60 @@
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
       "at": "2026-10-11T02:13:47.520Z"
+    },
+    {
+      "stage": "render",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 1560.1,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T02:39:47.617Z"
+    },
+    {
+      "stage": "render",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 1560.1,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T02:39:47.617Z"
+    },
+    {
+      "stage": "verify",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 35.6,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T02:40:23.267Z"
+    },
+    {
+      "stage": "verify",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 35.6,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T02:40:23.267Z"
+    },
+    {
+      "stage": "package",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 6.1,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T02:40:29.414Z"
+    },
+    {
+      "stage": "package",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 6.1,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T02:40:29.414Z"
     }
   ],
   "errors": [],

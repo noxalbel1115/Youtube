@@ -1,0 +1,122 @@
+{
+  "verifiedAt": "2026-10-11T02:40:23.193Z",
+  "file": "episodes/ep002-prensa-de-calcas/build/episode.mp4",
+  "sha256": "47b942c84de75261f6a0f90bc032be78b3006aeaa5f9750cf00767d35aa99d56",
+  "durationSeconds": 83.2,
+  "automatic": [
+    {
+      "id": "formato.resolucao",
+      "ok": true,
+      "severity": "error",
+      "detail": "1080x1920"
+    },
+    {
+      "id": "formato.fps",
+      "ok": true,
+      "severity": "error",
+      "detail": "fps 30/1"
+    },
+    {
+      "id": "formato.codecs",
+      "ok": true,
+      "severity": "error",
+      "detail": "video h264, audio aac"
+    },
+    {
+      "id": "formato.duracao",
+      "ok": true,
+      "severity": "error",
+      "detail": "83.20s (alvo 60-90s)"
+    },
+    {
+      "id": "formato.shorts",
+      "ok": true,
+      "severity": "error",
+      "detail": "vertical e ate 3 min (classificacao automatica como Short)"
+    },
+    {
+      "id": "video.quadros-pretos",
+      "ok": true,
+      "severity": "error",
+      "detail": "1 trecho(s) preto(s), todos intencionais"
+    },
+    {
+      "id": "audio.loudness",
+      "ok": true,
+      "severity": "error",
+      "detail": "-13.9 LUFS integrados (alvo -14)"
+    },
+    {
+      "id": "audio.pico",
+      "ok": true,
+      "severity": "error",
+      "detail": "true peak -1.3 dBFS (limite -1.5)"
+    },
+    {
+      "id": "audio.silencios",
+      "ok": true,
+      "severity": "warning",
+      "detail": "0 silencio(s) > 1,2 s abaixo de -45 dB; inesperados: []"
+    },
+    {
+      "id": "arquivos.presentes",
+      "ok": true,
+      "severity": "error",
+      "detail": "33 arquivos referenciados presentes"
+    },
+    {
+      "id": "midia.licencas",
+      "ok": true,
+      "severity": "error",
+      "detail": "1 midia(s), todas com licenca verificada na origem"
+    },
+    {
+      "id": "voz.licenca",
+      "ok": true,
+      "severity": "warning",
+      "detail": "vozes: elevenlabs"
+    },
+    {
+      "id": "midia.compartilha-igual",
+      "ok": false,
+      "severity": "warning",
+      "detail": "1 midia(s) CC BY-SA: revisar implicacao de licenciamento do video antes de publicar"
+    },
+    {
+      "id": "fatos.ancorados",
+      "ok": true,
+      "severity": "error",
+      "detail": "19 fala(s) factuais; sem ancora: nenhuma"
+    },
+    {
+      "id": "audio.transcricao-final",
+      "ok": true,
+      "severity": "error",
+      "detail": "WER 2.0% entre roteiro e transcricao automatica da mixagem final (limite 15.0%; 0 fala(s) com palavra estrangeira fora da conta)"
+    },
+    {
+      "id": "audio.transcricao-por-fala",
+      "ok": true,
+      "severity": "warning",
+      "detail": "todas as falas transcritas com WER <= 25%"
+    },
+    {
+      "id": "legendas.leitura",
+      "ok": true,
+      "severity": "warning",
+      "detail": "45 blocos, todos com >= 0,5 s"
+    },
+    {
+      "id": "legendas.tamanho",
+      "ok": true,
+      "severity": "warning",
+      "detail": "todos os blocos com ate 38 caracteres (max. 2 linhas)"
+    }
+  ],
+  "finalTranscript": "Bom dia! A quase 100 anos, uma empresa inglesa combate um único inimigo, o amassado. Está em milhões de quartos de hotel. Funciona assim, abre a prensa, coloca a calça na almofada aquecida e fecha. 15 minutos, 30 ou 45. O de 45 é para os vincos ainda mais difíceis. 45 minutos, uma calça por vez. A almofada aquecida foi inspirada no concorde, para a calça. Em nogueira, mógino, freixo preto, faia ou carvalho. Pronto, desamaçou no banho. Faltam 44 minutos. O manual é claro. Nunca use a prensa no banheiro. No banheiro, a Corby não perde. Ela não tem permissão para entrar. E o manual também proíbe molhar a calça, mas admite que a umidade ajuda a prensar. Por isso, o modelo anterior vinha com ferro de passar. A vapor. 189 libras e 60. 4 e 20 por minuto. Bem mais barato que um concorde. Você não precisava. Até agora!",
+  "manualReview": {
+    "status": "pendente",
+    "sha256": "47b942c84de75261f6a0f90bc032be78b3006aeaa5f9750cf00767d35aa99d56",
+    "notes": []
+  }
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "episodeId": "ep003-iphone-duo",
   "createdAt": "2026-10-11T07:50:13.431Z",
-  "updatedAt": "2026-10-11T09:49:18.266Z",
+  "updatedAt": "2026-10-11T10:44:19.838Z",
   "currentStage": "package",
   "productSlug": "iphone-duo",
   "paidTtsAuthorization": {
@@ -112,17 +112,17 @@
     },
     "package": {
       "status": "done",
-      "attempts": 2,
-      "startedAt": "2026-10-11T09:49:12.823Z",
-      "finishedAt": "2026-10-11T09:49:18.266Z",
-      "seconds": 5.4,
+      "attempts": 3,
+      "startedAt": "2026-10-11T10:43:55.319Z",
+      "finishedAt": "2026-10-11T10:44:19.838Z",
+      "seconds": 24.5,
+      "inputHash": "3b433c8d54065a59c68fcef5c4fbd7e9f19ddda4dd6f93860b38fcdb9bf9be7b",
       "outputs": [
         "episodes/ep003-iphone-duo/package/metadata.json",
         "episodes/ep003-iphone-duo/package/captions.pt-BR.srt",
         "episodes/ep003-iphone-duo/build/thumbnail.png"
       ],
-      "inputHash": "3b433c8d54065a59c68fcef5c4fbd7e9f19ddda4dd6f93860b38fcdb9bf9be7b",
-      "note": "titulo: \"O primeiro celular dobrável (da Apple) | Protocolo 003\"; descricao 4161 bytes"
+      "note": "titulo: \"O primeiro celular dobrável (da Apple) | Protocolo 003\"; descricao 4160 bytes"
     },
     "upload": {
       "status": "pending",
@@ -304,19 +304,19 @@
       "stage": "package",
       "item": "wall-clock",
       "kind": "observed",
-      "amount": 5.4,
+      "amount": 24.5,
       "unit": "seconds",
       "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-11T09:49:18.266Z"
+      "at": "2026-10-11T10:44:19.838Z"
     },
     {
       "stage": "package",
       "item": "wall-clock-acumulado",
       "kind": "observed",
-      "amount": 5.4,
+      "amount": 29.9,
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-11T09:49:18.266Z"
+      "at": "2026-10-11T10:44:19.838Z"
     }
   ],
   "errors": [

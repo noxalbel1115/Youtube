@@ -7,6 +7,8 @@ import {accessToken} from '../youtube/auth.js';
 import {VoiceManifest, type YoutubeState} from '../schemas.js';
 import {voiceLicenseIssue} from '../providers/tts/index.js';
 import {BlockedError, type Stage, type Ctx} from './types.js';
+import {localeFor, type Language} from '../core/locale.js';
+import {captionsFile} from './package.js';
 
 /** Operacoes remotas usadas pelo upload. Injetaveis para testes (ver test/upload.test.ts). */
 export interface YoutubeOps {
@@ -163,10 +165,12 @@ export const uploadStage: Stage = {
       if (ctx.cfg.youtube.uploadCaptions && s.captions?.status !== 'done') {
         const existing = await ops.listCaptions(token, videoId);
         quota += yt.QUOTA.captionsList;
-        const ours = existing.find((c: any) => c.snippet?.name === 'DND pt-BR');
+        const lang = (readJson<any>(path.join(ctx.p.packageDir, 'metadata.json')).defaultLanguage ?? 'pt-BR') as Language;
+        const capName = localeFor(ctx.cfg, lang).text.captionsName;
+        const ours = existing.find((c: any) => c.snippet?.name === capName);
         if (ours) s.captions = {status: 'done', id: ours.id};
         else {
-          const id = await ops.insertCaptions(token, videoId, path.join(ctx.p.packageDir, 'captions.pt-BR.srt'), 'DND pt-BR');
+          const id = await ops.insertCaptions(token, videoId, path.join(ctx.p.packageDir, captionsFile(lang)), capName, lang);
           quota += yt.QUOTA.captionsInsert;
           s.captions = {status: 'done', id};
         }

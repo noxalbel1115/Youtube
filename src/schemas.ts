@@ -209,6 +209,8 @@ export type Beat = z.infer<typeof Beat>;
 export const Script = z.object({
   version: z.number().int().positive(),
   episodeId: z.string(),
+  /** Idioma das falas, cartelas e descricao (vozes e textos do canal em config: channel / locales). */
+  language: z.enum(['pt-BR', 'en']).default('pt-BR'),
   productSlug: z.string(),
   workingTitle: z.string(),
   logline: z.string(),
@@ -222,6 +224,8 @@ export const Script = z.object({
     synopsis: z.string().describe('1-2 frases para a descricao, sem entregar a piada.'),
     tags: z.array(z.string()).max(15),
     thumbnailBeatId: z.string(),
+    /** Nome do produto na descricao, quando product.json esta em outro idioma. */
+    productName: z.string().optional(),
   }),
   changelog: z.array(z.object({version: z.number(), note: z.string()})).default([]),
 });
@@ -277,7 +281,7 @@ export const Timeline = z.object({
   width: z.number(),
   height: z.number(),
   durationInFrames: z.number(),
-  brand: z.object({name: z.string(), motto: z.string(), salesmanName: z.string(), salesmanTitle: z.string()}),
+  brand: z.object({name: z.string(), motto: z.string(), salesmanName: z.string(), salesmanTitle: z.string(), shortName: z.string().optional()}),
   product: z.object({name: z.string(), brand: z.string()}),
   beats: z.array(TimelineBeat),
   captions: z.array(CaptionChunk),
@@ -285,6 +289,8 @@ export const Timeline = z.object({
   roomToneFile: z.string().optional(),
   /** Rotulo do caso na faixa institucional (ex.: "PROTOCOLO 002"), derivado do numero do episodio. */
   caseLabel: z.string().optional(),
+  /** Textos fixos da tela no idioma do episodio (sem valor: portugues). */
+  ui: z.object({factsheet: z.string(), dept: z.string()}).optional(),
 });
 export type Timeline = z.infer<typeof Timeline>;
 

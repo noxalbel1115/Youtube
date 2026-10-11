@@ -114,10 +114,11 @@ export const PaperTexture: React.FC = () => (
   />
 );
 
-export const Seal: React.FC<{size?: number; color?: string}> = ({size = 120, color = C.ink}) => (
+/** Selo do Departamento: sigla e numero (no idioma do episodio; padrao em portugues). */
+export const Seal: React.FC<{size?: number; color?: string; shortName?: string; dept?: string}> = ({size = 120, color = C.ink, shortName = 'DND', dept = 'DEPTO. 001'}) => (
   <div style={{width: size, height: size, border: `${Math.max(3, size / 28)}px solid ${color}`, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color, fontFamily: SANS}}>
-    <div style={{fontWeight: 700, fontSize: size * 0.34, letterSpacing: size * 0.02, lineHeight: 1}}>DND</div>
-    <div style={{fontFamily: MONO, fontSize: size * 0.1, marginTop: size * 0.06, letterSpacing: 1}}>DEPTO. 001</div>
+    <div style={{fontWeight: 700, fontSize: size * 0.34, letterSpacing: size * 0.02, lineHeight: 1}}>{shortName}</div>
+    <div style={{fontFamily: MONO, fontSize: size * 0.1, marginTop: size * 0.06, letterSpacing: 1}}>{dept}</div>
   </div>
 );
 
@@ -149,14 +150,14 @@ export const Stamp: React.FC<{text: string; atFrame: number; top?: number}> = ({
   );
 };
 
-export const TitleCard: React.FC<{beat: TimelineBeat; brandName: string}> = ({beat, brandName}) => {
+export const TitleCard: React.FC<{beat: TimelineBeat; brandName: string; shortName?: string; dept?: string}> = ({beat, brandName, shortName, dept}) => {
   const {fps} = useVideoConfig();
   const v = beat.visual;
   return (
     <AbsoluteFill style={{background: C.paper}}>
       <PaperTexture />
       <div style={{position: 'absolute', left: SAFE.left, right: 150, top: 300, color: C.ink, fontFamily: SANS}}>
-        <Seal size={130} />
+        <Seal size={130} shortName={shortName} dept={dept} />
         <div style={{marginTop: 44, fontSize: 34, fontWeight: 600, letterSpacing: 5, textTransform: 'uppercase', lineHeight: 1.3}}>{brandName}</div>
         <div style={{height: 4, background: C.ink, margin: '30px 0 26px', width: 260}} />
         {v.footnote ? <div style={{fontFamily: MONO, fontSize: 32, color: C.inkSoft}}>{v.footnote}</div> : null}
@@ -186,7 +187,7 @@ export const TextCard: React.FC<{beat: TimelineBeat}> = ({beat}) => {
 };
 
 /** Ficha tecnica: linhas "Rotulo: valor" no body; fonte e data no footnote. */
-export const FactSheet: React.FC<{beat: TimelineBeat}> = ({beat}) => {
+export const FactSheet: React.FC<{beat: TimelineBeat; label?: string}> = ({beat, label = 'FICHA TÉCNICA'}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const scale = useCardScale(beat);
@@ -199,7 +200,7 @@ export const FactSheet: React.FC<{beat: TimelineBeat}> = ({beat}) => {
     <AbsoluteFill style={{background: C.paper}}>
       <PaperTexture />
       <div style={{position: 'absolute', left: SAFE.left, right: 150, top: 340, color: C.ink, fontFamily: SANS, transform: `scale(${scale})`, transformOrigin: '0% 30%'}}>
-        <div style={{fontFamily: MONO, fontSize: 30, letterSpacing: 4, color: C.inkSoft}}>FICHA TÉCNICA</div>
+        <div style={{fontFamily: MONO, fontSize: 30, letterSpacing: 4, color: C.inkSoft}}>{label}</div>
         <div style={{fontSize: 60, fontWeight: 700, marginTop: 12, lineHeight: 1.1, hyphens: 'manual', overflowWrap: 'anywhere'}}>{v.heading}</div>
         <div style={{height: 3, background: C.ink, margin: '30px 0 10px'}} />
         {rows.map(([k, val], i) => {
@@ -219,13 +220,13 @@ export const FactSheet: React.FC<{beat: TimelineBeat}> = ({beat}) => {
   );
 };
 
-export const EndCard: React.FC<{beat: TimelineBeat; brandName: string; motto: string}> = ({beat, brandName, motto}) => {
+export const EndCard: React.FC<{beat: TimelineBeat; brandName: string; motto: string; shortName?: string; dept?: string}> = ({beat, brandName, motto, shortName, dept}) => {
   const frame = useCurrentFrame();
   const o = interpolate(frame, [0, 8], [0, 1], {extrapolateRight: 'clamp'});
   return (
     <AbsoluteFill style={{background: C.ink, color: C.paper, fontFamily: SANS}}>
       <div style={{position: 'absolute', left: SAFE.left, right: 150, top: 470, opacity: o}}>
-        <Seal size={150} color={C.paper} />
+        <Seal size={150} color={C.paper} shortName={shortName} dept={dept} />
         <div style={{marginTop: 50, fontSize: 38, fontWeight: 600, letterSpacing: 5, textTransform: 'uppercase', lineHeight: 1.3}}>{brandName}</div>
         <div style={{height: 4, background: C.paper, margin: '34px 0', width: 260, opacity: 0.8}} />
         <div style={{fontSize: 70, fontWeight: 500, fontStyle: 'italic', lineHeight: 1.15}}>{beat.visual.heading ?? motto}</div>

@@ -5,6 +5,7 @@ import {readJson, sha256File, writeJsonAtomic} from '../core/state.js';
 import {PYTHON_BIN, ROOT, rel} from '../core/paths.js';
 import {run, ffprobeJson} from '../core/exec.js';
 import {wordErrorRate} from '../core/text.js';
+import {localeFor} from '../core/locale.js';
 import {voiceLicenseIssue} from '../providers/tts/index.js';
 import type {Stage} from './types.js';
 
@@ -124,9 +125,9 @@ export const verifyStage: Stage = {
     const wav = path.join(ctx.p.verifyDir, 'final.wav');
     fs.mkdirSync(ctx.p.verifyDir, {recursive: true});
     await run('ffmpeg', ['-y', '-v', 'error', '-i', file, '-ac', '1', '-ar', '16000', wav]);
-    const asr = JSON.parse((await run(PYTHON_BIN, [path.join(ROOT, 'python', 'asr.py'), ctx.cfg.providers.asr.model, wav])).stdout).files[0];
+    const asr = JSON.parse((await run(PYTHON_BIN, [path.join(ROOT, 'python', 'asr.py'), '--lang', localeFor(ctx.cfg, script.language).asr, ctx.cfg.providers.asr.model, wav])).stdout).files[0];
     const refText = script.beats.filter((b) => b.text).map((b) => b.caption ?? b.text).join(' ');
-    const wer = wordErrorRate(refText, asr.text);
+    const wer = wordErrorRate(refText, asr.text, script.language);
     const skipped = script.beats.filter((b) => b.text && b.skipAsrCheck);
     // Palavras estrangeiras marcadas nao contam como erro: tolerancia proporcional ao numero de palavras excluidas.
     const skippedWords = skipped.reduce((a, b) => a + (b.caption ?? b.text!).split(/\s+/).length, 0);
@@ -136,7 +137,7 @@ export const verifyStage: Stage = {
     const lineIssues = voice.lines.filter((l) => {
       const b = script.beats.find((x) => x.id === l.beatId)!;
       const shortLine = (b.caption ?? b.text!).split(/\s+/).length < 3;
-      return !b.skipAsrCheck && !shortLine && wordErrorRate(b.caption ?? l.spokenText, l.asrText) > 0.25;
+      return !b.skipAsrCheck && !shortLine && wordErrorRate(b.caption ?? l.spokenText, l.asrText, script.language) > 0.25;
     });
     add('audio.transcricao-por-fala', lineIssues.length === 0, lineIssues.length ? lineIssues.map((l) => `${l.beatId}: "${l.asrText}"`).join(' | ') : 'todas as falas transcritas com WER <= 25%', 'warning');
 

@@ -1,0 +1,170 @@
+{
+  "updatedAt": "2026-10-11T08:39:34.798Z",
+  "items": [
+    {
+      "id": "m1",
+      "kind": "image",
+      "title": "Corby electric trouser press open",
+      "creator": "Avron",
+      "provider": "wikimedia",
+      "landingUrl": "https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_open.JPG",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Corby_electric_trouser_press_open.JPG?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original",
+      "license": "by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "showsExactProduct": true,
+      "description": "Prensa Corby de parede, aberta, num quarto de hotel: painel frontal imitando mogno com pictogramas de instrução, braços-alavanca metálicos e a almofada de prensagem escura à mostra. Tomada visível embaixo. 1944 x 2592 px, sem pessoas. Modelo antigo de hotel, não o 7700 atual. Licença CC BY-SA 4.0 conferida na página File: do Commons (“Own work”, Avron, 01/01/2014).",
+      "providerRef": "File:Corby_electric_trouser_press_open.JPG",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Compartilha-Igual: se o video for considerado obra adaptada, as contribuicoes adaptadas devem ser licenciadas sob BY-SA (ou compativel). O YouTube so oferece CC BY como opcao de licenca; revisar antes de publicar.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "attribution": "\"Corby electric trouser press open\" por Avron (https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_open.JPG), CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "localFile": "media/m1.jpg",
+      "sha256": "bd89986323a5e7451dc4c818c8a86370e7da4c94841c3d2cd514caa4b84664be",
+      "width": 1944,
+      "height": 2592,
+      "verification": {
+        "at": "2026-10-11T08:34:00.845Z",
+        "method": "wikimedia-wikitext",
+        "ok": true,
+        "detail": "modelos de licenca encontrados: cc-by-sa-4.0; autor na origem: [[User:Avron; arquivo obtido via arquivo original"
+      },
+      "status": "usable"
+    },
+    {
+      "id": "m2",
+      "kind": "image",
+      "title": "Corby electric trouser press closed",
+      "creator": "Avron",
+      "provider": "wikimedia",
+      "landingUrl": "https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_closed.JPG",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Corby_electric_trouser_press_closed.JPG",
+      "license": "by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "showsExactProduct": true,
+      "description": "A mesma prensa Corby de parede, fechada: retângulo marrom de “madeira” com pictogramas brancos de uso no topo e alavancas laterais. Parece um armário pendurado na parede, com fio e tomada embaixo. 1944 x 2592 px, sem pessoas. Licença CC BY-SA 4.0 conferida no Commons.",
+      "providerRef": "File:Corby_electric_trouser_press_closed.JPG",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Compartilha-Igual: se o video for considerado obra adaptada, as contribuicoes adaptadas devem ser licenciadas sob BY-SA (ou compativel). O YouTube so oferece CC BY como opcao de licenca; revisar antes de publicar.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "attribution": "\"Corby electric trouser press closed\" por Avron (https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_closed.JPG), CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "verification": {
+        "at": "2026-10-11T08:36:03.850Z",
+        "method": "erro",
+        "ok": false,
+        "detail": "download falhou apos 5 tentativas: https://upload.wikimedia.org/wikipedia/commons/b/ba/Corby_electric_trouser_press_closed.JPG?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original"
+      },
+      "status": "excluded",
+      "excludedReason": "falha na verificacao/download: download falhou apos 5 tentativas: https://upload.wikimedia.org/wikipedia/commons/b/ba/Corby_electric_trouser_press_closed.JPG?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original"
+    },
+    {
+      "id": "m3",
+      "kind": "image",
+      "title": "Corby electric trouser press side",
+      "creator": "Avron",
+      "provider": "wikimedia",
+      "landingUrl": "https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_side.JPG",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/Corby_electric_trouser_press_side.JPG",
+      "license": "by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "showsExactProduct": true,
+      "description": "Lateral da prensa com a placa legível: logotipo “CORBY of WINDSOR” com o Castelo de Windsor, “A30D TROUSER PRESS”, “RATING 220V ~ 157W / 240V ~ 186W”, “MADE IN ENGLAND by JOHN CORBY LIMITED … Andover” e o selo BEAB. Ótima para um close “técnico”. 1944 x 2592 px, foto um pouco escura, sem pessoas. Licença CC BY-SA 4.0 conferida no Commons.",
+      "providerRef": "File:Corby_electric_trouser_press_side.JPG",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Compartilha-Igual: se o video for considerado obra adaptada, as contribuicoes adaptadas devem ser licenciadas sob BY-SA (ou compativel). O YouTube so oferece CC BY como opcao de licenca; revisar antes de publicar.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "attribution": "\"Corby electric trouser press side\" por Avron (https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_side.JPG), CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "verification": {
+        "at": "2026-10-11T08:38:03.952Z",
+        "method": "erro",
+        "ok": false,
+        "detail": "download falhou apos 5 tentativas: https://upload.wikimedia.org/wikipedia/commons/1/15/Corby_electric_trouser_press_side.JPG?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original"
+      },
+      "status": "excluded",
+      "excludedReason": "falha na verificacao/download: download falhou apos 5 tentativas: https://upload.wikimedia.org/wikipedia/commons/1/15/Corby_electric_trouser_press_side.JPG?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original"
+    },
+    {
+      "id": "m4",
+      "kind": "image",
+      "title": "Corby electric trouser press top",
+      "creator": "Avron",
+      "provider": "wikimedia",
+      "landingUrl": "https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_top.JPG",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Corby_electric_trouser_press_top.JPG?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original",
+      "license": "by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "showsExactProduct": true,
+      "description": "Topo de uma prensa preta com as inscrições “CORBY 3000 ELECTRIC TROUSER PRESS”, botão “ON/CANCEL”, luz vermelha e o aviso “30 MINUTES PRESS”, mais uma bandeja com marcas de uso. 2592 x 1944 px (paisagem), sem pessoas. Modelo antigo (Corby 3000). Licença CC BY-SA 4.0 conferida no Commons.",
+      "providerRef": "File:Corby_electric_trouser_press_top.JPG",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Compartilha-Igual: se o video for considerado obra adaptada, as contribuicoes adaptadas devem ser licenciadas sob BY-SA (ou compativel). O YouTube so oferece CC BY como opcao de licenca; revisar antes de publicar.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "attribution": "\"Corby electric trouser press top\" por Avron (https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_top.JPG), CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "localFile": "media/m4.jpg",
+      "sha256": "11d08fc5c65b2b19959328d13bbe7315ff10d67628ca1f465b2caeb357254d6f",
+      "width": 2592,
+      "height": 1944,
+      "verification": {
+        "at": "2026-10-11T08:39:00.944Z",
+        "method": "wikimedia-wikitext",
+        "ok": true,
+        "detail": "modelos de licenca encontrados: cc-by-sa-4.0; autor na origem: [[User:Avron; arquivo obtido via arquivo original"
+      },
+      "status": "usable"
+    },
+    {
+      "id": "m5",
+      "kind": "image",
+      "title": "Hotel room at Heathrow had this awesome 70's trousers press",
+      "creator": "Tony in WA (Tony Kent)",
+      "provider": "openverse",
+      "landingUrl": "https://www.flickr.com/photos/32146215@N06/5734157164",
+      "fileUrl": "https://live.staticflickr.com/3638/5734157164_27159f4f9d_b.jpg",
+      "license": "by-sa",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "showsExactProduct": true,
+      "description": "Prensa Corby de parede num quarto de hotel em Heathrow (foto de 29/04/2011), com uma calça bege dentro. O topo de madeira escura traz a faixa ilustrada “THE CORBY TROUSER PRESS – ALWAYS AT YOUR SERVICE” e um controle giratório com LED vermelho aceso, rotulado “Corby” (número do modelo pouco legível, talvez 5000). 1024 x 768 px, sem pessoas. Licença CC BY-SA 2.0 conferida na página do Flickr.",
+      "providerRef": "c5169026-e408-4261-af48-d961d9711b37",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Compartilha-Igual: se o video for considerado obra adaptada, as contribuicoes adaptadas devem ser licenciadas sob BY-SA (ou compativel). O YouTube so oferece CC BY como opcao de licenca; revisar antes de publicar.",
+        "Versao 2.0: a licenca nao cobre direitos sui generis de banco de dados; irrelevante para fotos.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "attribution": "\"Hotel room at Heathrow had this awesome 70's trousers press\" por Tony in WA (Tony Kent) (https://www.flickr.com/photos/32146215@N06/5734157164), CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/). Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.",
+      "localFile": "media/m5.jpg",
+      "sha256": "604209443221bace2cd321720dc69db93e79cc5b41763dd3cd61e2eb50435e23",
+      "width": 1024,
+      "height": 768,
+      "verification": {
+        "at": "2026-10-11T08:39:34.147Z",
+        "method": "openverse-api (fonte: flickr, pagina: https://www.flickr.com/photos/32146215@N06/5734157164)",
+        "ok": true,
+        "detail": "licenca declarada na origem segundo Openverse: by-sa 2.0; atribuicao: \"Hotel room at Heathrow had this awesome 70's trousers press\" by Tony in WA is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/.; autor na origem: Tony in WA; arquivo obtido via arquivo original"
+      },
+      "status": "usable"
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "ep002-trouser-press-en",
+  "createdAt": "2026-10-11T08:31:09.114Z",
+  "updatedAt": "2026-10-11T09:29:01.940Z",
+  "currentStage": "package",
+  "productSlug": "corby-trouser-press",
+  "pick": {
+    "slug": "corby-trouser-press",
+    "reason": "Versao em ingles do Protocolo 002 (ep002-prensa-de-calcas), pedida pelo usuario no chat em 11/10/2026 depois de aprovar a versao em portugues; mesma pesquisa, mesma escolha editorial."
+  },
+  "paidTtsAuthorization": {
+    "at": "2026-10-11T08:39:52.339Z",
+    "note": "Usuario pediu no chat em 11/10/2026 'Agora gere uma versao em ingles', depois de aprovar a versao em portugues do Protocolo 002 feita com voz ElevenLabs que ele autorizou ('Sim e mantem'); mesma voz paga, ~100 creditos estimados"
+  },
+  "scriptVersion": 1,
+  "stages": {
+    "research": {
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:31:12.850Z",
+      "finishedAt": "2026-10-11T08:33:26.894Z",
+      "seconds": 134,
+      "inputHash": "e78f94763d884ab4e436633ded99e24c43a984a4433b0f7f8d64dc60074359d7",
+      "outputs": [
+        "episodes/ep002-trouser-press-en/research/candidates.json"
+      ],
+      "note": "12 candidatos validados; links: 60/69 responderam < 400"
+    },
+    "select": {
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:33:26.899Z",
+      "finishedAt": "2026-10-11T08:33:26.912Z",
+      "seconds": 0,
+      "inputHash": "0e9558816e7ccb52ad66a81cec203b2fb185c864ca9a08a3acbbb3a066eb6d91",
+      "outputs": [
+        "episodes/ep002-trouser-press-en/selection.json",
+        "episodes/ep002-trouser-press-en/product.json"
+      ],
+      "note": "selecionado: Prensa de calças elétrica Corby (Corby Trouser Press 7700 / Executive) (4.7)"
+    },
+    "media": {
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:33:26.920Z",
+      "finishedAt": "2026-10-11T08:39:34.800Z",
+      "seconds": 367.9,
+      "inputHash": "e7359f464ab5e651a8a94f97c2df2c37c6cbc12e3d84704eb5d3d90728a0a20f",
+      "outputs": [
+        "episodes/ep002-trouser-press-en/media.json"
+      ],
+      "note": "3/5 midias utilizaveis"
+    },
+    "script": {
+      "status": "done",
+      "attempts": 2,
+      "startedAt": "2026-10-11T08:39:52.394Z",
+      "finishedAt": "2026-10-11T08:39:52.409Z",
+      "seconds": 0,
+      "inputHash": "94dee0465c4c637b18d19451ba6b223713a5541cf646dc5cbfbb80efcc81e1f3",
+      "outputs": [
+        "episodes/ep002-trouser-press-en/script.json",
+        "episodes/ep002-trouser-press-en/script-history/v1.json"
+      ],
+      "note": "roteiro v1, 32 beats, ~90s estimados"
+    },
+    "voice": {
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:39:52.502Z",
+      "finishedAt": "2026-10-11T08:42:50.879Z",
+      "seconds": 178.4,
+      "inputHash": "818ce84da78744e8163101451e8836ab8314f58ab52c7ff896a1c3e1b0316e60",
+      "outputs": [
+        "episodes/ep002-trouser-press-en/build/voice.json"
+      ],
+      "note": "27 falas, 59.4s de fala; 0 com divergencia de transcricao"
+    },
+    "timeline": {
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T08:43:43.980Z",
+      "finishedAt": "2026-10-11T08:43:44.830Z",
+      "seconds": 0.8,
+      "inputHash": "8939f1a3bfa2580a8e2b402c424bbc5db08d92cdbaa5d6588ca2c0d75f4d15cd",
+      "outputs": [
+        "episodes/ep002-trouser-press-en/build/timeline.json"
+      ],
+      "note": "85.47s, 32 beats, 43 blocos de legenda, 1 midias"
+    },
+    "render": {
+      "status": "done",
+      "attempts": 2,
+      "startedAt": "2026-10-11T09:25:39.617Z",
+      "finishedAt": "2026-10-11T09:26:36.725Z",
+      "seconds": 57.1,
+      "inputHash": "eeb190da5beac8d6f17f8b52a469d5b8b3692ba077988934a4694523f9dd1d59",
+      "outputs": [
+        "episodes/ep002-trouser-press-en/build/episode.mp4"
+      ],
+      "note": "render bruto reaproveitado; loudness antes da normalizacao -19.40 LUFS; true peak -1.4 dBTP (alvo do loudnorm -2.7); sha256 32bddf092cb9"
+    },
+    "verify": {
+      "status": "done",
+      "attempts": 2,
+      "startedAt": "2026-10-11T09:26:36.788Z",
+      "finishedAt": "2026-10-11T09:27:46.211Z",
+      "seconds": 69.4,
+      "inputHash": "32bddf092cb92c4f191b189179e74d6e278d3c2e0fb988220f753c2a1ec05638b27a9ebb6bb37f0ff79c54cd6f06591304ee92460a7743779ed55ace7fff54d5",
+      "outputs": [
+        "episodes/ep002-trouser-press-en/verify-report.json",
+        "episodes/ep002-trouser-press-en/build/verify/contact-sheet.jpg"
+      ],
+      "note": "16/18 ok, 2 aviso(s)"
+    },
+    "package": {
+      "status": "done",
+      "attempts": 2,
+      "startedAt": "2026-10-11T09:28:48.980Z",
+      "finishedAt": "2026-10-11T09:29:01.940Z",
+      "seconds": 13,
+      "inputHash": "70207e8e96a71df0075cea10475f90b94290bfa416d66876e3984eb4f69c0140",
+      "outputs": [
+        "episodes/ep002-trouser-press-en/package/metadata.json",
+        "episodes/ep002-trouser-press-en/package/captions.en.srt",
+        "episodes/ep002-trouser-press-en/build/thumbnail.png"
+      ],
+      "note": "titulo: \"45 minutes for one pair of trousers | Protocol 002\"; descricao 3164 bytes"
+    },
+    "upload": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    }
+  },
+  "artifacts": {
+    "render": {
+      "path": "build/episode.mp4",
+      "sha256": "32bddf092cb92c4f191b189179e74d6e278d3c2e0fb988220f753c2a1ec05638",
+      "bytes": 17061090
+    }
+  },
+  "costs": [
+    {
+      "stage": "research",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 134,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:33:26.895Z"
+    },
+    {
+      "stage": "research",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 134,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:33:26.895Z"
+    },
+    {
+      "stage": "select",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:33:26.913Z"
+    },
+    {
+      "stage": "select",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:33:26.913Z"
+    },
+    {
+      "stage": "media",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 367.9,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:39:34.800Z"
+    },
+    {
+      "stage": "media",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 367.9,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:39:34.800Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:39:52.409Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:39:52.410Z"
+    },
+    {
+      "stage": "voice",
+      "item": "elevenlabs-credits",
+      "kind": "observed",
+      "amount": 101,
+      "unit": "elevenlabs-credits",
+      "basis": "creditos informados pela API (cabecalho character-cost) para 914 caracteres na ultima sintese (27 fala(s)); valor acumulado do episodio, inclusive ressinteses. Custo em dinheiro depende do plano contratado.",
+      "at": "2026-10-11T08:40:21.049Z"
+    },
+    {
+      "stage": "voice",
+      "item": "tts-tempo",
+      "kind": "observed",
+      "amount": 34.5,
+      "unit": "seconds",
+      "basis": "27 fala(s) sintetizadas na ultima sintese (elevenlabs)",
+      "at": "2026-10-11T08:40:26.970Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 178.4,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:42:50.879Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 178.4,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:42:50.879Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0.8,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T08:43:44.830Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0.8,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T08:43:44.830Z"
+    },
+    {
+      "stage": "render",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 57.1,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T09:26:36.726Z"
+    },
+    {
+      "stage": "render",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 2280,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T09:26:36.726Z"
+    },
+    {
+      "stage": "verify",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 69.4,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T09:27:46.211Z"
+    },
+    {
+      "stage": "verify",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 69.4,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T09:27:46.211Z"
+    },
+    {
+      "stage": "package",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 13,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T09:29:01.940Z"
+    },
+    {
+      "stage": "package",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 26.4,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T09:29:01.940Z"
+    }
+  ],
+  "errors": [
+    {
+      "stage": "verify",
+      "at": "2026-10-11T09:22:56.570Z",
+      "message": "Verificacao automatica reprovou: audio.pico (true peak -0.6 dBFS (limite -1.5))"
+    }
+  ],
+  "youtube": {
+    "status": "not_started"
+  }
+}

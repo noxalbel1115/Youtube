@@ -26,13 +26,32 @@ export async function bundleFor(publicDir: string): Promise<string> {
   return url;
 }
 
-/** Normalizacao de loudness em duas passagens (EBU R128) para o alvo do canal; video copiado sem recodificar. */
-export async function loudnorm(input: string, output: string, target: number, tp: number): Promise<{measured: any}> {
-  const pass1 = await run('ffmpeg', ['-hide_banner', '-i', input, '-af', `loudnorm=I=${target}:TP=${tp}:LRA=11:print_format=json`, '-f', 'null', '-'], {allowFail: false});
-  const json = JSON.parse(pass1.stderr.slice(pass1.stderr.lastIndexOf('{'), pass1.stderr.lastIndexOf('}') + 1));
-  const af = `loudnorm=I=${target}:TP=${tp}:LRA=11:measured_I=${json.input_i}:measured_TP=${json.input_tp}:measured_LRA=${json.input_lra}:measured_thresh=${json.input_thresh}:offset=${json.target_offset}:linear=true`;
-  await run('ffmpeg', ['-y', '-v', 'error', '-i', input, '-c:v', 'copy', '-af', af, '-ar', '48000', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', output]);
-  return {measured: json};
+/** True peak (dBTP) do audio de um arquivo, medido pelo ebur128 do FFmpeg (o mesmo instrumento do verify). */
+export async function truePeak(file: string): Promise<number> {
+  const r = await run('ffmpeg', ['-hide_banner', '-nostats', '-i', file, '-af', 'ebur128=peak=true', '-f', 'null', '-']);
+  return Number(r.stderr.match(/Peak:\s+(-?[\d.]+) dBFS/g)?.pop()?.match(/-?[\d.]+/)?.[0]);
+}
+
+/**
+ * Normalizacao de loudness em duas passagens (EBU R128) para o alvo do canal; video copiado sem recodificar.
+ * O AAC pode passar do pico pedido (overshoot na codificacao): o pico e medido no arquivo final e, se passar do
+ * limite, a normalizacao e refeita com mais folga (ate 3 vezes).
+ */
+export async function loudnorm(input: string, output: string, target: number, tp: number): Promise<{measured: any; peak: number; tpTarget: number}> {
+  let tpTarget = tp;
+  let json: any;
+  let peak = Infinity;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    const pass1 = await run('ffmpeg', ['-hide_banner', '-i', input, '-af', `loudnorm=I=${target}:TP=${tpTarget}:LRA=11:print_format=json`, '-f', 'null', '-'], {allowFail: false});
+    json = JSON.parse(pass1.stderr.slice(pass1.stderr.lastIndexOf('{'), pass1.stderr.lastIndexOf('}') + 1));
+    const af = `loudnorm=I=${target}:TP=${tpTarget}:LRA=11:measured_I=${json.input_i}:measured_TP=${json.input_tp}:measured_LRA=${json.input_lra}:measured_thresh=${json.input_thresh}:offset=${json.target_offset}:linear=true`;
+    await run('ffmpeg', ['-y', '-v', 'error', '-i', input, '-c:v', 'copy', '-af', af, '-ar', '48000', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', output]);
+    peak = await truePeak(output);
+    if (!(peak > tp + 0.3)) break;
+    log.warn(`true peak ${peak} dBTP no arquivo final (alvo ${tp}); refazendo a normalizacao com alvo ${(tpTarget - (peak - tp) - 0.3).toFixed(1)}`);
+    tpTarget = Math.round((tpTarget - (peak - tp) - 0.3) * 10) / 10;
+  }
+  return {measured: json, peak, tpTarget};
 }
 
 export async function renderThumbnail(ctx: Ctx, frame: number, text?: string): Promise<string> {
@@ -62,6 +81,20 @@ export const renderStage: Stage = {
   async run(ctx) {
     const timeline = Timeline.parse(readJson(ctx.p.timeline));
     const exe = browserExecutable();
+    // O render bruto (render-raw.mp4) e caro (~25-40 min com 3D). Se as entradas sao as mesmas da ultima vez,
+    // so a normalizacao de audio e refeita (ex.: --force render depois de ajustar o loudnorm).
+    const rawKey = renderStage.inputHash(ctx);
+    const sidecar = `${ctx.p.renderRaw}.json`;
+    const reuse = fs.existsSync(ctx.p.renderRaw) && fs.existsSync(sidecar) && readJson<{inputHash: string}>(sidecar).inputHash === rawKey;
+    if (reuse) {
+      log.info('render bruto com as mesmas entradas encontrado: refazendo so a normalizacao de audio');
+      const {measured, peak, tpTarget} = await loudnorm(ctx.p.renderRaw, ctx.p.render, ctx.cfg.format.loudnessTargetLufs, ctx.cfg.format.truePeakDb);
+      recordArtifact(ctx.state, 'render', ctx.p.render, ctx.p.dir);
+      return {
+        outputs: [rel(ctx.p.render)],
+        note: `render bruto reaproveitado; loudness antes da normalizacao ${measured.input_i} LUFS; true peak ${peak} dBTP (alvo do loudnorm ${tpTarget}); sha256 ${sha256File(ctx.p.render).slice(0, 12)}`,
+      };
+    }
     // Cenas 3D (three.js) exigem WebGL; sem GPU, a documentacao do Remotion recomenda "swangle" (renderizacao por software).
     const has3d = timeline.beats.some((b) => b.visual.type === 'scene3d');
     const chromiumOptions = has3d ? {gl: 'swangle' as const} : {};
@@ -91,11 +124,12 @@ export const renderStage: Stage = {
       },
     });
     const renderSeconds = (Date.now() - t0) / 1000;
-    const {measured} = await loudnorm(ctx.p.renderRaw, ctx.p.render, ctx.cfg.format.loudnessTargetLufs, ctx.cfg.format.truePeakDb);
+    fs.writeFileSync(sidecar, JSON.stringify({inputHash: rawKey, renderedAt: new Date().toISOString()}));
+    const {measured, peak, tpTarget} = await loudnorm(ctx.p.renderRaw, ctx.p.render, ctx.cfg.format.loudnessTargetLufs, ctx.cfg.format.truePeakDb);
     recordArtifact(ctx.state, 'render', ctx.p.render, ctx.p.dir);
     return {
       outputs: [rel(ctx.p.render)],
-      note: `render ${renderSeconds.toFixed(0)}s; loudness antes da normalizacao ${measured.input_i} LUFS; sha256 ${sha256File(ctx.p.render).slice(0, 12)}`,
+      note: `render ${renderSeconds.toFixed(0)}s; loudness antes da normalizacao ${measured.input_i} LUFS; true peak ${peak} dBTP (alvo do loudnorm ${tpTarget}); sha256 ${sha256File(ctx.p.render).slice(0, 12)}`,
     };
   },
 };

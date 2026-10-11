@@ -115,15 +115,20 @@
   ],
   "finalTranscript": "Bom dia! A quase 100 anos, uma empresa inglesa combate um único inimigo, o amassado. Está em milhões de quartos de hotel. Funciona assim, abre a prensa, coloca a calça na almofada aquecida e fecha. 15 minutos, 30 ou 45. O de 45 é para os vincos ainda mais difíceis. 45 minutos, uma calça por vez. A almofada aquecida foi inspirada no concorde, para a calça. Em nogueira, mógino, freixo preto, faia ou carvalho. Pronto, desamaçou no banho. Faltam 44 minutos. O manual é claro. Nunca use a prensa no banheiro. No banheiro, a Corby não perde. Ela não tem permissão para entrar. E o manual também proíbe molhar a calça, mas admite que a umidade ajuda a prensar. Por isso, o modelo anterior vinha com ferro de passar. A vapor. 189 libras e 60. 4 e 20 por minuto. Bem mais barato que um concorde. Você não precisava. Até agora!",
   "manualReview": {
-    "status": "pendente",
+    "status": "aprovado",
     "sha256": "aeca83ac58e3e53f77ab6b4e8cc37e7d7d0b0b5fe6a5c66f125340aae1a25f48",
-    "at": "2026-10-11T03:37:37.648Z",
-    "by": null,
+    "at": "2026-10-11T08:25:35.009Z",
+    "by": "noxalbel1115 (chat)",
     "notes": [
       {
         "by": "Claude (inspecao assistida por IA)",
         "at": "2026-10-11T03:37:37.648Z",
         "text": "Inspecao visual por IA (folha de contato, quadros por beat, forma de onda) do render v3: teste de clareza so com imagem e legenda ok (cartela 'Problema: calca amassada. Solucao: 9,56 kg na tomada'; mostrador 15/30/45 e contagem; calca amassada que alisa no vapor e, no mesmo quadro, a prensa em 44 min; carimbo PROIBIDA; ferro a vapor sobre a prensa; parecer INDEFERIDO). Corrigidos em dois renders anteriores: barra do box sobre o rotulo da ilustracao, ferro sem bico, carimbo sobre a fonte e a legenda. Audio NAO ouvido pela IA: transcricao final WER 2%, -13,9 LUFS, true peak -1,3 dBTP; a transcricao ouviu 'mogno' como 'mogino' (epentese comum no portugues falado) - conferir ouvindo. Aviso pendente: foto m5 CC BY-SA 2.0 (mantida por decisao do usuario)."
+      },
+      {
+        "by": "noxalbel1115 (chat)",
+        "at": "2026-10-11T08:25:35.010Z",
+        "text": "Aprovado pelo usuario no chat em 11/10/2026: 'Ficou bom.' (apos assistir ao MP4 sha256 aeca83ac58e3)."
       }
     ]
   }

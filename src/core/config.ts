@@ -51,6 +51,19 @@ export const Config = z.object({
     tokenFile: z.string(),
   }),
   budget: z.object({maxUsdPerEpisode: z.number()}),
+  /** Outros idiomas (campo "language" do roteiro): nome e lema do canal, etiqueta do vendedor e vozes. */
+  locales: z
+    .record(
+      z.string().regex(/^[a-z]{2}(-[A-Z]{2})?$/),
+      z.object({
+        name: z.string(),
+        shortName: z.string(),
+        motto: z.string(),
+        salesman: z.object({name: z.string(), title: z.string()}),
+        voices: z.record(z.string(), VoiceCfg),
+      }),
+    )
+    .default({}),
 });
 export type Config = z.infer<typeof Config>;
 

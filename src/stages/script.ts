@@ -5,6 +5,7 @@ import {readJson, sha256, writeJsonAtomic, addCost} from '../core/state.js';
 import {ROOT, rel} from '../core/paths.js';
 import {generateJson, PRICE_PER_MTOK} from '../providers/llm/anthropic.js';
 import {BlockedError, type Stage, type Ctx} from './types.js';
+import {localeFor} from '../core/locale.js';
 
 /** Estimativa de fala em pt-BR para o Kokoro na velocidade configurada: ~14,5 caracteres/s. */
 const CHARS_PER_SECOND = 14.5;
@@ -21,7 +22,7 @@ export function validateScript(ctx: Ctx, s: Script): {errors: string[]; warnings
   const registry = MediaRegistry.parse(readJson(ctx.p.mediaRegistry));
   const facts = new Map(product.facts.map((f) => [f.id, f]));
   const usable = new Set(registry.items.filter((i) => i.status === 'usable').map((i) => i.id));
-  const speakers = new Set(Object.keys(ctx.cfg.providers.tts.voices));
+  const speakers = new Set(Object.keys(localeFor(ctx.cfg, s.language).voices));
   const ids = new Set<string>();
 
   if (s.episodeId !== ctx.id) errors.push(`episodeId do roteiro (${s.episodeId}) difere do episodio (${ctx.id})`);

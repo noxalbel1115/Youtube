@@ -110,3 +110,13 @@ test('WER: diferenca so na divisao entre palavras nao conta como erro', () => {
   assert.equal(wordErrorRate('guarda chuva', 'guarda-chuva'), 0);
   assert.equal(wordErrorRate('a almofada', 'a almofadas'), 0.5);
 });
+
+test('WER em ingles: numerais por extenso, "a hundred" e libras com simbolo', () => {
+  assert.equal(wordErrorRate('Forty-five minutes. One pair of trousers at a time.', '45 minutes, one pair of trousers at a time.', 'en'), 0);
+  assert.equal(wordErrorRate('One hundred and eighty-nine pounds sixty.', '£189.60.', 'en'), 0);
+  assert.equal(wordErrorRate('For almost a hundred years.', 'For almost 100 years.', 'en'), 0);
+  assert.equal(wordErrorRate('Four pounds twenty a minute.', '£4.20 a minute.', 'en'), 0);
+  assert.equal(wordErrorRate('Forty-four minutes to go.', '44 minutes to go.', 'en'), 0);
+  // padrao continua sendo portugues
+  assert.equal(wordErrorRate('Quarenta e cinco minutos.', '45 minutos.'), 0);
+});

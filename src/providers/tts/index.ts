@@ -112,13 +112,14 @@ export const TTS_PROVIDERS: Record<string, TtsProvider> = {kokoro, piper, eleven
  * consultado em 10/10/2026). Retorna o problema ou null.
  */
 /** Credito da voz para descricao e documentos, a partir dos provedores efetivamente usados nas falas. */
-export function voiceCredit(providers: string[], cfg: Config): string {
+export function voiceCredit(providers: string[], cfg: Config, language: 'pt-BR' | 'en' = 'pt-BR'): string {
+  const pt = language === 'pt-BR';
   const label: Record<string, string> = {
-    kokoro: 'Kokoro-82M (licença Apache-2.0, execução local)',
-    elevenlabs: `ElevenLabs (modelo ${cfg.providers.tts.elevenlabs.modelId})`,
-    piper: 'Piper (uso interno)',
+    kokoro: pt ? 'Kokoro-82M (licença Apache-2.0, execução local)' : 'Kokoro-82M (Apache-2.0 licence, run locally)',
+    elevenlabs: `ElevenLabs (${pt ? 'modelo' : 'model'} ${cfg.providers.tts.elevenlabs.modelId})`,
+    piper: pt ? 'Piper (uso interno)' : 'Piper (internal use)',
   };
-  return `Voz sintética: ${providers.map((p) => label[p] ?? p).join('; ')}.`;
+  return `${pt ? 'Voz sintética' : 'Synthetic voice'}: ${providers.map((p) => label[p] ?? p).join('; ')}.`;
 }
 
 export function voiceLicenseIssue(providers: string[], cfg: Config): string | null {

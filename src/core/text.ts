@@ -62,6 +62,67 @@ export function numbersToDigits(words: string[]): string[] {
   return out;
 }
 
+const EN_UNITS: Record<string, number> = {
+  zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11,
+  twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19,
+  twenty: 20, thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90,
+};
+
+/**
+ * Ingles: "forty five" → 45, "one hundred and eighty nine" → 189, "a hundred" → 100. Dezena seguida de unidade
+ * junta direto; "and" so depois de "hundred"/"thousand". Numeros vizinhos sem ligacao ("four twenty") ficam separados.
+ */
+export function numbersToDigitsEn(words: string[]): string[] {
+  const out: string[] = [];
+  let i = 0;
+  const isNum = (w: string) => w in EN_UNITS || w === 'hundred' || w === 'thousand';
+  while (i < words.length) {
+    const startsWithA = words[i] === 'a' && (words[i + 1] === 'hundred' || words[i + 1] === 'thousand');
+    if (!isNum(words[i]) && !startsWithA) {
+      out.push(words[i]);
+      i++;
+      continue;
+    }
+    let total = 0;
+    let cur = startsWithA ? 1 : 0;
+    let last = Infinity;
+    let j = startsWithA ? i + 1 : i;
+    while (j < words.length) {
+      const w = words[j];
+      if (w in EN_UNITS) {
+        const u = EN_UNITS[w];
+        // unidade depois de dezena (forty five) ou primeira parte; nunca duas dezenas ou duas unidades seguidas
+        const afterTens = last >= 20 && last < 100 && last % 10 === 0 && u < 10;
+        if (!(last === Infinity || afterTens || last >= 100)) break;
+        cur += u;
+        last = u;
+      } else if (w === 'hundred' && cur > 0 && cur < 100) {
+        cur *= 100;
+        last = 100;
+      } else if (w === 'thousand' && total === 0) {
+        total = (cur || 1) * 1000;
+        cur = 0;
+        last = 1000;
+      } else if (w === 'and' && last >= 100 && j + 1 < words.length && words[j + 1] in EN_UNITS) {
+        // "one hundred and nine"
+      } else break;
+      j++;
+    }
+    out.push(String(total + cur));
+    i = j;
+  }
+  return out;
+}
+
+/** Valores com simbolo de moeda, como o Whisper escreve em ingles: "£189.60" → "189 pounds 60". */
+function spellCurrencyEn(s: string): string {
+  return s
+    .replace(/£(\d+)\.(\d{2})/g, '$1 pounds $2')
+    .replace(/£(\d+)/g, '$1 pounds')
+    .replace(/\$(\d+)\.(\d{2})/g, '$1 dollars $2')
+    .replace(/\$(\d+)/g, '$1 dollars');
+}
+
 /** Junta palavras e funde letras repetidas: a elisao da fala ("almofada aquecida" → "almofadaquecida") some. */
 const fuse = (...ws: string[]) => ws.join('').replace(/(.)\1+/g, '$1');
 
@@ -69,9 +130,11 @@ const fuse = (...ws: string[]) => ws.join('').replace(/(.)\1+/g, '$1');
  * Taxa de erro por palavra (Levenshtein em palavras), insensivel a acentos. Diferenca so de divisao entre palavras
  * ("almofada aquecida" x "almofa daquecida", elisao natural da fala) nao conta como erro: o ASR ouviu os mesmos sons.
  */
-export function wordErrorRate(reference: string, hypothesis: string): number {
-  const r = numbersToDigits(normalizeWords(stripAccents(reference)));
-  const h = numbersToDigits(normalizeWords(stripAccents(hypothesis)));
+export function wordErrorRate(reference: string, hypothesis: string, language: 'pt-BR' | 'en' = 'pt-BR'): number {
+  const words = (t: string) =>
+    language === 'en' ? numbersToDigitsEn(normalizeWords(stripAccents(spellCurrencyEn(t)))) : numbersToDigits(normalizeWords(stripAccents(t)));
+  const r = words(reference);
+  const h = words(hypothesis);
   if (r.length === 0) return h.length === 0 ? 0 : 1;
   const d: number[][] = Array.from({length: r.length + 1}, (_, i) => [i, ...Array(h.length).fill(0)]);
   for (let j = 1; j <= h.length; j++) d[0][j] = j;

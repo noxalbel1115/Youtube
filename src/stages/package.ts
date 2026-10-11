@@ -5,7 +5,7 @@ import {voiceCredit} from '../providers/tts/index.js';
 import {readJson, sha256, sha256File, writeJsonAtomic} from '../core/state.js';
 import {rel} from '../core/paths.js';
 import {renderThumbnail} from './render.js';
-import {roteiroMd, fontesMd} from './docs.js';
+import {roteiroMd, fontesMd, publicacaoManualMd} from './docs.js';
 import type {Stage, Ctx} from './types.js';
 
 function srtTime(frame: number, fps: number): string {
@@ -90,6 +90,7 @@ export const packageStage: Stage = {
     fs.writeFileSync(path.join(ctx.p.packageDir, 'captions.pt-BR.srt'), buildSrt(t));
     fs.writeFileSync(path.join(ctx.p.packageDir, 'roteiro.md'), roteiroMd(ctx));
     fs.writeFileSync(path.join(ctx.p.packageDir, 'fontes-e-midias.md'), fontesMd(ctx));
+    fs.writeFileSync(path.join(ctx.p.packageDir, 'publicacao-manual.md'), publicacaoManualMd(ctx, metadata));
     const beat = t.beats.find((b) => b.id === script.packaging.thumbnailBeatId);
     if (!beat) throw new Error(`thumbnailBeatId ${script.packaging.thumbnailBeatId} inexistente`);
     await renderThumbnail(ctx, beat.startFrame + Math.floor(beat.durationFrames / 2), script.packaging.title.split('|')[0].trim());

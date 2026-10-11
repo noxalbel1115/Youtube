@@ -18,11 +18,14 @@ Você opera o pipeline deste repositório. O código faz as etapas determinísti
 4. `npm run dnn -- run <id>` → valida pesquisa, seleciona, verifica licenças na origem e baixa mídia; para pedindo
    o roteiro. Confira `media.json`: só itens `usable` podem entrar no roteiro.
 5. **Roteiro**: escreva `episodes/<id>/script.json` seguindo `prompts/roteiro.md` (fatos x ficção, progressão,
-   pausas, vendedor nunca anuncia a piada). Rode `npm run dnn -- run <id>` de novo.
+   pausas, vendedor nunca anuncia a piada) e, em especial, a seção **Clareza da comédia**: o editor avaliou o piloto
+   como "piada muito subentendida"; a encenação precisa deixar o contraste visível e explícito. Rode
+   `npm run dnn -- run <id>` de novo.
 6. Se a etapa `voice` acusar falas com transcrição divergente, ajuste `pronunciations`/texto, incremente `version`
    e rode de novo. Mesma coisa para avisos de `verify`.
 7. Inspecione visualmente `build/verify/contact-sheet.jpg` e quadros em `build/verify/frames/` (leia as imagens) e a
-   forma de onda `build/verify/waveform.png`. Registre o que viu em `verify-report.json → manualReview.notes`, mas
+   forma de onda `build/verify/waveform.png`. Aplique o teste de clareza (a piada aparece só com imagem e legenda?).
+   Registre o que viu em `verify-report.json → manualReview.notes`, mas
    **não** marque como aprovado: aprovação é humana (`npm run dnn -- review <id> --approve`).
 8. Commit dos arquivos de texto do episódio (pesquisa, seleção, produto, mídia, roteiro, relatório, pacote) num
    branch `claude/episodio-<id>` e abra PR com: produto escolhido e por quê, tabela de candidatos, roteiro, checks

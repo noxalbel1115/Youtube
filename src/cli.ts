@@ -42,6 +42,8 @@ const HELP = `Departamento de Necessidades Desnecessarias — pipeline
   npm run dnn -- review <id> --approve|--reject|--note-only [--note "..."]   registra revisao do MP4 atual
   npm run dnn -- upload <id> --confirm-upload [--privacy private|unlisted|public] [--publish-at ISO]
   npm run dnn -- reconcile <id>                   consulta o canal (sem enviar nada)
+  npm run dnn -- registrar-video <id> --video-id <ID> --privacy private|unlisted|public
+                                                  registra envio manual (YouTube Studio) para nunca reenviar
   npm run dnn -- youtube:auth                     autoriza o canal (maquina com navegador)
   npm run dnn -- doctor                           confere dependencias e acesso de rede
 
@@ -162,6 +164,26 @@ async function main(): Promise<number> {
       };
       writeJsonAtomic(p.verifyReport, report);
       log.info(`revisao registrada: ${report.manualReview.status}`);
+      return 0;
+    }
+    case 'registrar-video': {
+      // Envio feito a mao no YouTube Studio: grava o id no estado para que o upload automatico adote em vez de duplicar.
+      const videoId = typeof opts['video-id'] === 'string' ? opts['video-id'] : '';
+      const privacy = opts.privacy;
+      if (!id || !/^[A-Za-z0-9_-]{11}$/.test(videoId) || (privacy !== 'private' && privacy !== 'unlisted' && privacy !== 'public')) {
+        throw new Error('uso: registrar-video <id> --video-id <11 caracteres> --privacy private|unlisted|public');
+      }
+      const s = loadState(id);
+      const p = epPaths(id);
+      const meta = readJson<any>(path.join(p.packageDir, 'metadata.json'));
+      const sha = sha256File(p.render);
+      if (meta.videoSha256 !== sha) throw new Error('metadata.json foi gerado para outro arquivo; refaca a etapa package');
+      if (s.youtube.videoId && s.youtube.videoId !== videoId) throw new Error(`ja ha outro video registrado (${s.youtube.videoId}); decida manualmente antes de trocar`);
+      s.youtube = {...s.youtube, status: 'uploaded', videoId, privacyStatus: privacy, uploadedFileSha256: sha, idempotencyKey: meta.idempotencyKey, remote: {...(s.youtube.remote ?? {}), source: 'manual (YouTube Studio)', registeredAt: nowIso()}};
+      saveState(s);
+      const product = Product.parse(readJson(p.product));
+      appendHistory({episodeId: id, productSlug: product.slug, productName: product.name, date: nowIso().slice(0, 10)});
+      log.info(`registrado: https://youtu.be/${videoId} (${privacy}, envio manual)`);
       return 0;
     }
     case 'reconcile': {

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "episodeId": "ep001-eierschalensollbruchstellenverursacher",
   "createdAt": "2026-10-10T21:02:48.077Z",
-  "updatedAt": "2026-10-11T00:13:44.120Z",
+  "updatedAt": "2026-10-11T00:27:22.016Z",
   "currentStage": "package",
   "productSlug": "drop-weight-egg-topper",
   "pick": {
@@ -116,10 +116,10 @@
     },
     "package": {
       "status": "done",
-      "attempts": 12,
-      "startedAt": "2026-10-11T00:13:36.520Z",
-      "finishedAt": "2026-10-11T00:13:44.120Z",
-      "seconds": 7.6,
+      "attempts": 13,
+      "startedAt": "2026-10-11T00:27:04.295Z",
+      "finishedAt": "2026-10-11T00:27:22.015Z",
+      "seconds": 17.7,
       "inputHash": "1d60ad0d00bb5de22d3b08453e6de5cb709925f000016b079a8a1408432325a4",
       "outputs": [
         "episodes/ep001-eierschalensollbruchstellenverursacher/package/metadata.json",
@@ -290,19 +290,19 @@
       "stage": "package",
       "item": "wall-clock",
       "kind": "observed",
-      "amount": 7.6,
+      "amount": 17.7,
       "unit": "seconds",
       "basis": "tempo medido pelo runner (ultima execucao)",
-      "at": "2026-10-11T00:13:44.120Z"
+      "at": "2026-10-11T00:27:22.016Z"
     },
     {
       "stage": "package",
       "item": "wall-clock-acumulado",
       "kind": "observed",
-      "amount": 30,
+      "amount": 47.7,
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
-      "at": "2026-10-11T00:13:44.120Z"
+      "at": "2026-10-11T00:27:22.016Z"
     }
   ],
   "errors": [],

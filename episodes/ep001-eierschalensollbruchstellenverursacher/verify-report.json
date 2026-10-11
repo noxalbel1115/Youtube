@@ -115,8 +115,16 @@
   ],
   "finalTranscript": "Bom dia, trago uma solução alemã para um problema que o brasileiro ignora às gerações. O Topo do Ovo O nome técnico é Ayachalensolboxtelenfeursacher, 38 letras, todas dedicadas ao topo de um ovo. Funciona assim, você coloca a cápsula de metal sobre o ovo cozido, puxa a esfera e solta. A casca se rompe em volta do topo, sem faca, projetado por três designers. 3. Para quem exige mais, esfera de pedra preciosa, ametista, para o ovo. A concorrência usa tesoura, patente de 1907. Tesoura, no café da manhã. Pronto. A Sueli usa colher. A colher não tem edição de natal. O fabricante diz que a tampa sai inclinando o aparelho, ou com o auxílio de talheres adicionais. Uma colher, por exemplo. Mas a colher não tem 38 letras, 28 euros e 95, dá 76 centavos por letra. É praticamente de graça. Você não precisava. Até agora.",
   "manualReview": {
-    "status": "pendente",
+    "status": "aprovado",
     "sha256": "5bcb6597ea62524385cc408a1c1a530327ede77c759db5944fb7fcafe0f83e9e",
-    "notes": []
+    "at": "2026-10-11T00:25:17.110Z",
+    "by": "usuario (chat)",
+    "notes": [
+      {
+        "by": "usuario (chat)",
+        "at": "2026-10-11T00:25:17.111Z",
+        "text": "Aprovado no chat em 11/10/2026: 'para esse está bom'. Nota para os próximos: piada muito subentendida; deixar a comédia mais visível e clara (ver prompts/roteiro.md, Clareza da comédia)."
+      }
+    ]
   }
 }

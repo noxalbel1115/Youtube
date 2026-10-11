@@ -1,0 +1,130 @@
+{
+  "verifiedAt": "2026-10-11T09:49:12.745Z",
+  "file": "episodes/ep003-iphone-duo/build/episode.mp4",
+  "sha256": "6a0d3b4fcaa052d34c9e081bc9d3201b8132d744b2da772cb141b999ae0602b0",
+  "durationSeconds": 88.1,
+  "automatic": [
+    {
+      "id": "formato.resolucao",
+      "ok": true,
+      "severity": "error",
+      "detail": "1080x1920"
+    },
+    {
+      "id": "formato.fps",
+      "ok": true,
+      "severity": "error",
+      "detail": "fps 30/1"
+    },
+    {
+      "id": "formato.codecs",
+      "ok": true,
+      "severity": "error",
+      "detail": "video h264, audio aac"
+    },
+    {
+      "id": "formato.duracao",
+      "ok": true,
+      "severity": "error",
+      "detail": "88.10s (alvo 60-90s)"
+    },
+    {
+      "id": "formato.shorts",
+      "ok": true,
+      "severity": "error",
+      "detail": "vertical e ate 3 min (classificacao automatica como Short)"
+    },
+    {
+      "id": "video.quadros-pretos",
+      "ok": true,
+      "severity": "error",
+      "detail": "1 trecho(s) preto(s), todos intencionais"
+    },
+    {
+      "id": "audio.loudness",
+      "ok": true,
+      "severity": "error",
+      "detail": "-13.9 LUFS integrados (alvo -14)"
+    },
+    {
+      "id": "audio.pico",
+      "ok": true,
+      "severity": "error",
+      "detail": "true peak -1.1 dBFS (limite -1.5)"
+    },
+    {
+      "id": "audio.silencios",
+      "ok": true,
+      "severity": "warning",
+      "detail": "0 silencio(s) > 1,2 s abaixo de -45 dB; inesperados: []"
+    },
+    {
+      "id": "arquivos.presentes",
+      "ok": true,
+      "severity": "error",
+      "detail": "34 arquivos referenciados presentes"
+    },
+    {
+      "id": "midia.licencas",
+      "ok": true,
+      "severity": "error",
+      "detail": "3 midia(s), todas com licenca verificada na origem"
+    },
+    {
+      "id": "voz.licenca",
+      "ok": true,
+      "severity": "warning",
+      "detail": "vozes: elevenlabs"
+    },
+    {
+      "id": "midia.compartilha-igual",
+      "ok": false,
+      "severity": "warning",
+      "detail": "3 midia(s) CC BY-SA: revisar implicacao de licenciamento do video antes de publicar"
+    },
+    {
+      "id": "fatos.ancorados",
+      "ok": true,
+      "severity": "error",
+      "detail": "17 fala(s) factuais; sem ancora: nenhuma"
+    },
+    {
+      "id": "audio.transcricao-final",
+      "ok": true,
+      "severity": "error",
+      "detail": "WER 9.0% entre roteiro e transcricao automatica da mixagem final (limite 15.0%; 0 fala(s) com palavra estrangeira fora da conta)"
+    },
+    {
+      "id": "audio.transcricao-por-fala",
+      "ok": true,
+      "severity": "warning",
+      "detail": "todas as falas transcritas com WER <= 25%"
+    },
+    {
+      "id": "legendas.leitura",
+      "ok": true,
+      "severity": "warning",
+      "detail": "37 blocos, todos com >= 0,5 s"
+    },
+    {
+      "id": "legendas.tamanho",
+      "ok": true,
+      "severity": "warning",
+      "detail": "todos os blocos com ate 38 caracteres (max. 2 linhas)"
+    }
+  ],
+  "finalTranscript": "Bom dia! A Apple acaba de apresentar o primeiro iPhone dobrável. Um iPhone, que dobra! Você abre 7,6 polegadas. O presidente da Apple, a mudança mais transformadora desde o primeiro iPhone. O comunicado promete possibilidades totalmente novas, mas notavelmente familiares. No Brasil, a partir de R$ 21.999,00 e a capa com suporte para ele ficar em pé, R$ 1.299,00. Um ano de salário mínimo, mais dobra. Valdemar, a Samsung vende isso desde 2019. Mas aqueles não eram iPhones. A Samsung já está na oitava geração. Errou 7 vezes. A Apple foi direto na certa. E o nome é exclusivo. Duo. Era da Microsoft. Ela não estava usando. A Samsung respondeu. Avisem quando terminarem de requentar as nossas sobras. Sobras premium. 7 anos depois do primeiro. Da R$ 3.000,00 por ano de espera. Praticamente de graça. Você não precisava. Até agora.",
+  "manualReview": {
+    "status": "pendente",
+    "sha256": "6a0d3b4fcaa052d34c9e081bc9d3201b8132d744b2da772cb141b999ae0602b0",
+    "at": "2026-10-11T09:49:52.570Z",
+    "by": null,
+    "notes": [
+      {
+        "by": "humano",
+        "at": "2026-10-11T09:49:52.570Z",
+        "text": "Inspecao por IA (11/10/2026), nao e aprovacao. VISUAL (folha de contato, quadros e miniatura): sem defeitos restantes; corrigidos antes do render final: carimbo CONFIRMADO sobre a fonte e carimbo da capa sobre a legenda (texto trocado para SO A CAPA). Teste de clareza: so com imagem e legenda a piada aparece (carimbo NOVIDADE DE 2019, citacao 'remarkably familiar' + CONFIRMADO, foto do Galaxy Fold 2019 no mesmo enquadramento do Duo, grade de dobraveis 2018-2025 com 2026 no meio, NOME USADO EM 2020, ATENDIDA EM 2019, 'Desde 2019'). AUDIO: nao ouvido por mim; instrumentos ok (-13,9 LUFS, pico -1,1 dBTP, WER final 9%). A transcricao ouviu 'requentar' como 'recentar' (s24) e 'Mas dobra' como 'Mais dobra' (s13): conferir ouvindo. LICENCAS: 3 fotos CC BY-SA 4.0 (aviso compartilha-igual); arquivos obtidos pelo CDN i0.wp.com por bloqueio 429 da Wikimedia, licenca verificada na pagina do arquivo."
+      }
+    ]
+  }
+}

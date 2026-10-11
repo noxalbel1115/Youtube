@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "episodeId": "ep003-iphone-duo",
   "productSlug": "iphone-duo",
   "workingTitle": "O primeiro dobrável (de 2026)",
@@ -316,7 +316,12 @@
           "gainDb": -4
         }
       ],
-      "note": "Consequência visível: a câmera recua e surge um dobrável por ano, 2018–2025, com o ano na tela (f13, f14, f15). O do pedestal passa a mostrar 2026."
+      "note": "Consequência visível: a câmera recua e surge um dobrável por ano, 2018–2025, com o ano na tela (f13, f14, f15). O do pedestal passa a mostrar 2026.",
+      "factIds": [
+        "f13",
+        "f14",
+        "f15"
+      ]
     },
     {
       "id": "s16",
@@ -624,6 +629,10 @@
     {
       "version": 3,
       "note": "Inspeção de quadros: carimbo “CONFIRMADO” descia sobre a fonte da cartela (stampTop 1140); carimbo da ficha de preços cobria a legenda e dizia “só o suporte”, impreciso para uma capa com apoio — agora “SÓ A CAPA”, acima da legenda."
+    },
+    {
+      "version": 4,
+      "note": "Revelação 3D (s15) passa a citar os fatos dos anos exibidos (f13, f14, f15); pesquisa reduzida aos fatos e fontes usados no vídeo, para a descrição caber no limite do YouTube. Sem mudança de imagem ou som."
     }
   ]
 }

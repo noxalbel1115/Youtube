@@ -32,6 +32,9 @@ function formatDate(iso: string): string {
   return `${d}/${m}/${y}`;
 }
 
+/** Limite de bytes da descricao no YouTube. */
+export const DESCRIPTION_LIMIT = 5000;
+
 export function buildDescription(ctx: Ctx): string {
   const script = Script.parse(readJson(ctx.p.script));
   const product = Product.parse(readJson(ctx.p.product));
@@ -49,14 +52,19 @@ export function buildDescription(ctx: Ctx): string {
     const src = product.sources.find((s) => s.id === product.price!.sourceId);
     lines.push(`Preço consultado: ${product.price.currency} ${product.price.amount.toFixed(2).replace('.', ',')} em ${formatDate(product.price.observedAt)} (${src?.publisher ?? 'fonte'}). Preços mudam.`);
   }
-  lines.push('', '— Fontes —');
-  for (const s of product.sources) lines.push(`• ${s.publisher}: ${s.title} — ${s.url} (consultado em ${formatDate(s.accessedAt)})`);
-  lines.push('', '— Créditos de imagem —');
-  for (const it of registry.items.filter((i) => used.has(i.id))) lines.push(`• ${it.attribution}`);
-  lines.push('', '— Produção —');
-  lines.push(`${voiceCredit(ttsProviders, ctx.cfg)} Efeitos sonoros e grafismos produzidos pelo canal.`);
-  lines.push('', `ref: ${idempotencyKey(ctx)}`);
-  return lines.join('\n');
+  const head = lines.length;
+  const tail: string[] = [];
+  tail.push('', '— Créditos de imagem —');
+  for (const it of registry.items.filter((i) => used.has(i.id))) tail.push(`• ${it.attribution}`);
+  tail.push('', '— Produção —');
+  tail.push(`${voiceCredit(ttsProviders, ctx.cfg)} Efeitos sonoros e grafismos produzidos pelo canal.`);
+  tail.push('', `ref: ${idempotencyKey(ctx)}`);
+  // Fontes completas (com titulo) quando cabem no limite do YouTube; senao, uma linha curta por fonte (editora e endereco).
+  const full = ['', '— Fontes —', ...product.sources.map((s) => `• ${s.publisher}: ${s.title} — ${s.url} (consultado em ${formatDate(s.accessedAt)})`)];
+  const dates = [...new Set(product.sources.map((s) => formatDate(s.accessedAt)))];
+  const compact = ['', `— Fontes (consultadas em ${dates.join(', ')}) —`, ...product.sources.map((s) => `• ${s.publisher} — ${s.url}`)];
+  const fits = (src: string[]) => Buffer.byteLength([...lines.slice(0, head), ...src, ...tail].join('\n'), 'utf8') <= DESCRIPTION_LIMIT;
+  return [...lines.slice(0, head), ...(fits(full) ? full : compact), ...tail].join('\n');
 }
 
 export const packageStage: Stage = {
@@ -69,7 +77,7 @@ export const packageStage: Stage = {
     const t = Timeline.parse(readJson(ctx.p.timeline));
     fs.mkdirSync(ctx.p.packageDir, {recursive: true});
     const description = buildDescription(ctx);
-    if (Buffer.byteLength(description, 'utf8') > 5000) throw new Error(`descricao com ${Buffer.byteLength(description)} bytes (limite do YouTube: 5000)`);
+    if (Buffer.byteLength(description, 'utf8') > DESCRIPTION_LIMIT) throw new Error(`descricao com ${Buffer.byteLength(description)} bytes (limite do YouTube: ${DESCRIPTION_LIMIT})`);
     const tags = script.packaging.tags;
     if (tags.join(',').length > 500) throw new Error('tags excedem 500 caracteres');
     const metadata = {

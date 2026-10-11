@@ -1,6 +1,6 @@
 {
   "researchedAt": "2026-10-11",
-  "method": "Tema escolhido pelo usuário (sátira do lançamento do iPhone Duo). Pesquisa por subagente (WebSearch/WebFetch/Firecrawl) com 46 fontes lidas; fatos centrais conferidos de novo diretamente na origem nesta sessão (comunicado da Apple em inglês e português, Apple Store Brasil, MacRumors, Samsung Newsroom do Fold8) e anos da linha Galaxy Z Fold conferidos no Samsung Newsroom. Mídia: APIs do Wikimedia Commons e do Openverse.",
+  "method": "Fontes reduzidas às que sustentam o que aparece no vídeo (limite de 5.000 bytes da descrição). Tema escolhido pelo usuário (sátira do lançamento do iPhone Duo). Pesquisa por subagente (WebSearch/WebFetch/Firecrawl) com 46 fontes lidas; fatos centrais conferidos de novo diretamente na origem nesta sessão (comunicado da Apple em inglês e português, Apple Store Brasil, MacRumors, Samsung Newsroom do Fold8) e anos da linha Galaxy Z Fold conferidos no Samsung Newsroom. Mídia: APIs do Wikimedia Commons e do Openverse.",
   "candidates": [
     {
       "slug": "iphone-duo",
@@ -20,15 +20,6 @@
           "confirms": "Comunicado oficial de 9/9/2026: primeiro iPhone dobrável, telas 7,6\"/5,4\", US$ 1.999 inicial, pré-venda 16/10, venda 23/10, Case US$ 79 e Folio com Kickstand US$ 129, frase de John Ternus."
         },
         {
-          "id": "s2",
-          "url": "https://www.apple.com/shop/buy-iphone/iphone-duo",
-          "title": "Shop iPhone Duo",
-          "publisher": "Apple Store (EUA)",
-          "kind": "official-store",
-          "accessedAt": "2026-10-11",
-          "confirms": "Preços por capacidade nos EUA: 256 GB US$ 1.999, 512 GB US$ 2.199, 1 TB US$ 2.599, 2 TB US$ 3.199; pré-venda 10.16, disponível 10.23."
-        },
-        {
           "id": "s3",
           "url": "https://www.apple.com/br/shop/buy-iphone/iphone-duo",
           "title": "Comprar iPhone Duo",
@@ -45,15 +36,6 @@
           "kind": "manufacturer",
           "accessedAt": "2026-10-11",
           "confirms": "Versão brasileira do comunicado (09/09/2026): preço inicial R$ 21.999; capa R$ 829; Folio com suporte R$ 1.299; Brasil na lista da pré-venda de 16/10."
-        },
-        {
-          "id": "s9",
-          "url": "https://www.bloomberg.com/news/articles/2026-09-09/apple-s-priciest-iphone-duo-hits-3-199-setting-industry-record",
-          "title": "Apple's Priciest iPhone Duo Hits $3,199, Setting Industry Record",
-          "publisher": "Bloomberg (Mark Gurman)",
-          "kind": "press",
-          "accessedAt": "2026-10-11",
-          "confirms": "Bloomberg (9/9/2026) diz que a versão de US$ 3.199 estabelece recorde de preço para smartphone de mercado de massa; lista os 4 preços. Texto completo atrás de paywall."
         },
         {
           "id": "s10",
@@ -81,24 +63,6 @@
           "kind": "manufacturer",
           "accessedAt": "2026-10-11",
           "confirms": "Samsung apresentou em 22/7/2026 a 'oitava geração' da linha Galaxy Z; Fold8 com tela principal de 7,6\" e capa de 5,5\", 201 g; Fold8 Ultra 4,1 mm aberto."
-        },
-        {
-          "id": "s26",
-          "url": "https://news.samsung.com/uk/samsung-officially-launches-galaxy-z-fold8-ultra-z-fold8-z-flip8-watch-ultra2-and-watch9",
-          "title": "Samsung Officially Launches Galaxy Z Fold8 Ultra, Z Fold8, Z Flip8, Watch Ultra2, and Watch9",
-          "publisher": "Samsung Newsroom (UK)",
-          "kind": "manufacturer",
-          "accessedAt": "2026-10-11",
-          "confirms": "(7/8/2026) Vendas a partir de 7/8; 'seven generations of foldable innovation'; preços UK: Fold8 £1.699, Fold8 Ultra £1.899."
-        },
-        {
-          "id": "s29",
-          "url": "https://www.tecmundo.com.br/produto/415093-galaxy-z-fold-8-lancado-por-r-12599-veja-precos.htm",
-          "title": "Galaxy Z Fold 8 lançado por R$ 12.599; veja preços dos novos dobráveis",
-          "publisher": "TecMundo/Estadão (Wellington Arruda)",
-          "kind": "press",
-          "accessedAt": "2026-10-11",
-          "confirms": "(06/08/2026) Preços no Brasil: Fold 8 R$ 12.599 (256 GB) e R$ 14.199 (512 GB); Fold 8 Ultra R$ 14.599 a R$ 19.399."
         },
         {
           "id": "s31",
@@ -171,24 +135,6 @@
           "kind": "press",
           "accessedAt": "2026-10-11",
           "confirms": "(09/09/2026) Microsoft cancelou o sucessor em 2023; Surface Duo original perdeu suporte em set/2023."
-        },
-        {
-          "id": "s30",
-          "url": "https://canaltech.com.br/produtos/iphone-dobravel-e-tudo-que-a-apple-lancou-nesta-quarta-9-veja-precos-no-brasil/",
-          "title": "iPhone dobrável e tudo que a Apple lançou nesta quarta (9); veja preços no Brasil",
-          "publisher": "Canaltech (João Melo)",
-          "kind": "press",
-          "accessedAt": "2026-10-11",
-          "confirms": "(09/09/2026) iPhone Duo de R$ 21.999 a R$ 30.999; 'aparelho mais caro apresentado pela empresa'."
-        },
-        {
-          "id": "x1",
-          "url": "https://tecnoblog.net/noticias/fold-8-primeiro-celular-passaporte-do-brasil-tem-preco-revelado/",
-          "title": "Galaxy Z Fold 8: primeiro celular “passaporte” do Brasil tem preço revelado",
-          "publisher": "Tecnoblog",
-          "kind": "press",
-          "accessedAt": "2026-10-11",
-          "confirms": "Galaxy Z Fold 8 lançado no Brasil por R$ 12.599 (resumo da busca; página não aberta diretamente)."
         },
         {
           "id": "x2",
@@ -282,14 +228,6 @@
           ]
         },
         {
-          "id": "f7",
-          "text": "Nos EUA: de US$ 1.999 (256 GB) a US$ 3.199 (2 TB). Segundo a Bloomberg, os US$ 3.199 são recorde de preço para um smartphone de mercado de massa.",
-          "sourceIds": [
-            "s2",
-            "s9"
-          ]
-        },
-        {
           "id": "f8",
           "text": "Segundo o SBT News (cálculo da Exame), o modelo de entrada equivale a 373 dias de trabalho no salário mínimo — “um ano de salário mínimo”.",
           "sourceIds": [
@@ -297,33 +235,10 @@
           ]
         },
         {
-          "id": "f9",
-          "text": "Pré-venda em 16/10/2026 e disponibilidade em 23/10/2026, com o Brasil no primeiro grupo de países.",
-          "sourceIds": [
-            "s1",
-            "s4"
-          ]
-        },
-        {
           "id": "f10",
           "text": "Em 22/07/2026, 49 dias antes do iPhone Duo, a Samsung apresentou a “eighth-generation Galaxy Z series”; o Galaxy Z Fold8 tem tela principal de 7,6 polegadas e capa de 5,5.",
           "sourceIds": [
             "s25"
-          ]
-        },
-        {
-          "id": "f11",
-          "text": "A Samsung diz que o Fold8 foi “built on seven generations of foldable innovation”.",
-          "sourceIds": [
-            "s26"
-          ]
-        },
-        {
-          "id": "f12",
-          "text": "No Brasil, o Galaxy Z Fold8 de 256 GB foi lançado por R$ 12.599 em agosto de 2026.",
-          "sourceIds": [
-            "s29",
-            "x1"
           ]
         },
         {
@@ -374,14 +289,6 @@
           "sourceIds": [
             "s11",
             "s10"
-          ]
-        },
-        {
-          "id": "f19",
-          "text": "Canaltech e SBT News chamam o iPhone Duo de aparelho mais caro já apresentado pela Apple.",
-          "sourceIds": [
-            "s30",
-            "s31"
           ]
         }
       ],

@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "episodeId": "ep002-trouser-press-en",
   "createdAt": "2026-10-11T08:31:09.114Z",
-  "updatedAt": "2026-10-11T08:44:42.867Z",
-  "currentStage": "render",
+  "updatedAt": "2026-10-11T09:29:01.940Z",
+  "currentStage": "package",
   "productSlug": "corby-trouser-press",
   "pick": {
     "slug": "corby-trouser-press",
@@ -90,20 +90,43 @@
       "note": "85.47s, 32 beats, 43 blocos de legenda, 1 midias"
     },
     "render": {
-      "status": "running",
-      "attempts": 1,
-      "outputs": [],
-      "startedAt": "2026-10-11T08:44:42.867Z"
+      "status": "done",
+      "attempts": 2,
+      "startedAt": "2026-10-11T09:25:39.617Z",
+      "finishedAt": "2026-10-11T09:26:36.725Z",
+      "seconds": 57.1,
+      "inputHash": "eeb190da5beac8d6f17f8b52a469d5b8b3692ba077988934a4694523f9dd1d59",
+      "outputs": [
+        "episodes/ep002-trouser-press-en/build/episode.mp4"
+      ],
+      "note": "render bruto reaproveitado; loudness antes da normalizacao -19.40 LUFS; true peak -1.4 dBTP (alvo do loudnorm -2.7); sha256 32bddf092cb9"
     },
     "verify": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 2,
+      "startedAt": "2026-10-11T09:26:36.788Z",
+      "finishedAt": "2026-10-11T09:27:46.211Z",
+      "seconds": 69.4,
+      "inputHash": "32bddf092cb92c4f191b189179e74d6e278d3c2e0fb988220f753c2a1ec05638b27a9ebb6bb37f0ff79c54cd6f06591304ee92460a7743779ed55ace7fff54d5",
+      "outputs": [
+        "episodes/ep002-trouser-press-en/verify-report.json",
+        "episodes/ep002-trouser-press-en/build/verify/contact-sheet.jpg"
+      ],
+      "note": "16/18 ok, 2 aviso(s)"
     },
     "package": {
-      "status": "pending",
-      "attempts": 0,
-      "outputs": []
+      "status": "done",
+      "attempts": 2,
+      "startedAt": "2026-10-11T09:28:48.980Z",
+      "finishedAt": "2026-10-11T09:29:01.940Z",
+      "seconds": 13,
+      "inputHash": "70207e8e96a71df0075cea10475f90b94290bfa416d66876e3984eb4f69c0140",
+      "outputs": [
+        "episodes/ep002-trouser-press-en/package/metadata.json",
+        "episodes/ep002-trouser-press-en/package/captions.en.srt",
+        "episodes/ep002-trouser-press-en/build/thumbnail.png"
+      ],
+      "note": "titulo: \"45 minutes for one pair of trousers | Protocol 002\"; descricao 3164 bytes"
     },
     "upload": {
       "status": "pending",
@@ -111,7 +134,13 @@
       "outputs": []
     }
   },
-  "artifacts": {},
+  "artifacts": {
+    "render": {
+      "path": "build/episode.mp4",
+      "sha256": "32bddf092cb92c4f191b189179e74d6e278d3c2e0fb988220f753c2a1ec05638",
+      "bytes": 17061090
+    }
+  },
   "costs": [
     {
       "stage": "research",
@@ -238,9 +267,69 @@
       "unit": "seconds",
       "basis": "soma de todas as execucoes concluidas desta etapa",
       "at": "2026-10-11T08:43:44.830Z"
+    },
+    {
+      "stage": "render",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 57.1,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T09:26:36.726Z"
+    },
+    {
+      "stage": "render",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 2280,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T09:26:36.726Z"
+    },
+    {
+      "stage": "verify",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 69.4,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T09:27:46.211Z"
+    },
+    {
+      "stage": "verify",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 69.4,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T09:27:46.211Z"
+    },
+    {
+      "stage": "package",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 13,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T09:29:01.940Z"
+    },
+    {
+      "stage": "package",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 26.4,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T09:29:01.940Z"
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "stage": "verify",
+      "at": "2026-10-11T09:22:56.570Z",
+      "message": "Verificacao automatica reprovou: audio.pico (true peak -0.6 dBFS (limite -1.5))"
+    }
+  ],
   "youtube": {
     "status": "not_started"
   }

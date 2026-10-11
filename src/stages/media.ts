@@ -31,11 +31,17 @@ async function download(url: string, dest: string): Promise<void> {
   throw new Error(`download falhou apos 5 tentativas: ${url}`);
 }
 
-export function attributionText(m: {title: string; creator: string; landingUrl: string; license: LicenseCode; licenseVersion?: string}, modifications: string): string {
+export function attributionText(m: {title: string; creator: string; landingUrl: string; license: LicenseCode; licenseVersion?: string}, modifications: string, language: 'pt-BR' | 'en' = 'pt-BR'): string {
   const lic = licenseLabel(m.license, m.licenseVersion);
   const url = licenseUrl(m.license, m.licenseVersion);
-  return `"${m.title}" por ${m.creator} (${m.landingUrl}), ${lic}${url ? ` (${url})` : ''}. ${modifications}`;
+  return `"${m.title}" ${language === 'en' ? 'by' : 'por'} ${m.creator} (${m.landingUrl}), ${lic}${url ? ` (${url})` : ''}. ${modifications}`;
 }
+
+/** Descricao das modificacoes feitas nas fotos (mesma para todo o canal), no idioma do episodio. */
+export const MODIFICATIONS = {
+  'pt-BR': 'Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.',
+  en: 'Changes: vertical crop and framing, resizing, camera movement, text and graphics overlays.',
+} as const;
 
 export const mediaStage: Stage = {
   name: 'media',
@@ -53,7 +59,7 @@ export const mediaStage: Stage = {
     const outDir = path.join(ctx.p.assets, 'media');
     fs.mkdirSync(outDir, {recursive: true});
     const items: MediaItem[] = [];
-    const modifications = 'Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.';
+    const modifications = MODIFICATIONS['pt-BR'];
 
     for (const m of cand.media) {
       const base: Omit<MediaItem, 'verification' | 'status'> = {

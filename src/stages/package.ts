@@ -8,6 +8,7 @@ import {renderThumbnail} from './render.js';
 import {roteiroMd, fontesMd, publicacaoManualMd} from './docs.js';
 import type {Stage, Ctx} from './types.js';
 import {localeFor, type Language} from '../core/locale.js';
+import {attributionText, MODIFICATIONS} from './media.js';
 
 /** Arquivo de legendas do pacote no idioma do episodio. */
 export const captionsFile = (language: Language) => `captions.${language}.srt`;
@@ -61,7 +62,10 @@ export function buildDescription(ctx: Ctx): string {
   lines.push('', T.sources);
   for (const s of product.sources) lines.push(`• ${s.publisher}: ${s.title} — ${s.url} (${T.accessed(date(s.accessedAt))})`);
   lines.push('', T.imageCredits);
-  for (const it of registry.items.filter((i) => used.has(i.id))) lines.push(`• ${it.attribution}`);
+  // O registro de midias guarda o credito em portugues; em outro idioma, o credito e montado com os mesmos campos.
+  for (const it of registry.items.filter((i) => used.has(i.id))) {
+    lines.push(`• ${script.language === 'pt-BR' ? it.attribution : attributionText(it, MODIFICATIONS[script.language], script.language)}`);
+  }
   lines.push('', T.production);
   lines.push(`${voiceCredit(ttsProviders, ctx.cfg, script.language)} ${T.graphics}`);
   lines.push('', `ref: ${idempotencyKey(ctx)}`);

@@ -58,7 +58,8 @@ inferir onde está a graça.
 `title` (cartela de abertura com carimbo opcional), `media` (foto; `layout` `full` ou `exhibit`), `factsheet`
 (ficha técnica: linhas `Rótulo: valor` em `body`, fonte e data em `footnote`), `card` (cartela de texto),
 `black` (tela preta curta), `endcard` (encerramento com o lema). `lowerThird: true` mostra a etiqueta do vendedor.
-Efeitos sonoros discretos: `tap`, `tap-tap`, `click`, `crack`, `paper`, `chime`, `cough`.
+Efeitos sonoros discretos: `tap`, `tap-tap`, `click`, `crack`, `paper`, `chime`, `cough`, `shower` (chuveiro fora de quadro).
+Cenas 3D próprias (`type: "scene3d"`, campo `scene`): `egg-topper` (piloto) e `trouser-press` (deixas em `src/remotion/components/TrouserPress3D.tsx`); novas cenas entram no registro `src/remotion/components/scenes.ts`.
 
 ## Texto falado
 

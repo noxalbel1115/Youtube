@@ -15,7 +15,8 @@ const BeatVisual: React.FC<{beat: TimelineBeat; t: Timeline}> = ({beat, t}) => {
   const v = beat.visual;
   switch (v.type) {
     case 'scene3d':
-      return <Scene3DShot shotStart={beat.startFrame} track={buildTrack(t.beats)} />;
+      // A trilha de deixas considera so os beats da mesma cena 3D (um episodio pode ter mais de uma).
+      return <Scene3DShot scene={v.scene} shotStart={beat.startFrame} track={buildTrack(t.beats.filter((b) => b.visual.scene === v.scene))} />;
     case 'media':
       return v.layout === 'exhibit' ? <MediaExhibit beat={beat} /> : <MediaFull beat={beat} />;
     case 'title':

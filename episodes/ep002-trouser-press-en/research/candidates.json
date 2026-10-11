@@ -1,0 +1,2676 @@
+{
+  "researchedAt": "2026-10-11",
+  "method": "Copia da pesquisa do episodio ep002-prensa-de-calcas (ver research/LOCALIZACAO.md). Três agentes de pesquisa em paralelo (o terceiro grupo entrou depois do roteiro, só para completar a comparação) (WebSearch/WebFetch, Firecrawl, APIs do Openverse e da Wikimedia), 4 candidatos cada, com o briefing de prompts/pesquisa.md; licenças conferidas nas páginas de origem. O agente principal reconferiu em fonte primária os fatos do candidato escolhido usados no roteiro: manual em PDF e páginas do 7700 e do 6600 da Corby (Firecrawl com localização no Reino Unido, porque o site bloqueia acessos de fora), Wikipedia (\"Trouser press\", \"Peter Corby\") e o obituário do Isle of Wight County Press.",
+  "candidates": [
+    {
+      "slug": "corby-trouser-press",
+      "name": "Corby electric trouser press (Corby Trouser Press 7700 / Executive)",
+      "brand": "Corby of Windsor",
+      "description": "British electric trouser press, freestanding or wall-mounted, about 1.1 m tall and nearly 10 kg. The trousers go between a heated pad and a wood-finish front panel, and the appliance \"irons\" them in 15, 30 or 45-minute cycles. It takes one pair of trousers at a time and is a classic fixture of UK hotel rooms.",
+      "legitimateUse": "Hotel amenity and household item for formal clothing care: removes creases from suit trousers without an iron. Not assistive technology, nor health or safety equipment. Typical users: business travellers and hotels.",
+      "punchingDownRisk": "Low. The joke targets the appliance itself and the hotel-executive ritual, not a vulnerable group. The manual restricts use by children and by people with reduced capabilities, but the product is not made for them.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.corbyofwindsor.co.uk/package/3514/corby-7700-trouser-press-in-walnut-uk-plug",
+          "title": "Corby 7700 Trouser Press in Walnut - UK Plug",
+          "publisher": "Corby of Windsor",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Price (£189.60 inc. VAT), 15/30/45-minute cycles, dimensions (1095 x 465 x 355 mm, 9.56 kg), 4-year guarantee, \"Made in England\", jacket hanger, coin tray and the other finishes on sale (mahogany, black ash, beech, satin chrome, Lancaster oak, white & black)."
+        },
+        {
+          "id": "s2",
+          "url": "https://www.corbyofwindsor.co.uk/package/4161/corby-executive-trouser-press-uk-plug",
+          "title": "Corby Executive Trouser Press - UK Plug",
+          "publisher": "Corby of Windsor",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Top model: £215.04 inc. VAT, gloss black, 15/30/45-minute cycles, \"self-adjusting section for turn-ups\", 10.58 kg, and an FAQ telling you to run the press empty 2 or 3 times when it puts creases in the wrong place."
+        },
+        {
+          "id": "s3",
+          "url": "https://corbyofwindsor.co.uk/package/get-product-manual/1159/true",
+          "title": "Trouser Press Use & Care Manual (COI0017 V1_211013)",
+          "publisher": "Corby of Windsor / Fired Up Corporation Ltd",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Official manual (PDF, COI0017) for models 3300/4400/7700/Executive: history since 1930, ban on use in a bathroom, \"On no account should any trousers be dampened before pressing\", \"press one pair of trousers at a time\", natural fibre humidity assists pressing, operating instructions (raise the press to reveal the heated pad, insert the trousers, close, choose 15/30/45 min on the 7700)."
+        },
+        {
+          "id": "s4",
+          "url": "https://en.wikipedia.org/wiki/Trouser_press",
+          "title": "Trouser press",
+          "publisher": "Wikipedia (en)",
+          "kind": "encyclopedia",
+          "accessedAt": "2026-10-11",
+          "confirms": "Heating to about 60 °C, 15 to 45-minute cycle, history of John Corby Ltd (Windsor 1930, electric heating in the 1960s, Andover 1986, Fired Up 2009) and cultural references (Alan Partridge taking a Corby apart, Bill Bailey)."
+        },
+        {
+          "id": "s5",
+          "url": "https://www.corbyofwindsor.co.uk/",
+          "title": "International Manufacturer of Hotel and Hospitality Products and Equipment - Corby of Windsor",
+          "publisher": "Corby of Windsor",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "\"About\" section: founded by John Corby in Windsor in 1930, famous for the trouser press, exports to more than 60 countries and is specified by many hotel chains; \"Trouser Presses (22)\" category."
+        },
+        {
+          "id": "s6",
+          "url": "https://www.countypress.co.uk/news/19542579.cowes-man-trouser-press-inventor-peter-corby-dies-97/",
+          "title": "Cowes man and trouser press inventor Peter Corby dies at 97",
+          "publisher": "Isle of Wight County Press",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Obituary of Peter Corby: he perfected the press, which became \"a staple fitting in millions of hotel rooms\", and the heating pad was inspired by a Concorde engineer who had solved the freezing of the aircraft's nose cone."
+        },
+        {
+          "id": "s7",
+          "url": "https://windsorlocalhistorygroup.org/2025/09/30/the-corby-trouser-press/",
+          "title": "The Corby Trouser Press",
+          "publisher": "Windsor Local History Group (Ken Sutherland, from an article by Geoff Try in Windlesora 23, 2007)",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "Heated press launched by Peter Corby in 1960, \"developed with help from a Concorde aeronautical engineer and Eton College\", and production of 80,000 presses a year in 1973."
+        },
+        {
+          "id": "s8",
+          "url": "https://www.johnlewis.com/corby-7700-trouser-press-lancaster-oak/p3769158",
+          "title": "Corby 7700 Trouser Press, Lancaster Oak",
+          "publisher": "John Lewis & Partners",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Retail price £189.00. Describes the \"Corby Stretcher Bar System, which removes back-of-knee wrinkles\", automatic shut-off with cancel option, LED countdown display and a shelf for pocket contents."
+        },
+        {
+          "id": "s9",
+          "url": "https://www.corbyofwindsor.co.uk/package/3592/corby-6600-trouser-press-in-black-ash-with-1200w-steam-iron-uk-plug",
+          "title": "Corby 6600 Trouser Press in Black Ash with 1200W Steam Iron - UK Plug",
+          "publisher": "Corby of Windsor",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Page for the 6600 model, marked \"Sorry, this product has been discontinued\": \"Supplied with 1200W steam iron\" and a 15-minute cycle."
+        },
+        {
+          "id": "s10",
+          "url": "https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_side.JPG",
+          "title": "File:Corby electric trouser press side.JPG",
+          "publisher": "Wikimedia Commons (photo by Avron, CC BY-SA 4.0)",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "The (inspected) photo shows the rating plate of an older Corby press, model A30D: \"RATING 220V ~ 157W / 240V ~ 186W\", made by John Corby Limited in Andover."
+        },
+        {
+          "id": "s11",
+          "url": "https://en.wikipedia.org/wiki/Peter_Corby",
+          "title": "Peter Corby",
+          "publisher": "Wikipedia (en)",
+          "kind": "encyclopedia",
+          "accessedAt": "2026-10-11",
+          "confirms": "Peter Corby (1924–2021), former RAF flight engineer, added electrically heated pads to the press (an idea inspired by the heating of Concorde's nose) and rented the product to hotel chains."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "The Corby 7700 offers 15, 30 and 45-minute cycles. According to the manufacturer, the 45-minute one is \"for the even more difficult wrinkles\".",
+          "sourceIds": [
+            "s1",
+            "s3"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "The Corby 7700 is 1,095 mm tall and weighs 9.56 kg. The Executive weighs 10.58 kg.",
+          "sourceIds": [
+            "s1",
+            "s2"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "On the official website, the 7700 costs £189.60 inc. VAT and the Executive, the gloss-black top model, £215.04.",
+          "sourceIds": [
+            "s1",
+            "s2"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "The same 7700 model is sold in walnut, mahogany, black ash, beech, satin chrome, natural \"Lancaster\" oak and white & black.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "The manual states: \"Never use the appliance in a bathroom or near any source of water.\"",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "The manual also warns: \"On no account should any trousers be dampened before pressing.\" And asks: \"Please press one pair of trousers at a time\".",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "According to the manual, \"Using your Corby press daily will add to the life and appearance of your trousers.\" The manufacturer also says each press is \"hand assembled and individually tested\".",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "The Executive has a \"self-adjusting section for turn-ups\". John Lewis describes a \"Stretcher Bar System\" that removes back-of-knee wrinkles, plus an LED countdown display and a shelf for pocket contents.",
+          "sourceIds": [
+            "s2",
+            "s8"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "An older hotel Corby, model A30D, carries a rating plate of 157 W at 220 V and 186 W at 240 V. The consumption of current models was not confirmed.",
+          "sourceIds": [
+            "s10"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "According to the manufacturer, the brand started as John Corby Limited in 1930, in Windsor, making valet stands. The presses became electrically heated in the 1960s.",
+          "sourceIds": [
+            "s3",
+            "s4",
+            "s5"
+          ]
+        },
+        {
+          "id": "f11",
+          "text": "According to Peter Corby's obituary, \"a chance meeting with the Concorde plane engineer who had solved the problem of how to prevent the nosecone from freezing inspired the electrical heating pad\" of the press.",
+          "sourceIds": [
+            "s6",
+            "s11"
+          ]
+        },
+        {
+          "id": "f12",
+          "text": "In 1973, 80,000 presses were made a year. Today the company says it exports to more than 60 countries and is \"specified in many branded hotel chains\".",
+          "sourceIds": [
+            "s7",
+            "s5"
+          ]
+        },
+        {
+          "id": "f13",
+          "text": "The 6600 model, now discontinued, was \"Supplied with 1200W steam iron\", which according to the manufacturer \"allows you to make full use of the folding ironing board\".",
+          "sourceIds": [
+            "s9"
+          ]
+        },
+        {
+          "id": "f14",
+          "text": "The same manual says: \"The inherent humidity content of natural and mixed fibres assists the pressing process\", in the same section that forbids dampening the trousers.",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f15",
+          "text": "The trousers sit between the pressing plate and a cushioned heating pad that reaches about 60 °C.",
+          "sourceIds": [
+            "s4",
+            "s11"
+          ]
+        },
+        {
+          "id": "f16",
+          "text": "Use according to the manual: raise the press to reveal the heated pad, insert the trousers, close and, on the 7700, choose 15, 30 or 45 minutes.",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f17",
+          "text": "According to Peter Corby's obituary, he perfected what would become \"a staple fitting in millions of hotel rooms\".",
+          "sourceIds": [
+            "s6"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 189.6,
+        "currency": "GBP",
+        "sourceId": "s1",
+        "observedAt": "2026-10-11",
+        "note": "Corby 7700 in walnut on the official website (B2B shop for hotels), price inc. VAT (£158.00 ex VAT), \"21 In Stock\". John Lewis (s8) sells the 7700 in Lancaster oak for £189.00 and the Executive (s2) is £215.04."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "Corby electric trouser press open",
+          "creator": "Avron",
+          "provider": "wikimedia",
+          "providerRef": "File:Corby_electric_trouser_press_open.JPG",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_open.JPG",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Corby_electric_trouser_press_open.JPG",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": true,
+          "description": "Prensa Corby de parede, aberta, num quarto de hotel: painel frontal imitando mogno com pictogramas de instrução, braços-alavanca metálicos e a almofada de prensagem escura à mostra. Tomada visível embaixo. 1944 x 2592 px, sem pessoas. Modelo antigo de hotel, não o 7700 atual. Licença CC BY-SA 4.0 conferida na página File: do Commons (“Own work”, Avron, 01/01/2014)."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "Corby electric trouser press closed",
+          "creator": "Avron",
+          "provider": "wikimedia",
+          "providerRef": "File:Corby_electric_trouser_press_closed.JPG",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_closed.JPG",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Corby_electric_trouser_press_closed.JPG",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": true,
+          "description": "A mesma prensa Corby de parede, fechada: retângulo marrom de “madeira” com pictogramas brancos de uso no topo e alavancas laterais. Parece um armário pendurado na parede, com fio e tomada embaixo. 1944 x 2592 px, sem pessoas. Licença CC BY-SA 4.0 conferida no Commons."
+        },
+        {
+          "id": "m3",
+          "kind": "image",
+          "title": "Corby electric trouser press side",
+          "creator": "Avron",
+          "provider": "wikimedia",
+          "providerRef": "File:Corby_electric_trouser_press_side.JPG",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_side.JPG",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/Corby_electric_trouser_press_side.JPG",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": true,
+          "description": "Lateral da prensa com a placa legível: logotipo “CORBY of WINDSOR” com o Castelo de Windsor, “A30D TROUSER PRESS”, “RATING 220V ~ 157W / 240V ~ 186W”, “MADE IN ENGLAND by JOHN CORBY LIMITED … Andover” e o selo BEAB. Ótima para um close “técnico”. 1944 x 2592 px, foto um pouco escura, sem pessoas. Licença CC BY-SA 4.0 conferida no Commons."
+        },
+        {
+          "id": "m4",
+          "kind": "image",
+          "title": "Corby electric trouser press top",
+          "creator": "Avron",
+          "provider": "wikimedia",
+          "providerRef": "File:Corby_electric_trouser_press_top.JPG",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_top.JPG",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Corby_electric_trouser_press_top.JPG",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": true,
+          "description": "Topo de uma prensa preta com as inscrições “CORBY 3000 ELECTRIC TROUSER PRESS”, botão “ON/CANCEL”, luz vermelha e o aviso “30 MINUTES PRESS”, mais uma bandeja com marcas de uso. 2592 x 1944 px (paisagem), sem pessoas. Modelo antigo (Corby 3000). Licença CC BY-SA 4.0 conferida no Commons."
+        },
+        {
+          "id": "m5",
+          "kind": "image",
+          "title": "Hotel room at Heathrow had this awesome 70's trousers press",
+          "creator": "Tony in WA (Tony Kent)",
+          "provider": "openverse",
+          "providerRef": "c5169026-e408-4261-af48-d961d9711b37",
+          "landingUrl": "https://www.flickr.com/photos/32146215@N06/5734157164",
+          "fileUrl": "https://live.staticflickr.com/3638/5734157164_27159f4f9d_b.jpg",
+          "license": "by-sa",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "showsExactProduct": true,
+          "description": "Prensa Corby de parede num quarto de hotel em Heathrow (foto de 29/04/2011), com uma calça bege dentro. O topo de madeira escura traz a faixa ilustrada “THE CORBY TROUSER PRESS – ALWAYS AT YOUR SERVICE” e um controle giratório com LED vermelho aceso, rotulado “Corby” (número do modelo pouco legível, talvez 5000). 1024 x 768 px, sem pessoas. Licença CC BY-SA 2.0 conferida na página do Flickr."
+        }
+      ],
+      "scores": {
+        "contrast": 5,
+        "story": 5,
+        "visual": 4,
+        "media": 4,
+        "reliability": 5
+      },
+      "risks": [
+        "As 5 fotos licenciadas mostram modelos Corby antigos de hotel (A30D, Corby 3000 e um de parede com painel de mogno), não o 7700 ou o Executive atuais. A marca é legível em m3, m4 e m5. As fotos de fabricante/loja não podem ser usadas.",
+        "Potência dos modelos atuais NÃO verificada: o manual e as páginas de produto não informam watts. O único número (157 W a 220 V / 186 W a 240 V) vem da placa fotografada de um modelo antigo A30D (s10). No roteiro, deixar claro que é de um modelo antigo.",
+        "Royal Warrant NÃO encontrado em nenhuma fonte aberta (site, manual, Wikipedia, obituário). Não mencionar.",
+        "A data de fundação varia: o fabricante e a Wikipedia dizem 1930; o grupo de história local diz que John Corby chegou a Windsor em 1929. Usar “desde 1930”, como diz o fabricante.",
+        "O site da Corby bloqueia acessos de fora do Reino Unido (“Access Restricted”). Os dados foram lidos com um scraper localizado no Reino Unido. Os links podem não abrir para quem conferir de fora.",
+        "Cuidado de segurança: a solução óbvia (pendurar a calça no banheiro durante o banho quente) deve mostrar só a calça no cabide. Nunca mostrar a prensa elétrica no banheiro, que o próprio manual proíbe.",
+        "Não usar trechos de Alan Partridge ou Bill Bailey (direitos autorais). Citar só como fato, se necessário."
+      ],
+      "comedyAngle": "A nearly 10 kg, 1.1 m piece of furniture in walnut or \"Lancaster oak\", with technology inspired by Concorde's nose and a cycle of up to 45 minutes \"for the even more difficult wrinkles\", to press ONE pair of trousers at a time. The manual delivers the punchline: it forbids taking the press into the bathroom, exactly where the obvious solution wins. The customer hangs the trousers in the bathroom, showers for 10 minutes and walks out with smooth trousers while the Corby is still counting down. Bonus: the 6600 model came with an iron included."
+    },
+    {
+      "slug": "hapifork",
+      "name": "HAPIfork (garfo eletrônico que vibra se você come rápido)",
+      "brand": "HAPILABS",
+      "description": "Garfo eletrônico com sensor capacitivo, Bluetooth e luzes/vibração que avisa quando duas garfadas acontecem em menos de 10 segundos. Registra quantas “garfadas” você dá por minuto e quanto dura a refeição, e sincroniza com um app. Lançado na CES 2013 e financiado no Kickstarter.",
+      "legitimateUse": "Foi vendido como ferramenta de saúde: comer mais devagar, melhorar a digestão e emagrecer. Pode servir a quem recebeu orientação clínica para desacelerar as refeições. Não é ferramenta profissional, mas é produto de saúde e comportamento alimentar.",
+      "punchingDownRisk": "ALTO. É um produto de emagrecimento e controle alimentar: a piada pode atingir quem tenta perder peso, pessoas gordas ou quem tem transtorno alimentar, e qualquer menção a “comer demais” é sensível. Só daria para fazer piada com a parte tecnológica (um garfo com Bluetooth e firmware), nunca com o corpo ou a alimentação de alguém. Recomendação: descartar ou deixar como reserva distante.",
+      "sources": [
+        {
+          "id": "h1",
+          "url": "https://www.kickstarter.com/projects/1273668931/hapifork-the-smart-fork-that-tracks-your-eating-ha-0",
+          "title": "HAPIfork: eat slowly, feel better",
+          "publisher": "HAPILABS (“Jacques, Fabrice, Andrew & the HAPI team”) via Kickstarter",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Página da campanha escrita pelo próprio fabricante: 1.268 apoiadores e US$ 134.743 arrecadados, o que o garfo mede, recarga por USB, upload via Bluetooth ou USB, lavável na lava-louças e as alegações de digestão e peso."
+        },
+        {
+          "id": "h2",
+          "url": "https://abcnews.com/blogs/technology/2013/01/hapifork-bluetooth-fork-vibrates-if-you-eat-too-fast",
+          "title": "HapiFork: Bluetooth Fork Vibrates if You Eat Too Fast",
+          "publisher": "ABC News (Joanna Stern, 08/01/2013)",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Teste na CES 2013: sensor capacitivo, vibração se outra garfada vem em menos de 10 s (ajustável no app), cerca de duas semanas de bateria com uso intenso, preço de US$ 99,99 e citações do CEO Fabrice Boutain."
+        },
+        {
+          "id": "h3",
+          "url": "https://www.engadget.com/2013-04-17-hapifork-kickstarter-campaign-hands-on.html",
+          "title": "HAPILABS launches HAPIfork Kickstarter campaign, we go hands-on and in-mouth",
+          "publisher": "Engadget (Christopher Trout, 17/04/2013)",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Teste prático: meta de 10 s entre garfadas, Bluetooth 4.0, micro-USB, cores verde/azul/rosa, US$ 89 para os 2.500 primeiros e US$ 99 depois, além de “this isn't a magic pill” dito pelo presidente da empresa."
+        },
+        {
+          "id": "h4",
+          "url": "https://newatlas.com/hapifork-smart-fork-kickstarter/27156/",
+          "title": "HAPIfork smart fork hits Kickstarter",
+          "publisher": "New Atlas (Dave Parrack, 19/04/2013)",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Destaque da CES 2013, meta de US$ 100.000 no Kickstarter, componentes (vibrador, LEDs, bateria, sensor capacitivo nos dentes do garfo), lavável na lava-louças e preço público de US$ 99."
+        },
+        {
+          "id": "h5",
+          "url": "https://www.ebay.com/itm/188538060548",
+          "title": "Hapifork Smart Fork Silver Gentle Weight Loss Encouragement New In Package",
+          "publisher": "eBay (vendedor particular, Sarasota, FL)",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Revenda no marketplace: anúncio “New other (see details)” por US$ 58,90, já marcado como “Sold”. Mostra que o produto circula só no mercado de segunda mão."
+        },
+        {
+          "id": "h6",
+          "url": "https://www.dwell.com/product/hapifork-ab7e3aba",
+          "title": "HAPIfork by Hapi",
+          "publisher": "Dwell",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "Ficha antiga do produto: marca “Hapi”, US$ 99 / US$ 79,99, “powered by Slow Control”, com link de compra para hapi.com. Em verificação separada nesta sessão, hapi.com redirecionou para uma página de venda de domínio da GoDaddy."
+        },
+        {
+          "id": "h7",
+          "url": "https://www.hapilabs.com/",
+          "title": "hapilabs.com (página inicial)",
+          "publisher": "HAPILABS",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Em 2026-10-11 o domínio do fabricante devolvia erro HTTP 500 (página de erro do WordPress em tailandês), sem catálogo nem loja ativos."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "O HAPIfork foi apresentado na CES 2013, em Las Vegas.",
+          "sourceIds": [
+            "h2",
+            "h4"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Um sensor capacitivo mede o tempo desde a última garfada. Se a próxima vier em menos de 10 segundos, o garfo vibra (o intervalo é ajustável no app).",
+          "sourceIds": [
+            "h2",
+            "h3"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "O garfo tem Bluetooth 4.0 e carrega por micro-USB.",
+          "sourceIds": [
+            "h3",
+            "h1"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "Ele registra o número de “fork servings” [garfadas] por minuto e por refeição, o intervalo entre elas, a duração da refeição e “the exact time at which you start and end your meal” [a hora exata em que você começa e termina de comer].",
+          "sourceIds": [
+            "h1"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "A bateria dura cerca de duas semanas “com uso intenso”, segundo o fabricante na CES.",
+          "sourceIds": [
+            "h2"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "No Kickstarter, 1.268 apoiadores deram US$ 134.743. A meta era US$ 100.000.",
+          "sourceIds": [
+            "h1",
+            "h4"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "Saiu por US$ 89 para os 2.500 primeiros apoiadores, US$ 99 depois, e foi anunciado na CES por US$ 99,99.",
+          "sourceIds": [
+            "h3",
+            "h4",
+            "h2"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "O repórter do Engadget comparou a vibração a “the feeling you get when your phone vibrates through a coat pocket” [a sensação do celular vibrando no bolso do casaco].",
+          "sourceIds": [
+            "h3"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "O CEO e fundador Fabrice Boutain declarou: “Fifty percent of your health comes from what you eat.” [Cinquenta por cento da sua saúde vem do que você come.]",
+          "sourceIds": [
+            "h2"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "O presidente da empresa admitiu no lançamento: “this isn't a magic pill” [isto não é uma pílula mágica].",
+          "sourceIds": [
+            "h3"
+          ]
+        },
+        {
+          "id": "f11",
+          "text": "O garfo vinha em verde, azul e rosa, e pode ir à lava-louças.",
+          "sourceIds": [
+            "h3",
+            "h1",
+            "h4"
+          ]
+        },
+        {
+          "id": "f12",
+          "text": "Em 11/10/2026 o site hapilabs.com devolvia erro 500, e o único exemplar encontrado à venda era um anúncio de revenda no eBay já marcado como vendido.",
+          "sourceIds": [
+            "h7",
+            "h5"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 58.9,
+        "currency": "USD",
+        "sourceId": "h5",
+        "observedAt": "2026-10-11",
+        "note": "Revenda no eBay (“New other”, status “Sold”), não é preço oficial. O preço de lançamento em 2013 era US$ 99 (h3, h4). Não há loja oficial ativa."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "HAPIfork - Consumer Electronics Show - CES 2013 - Las Vegas",
+          "creator": "David Berkowitz",
+          "provider": "openverse",
+          "providerRef": "953d4676-331f-45c2-b7c5-c4a0e3028a97",
+          "landingUrl": "https://www.flickr.com/photos/25897810@N00/8380738447",
+          "fileUrl": "https://live.staticflickr.com/8089/8380738447_d4be7eb7e2_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "O HAPIfork rosa e prateado deitado numa mesa preta do estande da CES 2013 (foto de 08/01/2013). Mostra o cabo grosso de alumínio, as pontas rosa, o botão e os dentes de inox. Canto de um folheto ao fundo. 1024 x 768 px, sem pessoas, iluminação de feira. Licença CC BY 2.0 conferida no Flickr."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "HAPIfork - Consumer Electronics Show - CES 2013 - Las Vegas",
+          "creator": "David Berkowitz",
+          "provider": "openverse",
+          "providerRef": "5f673fa9-dce0-4d94-b0f4-5db4e2423920",
+          "landingUrl": "https://www.flickr.com/photos/25897810@N00/8381819696",
+          "fileUrl": "https://live.staticflickr.com/8369/8381819696_20f6b387e3_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": false,
+          "description": "Banner do estande da HAPILABS na CES 2013 com um garfo verde gigante desenhado e o slogan “HAPIfork – Eat Slowly · Lose Weight · Feel Great / The World's First Fork that Helps You Lose Weight”. Mostra o anúncio, não o objeto. 768 x 1024 px, sem pessoas. Licença CC BY 2.0 conferida no Flickr, mas a arte do banner é publicidade protegida da empresa."
+        }
+      ],
+      "scores": {
+        "contrast": 3,
+        "story": 2,
+        "visual": 3,
+        "media": 2,
+        "reliability": 3
+      },
+      "risks": [
+        "Produto de emagrecimento e comportamento alimentar: alto risco de “punching down” contra quem tenta emagrecer ou tem transtorno alimentar. A solução óbvia (contar até 10, largar o garfo) também esbarra no tema alimentar.",
+        "Aparentemente descontinuado: hapilabs.com dá erro 500 e hapi.com redireciona para a venda do domínio na GoDaddy. A única oferta encontrada é revenda no eBay, já vendida. A fonte de fabricante é a página do Kickstarter (2013), não uma loja ativa.",
+        "Todas as fontes de imprensa são de 2013. Não foi verificado se existe versão atual nem quem fabrica hoje (o Dwell cita “Slow Control”).",
+        "Prêmios NÃO verificados: nenhuma fonte aberta citou prêmio (o rumor de prêmio da CES não foi confirmado).",
+        "Mídia fraca: só 2 fotos de 1024 px, e uma delas é um banner publicitário com arte protegida da empresa (m2). Fotos de fabricante e capturas de vídeo não podem ser usadas.",
+        "As alegações de saúde do fabricante (“improve your digestion and also reduce your weight”) não devem ser repetidas como verdade no roteiro."
+      ],
+      "comedyAngle": "No papel, um garfo com Bluetooth 4.0, firmware, app e bateria de duas semanas para medir o intervalo entre garfadas tem ótimo contraste: a solução óbvia é largar o garfo e contar até dez. Na prática, o tema é peso e alimentação, e qualquer piada resvala em quem tem relação difícil com comida. Recomendo não usar, ou só como reserva com foco exclusivo na tecnologia. Também está descontinuado e tem mídia pobre."
+    },
+    {
+      "slug": "electric-marshmallow-roaster",
+      "name": "Assador elétrico de marshmallow / s'mores de mesa (Nostalgia Indoor Electric S'mores Maker)",
+      "brand": "Nostalgia Products",
+      "description": "Aparelho de mesa com um aquecedor elétrico sem chama no centro, cercado por bandejas para biscoito, chocolate e marshmallow, mais garfos de inox para tostar o marshmallow. Promete trazer a fogueira de acampamento para dentro de casa usando só uma tomada.",
+      "legitimateUse": "Diversão em festas e com crianças. O fabricante destaca a segurança: sem chama aberta, com garfos longos que mantêm as mãos longe do aquecedor. Não é tecnologia assistiva nem ferramenta profissional.",
+      "punchingDownRisk": "Baixo. O alvo é o aparelho “gourmet” de festa. Cuidado só para não incentivar crianças a tostar marshmallow na chama do fogão: a cena da solução óbvia deve ser feita por um adulto, com segurança.",
+      "sources": [
+        {
+          "id": "n1",
+          "url": "https://nostalgiaproducts.com/products/lsm400",
+          "title": "Indoor Electric Stainless Steel S'mores Maker with 4 Lazy Susan Compartment Trays (NLSM4BR)",
+          "publisher": "Nostalgia Products",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Modelo NLSM4BR por US$ 59,99, aquecedor elétrico sem chama, “requires nothing but an electrical outlet”, 4 garfos de inox, 4 bandejas giratórias “lazy susan”, 16 x 6 x 17 pol e 5 lb."
+        },
+        {
+          "id": "n2",
+          "url": "https://www.doitbest.com/product/646479/nostalgia-indoor-electric-stainless-steel-s-mores-maker-646479",
+          "title": "Nostalgia Indoor Electric Stainless Steel S'mores Maker",
+          "publisher": "Do it Best",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Modelo NSM201BR: 270 W, 2 garfos de inox, 4 bandejas, 5 pol de altura x 13 pol de diâmetro, e o texto de marketing (“Skip the hassle of building a bonfire…”). A página não mostra preço."
+        },
+        {
+          "id": "n3",
+          "url": "https://www.flickr.com/photos/44124408791@N01/315843421",
+          "title": "Marshmallow roaster",
+          "publisher": "Flickr (we-make-money-not-art / Régine Debatty)",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "A série “Marshmallow roaster” do Openverse foi fotografada em 06/12/2006 pelo blog we-make-money-not-art e mostra uma peça de design exposta numa galeria, não um produto comercial. O post de origem dá 404."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "A Nostalgia vende o “Indoor Electric Stainless Steel S'mores Maker with 4 Lazy Susan Compartment Trays” (modelo NLSM4BR) por US$ 59,99.",
+          "sourceIds": [
+            "n1"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "O fabricante promete: “Forget the hassle of cutting wood and open flames” [esqueça o trabalho de cortar lenha e as chamas abertas].",
+          "sourceIds": [
+            "n1",
+            "n2"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "O aquecedor sem chama “requires nothing but an electrical outlet to start making perfect golden brown s'mores” [só precisa de uma tomada para fazer s'mores perfeitamente dourados].",
+          "sourceIds": [
+            "n1",
+            "n2"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "O NLSM4BR vem com 4 garfos de inox para “keep hands a safe distance from the heater” [manter as mãos a uma distância segura do aquecedor].",
+          "sourceIds": [
+            "n1"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "As 4 bandejas giram como uma “lazy susan” para servir os ingredientes dos s'mores.",
+          "sourceIds": [
+            "n1"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "O NLSM4BR mede 16 x 6 x 17 polegadas e pesa 5 libras (cerca de 2,3 kg).",
+          "sourceIds": [
+            "n1"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "O modelo NSM201BR, vendido no varejo, tem 270 W, 2 garfos e 4 bandejas, e mede 5 pol de altura por 13 pol de diâmetro.",
+          "sourceIds": [
+            "n2"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "Texto da loja: “Skip the hassle of building a bonfire and bring the taste of the campfire right into the kitchen.” [Pule o trabalho de fazer uma fogueira e traga o sabor do acampamento para a cozinha.]",
+          "sourceIds": [
+            "n2"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "O produto ainda promete: “Make any event worth celebrating.” [Torne qualquer evento digno de comemoração.]",
+          "sourceIds": [
+            "n2"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 59.99,
+        "currency": "USD",
+        "sourceId": "n1",
+        "observedAt": "2026-10-11",
+        "note": "Preço atual (“Current price $59.99”) do modelo NLSM4BR no site oficial da Nostalgia."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "Thanks to Kevin @gorving for bringing the office a portable s'mores maker. Now tucked between Krups and toaster",
+          "creator": "familytravelforum (Kyle McCarthy)",
+          "provider": "openverse",
+          "providerRef": "fdc770c4-9b5a-43e6-865d-5a80bb82516b",
+          "landingUrl": "https://www.flickr.com/photos/31810715@N08/22503256033",
+          "fileUrl": "https://live.staticflickr.com/703/22503256033_8d4cd7e329_b.jpg",
+          "license": "by-sa",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "showsExactProduct": true,
+          "description": "Exemplo do TIPO de produto, não da marca Nostalgia: um “portable s'mores maker” de mesa, cilíndrico, marrom, com grelha de malha no topo, numa copa de escritório ao lado de uma cafeteira. Uma mão com unhas pintadas coloca um s'more (biscoito, chocolate e marshmallow) sobre a grelha; há um cabo preto passando ao lado. Marca não identificada e pessoa não identificável (só mão e braço). 1024 x 1024 px, quadrada (Instagram, 2015). Licença CC BY-SA 2.0 conferida no Flickr."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "Marshmallow roaster",
+          "creator": "we-make-money-not-art (Régine Debatty)",
+          "provider": "openverse",
+          "providerRef": "3304e4a8-93a0-4fb0-9d4a-e7f2abb086ce",
+          "landingUrl": "https://www.flickr.com/photos/44124408791@N01/315843421",
+          "fileUrl": "https://live.staticflickr.com/104/315843421_fb0e687583_b.jpg",
+          "license": "by-sa",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "showsExactProduct": false,
+          "description": "Peça de design numa exposição (06/12/2006): luminária articulada branca com cúpula cônica e lâmpada de aquecimento, com uma “bolinha” rosa na frente; espetos de madeira com cabo ficam numa base ao lado. Outras fotos da mesma série mostram uma caixa de acrílico cheia de marshmallows. É protótipo ou obra de galeria, NÃO o produto comercial. 1024 x 768 px, sem pessoas, luz amarelada. Licença CC BY-SA 2.0 conferida no Flickr."
+        }
+      ],
+      "scores": {
+        "contrast": 4,
+        "story": 4,
+        "visual": 3,
+        "media": 2,
+        "reliability": 4
+      },
+      "risks": [
+        "Nenhuma foto licenciada do produto Nostalgia. A única do tipo (m1) é de outra marca não identificada, em 1024 px, tirada com celular. A série “Marshmallow roaster” do Openverse é uma peça de design de galeria de 2006, não um produto à venda.",
+        "As listagens divergem: o NLSM4BR (site oficial) tem 4 garfos e bandejas giratórias, o NSM201BR (varejo) tem 2 garfos e 270 W. A potência do NLSM4BR não aparece no site oficial. No roteiro, citar o modelo certo em cada fato.",
+        "A Do it Best não mostra preço online. A Sam's Club e a Amazon não puderam ser verificadas (bloqueio anti-robô), e os preços de terceiros vistos só em resumo de busca não foram usados.",
+        "Segurança: a solução óbvia (marshmallow no garfo sobre a boca do fogão) envolve chama aberta. Mostrar um adulto e não sugerir que crianças façam."
+      ],
+      "comedyAngle": "Um eletrodoméstico inteiro, com bandejas giratórias “lazy susan”, garfos de inox e aquecedor de 270 W, para substituir o fósforo, a vela ou a boca do fogão na tarefa de dourar um marshmallow. O vendedor exalta que “só precisa de uma tomada” e que dispensa “cortar lenha”, coisa que ninguém faz para um marshmallow na cozinha. Solução óbvia que vence: um garfo comum sobre a boca do fogão; o marshmallow doura em segundos enquanto o aparelho ainda está esquentando."
+    },
+    {
+      "slug": "mustache-cup",
+      "name": "Xícara de bigode (moustache cup)",
+      "brand": "Vários (tipo de produto; exemplos atuais: Zangra “porcelain moustache or bed cup” e Taconic Mustache Stoneware Guard Mug)",
+      "description": "Xícara com uma aba interna em meia-lua (o “moustache guard”) junto à borda: o líquido passa por uma fresta e o bigode fica seco, apoiado na aba. Moda vitoriana atribuída ao oleiro inglês Harvey Adams e hoje revivida como objeto de colecionador e presente para bigodudos.",
+      "legitimateUse": "Tem uso legítimo, ainda que de nicho: protege bigodes encerados do vapor e de manchas. A versão moderna da Zangra é vendida também como “bed cup”, xícara anti-derramamento “Ideal for those with limited hand movement” [ideal para quem tem movimento limitado das mãos], ou seja, uso assistivo. Não é um produto inútil.",
+      "punchingDownRisk": "Moderado. A piada pode mirar a vaidade vitoriana do bigode encerado, mas não a versão anti-derramamento para quem tem mobilidade reduzida nas mãos, que deve ficar fora do roteiro. Há pouco absurdo tecnológico: é só uma aba de porcelana.",
+      "sources": [
+        {
+          "id": "c1",
+          "url": "https://en.wikipedia.org/wiki/Moustache_cup",
+          "title": "Moustache cup",
+          "publisher": "Wikipedia (en)",
+          "kind": "encyclopedia",
+          "accessedAt": "2026-10-11",
+          "confirms": "Invenção atribuída ao oleiro britânico Harvey Adams nos anos 1870, como funciona a aba, o problema da cera de bigode, fabricantes (Meissen, Royal Crown Derby, Limoges…), o declínio entre 1920 e 1930 e o renascimento entre colecionadores."
+        },
+        {
+          "id": "c2",
+          "url": "https://apps.jefpat.maryland.gov/curatorschoice/CCIssues/2017-10.aspx",
+          "title": "Forget Me Not Mustache Cup (Curator's Choice, outubro de 2017)",
+          "publisher": "Maryland Archaeological Conservation Lab",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "Data alternativa (Harvey Adams, “sometime between 1850 and 1860”), receita da cera de bigode, o protetor de E.C. Gladwin (1902), o declínio na Primeira Guerra e a pista sobre a mão dominante do dono."
+        },
+        {
+          "id": "c3",
+          "url": "https://zangra.com/en_US/products/porcelain-moustache-or-bed-cup",
+          "title": "porcelain moustache or bed cup",
+          "publisher": "Zangra",
+          "kind": "official-store",
+          "accessedAt": "2026-10-11",
+          "confirms": "Versão moderna em porcelana branca feita na Europa, em estoque: 7,5 cm de altura, 195 g, vai à lava-louças, freezer e micro-ondas, e serve também como xícara anti-derramamento “for those with limited hand movement”."
+        },
+        {
+          "id": "c4",
+          "url": "https://www.therazorcompany.com/products/taconi-ivory-mustache-stoneware-guard-mug",
+          "title": "Taconic Ivory Mustache Stoneware Guard Mug",
+          "publisher": "The Razor Company",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Caneca moderna de grés marfim com protetor de bigode integrado, inspirada nas xícaras vitorianas, por US$ 27,00, com status “Backordered”."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "A xícara tem uma aba semicircular interna, o “moustache guard”, com uma abertura em meia-lua que deixa o líquido passar e mantém o bigode seco.",
+          "sourceIds": [
+            "c1"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "A invenção é atribuída ao oleiro de Staffordshire Harvey Adams. As fontes divergem na data: anos 1870 segundo a Wikipedia, “entre 1850 e 1860” segundo o laboratório arqueológico de Maryland.",
+          "sourceIds": [
+            "c1",
+            "c2"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Motivo: o vapor do chá derretia a cera de bigode, que pingava na xícara. A cera era feita de gordura animal, cera de abelha, resina e óleo vegetal.",
+          "sourceIds": [
+            "c1",
+            "c2"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "Meissen, Royal Crown Derby, Imari, Royal Bayreuth e Limoges, entre muitos outros, fabricaram xícaras de bigode.",
+          "sourceIds": [
+            "c1"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "No início do século XX, o Exército britânico exigia que os soldados usassem bigode.",
+          "sourceIds": [
+            "c1"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "As xícaras saíram de moda entre 1920 e 1930. Segundo o laboratório de Maryland, a decadência veio com a Primeira Guerra, quando regras de barbear e máscaras de gás tornaram os bigodões impraticáveis.",
+          "sourceIds": [
+            "c1",
+            "c2"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "Uma alternativa menos comum, um protetor de bigode (“mustache guard”), foi patenteada em 1902 por E.C. Gladwin.",
+          "sourceIds": [
+            "c2"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "A posição da alça em relação à aba entrega a mão dominante do dono: no exemplar de Maryland, a alça à direita da aba indica que ele “most likely” era destro.",
+          "sourceIds": [
+            "c2"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "A Zangra vende hoje uma “porcelain moustache or bed cup” de 7,5 cm e 195 g que vai à lava-louças, ao freezer e ao micro-ondas.",
+          "sourceIds": [
+            "c3"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "A Taconic Ivory Mustache Stoneware Guard Mug, caneca moderna com protetor inspirada nas xícaras vitorianas, custa US$ 27,00 e estava “backordered” (em falta) na loja.",
+          "sourceIds": [
+            "c4"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 27,
+        "currency": "USD",
+        "sourceId": "c4",
+        "observedAt": "2026-10-11",
+        "note": "Taconic Ivory Mustache Stoneware Guard Mug na The Razor Company, “Regular price $27.00 USD”, status “Backordered”. A Zangra (c3) mostra “$36.41” com 30% de desconto, “$25.49”, mas a página não diz a moeda, por isso não foi usada."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "Moustache Cup - Loxton Historical Village (2020-10-22 09.31.35 by Michael Coghlan)",
+          "creator": "Michael Coghlan",
+          "provider": "openverse",
+          "providerRef": "488998de-5afd-4a00-b219-bd91dfbdbc4a",
+          "landingUrl": "https://commons.wikimedia.org/w/index.php?curid=115276894",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Moustache_Cup_-_Loxton_Historical_Village_%282020-10-22_09.31.35_by_Michael_Coghlan%29.jpg",
+          "license": "by-sa",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "showsExactProduct": true,
+          "description": "Exemplo antigo do tipo: xícara de bigode rosa com flores, deitada sobre o pires numa vitrine, com a aba interna dourada bem visível. Ao lado, a plaquinha do museu: “SPECIAL MOUSTACHE CUP (NOTE 'LIP' INSIDE TO KEEP MOUSTACHE CLEAN)”. Há reflexo de vidro. 2592 x 1944 px, sem pessoas. CC BY-SA 2.0 conferida no Commons (revisada pelo FlickreviewR 2)."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "Moustache cup Tea museum",
+          "creator": "daveyll (David Loong)",
+          "provider": "openverse",
+          "providerRef": "304297b3-54a4-4293-b180-a1a88311c115",
+          "landingUrl": "https://commons.wikimedia.org/w/index.php?curid=2629941",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Moustache_cup_Tea_museum.jpg",
+          "license": "by-sa",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "showsExactProduct": true,
+          "description": "Exemplo antigo do tipo: várias xícaras de bigode numa vitrine de um “Tea museum” (sem nome), com as abas internas à mostra. Em destaque, uma xícara branca com bigode desenhado e outra azul-marinho. 2848 x 2136 px, iluminação baixa, sem pessoas. CC BY-SA 2.0 conferida no Commons (FlickreviewR)."
+        },
+        {
+          "id": "m3",
+          "kind": "image",
+          "title": "Dana Bartlett, Mustache Cup and Saucer, c. 1953 (NGA 20118)",
+          "creator": "Dana Bartlett (Index of American Design, National Gallery of Art)",
+          "provider": "openverse",
+          "providerRef": "d3a7e78a-15be-44ff-a326-f03b2acf4c58",
+          "landingUrl": "https://commons.wikimedia.org/w/index.php?curid=82023261",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Dana_Bartlett%2C_Mustache_Cup_and_Saucer%2C_c._1953%2C_NGA_20118.jpg",
+          "license": "cc0",
+          "licenseVersion": "1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "showsExactProduct": true,
+          "description": "Aquarela, não foto (c. 1953, aquarela, grafite e tinta dourada sobre papel, Index of American Design, NGA 1943.8.7920): a xícara de bigode vista de cima, com a aba em meia-lua, e de lado, com flores e amoras. Fundo limpo, ótima para explicar o mecanismo na tela. 2741 x 4000 px. CC0 1.0 conferida no Commons."
+        },
+        {
+          "id": "m4",
+          "kind": "image",
+          "title": "Mustache Cup",
+          "creator": "teofilo",
+          "provider": "openverse",
+          "providerRef": "01985da1-79be-4118-bdfc-b4a0c2f432a4",
+          "landingUrl": "https://www.flickr.com/photos/72558920@N00/3312803936",
+          "fileUrl": "https://live.staticflickr.com/3334/3312803936_e38b775521_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Xícara de bigode branca com flores rosa e friso dourado sobre pires creme, numa toalha xadrez vermelha. A aba interna, recortada e dourada, aparece bem de cima (26/02/2009; o Openverse traz a tag “pipespring”, local não confirmado). 1024 x 768 px, sem pessoas. CC BY 2.0 conferida no Flickr."
+        }
+      ],
+      "scores": {
+        "contrast": 3,
+        "story": 3,
+        "visual": 4,
+        "media": 5,
+        "reliability": 4
+      },
+      "risks": [
+        "Uso legítimo real: protege bigodes encerados, e a versão moderna da Zangra é vendida como xícara anti-derramamento para quem tem movimento limitado das mãos. Não zombar dessa função. Pouco “absurdo tecnológico”, o contraste é moderado.",
+        "Todas as fotos licenciadas mostram peças antigas de museu ou coleção (ou uma aquarela), nenhuma das versões modernas à venda (Zangra, Taconic). As fotos de loja não podem ser usadas.",
+        "A data de invenção diverge entre as fontes (anos 1870 contra 1850–1860). No roteiro, dizer “era vitoriana”, sem ano exato.",
+        "O artigo da Atlas Obscura (citado pela Wikipedia, com o detalhe de que Adams se aposentou rico em cerca de 15 anos) não abriu (403). Esse detalhe NÃO foi verificado e não deve ser usado.",
+        "A página da Zangra mostra o preço com “$” sem informar a moeda, então não foi registrado. A caneca Taconic estava “backordered” (sem pronta entrega)."
+      ],
+      "comedyAngle": "O vendedor apresenta uma “tecnologia vitoriana de contenção capilar”: uma xícara de porcelana com uma prateleira só para o bigode, criada porque a cera do bigode derretia no chá, e com uma pista na alça que revela se o dono é destro. Solução óbvia que vence: um guardanapo, ou simplesmente um canudo. O visual da aba em meia-lua é ótimo e a mídia CC0/CC BY-SA é farta, mas o contraste é menor, porque o objeto funciona e tem versão com uso assistivo."
+    },
+    {
+      "slug": "hutzler-571-banana-slicer",
+      "name": "Fatiador de banana Hutzler 571 (Banana Slicer)",
+      "brand": "Hutzler Manufacturing Co. (vendido ao consumidor pela Gourmac, divisão da própria Hutzler)",
+      "description": "Peça de plástico amarelo no formato de uma banana, com uma grade de lâminas plásticas transversais: você pressiona sobre a banana descascada e ela sai fatiada de uma vez. Item nº 571 da Hutzler, fabricante de utensílios domésticos de Canaan (Connecticut, EUA). Ficou famoso na internet pelas avaliações irônicas na Amazon a partir de 2011–2013.",
+      "legitimateUse": "Fatias uniformes de banana para cereal, salada de frutas ou lanche infantil; o fabricante o vende como 'Safe and fun for children' (seguro e divertido para crianças), ou seja, uma forma de a criança fatiar sem faca.",
+      "punchingDownRisk": "Baixo. Não é tecnologia assistiva nem item de saúde; o alvo da piada é o próprio objeto (e o fenômeno das avaliações). Cuidado só para não ridicularizar crianças ou pais que o usam como alternativa à faca.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://hutzlerco.com/hutzler-banana-slicer-oanz/",
+          "title": "Hutzler Banana Slicer - Hutzler",
+          "publisher": "Hutzler Manufacturing Co. (hutzlerco.com)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Página oficial do SKU 571 com a descrição do fabricante (fatia a banana inteira num só movimento, seguro para crianças, lava-louças) e a lista de aparições na mídia."
+        },
+        {
+          "id": "s2",
+          "url": "https://hutzlerco.com/about-us/",
+          "title": "About Us - Hutzler",
+          "publisher": "Hutzler Manufacturing Co. (hutzlerco.com)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "História da empresa: utensílios desde 1938, pioneirismo no plástico na 2ª Guerra, mudança para Canaan (CT) em 1977, empresa familiar."
+        },
+        {
+          "id": "s3",
+          "url": "https://gourmac.com/hutzler-banana-slicer/",
+          "title": "Banana Slicer - Gourmac",
+          "publisher": "Gourmac (divisão da Hutzler; o site da Hutzler manda o consumidor comprar ali)",
+          "kind": "official-store",
+          "accessedAt": "2026-10-11",
+          "confirms": "Preço de US$ 4,99 na loja oficial e a mesma descrição do fabricante."
+        },
+        {
+          "id": "s4",
+          "url": "https://www.amazon.com/dp/B0047E0EII",
+          "title": "Amazon.com: Hutzler Banana Slicer, Easy To Use Plastic Banana Fuit Cutter: Home & Kitchen",
+          "publisher": "Amazon.com",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Preço de US$ 7,70, 2.545 avaliações globais (4,4/5), ficha técnica (medidas, plástico, 'Blade Length 28 centimeters', 'Recommended Uses For Product: Vegetable') e os textos 'About this item'."
+        },
+        {
+          "id": "s5",
+          "url": "https://www.today.com/tech/revolutionary-banana-slicer-newest-target-snarky-amazon-reviews-1C7784346",
+          "title": "'Revolutionary' banana slicer is newest target of snarky Amazon reviews",
+          "publisher": "TODAY (NBC) — Helen A.S. Popkin, 31/12/2012",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Em dez/2012 o produto tinha mais de 1.200 avaliações (635 de cinco estrelas) e era descrito como 'faster, safer than using a knife'."
+        },
+        {
+          "id": "s6",
+          "url": "https://knowyourmeme.com/memes/banana-slicer-reviews",
+          "title": "Banana Slicer Reviews | Know Your Meme",
+          "publisher": "Know Your Meme",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "Linha do tempo do meme: post do BoingBoing (dez/2009), primeira avaliação satírica (mar/2011), cobertura da HuffPost/Daily Dot em 2012, resposta da Hutzler no Twitter (jan/2013)."
+        },
+        {
+          "id": "s7",
+          "url": "https://www.freshplaza.com/article/9445005/banana-slicer-garners-many-comments-on-the-internet/",
+          "title": "Banana slicer garners many comments on the Internet",
+          "publisher": "FreshPlaza (14/07/2022)",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "O fatiador voltou a viralizar em 2022 e é anunciado pelo vendedor como 'the only banana slicer you will ever need'."
+        },
+        {
+          "id": "s8",
+          "url": "https://www.flickr.com/photos/75001512@N00/8372053816",
+          "title": "no instructions! (foto do verso da embalagem, Joelk75, CC BY 2.0)",
+          "publisher": "Flickr — Joelk75",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "O verso da cartela traz '© 2006 HUTZLER MFG. CO., INC., Canaan, CT', 'Made in China' e 'Item No. 571' (lido na foto)."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Alegação do fabricante: \"Slice an entire banana in one quick motion.\" [Fatie uma banana inteira num único movimento rápido.]",
+          "sourceIds": [
+            "s1",
+            "s3"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "A página oficial anuncia: \"Yes... this is THE Banana Slicer that is getting all the acclaim.\" [Sim... este é O Fatiador de Banana que está recebendo toda a aclamação.] e cita o Today show, o Ellen DeGeneres Show, o Wall Street Journal e a Advertising Age.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Segundo o fabricante, o fatiador apareceu na Vila Sésamo, quando o Come-Come (Cookie Monster) e o Chef Gonger fazem panquecas.",
+          "sourceIds": [
+            "s1",
+            "s3"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "O anúncio na Amazon promete: \"Avoid the risk of using a knife\" [Evite o risco de usar uma faca].",
+          "sourceIds": [
+            "s4"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "A ficha técnica na Amazon lista 'Blade Length: 28 centimeters', 'Blade Material: Plastic' e, como uso recomendado, 'Vegetable' [vegetal].",
+          "sourceIds": [
+            "s4"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "Medidas na Amazon: 11,75 x 4,75 x 0,5 polegadas (cerca de 30 x 12 x 1,3 cm), plástico amarelo, lava-louças.",
+          "sourceIds": [
+            "s4"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "Em 11/10/2026 a página da Amazon mostrava 2.545 avaliações globais, média 4,4 de 5.",
+          "sourceIds": [
+            "s4"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "Em dezembro de 2012 o TODAY contava mais de 1.200 avaliações, 635 delas de cinco estrelas, e citava a descrição 'faster, safer than using a knife' [mais rápido e mais seguro que usar uma faca].",
+          "sourceIds": [
+            "s5"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "Segundo o Know Your Meme, a primeira avaliação satírica saiu em março de 2011 e, em janeiro de 2013, a Hutzler respondeu no Twitter: \"Well, those hysterical reviews certainly are creating more sales.\" [Bem, essas avaliações hilárias certamente estão gerando mais vendas.]",
+          "sourceIds": [
+            "s6"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "A Hutzler fabrica utensílios desde 1938, quando Lothar Hutzler passou ao plástico porque o metal estava escasso na Segunda Guerra; desde 1977 fica num terreno de 10 acres em Canaan, Connecticut.",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f11",
+          "text": "O verso da embalagem fotografada traz '© 2006 HUTZLER MFG. CO., INC.', 'Canaan, CT', 'Made in China' e 'Item No. 571'.",
+          "sourceIds": [
+            "s8"
+          ]
+        },
+        {
+          "id": "f12",
+          "text": "Em 2022 o produto voltou a viralizar, anunciado como 'the only banana slicer you will ever need' [o único fatiador de banana de que você vai precisar].",
+          "sourceIds": [
+            "s7"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 4.99,
+        "currency": "USD",
+        "sourceId": "s3",
+        "observedAt": "2026-10-11",
+        "note": "Preço na Gourmac, loja oficial da Hutzler (SKU 3571). Na Amazon.com (B0047E0EII) o preço visto no mesmo dia era US$ 7,70."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "the hutzler 571 banana slicer",
+          "creator": "Joelk75",
+          "provider": "openverse",
+          "providerRef": "db98630f-b871-48a0-824c-21e4398a3ee4",
+          "landingUrl": "https://www.flickr.com/photos/75001512@N00/8370995903",
+          "fileUrl": "https://live.staticflickr.com/8187/8370995903_40a77f9f2c_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Fatiador amarelo ainda na cartela, sobre fundo escuro: lê-se 'HUTZLER Banana Slicer', 'SAFE FOR CHILDREN' e 'DISHWASHER SAFE'. 1024x768, sem pessoas, marca Hutzler visível. Licença CC BY 2.0 conferida no Flickr."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "banana and slicer (1)",
+          "creator": "Joelk75",
+          "provider": "openverse",
+          "providerRef": "9c761cf3-80bd-4fb6-ba4f-efe35face2fd",
+          "landingUrl": "https://www.flickr.com/photos/75001512@N00/8370983273",
+          "fileUrl": "https://live.staticflickr.com/8515/8370983273_101412cf1b_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Vista de cima: o fatiador ao lado de uma banana inteira bem madura (casca com manchas), sobre papel-toalha estampado. Ótima para comparar o formato dos dois. 1024x768, sem pessoas, sem logotipo no objeto."
+        },
+        {
+          "id": "m3",
+          "kind": "image",
+          "title": "slicing banana (1)",
+          "creator": "Joelk75",
+          "provider": "openverse",
+          "providerRef": "5273748a-2b23-45a1-bc59-e99af45fbc4d",
+          "landingUrl": "https://www.flickr.com/photos/75001512@N00/8372054684",
+          "fileUrl": "https://live.staticflickr.com/8498/8372054684_554ff360b4_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "O fatiador posicionado sobre uma banana descascada, antes de pressionar, em papel-toalha estampado. 1024x768, sem pessoas, foto amadora com leve ruído."
+        },
+        {
+          "id": "m4",
+          "kind": "image",
+          "title": "slicing banana (2)",
+          "creator": "Joelk75",
+          "provider": "openverse",
+          "providerRef": "a3bca5a0-50c3-49be-af4f-a499eab9533c",
+          "landingUrl": "https://www.flickr.com/photos/75001512@N00/8370984401",
+          "fileUrl": "https://live.staticflickr.com/8093/8370984401_397f117546_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "O resultado: banana fatiada em rodelas iguais, ainda dentro da grade do fatiador. 1024x768, sem pessoas, sem marca visível."
+        },
+        {
+          "id": "m5",
+          "kind": "image",
+          "title": "demonstration",
+          "creator": "Joelk75",
+          "provider": "openverse",
+          "providerRef": "ac7e7d79-fb6c-4164-8b5d-94f1fba17700",
+          "landingUrl": "https://www.flickr.com/photos/75001512@N00/8372054468",
+          "fileUrl": "https://live.staticflickr.com/8232/8372054468_6cda0788a7_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Detalhe da cartela: ilustração do fatiador cortando uma banana numa tábua, com os selos 'SAFE FOR CHILDREN' e 'DISHWASHER SAFE'. 1024x768, sem pessoas; é a arte impressa da embalagem."
+        },
+        {
+          "id": "m6",
+          "kind": "image",
+          "title": "no instructions!",
+          "creator": "Joelk75",
+          "provider": "openverse",
+          "providerRef": "14154632-8660-4875-b39e-df6d5a1a82fc",
+          "landingUrl": "https://www.flickr.com/photos/75001512@N00/8372053816",
+          "fileUrl": "https://live.staticflickr.com/8331/8372053816_266953087a_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Verso da cartela ('Please try our other fine Hutzler products', com outros itens), código de barras, '© 2006 HUTZLER MFG. CO., INC., Canaan, CT', 'Made in China', 'Item No. 571'; à direita aparece parte do fatiador. 768x1024 (vertical), sem pessoas, marca Hutzler visível. Como diz o título, não há instruções de uso."
+        }
+      ],
+      "scores": {
+        "contrast": 5,
+        "story": 5,
+        "visual": 5,
+        "media": 4,
+        "reliability": 5
+      },
+      "risks": [
+        "As fotos licenciadas são todas do mesmo autor amador (Joelk75), com no máximo 1024 px no lado maior e papel-toalha estampado ao fundo. Servem, mas não são nítidas em 4K.",
+        "O site hutzler.com hoje é de uma bicicletaria alemã sem relação com o produto; o domínio do fabricante é hutzlerco.com.",
+        "Não achei fonte que diga quantas lâminas o fatiador tem. Não cite um número; contar na foto seria inferência.",
+        "A resposta da Hutzler no Twitter e a cronologia do meme vêm do Know Your Meme, não de imprensa tradicional. Não consegui abrir os links da HuffPost e do Daily Dot citados lá (404).",
+        "Avaliações da Amazon têm direitos autorais dos usuários: cite números e a imprensa, não copie o texto das avaliações.",
+        "Preço da Amazon varia (US$ 7,69–7,70 na mesma página, vendedor terceiro); o preço da loja oficial é US$ 4,99."
+      ],
+      "comedyAngle": "Um vendedor apresenta com solenidade o fatiador 'que está recebendo toda a aclamação', que 'fatia a banana inteira num único movimento' e é mais seguro que uma faca. A Amazon diz que ele serve para 'vegetal' e que tem 28 cm de lâmina de plástico. Na tela, uma faca de mesa (ou o próprio garfo do cereal) fatia a banana em segundos e o fatiador vai para a gaveta, de onde só sai para ser lavado na lava-louças."
+    },
+    {
+      "slug": "banana-hanger",
+      "name": "Pendurador de bananas (banana hanger) — ex.: Alessi 'Dear Charlie' JT01",
+      "brand": "Alessi (design de John Truex), entre outros fabricantes de suportes genéricos",
+      "description": "Suporte de mesa para pendurar o cacho de bananas pelo talo. O exemplo de grife é o Alessi 'Dear Charlie' (código JT01): uma haste cromada em forma de galho com um ramo lateral, sobre base oval, de 28 cm de altura. Existem versões genéricas em madeira e metal.",
+      "legitimateUse": "Pendurado, o cacho não fica apoiado na bancada, o que reduz pontos de pressão e machucados e o afasta de outras frutas (a banana libera etileno, que acelera o amadurecimento das frutas vizinhas). A Alessi também sugere usá-lo para uvas, pimentas, alho ou joias.",
+      "punchingDownRisk": "Nenhum relevante. É um objeto de decoração e cozinha, sem uso assistivo; a piada mira o preço e o design 'escultural'.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://us.alessi.com/products/dear-charlie-banana-holder",
+          "title": "Dear Charlie: Banana holder by John Truex | Alessi",
+          "publisher": "Alessi S.p.A. (loja oficial EUA)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Preço de US$ 165,00, designer John Truex, material zamak cromado, medidas, código JT01 e fabricação na China."
+        },
+        {
+          "id": "s2",
+          "url": "https://www.2modern.com/products/dear-charlie-banana-holder",
+          "title": "Alessi Dear Charlie Banana Holder - 2Modern",
+          "publisher": "2Modern Furniture & Lighting",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Descrição oficial: o formato lembra um galho e as bananas penduradas não entram em contato com os gases de amadurecimento de outras frutas; usos alternativos (uvas, pimentas, alho, joias); garantia limitada de 1 ano."
+        },
+        {
+          "id": "s3",
+          "url": "https://shop.mohd.it/en/dear-charlie.html",
+          "title": "Dear Charlie Banana Stand Alessi designed by John Truex | Mohd Shop",
+          "publisher": "Mohd (varejista italiano)",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Descrição 'A metal fork whose stylised shape is reminiscent of a small branch', medidas 16,5 x 9,5 x 28 cm, origem China, preço de US$ 91,81 nessa loja."
+        },
+        {
+          "id": "s4",
+          "url": "https://tastingtable.com/1436759/save-kitchen-counter-space-hang-bananas-hook",
+          "title": "Save Kitchen Counter Space By Hanging Bananas On A Hook",
+          "publisher": "Tasting Table — Karen Hart, 03/11/2023",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Pendurar as bananas libera espaço, reduz machucados e as afasta de outras frutas (etileno)."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "O Alessi 'Dear Charlie' custa US$ 165,00 na loja oficial da Alessi nos EUA.",
+          "sourceIds": [
+            "s1",
+            "s2"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Descrição oficial: \"Banana holder in chrome-plated zamak.\" [Suporte de banana em zamak cromado.] Código JT01.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Medidas: 9,5 cm de largura, 16,5 cm de comprimento e 28 cm de altura (3,74 x 6,50 x 11,03 polegadas).",
+          "sourceIds": [
+            "s1",
+            "s3"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "Feito na China; a Alessi afirma que todos os seus produtos são \"designed, developed, and quality-controlled in Italy\" [projetados, desenvolvidos e com controle de qualidade na Itália].",
+          "sourceIds": [
+            "s1",
+            "s3"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "Designer: John Truex (nascido em 1982, mestrado pela Cranbrook Academy of Art em 2006), que trabalhou em projetos que vão de frascos de perfume da Calvin Klein a pianos Steinway sob medida.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "Descrição: \"Dear Charlie is a support for bananas, whose shape is reminiscent of a small branch.\" [Dear Charlie é um suporte para bananas cujo formato lembra um pequeno galho.]",
+          "sourceIds": [
+            "s2",
+            "s3"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "Alegação: \"The hanging bananas do not come into contact with the ripening gasses of other fruits and therefore are preserved in the most appropriate manner.\" [As bananas penduradas não entram em contato com os gases de amadurecimento de outras frutas e são preservadas da maneira mais apropriada.]",
+          "sourceIds": [
+            "s2",
+            "s3"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "Segundo a descrição, o Dear Charlie também segura cacho de uva, pimentas, réstia de alho ou 'jewellery such as rings, bracelets and earrings' [joias como anéis, pulseiras e brincos].",
+          "sourceIds": [
+            "s2",
+            "s3"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "A base revestida de borracha, junto com o peso do objeto, 'guarantees stability on every surface' [garante estabilidade em qualquer superfície]; garantia limitada de 1 ano.",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "O Tasting Table diz que pendurar as bananas minimiza machucados e as mantém longe de outras frutas, já que o etileno que elas liberam acelera o amadurecimento das vizinhas.",
+          "sourceIds": [
+            "s4"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 165.0,
+        "currency": "USD",
+        "sourceId": "s1",
+        "observedAt": "2026-10-11",
+        "note": "Preço de lista na loja oficial Alessi EUA (a 2Modern mostra o mesmo valor). A Mohd (Itália) mostrava US$ 91,81 no mesmo dia."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "Alessi Banana Hanger",
+          "creator": "Didriks",
+          "provider": "openverse",
+          "providerRef": "0b268449-52e3-4c3d-9ca6-456cad7de479",
+          "landingUrl": "https://www.flickr.com/photos/49889671@N03/17039810429",
+          "fileUrl": "https://live.staticflickr.com/8749/17039810429_88284dd701_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Foto de estúdio sobre fundo amarelo: suporte cromado em forma de galho (haste com ramo lateral e base oval) com duas bananas maduras penduradas. A forma bate com a foto oficial do Alessi Dear Charlie JT01. 682x1024 (vertical), nítida, sem pessoas, sem logotipo visível."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "Alessi Fruit Stand",
+          "creator": "Didriks",
+          "provider": "openverse",
+          "providerRef": "630340ed-bb54-4875-86da-e4d0b8be18c0",
+          "landingUrl": "https://www.flickr.com/photos/49889671@N03/10056984204",
+          "fileUrl": "https://live.staticflickr.com/3745/10056984204_f8e1588d0a_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Cacho de bananas penduradas num suporte cromado de base oval (identificado como Alessi pelo autor; parece o mesmo modelo de galho, visto de frente) sobre bancada de mármore, com uma laranja ao lado. 1024x1024, sem pessoas, sem logotipo visível. É claramente um pendurador de bananas."
+        },
+        {
+          "id": "m3",
+          "kind": "image",
+          "title": "Time for banana bread.jpg",
+          "creator": "docoverachiever",
+          "provider": "openverse",
+          "providerRef": "d45f8cef-2a77-4ea9-9fe0-dcda2f804b10",
+          "landingUrl": "https://www.flickr.com/photos/90692748@N04/9697790732",
+          "fileUrl": "https://live.staticflickr.com/3666/9697790732_25c601bf61_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Pendurador genérico de madeira curvada, com gancho, segurando bananas muito maduras e cheias de manchas pretas, com vegetação ao fundo. O título ('hora do pão de banana') entrega que a promessa de conservação não funcionou. 814x1024, sem pessoas, sem marca. Mostra o tipo de produto, não o modelo Alessi."
+        }
+      ],
+      "scores": {
+        "contrast": 3,
+        "story": 3,
+        "visual": 4,
+        "media": 3,
+        "reliability": 4
+      },
+      "risks": [
+        "A desproporção é menor que a de outros candidatos: pendurar banana tem justificativa plausível (machucados, etileno), e a imprensa trata isso como dica útil.",
+        "Só três fotos licenciadas, todas com até 1024 px; só uma é inequivocamente o Alessi Dear Charlie.",
+        "Não confirmei o ano de design: um resumo de busca citou 2012, mas não abri página que o afirme (lojas einrichten-design e grshop recusaram acesso).",
+        "A loja oficial mostrava preço e botão de compra, mas também um formulário de 'avise quando voltar ao estoque'. A disponibilidade é ambígua; o preço foi visto.",
+        "A 'solução óbvia' (deixar o cacho na fruteira ou só comer as bananas) rende menos que uma faca vencendo um aparelho."
+      ],
+      "comedyAngle": "Um 'galho' de metal cromado de US$ 165, desenhado por quem já fez frascos para a Calvin Klein e pianos Steinway, para pendurar uma fruta que já nasce pendurada num galho. Também serve para brincos. A solução óbvia que vence na tela é deitar o cacho na fruteira ou pendurá-lo num gancho de cabide e embolsar a diferença; o final pode mostrar as bananas pretas da foto genérica: 'hora do pão de banana'."
+    },
+    {
+      "slug": "asparagus-tongs",
+      "name": "Pinça para aspargos (Spargelzange / asparagus tongs)",
+      "brand": "WMF (exemplo atual: Spargelzange 16 cm); historicamente prataria inglesa e holandesa",
+      "description": "Pinça de servir feita só para pegar aspargos: pontas largas e frisadas que seguram o talo sem quebrá-lo. Hoje a WMF vende uma de 16 cm em aço Cromargan; museus guardam versões de prata dos séculos XVIII e XIX, algumas com brasão gravado.",
+      "legitimateUse": "Servir aspargos cozidos (e outros legumes compridos ou peixe) da travessa para o prato sem quebrar os talos nem encostar na comida. É acessório de mesa e de etiqueta.",
+      "punchingDownRisk": "Baixo. Não é tecnologia assistiva; é prataria de etiqueta e de servir. A piada mira o esnobismo, não quem usa.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.wmf.com/de/de/spargelzange-16-cm-3201002439.html",
+          "title": "WMF Spargelzange 16cm",
+          "publisher": "WMF (loja oficial do fabricante, Alemanha)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Spargelzange de 16 cm em Cromargan (aço 18/10), CMMF 3201002439, preço de 14,99 € (UVP 19,99 €), descrição e conteúdo da embalagem."
+        },
+        {
+          "id": "s2",
+          "url": "https://api.vam.ac.uk/v2/object/O59330",
+          "title": "Asparagus tongs, O59330 (registro de acervo)",
+          "publisher": "Victoria and Albert Museum (API de coleções)",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "História das pinças de aspargo: grandes pinças de servir desde o fim dos anos 1700, mais utensílios para aspargo que para qualquer outro legume no fim do século XIX, nomes e preços em catálogos de 1880–1892."
+        },
+        {
+          "id": "s3",
+          "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/204482",
+          "title": "Asparagus tongs, ca. 1780 (objeto 204482)",
+          "publisher": "The Metropolitan Museum of Art (Open Access API)",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "Pinça de aspargos em Sheffield plate, c. 1780, 26,2 x 6,7 cm, domínio público (isPublicDomain: true)."
+        },
+        {
+          "id": "s4",
+          "url": "https://debretts.com/the-curse-of-cutlery/",
+          "title": "The Curse of Cutlery",
+          "publisher": "Debrett's (guia de etiqueta britânico)",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "É aceitável comer aspargo com os dedos; cita o manual de etiqueta Routledge de 1875."
+        },
+        {
+          "id": "s5",
+          "url": "https://www.tastingtable.com/1272831/victorian-era-utensils-created-for-serving-asparagus",
+          "title": "The Victorian Era Utensils Created Purely For Serving Asparagus",
+          "publisher": "Tasting Table — Michelle Welsch, 01/05/2023",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Os utensílios vitorianos de aspargo eram 'dining tools that symbolized class and manners'."
+        },
+        {
+          "id": "s6",
+          "url": "https://commons.wikimedia.org/wiki/File:Aspergetang_met_het_wapen_Clifford,_BK-1960-110.jpg",
+          "title": "File:Aspergetang met het wapen Clifford, BK-1960-110.jpg (ficha do Rijksmuseum)",
+          "publisher": "Wikimedia Commons / Rijksmuseum",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "Pinça de aspargos de prata, Amsterdã, 1832, 32,2 cm, 152 g, com o brasão da família Clifford gravado (dados do Rijksmuseum)."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "A WMF vende hoje uma 'Spargelzange, 16 cm' em aço Cromargan 18/10 polido, por 14,99 € (preço de referência UVP 19,99 €).",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Texto da WMF: \"Die clevere Konstruktion überzeugt mit einem geriffelten Griff für eine perfekte Handhabung und ein sicheres Servieren von empfindlichem Spargel\" [A construção inteligente convence com uma pega frisada para um manuseio perfeito e para servir com segurança o delicado aspargo].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "A WMF informa que a pinça vem \"in einer Geschenkverpackung inklusive Illustration der Funktionen und Merkmale\" [numa embalagem de presente com ilustração das funções e características].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "A WMF a chama de \"eine hochwertige, langlebige und elegante Ergänzung für jede Küche\" [um complemento de alta qualidade, durável e elegante para qualquer cozinha]; é lava-louças e 'resistente gegen Speisesäuren' [resistente a ácidos alimentares].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "Segundo o V&A, no fim do século XIX o aspargo era considerado uma grande iguaria, \"which may explain why there were more utensils dedicated to it than to any other vegetable\" [o que pode explicar por que havia mais utensílios dedicados a ele do que a qualquer outro legume].",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "O V&A explica: \"The desire to serve diners more elegantly, without touching the food, led to the development of specialised dining equipment.\" [O desejo de servir os convidados com mais elegância, sem tocar na comida, levou a utensílios especializados.]",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "No catálogo J. Dixon & Sons de 1892, pinças semelhantes de cabo de marfim custavam 34 xelins e se chamavam 'asparagus helpers' [ajudantes de aspargo].",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "O Met guarda uma pinça de aspargos de Sheffield plate de cerca de 1780, com 26,2 cm de comprimento.",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "O Rijksmuseum tem uma pinça de aspargos de prata feita em Amsterdã em 1832, de 32,2 cm e 152 g, com o brasão da família Clifford gravado.",
+          "sourceIds": [
+            "s6"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "O guia de etiqueta Debrett's diz: \"It is considered quite acceptable to eat asparagus with the fingers\" [É considerado bastante aceitável comer aspargo com os dedos], e cita um manual de 1875: \"Some very well-bred people eat it with the fingers\" [Algumas pessoas muito bem-educadas o comem com os dedos].",
+          "sourceIds": [
+            "s4"
+          ]
+        },
+        {
+          "id": "f11",
+          "text": "O Tasting Table descreve os utensílios vitorianos de aspargo como \"dining tools that symbolized class and manners\" [utensílios de mesa que simbolizavam classe e boas maneiras].",
+          "sourceIds": [
+            "s5"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 14.99,
+        "currency": "EUR",
+        "sourceId": "s1",
+        "observedAt": "2026-10-11",
+        "note": "Preço promocional na loja oficial WMF Alemanha (UVP 19,99 €), visto no HTML e no JSON-LD da página."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "Aspergetang met het wapen Clifford, BK-1960-110",
+          "creator": "Rijksmuseum",
+          "provider": "wikimedia",
+          "providerRef": "File:Aspergetang met het wapen Clifford, BK-1960-110.jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Aspergetang_met_het_wapen_Clifford,_BK-1960-110.jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Aspergetang_met_het_wapen_Clifford%2C_BK-1960-110.jpg",
+          "license": "cc0",
+          "licenseVersion": "1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "showsExactProduct": true,
+          "description": "Foto de museu em fundo cinza-claro neutro: pinça de aspargos de prata (Amsterdã, 1832) em forma de U alongado, com pontas largas e frisadas e uma trava retangular. 2500x1453, muito nítida, sem pessoas, sem marca. É peça antiga do Rijksmuseum, não o modelo WMF, mas é claramente o tipo de produto. Licença {{CC-zero}} conferida no wikitext do Commons."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "Aspergetang met twee rechthoekige, aan de binnenzijde geribde grepen, BK-1979-6",
+          "creator": "Rijksmuseum (foto: Frans Pegt)",
+          "provider": "wikimedia",
+          "providerRef": "File:Aspergetang met twee rechthoekige, aan de binnenzijde geribde grepen, BK-1979-6.jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Aspergetang_met_twee_rechthoekige,_aan_de_binnenzijde_geribde_grepen,_BK-1979-6.jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Aspergetang_met_twee_rechthoekige%2C_aan_de_binnenzijde_geribde_grepen%2C_BK-1979-6.jpg",
+          "license": "cc0",
+          "licenseVersion": "1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "showsExactProduct": true,
+          "description": "Foto de museu em fundo cinza neutro: pinça de aspargos de prata (Jan Frederik Everts, Amsterdã, 1814) com hastes retas, pontas frisadas por dentro e trava deslizante. 2500x1672, muito nítida, sem pessoas. Peça antiga, não o modelo WMF. A seção de licença do Commons diz CC0 1.0; o EXIF interno marca 'Copyrighted', algo comum nos arquivos que o Rijksmuseum doou ao Commons."
+        },
+        {
+          "id": "m3",
+          "kind": "image",
+          "title": "Asparagus tongs MET 183254",
+          "creator": "The Metropolitan Museum of Art",
+          "provider": "wikimedia",
+          "providerRef": "File:Asparagus tongs MET 183254.jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Asparagus_tongs_MET_183254.jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Asparagus_tongs_MET_183254.jpg",
+          "license": "cc0",
+          "licenseVersion": "1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "showsExactProduct": true,
+          "description": "Pinça de aspargos de Sheffield plate (c. 1780) vista de lado sobre fundo branco, em tons de cinza: arco em U e mandíbula com dentes retangulares. 1976x744 (bem horizontal), sem pessoas. Peça antiga do Met (Open Access), não o modelo WMF."
+        },
+        {
+          "id": "m4",
+          "kind": "image",
+          "title": "Spargelzange (fcm)",
+          "creator": "Frank C. Müller, Frankfurt am Main",
+          "provider": "wikimedia",
+          "providerRef": "File:Spargelzange (fcm).jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Spargelzange_(fcm).jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Spargelzange_%28fcm%29.jpg",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": true,
+          "description": "Foto em preto e branco de uma pinça de aspargos de prata, com mola em U e pontas largas, sobre tecido canelado, com sombra lateral (Worms, 2017). 3857x2166, nítida, sem pessoas, sem marca. Peça antiga, não o modelo WMF. CC BY-SA 4.0 exige atribuição e compartilhamento pela mesma licença."
+        }
+      ],
+      "scores": {
+        "contrast": 4,
+        "story": 4,
+        "visual": 4,
+        "media": 4,
+        "reliability": 5
+      },
+      "risks": [
+        "Nenhuma foto licenciada mostra o modelo atual da WMF; todas são peças antigas de museu ou colecionador. Dá para apresentar como 'a tradição' e citar o preço da WMF, sem afirmar que a foto é a WMF.",
+        "Não achei verbete na Wikipedia (de.wikipedia 'Spargelzange' deu 404; a API REST da Wikipedia falhou).",
+        "As fontes de história (V&A, Met, Rijksmuseum) são registros de museu ('other'), não imprensa; o Debrett's não tem data nem autor na página.",
+        "O preço da WMF é promocional (UVP 19,99 €) e pode mudar.",
+        "A Spargelzange (fcm) é CC BY-SA: obriga licenciar derivados sob a mesma licença. Prefira as CC0 do Rijksmuseum e do Met."
+      ],
+      "comedyAngle": "Um utensílio de prata com brasão de família, criado para que ninguém precise tocar num aspargo, hoje relançado pela WMF com 'construção inteligente', pega frisada e embalagem de presente com ilustração das funções (de uma pinça). Segundo o V&A, os vitorianos criaram mais utensílios para o aspargo que para qualquer outro legume. Na tela, alguém pega o aspargo com os dedos ou com um garfo comum; o próprio Debrett's diz que comer aspargo com os dedos é perfeitamente aceitável."
+    },
+    {
+      "slug": "corn-holders",
+      "name": "Espetinhos para milho (corn holders / corn cob holders)",
+      "brand": "OXO Good Grips (exemplo atual), além de genéricos em formato de espiga",
+      "description": "Pares de espetos com cabo que se cravam nas pontas da espiga de milho cozido para segurá-la sem tocar no milho quente e amanteigado. A OXO vende pares com pinos de aço inox, cabo antiderrapante e 'barreira contra manteiga'; os genéricos costumam ter cabo de plástico em forma de mini-espiga.",
+      "legitimateUse": "Segurar a espiga quando ainda está quente e coberta de manteiga, sem queimar nem sujar os dedos. O Washington Post lembra que eles facilitam a vida de crianças de 'dedos escorregadios'. Podem ajudar quem tem pouca força ou firmeza nas mãos (não encontrei fonte específica sobre isso).",
+      "punchingDownRisk": "Baixo a moderado. É utensílio de mesa comum, mas pode ajudar quem tem pouca firmeza nas mãos. A piada deve mirar a embalagem 'jumbo' e as alegações, nunca quem precisa do apoio.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.oxo.com/corn-holders.html",
+          "title": "Corn Holders | OXO",
+          "publisher": "OXO (site oficial)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "OXO Good Grips Corn Holders, SKU 11263300, US$ 12,99, pinos de aço inox, cabo antiderrapante, barreira contra manteiga, pares que se encaixam, lava-louças."
+        },
+        {
+          "id": "s2",
+          "url": "https://www.johnlewis.com/oxo-corn-cob-holders-set-of-8-yellow-black/p4351395",
+          "title": "OXO Corn Cob Holders, Set of 8, Yellow/Black",
+          "publisher": "John Lewis (varejista, Reino Unido)",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Conjunto de 8 peças por £15,00, composição (63% polipropileno, 29% TPE, 8% aço inox 304) e 'Lifetime guarantee'."
+        },
+        {
+          "id": "s3",
+          "url": "https://vnews.com/2017/08/22/corn-on-the-cob-is-simple-food-why-are-there-so-many-gadgets-to-help-us-eat-it-12010120/",
+          "title": "Corn Is a Simple Food, So Why All the Gadgets?",
+          "publisher": "The Washington Post (Maura Judkis), republicado pelo Valley News em 22/08/2017",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Histórico dos suportes de milho (patente americana de 1909 do modelo em mini-espiga, o modelo de porquinho em 1937, garfos vitorianos de dois dentes) e a conclusão 'We don't need corn holders. But we want them.'"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "A OXO vende os 'Corn Holders' Good Grips por US$ 12,99 no site oficial (SKU 11263300).",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Alegação da OXO: \"The strong, stainless steel pins hold even the slipperiest cobs steady\" [Os fortes pinos de aço inox mantêm firmes até as espigas mais escorregadias].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "A OXO destaca uma 'butter barrier' [barreira contra manteiga] que \"helps prevent messy hands\" [ajuda a evitar mãos sujas]; os pares se encaixam para guardar e vão à lava-louças.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "Na John Lewis, o conjunto OXO de 8 peças custa £15,00, tem 'Lifetime guarantee' [garantia vitalícia] e composição de 63% polipropileno, 29% TPE e 8% aço inox 304.",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "A John Lewis promete que a 'flared barrier keeps you from having butter fingers' [barreira alargada impede que você fique com dedos amanteigados] e que os cabos antiderrapantes dão controle 'when serving, eating or rolling in toppings'.",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "Segundo o Washington Post, o suporte em forma de mini-espiga, com lâmina para cravar no sabugo, foi patenteado nos EUA em 1909, e o modelo em forma de porquinho, em 1937.",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "Antes deles, os vitorianos usavam garfos de dois dentes para segurar o milho, segundo um historiador culinário ouvido pelo Washington Post.",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "A repórter do Washington Post abre perguntando: \"Do people think their hands are going to fall off when they touch an ear of corn?\" [As pessoas acham que as mãos vão cair se tocarem numa espiga de milho?]",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "O mesmo texto observa que 'there's always an odd number of corn-shaped prongs' [sempre sobra um número ímpar de espetinhos em forma de espiga] e conclui: \"We don't need corn holders. But we want them.\" [Não precisamos de suportes de milho. Mas queremos.]",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "A solução sugerida pela própria reportagem é passar a manteiga com uma faca e 'hold the cob with your hands once it cools down a little bit' [segurar a espiga com as mãos quando ela esfriar um pouco].",
+          "sourceIds": [
+            "s3"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 12.99,
+        "currency": "USD",
+        "sourceId": "s1",
+        "observedAt": "2026-10-11",
+        "note": "Preço no site oficial da OXO para o SKU 11263300; a página não diz quantas peças vêm. Na John Lewis, o conjunto de 8 custa £15,00."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "Corn holders (Jumbo Corn Holders, 10 pack)",
+          "creator": "Bill Bradford (mrbill)",
+          "provider": "wikimedia",
+          "providerRef": "File:Corn holders.jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Corn_holders.jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/Corn_holders.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Cartela 'JUMBO CORN HOLDERS — 10 PACK' com dez espetinhos amarelos em forma de mini-espiga e pinos de metal; marca 'B-B-Q Time' no canto e 'MADE IN CHINA/HT433'. 2816x2112, nítida, sem pessoas. É o tipo de produto (genérico), não o OXO. Licença revisada pelo FlickreviewR em 16/04/2012; o mesmo arquivo está no Flickr como 'Jumbo Corn Holders' (Openverse 5930d672-9ae3-40d6-9ae5-c7c903ddb9e7, 1024px)."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "Corn Holders -1 (37430386802)",
+          "creator": "Judy Gallagher",
+          "provider": "wikimedia",
+          "providerRef": "File:Corn Holders -1 (37430386802).jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Corn_Holders_-1_(37430386802).jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Corn_Holders_-1_%2837430386802%29.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Macro de três suportes de milho de plástico translúcido (vermelho, verde e amarelo) com pinos de aço pontiagudos cruzados; visual quase de arma medieval. 5184x3456, muito nítida, sem pessoas, sem marca. É o tipo de produto (vintage/genérico), não o OXO. Licença revisada pelo FlickreviewR 2 em 28/02/2018."
+        },
+        {
+          "id": "m3",
+          "kind": "image",
+          "title": "Pumpkin Platter and Corn Holders",
+          "creator": "byzantiumbooks",
+          "provider": "openverse",
+          "providerRef": "cd87f00d-373c-45f2-8272-b59a53631f9e",
+          "landingUrl": "https://www.flickr.com/photos/10688882@N00/30249933590",
+          "fileUrl": "https://live.staticflickr.com/5690/30249933590_0da83f7894_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Seis espetinhos amarelos em forma de mini-espiga (três pares) arrumados sobre uma travessa de cerâmica em forma de abóbora, sobre fundo branco. 1024x1024, nítida, sem pessoas, sem marca. É o tipo de produto (genérico), não o OXO. Licença CC BY 2.0 conferida no Flickr."
+        }
+      ],
+      "scores": {
+        "contrast": 3,
+        "story": 4,
+        "visual": 4,
+        "media": 4,
+        "reliability": 4
+      },
+      "risks": [
+        "Há uso legítimo real (milho quente com manteiga, crianças, possivelmente quem tem pouca firmeza nas mãos), então o contraste é moderado e o tom não deve humilhar quem usa.",
+        "Nenhuma foto licenciada mostra o modelo OXO; as mídias são de genéricos e vintage. O fato de uso do OXO não pode ser ilustrado com o produto exato.",
+        "A página da OXO bloqueia curl e WebFetch (Cloudflare 403); só abriu via Firecrawl. Ela não informa quantas peças vêm no SKU 11263300.",
+        "Não achei loja brasileira com o produto: as buscas por 'pegador de milho' e 'espeto para espiga' devolveram espetos de churrasco e debulhadores.",
+        "A foto do Brooklyn Museum ('Corn Holders', CC BY 3.0 no Openverse) não foi registrada porque o site do museu bloqueou a conferência da licença na origem (429/Vercel)."
+      ],
+      "comedyAngle": "Pinos de aço inox, 'barreira contra manteiga' e garantia vitalícia para segurar uma espiga de milho, um alimento que vem com cabo de fábrica (o sabugo). Na versão 'Jumbo', dez mini-espigas de plástico para segurar a espiga de verdade. A solução óbvia que vence na tela é esperar o milho esfriar um minuto e segurar com a mão, ou com um guardanapo, como recomenda o próprio Washington Post. O fecho pode ser a gaveta com um número ímpar de espetinhos."
+    },
+    {
+      "slug": "spaghetti-measure",
+      "name": "Medidor de espaguete (porcionador de macarrão)",
+      "brand": "Joseph Joseph (Spaghetti Measure, disco com abertura tipo íris; Reino Unido). Exemplo à venda no Brasil: Lyor (régua de inox com furos)",
+      "description": "Utensílio para medir quantos fios de espaguete seco cozinhar por pessoa. Há dois formatos. O da Joseph Joseph é um disco com abertura ajustável, como o diafragma de uma câmera, com marcas de 1 a 4 porções e meias porções. O outro é uma régua de plástico ou inox com 4 furos de tamanhos diferentes, como o modelo da Lyor vendido no Brasil. A solução óbvia que vence na tela: o furo da concha de macarrão (alguns fabricantes anunciam esse furo como medida de uma porção), o punhado na mão ou dividir o pacote, já que a embalagem de 500 g da Barilla traz “1/6 del paquete (80 g)” como porção.",
+      "legitimateUse": "Ajuda a controlar a porção e a evitar desperdício de massa cozida a mais. É útil para quem cozinha para quantidades variáveis ou controla a dieta. Não é tecnologia assistiva nem equipamento de segurança.",
+      "punchingDownRisk": "Baixo. É um gadget de cozinha de consumo geral. O único cuidado é não fazer piada com quem controla porções por motivo de saúde (dieta, diabetes): a piada deve ficar no exagero do objeto (geometria, raiz quadrada, íris de câmera), não em quem conta calorias.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.johnlewis.com/joseph-joseph-spaghetti-measure-grey-red/p185386",
+          "title": "Joseph Joseph Spaghetti Measure, Grey/Red",
+          "publisher": "John Lewis & Partners",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Descrição do produto: medidor compacto com guia ajustável de 1 a 4 porções e alavanca que abre uma abertura “camera-like”. A página diz que o item não está mais disponível online."
+        },
+        {
+          "id": "s2",
+          "url": "https://kaden.watch.impress.co.jp/docs/column_review/yajreview/20091026_323184.html",
+          "title": "Joseph Joseph「スパゲッティーメジャー」(やじうまミニレビュー)",
+          "publisher": "家電 Watch (Impress), autora Natsuko Abe, 26/10/2009",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Resenha japonesa de 2009: preço sugerido de 1.365 ienes, 90×75×10 mm, marcas de 1 a 4 com meias porções e “1 porção = 100 g”."
+        },
+        {
+          "id": "s3",
+          "url": "https://revistasuma.fespm.es/sites/revistasuma.fespm.es/IMG/pdf/66/047-048.pdf",
+          "title": "El clip: Espaguetis y raíces cuadradas (SUMA nº 66, fev. 2011, pp. 47-48)",
+          "publisher": "Revista SUMA (FESPM, Federação Espanhola de Sociedades de Professores de Matemática), autor Claudi Alsina (UPC)",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Artigo de revista de matemática dedicado ao medidor da Joseph Joseph: abertura de 4,7 cm para 4 porções, ≈3,32 cm para 2 e ≈2,35 cm para 1, uma escala que segue a raiz quadrada."
+        },
+        {
+          "id": "s4",
+          "url": "https://www.directoalpaladar.com/utensilios/medidor-de-spaguetti-de-joseph-josephs",
+          "title": "Medidor de spaguetti de Joseph Joseph’s",
+          "publisher": "Directo al Paladar, 12/07/2009",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Em 2009 o medidor custava “unos 6 euros”, existia em várias cores e media de 1 a 4 pessoas."
+        },
+        {
+          "id": "s5",
+          "url": "https://www.amazon.com.br/LYOR-Medidor-Por%C3%A7%C3%A3o-Massa-Espaguete/dp/B0DQ69GQ52",
+          "title": "LYOR - Medidor para Porção de Massa Espaguete de Aço Inox 18,5cm x 6cm x 0,1cm",
+          "publisher": "Amazon.com.br",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Medidor Lyor de inox, modelo 220613, 18,5 × 6 × 0,1 cm, por R$ 12,99, em estoque, vendido e enviado pela Amazon.com.br."
+        },
+        {
+          "id": "s6",
+          "url": "https://www.havan.com.br/medidor-para-porcao-de-macarrao-espaguete-lyor-ao-inox/p",
+          "title": "Medidor Para Porção De Macarrão Espaguete Lyor - Aço Inox",
+          "publisher": "Havan",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "O mesmo medidor Lyor de inox aparece por R$ 12,99 (ou 2x de R$ 6,49) em outra grande varejista brasileira."
+        },
+        {
+          "id": "s7",
+          "url": "https://www.snopes.com/fact-check/holes-pasta-spoons/",
+          "title": "Center Holes in Spaghetti Spoons Meant for Measuring Serving Sizes?",
+          "publisher": "Snopes (Madison Dapcevich, 20/01/2024)",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "Checagem classificada como “Mixture”: algumas conchas são de fato projetadas com o furo como medida de porção, mas isso não é universal, e o boato viralizou a partir de um post do Imgur em junho de 2016."
+        },
+        {
+          "id": "s8",
+          "url": "https://www.target.com/p/oxo-steel-spaghetti-server/-/A-1011257832",
+          "title": "OXO Steel Spaghetti Server",
+          "publisher": "Target",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "O texto do produto OXO Steel Spaghetti Server diz: “Drainage hole also measures out a perfect serving of dry spaghetti” (preço US$ 16,99)."
+        },
+        {
+          "id": "s9",
+          "url": "https://suomikauppa.fi/en-us/products/fiskars-functional-form-pasta-ladle",
+          "title": "Fiskars Functional Form Pasta spoon",
+          "publisher": "Suomikauppa.fi",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "A colher de massa Fiskars Functional Form é anunciada com “an integrated spaghetti portion measure”."
+        },
+        {
+          "id": "s10",
+          "url": "https://www.jumbo.cl/spaghetti-n-5-barilla-caja-500-g-origen-italiano/p",
+          "title": "Spaghetti N°5 Barilla Italiano Caja 500 g",
+          "publisher": "Jumbo (Chile)",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "A tabela nutricional da caixa de 500 g diz “Porción: 1/6 del Paquete (80 g)” e “Porciones por envase: 6”."
+        },
+        {
+          "id": "s11",
+          "url": "https://commons.wikimedia.org/wiki/File:SpaghettiPortionierer.jpg",
+          "title": "File:SpaghettiPortionierer.jpg",
+          "publisher": "Wikimedia Commons (usuário Netpilots, 2016)",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "A descrição do arquivo informa um porcionador de espaguete com furos de 23, 30, 37 e 43 mm."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "A John Lewis descreve o Spaghetti Measure da Joseph Joseph como um guia ajustável de porção para uma a quatro pessoas: uma alavanca desliza pela borda do disco e abre uma abertura “camera-like” [tipo câmera fotográfica].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Na John Lewis o produto aparece como “No longer available online” [não está mais disponível online], com o aviso “We're unlikely to receive more stock of this item” [é improvável que recebamos mais estoque deste item].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Uma resenha japonesa de 2009 registra 90 × 75 × 10 mm, preço sugerido de 1.365 ienes e marcas de 1 a 4 porções, com meias porções (1,5 e 2,5).",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "A mesma resenha informa o padrão do aparelho: “ちなみに1人前の麺の量は100gとなっている。” [aliás, uma porção de macarrão corresponde a 100 g].",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "Ainda na resenha, a autora conta que o marido acha que uma porção não basta, então em casa o medidor fica “sempre” ajustado em 2,5 (“我が家は常に2.5に目盛りを設定している”).",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "A SUMA, revista espanhola de professores de matemática, publicou em fevereiro de 2011 um artigo inteiro sobre o medidor, intitulado “Espaguetis y raíces cuadradas” [Espaguete e raízes quadradas].",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "Segundo a SUMA, a abertura para 4 porções tem 4,7 cm de diâmetro. Para 2 porções o diâmetro é dividido por √2 (≈3,32 cm) e para 1 porção mede ≈2,35 cm.",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "Frases do artigo da SUMA: “Es como un objetivo fotográfico pero para pasta” [é como uma objetiva fotográfica, mas para massa] e “diseño inglés pero Made in China” [design inglês, mas fabricado na China].",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "Em 2009 o Directo al Paladar dizia que o medidor “cuesta unos 6 euros” [custa uns 6 euros] e que “Los hay de varios colores” [existe em várias cores].",
+          "sourceIds": [
+            "s4"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "No Brasil, o medidor Lyor é uma chapa de aço inox de 18,5 × 6 × 0,1 cm, modelo 220613, vendido por R$ 12,99. O anúncio promete “medidas específicas para porções de espaguete” e manda “lavar com detergente neutro, esponja macia e secar imediatamente”.",
+          "sourceIds": [
+            "s5",
+            "s6"
+          ]
+        },
+        {
+          "id": "f11",
+          "text": "Sobre o furo da concha de macarrão, o Snopes classificou como “Mixture” [parcialmente verdadeiro] a ideia de que ele mede uma porção. Algumas conchas são projetadas para isso, outras não, e o furo existe principalmente para escorrer a água. Uma nutricionista ouvida pelo site disse: “The hole in the pasta spoon does equal about one serving if you loosely gather the noodles through the hole” [o furo equivale a mais ou menos uma porção se os fios passarem soltos].",
+          "sourceIds": [
+            "s7"
+          ]
+        },
+        {
+          "id": "f12",
+          "text": "Alguns fabricantes anunciam o furo da concha como medidor de porção. O texto da OXO Steel Spaghetti Server diz “Drainage hole also measures out a perfect serving of dry spaghetti” [o furo de drenagem também mede uma porção perfeita de espaguete seco], e a colher Fiskars Functional Form vem com “an integrated spaghetti portion measure” [medidor de porção integrado].",
+          "sourceIds": [
+            "s8",
+            "s9"
+          ]
+        },
+        {
+          "id": "f13",
+          "text": "A própria caixa de 500 g do Spaghetti N°5 da Barilla traz no rótulo a porção: “1/6 del Paquete (80 g)”, com 6 porções por embalagem.",
+          "sourceIds": [
+            "s10"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 12.99,
+        "currency": "BRL",
+        "sourceId": "s5",
+        "observedAt": "2026-10-11",
+        "note": "Medidor Lyor de inox (modelo 220613) vendido e enviado pela Amazon.com.br. A Havan mostra o mesmo preço. O Spaghetti Measure da Joseph Joseph não tem preço atual verificado: está descontinuado na John Lewis e não foi encontrado no site oficial."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "Joseph Joseph Spaghetti Measure",
+          "creator": "bfishadow",
+          "provider": "openverse",
+          "providerRef": "49d04420-7dd6-46a5-8c1c-c24e97e7618b",
+          "landingUrl": "https://www.flickr.com/photos/61368956@N00/6258090672",
+          "fileUrl": "https://live.staticflickr.com/6096/6258090672_3445f52061_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "É exatamente o Spaghetti Measure da Joseph Joseph: disco branco com íris verde parcialmente fechada, alavanca verde e escala 1–2–3–4 em relevo, fotografado sobre um notebook com teclado Apple (teclas command e option visíveis). O nome em relevo no anel está quase ilegível e não aparecem pessoas. Resolução de 1024×765, nítida, com luz amarelada. Licença CC BY 2.0 conferida na página do Flickr (foto de 19/10/2011)."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "Spaghetti measure",
+          "creator": "Bodhi Peace",
+          "provider": "wikimedia",
+          "providerRef": "File:Spaghetti measure.jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Spaghetti_measure.jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Spaghetti_measure.jpg",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": true,
+          "description": "Régua genérica de plástico branco com 4 furos e os dizeres “SPAGHETTI MEASURE”, encostada na parede, com um feixe de espaguete seco atravessando o furo de 1 porção. Segundo a descrição do arquivo: “1 portion dry spaghetti measured out”. É um item claramente do tipo, mas não é Joseph Joseph nem Lyor. Resolução de 5152×3864, sem pessoas e sem marca visível. Licença {{self|cc-by-sa-4.0}} conferida no wikitext do Commons."
+        },
+        {
+          "id": "m3",
+          "kind": "image",
+          "title": "Spaghetti measure vertical",
+          "creator": "Bodhi Peace",
+          "provider": "wikimedia",
+          "providerRef": "File:Spaghetti measure vertical.jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Spaghetti_measure_vertical.jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Spaghetti_measure_vertical.jpg",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": true,
+          "description": "Mesma régua branca vista de cima sobre bancada de granito, com os 4 furos e os números 1 a 4 visíveis (“Top down view showing all 4 measurements”). É genérica, do tipo do produto. Resolução de 3864×5152 (vertical), nítida, sem pessoas e sem marca. Licença CC BY-SA 4.0 conferida no Commons."
+        },
+        {
+          "id": "m4",
+          "kind": "image",
+          "title": "SpaghettiPortionierer",
+          "creator": "Netpilots",
+          "provider": "wikimedia",
+          "providerRef": "File:SpaghettiPortionierer.jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:SpaghettiPortionierer.jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/SpaghettiPortionierer.jpg",
+          "license": "by",
+          "licenseVersion": "3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/ch/deed.en",
+          "showsExactProduct": true,
+          "description": "Porcionador de inox com 4 furos (de 23, 30, 37 e 43 mm, segundo a descrição), números 1 a 4 e a palavra “SPAGHETTI” gravada, sobre uma tábua de corte branca e um pano xadrez. É do mesmo tipo da régua Lyor vendida no Brasil, mas não é a Lyor. Resolução de 4608×3456, muito nítida, sem pessoas. Licença {{self|cc-by-3.0-ch}} (CC BY 3.0, versão adaptada à Suíça) conferida no Commons."
+        },
+        {
+          "id": "m5",
+          "kind": "image",
+          "title": "Goodcook Grey Spaghetti Spoon (53504577283)",
+          "creator": "Chris Williams",
+          "provider": "wikimedia",
+          "providerRef": "File:Goodcook Grey Spaghetti Spoon (53504577283).jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Goodcook_Grey_Spaghetti_Spoon_(53504577283).jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Goodcook_Grey_Spaghetti_Spoon_%2853504577283%29.jpg",
+          "license": "cc0",
+          "licenseVersion": "1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "showsExactProduct": false,
+          "description": "Não é o produto: é a “solução óbvia”. Concha de macarrão cinza inteira, com o furo oval no centro e dentes, sobre um sofá de veludo bege. A placa metálica no cabo tem o logo Goodcook. Resolução de 4000×3000, nítida, sem pessoas. Licença CC0, que o FlickreviewR conferiu no Commons."
+        }
+      ],
+      "scores": {
+        "contrast": 4,
+        "story": 5,
+        "visual": 4,
+        "media": 5,
+        "reliability": 4
+      },
+      "risks": [
+        "A página oficial da Joseph Joseph não foi encontrada: as URLs testadas em josephjoseph.com deram 404 e a busca do site não traz o produto. As especificações vêm da varejista John Lewis, onde o item está descontinuado, e de imprensa de 2009 a 2011. O roteiro deve tratar o produto como clássico ou descontinuado, não como lançamento.",
+        "Não há artigo na Wikipédia em inglês sobre o medidor; a busca na API não retornou nenhum.",
+        "Não confirmei em página aberta que o modelo Lyor tem 4 furos ou mede “1 a 4 porções”. Isso apareceu só em trechos de busca (Havan, Mercado Livre), e o Mercado Livre bloqueou o acesso. Para o Lyor, fique com material, medidas, modelo e preço.",
+        "O furo da concha como medida de porção não pode ser apresentado como regra universal. O Snopes classifica a afirmação como “Mixture”. Pode-se dizer que alguns fabricantes (OXO, Fiskars) anunciam isso, mas essas alegações foram lidas em varejistas (Target, Suomikauppa): oxo.com respondeu 403/404 e as páginas antigas da Fiskars, 404.",
+        "As fotos m2 a m4 mostram modelos genéricos do tipo, não a Joseph Joseph. Só a m1 (1024 px, iluminação doméstica) mostra o modelo de íris.",
+        "A m4 usa a licença CC BY 3.0 adaptada à Suíça (cc-by-3.0-ch): a atribuição deve citar Netpilots e essa versão da licença."
+      ],
+      "comedyAngle": "O vendedor apresenta com solenidade um instrumento que tem até artigo em revista de matemática: uma “objetiva fotográfica para massa” calibrada pela raiz quadrada de 2, com abertura de 4,7 cm para quatro pessoas e “1 porção = 100 g”. A melhor história do material é a do marido que deixa o aparelho sempre em 2,5. A solução óbvia vence na tela de três jeitos documentados: o furo da concha (que a própria OXO diz medir “a perfect serving”), o punhado na mão e o rótulo da caixa da Barilla dizendo “1/6 del paquete”."
+    },
+    {
+      "slug": "toothpaste-squeezer",
+      "name": "Espremedor de pasta de dente (tube squeezer): Tube-Wringer 401 Heavy Duty",
+      "brand": "Tube-Wringer (Gill Mechanical), Eugene, Oregon, EUA",
+      "description": "Aparelho para espremer tubos até a última gota. O exemplo comercial escolhido é o Tube-Wringer, uma prensa de dois rolos acionada por manivela, fabricada no Oregon desde o fim dos anos 1970 e vendida em três versões: 202 (rolos de náilon), 205 (rolos de metal) e 401 Heavy Duty, com estrutura de aço zincado. O fabricante o recomenda para tinta a óleo, cola, tintura de cabelo, pomadas e pasta de dente. Também existem espremedores simples de plástico, em forma de chave ou de presilha, inclusive versões vendidas como auxílio para artrite.",
+      "legitimateUse": "Uso legítimo e importante: o espremedor é recomendado como tecnologia assistiva para pessoas com artrite, pouca força nas mãos ou destreza reduzida. Ele funciona com uma mão só e com pressão da palma (Assistive Technology House da St. Ambrose University; a loja Essential Aids). O Tube-Wringer também é ferramenta de trabalho para artistas (tinta a óleo), salões (tintura), consultórios e oficinas (adesivos, calafetagem).",
+      "punchingDownRisk": "Alto. O tipo de produto é vendido explicitamente como auxílio para artrite e mobilidade reduzida das mãos. A cena da “solução óbvia” (enrolar o tubo com os dedos) vira chacota com quem não consegue fazer isso. Se for ao ar, a piada precisa mirar só o exagero industrial do modelo 401 (aço zincado, caviar, Otter Pop, garras de lagosta) e nunca o espremedor simples nem quem precisa dele.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.tubewringer.com/",
+          "title": "Multi Purpose Tube Squeezer for Sale | Tube Wringer",
+          "publisher": "Tube-Wringer (Gill Mechanical)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Os três modelos e seus preços (202 a US$ 11,95, 205 a US$ 24,95 e 401 a US$ 38,95), a promessa de “one-third more out of every tube” [um terço a mais de cada tubo] e a capacidade para tubos de até 2⅞ polegadas."
+        },
+        {
+          "id": "s2",
+          "url": "https://www.tubewringer.com/product/tubewringer-401-heavy-duty/",
+          "title": "Tube-Wringer 401 Heavy Duty",
+          "publisher": "Tube-Wringer (Gill Mechanical)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Modelo 401: US$ 38,95, estrutura e manivela de aço zincado, rolos de alumínio, peso de 15 oz e peças fabricadas e montadas no Oregon."
+        },
+        {
+          "id": "s3",
+          "url": "https://www.tubewringer.com/about/",
+          "title": "About | Tube Wringer",
+          "publisher": "Tube-Wringer (Gill Mechanical)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "A história oficial: invenção de John Gill, testes com tubos “vazios” comprados de crianças da vizinhança, empresa familiar desde o fim dos anos 1970 em Eugene, Oregon."
+        },
+        {
+          "id": "s4",
+          "url": "https://www.tubewringer.com/squeezing/",
+          "title": "Tube Squeezing | Tube Wringer",
+          "publisher": "Tube-Wringer (Gill Mechanical)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Usos citados pelo fabricante: Otter Pop, garras de lagosta, caviar, pomada para assaduras e pasta de dente (“Can I use this for my toothpaste tubes?” “Yes!”)."
+        },
+        {
+          "id": "s5",
+          "url": "https://info.sau.edu/jimsplace/toothpaste-squeezers/",
+          "title": "Toothpaste Squeezers | Jim's Place",
+          "publisher": "St. Ambrose University, Assistive Technology House “Jim's Place”",
+          "kind": "other",
+          "accessedAt": "2026-10-11",
+          "confirms": "O espremedor é recomendado como tecnologia assistiva para pessoas com artrite ou problemas de força e coordenação: usa-se com uma mão e pode ser acionado com a palma."
+        },
+        {
+          "id": "s6",
+          "url": "https://www.essentialaids.com/bathroom/personal-care-hygiene/tube-squeezer.html",
+          "title": "Tube Squeezer",
+          "publisher": "Essential Aids (Reino Unido)",
+          "kind": "retailer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Um espremedor de tubo vendido por £ 4,40 como “ideal for people with arthritis, limited hand strength, or reduced dexterity”, com ventosas e uso com uma mão."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Segundo o fabricante, o Tube-Wringer foi inventado por John Gill no Oregon, que testava o invento em tubos “vazios” comprados de crianças da vizinhança (“‘empty’ tubes purchased from local children”).",
+          "sourceIds": [
+            "s3",
+            "s1"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "John Gill e a esposa tocaram a empresa do fim dos anos 1970 até meados dos anos 1990. Depois ela foi vendida a outra família e hoje é administrada pela filha dos compradores.",
+          "sourceIds": [
+            "s3"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Existem três modelos: 202 Light Duty (rolos de náilon, US$ 11,95), 205 Medium Duty (rolos de metal, US$ 24,95) e 401 Heavy Duty (US$ 38,95).",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "O modelo 401 tem estrutura e manivela de aço zincado, rolos de hastes de alumínio “heavy duty” e pesa 15 oz (cerca de 425 g). Todas as peças são fabricadas e montadas no Oregon.",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "O fabricante promete: “get one-third more out of every tube in your home, studio, lab, or medical office” [tirar um terço a mais de cada tubo da sua casa, ateliê, laboratório ou consultório].",
+          "sourceIds": [
+            "s1",
+            "s4"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "Lista oficial do que ele espreme até a última gota: “expensive caulk, adhesives, oil paint, caviar, cake icing, hair dye, medical compounds, toothpaste, ointment and so much more!”",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "Usos relatados pelo fabricante: clientes já o usaram “to squeeze all of the icy goodness from an Otter Pop, crush lobster claws” [para espremer todo o gelinho de um Otter Pop e esmagar garras de lagosta], e uma cliente o usa para tirar toda a carne das garras de lagosta.",
+          "sourceIds": [
+            "s4",
+            "s3"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "Sobre pasta de dente, o site diz: “One of the most common questions we get about the Tube-Wringer is, ‘Can I use this for my toothpaste tubes?’ The answer is a resounding, ‘Yes!’”",
+          "sourceIds": [
+            "s4"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "Todos os modelos aceitam tubos de até 2⅞ polegadas (cerca de 7,3 cm) de largura.",
+          "sourceIds": [
+            "s1",
+            "s2"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "O site informa o tempo de produção em Eugene, Oregon, de dois jeitos: “over 38 years” na página inicial e “over 39 years” na página About.",
+          "sourceIds": [
+            "s1",
+            "s3"
+          ]
+        },
+        {
+          "id": "f11",
+          "text": "A Assistive Technology House da St. Ambrose University recomenda espremedores de pasta de dente como “Good for people with arthritis or other strength and coordination problems” [bom para pessoas com artrite ou outros problemas de força e coordenação].",
+          "sourceIds": [
+            "s5"
+          ]
+        },
+        {
+          "id": "f12",
+          "text": "A Essential Aids vende um espremedor de tubo simples por £ 4,40, “ideal for people with arthritis, limited hand strength, or reduced dexterity”, com ventosas para uso com uma mão.",
+          "sourceIds": [
+            "s6"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 38.95,
+        "currency": "USD",
+        "sourceId": "s2",
+        "observedAt": "2026-10-11",
+        "note": "Tube-Wringer 401 Heavy Duty na loja do fabricante. O modelo 202 Light Duty, indicado para pasta de dente, custa US$ 11,95 (s1)."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "CreativeTools.se - PackshotCreator - Toothpaste squeezer (4368359946)",
+          "creator": "Creative Tools from Halmstad, Sweden",
+          "provider": "wikimedia",
+          "providerRef": "File:CreativeTools.se - PackshotCreator - Toothpaste squeezer (4368359946).jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:CreativeTools.se_-_PackshotCreator_-_Toothpaste_squeezer_(4368359946).jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/CreativeTools.se_-_PackshotCreator_-_Toothpaste_squeezer_%284368359946%29.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Espremedor de pasta de dente do tipo presilha com fenda (o tubo passa pela abertura), em gesso branco impresso em 3D numa ZPrinter. Foto de estúdio sobre fundo branco, com o objeto inteiro. É claramente do tipo, mas não é o Tube-Wringer. No canto inferior esquerdo há marcas d’água “CT creative tools” e “Z Corporation authorized reseller”, que precisariam de recorte. Resolução de 4108×3312, sem pessoas. Licença {{cc-by-2.0}} com FlickreviewR “passed”, conferida no Commons; a mesma foto está no Openverse (id 25415f74-c357-4056-9630-00ad6322d0b7)."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "Toothpaste Tube Squeezer",
+          "creator": "Marty McGuire (Schmarty)",
+          "provider": "openverse",
+          "providerRef": "c18d9a96-6c18-4f63-82b2-6dc5afb9cca9",
+          "landingUrl": "https://www.flickr.com/photos/48215930@N00/4637653586",
+          "fileUrl": "https://live.staticflickr.com/3369/4637653586_b0ed5fbb75_b.jpg",
+          "license": "by",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "showsExactProduct": true,
+          "description": "Espremedor do mesmo tipo presilha, em plástico verde impresso numa MakerBot, sobre carpete cinza com fios de filamento verde ao lado. É claramente do tipo, mas não é o Tube-Wringer. Foto de celular, desfocada e escura, com 1024×768; serve no máximo como inserto rápido. Sem pessoas. Licença CC BY 2.0 conferida na página do Flickr (29/04/2010, “Trying out green plastic!”)."
+        }
+      ],
+      "scores": {
+        "contrast": 2,
+        "story": 2,
+        "visual": 3,
+        "media": 2,
+        "reliability": 4
+      },
+      "risks": [
+        "Risco alto de punching down: o tipo de produto é tecnologia assistiva documentada para artrite e pouca força nas mãos (s5, s6). Recomendo não priorizar este candidato ou limitar a piada ao exagero do modelo industrial 401.",
+        "Não há foto com licença livre do Tube-Wringer, o produto-exemplo. As duas mídias mostram espremedores tipo presilha impressos em 3D. Imagens do Thingiverse marcadas CC0 no Openverse ficaram de fora porque a página de origem respondeu 403 e a licença não pôde ser conferida.",
+        "A m1 tem logos de marca d’água no canto (Creative Tools / Z Corporation), e a m2 é desfocada e de baixa qualidade.",
+        "Não verifiquei nenhum espremedor vendido no Brasil (Amazon.com.br ou Mercado Livre) em página aberta. Os resultados de busca trouxeram só dispensers de parede e agregadores.",
+        "O site do fabricante se contradiz sobre o tempo de produção (“over 38 years” na home, “over 39 years” na About) e não dá o ano exato de lançamento; use “fim dos anos 1970”."
+      ],
+      "comedyAngle": "O vendedor apresenta uma prensa de aço zincado com manivela, “feita inteiramente no Oregon”, cujo inventor comprava tubos vazios de crianças para provar a tese, e que promete “um terço a mais de cada tubo” de caviar, glacê ou Otter Pop. O exagero do modelo 401 diante de um tubo de pasta de dente é engraçado, mas a solução óbvia (enrolar o tubo com os dedos) exclui justamente quem tem artrite, o público assistivo documentado do produto. Por isso a nota de contraste e história é baixa e a piada, se existir, deve ficar no exagero industrial e nunca no espremedor simples."
+    },
+    {
+      "slug": "pizza-scissors",
+      "name": "Tesoura de pizza (Dreamfarm Scizza)",
+      "brand": "Dreamfarm (Brisbane, Austrália)",
+      "description": "Tesoura de cozinha longa com uma “sapata”, uma espátula de náilon na lâmina de baixo que entra por baixo da pizza: a peça corta e depois serve a fatia. O exemplo comercial é a Scizza da Dreamfarm, com 32 cm e lâminas de 15 cm em aço inox alemão. Na tela, competem com ela a faca, o cortador de pizza de rodinha e uma tesoura de cozinha comum, que aparece em várias fotos livres cortando pizza muito bem.",
+      "legitimateUse": "Tem utilidade real e não é um objeto inútil. Corta sem arranhar formas antiaderentes nem pedras de pizza, mantém a cobertura no lugar e serve a fatia, e a lâmina pode ser desmontada para afiar. Cortar pizza com tesoura é prática comum: a foto de restaurante em Trento no Commons mostra isso. Não é tecnologia assistiva.",
+      "punchingDownRisk": "Baixo. Utensílio de cozinha de consumo geral, sem público assistivo documentado nesta pesquisa.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://dreamfarm.com/scizza/",
+          "title": "Dreamfarm Scizza | The World's Best Pizza Scissors & Server",
+          "publisher": "Dreamfarm (Austrália)",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Descrição, ficha técnica (32 cm, 7,2 cm, 0,20 kg, aço inox 420J2, náilon e ABS), lâminas de 15 cm, resistência a 205 °C, FAQ e preço de AU$ 34,95."
+        },
+        {
+          "id": "s2",
+          "url": "https://us.dreamfarm.com/scizza/",
+          "title": "Dreamfarm Scizza | The World's Best Pizza Scissors & Server (US)",
+          "publisher": "Dreamfarm US",
+          "kind": "official-store",
+          "accessedAt": "2026-10-11",
+          "confirms": "Preço de US$ 24,99 e disponibilidade “InStock” na loja oficial dos EUA."
+        },
+        {
+          "id": "s3",
+          "url": "https://whatsgoodtodo.com/dreamfarm-scizza-review/",
+          "title": "Dreamfarm Scizza review",
+          "publisher": "What's Good To Do (Stevie Pickering, 2015)",
+          "kind": "press",
+          "accessedAt": "2026-10-11",
+          "confirms": "A Scizza já era vendida e resenhada em 2015, com elogios ante o cortador de rodinha e a crítica de que é curta para pizzas grandes."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "A Dreamfarm define a Scizza como “a pair of scissors that perfectly cut any pizza, on any surface, and serve” [uma tesoura que corta perfeitamente qualquer pizza, em qualquer superfície, e serve].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Na descrição oficial: “Scizza is the best thing since sliced bread itself” [a Scizza é a melhor coisa desde o próprio pão fatiado].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "No FAQ do fabricante: “Why would you cut pizza with scissors? Just like two heads being better than one, two blades are better than one.” [Por que cortar pizza com tesoura? Assim como duas cabeças pensam melhor que uma, duas lâminas são melhores que uma.]",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "Também no site: “Slice your pizza then pinch and serve it too. Have you ever seen a pizza wheel do that? We haven't either.” [Corte a pizza, depois pegue e sirva. Você já viu um cortador de rodinha fazer isso? Nós também não.]",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "Ficha técnica: 32,0 cm de comprimento, 7,2 cm de largura e 0,20 kg. Materiais: aço inox 420J2, náilon e ABS.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "O fabricante anuncia “Extra long 15cm blades” [lâminas extralongas de 15 cm] de “Hardened German stainless steel” [aço inox alemão temperado].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "A “sapata” de náilon que vai por baixo da pizza protege panelas antiaderentes e resiste a 205 °C / 400 °F. Segundo o fabricante, as lâminas só tocam a pizza, então podem ser usadas sobre pedra de pizza.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "As lâminas podem ser desmontadas para afiar e a peça vai à lava-louças. O site avisa: “This product contains sharp blades. Handle with care and keep out of reach of children.”",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "Preço: AU$ 34,95 no site australiano e US$ 24,99 na loja oficial dos EUA.",
+          "sourceIds": [
+            "s1",
+            "s2"
+          ]
+        },
+        {
+          "id": "f10",
+          "text": "Uma resenha de 2015 elogia: “So much less hassle and mess than a traditional pizza cutting wheel”. Também critica: “The only downside is the length, if you have a particularly large pizza then you need to move the Scizza along.”",
+          "sourceIds": [
+            "s3"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 24.99,
+        "currency": "USD",
+        "sourceId": "s2",
+        "observedAt": "2026-10-11",
+        "note": "Scizza na loja oficial Dreamfarm dos EUA, marcada como InStock. No site australiano custa AU$ 34,95 (s1)."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "Pizza Scissors!",
+          "creator": "bdunnette",
+          "provider": "openverse",
+          "providerRef": "8e51590a-bee9-469f-bfe3-f7c5087bc9f4",
+          "landingUrl": "https://www.flickr.com/photos/84652765@N00/466679669",
+          "fileUrl": "https://live.staticflickr.com/205/466679669_229f03b119_b.jpg",
+          "license": "by-sa",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "showsExactProduct": true,
+          "description": "Tesouras de pizza da marca Progressive na embalagem, penduradas em gôndola de loja, com cabos e espátula vermelhos e o texto “Pizza Scissors — Easily Cut and Serve Foods with One Tool”. É claramente do tipo, mas não é a Scizza. A arte e a marca da embalagem ficam bem visíveis, e há o reflexo fraco do fotógrafo no vidro, no canto superior esquerdo. Foto de celular de 1024×819, nitidez razoável. Licença CC BY-SA 2.0 conferida no Flickr (20/04/2007, legenda “Finally, the world has caught up with my mother.”)."
+        },
+        {
+          "id": "m2",
+          "kind": "video",
+          "title": "Trento Pizza cut with scissors",
+          "creator": "Thilo Parg",
+          "provider": "wikimedia",
+          "providerRef": "File:Trento Pizza cut with scissors.webm",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Trento_Pizza_cut_with_scissors.webm",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Trento_Pizza_cut_with_scissors.webm",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": false,
+          "description": "Vídeo de 22 s em 1920×1080, gravado em 2025 num restaurante em Trento, Itália. Uma pessoa, de quem só aparecem as mãos e o tronco, corta uma pizza no prato com uma tesoura de cozinha comum, e faca e garfo estão parados ao lado do prato. É tesoura comum, não tesoura de pizza: serve para mostrar a solução óbvia ou a prática tradicional. Licença {{self|cc-by-sa-4.0}} conferida no Commons; o autor usa um modelo próprio de permissão que pede atribuição a “Thilo Parg”."
+        },
+        {
+          "id": "m3",
+          "kind": "image",
+          "title": "Project 365 #227: 150810 A Real Snip",
+          "creator": "Pete (comedy_nose)",
+          "provider": "openverse",
+          "providerRef": "a004fb15-fe28-4e18-9978-07be119d6f82",
+          "landingUrl": "https://www.flickr.com/photos/23408922@N07/4894233995",
+          "fileUrl": "https://live.staticflickr.com/4098/4894233995_4af4565560_b.jpg",
+          "license": "pdm",
+          "licenseVersion": "1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "showsExactProduct": false,
+          "description": "Uma mão corta uma pizza de delivery na caixa com uma tesoura comum; ao fundo, outra mão. Segundo a descrição no Flickr, não havia cortador de pizza e usaram uma tesoura Fiskars, que “funcionou bem”: é a solução óbvia vencendo. Resolução de 1024×683, sem rostos. Marca de Domínio Público 1.0 conferida no Flickr."
+        },
+        {
+          "id": "m4",
+          "kind": "image",
+          "title": "PIZZA SCISSORS!!!",
+          "creator": "jon collier (ImNotQuiteJack)",
+          "provider": "openverse",
+          "providerRef": "11f7303b-6121-467c-a178-63f768284823",
+          "landingUrl": "https://www.flickr.com/photos/34026843@N00/306547305",
+          "fileUrl": "https://live.staticflickr.com/115/306547305_2d7e56d039_b.jpg",
+          "license": "by-sa",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "showsExactProduct": false,
+          "description": "Duas mãos cortam uma pizza de tomate numa caixa italiana (impressão de Catania) com uma tesoura de cozinha comum de cabo verde. Sem rostos. Foto de 2006 com flash, 1024×768. Licença CC BY-SA 2.0 conferida no Flickr."
+        }
+      ],
+      "scores": {
+        "contrast": 2,
+        "story": 3,
+        "visual": 4,
+        "media": 3,
+        "reliability": 4
+      },
+      "risks": [
+        "O produto é útil: protege antiaderente e pedra e serve a fatia. O contraste problema × solução é fraco, e o público pode achar que a tesoura de pizza é uma boa ideia.",
+        "Não achei prêmio de design da Scizza; ela não aparece na coleção “Award Winners” do site da Dreamfarm em 2026-10-11. Não usar “premiada”.",
+        "Não há foto livre da Scizza. A única mídia do tipo (m1) é uma tesoura Progressive na embalagem, com arte gráfica de terceiros bem visível. As outras mostram tesouras comuns.",
+        "Uma foto “pizzaschere” no Openverse (abhijay achatz, CC BY-SA) parece imagem publicitária de fabricante republicada. Ficou de fora por suspeita de licença indevida.",
+        "O site australiano mostra ao mesmo tempo “Add to Cart” e “Out of Stock”, então a disponibilidade na Austrália é incerta. Nos EUA o produto aparece como InStock."
+      ],
+      "comedyAngle": "O vendedor apresenta “a melhor coisa desde o pão fatiado”: lâminas de aço alemão temperado de 15 cm, sapata resistente a 205 °C e uma filosofia (“duas lâminas são melhores que uma”). Na tela, o contraponto é que qualquer tesoura de gaveta já corta pizza: o vídeo de Trento mostra isso com faca e garfo parados ao lado do prato, e a foto do Flickr registra que uma Fiskars comum “funcionou bem”. O humor é mais leve porque o produto tem méritos reais."
+    },
+    {
+      "slug": "herb-stripper",
+      "name": "Debulhador de ervas (herb stripper): Talisman Designs Kale & Herb Stripper",
+      "brand": "Talisman Designs (EUA); exemplo alternativo: Chef'n ZipStrip",
+      "description": "Lâmina de plástico com 6 entalhes de tamanhos diferentes. O talo da erva ou da couve entra no entalhe certo e, ao deslizar a peça, as folhas se soltam. Existe uma patente americana concedida para o dispositivo. A Chef'n vende a ZipStrip, uma placa com furos de vários tamanhos e uma tigelinha que pega e mede as folhas. A solução óbvia é a mão: pinçar o talo com dois dedos e puxar.",
+      "legitimateUse": "Agiliza o preparo de volumes grandes de couve, acelga e ervas de talo lenhoso (alecrim, tomilho, orégano), por exemplo em cozinha profissional ou no preparo de marmitas. Não é tecnologia assistiva documentada nesta pesquisa.",
+      "punchingDownRisk": "Baixo. Gadget de cozinha de consumo geral; nenhuma fonte o apresenta como auxílio para deficiência.",
+      "sources": [
+        {
+          "id": "s1",
+          "url": "https://www.talismandesigns.com/products/kale-herb-stripper",
+          "title": "Kale & Herb Stripper",
+          "publisher": "Talisman Designs",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "Descrição oficial (seis entalhes, modo de uso, plástico sem BPA, lava-louças) e preço de US$ 10,00 na loja do fabricante."
+        },
+        {
+          "id": "s2",
+          "url": "https://patents.google.com/patent/US11485031B2/en",
+          "title": "US11485031B2 - Herb-stripping devices, assemblies, and components",
+          "publisher": "Google Patents",
+          "kind": "patent",
+          "accessedAt": "2026-10-11",
+          "confirms": "A patente americana de dispositivo debulhador de ervas: inventoras Katherine Waymire e Melessa E. Paynter, prioridade em 06/03/2015, concessão em 01/11/2022, 18 reivindicações, seis entalhes e aviso “Copyright© 2015, TALISMAN DESIGNS, LLC” nos desenhos."
+        },
+        {
+          "id": "s3",
+          "url": "https://www.chefn.com/products/zipstrip-herb-stripper",
+          "title": "ZipStrip Herb Stripper",
+          "publisher": "Chef'n",
+          "kind": "manufacturer",
+          "accessedAt": "2026-10-11",
+          "confirms": "A ZipStrip da Chef'n tem furos de vários tamanhos e uma tigela que pega e mede as ervas, por US$ 8,99 na loja oficial."
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Segundo a Talisman Designs: “Six different notch sizes will accommodate any size leafy green or herb stems” [seis tamanhos de entalhe para qualquer talo de folha ou erva].",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Instrução oficial de uso: “Right on your counter top, set the correct size notch over the stem, apply even pressure while gliding the stripper across the stem.” [Na bancada, encaixe o entalhe do tamanho certo sobre o talo, aplique pressão uniforme e deslize o debulhador ao longo dele.]",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "O fabricante o chama de “this must-have kitchen tool” [utensílio indispensável] que “simplifies meal prep in seconds” [simplifica o preparo em segundos]. É feito de plástico sem BPA e vai à lava-louças.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "Na loja da Talisman Designs custa US$ 10,00.",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "id": "f5",
+          "text": "O dispositivo tem patente americana: US11485031B2, “Herb-stripping devices, assemblies, and components”, com prioridade em 06/03/2015 e concessão só em 01/11/2022, com 18 reivindicações.",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f6",
+          "text": "O resumo da patente começa assim: “Conventional herb strippers can be tedious, time consuming, and awkward to use.” [Os debulhadores de ervas convencionais podem ser tediosos, demorados e desajeitados.]",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f7",
+          "text": "O texto da patente reconhece a solução óbvia: os chefs “expend considerable time and energy removing the leaves by hand” [gastam tempo e energia consideráveis tirando as folhas com a mão].",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f8",
+          "text": "Na modalidade principal da patente, os seis entalhes vão do menor ao maior. Os desenhos trazem “Copyright© 2015, TALISMAN DESIGNS, LLC”.",
+          "sourceIds": [
+            "s2"
+          ]
+        },
+        {
+          "id": "f9",
+          "text": "A concorrente ZipStrip, da Chef'n, tem “Different sized holes” [furos de tamanhos diferentes] e uma tigela que pega as folhas e “also measures them” [também as mede], por US$ 8,99.",
+          "sourceIds": [
+            "s3"
+          ]
+        }
+      ],
+      "price": {
+        "amount": 10.0,
+        "currency": "USD",
+        "sourceId": "s1",
+        "observedAt": "2026-10-11",
+        "note": "Kale & Herb Stripper na loja oficial da Talisman Designs (SKU 3120), disponível. A Chef'n ZipStrip custa US$ 8,99 (s3)."
+      },
+      "media": [
+        {
+          "id": "m1",
+          "kind": "image",
+          "title": "Herb stripper 1 2018-07-11",
+          "creator": "Fastily",
+          "provider": "wikimedia",
+          "providerRef": "File:Herb stripper 1 2018-07-11.jpg",
+          "landingUrl": "https://commons.wikimedia.org/wiki/File:Herb_stripper_1_2018-07-11.jpg",
+          "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Herb_stripper_1_2018-07-11.jpg",
+          "license": "by-sa",
+          "licenseVersion": "4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "showsExactProduct": true,
+          "description": "É exatamente o Talisman Designs “Kale & Herb Stripper”: lâmina verde-limão com entalhes, na cartela da embalagem, pendurada num gancho de supermercado em frente à geladeira de verduras. Acima aparece a embalagem de um “Carrot Stripper / couteau julienne”. A marca, a arte da embalagem (ilustração de mão e couve) e os textos “STRIP more / PREP easily / GLIDE over” ficam bem visíveis. Resolução de 3024×4032 (vertical), nítida, sem pessoas. Licença {{Self|Cc-by-sa-4.0}} conferida no Commons."
+        },
+        {
+          "id": "m2",
+          "kind": "image",
+          "title": "The herb stripper&snipper = my new best friend. Why didn't I know about these before?",
+          "creator": "Stephanie Richard (therichardlife)",
+          "provider": "openverse",
+          "providerRef": "9e4487e6-e304-42e3-aafd-471bb45c66d1",
+          "landingUrl": "https://www.flickr.com/photos/22967797@N06/6027048625",
+          "fileUrl": "https://live.staticflickr.com/6210/6027048625_227aa9a201.jpg",
+          "license": "by-sa",
+          "licenseVersion": "2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "showsExactProduct": false,
+          "description": "Uma mão segura uma tesoura de ervas branca e verde com entalhes de debulhar no cabo, sobre ervas picadas e cebola numa tábua, com uma faca de chef ao fundo. É uma variante híbrida (tesoura com debulhador), não a lâmina Talisman. Tem filtro de Instagram e só 500×500, abaixo do mínimo desejável. Só aparece parte da mão, sem rosto. Licença CC BY-SA 2.0 conferida no Flickr."
+        }
+      ],
+      "scores": {
+        "contrast": 3,
+        "story": 4,
+        "visual": 3,
+        "media": 2,
+        "reliability": 5
+      },
+      "risks": [
+        "A mídia é escassa. Só há uma foto livre do produto exato (m1), e ela mostra o item na embalagem dentro de uma loja, com a arte gráfica da Talisman em destaque, o que limita o uso como produto “limpo”. A m2 é uma variante em baixa resolução.",
+        "O Commons e o Openverse não têm foto livre do debulhador em uso nem da Chef'n ZipStrip.",
+        "A patente lista a titularidade original como “Individual” no Google Patents. A ligação com a Talisman vem do aviso de copyright nos desenhos, então não se deve afirmar que a Talisman é a titular da patente.",
+        "Não há preço em reais nem loja brasileira verificada para este produto."
+      ],
+      "comedyAngle": "O vendedor apresenta uma lâmina patenteada com “seis tamanhos de entalhe”, cuja patente levou mais de sete anos para sair e começa reclamando que os debulhadores convencionais são “tediosos, demorados e desajeitados”. A própria patente admite que os chefs tiram as folhas “com a mão”. Na tela, dois dedos pinçam o talo de alecrim e puxam, enquanto o vendedor ainda procura o entalhe certo."
+    }
+  ]
+}

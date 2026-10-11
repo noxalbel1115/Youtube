@@ -163,7 +163,7 @@ export const TitleCard: React.FC<{beat: TimelineBeat; brandName: string; ui: Tim
         {v.heading ? <div style={{marginTop: 80, fontSize: 84, fontWeight: 700, lineHeight: 1.05, hyphens: 'manual', overflowWrap: 'anywhere'}}>{v.heading}</div> : null}
         {v.body ? <div style={{marginTop: 30, fontSize: 42, color: C.inkSoft, lineHeight: 1.3}}>{v.body}</div> : null}
       </div>
-      {v.stamp ? <Stamp text={v.stamp} atFrame={Math.round(v.stampAt * fps)} top={1260} /> : null}
+      {v.stamp ? <Stamp text={v.stamp} atFrame={Math.round(v.stampAt * fps)} top={v.stampTop ?? 1260} /> : null}
     </AbsoluteFill>
   );
 };
@@ -180,7 +180,7 @@ export const TextCard: React.FC<{beat: TimelineBeat}> = ({beat}) => {
         {v.body ? <div style={{marginTop: 34, fontSize: 44, color: C.inkSoft, lineHeight: 1.35, whiteSpace: 'pre-line'}}>{v.body}</div> : null}
         {v.footnote ? <div style={{marginTop: 50, fontFamily: MONO, fontSize: 28, color: C.muted, lineHeight: 1.4}}>{v.footnote}</div> : null}
       </div>
-      {v.stamp ? <Stamp text={v.stamp} atFrame={Math.round(v.stampAt * fps)} /> : null}
+      {v.stamp ? <Stamp text={v.stamp} atFrame={Math.round(v.stampAt * fps)} top={v.stampTop} /> : null}
     </AbsoluteFill>
   );
 };
@@ -214,7 +214,7 @@ export const FactSheet: React.FC<{beat: TimelineBeat; label: string}> = ({beat, 
         })}
         {v.footnote ? <div style={{marginTop: 30, fontFamily: MONO, fontSize: 24, color: C.muted, lineHeight: 1.45}}>{v.footnote}</div> : null}
       </div>
-      {v.stamp ? <Stamp text={v.stamp} atFrame={Math.round(v.stampAt * fps)} top={1300} /> : null}
+      {v.stamp ? <Stamp text={v.stamp} atFrame={Math.round(v.stampAt * fps)} top={v.stampTop ?? 1300} /> : null}
     </AbsoluteFill>
   );
 };

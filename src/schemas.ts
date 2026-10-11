@@ -161,6 +161,8 @@ export const Visual = z.object({
   /** Carimbo institucional (ex.: "EM ANALISE") e o instante, em segundos desde o inicio do beat. */
   stamp: z.string().optional(),
   stampAt: z.number().min(0).default(0.6),
+  /** Altura do carimbo (px a partir do topo). Sem valor, cada cartela usa a sua posicao padrao. */
+  stampTop: z.number().min(0).max(1700).optional(),
   /** Mostrar a etiqueta do vendedor (lower third) neste beat. */
   lowerThird: z.boolean().default(false),
 });

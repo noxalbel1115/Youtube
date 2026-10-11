@@ -1,0 +1,605 @@
+{
+  "version": 1,
+  "episodeId": "ep002-trouser-press-en",
+  "productSlug": "corby-trouser-press",
+  "workingTitle": "45 minutes for one pair of trousers",
+  "logline": "Versão em inglês do Protocolo 002: Valdemar apresenta, com orgulho de engenharia aeronáutica, uma prensa de calças inglesa de 9,56 kg; fora de quadro, a colega desamassa a dela no vapor do banho, exatamente onde o manual proíbe a prensa de entrar.",
+  "arc": [
+    "Confiança máxima: um móvel elétrico dedicado a um único inimigo, o amassado",
+    "Demonstração (fatos do fabricante): abre, insere, fecha, escolhe 15, 30 ou 45 minutos",
+    "Escalada: 45 minutos para os vincos ainda mais difíceis; almofada inspirada no Concorde; cinco madeiras",
+    "Realidade interrompe: chuveiro, calça no cabide, 'Pronto.' Silêncio. O mostrador marca 44 minutos",
+    "Recuperação frágil apoiada no manual, que proíbe o banheiro e a água, mas admite que a umidade ajuda",
+    "Colapso: o modelo anterior vinha com um ferro de passar. A vapor.",
+    "Última tentativa de fechar a venda: preço por minuto, comparado ao Concorde. Parecer: indeferido."
+  ],
+  "pronunciations": {},
+  "providerPronunciations": {},
+  "beats": [
+    {
+      "id": "s01",
+      "duration": 3.0,
+      "visual": {
+        "type": "title",
+        "heading": "Electric trouser press",
+        "body": "Problem: wrinkled trousers. Solution: 9.56 kg, plugged in.",
+        "footnote": "PROTOCOL No. 002 · NEEDS ASSESSMENT",
+        "stamp": "UNDER REVIEW",
+        "stampAt": 1.7
+      },
+      "sfx": [
+        {
+          "id": "tap",
+          "at": 1.7,
+          "gainDb": 3
+        }
+      ],
+      "note": "Abertura institucional. O absurdo já está na cartela: problema trivial x 9,56 kg (f2)."
+    },
+    {
+      "id": "s02",
+      "speaker": "vendedor",
+      "text": "Good morning. For almost a hundred years, one English company has fought a single enemy.",
+      "claim": "fact",
+      "factIds": [
+        "f10"
+      ],
+      "holdBefore": 0.3,
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "hero",
+        "lowerThird": true,
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "note": "Confiança máxima. Fato: empresa inglesa desde 1930, há 96 anos (f10). \"Combate um único inimigo\" é retórica do vendedor."
+    },
+    {
+      "id": "s03",
+      "speaker": "vendedor",
+      "text": "The wrinkle.",
+      "holdAfter": 0.8,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "hero",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "note": "Mesmo plano, aproximação lenta. Pausa reverente."
+    },
+    {
+      "id": "s04",
+      "speaker": "vendedor",
+      "text": "It's in millions of hotel rooms.",
+      "claim": "fact",
+      "factIds": [
+        "f17"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "media",
+        "mediaId": "m5",
+        "layout": "exhibit",
+        "motion": "push-in",
+        "zoom": 1.06,
+        "focus": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "label": "Fig. 1 — Corby press in a hotel room (real photo; older model)"
+      },
+      "note": "Única foto real em destaque: evidência de que o aparelho existe e está em hotéis (f17)."
+    },
+    {
+      "id": "s05",
+      "speaker": "vendedor",
+      "text": "Here's how it works. Open the press.",
+      "claim": "fact",
+      "factIds": [
+        "f16"
+      ],
+      "holdAfter": 0.2,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "open",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "note": "O painel se inclina e revela a almofada aquecida (f16)."
+    },
+    {
+      "id": "s06",
+      "speaker": "vendedor",
+      "text": "Lay the trousers on the heated pad.",
+      "claim": "fact",
+      "factIds": [
+        "f15",
+        "f16"
+      ],
+      "holdAfter": 0.2,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "insert",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "note": "A calça desce até a almofada (f15)."
+    },
+    {
+      "id": "s07",
+      "speaker": "vendedor",
+      "text": "And close.",
+      "claim": "fact",
+      "factIds": [
+        "f16"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "close",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "sfx": [
+        {
+          "id": "click",
+          "at": 0.6,
+          "gainDb": 2
+        }
+      ],
+      "note": "O painel fecha; clique seco ao travar."
+    },
+    {
+      "id": "s08",
+      "speaker": "vendedor",
+      "text": "Fifteen minutes.",
+      "claim": "fact",
+      "factIds": [
+        "f1"
+      ],
+      "holdAfter": 0.25,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "c15",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "sfx": [
+        {
+          "id": "click",
+          "at": 0.05,
+          "gainDb": 0
+        }
+      ],
+      "note": "Botão de 15 min; o mostrador acende 15:00."
+    },
+    {
+      "id": "s09",
+      "speaker": "vendedor",
+      "text": "Thirty.",
+      "claim": "fact",
+      "factIds": [
+        "f1"
+      ],
+      "holdAfter": 0.25,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "c30",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "sfx": [
+        {
+          "id": "click",
+          "at": 0.05,
+          "gainDb": 0
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "speaker": "vendedor",
+      "text": "Or forty-five.",
+      "claim": "fact",
+      "factIds": [
+        "f1"
+      ],
+      "holdAfter": 0.6,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "c45",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "sfx": [
+        {
+          "id": "click",
+          "at": 0.05,
+          "gainDb": 0
+        }
+      ],
+      "note": "45:00. A contagem regressiva começa ao fim deste beat, em tempo real, e segue até o fim do episódio."
+    },
+    {
+      "id": "s11",
+      "speaker": "vendedor",
+      "text": "Forty-five is for, and I quote, the even more difficult wrinkles.",
+      "claim": "fact",
+      "factIds": [
+        "f1"
+      ],
+      "holdAfter": 0.6,
+      "visual": {
+        "type": "card",
+        "motion": "push-in",
+        "heading": "“…for the even more difficult wrinkles a 45-minute cycle.”",
+        "footnote": "Corby of Windsor, Corby 7700 product page. Accessed 11 Oct 2026."
+      },
+      "note": "Citação literal do fabricante na cartela (f1); a fonte está no rodapé."
+    },
+    {
+      "id": "s12",
+      "speaker": "vendedor",
+      "text": "Forty-five minutes. One pair of trousers at a time.",
+      "claim": "fact",
+      "factIds": [
+        "f1",
+        "f6"
+      ],
+      "holdAfter": 0.9,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "run",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "note": "O manual pede uma calça por vez (f6). O mostrador já desce: 44:5x."
+    },
+    {
+      "id": "s13",
+      "speaker": "vendedor",
+      "text": "The heated pad was inspired by Concorde.",
+      "claim": "fact",
+      "factIds": [
+        "f11"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "factsheet",
+        "motion": "push-in",
+        "heading": "Heated pad",
+        "body": "Inspiration: Concorde's nose\nOriginal problem: freezing at altitude\nCurrent application: trousers",
+        "footnote": "Sources: Peter Corby obituary, Isle of Wight County Press; Wikipedia. Accessed 11 Oct 2026."
+      },
+      "note": "Fato: f11 (o engenheiro do Concorde que resolveu o congelamento do nariz inspirou a almofada). 'Aplicação atual: calça' é a voz seca do Departamento."
+    },
+    {
+      "id": "s14",
+      "speaker": "vendedor",
+      "text": "For trousers.",
+      "holdAfter": 0.9,
+      "visual": {
+        "type": "factsheet",
+        "motion": "push-in",
+        "heading": "Heated pad",
+        "body": "Inspiration: Concorde's nose\nOriginal problem: freezing at altitude\nCurrent application: trousers",
+        "footnote": "Sources: Peter Corby obituary, Isle of Wight County Press; Wikipedia. Accessed 11 Oct 2026."
+      },
+      "note": "Orgulho sem ironia. Botão do bloco."
+    },
+    {
+      "id": "s15",
+      "speaker": "vendedor",
+      "text": "In walnut, mahogany, black ash, beech or oak.",
+      "claim": "fact",
+      "factIds": [
+        "f4"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "finish",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "note": "O painel troca de madeira a cada nome (f4)."
+    },
+    {
+      "id": "s16",
+      "duration": 2.0,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "bathroom",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "sfx": [
+        {
+          "id": "shower",
+          "at": 0.0,
+          "gainDb": -2,
+          "caption": "(shower running)"
+        }
+      ],
+      "note": "Corte seco para o banheiro ao lado: chuveiro ligado, calça amassada no cabide, vapor sobe e os amassados somem."
+    },
+    {
+      "id": "s17",
+      "speaker": "colega",
+      "text": "Done. Steamed it in the shower.",
+      "holdBefore": 0.2,
+      "holdAfter": 0.2,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "bathroom",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "note": "Fora de quadro, a Sueli, prática, sem intenção de humilhar."
+    },
+    {
+      "id": "s18",
+      "duration": 1.5,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "still",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "note": "Silêncio. Plano conjunto parado: a calça lisa no cabide e, ao lado, a prensa ainda contando 44 minutos."
+    },
+    {
+      "id": "s19",
+      "speaker": "vendedor",
+      "text": "Forty-four minutes to go.",
+      "holdBefore": 0.2,
+      "holdAfter": 1.0,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "snap",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "note": "Zoom de reação no mostrador (44:xx). O número vem da ilustração (contagem em tempo real desde s10), não é afirmação sobre o produto."
+    },
+    {
+      "id": "s20",
+      "speaker": "vendedor",
+      "text": "The manual is very clear. Never use it in a bathroom.",
+      "claim": "fact",
+      "factIds": [
+        "f5"
+      ],
+      "holdAfter": 0.6,
+      "visual": {
+        "type": "card",
+        "motion": "push-in",
+        "heading": "“Never use the appliance in a bathroom or near any source of water.”",
+        "footnote": "Corby trouser press use & care manual (3300/4400/7700/Executive), section 01."
+      },
+      "note": "Citação literal do manual (f5)."
+    },
+    {
+      "id": "s21",
+      "speaker": "vendedor",
+      "text": "In the bathroom, the Corby never loses.",
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "card",
+        "motion": "push-in",
+        "heading": "“Never use the appliance in a bathroom or near any source of water.”",
+        "footnote": "Corby trouser press use & care manual (3300/4400/7700/Executive), section 01."
+      },
+      "note": "Recuperação. Ficção do vendedor."
+    },
+    {
+      "id": "s22",
+      "speaker": "vendedor",
+      "text": "It isn't allowed in.",
+      "claim": "fact",
+      "factIds": [
+        "f5"
+      ],
+      "holdAfter": 1.0,
+      "visual": {
+        "type": "card",
+        "motion": "push-in",
+        "heading": "“Never use the appliance in a bathroom or near any source of water.”",
+        "footnote": "Corby trouser press use & care manual (3300/4400/7700/Executive), section 01.",
+        "stamp": "BANNED",
+        "stampAt": 1.2,
+        "stampTop": 340
+      },
+      "sfx": [
+        {
+          "id": "tap",
+          "at": 1.2,
+          "gainDb": 2
+        }
+      ],
+      "note": "Botão: ele mesmo transforma a proibição em álibi. Carimbo do Departamento."
+    },
+    {
+      "id": "s23",
+      "speaker": "vendedor",
+      "text": "The manual also forbids dampening the trousers.",
+      "claim": "fact",
+      "factIds": [
+        "f6"
+      ],
+      "holdAfter": 0.4,
+      "visual": {
+        "type": "card",
+        "motion": "drift",
+        "heading": "“On no account should any trousers be dampened before pressing.”",
+        "footnote": "Corby manual, section 03 (considerations before use)."
+      },
+      "note": "f6. Ele tenta ganhar no regulamento."
+    },
+    {
+      "id": "s24",
+      "speaker": "vendedor",
+      "text": "But admits that humidity helps the pressing.",
+      "claim": "fact",
+      "factIds": [
+        "f14"
+      ],
+      "holdAfter": 1.2,
+      "visual": {
+        "type": "card",
+        "motion": "drift",
+        "heading": "“The inherent humidity content of natural and mixed fibres assists the pressing process.”",
+        "footnote": "Corby manual, section 03, same passage."
+      },
+      "note": "Ele percebe o que acabou de ler (f14): a frase está na mesma seção que proíbe molhar a calça. Pausa longa."
+    },
+    {
+      "id": "s25",
+      "duration": 0.5,
+      "visual": {
+        "type": "black"
+      },
+      "roomTone": true,
+      "note": "Corte para preto. Respira."
+    },
+    {
+      "id": "s26",
+      "speaker": "vendedor",
+      "text": "Which is why the previous model came with an iron.",
+      "claim": "fact",
+      "factIds": [
+        "f13"
+      ],
+      "holdAfter": 0.4,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "iron",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "note": "O 6600 (descontinuado) vinha com ferro (f13). 'Por isso' é dedução do vendedor."
+    },
+    {
+      "id": "s27",
+      "speaker": "vendedor",
+      "text": "A steam iron.",
+      "claim": "fact",
+      "factIds": [
+        "f13"
+      ],
+      "holdAfter": 1.1,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "iron",
+        "label": "3D illustration by the Department · type of appliance, not a photo of the product"
+      },
+      "note": "O aparelho que proíbe água vinha com vapor de brinde. Silêncio."
+    },
+    {
+      "id": "s28",
+      "speaker": "vendedor",
+      "text": "One hundred and eighty-nine pounds sixty. Four pounds twenty a minute.",
+      "claim": "fact",
+      "factIds": [
+        "f3",
+        "f1"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "factsheet",
+        "heading": "Corby 7700",
+        "body": "Price: £189.60 (inc. VAT)\nMax cycle: 45 min\nCost per minute: £4.21",
+        "footnote": "Source: Corby of Windsor, 11 Oct 2026. Department calculation: 189.60 ÷ 45."
+      },
+      "note": "Preço do 7700 no site oficial (f3); 189,60 / 45 = 4,21 libras por minuto (cálculo, arredondado na fala para quatro e vinte).",
+      "caption": "£189.60. £4.20 a minute."
+    },
+    {
+      "id": "s29",
+      "speaker": "vendedor",
+      "text": "Much cheaper than a Concorde.",
+      "holdAfter": 0.4,
+      "visual": {
+        "type": "factsheet",
+        "heading": "Corby 7700",
+        "body": "Price: £189.60 (inc. VAT)\nMax cycle: 45 min\nCost per minute: £4.21",
+        "footnote": "Source: Corby of Windsor, 11 Oct 2026. Department calculation: 189.60 ÷ 45."
+      },
+      "note": "Última tentativa de fechar a venda. Ficção do vendedor."
+    },
+    {
+      "id": "s30",
+      "duration": 1.8,
+      "visual": {
+        "type": "card",
+        "heading": "Department ruling",
+        "body": "Necessity proven: no.\nAlternative available: in the bathroom.",
+        "stamp": "DENIED",
+        "stampAt": 0.9
+      },
+      "sfx": [
+        {
+          "id": "tap",
+          "at": 0.9,
+          "gainDb": 3
+        }
+      ],
+      "note": "Voz institucional, seca. Fecha a piada por escrito."
+    },
+    {
+      "id": "s31",
+      "speaker": "vendedor",
+      "text": "You didn't need it.",
+      "holdBefore": 0.3,
+      "holdAfter": 0.5,
+      "showCaptions": false,
+      "visual": {
+        "type": "endcard"
+      },
+      "sfx": [
+        {
+          "id": "chime",
+          "at": 0.0,
+          "gainDb": -2
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "speaker": "vendedor",
+      "text": "Until now.",
+      "holdAfter": 1.2,
+      "showCaptions": false,
+      "visual": {
+        "type": "endcard"
+      }
+    }
+  ],
+  "packaging": {
+    "title": "45 minutes for one pair of trousers | Protocol 002",
+    "synopsis": "Valdemar Anunciação, Senior Solutions Consultant, presents an English trouser press with aeronautical inspiration and 45 minutes of patience.",
+    "tags": [
+      "comedy",
+      "mockumentary",
+      "corporate humor",
+      "trouser press",
+      "Corby",
+      "unnecessary products",
+      "hotel",
+      "Concorde",
+      "Department of Unnecessary Necessities",
+      "shorts"
+    ],
+    "thumbnailBeatId": "s18",
+    "productName": "Corby electric trouser press (Corby Trouser Press 7700 / Executive)"
+  },
+  "changelog": [
+    {
+      "version": 1,
+      "note": "Versão em inglês adaptada da v3 em português (mesmos fatos, beats, cenas e pausas). Falas reescritas para o inglês, não traduzidas palavra por palavra; citações do fabricante e do manual no original, sem tradução entre colchetes; carimbos UNDER REVIEW, BANNED e DENIED."
+    }
+  ],
+  "language": "en"
+}

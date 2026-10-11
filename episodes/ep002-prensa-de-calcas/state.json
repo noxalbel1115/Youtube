@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "ep002-prensa-de-calcas",
+  "createdAt": "2026-10-11T01:40:19.796Z",
+  "updatedAt": "2026-10-11T03:37:15.782Z",
+  "currentStage": "package",
+  "productSlug": "corby-trouser-press",
+  "pick": {
+    "slug": "corby-trouser-press",
+    "reason": "Escolha editorial: o 1o automatico (fatiador de banana Hutzler 571) e meme de 2012, com a piada ja conhecida. A Corby tem contraste maior (movel de 9,56 kg e 45 minutos para uma calca), fatos de fonte primaria que sao a propria piada (o manual proibe o banheiro, onde a solucao obvia vence, e admite que a umidade ajuda; o modelo 6600 vinha com ferro a vapor; almofada inspirada no Concorde) e um contraste que cabe no mesmo quadro (calca lisa no cabide x mostrador em 44 minutos)."
+  },
+  "paidTtsAuthorization": {
+    "at": "2026-10-11T02:09:32.591Z",
+    "note": "Usuario autorizou no chat em 11/10/2026 ('Sim e mantem'), em resposta ao pedido de autorizar a voz paga da ElevenLabs para o ep002 (~100 creditos estimados)"
+  },
+  "scriptVersion": 3,
+  "stages": {
+    "research": {
+      "status": "done",
+      "attempts": 2,
+      "startedAt": "2026-10-11T01:53:50.839Z",
+      "finishedAt": "2026-10-11T01:56:03.400Z",
+      "seconds": 132.6,
+      "inputHash": "e78f94763d884ab4e436633ded99e24c43a984a4433b0f7f8d64dc60074359d7",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/research/candidates.json"
+      ],
+      "note": "12 candidatos validados; links: 61/69 responderam < 400"
+    },
+    "select": {
+      "status": "done",
+      "attempts": 2,
+      "startedAt": "2026-10-11T01:56:03.403Z",
+      "finishedAt": "2026-10-11T01:56:03.414Z",
+      "seconds": 0,
+      "inputHash": "bac2965b96a2c90b480aaba29445e9d7aea91da8c1de755e7f7ff8e3a01079bd",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/selection.json",
+        "episodes/ep002-prensa-de-calcas/product.json"
+      ],
+      "note": "selecionado: Prensa de calças elétrica Corby (Corby Trouser Press 7700 / Executive) (4.7)"
+    },
+    "media": {
+      "status": "done",
+      "attempts": 1,
+      "startedAt": "2026-10-11T01:41:41.385Z",
+      "finishedAt": "2026-10-11T01:44:04.968Z",
+      "seconds": 143.6,
+      "inputHash": "e7359f464ab5e651a8a94f97c2df2c37c6cbc12e3d84704eb5d3d90728a0a20f",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/media.json"
+      ],
+      "note": "invalidado: research mudou (reaproveitada: entradas identicas)"
+    },
+    "script": {
+      "status": "done",
+      "attempts": 4,
+      "startedAt": "2026-10-11T03:10:31.666Z",
+      "finishedAt": "2026-10-11T03:10:31.671Z",
+      "seconds": 0,
+      "inputHash": "b8db540ada8ac3b9bf91c8fd4701ed9408b66b818a2645770c88fc20eb7f6ca1",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/script.json",
+        "episodes/ep002-prensa-de-calcas/script-history/v3.json"
+      ],
+      "note": "roteiro v3, 32 beats, ~89s estimados"
+    },
+    "voice": {
+      "status": "done",
+      "attempts": 5,
+      "startedAt": "2026-10-11T03:10:31.672Z",
+      "finishedAt": "2026-10-11T03:10:33.055Z",
+      "seconds": 1.4,
+      "inputHash": "92be5b28af93fa52746fb5893f1ba72500425fcb3ab91b396328e2d022a8e371",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/build/voice.json"
+      ],
+      "note": "27 falas, 57.2s de fala; 0 com divergencia de transcricao"
+    },
+    "timeline": {
+      "status": "done",
+      "attempts": 2,
+      "startedAt": "2026-10-11T03:10:33.057Z",
+      "finishedAt": "2026-10-11T03:10:33.064Z",
+      "seconds": 0,
+      "inputHash": "675920f5ddbde4daf2296159b9b19cfa0ba508196a3c4314485ccd5b317f1fff",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/build/timeline.json"
+      ],
+      "note": "83.17s, 32 beats, 45 blocos de legenda, 1 midias"
+    },
+    "render": {
+      "status": "done",
+      "attempts": 3,
+      "startedAt": "2026-10-11T03:10:58.594Z",
+      "finishedAt": "2026-10-11T03:36:32.305Z",
+      "seconds": 1533.7,
+      "inputHash": "c8d1b736fdf684bf97ad56c0f656a2570437312c6365a200ac6943830532d932",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/build/episode.mp4"
+      ],
+      "note": "render 1522s; loudness antes da normalizacao -19.05 LUFS; sha256 aeca83ac58e3"
+    },
+    "verify": {
+      "status": "done",
+      "attempts": 3,
+      "startedAt": "2026-10-11T03:36:32.339Z",
+      "finishedAt": "2026-10-11T03:37:09.982Z",
+      "seconds": 37.6,
+      "inputHash": "aeca83ac58e3e53f77ab6b4e8cc37e7d7d0b0b5fe6a5c66f125340aae1a25f48769562d023c87866b615f12d5b579aa9d7f178177e56831295420f8d81238ced",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/verify-report.json",
+        "episodes/ep002-prensa-de-calcas/build/verify/contact-sheet.jpg"
+      ],
+      "note": "17/18 ok, 1 aviso(s)"
+    },
+    "package": {
+      "status": "done",
+      "attempts": 3,
+      "startedAt": "2026-10-11T03:37:10.017Z",
+      "finishedAt": "2026-10-11T03:37:15.782Z",
+      "seconds": 5.8,
+      "inputHash": "1244a7edc699aa4b98b97ca0fbe1231817c4ff052ae9a05e3d4fa51f18c6f08d",
+      "outputs": [
+        "episodes/ep002-prensa-de-calcas/package/metadata.json",
+        "episodes/ep002-prensa-de-calcas/package/captions.pt-BR.srt",
+        "episodes/ep002-prensa-de-calcas/build/thumbnail.png"
+      ],
+      "note": "titulo: \"45 minutos para uma calça | Protocolo 002\"; descricao 3283 bytes"
+    },
+    "upload": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    }
+  },
+  "artifacts": {
+    "render": {
+      "path": "build/episode.mp4",
+      "sha256": "aeca83ac58e3e53f77ab6b4e8cc37e7d7d0b0b5fe6a5c66f125340aae1a25f48",
+      "bytes": 18708189
+    }
+  },
+  "costs": [
+    {
+      "stage": "media",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 143.6,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T01:44:04.968Z"
+    },
+    {
+      "stage": "media",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 143.6,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T01:44:04.968Z"
+    },
+    {
+      "stage": "research",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 132.6,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T01:56:03.400Z"
+    },
+    {
+      "stage": "research",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 206.8,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T01:56:03.400Z"
+    },
+    {
+      "stage": "select",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T01:56:03.414Z"
+    },
+    {
+      "stage": "select",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T01:56:03.414Z"
+    },
+    {
+      "stage": "voice",
+      "item": "elevenlabs-credits",
+      "kind": "observed",
+      "amount": 98,
+      "unit": "elevenlabs-credits",
+      "basis": "creditos informados pela API (cabecalho character-cost) para 895 caracteres na ultima sintese (27 fala(s)); valor acumulado do episodio, inclusive ressinteses. Custo em dinheiro depende do plano contratado.",
+      "at": "2026-10-11T02:09:57.470Z"
+    },
+    {
+      "stage": "voice",
+      "item": "tts-tempo",
+      "kind": "observed",
+      "amount": 27.4,
+      "unit": "seconds",
+      "basis": "27 fala(s) sintetizadas na ultima sintese (elevenlabs)",
+      "at": "2026-10-11T02:10:00.329Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T03:10:31.671Z"
+    },
+    {
+      "stage": "script",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T03:10:31.671Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 1.4,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T03:10:33.055Z"
+    },
+    {
+      "stage": "voice",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 114.5,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T03:10:33.055Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 0,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T03:10:33.064Z"
+    },
+    {
+      "stage": "timeline",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 0.5,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T03:10:33.064Z"
+    },
+    {
+      "stage": "render",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 1533.7,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T03:36:32.307Z"
+    },
+    {
+      "stage": "render",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 4644.1,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T03:36:32.307Z"
+    },
+    {
+      "stage": "verify",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 37.6,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T03:37:09.982Z"
+    },
+    {
+      "stage": "verify",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 109.3,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T03:37:09.982Z"
+    },
+    {
+      "stage": "package",
+      "item": "wall-clock",
+      "kind": "observed",
+      "amount": 5.8,
+      "unit": "seconds",
+      "basis": "tempo medido pelo runner (ultima execucao)",
+      "at": "2026-10-11T03:37:15.782Z"
+    },
+    {
+      "stage": "package",
+      "item": "wall-clock-acumulado",
+      "kind": "observed",
+      "amount": 17.6,
+      "unit": "seconds",
+      "basis": "soma de todas as execucoes concluidas desta etapa",
+      "at": "2026-10-11T03:37:15.782Z"
+    }
+  ],
+  "errors": [],
+  "youtube": {
+    "status": "not_started"
+  }
+}

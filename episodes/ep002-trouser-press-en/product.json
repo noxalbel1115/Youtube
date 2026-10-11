@@ -1,0 +1,257 @@
+{
+  "slug": "corby-trouser-press",
+  "name": "Corby electric trouser press (Corby Trouser Press 7700 / Executive)",
+  "brand": "Corby of Windsor",
+  "description": "British electric trouser press, freestanding or wall-mounted, about 1.1 m tall and nearly 10 kg. The trousers go between a heated pad and a wood-finish front panel, and the appliance \"irons\" them in 15, 30 or 45-minute cycles. It takes one pair of trousers at a time and is a classic fixture of UK hotel rooms.",
+  "legitimateUse": "Hotel amenity and household item for formal clothing care: removes creases from suit trousers without an iron. Not assistive technology, nor health or safety equipment. Typical users: business travellers and hotels.",
+  "punchingDownRisk": "Low. The joke targets the appliance itself and the hotel-executive ritual, not a vulnerable group. The manual restricts use by children and by people with reduced capabilities, but the product is not made for them.",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://www.corbyofwindsor.co.uk/package/3514/corby-7700-trouser-press-in-walnut-uk-plug",
+      "title": "Corby 7700 Trouser Press in Walnut - UK Plug",
+      "publisher": "Corby of Windsor",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Price (£189.60 inc. VAT), 15/30/45-minute cycles, dimensions (1095 x 465 x 355 mm, 9.56 kg), 4-year guarantee, \"Made in England\", jacket hanger, coin tray and the other finishes on sale (mahogany, black ash, beech, satin chrome, Lancaster oak, white & black)."
+    },
+    {
+      "id": "s2",
+      "url": "https://www.corbyofwindsor.co.uk/package/4161/corby-executive-trouser-press-uk-plug",
+      "title": "Corby Executive Trouser Press - UK Plug",
+      "publisher": "Corby of Windsor",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Top model: £215.04 inc. VAT, gloss black, 15/30/45-minute cycles, \"self-adjusting section for turn-ups\", 10.58 kg, and an FAQ telling you to run the press empty 2 or 3 times when it puts creases in the wrong place."
+    },
+    {
+      "id": "s3",
+      "url": "https://corbyofwindsor.co.uk/package/get-product-manual/1159/true",
+      "title": "Trouser Press Use & Care Manual (COI0017 V1_211013)",
+      "publisher": "Corby of Windsor / Fired Up Corporation Ltd",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Official manual (PDF, COI0017) for models 3300/4400/7700/Executive: history since 1930, ban on use in a bathroom, \"On no account should any trousers be dampened before pressing\", \"press one pair of trousers at a time\", natural fibre humidity assists pressing, operating instructions (raise the press to reveal the heated pad, insert the trousers, close, choose 15/30/45 min on the 7700)."
+    },
+    {
+      "id": "s4",
+      "url": "https://en.wikipedia.org/wiki/Trouser_press",
+      "title": "Trouser press",
+      "publisher": "Wikipedia (en)",
+      "kind": "encyclopedia",
+      "accessedAt": "2026-10-11",
+      "confirms": "Heating to about 60 °C, 15 to 45-minute cycle, history of John Corby Ltd (Windsor 1930, electric heating in the 1960s, Andover 1986, Fired Up 2009) and cultural references (Alan Partridge taking a Corby apart, Bill Bailey)."
+    },
+    {
+      "id": "s5",
+      "url": "https://www.corbyofwindsor.co.uk/",
+      "title": "International Manufacturer of Hotel and Hospitality Products and Equipment - Corby of Windsor",
+      "publisher": "Corby of Windsor",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "\"About\" section: founded by John Corby in Windsor in 1930, famous for the trouser press, exports to more than 60 countries and is specified by many hotel chains; \"Trouser Presses (22)\" category."
+    },
+    {
+      "id": "s6",
+      "url": "https://www.countypress.co.uk/news/19542579.cowes-man-trouser-press-inventor-peter-corby-dies-97/",
+      "title": "Cowes man and trouser press inventor Peter Corby dies at 97",
+      "publisher": "Isle of Wight County Press",
+      "kind": "press",
+      "accessedAt": "2026-10-11",
+      "confirms": "Obituary of Peter Corby: he perfected the press, which became \"a staple fitting in millions of hotel rooms\", and the heating pad was inspired by a Concorde engineer who had solved the freezing of the aircraft's nose cone."
+    },
+    {
+      "id": "s7",
+      "url": "https://windsorlocalhistorygroup.org/2025/09/30/the-corby-trouser-press/",
+      "title": "The Corby Trouser Press",
+      "publisher": "Windsor Local History Group (Ken Sutherland, from an article by Geoff Try in Windlesora 23, 2007)",
+      "kind": "other",
+      "accessedAt": "2026-10-11",
+      "confirms": "Heated press launched by Peter Corby in 1960, \"developed with help from a Concorde aeronautical engineer and Eton College\", and production of 80,000 presses a year in 1973."
+    },
+    {
+      "id": "s8",
+      "url": "https://www.johnlewis.com/corby-7700-trouser-press-lancaster-oak/p3769158",
+      "title": "Corby 7700 Trouser Press, Lancaster Oak",
+      "publisher": "John Lewis & Partners",
+      "kind": "retailer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Retail price £189.00. Describes the \"Corby Stretcher Bar System, which removes back-of-knee wrinkles\", automatic shut-off with cancel option, LED countdown display and a shelf for pocket contents."
+    },
+    {
+      "id": "s9",
+      "url": "https://www.corbyofwindsor.co.uk/package/3592/corby-6600-trouser-press-in-black-ash-with-1200w-steam-iron-uk-plug",
+      "title": "Corby 6600 Trouser Press in Black Ash with 1200W Steam Iron - UK Plug",
+      "publisher": "Corby of Windsor",
+      "kind": "manufacturer",
+      "accessedAt": "2026-10-11",
+      "confirms": "Page for the 6600 model, marked \"Sorry, this product has been discontinued\": \"Supplied with 1200W steam iron\" and a 15-minute cycle."
+    },
+    {
+      "id": "s10",
+      "url": "https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_side.JPG",
+      "title": "File:Corby electric trouser press side.JPG",
+      "publisher": "Wikimedia Commons (photo by Avron, CC BY-SA 4.0)",
+      "kind": "other",
+      "accessedAt": "2026-10-11",
+      "confirms": "The (inspected) photo shows the rating plate of an older Corby press, model A30D: \"RATING 220V ~ 157W / 240V ~ 186W\", made by John Corby Limited in Andover."
+    },
+    {
+      "id": "s11",
+      "url": "https://en.wikipedia.org/wiki/Peter_Corby",
+      "title": "Peter Corby",
+      "publisher": "Wikipedia (en)",
+      "kind": "encyclopedia",
+      "accessedAt": "2026-10-11",
+      "confirms": "Peter Corby (1924–2021), former RAF flight engineer, added electrically heated pads to the press (an idea inspired by the heating of Concorde's nose) and rented the product to hotel chains."
+    }
+  ],
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Corby 7700 offers 15, 30 and 45-minute cycles. According to the manufacturer, the 45-minute one is \"for the even more difficult wrinkles\".",
+      "sourceIds": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "id": "f2",
+      "text": "The Corby 7700 is 1,095 mm tall and weighs 9.56 kg. The Executive weighs 10.58 kg.",
+      "sourceIds": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "f3",
+      "text": "On the official website, the 7700 costs £189.60 inc. VAT and the Executive, the gloss-black top model, £215.04.",
+      "sourceIds": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "The same 7700 model is sold in walnut, mahogany, black ash, beech, satin chrome, natural \"Lancaster\" oak and white & black.",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "id": "f5",
+      "text": "The manual states: \"Never use the appliance in a bathroom or near any source of water.\"",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "id": "f6",
+      "text": "The manual also warns: \"On no account should any trousers be dampened before pressing.\" And asks: \"Please press one pair of trousers at a time\".",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "id": "f7",
+      "text": "According to the manual, \"Using your Corby press daily will add to the life and appearance of your trousers.\" The manufacturer also says each press is \"hand assembled and individually tested\".",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "id": "f8",
+      "text": "The Executive has a \"self-adjusting section for turn-ups\". John Lewis describes a \"Stretcher Bar System\" that removes back-of-knee wrinkles, plus an LED countdown display and a shelf for pocket contents.",
+      "sourceIds": [
+        "s2",
+        "s8"
+      ]
+    },
+    {
+      "id": "f9",
+      "text": "An older hotel Corby, model A30D, carries a rating plate of 157 W at 220 V and 186 W at 240 V. The consumption of current models was not confirmed.",
+      "sourceIds": [
+        "s10"
+      ]
+    },
+    {
+      "id": "f10",
+      "text": "According to the manufacturer, the brand started as John Corby Limited in 1930, in Windsor, making valet stands. The presses became electrically heated in the 1960s.",
+      "sourceIds": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "id": "f11",
+      "text": "According to Peter Corby's obituary, \"a chance meeting with the Concorde plane engineer who had solved the problem of how to prevent the nosecone from freezing inspired the electrical heating pad\" of the press.",
+      "sourceIds": [
+        "s6",
+        "s11"
+      ]
+    },
+    {
+      "id": "f12",
+      "text": "In 1973, 80,000 presses were made a year. Today the company says it exports to more than 60 countries and is \"specified in many branded hotel chains\".",
+      "sourceIds": [
+        "s7",
+        "s5"
+      ]
+    },
+    {
+      "id": "f13",
+      "text": "The 6600 model, now discontinued, was \"Supplied with 1200W steam iron\", which according to the manufacturer \"allows you to make full use of the folding ironing board\".",
+      "sourceIds": [
+        "s9"
+      ]
+    },
+    {
+      "id": "f14",
+      "text": "The same manual says: \"The inherent humidity content of natural and mixed fibres assists the pressing process\", in the same section that forbids dampening the trousers.",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "id": "f15",
+      "text": "The trousers sit between the pressing plate and a cushioned heating pad that reaches about 60 °C.",
+      "sourceIds": [
+        "s4",
+        "s11"
+      ]
+    },
+    {
+      "id": "f16",
+      "text": "Use according to the manual: raise the press to reveal the heated pad, insert the trousers, close and, on the 7700, choose 15, 30 or 45 minutes.",
+      "sourceIds": [
+        "s3"
+      ]
+    },
+    {
+      "id": "f17",
+      "text": "According to Peter Corby's obituary, he perfected what would become \"a staple fitting in millions of hotel rooms\".",
+      "sourceIds": [
+        "s6"
+      ]
+    }
+  ],
+  "price": {
+    "amount": 189.6,
+    "currency": "GBP",
+    "sourceId": "s1",
+    "observedAt": "2026-10-11",
+    "note": "Corby 7700 in walnut on the official website (B2B shop for hotels), price inc. VAT (£158.00 ex VAT), \"21 In Stock\". John Lewis (s8) sells the 7700 in Lancaster oak for £189.00 and the Executive (s2) is £215.04."
+  },
+  "risks": [
+    "As 5 fotos licenciadas mostram modelos Corby antigos de hotel (A30D, Corby 3000 e um de parede com painel de mogno), não o 7700 ou o Executive atuais. A marca é legível em m3, m4 e m5. As fotos de fabricante/loja não podem ser usadas.",
+    "Potência dos modelos atuais NÃO verificada: o manual e as páginas de produto não informam watts. O único número (157 W a 220 V / 186 W a 240 V) vem da placa fotografada de um modelo antigo A30D (s10). No roteiro, deixar claro que é de um modelo antigo.",
+    "Royal Warrant NÃO encontrado em nenhuma fonte aberta (site, manual, Wikipedia, obituário). Não mencionar.",
+    "A data de fundação varia: o fabricante e a Wikipedia dizem 1930; o grupo de história local diz que John Corby chegou a Windsor em 1929. Usar “desde 1930”, como diz o fabricante.",
+    "O site da Corby bloqueia acessos de fora do Reino Unido (“Access Restricted”). Os dados foram lidos com um scraper localizado no Reino Unido. Os links podem não abrir para quem conferir de fora.",
+    "Cuidado de segurança: a solução óbvia (pendurar a calça no banheiro durante o banho quente) deve mostrar só a calça no cabide. Nunca mostrar a prensa elétrica no banheiro, que o próprio manual proíbe.",
+    "Não usar trechos de Alan Partridge ou Bill Bailey (direitos autorais). Citar só como fato, se necessário."
+  ],
+  "comedyAngle": "A nearly 10 kg, 1.1 m piece of furniture in walnut or \"Lancaster oak\", with technology inspired by Concorde's nose and a cycle of up to 45 minutes \"for the even more difficult wrinkles\", to press ONE pair of trousers at a time. The manual delivers the punchline: it forbids taking the press into the bathroom, exactly where the obvious solution wins. The customer hangs the trousers in the bathroom, showers for 10 minutes and walks out with smooth trousers while the Corby is still counting down. Bonus: the 6600 model came with an iron included.",
+  "verifiedAt": "2026-10-11"
+}

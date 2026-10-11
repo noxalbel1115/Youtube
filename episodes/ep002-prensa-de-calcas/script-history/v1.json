@@ -1,0 +1,624 @@
+{
+  "version": 1,
+  "episodeId": "ep002-prensa-de-calcas",
+  "productSlug": "corby-trouser-press",
+  "workingTitle": "45 minutos para uma calça",
+  "logline": "Valdemar apresenta, com orgulho de engenharia aeronáutica, uma prensa de calças inglesa de 9,56 kg; fora de quadro, a Sueli desamassa a dela no vapor do banho, exatamente onde o manual proíbe a prensa de entrar.",
+  "arc": [
+    "Confiança máxima: um móvel elétrico dedicado a um único inimigo, o amassado",
+    "Demonstração (fatos do fabricante): abre, insere, fecha, escolhe 15, 30 ou 45 minutos",
+    "Escalada: 45 minutos para os vincos ainda mais difíceis; almofada inspirada no Concorde; cinco madeiras",
+    "Realidade interrompe: chuveiro, calça no cabide, 'Pronto.' Silêncio. O mostrador marca 44 minutos",
+    "Recuperação frágil apoiada no manual, que proíbe o banheiro e a água, mas admite que a umidade ajuda",
+    "Colapso: o modelo anterior vinha com um ferro de passar. A vapor.",
+    "Última tentativa de fechar a venda: preço por minuto, comparado ao Concorde. Parecer: indeferido."
+  ],
+  "pronunciations": {},
+  "providerPronunciations": {},
+  "beats": [
+    {
+      "id": "s01",
+      "duration": 3.0,
+      "visual": {
+        "type": "title",
+        "heading": "Prensa de calças elétrica",
+        "body": "Problema: calça amassada. Solução: 9,56 kg na tomada.",
+        "footnote": "PROTOCOLO Nº 002 · AVALIAÇÃO DE NECESSIDADE",
+        "stamp": "EM ANÁLISE",
+        "stampAt": 1.7
+      },
+      "sfx": [
+        {
+          "id": "tap",
+          "at": 1.7,
+          "gainDb": 3
+        }
+      ],
+      "note": "Abertura institucional. O absurdo já está na cartela: problema trivial x 9,56 kg (f2)."
+    },
+    {
+      "id": "s02",
+      "speaker": "vendedor",
+      "text": "Bom dia. Desde mil novecentos e trinta, uma empresa inglesa combate um único inimigo.",
+      "claim": "fact",
+      "factIds": [
+        "f10"
+      ],
+      "holdBefore": 0.3,
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "hero",
+        "lowerThird": true,
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "note": "Confiança máxima. Fato: empresa inglesa desde 1930 (f10). 'Combate um único inimigo' é retórica do vendedor."
+    },
+    {
+      "id": "s03",
+      "speaker": "vendedor",
+      "text": "O amassado.",
+      "holdAfter": 0.9,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "hero",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "note": "Mesmo plano, aproximação lenta. Pausa reverente."
+    },
+    {
+      "id": "s04",
+      "speaker": "vendedor",
+      "text": "Está em milhões de quartos de hotel.",
+      "claim": "fact",
+      "factIds": [
+        "f17"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "media",
+        "mediaId": "m5",
+        "layout": "exhibit",
+        "motion": "push-in",
+        "zoom": 1.06,
+        "focus": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "label": "Fig. 1 — Prensa Corby em quarto de hotel (foto real; modelo antigo)"
+      },
+      "note": "Única foto real em destaque: evidência de que o aparelho existe e está em hotéis (f17)."
+    },
+    {
+      "id": "s05",
+      "speaker": "vendedor",
+      "text": "Funciona assim. Você abre a prensa.",
+      "claim": "fact",
+      "factIds": [
+        "f16"
+      ],
+      "holdAfter": 0.2,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "open",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "note": "O painel se inclina e revela a almofada aquecida (f16)."
+    },
+    {
+      "id": "s06",
+      "speaker": "vendedor",
+      "text": "Coloca a calça sobre a almofada aquecida.",
+      "claim": "fact",
+      "factIds": [
+        "f15",
+        "f16"
+      ],
+      "holdAfter": 0.2,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "insert",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "note": "A calça desce até a almofada (f15)."
+    },
+    {
+      "id": "s07",
+      "speaker": "vendedor",
+      "text": "E fecha.",
+      "claim": "fact",
+      "factIds": [
+        "f16"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "close",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "sfx": [
+        {
+          "id": "click",
+          "at": 0.6,
+          "gainDb": 2
+        }
+      ],
+      "note": "O painel fecha; clique seco ao travar."
+    },
+    {
+      "id": "s08",
+      "speaker": "vendedor",
+      "text": "Quinze minutos.",
+      "claim": "fact",
+      "factIds": [
+        "f1"
+      ],
+      "holdAfter": 0.25,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "c15",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "sfx": [
+        {
+          "id": "click",
+          "at": 0.05,
+          "gainDb": 0
+        }
+      ],
+      "note": "Botão de 15 min; o mostrador acende 15:00."
+    },
+    {
+      "id": "s09",
+      "speaker": "vendedor",
+      "text": "Trinta.",
+      "claim": "fact",
+      "factIds": [
+        "f1"
+      ],
+      "holdAfter": 0.25,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "c30",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "sfx": [
+        {
+          "id": "click",
+          "at": 0.05,
+          "gainDb": 0
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "speaker": "vendedor",
+      "text": "Ou quarenta e cinco.",
+      "claim": "fact",
+      "factIds": [
+        "f1"
+      ],
+      "holdAfter": 0.6,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "c45",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "sfx": [
+        {
+          "id": "click",
+          "at": 0.05,
+          "gainDb": 0
+        }
+      ],
+      "note": "45:00. A contagem regressiva começa ao fim deste beat, em tempo real, e segue até o fim do episódio."
+    },
+    {
+      "id": "s11",
+      "speaker": "vendedor",
+      "text": "O de quarenta e cinco, segundo o fabricante, é para os vincos ainda mais difíceis.",
+      "claim": "fact",
+      "factIds": [
+        "f1"
+      ],
+      "holdAfter": 0.6,
+      "visual": {
+        "type": "card",
+        "motion": "push-in",
+        "heading": "“…for the even more difficult wrinkles a 45-minute cycle.”",
+        "body": "[…para os vincos ainda mais difíceis, um ciclo de 45 minutos.]",
+        "footnote": "Corby of Windsor, página do modelo 7700. Consulta: 11/10/2026."
+      },
+      "note": "Citação literal do fabricante (f1)."
+    },
+    {
+      "id": "s12",
+      "speaker": "vendedor",
+      "text": "Quarenta e cinco minutos. Uma calça por vez.",
+      "claim": "fact",
+      "factIds": [
+        "f1",
+        "f6"
+      ],
+      "holdAfter": 0.9,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "run",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "note": "O manual pede uma calça por vez (f6). O mostrador já desce: 44:5x."
+    },
+    {
+      "id": "s13",
+      "speaker": "vendedor",
+      "text": "A almofada aquecida foi inspirada no Concorde.",
+      "claim": "fact",
+      "factIds": [
+        "f11"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "factsheet",
+        "motion": "push-in",
+        "heading": "Almofada aquecida",
+        "body": "Inspiração: nariz do Concorde\nProblema original: congelamento a grande altitude\nAplicação atual: calça",
+        "footnote": "Fonte: obituário de Peter Corby, Isle of Wight County Press; Wikipedia. Consulta: 11/10/2026."
+      },
+      "note": "Fato: f11 (o engenheiro do Concorde que resolveu o congelamento do nariz inspirou a almofada). 'Aplicação atual: calça' é a voz seca do Departamento."
+    },
+    {
+      "id": "s14",
+      "speaker": "vendedor",
+      "text": "No nariz do avião.",
+      "claim": "fact",
+      "factIds": [
+        "f11"
+      ],
+      "holdAfter": 0.6,
+      "visual": {
+        "type": "factsheet",
+        "motion": "push-in",
+        "heading": "Almofada aquecida",
+        "body": "Inspiração: nariz do Concorde\nProblema original: congelamento a grande altitude\nAplicação atual: calça",
+        "footnote": "Fonte: obituário de Peter Corby, Isle of Wight County Press; Wikipedia. Consulta: 11/10/2026."
+      }
+    },
+    {
+      "id": "s15",
+      "speaker": "vendedor",
+      "text": "Para a calça.",
+      "holdAfter": 1.0,
+      "visual": {
+        "type": "factsheet",
+        "motion": "push-in",
+        "heading": "Almofada aquecida",
+        "body": "Inspiração: nariz do Concorde\nProblema original: congelamento a grande altitude\nAplicação atual: calça",
+        "footnote": "Fonte: obituário de Peter Corby, Isle of Wight County Press; Wikipedia. Consulta: 11/10/2026."
+      },
+      "note": "Orgulho sem ironia. Botão do bloco."
+    },
+    {
+      "id": "s16",
+      "speaker": "vendedor",
+      "text": "Em nogueira, mogno, freixo preto, faia ou carvalho.",
+      "claim": "fact",
+      "factIds": [
+        "f4"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "finish",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "note": "O painel troca de madeira a cada nome (f4)."
+    },
+    {
+      "id": "s17",
+      "duration": 2.2,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "bathroom",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "sfx": [
+        {
+          "id": "shower",
+          "at": 0.0,
+          "gainDb": -2,
+          "caption": "(chuveiro)"
+        }
+      ],
+      "note": "Corte seco para o banheiro ao lado: chuveiro ligado, calça amassada no cabide, vapor sobe e os amassados somem."
+    },
+    {
+      "id": "s18",
+      "speaker": "colega",
+      "text": "Pronto. Desamassou no banho.",
+      "holdBefore": 0.2,
+      "holdAfter": 0.2,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "bathroom",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "note": "Fora de quadro, a Sueli, prática, sem intenção de humilhar."
+    },
+    {
+      "id": "s19",
+      "duration": 1.6,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "still",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "note": "Silêncio. Plano conjunto parado: a calça lisa no cabide e, ao lado, a prensa ainda contando 44 minutos."
+    },
+    {
+      "id": "s20",
+      "speaker": "vendedor",
+      "text": "Faltam quarenta e quatro minutos.",
+      "holdBefore": 0.2,
+      "holdAfter": 1.0,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "snap",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "note": "Zoom de reação no mostrador (44:xx). O número vem da ilustração (contagem em tempo real desde s10), não é afirmação sobre o produto."
+    },
+    {
+      "id": "s21",
+      "speaker": "vendedor",
+      "text": "O manual é claro. Nunca use a prensa no banheiro.",
+      "claim": "fact",
+      "factIds": [
+        "f5"
+      ],
+      "holdAfter": 0.6,
+      "visual": {
+        "type": "card",
+        "motion": "push-in",
+        "heading": "“Never use the appliance in a bathroom or near any source of water.”",
+        "body": "[Nunca use o aparelho no banheiro nem perto de qualquer fonte de água.]",
+        "footnote": "Manual de uso Corby (3300/4400/7700/Executive), seção 01."
+      },
+      "note": "Citação literal do manual (f5)."
+    },
+    {
+      "id": "s22",
+      "speaker": "vendedor",
+      "text": "No banheiro, a Corby não perde.",
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "card",
+        "motion": "push-in",
+        "heading": "“Never use the appliance in a bathroom or near any source of water.”",
+        "body": "[Nunca use o aparelho no banheiro nem perto de qualquer fonte de água.]",
+        "footnote": "Manual de uso Corby (3300/4400/7700/Executive), seção 01."
+      },
+      "note": "Recuperação. Ficção do vendedor."
+    },
+    {
+      "id": "s23",
+      "speaker": "vendedor",
+      "text": "Ela não tem permissão para entrar.",
+      "claim": "fact",
+      "factIds": [
+        "f5"
+      ],
+      "holdAfter": 1.0,
+      "visual": {
+        "type": "card",
+        "motion": "push-in",
+        "heading": "“Never use the appliance in a bathroom or near any source of water.”",
+        "body": "[Nunca use o aparelho no banheiro nem perto de qualquer fonte de água.]",
+        "footnote": "Manual de uso Corby (3300/4400/7700/Executive), seção 01.",
+        "stamp": "PROIBIDA NO BANHEIRO",
+        "stampAt": 1.2
+      },
+      "sfx": [
+        {
+          "id": "tap",
+          "at": 1.2,
+          "gainDb": 2
+        }
+      ],
+      "note": "Botão: ele mesmo transforma a proibição em álibi. Carimbo do Departamento."
+    },
+    {
+      "id": "s24",
+      "speaker": "vendedor",
+      "text": "E o manual também proíbe molhar a calça.",
+      "claim": "fact",
+      "factIds": [
+        "f6"
+      ],
+      "holdAfter": 0.4,
+      "visual": {
+        "type": "card",
+        "motion": "drift",
+        "heading": "“On no account should any trousers be dampened before pressing.”",
+        "body": "[Em hipótese alguma umedeça a calça antes de prensar.]",
+        "footnote": "Manual de uso Corby, seção 03 (considerações antes do uso)."
+      },
+      "note": "f6. Ele tenta ganhar no regulamento."
+    },
+    {
+      "id": "s25",
+      "speaker": "vendedor",
+      "text": "Mas, no mesmo trecho, admite que a umidade ajuda a prensar.",
+      "claim": "fact",
+      "factIds": [
+        "f14"
+      ],
+      "holdAfter": 1.3,
+      "visual": {
+        "type": "card",
+        "motion": "drift",
+        "heading": "“The inherent humidity content of natural and mixed fibres assists the pressing process.”",
+        "body": "[A umidade natural das fibras ajuda a prensagem.]",
+        "footnote": "Manual de uso Corby, seção 03, mesmo trecho."
+      },
+      "note": "Ele percebe o que acabou de ler (f14). Pausa longa."
+    },
+    {
+      "id": "s26",
+      "duration": 0.6,
+      "visual": {
+        "type": "black"
+      },
+      "roomTone": true,
+      "note": "Corte para preto. Respira."
+    },
+    {
+      "id": "s27",
+      "speaker": "vendedor",
+      "text": "Por isso o modelo anterior vinha com ferro de passar.",
+      "claim": "fact",
+      "factIds": [
+        "f13"
+      ],
+      "holdAfter": 0.4,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "iron",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "note": "O 6600 (descontinuado) vinha com ferro (f13). 'Por isso' é dedução do vendedor."
+    },
+    {
+      "id": "s28",
+      "speaker": "vendedor",
+      "text": "A vapor.",
+      "claim": "fact",
+      "factIds": [
+        "f13"
+      ],
+      "holdAfter": 1.2,
+      "visual": {
+        "type": "scene3d",
+        "scene": "trouser-press",
+        "cue": "iron",
+        "label": "Ilustração 3D do Departamento · tipo de aparelho, não é foto do produto"
+      },
+      "note": "O aparelho que proíbe água vinha com vapor de brinde. Silêncio."
+    },
+    {
+      "id": "s29",
+      "speaker": "vendedor",
+      "text": "Cento e oitenta e nove libras e sessenta. Dá quatro libras e vinte por minuto.",
+      "claim": "fact",
+      "factIds": [
+        "f3",
+        "f1"
+      ],
+      "holdAfter": 0.5,
+      "visual": {
+        "type": "factsheet",
+        "heading": "Corby 7700",
+        "body": "Preço: £189,60 (com IVA)\nCiclo máximo: 45 min\nCusto por minuto: £4,21",
+        "footnote": "Fonte: Corby of Windsor, 11/10/2026. Cálculo do Departamento: 189,60 ÷ 45."
+      },
+      "note": "Preço do 7700 no site oficial (f3); 189,60 / 45 = 4,21 libras por minuto (cálculo)."
+    },
+    {
+      "id": "s30",
+      "speaker": "vendedor",
+      "text": "Bem mais barato que um Concorde.",
+      "holdAfter": 0.4,
+      "visual": {
+        "type": "factsheet",
+        "heading": "Corby 7700",
+        "body": "Preço: £189,60 (com IVA)\nCiclo máximo: 45 min\nCusto por minuto: £4,21",
+        "footnote": "Fonte: Corby of Windsor, 11/10/2026. Cálculo do Departamento: 189,60 ÷ 45."
+      },
+      "note": "Última tentativa de fechar a venda. Ficção do vendedor."
+    },
+    {
+      "id": "s31",
+      "duration": 1.8,
+      "visual": {
+        "type": "card",
+        "heading": "Parecer do Departamento",
+        "body": "Necessidade comprovada: não.\nAlternativa disponível: no banheiro.",
+        "stamp": "INDEFERIDO",
+        "stampAt": 0.9
+      },
+      "sfx": [
+        {
+          "id": "tap",
+          "at": 0.9,
+          "gainDb": 3
+        }
+      ],
+      "note": "Voz institucional, seca. Fecha a piada por escrito."
+    },
+    {
+      "id": "s32",
+      "speaker": "vendedor",
+      "text": "Você não precisava.",
+      "holdBefore": 0.3,
+      "holdAfter": 0.5,
+      "showCaptions": false,
+      "visual": {
+        "type": "endcard"
+      },
+      "sfx": [
+        {
+          "id": "chime",
+          "at": 0.0,
+          "gainDb": -2
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "speaker": "vendedor",
+      "text": "Até agora.",
+      "holdAfter": 1.3,
+      "showCaptions": false,
+      "visual": {
+        "type": "endcard"
+      }
+    }
+  ],
+  "packaging": {
+    "title": "45 minutos para uma calça | Protocolo 002",
+    "synopsis": "Valdemar Anunciação, Consultor Sênior de Soluções, apresenta uma prensa de calças inglesa com tecnologia de inspiração aeronáutica e paciência de 45 minutos.",
+    "tags": [
+      "comédia",
+      "falso documentário",
+      "humor corporativo",
+      "prensa de calças",
+      "trouser press",
+      "produtos inusitados",
+      "hotel",
+      "Concorde",
+      "Departamento de Necessidades Desnecessárias",
+      "shorts"
+    ],
+    "thumbnailBeatId": "s19"
+  },
+  "changelog": [
+    {
+      "version": 1,
+      "note": "Primeira versão: prensa de calças Corby, com a nota editorial de clareza (absurdo na cartela de abertura, contraste no mesmo quadro, mostrador que não zera, carimbos do Departamento)."
+    }
+  ]
+}

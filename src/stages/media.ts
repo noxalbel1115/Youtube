@@ -7,6 +7,7 @@ import {run, ffprobeJson} from '../core/exec.js';
 import {log} from '../core/log.js';
 import {verifyMedia, licenseUrl, licenseLabel, conditionsFor} from '../providers/media/verify.js';
 import type {Stage} from './types.js';
+import {STRINGS} from '../core/locale.js';
 
 const UA = 'DNN-pipeline/0.1 (+https://github.com/noxalbel1115/Youtube)';
 
@@ -36,17 +37,11 @@ async function download(url: string, dest: string, attempts = 6): Promise<void> 
   throw new Error(`download falhou apos ${attempts} tentativas (${last}): ${url}`);
 }
 
-export function attributionText(m: {title: string; creator: string; landingUrl: string; license: LicenseCode; licenseVersion?: string}, modifications: string, language: 'pt-BR' | 'en' = 'pt-BR'): string {
+export function attributionText(m: {title: string; creator: string; landingUrl: string; license: LicenseCode; licenseVersion?: string}, modifications: string, by = 'por'): string {
   const lic = licenseLabel(m.license, m.licenseVersion);
   const url = licenseUrl(m.license, m.licenseVersion);
-  return `"${m.title}" ${language === 'en' ? 'by' : 'por'} ${m.creator} (${m.landingUrl}), ${lic}${url ? ` (${url})` : ''}. ${modifications}`;
+  return `"${m.title}" ${by} ${m.creator} (${m.landingUrl}), ${lic}${url ? ` (${url})` : ''}. ${modifications}`;
 }
-
-/** Descricao das modificacoes feitas nas fotos (mesma para todo o canal), no idioma do episodio. */
-export const MODIFICATIONS = {
-  'pt-BR': 'Modificações: recorte e enquadramento vertical, redimensionamento, movimento de câmera, sobreposição de textos e gráficos.',
-  en: 'Changes: vertical crop and framing, resizing, camera movement, text and graphics overlays.',
-} as const;
 
 export const mediaStage: Stage = {
   name: 'media',
@@ -64,7 +59,7 @@ export const mediaStage: Stage = {
     const outDir = path.join(ctx.p.assets, 'media');
     fs.mkdirSync(outDir, {recursive: true});
     const items: MediaItem[] = [];
-    const modifications = MODIFICATIONS['pt-BR'];
+    const {modifications, by} = STRINGS[ctx.state.locale];
 
     for (const m of cand.media) {
       const base: Omit<MediaItem, 'verification' | 'status'> = {
@@ -72,7 +67,7 @@ export const mediaStage: Stage = {
         basis: allowed.has(m.license) ? 'license' : 'none',
         conditions: conditionsFor(m.license, m.licenseVersion),
         modifications,
-        attribution: attributionText(m, modifications),
+        attribution: attributionText(m, modifications, by),
         licenseUrl: m.licenseUrl ?? licenseUrl(m.license, m.licenseVersion),
       };
       let item: MediaItem;
@@ -128,7 +123,7 @@ export const mediaStage: Stage = {
           item.width = vs?.width;
           item.height = vs?.height;
           item.fileUrl = url;
-          item.attribution = attributionText(item, modifications);
+          item.attribution = attributionText(item, modifications, by);
         }
       } catch (e) {
         item = {

@@ -1,0 +1,105 @@
+{
+  "updatedAt": "2026-10-11T08:40:09.083Z",
+  "items": [
+    {
+      "id": "m1",
+      "kind": "image",
+      "title": "Boiled Egg Topper",
+      "creator": "Brett Jordan",
+      "provider": "openverse",
+      "landingUrl": "https://www.flickr.com/photos/55497864@N00/33548702845",
+      "fileUrl": "https://live.staticflickr.com/3818/33548702845_4711aba485_b.jpg",
+      "license": "by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "showsExactProduct": true,
+      "description": "Abridor de ovo por impacto em aço (esfera na haste sobre campânula) num piso de madeira, ao lado de uma casca de ovo aberta e da tampa cortada. Marca não identificável: é o mesmo tipo de aparelho, não necessariamente o Clack.",
+      "providerRef": "5890e1ac-4dae-4aaf-af18-b17f885d8c52",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Versao 2.0: a licenca nao cobre direitos sui generis de banco de dados; irrelevante para fotos.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modifications: vertical crop and framing, resizing, camera movement, text and graphics overlays.",
+      "attribution": "\"Boiled Egg Topper\" by Brett Jordan (https://www.flickr.com/photos/55497864@N00/33548702845), CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/). Modifications: vertical crop and framing, resizing, camera movement, text and graphics overlays.",
+      "localFile": "media/m1.jpg",
+      "sha256": "d2ebe2ed1286b76f3ba2d65e8d139e52270e50f79b015b1348067e49a9feea1d",
+      "width": 1024,
+      "height": 892,
+      "verification": {
+        "at": "2026-10-11T08:39:03.703Z",
+        "method": "openverse-api (fonte: flickr, pagina: https://www.flickr.com/photos/55497864@N00/33548702845)",
+        "ok": true,
+        "detail": "licenca declarada na origem segundo Openverse: by 2.0; atribuicao: \"Boiled Egg Topper\" by Brett Jordan is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.; autor na origem: Brett Jordan; arquivo obtido via arquivo original"
+      },
+      "status": "usable"
+    },
+    {
+      "id": "m2",
+      "kind": "image",
+      "title": "Eierschalensollbruchstellenverursacher",
+      "creator": "Soljaguar",
+      "provider": "wikimedia",
+      "landingUrl": "https://commons.wikimedia.org/wiki/File:Eierschalensollbruchstellenverursacher.jpg",
+      "fileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Eierschalensollbruchstellenverursacher.jpg",
+      "license": "by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "showsExactProduct": true,
+      "description": "Abridor de ovo por impacto ao lado de um ovo em porta-ovo laranja (a Wikipédia alemã identifica como modelo Clack). Licença GFDL com migração para CC BY-SA 3.0 (compartilha-igual).",
+      "providerRef": "File:Eierschalensollbruchstellenverursacher.jpg",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Compartilha-Igual: se o video for considerado obra adaptada, as contribuicoes adaptadas devem ser licenciadas sob BY-SA (ou compativel). O YouTube so oferece CC BY como opcao de licenca; revisar antes de publicar.",
+        "Versao 3.0: a licenca nao cobre direitos sui generis de banco de dados; irrelevante para fotos.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modifications: vertical crop and framing, resizing, camera movement, text and graphics overlays.",
+      "attribution": "\"Eierschalensollbruchstellenverursacher\" by Soljaguar (https://commons.wikimedia.org/wiki/File:Eierschalensollbruchstellenverursacher.jpg), CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Modifications: vertical crop and framing, resizing, camera movement, text and graphics overlays.",
+      "verification": {
+        "at": "2026-10-11T08:40:08.038Z",
+        "method": "erro",
+        "ok": false,
+        "detail": "download falhou apos 5 tentativas: https://upload.wikimedia.org/wikipedia/commons/3/31/Eierschalensollbruchstellenverursacher.jpg?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original"
+      },
+      "status": "excluded",
+      "excludedReason": "falha na verificacao/download: download falhou apos 5 tentativas: https://upload.wikimedia.org/wikipedia/commons/3/31/Eierschalensollbruchstellenverursacher.jpg?utm_source=commons.wikimedia.org&utm_campaign=rest&utm_content=original"
+    },
+    {
+      "id": "m3",
+      "kind": "image",
+      "title": "Boiled egg cutter/topper",
+      "creator": "Allan Henderson",
+      "provider": "openverse",
+      "landingUrl": "https://www.flickr.com/photos/88019192@N00/53938995418",
+      "fileUrl": "https://live.staticflickr.com/65535/53938995418_0f6bfd4f58_b.jpg",
+      "license": "by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "showsExactProduct": false,
+      "description": "Abridor de ovo do tipo tesoura (anel com dentes), segurado por uma mão; pessoa não identificável. Outro tipo de aparelho: usar só como 'concorrência'.",
+      "providerRef": "0f90a263-d360-40d1-9479-23d7d414daca",
+      "basis": "license",
+      "conditions": [
+        "Atribuicao obrigatoria: autor, titulo/fonte, licenca com link e indicacao de modificacoes.",
+        "Versao 2.0: a licenca nao cobre direitos sui generis de banco de dados; irrelevante para fotos.",
+        "Licenca de direito autoral nao autoriza uso de marca: nao sugerir endosso do fabricante."
+      ],
+      "modifications": "Modifications: vertical crop and framing, resizing, camera movement, text and graphics overlays.",
+      "attribution": "\"Boiled egg cutter/topper\" by Allan Henderson (https://www.flickr.com/photos/88019192@N00/53938995418), CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/). Modifications: vertical crop and framing, resizing, camera movement, text and graphics overlays.",
+      "localFile": "media/m3.jpg",
+      "sha256": "e21dc8023e52715e765f7735c700ffa1e460f85b181f77d0f1a24ed2551055f0",
+      "width": 576,
+      "height": 1024,
+      "verification": {
+        "at": "2026-10-11T08:40:08.406Z",
+        "method": "openverse-api (fonte: flickr, pagina: https://www.flickr.com/photos/88019192@N00/53938995418)",
+        "ok": true,
+        "detail": "licenca declarada na origem segundo Openverse: by 2.0; atribuicao: \"Boiled egg cutter/topper\" by Allan Henderson is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/.; autor na origem: Allan Henderson; arquivo obtido via arquivo original"
+      },
+      "status": "usable"
+    }
+  ]
+}

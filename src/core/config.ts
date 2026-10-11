@@ -5,14 +5,18 @@ import {ROOT} from './paths.js';
 
 const VoiceCfg = z.object({provider: z.enum(['kokoro', 'piper', 'elevenlabs']), voice: z.string(), speed: z.number().default(1)});
 
+const Channel = z.object({
+  name: z.string(),
+  shortName: z.string(),
+  motto: z.string(),
+  language: z.string(),
+  salesman: z.object({name: z.string(), title: z.string()}),
+});
+
 export const Config = z.object({
-  channel: z.object({
-    name: z.string(),
-    shortName: z.string(),
-    motto: z.string(),
-    language: z.string(),
-    salesman: z.object({name: z.string(), title: z.string()}),
-  }),
+  channel: Channel,
+  /** Canal e vozes por idioma (o bloco base vale para pt-BR). */
+  locales: z.record(z.string(), z.object({channel: Channel, voices: z.record(z.string(), VoiceCfg)})).default({}),
   format: z.object({
     width: z.number(),
     height: z.number(),
@@ -51,19 +55,6 @@ export const Config = z.object({
     tokenFile: z.string(),
   }),
   budget: z.object({maxUsdPerEpisode: z.number()}),
-  /** Outros idiomas (campo "language" do roteiro): nome e lema do canal, etiqueta do vendedor e vozes. */
-  locales: z
-    .record(
-      z.string().regex(/^[a-z]{2}(-[A-Z]{2})?$/),
-      z.object({
-        name: z.string(),
-        shortName: z.string(),
-        motto: z.string(),
-        salesman: z.object({name: z.string(), title: z.string()}),
-        voices: z.record(z.string(), VoiceCfg),
-      }),
-    )
-    .default({}),
 });
 export type Config = z.infer<typeof Config>;
 

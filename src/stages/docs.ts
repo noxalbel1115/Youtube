@@ -3,6 +3,7 @@ import path from 'node:path';
 import {Script, Timeline, Product, MediaRegistry, Selection, CandidatesFile, VoiceManifest} from '../schemas.js';
 import {voiceCredit, voiceLicenseIssue} from '../providers/tts/index.js';
 import {ROOT} from '../core/paths.js';
+import {STRINGS} from '../core/locale.js';
 import {readJson} from '../core/state.js';
 import {licenseLabel} from '../providers/media/verify.js';
 import type {Ctx} from './types.js';
@@ -74,7 +75,7 @@ export function fontesMd(ctx: Ctx): string {
   }
   out.push('', 'O que cada mídia mostra:', '', ...registry.items.map((m) => `- **${m.id}** — ${m.description}`));
   const voiceProviders = [...new Set(VoiceManifest.parse(readJson(ctx.p.voice)).lines.map((l) => l.provider))];
-  out.push('', `Grafismos, cartelas e efeitos sonoros: produzidos pelo projeto (código em \`src/remotion\` e \`src/sfx.ts\`). ${voiceCredit(voiceProviders, ctx.cfg)}`, '');
+  out.push('', `Grafismos, cartelas e efeitos sonoros: produzidos pelo projeto (código em \`src/remotion\` e \`src/sfx.ts\`). ${voiceCredit(voiceProviders, ctx.cfg, ctx.state.locale)}`, '');
   out.push('## Seleção', '', selection.rationale, '', '| Candidato | Pontuação | Elegível | Motivos |', '|---|---|---|---|');
   for (const r of selection.ranking) out.push(`| ${r.slug} | ${r.score} | ${r.eligible ? 'sim' : 'não'} | ${r.reasons.join('; ').replace(/\|/g, '/')} |`);
   out.push('');
@@ -82,9 +83,10 @@ export function fontesMd(ctx: Ctx): string {
 }
 
 /** Ficha para envio manual no YouTube Studio (enquanto a API nao esta autorizada ou o projeto nao foi auditado). */
-export function publicacaoManualMd(ctx: Ctx, meta: {title: string; description: string; tags: string[]; selfDeclaredMadeForKids: boolean; containsSyntheticMedia: boolean; videoSha256: string; idempotencyKey: string; defaultLanguage?: string}): string {
+export function publicacaoManualMd(ctx: Ctx, meta: {title: string; description: string; tags: string[]; selfDeclaredMadeForKids: boolean; containsSyntheticMedia: boolean; videoSha256: string; idempotencyKey: string}): string {
   const voiceProviders = [...new Set(VoiceManifest.parse(readJson(ctx.p.voice)).lines.map((l) => l.provider))];
   const licenseIssue = voiceLicenseIssue(voiceProviders, ctx.cfg);
+  const L = STRINGS[ctx.state.locale];
   const out = [
     `# Publicação manual — ${meta.title}`,
     '',
@@ -112,8 +114,8 @@ export function publicacaoManualMd(ctx: Ctx, meta: {title: string; description: 
     '',
     `- **Público:** ${meta.selfDeclaredMadeForKids ? 'Sim, é conteúdo para crianças' : 'Não, não é conteúdo para crianças'}.`,
     `- **Conteúdo alterado ou sintético:** ${meta.containsSyntheticMedia ? 'Sim (voz sintética realista).' : 'Não.'}`,
-    `- **Categoria:** Comédia. **Idioma do vídeo:** ${meta.defaultLanguage === 'en' ? 'Inglês' : 'Português (Brasil)'}.`,
-    `- **Legendas:** já estão gravadas na imagem; opcionalmente envie \`package/captions.${meta.defaultLanguage ?? 'pt-BR'}.srt\` como ${meta.defaultLanguage === 'en' ? 'Inglês' : 'Português (Brasil)'}.`,
+    `- **Categoria:** ${L.studioCategory}. **Idioma do vídeo:** ${L.studioLanguage}.`,
+    `- **Legendas:** já estão gravadas na imagem; opcionalmente envie \`package/captions.${ctx.state.locale}.srt\` como ${L.studioLanguage}.`,
     '- **Miniatura:** `build/thumbnail.png`, se o Studio oferecer miniatura personalizada para Shorts; senão, escolha um quadro.',
     '- **Visibilidade:** primeiro Privado para conferir no celular; depois Público.',
     '',

@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "episodeId": "ep002-trouser-press-en",
   "productSlug": "corby-trouser-press",
   "workingTitle": "45 minutes for one pair of trousers",
@@ -592,14 +592,16 @@
       "Department of Unnecessary Necessities",
       "shorts"
     ],
-    "thumbnailBeatId": "s18",
-    "productName": "Corby electric trouser press (Corby Trouser Press 7700 / Executive)"
+    "thumbnailBeatId": "s18"
   },
   "changelog": [
     {
       "version": 1,
       "note": "Versão em inglês adaptada da v3 em português (mesmos fatos, beats, cenas e pausas). Falas reescritas para o inglês, não traduzidas palavra por palavra; citações do fabricante e do manual no original, sem tradução entre colchetes; carimbos UNDER REVIEW, BANNED e DENIED."
+    },
+    {
+      "version": 2,
+      "note": "Migração para o suporte a idioma do branch base: o idioma passa a ser do episódio (state.locale = en-US) e a pesquisa do produto foi traduzida (research/LOCALIZACAO.md); saem os campos language e packaging.productName. Falas, cenas e pausas iguais à v1."
     }
-  ],
-  "language": "en"
+  ]
 }

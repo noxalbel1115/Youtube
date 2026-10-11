@@ -1,0 +1,580 @@
+{
+ "version": 1,
+ "episodeId": "ep001-eierschalensollbruchstellenverursacher-en",
+ "productSlug": "drop-weight-egg-topper",
+ "workingTitle": "Protocol 001 — 38 letters to open an egg",
+ "logline": "Valdemar presents, with engineering and pride, a 38-letter German egg topper; off camera, Sueli opens hers with a spoon.",
+ "arc": [
+  "Maximum confidence: a German solution to an ignored problem",
+  "Technical name and demonstration of the mechanism (manufacturer's facts)",
+  "Escalation: three designers, an amethyst ball, contempt for scissors",
+  "Reality interrupts: spoon, two taps, 'Done.' Silence.",
+  "Fragile recovery (Christmas edition) and collapse: the manufacturer itself mentions additional cutlery",
+  "Last attempt to close the sale: price per letter. Stamp: awaiting need."
+ ],
+ "pronunciations": {},
+ "providerPronunciations": {},
+ "beats": [
+  {
+   "id": "s01",
+   "duration": 2.7,
+   "visual": {
+    "type": "title",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "Impact egg topper",
+    "footnote": "PROTOCOL No. 001 · NEEDS ASSESSMENT",
+    "stamp": "UNDER REVIEW",
+    "stampAt": 1.5
+   },
+   "sfx": [
+    {
+     "id": "tap",
+     "at": 1.5,
+     "gainDb": 3
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "speaker": "vendedor",
+   "text": "Good morning. I bring a German solution to a problem the rest of the world has ignored for generations.",
+   "claim": "fact",
+   "factIds": [
+    "f1"
+   ],
+   "holdBefore": 0.3,
+   "holdAfter": 0.7,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "hero",
+    "lowerThird": true,
+    "label": "3D illustration by the Department · type of device, not a photo of the product"
+   }
+  },
+  {
+   "id": "s03",
+   "speaker": "vendedor",
+   "text": "The top of the egg.",
+   "holdAfter": 0.9,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "hero",
+    "lowerThird": false
+   }
+  },
+  {
+   "id": "s04",
+   "speaker": "vendedor",
+   "text": "The technical term is Eierschalensollbruchstellenverursacher.",
+   "caption": "The technical term is Eier­schalen­soll­bruch­stellen­ver­ursacher.",
+   "claim": "fact",
+   "factIds": [
+    "f1",
+    "f2"
+   ],
+   "skipAsrCheck": true,
+   "holdAfter": 0.6,
+   "visual": {
+    "type": "card",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "masculine noun · German\n12 syllables · 38 letters\nusually jocular",
+    "footnote": "Source: DWDS — Digitales Wörterbuch der deutschen Sprache, accessed October 10, 2026."
+   }
+  },
+  {
+   "id": "s05",
+   "speaker": "vendedor",
+   "text": "Thirty-eight letters. All dedicated to the top of an egg.",
+   "claim": "fact",
+   "factIds": [
+    "f4"
+   ],
+   "holdAfter": 0.7,
+   "visual": {
+    "type": "card",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "masculine noun · German\n12 syllables · 38 letters\nusually jocular",
+    "footnote": "Source: DWDS — Digitales Wörterbuch der deutschen Sprache, accessed October 10, 2026."
+   },
+   "caption": "38 letters. All dedicated to the top of an egg."
+  },
+  {
+   "id": "s06",
+   "speaker": "vendedor",
+   "text": "Here's how it works. You place the metal cap on the boiled egg.",
+   "claim": "fact",
+   "factIds": [
+    "f5"
+   ],
+   "holdAfter": 0.3,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "place",
+    "lowerThird": false,
+    "label": "3D illustration by the Department · type of device, not a photo of the product"
+   }
+  },
+  {
+   "id": "s07",
+   "speaker": "vendedor",
+   "text": "Lift the ball.",
+   "claim": "fact",
+   "factIds": [
+    "f5"
+   ],
+   "holdAfter": 0.6,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "lift",
+    "lowerThird": false
+   }
+  },
+  {
+   "id": "s08",
+   "speaker": "vendedor",
+   "text": "And let go.",
+   "claim": "fact",
+   "factIds": [
+    "f5"
+   ],
+   "holdAfter": 0.35,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "drop",
+    "lowerThird": false
+   },
+   "sfx": [
+    {
+     "id": "click",
+     "at": -0.3,
+     "gainDb": 0
+    },
+    {
+     "id": "crack",
+     "at": -0.22,
+     "gainDb": -2
+    }
+   ]
+  },
+  {
+   "id": "s09",
+   "duration": 1.2,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "hold",
+    "lowerThird": false
+   }
+  },
+  {
+   "id": "s10",
+   "speaker": "vendedor",
+   "text": "The shell cracks all the way around the top. No knife.",
+   "claim": "fact",
+   "factIds": [
+    "f6",
+    "f8"
+   ],
+   "holdAfter": 0.7,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "open",
+    "lowerThird": false
+   }
+  },
+  {
+   "id": "s11",
+   "speaker": "vendedor",
+   "text": "Designed by three designers.",
+   "claim": "fact",
+   "factIds": [
+    "f9"
+   ],
+   "holdAfter": 0.8,
+   "visual": {
+    "type": "factsheet",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "Type: impact egg topper\nExample: “Clack”, Take2-Design (Germany)\nDesign: three credited designers\nPrice: €28.95 (Color Edition)",
+    "footnote": "Sources: manufacturer's store, Wikipedia (de) and DWDS, accessed October 10, 2026. Price incl. 19% German VAT, excl. shipping."
+   }
+  },
+  {
+   "id": "s12",
+   "speaker": "vendedor",
+   "text": "Three.",
+   "claim": "fact",
+   "factIds": [
+    "f9"
+   ],
+   "holdAfter": 0.8,
+   "visual": {
+    "type": "factsheet",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "Type: impact egg topper\nExample: “Clack”, Take2-Design (Germany)\nDesign: three credited designers\nPrice: €28.95 (Color Edition)",
+    "footnote": "Sources: manufacturer's store, Wikipedia (de) and DWDS, accessed October 10, 2026. Price incl. 19% German VAT, excl. shipping."
+   },
+   "caption": "3."
+  },
+  {
+   "id": "s13",
+   "speaker": "vendedor",
+   "text": "For the discerning customer: a gemstone ball.",
+   "claim": "fact",
+   "factIds": [
+    "f11"
+   ],
+   "holdAfter": 0.5,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "gem",
+    "lowerThird": false,
+    "label": "Gem Edition: gemstone ball · €31.95 at the manufacturer's store (October 10, 2026) · 3D illustration"
+   }
+  },
+  {
+   "id": "s14",
+   "speaker": "vendedor",
+   "text": "Amethyst.",
+   "claim": "fact",
+   "factIds": [
+    "f11"
+   ],
+   "holdAfter": 0.7,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "gemClose",
+    "lowerThird": false
+   }
+  },
+  {
+   "id": "s15",
+   "speaker": "vendedor",
+   "text": "For the egg.",
+   "holdAfter": 0.8,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "gemEgg",
+    "lowerThird": false
+   }
+  },
+  {
+   "id": "s16",
+   "speaker": "vendedor",
+   "text": "The competition uses scissors. Patented in nineteen-oh-seven.",
+   "claim": "fact",
+   "factIds": [
+    "f13"
+   ],
+   "holdAfter": 0.5,
+   "visual": {
+    "type": "media",
+    "mediaId": "m3",
+    "motion": "push-in",
+    "zoom": 1.06,
+    "focus": {
+     "x": 0.5,
+     "y": 0.42
+    },
+    "layout": "exhibit",
+    "label": "Fig. 2 — Scissor-type egg topper. Photo: Allan Henderson, CC BY 2.0",
+    "lowerThird": false
+   },
+   "caption": "The competition uses scissors. Patented in 1907."
+  },
+  {
+   "id": "s17",
+   "speaker": "vendedor",
+   "text": "Scissors.",
+   "holdAfter": 0.4,
+   "visual": {
+    "type": "media",
+    "mediaId": "m3",
+    "motion": "push-in",
+    "zoom": 1.06,
+    "focus": {
+     "x": 0.5,
+     "y": 0.42
+    },
+    "layout": "exhibit",
+    "label": "Fig. 2 — Scissor-type egg topper. Photo: Allan Henderson, CC BY 2.0",
+    "lowerThird": false
+   }
+  },
+  {
+   "id": "s18",
+   "speaker": "vendedor",
+   "text": "At breakfast.",
+   "holdAfter": 0.9,
+   "visual": {
+    "type": "media",
+    "mediaId": "m3",
+    "motion": "push-in",
+    "zoom": 1.06,
+    "focus": {
+     "x": 0.5,
+     "y": 0.42
+    },
+    "layout": "exhibit",
+    "label": "Fig. 2 — Scissor-type egg topper. Photo: Allan Henderson, CC BY 2.0",
+    "lowerThird": false
+   }
+  },
+  {
+   "id": "s19",
+   "speaker": "colega",
+   "text": "Done.",
+   "holdBefore": 1.25,
+   "holdAfter": 0.2,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "still",
+    "lowerThird": false,
+    "label": "3D illustration by the Department · type of device, not a photo of the product"
+   },
+   "sfx": [
+    {
+     "id": "tap-tap",
+     "at": 0.25,
+     "gainDb": 2,
+     "caption": "(tap, tap)"
+    },
+    {
+     "id": "crack",
+     "at": 0.95,
+     "gainDb": -3
+    }
+   ]
+  },
+  {
+   "id": "s20",
+   "duration": 1.6,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "snap",
+    "lowerThird": false
+   }
+  },
+  {
+   "id": "s21",
+   "speaker": "vendedor",
+   "text": "Sueli uses a spoon.",
+   "holdAfter": 1.0,
+   "visual": {
+    "type": "scene3d",
+    "scene": "egg-topper",
+    "cue": "snap",
+    "lowerThird": false
+   }
+  },
+  {
+   "id": "s22",
+   "speaker": "vendedor",
+   "text": "The spoon doesn't come in a Christmas edition.",
+   "claim": "fact",
+   "factIds": [
+    "f12"
+   ],
+   "holdAfter": 0.8,
+   "visual": {
+    "type": "card",
+    "heading": "XMAS Edition",
+    "body": "Christmas edition of the topper,\nsold in the manufacturer's store.",
+    "footnote": "Take2-Design, accessed October 10, 2026."
+   }
+  },
+  {
+   "id": "s23",
+   "speaker": "vendedor",
+   "text": "The manufacturer says the top comes off by tilting the device.",
+   "claim": "fact",
+   "factIds": [
+    "f7"
+   ],
+   "holdAfter": 0.5,
+   "visual": {
+    "type": "card",
+    "heading": "Manufacturer's store:",
+    "body": "“…the top can be removed by gently tilting the device or with the help of additional cutlery.”",
+    "footnote": "Free translation of „…durch leichtes Verkanten mit dem Clack oder mit Zuhilfenahme weiteren Bestecks…“ — Take2-Design, accessed October 10, 2026.",
+    "motion": "push-in"
+   }
+  },
+  {
+   "id": "s24",
+   "speaker": "vendedor",
+   "text": "Or with the help of additional cutlery.",
+   "claim": "fact",
+   "factIds": [
+    "f7"
+   ],
+   "holdAfter": 1.5,
+   "visual": {
+    "type": "card",
+    "heading": "Manufacturer's store:",
+    "body": "“…the top can be removed by gently tilting the device or with the help of additional cutlery.”",
+    "footnote": "Free translation of „…durch leichtes Verkanten mit dem Clack oder mit Zuhilfenahme weiteren Bestecks…“ — Take2-Design, accessed October 10, 2026.",
+    "motion": "push-in"
+   }
+  },
+  {
+   "id": "s25",
+   "speaker": "vendedor",
+   "text": "A spoon, for example.",
+   "holdAfter": 1.0,
+   "visual": {
+    "type": "card",
+    "heading": "Manufacturer's store:",
+    "body": "“…the top can be removed by gently tilting the device or with the help of additional cutlery.”",
+    "footnote": "Free translation of „…durch leichtes Verkanten mit dem Clack oder mit Zuhilfenahme weiteren Bestecks…“ — Take2-Design, accessed October 10, 2026.",
+    "motion": "push-in"
+   }
+  },
+  {
+   "id": "s26",
+   "duration": 0.7,
+   "visual": {
+    "type": "black"
+   }
+  },
+  {
+   "id": "s27",
+   "speaker": "vendedor",
+   "text": "But the spoon doesn't have thirty-eight letters.",
+   "claim": "fact",
+   "factIds": [
+    "f4"
+   ],
+   "holdAfter": 0.4,
+   "visual": {
+    "type": "media",
+    "mediaId": "m1",
+    "motion": "push-in",
+    "zoom": 1.08,
+    "focus": {
+     "x": 0.42,
+     "y": 0.5
+    },
+    "layout": "exhibit",
+    "label": "Fig. 1 — Real photo of a device of the same type. Brett Jordan, CC BY 2.0",
+    "lowerThird": false
+   },
+   "caption": "But the spoon doesn't have 38 letters."
+  },
+  {
+   "id": "s28",
+   "speaker": "vendedor",
+   "text": "Twenty-eight euros ninety-five. That's seventy-six cents a letter.",
+   "claim": "fact",
+   "factIds": [
+    "f10",
+    "f4"
+   ],
+   "holdAfter": 0.6,
+   "visual": {
+    "type": "card",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "38 letters · €28.95\n≈ €0.76 per letter",
+    "footnote": "Color Edition, manufacturer's store, October 10, 2026. VAT included, shipping extra.",
+    "motion": "drift"
+   },
+   "caption": "28 euros 95. That's 76 cents a letter."
+  },
+  {
+   "id": "s29",
+   "speaker": "vendedor",
+   "text": "That's practically free.",
+   "holdAfter": 0.3,
+   "visual": {
+    "type": "card",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "38 letters · €28.95\n≈ €0.76 per letter",
+    "footnote": "Color Edition, manufacturer's store, October 10, 2026. VAT included, shipping extra.",
+    "motion": "drift"
+   }
+  },
+  {
+   "id": "s30",
+   "duration": 1.4,
+   "visual": {
+    "type": "card",
+    "heading": "Eier­schalen­soll­bruch­stellen­ver­ursacher",
+    "body": "38 letters · €28.95\n≈ €0.76 per letter",
+    "footnote": "Color Edition, manufacturer's store, October 10, 2026. VAT included, shipping extra.",
+    "stamp": "AWAITING NEED",
+    "stampAt": 0.2
+   },
+   "sfx": [
+    {
+     "id": "tap",
+     "at": 0.2,
+     "gainDb": 3
+    }
+   ]
+  },
+  {
+   "id": "s31",
+   "speaker": "vendedor",
+   "text": "You didn't need it.",
+   "holdBefore": 0.3,
+   "holdAfter": 0.5,
+   "showCaptions": false,
+   "visual": {
+    "type": "endcard",
+    "heading": "You didn't need it. Until now.",
+    "footnote": "Sources and credits in the description."
+   },
+   "sfx": [
+    {
+     "id": "chime",
+     "at": 0,
+     "gainDb": -4
+    }
+   ]
+  },
+  {
+   "id": "s32",
+   "speaker": "vendedor",
+   "text": "Until now.",
+   "holdAfter": 1.3,
+   "showCaptions": false,
+   "visual": {
+    "type": "endcard",
+    "heading": "You didn't need it. Until now.",
+    "footnote": "Sources and credits in the description."
+   }
+  }
+ ],
+ "packaging": {
+  "title": "38 letters to open an egg | Protocol 001",
+  "synopsis": "Valdemar Anunciação, Senior Solutions Consultant, presents a German egg topper with a long name and an even greater conviction.",
+  "tags": [
+   "comedy",
+   "mockumentary",
+   "office humor",
+   "kitchen gadgets",
+   "weird products",
+   "soft-boiled egg",
+   "Eierschalensollbruchstellenverursacher",
+   "Department of Unnecessary Necessities",
+   "shorts"
+  ],
+  "thumbnailBeatId": "s02"
+ },
+ "changelog": [
+  {
+   "version": 1,
+   "note": "English version of ep001 v10 (same beats, scenes, holds and facts). Sueli keeps her name; German quotation kept in the footnote with a free English translation."
+  }
+ ]
+}

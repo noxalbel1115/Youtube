@@ -1,14 +1,14 @@
 {
   "researchedAt": "2026-10-11",
-  "method": "Três agentes de pesquisa em paralelo (o terceiro grupo entrou depois do roteiro, só para completar a comparação) (WebSearch/WebFetch, Firecrawl, APIs do Openverse e da Wikimedia), 4 candidatos cada, com o briefing de prompts/pesquisa.md; licenças conferidas nas páginas de origem. O agente principal reconferiu em fonte primária os fatos do candidato escolhido usados no roteiro: manual em PDF e páginas do 7700 e do 6600 da Corby (Firecrawl com localização no Reino Unido, porque o site bloqueia acessos de fora), Wikipedia (\"Trouser press\", \"Peter Corby\") e o obituário do Isle of Wight County Press.",
+  "method": "Copia da pesquisa do episodio ep002-prensa-de-calcas (ver research/LOCALIZACAO.md). Três agentes de pesquisa em paralelo (o terceiro grupo entrou depois do roteiro, só para completar a comparação) (WebSearch/WebFetch, Firecrawl, APIs do Openverse e da Wikimedia), 4 candidatos cada, com o briefing de prompts/pesquisa.md; licenças conferidas nas páginas de origem. O agente principal reconferiu em fonte primária os fatos do candidato escolhido usados no roteiro: manual em PDF e páginas do 7700 e do 6600 da Corby (Firecrawl com localização no Reino Unido, porque o site bloqueia acessos de fora), Wikipedia (\"Trouser press\", \"Peter Corby\") e o obituário do Isle of Wight County Press.",
   "candidates": [
     {
       "slug": "corby-trouser-press",
-      "name": "Prensa de calças elétrica Corby (Corby Trouser Press 7700 / Executive)",
+      "name": "Corby electric trouser press (Corby Trouser Press 7700 / Executive)",
       "brand": "Corby of Windsor",
-      "description": "Prensa elétrica de calças britânica, de pé ou de parede, com cerca de 1,1 m de altura e quase 10 kg. A calça entra entre uma placa aquecida e um painel frontal com acabamento de madeira, e o aparelho a “passa” em ciclos de 15, 30 ou 45 minutos. Serve para uma calça por vez e é presença clássica em quartos de hotel no Reino Unido.",
-      "legitimateUse": "Amenidade de hotel e item doméstico de cuidado com roupa social: tira vincos de calças de terno sem ferro. Não é tecnologia assistiva nem equipamento de saúde ou segurança. Público típico: viajante a negócios e hotéis.",
-      "punchingDownRisk": "Baixo. O alvo da piada é o próprio aparelho e o ritual do executivo de hotel, não um grupo vulnerável. O manual restringe o uso por crianças e por pessoas com capacidades reduzidas, mas o produto não é feito para elas.",
+      "description": "British electric trouser press, freestanding or wall-mounted, about 1.1 m tall and nearly 10 kg. The trousers go between a heated pad and a wood-finish front panel, and the appliance \"irons\" them in 15, 30 or 45-minute cycles. It takes one pair of trousers at a time and is a classic fixture of UK hotel rooms.",
+      "legitimateUse": "Hotel amenity and household item for formal clothing care: removes creases from suit trousers without an iron. Not assistive technology, nor health or safety equipment. Typical users: business travellers and hotels.",
+      "punchingDownRisk": "Low. The joke targets the appliance itself and the hotel-executive ritual, not a vulnerable group. The manual restricts use by children and by people with reduced capabilities, but the product is not made for them.",
       "sources": [
         {
           "id": "s1",
@@ -17,7 +17,7 @@
           "publisher": "Corby of Windsor",
           "kind": "manufacturer",
           "accessedAt": "2026-10-11",
-          "confirms": "Preço (£189,60 com IVA), ciclos de 15/30/45 min, medidas (1095 x 465 x 355 mm, 9,56 kg), garantia de 4 anos, “Made in England”, cabide de paletó, bandeja de moedas e os outros acabamentos à venda (mogno, freixo preto, faia, cromo acetinado, carvalho Lancaster, branco e preto)."
+          "confirms": "Price (£189.60 inc. VAT), 15/30/45-minute cycles, dimensions (1095 x 465 x 355 mm, 9.56 kg), 4-year guarantee, \"Made in England\", jacket hanger, coin tray and the other finishes on sale (mahogany, black ash, beech, satin chrome, Lancaster oak, white & black)."
         },
         {
           "id": "s2",
@@ -26,7 +26,7 @@
           "publisher": "Corby of Windsor",
           "kind": "manufacturer",
           "accessedAt": "2026-10-11",
-          "confirms": "Modelo topo de linha: £215,04 com IVA, preto brilhante, ciclos de 15/30/45 min, “self-adjusting section for turn-ups”, 10,58 kg, e um FAQ que manda rodar a prensa vazia 2 ou 3 vezes quando ela faz vincos no lugar errado."
+          "confirms": "Top model: £215.04 inc. VAT, gloss black, 15/30/45-minute cycles, \"self-adjusting section for turn-ups\", 10.58 kg, and an FAQ telling you to run the press empty 2 or 3 times when it puts creases in the wrong place."
         },
         {
           "id": "s3",
@@ -35,7 +35,7 @@
           "publisher": "Corby of Windsor / Fired Up Corporation Ltd",
           "kind": "manufacturer",
           "accessedAt": "2026-10-11",
-          "confirms": "Manual oficial (PDF, COI0017) dos modelos 3300/4400/7700/Executive: história desde 1930, proibição de uso no banheiro, “On no account should any trousers be dampened before pressing”, “press one pair of trousers at a time”, umidade natural das fibras ajuda a prensagem, instruções de uso (levantar a prensa para revelar a almofada aquecida, inserir a calça, fechar, escolher 15/30/45 min no 7700)."
+          "confirms": "Official manual (PDF, COI0017) for models 3300/4400/7700/Executive: history since 1930, ban on use in a bathroom, \"On no account should any trousers be dampened before pressing\", \"press one pair of trousers at a time\", natural fibre humidity assists pressing, operating instructions (raise the press to reveal the heated pad, insert the trousers, close, choose 15/30/45 min on the 7700)."
         },
         {
           "id": "s4",
@@ -44,7 +44,7 @@
           "publisher": "Wikipedia (en)",
           "kind": "encyclopedia",
           "accessedAt": "2026-10-11",
-          "confirms": "Aquecimento a cerca de 60 °C, ciclo de 15 a 45 min, histórico da John Corby Ltd (Windsor 1930, aquecimento elétrico nos anos 1960, Andover 1986, Fired Up 2009) e referências culturais (Alan Partridge desmontando uma Corby, Bill Bailey)."
+          "confirms": "Heating to about 60 °C, 15 to 45-minute cycle, history of John Corby Ltd (Windsor 1930, electric heating in the 1960s, Andover 1986, Fired Up 2009) and cultural references (Alan Partridge taking a Corby apart, Bill Bailey)."
         },
         {
           "id": "s5",
@@ -53,7 +53,7 @@
           "publisher": "Corby of Windsor",
           "kind": "manufacturer",
           "accessedAt": "2026-10-11",
-          "confirms": "Seção “About”: fundada por John Corby em Windsor em 1930, famosa pela prensa de calças, exporta para mais de 60 países e é especificada por várias redes de hotéis; categoria “Trouser Presses (22)”."
+          "confirms": "\"About\" section: founded by John Corby in Windsor in 1930, famous for the trouser press, exports to more than 60 countries and is specified by many hotel chains; \"Trouser Presses (22)\" category."
         },
         {
           "id": "s6",
@@ -62,16 +62,16 @@
           "publisher": "Isle of Wight County Press",
           "kind": "press",
           "accessedAt": "2026-10-11",
-          "confirms": "Obituário de Peter Corby: ele aperfeiçoou a prensa, que virou “a staple fitting in millions of hotel rooms”, e a almofada de aquecimento foi inspirada num engenheiro do Concorde que resolveu o congelamento do nariz do avião."
+          "confirms": "Obituary of Peter Corby: he perfected the press, which became \"a staple fitting in millions of hotel rooms\", and the heating pad was inspired by a Concorde engineer who had solved the freezing of the aircraft's nose cone."
         },
         {
           "id": "s7",
           "url": "https://windsorlocalhistorygroup.org/2025/09/30/the-corby-trouser-press/",
           "title": "The Corby Trouser Press",
-          "publisher": "Windsor Local History Group (Ken Sutherland, a partir de artigo de Geoff Try em Windlesora 23, 2007)",
+          "publisher": "Windsor Local History Group (Ken Sutherland, from an article by Geoff Try in Windlesora 23, 2007)",
           "kind": "other",
           "accessedAt": "2026-10-11",
-          "confirms": "Prensa aquecida lançada por Peter Corby em 1960, “developed with help from a Concorde aeronautical engineer and Eton College”, e produção de 80.000 prensas por ano em 1973."
+          "confirms": "Heated press launched by Peter Corby in 1960, \"developed with help from a Concorde aeronautical engineer and Eton College\", and production of 80,000 presses a year in 1973."
         },
         {
           "id": "s8",
@@ -80,7 +80,7 @@
           "publisher": "John Lewis & Partners",
           "kind": "retailer",
           "accessedAt": "2026-10-11",
-          "confirms": "Venda no varejo por £189,00. Descreve o “Corby Stretcher Bar System, which removes back-of-knee wrinkles”, desligamento automático com opção de cancelar, mostrador LED de contagem regressiva e prateleira para o conteúdo dos bolsos."
+          "confirms": "Retail price £189.00. Describes the \"Corby Stretcher Bar System, which removes back-of-knee wrinkles\", automatic shut-off with cancel option, LED countdown display and a shelf for pocket contents."
         },
         {
           "id": "s9",
@@ -89,16 +89,16 @@
           "publisher": "Corby of Windsor",
           "kind": "manufacturer",
           "accessedAt": "2026-10-11",
-          "confirms": "Página do modelo 6600, marcado “Sorry, this product has been discontinued”: “Supplied with 1200W steam iron” e ciclo de 15 minutos."
+          "confirms": "Page for the 6600 model, marked \"Sorry, this product has been discontinued\": \"Supplied with 1200W steam iron\" and a 15-minute cycle."
         },
         {
           "id": "s10",
           "url": "https://commons.wikimedia.org/wiki/File:Corby_electric_trouser_press_side.JPG",
           "title": "File:Corby electric trouser press side.JPG",
-          "publisher": "Wikimedia Commons (foto de Avron, CC BY-SA 4.0)",
+          "publisher": "Wikimedia Commons (photo by Avron, CC BY-SA 4.0)",
           "kind": "other",
           "accessedAt": "2026-10-11",
-          "confirms": "A foto (inspecionada) mostra a placa de especificação de uma prensa Corby antiga, modelo A30D: “RATING 220V ~ 157W / 240V ~ 186W”, fabricada pela John Corby Limited em Andover."
+          "confirms": "The (inspected) photo shows the rating plate of an older Corby press, model A30D: \"RATING 220V ~ 157W / 240V ~ 186W\", made by John Corby Limited in Andover."
         },
         {
           "id": "s11",
@@ -107,13 +107,13 @@
           "publisher": "Wikipedia (en)",
           "kind": "encyclopedia",
           "accessedAt": "2026-10-11",
-          "confirms": "Peter Corby (1924–2021), ex-engenheiro de voo da RAF, acrescentou almofadas aquecidas eletricamente à prensa (ideia inspirada no aquecimento do nariz do Concorde) e alugou o produto para redes hoteleiras."
+          "confirms": "Peter Corby (1924–2021), former RAF flight engineer, added electrically heated pads to the press (an idea inspired by the heating of Concorde's nose) and rented the product to hotel chains."
         }
       ],
       "facts": [
         {
           "id": "f1",
-          "text": "O Corby 7700 oferece ciclos de 15, 30 e 45 minutos. Segundo o fabricante, o de 45 minutos é “for the even more difficult wrinkles” [para os vincos ainda mais difíceis].",
+          "text": "The Corby 7700 offers 15, 30 and 45-minute cycles. According to the manufacturer, the 45-minute one is \"for the even more difficult wrinkles\".",
           "sourceIds": [
             "s1",
             "s3"
@@ -121,7 +121,7 @@
         },
         {
           "id": "f2",
-          "text": "O Corby 7700 tem 1.095 mm de altura e pesa 9,56 kg. O Executive pesa 10,58 kg.",
+          "text": "The Corby 7700 is 1,095 mm tall and weighs 9.56 kg. The Executive weighs 10.58 kg.",
           "sourceIds": [
             "s1",
             "s2"
@@ -129,7 +129,7 @@
         },
         {
           "id": "f3",
-          "text": "No site oficial, o 7700 custa £189,60 com IVA e o Executive, topo de linha em preto brilhante, £215,04.",
+          "text": "On the official website, the 7700 costs £189.60 inc. VAT and the Executive, the gloss-black top model, £215.04.",
           "sourceIds": [
             "s1",
             "s2"
@@ -137,35 +137,35 @@
         },
         {
           "id": "f4",
-          "text": "O mesmo modelo 7700 é vendido em nogueira, mogno, freixo preto, faia, cromo acetinado, carvalho natural “Lancaster” e branco com preto.",
+          "text": "The same 7700 model is sold in walnut, mahogany, black ash, beech, satin chrome, natural \"Lancaster\" oak and white & black.",
           "sourceIds": [
             "s1"
           ]
         },
         {
           "id": "f5",
-          "text": "O manual proíbe: “Never use the appliance in a bathroom or near any source of water.” [Nunca use o aparelho no banheiro nem perto de qualquer fonte de água.]",
+          "text": "The manual states: \"Never use the appliance in a bathroom or near any source of water.\"",
           "sourceIds": [
             "s3"
           ]
         },
         {
           "id": "f6",
-          "text": "O manual também avisa: “On no account should any trousers be dampened before pressing.” [Em hipótese alguma umedeça a calça antes de prensar.] E pede: “Please press one pair of trousers at a time” [prense uma calça por vez].",
+          "text": "The manual also warns: \"On no account should any trousers be dampened before pressing.\" And asks: \"Please press one pair of trousers at a time\".",
           "sourceIds": [
             "s3"
           ]
         },
         {
           "id": "f7",
-          "text": "Segundo o manual, “Using your Corby press daily will add to the life and appearance of your trousers.” [Usar sua Corby diariamente aumentará a vida e a aparência de suas calças.] O fabricante diz ainda que cada prensa é “hand assembled and individually tested” [montada à mão e testada individualmente].",
+          "text": "According to the manual, \"Using your Corby press daily will add to the life and appearance of your trousers.\" The manufacturer also says each press is \"hand assembled and individually tested\".",
           "sourceIds": [
             "s3"
           ]
         },
         {
           "id": "f8",
-          "text": "O Executive tem uma “self-adjusting section for turn-ups” [seção autoajustável para a barra virada da calça]. O John Lewis descreve um “Stretcher Bar System” que tira os vincos de trás do joelho, além de um mostrador LED de contagem regressiva e uma prateleira para o conteúdo dos bolsos.",
+          "text": "The Executive has a \"self-adjusting section for turn-ups\". John Lewis describes a \"Stretcher Bar System\" that removes back-of-knee wrinkles, plus an LED countdown display and a shelf for pocket contents.",
           "sourceIds": [
             "s2",
             "s8"
@@ -173,14 +173,14 @@
         },
         {
           "id": "f9",
-          "text": "Uma Corby de hotel mais antiga, o modelo A30D, traz na placa a potência de 157 W a 220 V e 186 W a 240 V. O consumo dos modelos atuais não foi confirmado.",
+          "text": "An older hotel Corby, model A30D, carries a rating plate of 157 W at 220 V and 186 W at 240 V. The consumption of current models was not confirmed.",
           "sourceIds": [
             "s10"
           ]
         },
         {
           "id": "f10",
-          "text": "Segundo o fabricante, a marca nasceu como John Corby Limited em 1930, em Windsor, fazendo cabides-valete. As prensas passaram a ter aquecimento elétrico nos anos 1960.",
+          "text": "According to the manufacturer, the brand started as John Corby Limited in 1930, in Windsor, making valet stands. The presses became electrically heated in the 1960s.",
           "sourceIds": [
             "s3",
             "s4",
@@ -189,7 +189,7 @@
         },
         {
           "id": "f11",
-          "text": "Segundo o obituário de Peter Corby, “a chance meeting with the Concorde plane engineer who had solved the problem of how to prevent the nosecone from freezing inspired the electrical heating pad” [um encontro casual com o engenheiro do Concorde que resolveu o congelamento do nariz do avião inspirou a almofada de aquecimento elétrico] da prensa.",
+          "text": "According to Peter Corby's obituary, \"a chance meeting with the Concorde plane engineer who had solved the problem of how to prevent the nosecone from freezing inspired the electrical heating pad\" of the press.",
           "sourceIds": [
             "s6",
             "s11"
@@ -197,7 +197,7 @@
         },
         {
           "id": "f12",
-          "text": "Em 1973 eram produzidas 80.000 prensas por ano. Hoje a empresa diz exportar para mais de 60 países e ser “specified in many branded hotel chains” [especificada por muitas redes de hotéis].",
+          "text": "In 1973, 80,000 presses were made a year. Today the company says it exports to more than 60 countries and is \"specified in many branded hotel chains\".",
           "sourceIds": [
             "s7",
             "s5"
@@ -205,21 +205,21 @@
         },
         {
           "id": "f13",
-          "text": "O modelo 6600, hoje descontinuado, era “Supplied with 1200W steam iron” [fornecido com ferro a vapor de 1200 W], que segundo o fabricante “allows you to make full use of the folding ironing board” [permite aproveitar ao máximo a tábua de passar dobrável].",
+          "text": "The 6600 model, now discontinued, was \"Supplied with 1200W steam iron\", which according to the manufacturer \"allows you to make full use of the folding ironing board\".",
           "sourceIds": [
             "s9"
           ]
         },
         {
           "id": "f14",
-          "text": "O mesmo manual diz: “The inherent humidity content of natural and mixed fibres assists the pressing process” [a umidade natural das fibras naturais e mistas ajuda a prensagem], na mesma seção que proíbe umedecer a calça.",
+          "text": "The same manual says: \"The inherent humidity content of natural and mixed fibres assists the pressing process\", in the same section that forbids dampening the trousers.",
           "sourceIds": [
             "s3"
           ]
         },
         {
           "id": "f15",
-          "text": "A calça fica entre a placa de prensagem e uma almofada aquecida e acolchoada, que chega a cerca de 60 °C.",
+          "text": "The trousers sit between the pressing plate and a cushioned heating pad that reaches about 60 °C.",
           "sourceIds": [
             "s4",
             "s11"
@@ -227,14 +227,14 @@
         },
         {
           "id": "f16",
-          "text": "Uso segundo o manual: levantar a prensa para revelar a almofada aquecida, inserir a calça, fechar e, no 7700, escolher 15, 30 ou 45 minutos.",
+          "text": "Use according to the manual: raise the press to reveal the heated pad, insert the trousers, close and, on the 7700, choose 15, 30 or 45 minutes.",
           "sourceIds": [
             "s3"
           ]
         },
         {
           "id": "f17",
-          "text": "Segundo o obituário de Peter Corby, ele aperfeiçoou o que viria a ser “a staple fitting in millions of hotel rooms” [item básico em milhões de quartos de hotel].",
+          "text": "According to Peter Corby's obituary, he perfected what would become \"a staple fitting in millions of hotel rooms\".",
           "sourceIds": [
             "s6"
           ]
@@ -245,7 +245,7 @@
         "currency": "GBP",
         "sourceId": "s1",
         "observedAt": "2026-10-11",
-        "note": "Corby 7700 em nogueira no site oficial (loja B2B para hotéis), preço com IVA (£158,00 sem IVA), “21 In Stock”. O John Lewis (s8) vende o 7700 em carvalho Lancaster por £189,00 e o Executive (s2) sai por £215,04."
+        "note": "Corby 7700 in walnut on the official website (B2B shop for hotels), price inc. VAT (£158.00 ex VAT), \"21 In Stock\". John Lewis (s8) sells the 7700 in Lancaster oak for £189.00 and the Executive (s2) is £215.04."
       },
       "media": [
         {
@@ -340,7 +340,7 @@
         "Cuidado de segurança: a solução óbvia (pendurar a calça no banheiro durante o banho quente) deve mostrar só a calça no cabide. Nunca mostrar a prensa elétrica no banheiro, que o próprio manual proíbe.",
         "Não usar trechos de Alan Partridge ou Bill Bailey (direitos autorais). Citar só como fato, se necessário."
       ],
-      "comedyAngle": "Um móvel de quase 10 kg e 1,1 m, em nogueira ou “carvalho Lancaster”, com tecnologia inspirada no nariz do Concorde e ciclo de até 45 minutos “para os vincos ainda mais difíceis”, para passar UMA calça por vez. O manual entrega o ouro: proíbe levar a prensa ao banheiro, justamente onde a solução óbvia vence. O cliente pendura a calça no cabide do banheiro, toma banho de 10 minutos e sai com a calça lisa enquanto a Corby ainda está no minuto 12 de 45. Bônus: o modelo 6600 vinha com um ferro de passar incluso."
+      "comedyAngle": "A nearly 10 kg, 1.1 m piece of furniture in walnut or \"Lancaster oak\", with technology inspired by Concorde's nose and a cycle of up to 45 minutes \"for the even more difficult wrinkles\", to press ONE pair of trousers at a time. The manual delivers the punchline: it forbids taking the press into the bathroom, exactly where the obvious solution wins. The customer hangs the trousers in the bathroom, showers for 10 minutes and walks out with smooth trousers while the Corby is still counting down. Bonus: the 6600 model came with an iron included."
     },
     {
       "slug": "hapifork",

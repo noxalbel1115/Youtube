@@ -12,6 +12,7 @@ const placeholder: Timeline = {
   height: 1920,
   durationInFrames: 60,
   brand: {name: 'Departamento de Necessidades Desnecessárias', motto: 'Você não precisava. Até agora.', salesmanName: 'Vendedor', salesmanTitle: 'Cargo'},
+  ui: {caseLabel: 'PROTOCOLO 001', sealText: 'DND', sealLabel: 'DEPTO. 001', factsheetLabel: 'FICHA TÉCNICA'},
   product: {name: 'Produto', brand: 'Marca'},
   beats: [
     {

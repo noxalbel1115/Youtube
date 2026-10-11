@@ -29,7 +29,7 @@ export function readJson<T>(file: string): T {
   return JSON.parse(fs.readFileSync(file, 'utf8')) as T;
 }
 
-export function newState(episodeId: string): EpisodeState {
+export function newState(episodeId: string, locale: EpisodeState['locale'] = 'pt-BR'): EpisodeState {
   const stages: EpisodeState['stages'] = {};
   for (const s of STAGES) stages[s] = {status: 'pending', attempts: 0, outputs: []};
   return {
@@ -38,6 +38,7 @@ export function newState(episodeId: string): EpisodeState {
     createdAt: nowIso(),
     updatedAt: nowIso(),
     currentStage: 'research',
+    locale,
     stages,
     artifacts: {},
     costs: [],

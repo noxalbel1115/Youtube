@@ -20,13 +20,13 @@ const BeatVisual: React.FC<{beat: TimelineBeat; t: Timeline}> = ({beat, t}) => {
     case 'media':
       return v.layout === 'exhibit' ? <MediaExhibit beat={beat} /> : <MediaFull beat={beat} />;
     case 'title':
-      return <TitleCard beat={beat} brandName={t.brand.name} shortName={t.brand.shortName} dept={t.ui?.dept} />;
+      return <TitleCard beat={beat} brandName={t.brand.name} ui={t.ui} />;
     case 'card':
       return <TextCard beat={beat} />;
     case 'factsheet':
-      return <FactSheet beat={beat} label={t.ui?.factsheet} />;
+      return <FactSheet beat={beat} label={t.ui.factsheetLabel} />;
     case 'endcard':
-      return <EndCard beat={beat} brandName={t.brand.name} motto={t.brand.motto} shortName={t.brand.shortName} dept={t.ui?.dept} />;
+      return <EndCard beat={beat} brandName={t.brand.name} motto={t.brand.motto} ui={t.ui} />;
     case 'black':
     default:
       return <AbsoluteFill style={{background: '#000'}} />;
@@ -60,14 +60,14 @@ const hasHeader = (b: TimelineBeat) => b.visual.type === 'media' || b.visual.typ
 
 export const Episode: React.FC<Timeline> = (t) => {
   const {fps} = useVideoConfig();
-  const caseLabel = t.caseLabel ?? 'PROTOCOLO 001';
+  const caseLabel = t.ui.caseLabel;
   const shots = groupVisuals(t.beats);
   return (
     <AbsoluteFill style={{background: '#000'}}>
       {shots.map((b) => (
         <Sequence key={b.id} from={b.startFrame} durationInFrames={b.durationFrames} name={`plano ${b.id}`}>
           <BeatVisual beat={b} t={t} />
-          {hasHeader(b) ? <HeaderBand brandName={t.brand.name} caseLabel={caseLabel} shortName={t.brand.shortName} /> : null}
+          {hasHeader(b) ? <HeaderBand brandName={t.brand.name} caseLabel={caseLabel} mark={t.ui.sealText} /> : null}
         </Sequence>
       ))}
       {/* Sobreposicoes por beat (nao por plano): credito/rotulo e etiqueta do vendedor. */}
@@ -124,7 +124,7 @@ export const Thumbnail: React.FC<Timeline & {thumbnailFrame?: number; thumbnailT
     <AbsoluteFill>
       <Sequence from={-(frame - beat.startFrame)} durationInFrames={beat.durationFrames}>
         <BeatVisual beat={beat} t={t} />
-        {hasHeader(beat) ? <HeaderBand brandName={t.brand.name} caseLabel={t.caseLabel ?? 'PROTOCOLO 001'} shortName={t.brand.shortName} /> : null}
+        {hasHeader(beat) ? <HeaderBand brandName={t.brand.name} caseLabel={t.ui.caseLabel} mark={t.ui.sealText} /> : null}
       </Sequence>
       {t.thumbnailText ? (
         <div style={{position: 'absolute', left: 64, right: 150, top: 1180, display: 'flex'}}>

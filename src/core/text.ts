@@ -114,9 +114,10 @@ export function numbersToDigitsEn(words: string[]): string[] {
   return out;
 }
 
-/** Valores com simbolo de moeda, como o Whisper escreve em ingles: "£189.60" → "189 pounds 60". */
+/** Valores com simbolo de moeda, como o Whisper escreve em ingles: "£189.60" → "189 pounds 60"; "lbs." → "pounds". */
 function spellCurrencyEn(s: string): string {
   return s
+    .replace(/\blbs?\b\.?/gi, 'pounds')
     .replace(/£(\d+)\.(\d{2})/g, '$1 pounds $2')
     .replace(/£(\d+)/g, '$1 pounds')
     .replace(/\$(\d+)\.(\d{2})/g, '$1 dollars $2')

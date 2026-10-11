@@ -117,6 +117,7 @@ test('WER em ingles: numerais por extenso, "a hundred" e libras com simbolo', ()
   assert.equal(wordErrorRate('For almost a hundred years.', 'For almost 100 years.', 'en'), 0);
   assert.equal(wordErrorRate('Four pounds twenty a minute.', '£4.20 a minute.', 'en'), 0);
   assert.equal(wordErrorRate('Forty-four minutes to go.', '44 minutes to go.', 'en'), 0);
+  assert.equal(wordErrorRate('£189.60. £4.20 a minute.', '189 lbs. 60, 4 lbs. 20 a minute.', 'en'), 0);
   // padrao continua sendo portugues
   assert.equal(wordErrorRate('Quarenta e cinco minutos.', '45 minutos.'), 0);
 });

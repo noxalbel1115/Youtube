@@ -7,6 +7,7 @@ import {run} from '../core/exec.js';
 import {log} from '../core/log.js';
 import {applyPronunciations, wordErrorRate} from '../core/text.js';
 import {TTS_PROVIDERS, durationOf, type TtsItem} from '../providers/tts/index.js';
+import {localized} from '../core/locale.js';
 import {BlockedError, type Ctx, type Stage} from './types.js';
 
 /** WER acima disto na transcricao de uma fala indica pronuncia ruim ou palavra engolida. */
@@ -37,12 +38,13 @@ export const voiceStage: Stage = {
   name: 'voice',
   inputHash(ctx) {
     // Só o que muda o audio: a confirmacao de licenca (commercialLicenseConfirmed) fica de fora para nao refazer o render.
-    const {voices, kokoro, piper, elevenlabs} = ctx.cfg.providers.tts;
-    return sha256(fs.readFileSync(ctx.p.script, 'utf8') + JSON.stringify({voices, kokoro, piper, elevenlabs: {modelId: elevenlabs.modelId}}) + JSON.stringify(ctx.cfg.providers.asr));
+    const {kokoro, piper, elevenlabs} = ctx.cfg.providers.tts;
+    const voices = localized(ctx.cfg, ctx.state.locale).voices;
+    return sha256(fs.readFileSync(ctx.p.script, 'utf8') + JSON.stringify({voices, kokoro, piper, elevenlabs: {modelId: elevenlabs.modelId}}) + JSON.stringify(ctx.cfg.providers.asr) + ctx.state.locale);
   },
   async run(ctx) {
     const script = Script.parse(readJson(ctx.p.script));
-    const voices = ctx.cfg.providers.tts.voices;
+    const {voices, strings} = localized(ctx.cfg, ctx.state.locale);
     fs.mkdirSync(ctx.p.lines, {recursive: true});
     const rawDir = path.join(ctx.p.build, 'tts-raw');
     fs.mkdirSync(rawDir, {recursive: true});
@@ -96,7 +98,7 @@ export const voiceStage: Stage = {
     const cache: Record<string, Asr> = fs.existsSync(cacheFile) ? JSON.parse(fs.readFileSync(cacheFile, 'utf8')) : {};
     const missing = plan.map((p) => p.final).filter((f) => !cache[cacheKey(f)]);
     if (missing.length) {
-      const asr = await run(PYTHON_BIN, [path.join(ROOT, 'python', 'asr.py'), ctx.cfg.providers.asr.model, ...missing]);
+      const asr = await run(PYTHON_BIN, [path.join(ROOT, 'python', 'asr.py'), ctx.cfg.providers.asr.model, `--lang=${strings.asrLanguage}`, ...missing]);
       for (const r of JSON.parse(asr.stdout).files as Asr[]) cache[cacheKey(r.file)] = r;
       fs.writeFileSync(cacheFile, JSON.stringify(cache));
     }
@@ -107,7 +109,7 @@ export const voiceStage: Stage = {
     for (const [i, p] of plan.entries()) {
       const tr = files[i];
       const beat = script.beats.find((b) => b.id === p.beatId)!;
-      const wer = wordErrorRate(beat.caption ?? beat.text!, tr.text);
+      const wer = wordErrorRate(beat.caption ?? beat.text!, tr.text, ctx.state.locale);
       // Falas de 1-2 palavras: o Whisper alucina em audio curtissimo; ficam cobertas pela transcricao da mixagem final.
       const shortLine = (beat.caption ?? beat.text!).split(/\s+/).length < 3;
       if (wer > LINE_WER_LIMIT && !beat.skipAsrCheck && !shortLine) flagged.push(`${p.beatId} (WER ${(wer * 100).toFixed(0)}%: "${tr.text}")`);

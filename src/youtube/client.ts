@@ -132,9 +132,9 @@ export async function listCaptions(token: string, videoId: string): Promise<any[
   return r.items ?? [];
 }
 
-export async function insertCaptions(token: string, videoId: string, srtFile: string, name: string): Promise<string> {
+export async function insertCaptions(token: string, videoId: string, srtFile: string, name: string, language = 'pt-BR'): Promise<string> {
   const boundary = `dnn${Date.now()}`;
-  const meta = JSON.stringify({snippet: {videoId, language: 'pt-BR', name, isDraft: false}});
+  const meta = JSON.stringify({snippet: {videoId, language, name, isDraft: false}});
   const body = Buffer.concat([
     Buffer.from(`--${boundary}\r\ncontent-type: application/json; charset=UTF-8\r\n\r\n${meta}\r\n--${boundary}\r\ncontent-type: application/octet-stream\r\n\r\n`),
     fs.readFileSync(srtFile),

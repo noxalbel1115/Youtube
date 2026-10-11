@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {Script, Timeline, Product, MediaRegistry, VoiceManifest} from '../schemas.js';
 import {voiceCredit} from '../providers/tts/index.js';
+import {localized} from '../core/locale.js';
 import {readJson, sha256, sha256File, writeJsonAtomic} from '../core/state.js';
 import {rel} from '../core/paths.js';
 import {renderThumbnail} from './render.js';
@@ -27,34 +28,30 @@ export function idempotencyKey(ctx: Ctx): string {
   return `dnn-${ctx.id}-${sha256File(ctx.p.render).slice(0, 10)}`;
 }
 
-function formatDate(iso: string): string {
-  const [y, m, d] = iso.slice(0, 10).split('-');
-  return `${d}/${m}/${y}`;
-}
-
 export function buildDescription(ctx: Ctx): string {
   const script = Script.parse(readJson(ctx.p.script));
   const product = Product.parse(readJson(ctx.p.product));
   const registry = MediaRegistry.parse(readJson(ctx.p.mediaRegistry));
   const used = new Set(script.beats.filter((b) => b.visual.type === 'media').map((b) => b.visual.mediaId));
   const ttsProviders = [...new Set(VoiceManifest.parse(readJson(ctx.p.voice)).lines.map((l) => l.provider))];
+  const {channel, strings: L} = localized(ctx.cfg, ctx.state.locale);
   const lines: string[] = [];
   lines.push(script.packaging.synopsis, '');
-  lines.push(`${ctx.cfg.channel.motto}`, '');
-  lines.push('— Sobre este vídeo —');
-  lines.push(`O vendedor e a colega são personagens fictícios. O produto é real: ${product.name}. ${product.brand}.`);
-  lines.push('Não é publicidade: não há patrocínio nem relação com fabricantes ou lojas citados. As fotos têm licença livre e são creditadas abaixo.');
-  lines.push(`As informações factuais sobre o produto foram conferidas nas fontes abaixo em ${formatDate(product.verifiedAt)}.`);
+  lines.push(`${channel.motto}`, '');
+  lines.push(`— ${L.about} —`);
+  lines.push(L.fiction(product.name, product.brand));
+  lines.push(L.notAd);
+  lines.push(L.checked(L.date(product.verifiedAt)));
   if (product.price) {
     const src = product.sources.find((s) => s.id === product.price!.sourceId);
-    lines.push(`Preço consultado: ${product.price.currency} ${product.price.amount.toFixed(2).replace('.', ',')} em ${formatDate(product.price.observedAt)} (${src?.publisher ?? 'fonte'}). Preços mudam.`);
+    lines.push(L.price(L.money(product.price.amount, product.price.currency), L.date(product.price.observedAt), src?.publisher ?? '?'));
   }
-  lines.push('', '— Fontes —');
-  for (const s of product.sources) lines.push(`• ${s.publisher}: ${s.title} — ${s.url} (consultado em ${formatDate(s.accessedAt)})`);
-  lines.push('', '— Créditos de imagem —');
+  lines.push('', `— ${L.sources} —`);
+  for (const s of product.sources) lines.push(`• ${s.publisher}: ${s.title} — ${s.url} (${L.accessed(L.date(s.accessedAt))})`);
+  lines.push('', `— ${L.imageCredits} —`);
   for (const it of registry.items.filter((i) => used.has(i.id))) lines.push(`• ${it.attribution}`);
-  lines.push('', '— Produção —');
-  lines.push(`${voiceCredit(ttsProviders, ctx.cfg)} Efeitos sonoros e grafismos produzidos pelo canal.`);
+  lines.push('', `— ${L.production} —`);
+  lines.push(`${voiceCredit(ttsProviders, ctx.cfg, ctx.state.locale)} ${L.producedByChannel}`);
   lines.push('', `ref: ${idempotencyKey(ctx)}`);
   return lines.join('\n');
 }
@@ -62,7 +59,7 @@ export function buildDescription(ctx: Ctx): string {
 export const packageStage: Stage = {
   name: 'package',
   inputHash(ctx) {
-    return sha256([ctx.p.script, ctx.p.product, ctx.p.mediaRegistry, ctx.p.timeline].map((f) => fs.readFileSync(f, 'utf8')).join('\n') + sha256File(ctx.p.render) + JSON.stringify(ctx.cfg.youtube));
+    return sha256([ctx.p.script, ctx.p.product, ctx.p.mediaRegistry, ctx.p.timeline].map((f) => fs.readFileSync(f, 'utf8')).join('\n') + sha256File(ctx.p.render) + JSON.stringify(ctx.cfg.youtube) + JSON.stringify(localized(ctx.cfg, ctx.state.locale).channel));
   },
   async run(ctx) {
     const script = Script.parse(readJson(ctx.p.script));
@@ -77,7 +74,7 @@ export const packageStage: Stage = {
       description,
       tags,
       categoryId: ctx.cfg.youtube.categoryId,
-      defaultLanguage: 'pt-BR',
+      defaultLanguage: ctx.state.locale,
       privacyStatus: ctx.cfg.youtube.defaultPrivacyStatus,
       selfDeclaredMadeForKids: ctx.cfg.youtube.selfDeclaredMadeForKids,
       containsSyntheticMedia: ctx.cfg.youtube.containsSyntheticMedia,
@@ -87,7 +84,7 @@ export const packageStage: Stage = {
     };
     writeJsonAtomic(path.join(ctx.p.packageDir, 'metadata.json'), metadata);
     fs.writeFileSync(path.join(ctx.p.packageDir, 'description.txt'), description + '\n');
-    fs.writeFileSync(path.join(ctx.p.packageDir, 'captions.pt-BR.srt'), buildSrt(t));
+    fs.writeFileSync(path.join(ctx.p.packageDir, `captions.${ctx.state.locale}.srt`), buildSrt(t));
     fs.writeFileSync(path.join(ctx.p.packageDir, 'roteiro.md'), roteiroMd(ctx));
     fs.writeFileSync(path.join(ctx.p.packageDir, 'fontes-e-midias.md'), fontesMd(ctx));
     fs.writeFileSync(path.join(ctx.p.packageDir, 'publicacao-manual.md'), publicacaoManualMd(ctx, metadata));
@@ -95,7 +92,7 @@ export const packageStage: Stage = {
     if (!beat) throw new Error(`thumbnailBeatId ${script.packaging.thumbnailBeatId} inexistente`);
     await renderThumbnail(ctx, beat.startFrame + Math.floor(beat.durationFrames / 2), script.packaging.title.split('|')[0].trim());
     return {
-      outputs: [rel(path.join(ctx.p.packageDir, 'metadata.json')), rel(path.join(ctx.p.packageDir, 'captions.pt-BR.srt')), rel(ctx.p.thumbnail)],
+      outputs: [rel(path.join(ctx.p.packageDir, 'metadata.json')), rel(path.join(ctx.p.packageDir, `captions.${ctx.state.locale}.srt`)), rel(ctx.p.thumbnail)],
       note: `titulo: "${metadata.title}"; descricao ${Buffer.byteLength(description)} bytes`,
     };
   },

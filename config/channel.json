@@ -1,5 +1,5 @@
 {
-  "$comment": "Configuracao do canal. Segredos NUNCA ficam aqui: use variaveis de ambiente (ver .env.example).",
+  "$comment": "Configuracao do canal. Segredos NUNCA ficam aqui: use variaveis de ambiente (ver .env.example). \"locales\" sobrepoe canal e vozes por idioma (en-US: vozes padrao da ElevenLabs); o bloco base vale para pt-BR.",
   "channel": {
     "name": "Departamento de Necessidades Desnecessárias",
     "shortName": "DND",
@@ -8,6 +8,37 @@
     "salesman": {
       "name": "Valdemar Anunciação",
       "title": "Consultor Sênior de Soluções"
+    }
+  },
+  "locales": {
+    "en-US": {
+      "channel": {
+        "name": "Department of Unnecessary Necessities",
+        "shortName": "DUN",
+        "motto": "You didn't need it. Until now.",
+        "language": "en-US",
+        "salesman": {
+          "name": "Valdemar Anunciação",
+          "title": "Senior Solutions Consultant"
+        }
+      },
+      "voices": {
+        "vendedor": {
+          "provider": "elevenlabs",
+          "voice": "cjVigY5qzO86Huf0OWal",
+          "speed": 1.05
+        },
+        "colega": {
+          "provider": "elevenlabs",
+          "voice": "XrExE9yKIg1WjnnlVkGX",
+          "speed": 1.05
+        },
+        "locutor": {
+          "provider": "elevenlabs",
+          "voice": "onwK4e9ZLuTAKqWW03F9",
+          "speed": 1.0
+        }
+      }
     }
   },
   "format": {

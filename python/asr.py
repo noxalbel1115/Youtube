@@ -1,6 +1,6 @@
 """Transcricao com faster-whisper (verificacao de pronuncia e tempos de palavra).
 
-Uso: python asr.py MODEL_NAME arquivo1.wav [arquivo2.wav ...]
+Uso: python asr.py MODEL_NAME [--lang=pt] arquivo1.wav [arquivo2.wav ...]
 Saida (stdout, JSON): {"files": [{"file": "...", "text": "...", "words": [{"word", "start", "end", "prob"}]}]}
 """
 import json
@@ -21,9 +21,13 @@ def load(f):
 
 def main():
     model = WhisperModel(sys.argv[1], device="cpu", compute_type="int8")
+    args = sys.argv[2:]
+    lang = "pt"
+    if args and args[0].startswith("--lang="):
+        lang = args.pop(0).split("=", 1)[1]
     out = []
-    for f in sys.argv[2:]:
-        segs, _info = model.transcribe(load(f), language="pt", beam_size=5, word_timestamps=True, vad_filter=False)
+    for f in args:
+        segs, _info = model.transcribe(load(f), language=lang, beam_size=5, word_timestamps=True, vad_filter=False)
         words, texts = [], []
         for s in segs:
             texts.append(s.text.strip())

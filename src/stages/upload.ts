@@ -163,10 +163,11 @@ export const uploadStage: Stage = {
       if (ctx.cfg.youtube.uploadCaptions && s.captions?.status !== 'done') {
         const existing = await ops.listCaptions(token, videoId);
         quota += yt.QUOTA.captionsList;
-        const ours = existing.find((c: any) => c.snippet?.name === 'DND pt-BR');
+        const capName = `DND ${ctx.state.locale}`;
+        const ours = existing.find((c: any) => c.snippet?.name === capName);
         if (ours) s.captions = {status: 'done', id: ours.id};
         else {
-          const id = await ops.insertCaptions(token, videoId, path.join(ctx.p.packageDir, 'captions.pt-BR.srt'), 'DND pt-BR');
+          const id = await ops.insertCaptions(token, videoId, path.join(ctx.p.packageDir, `captions.${ctx.state.locale}.srt`), capName, ctx.state.locale);
           quota += yt.QUOTA.captionsInsert;
           s.captions = {status: 'done', id};
         }

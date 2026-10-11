@@ -4,7 +4,18 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 TMP=$(mktemp -d)
-export DNN_EPISODES_DIR="$TMP/episodes" DNN_DATA_DIR="$TMP/data"
+export DNN_EPISODES_DIR="$TMP/episodes" DNN_DATA_DIR="$TMP/data" DNN_CONFIG="$TMP/channel.json"
+# Sem rede e sem custo: vozes locais (Kokoro), qualquer que seja a voz configurada para producao.
+node -e '
+const fs = require("fs");
+const c = JSON.parse(fs.readFileSync("config/channel.json", "utf8"));
+c.providers.tts.voices = {
+  vendedor: {provider: "kokoro", voice: "pm_alex", speed: 1.04},
+  colega: {provider: "kokoro", voice: "pf_dora", speed: 1.05},
+  locutor: {provider: "kokoro", voice: "pm_santa", speed: 0.95},
+};
+fs.writeFileSync(process.argv[1], JSON.stringify(c));
+' "$DNN_CONFIG"
 ffmpeg -v error -f lavfi -i "testsrc2=s=1600x1200" -frames:v 1 "$TMP/img.jpg"
 npm run -s dnn -- new ep000-smoke
 mkdir -p "$DNN_EPISODES_DIR/ep000-smoke/research"

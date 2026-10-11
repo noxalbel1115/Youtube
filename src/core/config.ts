@@ -5,14 +5,18 @@ import {ROOT} from './paths.js';
 
 const VoiceCfg = z.object({provider: z.enum(['kokoro', 'piper', 'elevenlabs']), voice: z.string(), speed: z.number().default(1)});
 
+const Channel = z.object({
+  name: z.string(),
+  shortName: z.string(),
+  motto: z.string(),
+  language: z.string(),
+  salesman: z.object({name: z.string(), title: z.string()}),
+});
+
 export const Config = z.object({
-  channel: z.object({
-    name: z.string(),
-    shortName: z.string(),
-    motto: z.string(),
-    language: z.string(),
-    salesman: z.object({name: z.string(), title: z.string()}),
-  }),
+  channel: Channel,
+  /** Canal e vozes por idioma (o bloco base vale para pt-BR). */
+  locales: z.record(z.string(), z.object({channel: Channel, voices: z.record(z.string(), VoiceCfg)})).default({}),
   format: z.object({
     width: z.number(),
     height: z.number(),

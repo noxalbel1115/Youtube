@@ -1,7 +1,10 @@
+import type {Locale} from './locale.js';
+
 /** Normaliza para comparacao: minusculas, sem pontuacao, espacos simples. Mantem acentos. */
 export function normalizeWords(s: string): string[] {
   return s
     .toLowerCase()
+    .replace(/’/g, "'")
     .replace(/[“”"«»()\[\]{}…,.;:!?¿¡–—\-]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
@@ -21,8 +24,47 @@ const UNITS: Record<string, number> = {
   seiscentos: 600, setecentos: 700, oitocentos: 800, novecentos: 900,
 };
 
+const EN_UNITS: Record<string, number> = {
+  zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10,
+  eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19,
+  twenty: 20, thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90,
+};
+
+/** Ingles: "twenty eight" → "28", "one hundred and five" → "105" (o hifen ja virou espaco em normalizeWords). */
+function englishNumbersToDigits(words: string[]): string[] {
+  const out: string[] = [];
+  let i = 0;
+  while (i < words.length) {
+    if (!(words[i] in EN_UNITS)) {
+      out.push(words[i]);
+      i++;
+      continue;
+    }
+    let total = 0;
+    let cur = 0;
+    let j = i;
+    while (j < words.length) {
+      const w = words[j];
+      if (w in EN_UNITS) cur += EN_UNITS[w];
+      else if (w === 'hundred') cur = (cur || 1) * 100;
+      else if (w === 'thousand') {
+        total += (cur || 1) * 1000;
+        cur = 0;
+      } else if (w === 'and' && j + 1 < words.length && words[j + 1] in EN_UNITS && (cur >= 100 || total > 0)) {
+        j++;
+        continue;
+      } else break;
+      j++;
+    }
+    out.push(String(total + cur));
+    i = j;
+  }
+  return out;
+}
+
 /** Converte numerais por extenso (sem acento) em digitos: "quarenta e nove" → "49". O ASR escreve numeros em digitos. */
-export function numbersToDigits(words: string[]): string[] {
+export function numbersToDigits(words: string[], locale: Locale = 'pt-BR'): string[] {
+  if (locale === 'en-US') return englishNumbersToDigits(words);
   const out: string[] = [];
   let i = 0;
   while (i < words.length) {
@@ -53,9 +95,9 @@ export function numbersToDigits(words: string[]): string[] {
 }
 
 /** Taxa de erro por palavra (Levenshtein em palavras), insensivel a acentos. */
-export function wordErrorRate(reference: string, hypothesis: string): number {
-  const r = numbersToDigits(normalizeWords(stripAccents(reference)));
-  const h = numbersToDigits(normalizeWords(stripAccents(hypothesis)));
+export function wordErrorRate(reference: string, hypothesis: string, locale: Locale = 'pt-BR'): number {
+  const r = numbersToDigits(normalizeWords(stripAccents(reference)), locale);
+  const h = numbersToDigits(normalizeWords(stripAccents(hypothesis)), locale);
   if (r.length === 0) return h.length === 0 ? 0 : 1;
   const d: number[][] = Array.from({length: r.length + 1}, (_, i) => [i, ...Array(h.length).fill(0)]);
   for (let j = 1; j <= h.length; j++) d[0][j] = j;

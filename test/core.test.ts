@@ -85,3 +85,18 @@ test('voz ElevenLabs sem assinatura paga confirmada nao tem base de uso para pub
   cfg.providers.tts.elevenlabs.commercialLicenseConfirmed = true;
   assert.equal(voiceLicenseIssue(['elevenlabs', 'kokoro'], cfg), null);
 });
+
+test('WER em ingles: numerais por extenso equivalem a digitos', () => {
+  assert.equal(wordErrorRate('Twenty-eight euros ninety-five.', '28 euros 95', 'en-US'), 0);
+  assert.equal(wordErrorRate('one hundred and five letters', '105 letters', 'en-US'), 0);
+  assert.equal(wordErrorRate("The spoon doesn’t have thirty-eight letters.", "The spoon doesn't have 38 letters.", 'en-US'), 0);
+});
+
+test('idioma: textos fixos e datas por locale', async () => {
+  const {STRINGS, episodeNumber} = await import('../src/core/locale.js');
+  assert.equal(episodeNumber('ep001-x-en'), '001');
+  assert.equal(STRINGS['pt-BR'].date('2026-10-10'), '10/10/2026');
+  assert.equal(STRINGS['en-US'].date('2026-10-10'), 'October 10, 2026');
+  assert.equal(STRINGS['en-US'].money(28.95, 'EUR'), 'EUR 28.95');
+  assert.equal(STRINGS['pt-BR'].money(28.95, 'EUR'), 'EUR 28,95');
+});

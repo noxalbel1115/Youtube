@@ -3,6 +3,7 @@ import path from 'node:path';
 import {run} from '../../core/exec.js';
 import {PYTHON_BIN, ROOT} from '../../core/paths.js';
 import type {Config} from '../../core/config.js';
+import {STRINGS, type Locale} from '../../core/locale.js';
 
 export interface TtsItem {
   id: string;
@@ -112,13 +113,10 @@ export const TTS_PROVIDERS: Record<string, TtsProvider> = {kokoro, piper, eleven
  * consultado em 10/10/2026). Retorna o problema ou null.
  */
 /** Credito da voz para descricao e documentos, a partir dos provedores efetivamente usados nas falas. */
-export function voiceCredit(providers: string[], cfg: Config): string {
-  const label: Record<string, string> = {
-    kokoro: 'Kokoro-82M (licença Apache-2.0, execução local)',
-    elevenlabs: `ElevenLabs (modelo ${cfg.providers.tts.elevenlabs.modelId})`,
-    piper: 'Piper (uso interno)',
-  };
-  return `Voz sintética: ${providers.map((p) => label[p] ?? p).join('; ')}.`;
+export function voiceCredit(providers: string[], cfg: Config, locale: Locale = 'pt-BR'): string {
+  const L = STRINGS[locale];
+  const label: Record<string, string> = {...L.voiceLabels, elevenlabs: `ElevenLabs (${cfg.providers.tts.elevenlabs.modelId})`};
+  return `${L.voicePrefix}: ${providers.map((p) => label[p] ?? p).join('; ')}.`;
 }
 
 export function voiceLicenseIssue(providers: string[], cfg: Config): string | null {

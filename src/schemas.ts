@@ -276,6 +276,8 @@ export const Timeline = z.object({
   height: z.number(),
   durationInFrames: z.number(),
   brand: z.object({name: z.string(), motto: z.string(), salesmanName: z.string(), salesmanTitle: z.string()}),
+  /** Textos fixos do layout no idioma do episodio. */
+  ui: z.object({caseLabel: z.string(), sealText: z.string(), sealLabel: z.string(), factsheetLabel: z.string()}).default({caseLabel: 'PROTOCOLO 001', sealText: 'DND', sealLabel: 'DEPTO. 001', factsheetLabel: 'FICHA TÉCNICA'}),
   product: z.object({name: z.string(), brand: z.string()}),
   beats: z.array(TimelineBeat),
   captions: z.array(CaptionChunk),
@@ -340,6 +342,8 @@ export const EpisodeState = z.object({
   productSlug: z.string().optional(),
   /** Escolha editorial persistida (--pick/--reason) para que reexecucoes nao revertam a selecao. */
   pick: z.object({slug: z.string(), reason: z.string()}).optional(),
+  /** Idioma do episodio (definido em `new --locale`); decide canal, vozes, transcricao e textos fixos. */
+  locale: z.enum(['pt-BR', 'en-US']).default('pt-BR'),
   /** Autorizacao explicita (--authorize-paid-tts) para usar voz paga neste episodio, mesmo com budget zerado. */
   paidTtsAuthorization: z.object({at: z.string(), note: z.string()}).optional(),
   scriptVersion: z.number().optional(),

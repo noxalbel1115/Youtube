@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "ep001-eierschalensollbruchstellenverursacher-en",
+  "createdAt": "2026-10-11T08:35:15.327Z",
+  "updatedAt": "2026-10-11T08:35:15.327Z",
+  "currentStage": "research",
+  "locale": "en-US",
+  "stages": {
+    "research": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "select": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "media": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "script": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "voice": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "timeline": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "render": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "verify": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "package": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "upload": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    }
+  },
+  "artifacts": {},
+  "costs": [],
+  "errors": [],
+  "youtube": {
+    "status": "not_started"
+  }
+}

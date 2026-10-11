@@ -19,13 +19,13 @@ const BeatVisual: React.FC<{beat: TimelineBeat; t: Timeline}> = ({beat, t}) => {
     case 'media':
       return v.layout === 'exhibit' ? <MediaExhibit beat={beat} /> : <MediaFull beat={beat} />;
     case 'title':
-      return <TitleCard beat={beat} brandName={t.brand.name} />;
+      return <TitleCard beat={beat} brandName={t.brand.name} ui={t.ui} />;
     case 'card':
       return <TextCard beat={beat} />;
     case 'factsheet':
-      return <FactSheet beat={beat} />;
+      return <FactSheet beat={beat} label={t.ui.factsheetLabel} />;
     case 'endcard':
-      return <EndCard beat={beat} brandName={t.brand.name} motto={t.brand.motto} />;
+      return <EndCard beat={beat} brandName={t.brand.name} motto={t.brand.motto} ui={t.ui} />;
     case 'black':
     default:
       return <AbsoluteFill style={{background: '#000'}} />;
@@ -59,7 +59,7 @@ const hasHeader = (b: TimelineBeat) => b.visual.type === 'media' || b.visual.typ
 
 export const Episode: React.FC<Timeline> = (t) => {
   const {fps} = useVideoConfig();
-  const caseLabel = 'PROTOCOLO 001';
+  const caseLabel = t.ui.caseLabel;
   const shots = groupVisuals(t.beats);
   return (
     <AbsoluteFill style={{background: '#000'}}>
@@ -123,7 +123,7 @@ export const Thumbnail: React.FC<Timeline & {thumbnailFrame?: number; thumbnailT
     <AbsoluteFill>
       <Sequence from={-(frame - beat.startFrame)} durationInFrames={beat.durationFrames}>
         <BeatVisual beat={beat} t={t} />
-        {hasHeader(beat) ? <HeaderBand brandName={t.brand.name} caseLabel="PROTOCOLO 001" /> : null}
+        {hasHeader(beat) ? <HeaderBand brandName={t.brand.name} caseLabel={t.ui.caseLabel} /> : null}
       </Sequence>
       {t.thumbnailText ? (
         <div style={{position: 'absolute', left: 64, right: 150, top: 1180, display: 'flex'}}>

@@ -5,6 +5,7 @@ import {readJson, sha256, writeJsonAtomic} from '../core/state.js';
 import {rel} from '../core/paths.js';
 import {chunkCaption, normalizeWords} from '../core/text.js';
 import {ensureSfx} from '../sfx.js';
+import {localized, episodeNumber} from '../core/locale.js';
 import type {Stage} from './types.js';
 
 function dbToGain(db: number): number {
@@ -51,7 +52,7 @@ export function timeCaptions(
 export const timelineStage: Stage = {
   name: 'timeline',
   inputHash(ctx) {
-    return sha256([ctx.p.script, ctx.p.voice, ctx.p.mediaRegistry, ctx.p.product].map((f) => fs.readFileSync(f, 'utf8')).join('\n') + JSON.stringify(ctx.cfg.format) + JSON.stringify(ctx.cfg.channel));
+    return sha256([ctx.p.script, ctx.p.voice, ctx.p.mediaRegistry, ctx.p.product].map((f) => fs.readFileSync(f, 'utf8')).join('\n') + JSON.stringify(ctx.cfg.format) + JSON.stringify(localized(ctx.cfg, ctx.state.locale).channel) + ctx.state.locale);
   },
   async run(ctx) {
     const script = Script.parse(readJson(ctx.p.script));
@@ -113,12 +114,15 @@ export const timelineStage: Stage = {
     captions.sort((a, b) => a.startFrame - b.startFrame);
     // Legenda de som nao pode sobrepor a fala seguinte.
     for (let i = 0; i < captions.length - 1; i++) captions[i].endFrame = Math.min(captions[i].endFrame, captions[i + 1].startFrame);
+    const {channel: ch, strings} = localized(ctx.cfg, ctx.state.locale);
+    const num = episodeNumber(ctx.id);
     const timeline = Timeline.parse({
       fps,
       width: ctx.cfg.format.width,
       height: ctx.cfg.format.height,
       durationInFrames: cursor,
-      brand: {name: ctx.cfg.channel.name, motto: ctx.cfg.channel.motto, salesmanName: ctx.cfg.channel.salesman.name, salesmanTitle: ctx.cfg.channel.salesman.title},
+      brand: {name: ch.name, motto: ch.motto, salesmanName: ch.salesman.name, salesmanTitle: ch.salesman.title},
+      ui: {caseLabel: strings.caseLabel(num), sealText: ch.shortName, sealLabel: strings.sealLabel(num), factsheetLabel: strings.factsheetLabel},
       product: {name: product.name, brand: product.brand},
       beats,
       captions,

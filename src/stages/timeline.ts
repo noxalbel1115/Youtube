@@ -112,6 +112,8 @@ export const timelineStage: Stage = {
     const roomTone = await ensureSfx('room-tone', sfxDir);
     const credits = registry.items.filter((i) => usedMedia.has(i.id)).map((i) => i.attribution);
     captions.sort((a, b) => a.startFrame - b.startFrame);
+    // Bloco curto demais para ler (fala de uma palavra): estende ate 0,5 s; o laco abaixo impede invadir o seguinte.
+    for (const c of captions) c.endFrame = Math.max(c.endFrame, c.startFrame + f(0.5));
     // Legenda de som nao pode sobrepor a fala seguinte.
     for (let i = 0; i < captions.length - 1; i++) captions[i].endFrame = Math.min(captions[i].endFrame, captions[i + 1].startFrame);
     const {channel: ch, strings} = localized(ctx.cfg, ctx.state.locale);

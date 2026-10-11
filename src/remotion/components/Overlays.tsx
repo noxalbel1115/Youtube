@@ -4,7 +4,7 @@ import type {CaptionChunk} from '../../schemas.js';
 import {C, SANS, MONO, SAFE} from '../theme.js';
 
 /** Faixa institucional discreta no topo (abaixo da interface do YouTube). */
-export const HeaderBand: React.FC<{brandName: string; caseLabel: string}> = ({brandName, caseLabel}) => (
+export const HeaderBand: React.FC<{brandName: string; caseLabel: string; mark: string}> = ({brandName, caseLabel, mark}) => (
   <div
     style={{
       position: 'absolute',
@@ -21,7 +21,7 @@ export const HeaderBand: React.FC<{brandName: string; caseLabel: string}> = ({br
       color: C.ink,
     }}
   >
-    <div style={{border: `3px solid ${C.ink}`, fontFamily: SANS, fontWeight: 700, fontSize: 22, padding: '2px 8px', letterSpacing: 1}}>DND</div>
+    <div style={{border: `3px solid ${C.ink}`, fontFamily: SANS, fontWeight: 700, fontSize: 22, padding: '2px 8px', letterSpacing: 1}}>{mark}</div>
     <div style={{fontFamily: SANS, fontWeight: 600, fontSize: 19, letterSpacing: 1.6, textTransform: 'uppercase', flex: 1, whiteSpace: 'nowrap'}}>{brandName}</div>
     <div style={{fontFamily: MONO, fontSize: 19, color: C.inkSoft}}>{caseLabel}</div>
   </div>

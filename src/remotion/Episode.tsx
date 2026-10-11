@@ -66,7 +66,7 @@ export const Episode: React.FC<Timeline> = (t) => {
       {shots.map((b) => (
         <Sequence key={b.id} from={b.startFrame} durationInFrames={b.durationFrames} name={`plano ${b.id}`}>
           <BeatVisual beat={b} t={t} />
-          {hasHeader(b) ? <HeaderBand brandName={t.brand.name} caseLabel={caseLabel} /> : null}
+          {hasHeader(b) ? <HeaderBand brandName={t.brand.name} caseLabel={caseLabel} mark={t.ui.sealText} /> : null}
         </Sequence>
       ))}
       {/* Sobreposicoes por beat (nao por plano): credito/rotulo e etiqueta do vendedor. */}
@@ -123,7 +123,7 @@ export const Thumbnail: React.FC<Timeline & {thumbnailFrame?: number; thumbnailT
     <AbsoluteFill>
       <Sequence from={-(frame - beat.startFrame)} durationInFrames={beat.durationFrames}>
         <BeatVisual beat={beat} t={t} />
-        {hasHeader(beat) ? <HeaderBand brandName={t.brand.name} caseLabel={t.ui.caseLabel} /> : null}
+        {hasHeader(beat) ? <HeaderBand brandName={t.brand.name} caseLabel={t.ui.caseLabel} mark={t.ui.sealText} /> : null}
       </Sequence>
       {t.thumbnailText ? (
         <div style={{position: 'absolute', left: 64, right: 150, top: 1180, display: 'flex'}}>

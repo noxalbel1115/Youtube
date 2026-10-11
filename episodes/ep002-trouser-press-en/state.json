@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "episodeId": "ep002-trouser-press-en",
+  "createdAt": "2026-10-11T08:31:09.114Z",
+  "updatedAt": "2026-10-11T08:31:12.851Z",
+  "currentStage": "research",
+  "stages": {
+    "research": {
+      "status": "running",
+      "attempts": 1,
+      "outputs": [],
+      "startedAt": "2026-10-11T08:31:12.850Z"
+    },
+    "select": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "media": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "script": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "voice": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "timeline": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "render": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "verify": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "package": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    },
+    "upload": {
+      "status": "pending",
+      "attempts": 0,
+      "outputs": []
+    }
+  },
+  "artifacts": {},
+  "costs": [],
+  "errors": [],
+  "youtube": {
+    "status": "not_started"
+  }
+}
